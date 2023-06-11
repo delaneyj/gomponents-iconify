@@ -2,6 +2,8 @@
 
 <img alt="mascot" src="assets/mascot.png" width="384px" />
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/delaneyj/gomponents-iconify.svg)](https://pkg.go.dev/github.com/delaneyj/gomponents-iconify)
+
 # gomponents-iconify
 Iconify as Gomponents.  Similar to Maragudk's [gomponents-heroicons](https://github.com/maragudk/gomponents-heroicons) but is a superset of all the icons available from [Iconify](https://iconify.design/).   Currently the best way to search for icons is using https://icones.js.org/.
 
