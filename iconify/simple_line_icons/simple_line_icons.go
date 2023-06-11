@@ -5,7 +5,7 @@ import (
 	s "github.com/maragudk/gomponents/svg"
 )
 
-const Version = "2.5.5"
+const IconifyVersion = "2.5.5"
 
 func IconFromName(name string) g.Node {
 	switch name {
