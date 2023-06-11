@@ -1,0 +1,13 @@
+# https://taskfile.dev
+
+version: "3"
+
+interval: "500ms"
+
+tasks:
+  default:
+    sources:
+      - gentmp/iconify
+    cmds:
+      - go run internal/main.go
+    silent: true

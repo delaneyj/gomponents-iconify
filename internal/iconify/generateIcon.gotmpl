@@ -1,0 +1,29 @@
+package {{ .Name.Lower }}
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+const Version = "{{.Version}}"
+
+func IconFromName(name string) g.Node {
+	switch name {
+	{{range .Icons -}}
+	case "{{.Name.Camel}}": return {{.Name.Pascal}}()
+	{{end -}}
+	default:
+		panic("Unknown icon name: " + name)
+	}
+}
+
+{{range .Icons -}}
+func {{.Name.Pascal}}(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 {{$.Width}} {{$.Height}}"),
+		g.Raw(`{{.Icon.SvgBody}}`),
+		g.Group(children),
+	)
+}
+
+{{end}}
