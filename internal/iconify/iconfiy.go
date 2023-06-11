@@ -149,9 +149,17 @@ func GenerateIconify(ctx context.Context, gentmpDir, output string) error {
 		iconPkg := IconPackage{
 			Name:    toolbelt.Cased(packageName),
 			Icons:   namedIcons,
-			Width:   unknownToDimension(details.Width),
-			Height:  unknownToDimension(details.Height),
+			Width:   unknownToDimension(details.Info.Height),
+			Height:  unknownToDimension(details.Info.Height),
 			Version: details.Info.Version,
+		}
+		if iconPkg.Width == 0 && iconPkg.Height > 0 {
+			iconPkg.Width = iconPkg.Height
+		} else if iconPkg.Height == 0 && iconPkg.Width > 0 {
+			iconPkg.Height = iconPkg.Width
+		} else if iconPkg.Width == 0 && iconPkg.Height == 0 {
+			iconPkg.Width = 24
+			iconPkg.Height = 24
 		}
 
 		packagePath := filepath.Join(iconifyPath, packageName)

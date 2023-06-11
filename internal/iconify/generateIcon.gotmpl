@@ -2,6 +2,7 @@ package {{ .Name.Lower }}
 
 import (
 	g "github.com/maragudk/gomponents"
+	h "github.com/maragudk/gomponents/html"
 	s "github.com/maragudk/gomponents/svg"
 )
 
@@ -21,6 +22,8 @@ func IconFromName(name string) g.Node {
 func {{.Name.Pascal}}(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 {{$.Width}} {{$.Height}}"),
+		h.Width("{{$.Width}}"),
+		h.Height("{{$.Height}}"),
 		g.Raw(`{{.Icon.SvgBody}}`),
 		g.Group(children),
 	)
