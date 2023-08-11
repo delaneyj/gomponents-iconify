@@ -6,7 +6,7 @@ import (
 	s "github.com/maragudk/gomponents/svg"
 )
 
-const IconifyVersion = "0.47.1"
+const IconifyVersion = "0.47.5"
 
 func IconFromName(name string) g.Node {
 	switch name {
@@ -246,6 +246,7 @@ func IconFromName(name string) g.Node {
 	case "pushPin": return PushPin()
 	case "puzzleLtr": return PuzzleLtr()
 	case "puzzleRtl": return PuzzleRtl()
+	case "qrCode": return QrCode()
 	case "quotesLtr": return QuotesLtr()
 	case "quotesRtl": return QuotesRtl()
 	case "recentChangesLtr": return RecentChangesLtr()
@@ -341,8 +342,12 @@ func IconFromName(name string) g.Node {
 	case "userContributionsRtl": return UserContributionsRtl()
 	case "userGroupLtr": return UserGroupLtr()
 	case "userGroupRtl": return UserGroupRtl()
+	case "userRightsLtr": return UserRightsLtr()
+	case "userRightsRtl": return UserRightsRtl()
 	case "userTalkLtr": return UserTalkLtr()
 	case "userTalkRtl": return UserTalkRtl()
+	case "userTemporaryLtr": return UserTemporaryLtr()
+	case "userTemporaryRtl": return UserTemporaryRtl()
 	case "viewCompact": return ViewCompact()
 	case "viewDetailsLtr": return ViewDetailsLtr()
 	case "viewDetailsRtl": return ViewDetailsRtl()
@@ -2724,6 +2729,16 @@ func PuzzleRtl(children ...g.Node) g.Node {
 	)
 }
 
+func QrCode(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		h.Width("20"),
+		h.Height("20"),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3 3h4v4H3V3ZM1 9V1h8v8H1Zm2 4h4v4H3v-4Zm-2 6v-8h8v8H1ZM17 3h-4v4h4V3Zm-6-2v8h8V1h-8Zm2 10h-2v4h2v2h-2v2h2v-2h2v2h4v-4h-2v-2h2v-2h-4v2h-2v-2Zm4 4h-2v2h2v-2Z"/>`),
+		g.Group(children),
+	)
+}
+
 func QuotesLtr(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 20 20"),
@@ -3674,6 +3689,26 @@ func UserGroupRtl(children ...g.Node) g.Node {
 	)
 }
 
+func UserRightsLtr(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		h.Width("20"),
+		h.Height("20"),
+		g.Raw(`<path fill="currentColor" d="M14.5 5.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0ZM20 16.288v-1.632l-1.012-.168c-.055-.22-.164-.437-.324-.76l-.014-.028l.619-.844l-1.181-1.18l-.844.618a3.003 3.003 0 0 0-.788-.338l-.112-1.012h-1.632l-.141.851l-.027.161c-.282.056-.507.17-.788.338l-.844-.619l-1.18 1.181l.562.844c-.106.176-.168.33-.227.49l-.025.07l-.01.027c-.024.064-.048.13-.076.2L11 14.6v1.631l1.012.17c.057.28.17.505.338.786l-.563.844l.969.969l.213.213l.32-.213l.524-.35c.199.1.443.2.691.3l.05.02l.046.018l.002.012l.167 1h1.687l.167-1l.002-.012c.281-.057.506-.17.787-.338l.477.35l.367.27l1.182-1.182l-.62-.844c.17-.28.282-.563.338-.788l.844-.168Zm-4.5.843a1.659 1.659 0 0 1-1.688-1.687c0-.956.732-1.688 1.688-1.688s1.688.732 1.688 1.688s-.732 1.687-1.688 1.687ZM10 11c.739 0 1.418.047 2.04.133l-1.594 1.596l.574.862l-1.02.12v3.367l1.098.183l-.598.897l.842.842H2v-3c0-2 2.083-5 8-5Z"/>`),
+		g.Group(children),
+	)
+}
+
+func UserRightsRtl(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		h.Width("20"),
+		h.Height("20"),
+		g.Raw(`<path fill="currentColor" d="M5.5 5.5a4.5 4.5 0 1 0 9 0a4.5 4.5 0 0 0-9 0ZM0 16.288v-1.632l1.012-.168c.055-.22.164-.437.324-.76l.014-.028l-.619-.844l1.181-1.18l.844.618c.245-.15.51-.264.788-.338l.112-1.012h1.632l.141.851l.027.161c.282.056.507.17.788.338l.844-.619l1.18 1.181l-.562.844c.106.176.168.33.227.49l.025.07l.01.027c.024.064.048.13.076.2L9 14.6v1.631l-1.012.17c-.057.28-.17.505-.338.786l.563.844l-.969.969l-.213.213l-.32-.213l-.524-.35c-.199.1-.443.2-.691.3l-.05.02l-.046.018l-.002.012l-.167 1H3.544l-.167-1l-.002-.012c-.281-.057-.506-.17-.787-.338l-.477.35l-.367.27l-1.182-1.182l.62-.844a2.958 2.958 0 0 1-.338-.788L0 16.288Zm4.5.843a1.658 1.658 0 0 0 1.688-1.687c0-.956-.732-1.688-1.688-1.688s-1.688.732-1.688 1.688s.732 1.687 1.688 1.687ZM10 11c-.739 0-1.418.047-2.04.133l1.594 1.596l-.574.862l1.02.12v3.367l-1.098.183l.598.897l-.842.842H18v-3c0-2-2.083-5-8-5Z"/>`),
+		g.Group(children),
+	)
+}
+
 func UserTalkLtr(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 20 20"),
@@ -3690,6 +3725,26 @@ func UserTalkRtl(children ...g.Node) g.Node {
 		h.Width("20"),
 		h.Height("20"),
 		g.Raw(`<path fill="currentColor" d="M0 2v12c0 1.1.9 2 2 2h14l4 4V2c0-1.1-.9-2-2-2H2C.9 0 0 .9 0 2zm7.5 3.5C7.5 6.3 6.8 7 6 7s-1.5-.7-1.5-1.5S5.2 4 6 4s1.5.7 1.5 1.5zm8 0c0 .8-.7 1.5-1.5 1.5s-1.5-.7-1.5-1.5S13.2 4 14 4s1.5.7 1.5 1.5zM4.4 9h11.3c-.8 2.3-3 3-5.6 3s-4.9-.7-5.7-3z"/>`),
+		g.Group(children),
+	)
+}
+
+func UserTemporaryLtr(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		h.Width("20"),
+		h.Height("20"),
+		g.Raw(`<path fill="currentColor" d="M18 16c0-2-2.083-5-8-5c-.356 0-.698.01-1.026.032l.276 1.986c.239-.012.489-.018.75-.018v4H6v2h2v-2h2v2h8v-3Zm-8-6a4.5 4.5 0 1 0-.878-8.914l.388 1.962C9.667 3.017 9.83 3 10 3v5c-.17 0-.333-.017-.49-.048l-.388 1.962c.284.057.577.086.878.086Zm-2.933 1.29c-.69.149-1.3.35-1.834.59l1.051 1.713c.351-.14.755-.263 1.218-.36l-.435-1.944ZM4 19v-2H2v2h2Zm-1.84-4h2.228c.124-.18.284-.37.49-.557L3.64 12.866c-.78.66-1.254 1.416-1.48 2.134ZM7.5 1.758L8.613 3.42c-.274.183-.51.419-.693.693L6.258 3c.329-.49.751-.913 1.242-1.242ZM5.586 4.622l1.962.388a2.521 2.521 0 0 0 0 .98l-1.962.388a4.52 4.52 0 0 1 0-1.756ZM6.258 8L7.92 6.887c.183.274.419.51.693.693L7.5 9.242A4.525 4.525 0 0 1 6.258 8Z"/>`),
+		g.Group(children),
+	)
+}
+
+func UserTemporaryRtl(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		h.Width("20"),
+		h.Height("20"),
+		g.Raw(`<path fill="currentColor" d="M2 16c0-2 2.083-5 8-5c.356 0 .698.01 1.026.032l-.276 1.986A15.24 15.24 0 0 0 10 13v4h4v2h-2v-2h-2v2H2v-3Zm8-6a4.5 4.5 0 1 1 .878-8.914l-.388 1.962A2.521 2.521 0 0 0 10 3v5c.17 0 .333-.017.49-.048l.388 1.962A4.52 4.52 0 0 1 10 10Zm2.933 1.29c.69.149 1.3.35 1.834.59l-1.051 1.713a7.336 7.336 0 0 0-1.218-.36l.435-1.944ZM16 19v-2h2v2h-2Zm1.84-4h-2.228a3.204 3.204 0 0 0-.49-.557l1.238-1.577c.78.66 1.254 1.416 1.48 2.134ZM12.5 1.758L11.387 3.42c.274.183.51.419.693.693L13.742 3A4.525 4.525 0 0 0 12.5 1.758Zm1.914 2.864l-1.962.388a2.524 2.524 0 0 1 0 .98l1.962.388a4.521 4.521 0 0 0 0-1.756ZM13.742 8L12.08 6.887c-.183.274-.419.51-.693.693L12.5 9.242c.49-.329.913-.751 1.242-1.242Z"/>`),
 		g.Group(children),
 	)
 }

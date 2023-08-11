@@ -6,7 +6,7 @@ import (
 	s "github.com/maragudk/gomponents/svg"
 )
 
-const IconifyVersion = "1.9.0"
+const IconifyVersion = "1.10.0"
 
 func IconFromName(name string) g.Node {
 	switch name {
@@ -59,8 +59,11 @@ func IconFromName(name string) g.Node {
 	case "bookOpen": return BookOpen()
 	case "bookmark": return Bookmark()
 	case "box": return Box()
+	case "brandFacebook": return BrandFacebook()
 	case "brandGithub": return BrandGithub()
+	case "brandInstagram": return BrandInstagram()
 	case "brandTwitter": return BrandTwitter()
+	case "brandX": return BrandX()
 	case "briefcase": return Briefcase()
 	case "brushBig": return BrushBig()
 	case "bulb": return Bulb()
@@ -194,6 +197,7 @@ func IconFromName(name string) g.Node {
 	case "plusCircle": return PlusCircle()
 	case "power": return Power()
 	case "print": return Print()
+	case "prompt": return Prompt()
 	case "radio": return Radio()
 	case "rain": return Rain()
 	case "refresh": return Refresh()
@@ -209,6 +213,9 @@ func IconFromName(name string) g.Node {
 	case "skipBackward": return SkipBackward()
 	case "skipForward": return SkipForward()
 	case "snow": return Snow()
+	case "spinnerDots": return SpinnerDots()
+	case "spinnerEarring": return SpinnerEarring()
+	case "spinnerPlanet": return SpinnerPlanet()
 	case "square": return Square()
 	case "star": return Star()
 	case "storm": return Storm()
@@ -740,6 +747,16 @@ func Box(children ...g.Node) g.Node {
 	)
 }
 
+func BrandFacebook(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18Zm0 0V10a2 2 0 0 1 2-2h1m-.5 4.5h-5"/>`),
+		g.Group(children),
+	)
+}
+
 func BrandGithub(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -750,12 +767,32 @@ func BrandGithub(children ...g.Node) g.Node {
 	)
 }
 
+func BrandInstagram(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.5 7.5v0M8 4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4Zm7.5 8a3.5 3.5 0 1 1-7 0a3.5 3.5 0 0 1 7 0Z"/>`),
+		g.Group(children),
+	)
+}
+
 func BrandTwitter(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20.5 4.5l-2 1.5M21 7h-2M3.5 18c11.5 4.5 17-7 15-11s-7-1.5-5.5 3c-3.5 0-7-1-9-3.5c-1 3.5.5 8 4 9.5c-1.065 1.352-1.795 1.703-4.5 2Z"/>`),
+		g.Group(children),
+	)
+}
+
+func BrandX(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m18 4l-5 6.667M6 20l5-6.667m2-2.666L8.3 4.4a1 1 0 0 0-.8-.4H4l7 9.333m2-2.666L20 20h-3.5a1 1 0 0 1-.8-.4L11 13.333"/>`),
 		g.Group(children),
 	)
 }
@@ -2090,6 +2127,16 @@ func Print(children ...g.Node) g.Node {
 	)
 }
 
+func Prompt(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7.5 10l2.5 2.5L7.5 15m4.5 0h4M6 5h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/>`),
+		g.Group(children),
+	)
+}
+
 func Radio(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -2236,6 +2283,36 @@ func Snow(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 13h.01M16 13h.01M13 14.5h.01M10 16h.01M16 16h.01M13 17.5h.01M8 7.036a3.484 3.484 0 0 1 1.975.99M6 13.662A3.5 3.5 0 0 1 8.37 7.11a5.002 5.002 0 0 1 9.614 1.49a2.751 2.751 0 0 1 1.59 4.122"/>`),
+		g.Group(children),
+	)
+}
+
+func SpinnerDots(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-width="2" d="M13 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0ZM7.34 6.34a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm11.32 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm0 11.32a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm-11.32 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0ZM21 12a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm-8 8a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm-8-8a1 1 0 1 1-2 0a1 1 0 0 1 2 0Z"/>`),
+		g.Group(children),
+	)
+}
+
+func SpinnerEarring(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M8.124 5a8 8 0 1 0 7.752 0"/>`),
+		g.Group(children),
+	)
+}
+
+func SpinnerPlanet(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M8.124 5a8 8 0 1 0 7.752 0M12 4h.05"/>`),
 		g.Group(children),
 	)
 }

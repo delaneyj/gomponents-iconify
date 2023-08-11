@@ -6,7 +6,7 @@ import (
 	s "github.com/maragudk/gomponents/svg"
 )
 
-const IconifyVersion = "3.3.0"
+const IconifyVersion = "3.5.0"
 
 func IconFromName(name string) g.Node {
 	switch name {
@@ -207,6 +207,8 @@ func IconFromName(name string) g.Node {
 	case "batteryTwoLine": return BatteryTwoLine()
 	case "bearSmileFill": return BearSmileFill()
 	case "bearSmileLine": return BearSmileLine()
+	case "beerFill": return BeerFill()
+	case "beerLine": return BeerLine()
 	case "behanceFill": return BehanceFill()
 	case "behanceLine": return BehanceLine()
 	case "bellFill": return BellFill()
@@ -438,6 +440,8 @@ func IconFromName(name string) g.Node {
 	case "chinaRailwayLine": return ChinaRailwayLine()
 	case "chromeFill": return ChromeFill()
 	case "chromeLine": return ChromeLine()
+	case "circleFill": return CircleFill()
+	case "circleLine": return CircleLine()
 	case "clapperboardFill": return ClapperboardFill()
 	case "clapperboardLine": return ClapperboardLine()
 	case "clipboardFill": return ClipboardFill()
@@ -587,6 +591,10 @@ func IconFromName(name string) g.Node {
 	case "cropTwoLine": return CropTwoLine()
 	case "crossFill": return CrossFill()
 	case "crossLine": return CrossLine()
+	case "crosshairFill": return CrosshairFill()
+	case "crosshairLine": return CrosshairLine()
+	case "crosshairTwoFill": return CrosshairTwoFill()
+	case "crosshairTwoLine": return CrosshairTwoLine()
 	case "cssThreeFill": return CssThreeFill()
 	case "cssThreeLine": return CssThreeLine()
 	case "cupFill": return CupFill()
@@ -694,6 +702,7 @@ func IconFromName(name string) g.Node {
 	case "dropLine": return DropLine()
 	case "dropboxFill": return DropboxFill()
 	case "dropboxLine": return DropboxLine()
+	case "dropdownList": return DropdownList()
 	case "dualSimOneFill": return DualSimOneFill()
 	case "dualSimOneLine": return DualSimOneLine()
 	case "dualSimTwoFill": return DualSimTwoFill()
@@ -799,6 +808,8 @@ func IconFromName(name string) g.Node {
 	case "fileChartLine": return FileChartLine()
 	case "fileChartTwoFill": return FileChartTwoFill()
 	case "fileChartTwoLine": return FileChartTwoLine()
+	case "fileCloseFill": return FileCloseFill()
+	case "fileCloseLine": return FileCloseLine()
 	case "fileCloudFill": return FileCloudFill()
 	case "fileCloudLine": return FileCloudLine()
 	case "fileCodeFill": return FileCodeFill()
@@ -828,6 +839,8 @@ func IconFromName(name string) g.Node {
 	case "fileHistoryLine": return FileHistoryLine()
 	case "fileHwpFill": return FileHwpFill()
 	case "fileHwpLine": return FileHwpLine()
+	case "fileImageFill": return FileImageFill()
+	case "fileImageLine": return FileImageLine()
 	case "fileInfoFill": return FileInfoFill()
 	case "fileInfoLine": return FileInfoLine()
 	case "fileLine": return FileLine()
@@ -849,6 +862,8 @@ func IconFromName(name string) g.Node {
 	case "filePaperTwoLine": return FilePaperTwoLine()
 	case "filePdfFill": return FilePdfFill()
 	case "filePdfLine": return FilePdfLine()
+	case "filePdfTwoFill": return FilePdfTwoFill()
+	case "filePdfTwoLine": return FilePdfTwoLine()
 	case "filePptFill": return FilePptFill()
 	case "filePptLine": return FilePptLine()
 	case "filePptTwoFill": return FilePptTwoFill()
@@ -879,6 +894,8 @@ func IconFromName(name string) g.Node {
 	case "fileUploadLine": return FileUploadLine()
 	case "fileUserFill": return FileUserFill()
 	case "fileUserLine": return FileUserLine()
+	case "fileVideoFill": return FileVideoFill()
+	case "fileVideoLine": return FileVideoLine()
 	case "fileWarningFill": return FileWarningFill()
 	case "fileWarningLine": return FileWarningLine()
 	case "fileWordFill": return FileWordFill()
@@ -955,6 +972,8 @@ func IconFromName(name string) g.Node {
 	case "folderFourLine": return FolderFourLine()
 	case "folderHistoryFill": return FolderHistoryFill()
 	case "folderHistoryLine": return FolderHistoryLine()
+	case "folderImageFill": return FolderImageFill()
+	case "folderImageLine": return FolderImageLine()
 	case "folderInfoFill": return FolderInfoFill()
 	case "folderInfoLine": return FolderInfoLine()
 	case "folderKeyholeFill": return FolderKeyholeFill()
@@ -990,6 +1009,8 @@ func IconFromName(name string) g.Node {
 	case "folderUploadLine": return FolderUploadLine()
 	case "folderUserFill": return FolderUserFill()
 	case "folderUserLine": return FolderUserLine()
+	case "folderVideoFill": return FolderVideoFill()
+	case "folderVideoLine": return FolderVideoLine()
 	case "folderWarningFill": return FolderWarningFill()
 	case "folderWarningLine": return FolderWarningLine()
 	case "folderZipFill": return FolderZipFill()
@@ -1155,6 +1176,8 @@ func IconFromName(name string) g.Node {
 	case "heartsLine": return HeartsLine()
 	case "heavyShowersFill": return HeavyShowersFill()
 	case "heavyShowersLine": return HeavyShowersLine()
+	case "hexagonFill": return HexagonFill()
+	case "hexagonLine": return HexagonLine()
 	case "historyFill": return HistoryFill()
 	case "historyLine": return HistoryLine()
 	case "homeEightFill": return HomeEightFill()
@@ -1229,6 +1252,8 @@ func IconFromName(name string) g.Node {
 	case "indentIncrease": return IndentIncrease()
 	case "indeterminateCircleFill": return IndeterminateCircleFill()
 	case "indeterminateCircleLine": return IndeterminateCircleLine()
+	case "infinityFill": return InfinityFill()
+	case "infinityLine": return InfinityLine()
 	case "informationFill": return InformationFill()
 	case "informationLine": return InformationLine()
 	case "infraredThermometerFill": return InfraredThermometerFill()
@@ -1474,6 +1499,8 @@ func IconFromName(name string) g.Node {
 	case "menuFourFill": return MenuFourFill()
 	case "menuFourLine": return MenuFourLine()
 	case "menuLine": return MenuLine()
+	case "menuSearchFill": return MenuSearchFill()
+	case "menuSearchLine": return MenuSearchLine()
 	case "menuThreeFill": return MenuThreeFill()
 	case "menuThreeLine": return MenuThreeLine()
 	case "menuTwoFill": return MenuTwoFill()
@@ -1596,6 +1623,8 @@ func IconFromName(name string) g.Node {
 	case "numbersLine": return NumbersLine()
 	case "nurseFill": return NurseFill()
 	case "nurseLine": return NurseLine()
+	case "octagonFill": return OctagonFill()
+	case "octagonLine": return OctagonLine()
 	case "oilFill": return OilFill()
 	case "oilLine": return OilLine()
 	case "omega": return Omega()
@@ -1665,6 +1694,8 @@ func IconFromName(name string) g.Node {
 	case "pencilRulerLine": return PencilRulerLine()
 	case "pencilRulerTwoFill": return PencilRulerTwoFill()
 	case "pencilRulerTwoLine": return PencilRulerTwoLine()
+	case "pentagonFill": return PentagonFill()
+	case "pentagonLine": return PentagonLine()
 	case "percentFill": return PercentFill()
 	case "percentLine": return PercentLine()
 	case "phoneCameraFill": return PhoneCameraFill()
@@ -1792,6 +1823,8 @@ func IconFromName(name string) g.Node {
 	case "recordCircleLine": return RecordCircleLine()
 	case "recordMailFill": return RecordMailFill()
 	case "recordMailLine": return RecordMailLine()
+	case "rectangleFill": return RectangleFill()
+	case "rectangleLine": return RectangleLine()
 	case "recycleFill": return RecycleFill()
 	case "recycleLine": return RecycleLine()
 	case "redPacketFill": return RedPacketFill()
@@ -1844,6 +1877,8 @@ func IconFromName(name string) g.Node {
 	case "rewindLine": return RewindLine()
 	case "rewindMiniFill": return RewindMiniFill()
 	case "rewindMiniLine": return RewindMiniLine()
+	case "rfidFill": return RfidFill()
+	case "rfidLine": return RfidLine()
 	case "rhythmFill": return RhythmFill()
 	case "rhythmLine": return RhythmLine()
 	case "ridingFill": return RidingFill()
@@ -1854,6 +1889,8 @@ func IconFromName(name string) g.Node {
 	case "roadsterLine": return RoadsterLine()
 	case "robotFill": return RobotFill()
 	case "robotLine": return RobotLine()
+	case "robotTwoFill": return RobotTwoFill()
+	case "robotTwoLine": return RobotTwoLine()
 	case "rocketFill": return RocketFill()
 	case "rocketLine": return RocketLine()
 	case "rocketTwoFill": return RocketTwoFill()
@@ -1956,6 +1993,8 @@ func IconFromName(name string) g.Node {
 	case "shapeLine": return ShapeLine()
 	case "shapeTwoFill": return ShapeTwoFill()
 	case "shapeTwoLine": return ShapeTwoLine()
+	case "shapesFill": return ShapesFill()
+	case "shapesLine": return ShapesLine()
 	case "shareBoxFill": return ShareBoxFill()
 	case "shareBoxLine": return ShareBoxLine()
 	case "shareCircleFill": return ShareCircleFill()
@@ -2062,6 +2101,7 @@ func IconFromName(name string) g.Node {
 	case "slackFill": return SlackFill()
 	case "slackLine": return SlackLine()
 	case "slashCommands": return SlashCommands()
+	case "slashCommandsTwo": return SlashCommandsTwo()
 	case "sliceFill": return SliceFill()
 	case "sliceLine": return SliceLine()
 	case "slideshowFill": return SlideshowFill()
@@ -2121,6 +2161,8 @@ func IconFromName(name string) g.Node {
 	case "spotifyLine": return SpotifyLine()
 	case "spyFill": return SpyFill()
 	case "spyLine": return SpyLine()
+	case "squareFill": return SquareFill()
+	case "squareLine": return SquareLine()
 	case "stackFill": return StackFill()
 	case "stackLine": return StackLine()
 	case "stackOverflowFill": return StackOverflowFill()
@@ -2240,6 +2282,8 @@ func IconFromName(name string) g.Node {
 	case "tempColdLine": return TempColdLine()
 	case "tempHotFill": return TempHotFill()
 	case "tempHotLine": return TempHotLine()
+	case "tentFill": return TentFill()
+	case "tentLine": return TentLine()
 	case "terminalBoxFill": return TerminalBoxFill()
 	case "terminalBoxLine": return TerminalBoxLine()
 	case "terminalFill": return TerminalFill()
@@ -2255,6 +2299,8 @@ func IconFromName(name string) g.Node {
 	case "textWrap": return TextWrap()
 	case "thermometerFill": return ThermometerFill()
 	case "thermometerLine": return ThermometerLine()
+	case "threadsFill": return ThreadsFill()
+	case "threadsLine": return ThreadsLine()
 	case "thumbDownFill": return ThumbDownFill()
 	case "thumbDownLine": return ThumbDownLine()
 	case "thumbUpFill": return ThumbUpFill()
@@ -2299,8 +2345,12 @@ func IconFromName(name string) g.Node {
 	case "travestiLine": return TravestiLine()
 	case "treasureMapFill": return TreasureMapFill()
 	case "treasureMapLine": return TreasureMapLine()
+	case "treeFill": return TreeFill()
+	case "treeLine": return TreeLine()
 	case "trelloFill": return TrelloFill()
 	case "trelloLine": return TrelloLine()
+	case "triangleFill": return TriangleFill()
+	case "triangleLine": return TriangleLine()
 	case "trophyFill": return TrophyFill()
 	case "trophyLine": return TrophyLine()
 	case "truckFill": return TruckFill()
@@ -2317,6 +2367,8 @@ func IconFromName(name string) g.Node {
 	case "twitchLine": return TwitchLine()
 	case "twitterFill": return TwitterFill()
 	case "twitterLine": return TwitterLine()
+	case "twitterXFill": return TwitterXFill()
+	case "twitterXLine": return TwitterXLine()
 	case "typhoonFill": return TyphoonFill()
 	case "typhoonLine": return TyphoonLine()
 	case "uDiskFill": return UDiskFill()
@@ -2349,6 +2401,8 @@ func IconFromName(name string) g.Node {
 	case "userFiveLine": return UserFiveLine()
 	case "userFollowFill": return UserFollowFill()
 	case "userFollowLine": return UserFollowLine()
+	case "userForbidFill": return UserForbidFill()
+	case "userForbidLine": return UserForbidLine()
 	case "userFourFill": return UserFourFill()
 	case "userFourLine": return UserFourLine()
 	case "userHeartFill": return UserHeartFill()
@@ -2382,6 +2436,8 @@ func IconFromName(name string) g.Node {
 	case "userUnfollowLine": return UserUnfollowLine()
 	case "userVoiceFill": return UserVoiceFill()
 	case "userVoiceLine": return UserVoiceLine()
+	case "verifiedBadgeFill": return VerifiedBadgeFill()
+	case "verifiedBadgeLine": return VerifiedBadgeLine()
 	case "videoAddFill": return VideoAddFill()
 	case "videoAddLine": return VideoAddLine()
 	case "videoChatFill": return VideoChatFill()
@@ -4462,6 +4518,26 @@ func BearSmileLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" d="M12 17a4 4 0 0 0 4-4h-2a2 2 0 1 1-4 0H8a4 4 0 0 0 4 4ZM6.5 2a4.5 4.5 0 0 0-2.95 7.898a9 9 0 1 0 16.901 0a4.5 4.5 0 1 0-6.79-5.745a9.044 9.044 0 0 0-3.321 0A4.496 4.496 0 0 0 6.5 2ZM4 6.5a2.5 2.5 0 0 1 4.852-.851l.318.878l.898-.257A7.004 7.004 0 0 1 12 6c.672 0 1.32.094 1.932.27l.898.257l.318-.878a2.501 2.501 0 1 1 3.58 3.03l-.814.46l.404.842a7 7 0 1 1-12.635 0l.403-.843l-.814-.46A2.499 2.499 0 0 1 4 6.5Z"/>`),
+		g.Group(children),
+	)
+}
+
+func BeerFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M9 3a2 2 0 0 1 1.972 2.335l1.973.33a4.011 4.011 0 0 0-.005-1.361A2 2 0 0 1 15.733 7H5a1 1 0 1 1 .539-1.843a1 1 0 0 0 1.513-.614A2.001 2.001 0 0 1 9 3Zm1.516-1.703A3.998 3.998 0 0 0 5.51 3.043A3 3 0 0 0 3 8.236V20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2h2a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-2v-.354a4 4 0 0 0-4.896-6.169a4.01 4.01 0 0 0-1.588-1.18ZM17 18v-7h2v7h-2ZM7 11h2v7H7v-7Zm4 0h2v7h-2v-7Z"/>`),
+		g.Group(children),
+	)
+}
+
+func BeerLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M9 3a2 2 0 0 1 1.972 2.335l1.973.33a4.011 4.011 0 0 0-.005-1.361A2 2 0 0 1 15.733 7H5a1 1 0 1 1 .539-1.843a1 1 0 0 0 1.513-.614A2.001 2.001 0 0 1 9 3Zm1.516-1.703A3.998 3.998 0 0 0 5.51 3.043A3 3 0 0 0 3 8.236V20a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2h2a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-2v-.354a4 4 0 0 0-4.896-6.169a4.01 4.01 0 0 0-1.588-1.18ZM17 11h2v7h-2v-7Zm-2-2v11H5V9h10Zm-8 2v7h2v-7H7Zm6 0v7h-2v-7h2Z"/>`),
 		g.Group(children),
 	)
 }
@@ -6776,6 +6852,26 @@ func ChromeLine(children ...g.Node) g.Node {
 	)
 }
 
+func CircleFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10Z"/>`),
+		g.Group(children),
+	)
+}
+
+func CircleLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10Zm0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16Z"/>`),
+		g.Group(children),
+	)
+}
+
 func ClapperboardFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -8266,6 +8362,46 @@ func CrossLine(children ...g.Node) g.Node {
 	)
 }
 
+func CrosshairFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M19.938 13A8.004 8.004 0 0 1 13 19.938V17h-2v2.938A8.004 8.004 0 0 1 4.062 13H7v-2H4.062A8.004 8.004 0 0 1 11 4.062V7h2V4.062A8.004 8.004 0 0 1 19.938 11H17v2h2.938ZM2 12c0 5.523 4.477 10 10 10s10-4.477 10-10S17.523 2 12 2S2 6.477 2 12Zm10 3a3 3 0 1 0 0-6a3 3 0 0 0 0 6Z"/>`),
+		g.Group(children),
+	)
+}
+
+func CrosshairLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M13 19.938A8.004 8.004 0 0 0 19.938 13H17v-2h2.938A8.004 8.004 0 0 0 13 4.062V7h-2V4.062A8.004 8.004 0 0 0 4.062 11H7v2H4.062A8.004 8.004 0 0 0 11 19.938V17h2v2.938ZM12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10Zm0-8a2 2 0 1 1 0-4a2 2 0 0 1 0 4Z"/>`),
+		g.Group(children),
+	)
+}
+
+func CrosshairTwoFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M11 5.07A7.005 7.005 0 0 0 5.07 11H7v2H5.07A7.004 7.004 0 0 0 11 18.93V17h2v1.93A7.004 7.004 0 0 0 18.93 13H17v-2h1.93A7.004 7.004 0 0 0 13 5.07V7h-2V5.07ZM3.055 11A9.004 9.004 0 0 1 11 3.055V1h2v2.055A9.004 9.004 0 0 1 20.945 11H23v2h-2.055A9.004 9.004 0 0 1 13 20.945V23h-2v-2.055A9.004 9.004 0 0 1 3.055 13H1v-2h2.055ZM15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z"/>`),
+		g.Group(children),
+	)
+}
+
+func CrosshairTwoLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M11 5.07A7.005 7.005 0 0 0 5.07 11H7v2H5.07A7.004 7.004 0 0 0 11 18.93V17h2v1.93A7.004 7.004 0 0 0 18.93 13H17v-2h1.93A7.004 7.004 0 0 0 13 5.07V7h-2V5.07ZM3.055 11A9.004 9.004 0 0 1 11 3.055V1h2v2.055A9.004 9.004 0 0 1 20.945 11H23v2h-2.055A9.004 9.004 0 0 1 13 20.945V23h-2v-2.055A9.004 9.004 0 0 1 3.055 13H1v-2h2.055ZM14 12a2 2 0 1 1-4 0a2 2 0 0 1 4 0Z"/>`),
+		g.Group(children),
+	)
+}
+
 func CssThreeFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -9336,6 +9472,16 @@ func DropboxLine(children ...g.Node) g.Node {
 	)
 }
 
+func DropdownList(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M4 5v14h9v2H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v5h-2V5H4Zm15.707 6.293L19 10.586l-.707.707l-3 3l1.414 1.414L19 13.414l2.293 2.293l1.414-1.414l-3-3Zm-3 6L19 19.586l2.293-2.293l1.414 1.414l-3 3l-.707.707l-.707-.707l-3-3l1.414-1.414Z"/>`),
+		g.Group(children),
+	)
+}
+
 func DualSimOneFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -10386,6 +10532,26 @@ func FileChartTwoLine(children ...g.Node) g.Node {
 	)
 }
 
+func FileCloseFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M18 13c1.093 0 2.117.292 3 .803V7l-5-5H3.998A.995.995 0 0 0 3 2.992v18.016a1 1 0 0 0 .993.992h8.81A6 6 0 0 1 18 13Zm3.536 8.121L19.414 19l2.122-2.121l-1.415-1.415l-2.12 2.122l-2.122-2.122l-1.414 1.415l2.12 2.12l-2.12 2.122l1.414 1.414L18 20.415l2.121 2.12l1.415-1.414Z"/>`),
+		g.Group(children),
+	)
+}
+
+func FileCloseLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M12 22v-2H5V4h10v4h4v5h2V7l-5-5H3.998A.995.995 0 0 0 3 2.992v18.016a1 1 0 0 0 .993.992H12Zm9.536-.879L19.414 19l2.122-2.121l-1.415-1.415l-2.12 2.122l-2.122-2.122l-1.414 1.415l2.12 2.12l-2.12 2.122l1.414 1.414L18 20.415l2.121 2.12l1.415-1.414Z"/>`),
+		g.Group(children),
+	)
+}
+
 func FileCloudFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -10676,6 +10842,26 @@ func FileHwpLine(children ...g.Node) g.Node {
 	)
 }
 
+func FileImageFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="m21 7l-5-5H3.993A.993.993 0 0 0 3 2.992v18.016a1 1 0 0 0 .993.992h16.014a.993.993 0 0 0 .993-.992V7ZM11 9.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0Zm6.5 7.5H8l5.5-7l4 7Z"/>`),
+		g.Group(children),
+	)
+}
+
+func FileImageLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M15 8V4H5v16h14V8h-4ZM3 2.992C3 2.444 3.447 2 3.998 2H16l5 5v13.992A1 1 0 0 1 20.007 22H3.993A1 1 0 0 1 3 21.008V2.992ZM11 9.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0Zm6.5 7.5l-4-7L8 17h9.5Z"/>`),
+		g.Group(children),
+	)
+}
+
 func FileInfoFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -10882,6 +11068,26 @@ func FilePdfLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" d="M12 16H8V8h4a4 4 0 0 1 0 8Zm-2-6v4h2a2 2 0 1 0 0-4h-2Zm5-6H5v16h14V8h-4V4ZM3 2.992C3 2.444 3.447 2 3.998 2H16l5 5v13.992A1 1 0 0 1 20.007 22H3.993A1 1 0 0 1 3 21.008V2.992Z"/>`),
+		g.Group(children),
+	)
+}
+
+func FilePdfTwoFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M3.998 2A.995.995 0 0 0 3 2.992v18.016a1 1 0 0 0 .993.992h16.014A1 1 0 0 0 21 20.992V7l-5-5H3.998ZM10.5 7.5h2c0 2.49 2.144 5.16 4.816 6.051l-.457 1.939c-3.136-.448-6.377.89-9.304 2.842l-1.18-1.613c1.086-.869 2.128-2.343 2.9-4.066c.77-1.716 1.225-3.576 1.225-5.153Zm.6 5.972c.267-.597.504-1.216.704-1.843a9.66 9.66 0 0 0 1.706 1.966c-.982.176-1.943.465-2.875.833c.165-.314.32-.633.465-.956Z"/>`),
+		g.Group(children),
+	)
+}
+
+func FilePdfTwoLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M5 4h10v4h4v12H5V4ZM3.998 2A.995.995 0 0 0 3 2.992v18.016a1 1 0 0 0 .993.992h16.014A1 1 0 0 0 21 20.992V7l-5-5H3.998ZM10.5 7.5c0 1.577-.456 3.437-1.225 5.153c-.772 1.723-1.814 3.197-2.9 4.066l1.18 1.613c2.927-1.952 6.168-3.29 9.303-2.842l.458-1.939C14.644 12.661 12.5 9.99 12.5 7.5h-2Zm.6 5.972c.267-.597.504-1.216.704-1.843a9.66 9.66 0 0 0 1.706 1.966c-.982.176-1.944.465-2.875.833c.165-.314.32-.633.465-.956Z"/>`),
 		g.Group(children),
 	)
 }
@@ -11182,6 +11388,26 @@ func FileUserLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" d="M15 4H5v16h14V8h-4V4ZM3 2.992C3 2.444 3.447 2 3.998 2H16l5 5v13.992A1 1 0 0 1 20.007 22H3.993A1 1 0 0 1 3 21.008V2.992Zm9 8.508a2.5 2.5 0 1 1 0-5a2.5 2.5 0 0 1 0 5ZM7.527 17a4.5 4.5 0 0 1 8.945 0H7.527Z"/>`),
+		g.Group(children),
+	)
+}
+
+func FileVideoFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="m16 2l5 5v14.008a.993.993 0 0 1-.993.992H3.993A1 1 0 0 1 3 21.008V2.992C3 2.444 3.445 2 3.993 2H16Zm-1 9.667l-4.878-3.253a.4.4 0 0 0-.622.333v6.505a.4.4 0 0 0 .622.333L15 12.333a.401.401 0 0 0 0-.666Z"/>`),
+		g.Group(children),
+	)
+}
+
+func FileVideoLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M15 4v4h4v12H5V4h10ZM3.998 2A.995.995 0 0 0 3 2.992v18.016a1 1 0 0 0 .993.992h16.014A1 1 0 0 0 21 20.992V7l-5-5H3.998Zm11.003 9.667l-4.88-3.253a.4.4 0 0 0-.621.333v6.505a.4.4 0 0 0 .622.333L15 12.333a.401.401 0 0 0 0-.666Z"/>`),
 		g.Group(children),
 	)
 }
@@ -11946,6 +12172,26 @@ func FolderHistoryLine(children ...g.Node) g.Node {
 	)
 }
 
+func FolderImageFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M12.414 5H21a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h7.414l2 2ZM10 10.5a1.5 1.5 0 1 0-3 0a1.5 1.5 0 0 0 3 0Zm8 6.5l-4-6l-7 6h11Z"/>`),
+		g.Group(children),
+	)
+}
+
+func FolderImageLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M4 5v14h16V7h-8.414l-2-2H4Zm8.414 0H21a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h7.414l2 2ZM10 10.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0Zm8 6.5l-4-6l-7 6h11Z"/>`),
+		g.Group(children),
+	)
+}
+
 func FolderInfoFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -12292,6 +12538,26 @@ func FolderUserLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" d="M12.414 5H21a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h7.414l2 2ZM4 5v14h16V7h-8.414l-2-2H4Zm4 13a4 4 0 0 1 8 0H8Zm4-5a2.5 2.5 0 1 1 0-5a2.5 2.5 0 0 1 0 5Z"/>`),
+		g.Group(children),
+	)
+}
+
+func FolderVideoFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M21 5h-8.586l-2-2H3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1Zm-6 7.667a.4.4 0 0 1 0 .666l-4.878 3.252a.4.4 0 0 1-.622-.333V9.747a.4.4 0 0 1 .622-.333L15 12.667Z"/>`),
+		g.Group(children),
+	)
+}
+
+func FolderVideoLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M4 19V5h5.586l2 2H20v12H4ZM21 5h-8.586l-2-2H3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1Zm-6 7.667l-4.878-3.253a.4.4 0 0 0-.622.333v6.505a.4.4 0 0 0 .622.333L15 13.333a.401.401 0 0 0 0-.666Z"/>`),
 		g.Group(children),
 	)
 }
@@ -13946,6 +14212,26 @@ func HeavyShowersLine(children ...g.Node) g.Node {
 	)
 }
 
+func HexagonFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M17.5 2.5L23 12l-5.5 9.5h-11L1 12l5.5-9.5h11Z"/>`),
+		g.Group(children),
+	)
+}
+
+func HexagonLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M17.5 2.5L23 12l-5.5 9.5h-11L1 12l5.5-9.5h11Zm-1.153 2H7.653L3.311 12l4.342 7.5h8.694l4.342-7.5l-4.342-7.5Z"/>`),
+		g.Group(children),
+	)
+}
+
 func HistoryFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -14682,6 +14968,26 @@ func IndeterminateCircleLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10Zm0-2a8 8 0 1 0 0-16a8 8 0 0 0 0 16Zm-5-9h10v2H7v-2Z"/>`),
+		g.Group(children),
+	)
+}
+
+func InfinityFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M3 12a3.5 3.5 0 0 0 3.5 3.5c1.204 0 2.02-.434 2.7-1.113c.621-.623 1.121-1.44 1.655-2.387c-.534-.947-1.034-1.764-1.656-2.387C8.52 8.933 7.704 8.5 6.5 8.5A3.5 3.5 0 0 0 3 12Zm3.5 5.5a5.5 5.5 0 1 1 0-11c1.796 0 3.105.691 4.113 1.7c.536.534.987 1.162 1.387 1.802c.4-.64.851-1.268 1.387-1.803C14.395 7.191 15.703 6.5 17.5 6.5a5.5 5.5 0 1 1 0 11c-1.796 0-3.105-.691-4.113-1.7c-.536-.534-.987-1.162-1.387-1.802c-.4.64-.851 1.268-1.387 1.803C9.605 16.809 8.297 17.5 6.5 17.5Zm6.645-5.5c.534.947 1.034 1.764 1.656 2.387c.68.68 1.496 1.113 2.699 1.113a3.5 3.5 0 1 0 0-7c-1.203 0-2.02.434-2.7 1.113c-.621.623-1.121 1.44-1.655 2.387Z"/>`),
+		g.Group(children),
+	)
+}
+
+func InfinityLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M3 12a3.5 3.5 0 0 1 3.5-3.5c1.204 0 2.02.434 2.7 1.113c.726.727 1.285 1.72 1.926 2.873l.034.06c.6 1.082 1.283 2.311 2.227 3.255c1.008 1.008 2.316 1.699 4.113 1.699a5.5 5.5 0 1 0-4.158-9.1a23.58 23.58 0 0 1 1.122 1.857A3.5 3.5 0 1 1 17.5 15.5c-1.203 0-2.02-.434-2.7-1.113c-.726-.727-1.285-1.72-1.926-2.873l-.034-.06c-.6-1.082-1.283-2.311-2.227-3.255C9.605 7.191 8.297 6.5 6.5 6.5a5.5 5.5 0 1 0 4.158 9.1a23.577 23.577 0 0 1-1.122-1.857A3.5 3.5 0 0 1 3 12Z"/>`),
 		g.Group(children),
 	)
 }
@@ -17136,6 +17442,26 @@ func MenuLine(children ...g.Node) g.Node {
 	)
 }
 
+func MenuSearchFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M18.617 13.032a5.5 5.5 0 1 1 1.414-1.414l2.676 2.675l-1.414 1.414l-2.675-2.675ZM3 4h5v2H3V4Zm0 7h5v2H3v-2Zm0 7h18v2H3v-2Z"/>`),
+		g.Group(children),
+	)
+}
+
+func MenuSearchLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M15.5 5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7ZM10 8.5a5.5 5.5 0 1 1 10.032 3.117l2.675 2.676l-1.414 1.414l-2.675-2.675A5.5 5.5 0 0 1 10 8.5ZM3 4h5v2H3V4Zm0 7h5v2H3v-2Zm18 7v2H3v-2h18Z"/>`),
+		g.Group(children),
+	)
+}
+
 func MenuThreeFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -18356,6 +18682,26 @@ func NurseLine(children ...g.Node) g.Node {
 	)
 }
 
+func OctagonFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="m15.936 2.501l5.565 5.565v7.87l-5.565 5.565h-7.87l-5.565-5.565v-7.87l5.565-5.565h7.87Z"/>`),
+		g.Group(children),
+	)
+}
+
+func OctagonLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="m15.936 2.501l5.565 5.565v7.87l-5.565 5.565h-7.87l-5.565-5.565v-7.87l5.565-5.565h7.87Zm-.828 2H8.894L4.501 8.894v6.214L8.894 19.5h6.214l4.393-4.393V8.894l-4.393-4.393Z"/>`),
+		g.Group(children),
+	)
+}
+
 func OilFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -19042,6 +19388,26 @@ func PencilRulerTwoLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" d="m7.05 14.121l-2.12 2.122l2.828 2.828L19.071 7.757L16.243 4.93L14.12 7.05l1.415 1.415l-1.415 1.414l-1.414-1.414l-1.414 1.414l1.414 1.414l-1.414 1.414l-1.414-1.414l-1.414 1.414l1.414 1.414l-1.414 1.415L7.05 14.12Zm9.9-11.313l4.242 4.242a1 1 0 0 1 0 1.415L8.465 21.192a1 1 0 0 1-1.415 0L2.808 16.95a1 1 0 0 1 0-1.414L15.536 2.808a1 1 0 0 1 1.414 0Zm-2.83 15.555l1.415-1.414l2.242 2.243h1.414v-1.414l-2.242-2.243l1.414-1.414L21 16.757V21h-4.242l-2.637-2.637ZM5.636 9.878L2.808 7.05a1 1 0 0 1 0-1.415l2.828-2.828a1 1 0 0 1 1.414 0l2.83 2.828L8.464 7.05l-2.12-2.122l-1.415 1.415l2.121 2.12l-1.414 1.415Z"/>`),
+		g.Group(children),
+	)
+}
+
+func PentagonFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="m12 .7l10.747 7.808l-4.105 12.634H5.358L1.253 8.508L12 .7Z"/>`),
+		g.Group(children),
+	)
+}
+
+func PentagonLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="m12 3.03l8.53 6.198l-3.258 10.029H6.728L3.469 9.228L12 3.031Zm10.747 5.478L12 .7L1.253 8.508l4.105 12.634h13.284l4.105-12.634Z"/>`),
 		g.Group(children),
 	)
 }
@@ -20316,6 +20682,26 @@ func RecordMailLine(children ...g.Node) g.Node {
 	)
 }
 
+func RectangleFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M3 4h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z"/>`),
+		g.Group(children),
+	)
+}
+
+func RectangleLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M3 4h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm1 2v12h16V6H4Z"/>`),
+		g.Group(children),
+	)
+}
+
 func RecycleFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -20836,6 +21222,26 @@ func RewindMiniLine(children ...g.Node) g.Node {
 	)
 }
 
+func RfidFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M18.364 18.364a9 9 0 0 0 0-12.728l1.414-1.414c4.296 4.295 4.296 11.26 0 15.556l-1.414-1.414ZM5.636 5.636a9 9 0 0 0 0 12.728l-1.414 1.414c-4.296-4.296-4.296-11.26 0-15.556l1.414 1.414Zm9.9 9.9a5 5 0 0 0 0-7.072L16.95 7.05a7 7 0 0 1 0 9.9l-1.414-1.415ZM8.463 8.463a5 5 0 0 0 0 7.071L7.05 16.95a7 7 0 0 1 0-9.9l1.414 1.414ZM12 14a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z"/>`),
+		g.Group(children),
+	)
+}
+
+func RfidLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M18.364 18.364a9 9 0 0 0 0-12.728l1.414-1.414c4.296 4.295 4.296 11.26 0 15.556l-1.414-1.414ZM5.636 5.636a9 9 0 0 0 0 12.728l-1.414 1.414c-4.296-4.296-4.296-11.26 0-15.556l1.414 1.414Zm9.9 9.9a5 5 0 0 0 0-7.072L16.95 7.05a7 7 0 0 1 0 9.9l-1.414-1.415ZM8.463 8.463a5 5 0 0 0 0 7.071L7.05 16.95a7 7 0 0 1 0-9.9l1.414 1.414ZM12 14a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z"/>`),
+		g.Group(children),
+	)
+}
+
 func RhythmFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -20932,6 +21338,26 @@ func RobotLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" d="M13 4.055A9 9 0 0 1 21 13v9H3v-9a9 9 0 0 1 8-8.945V1h2v3.055ZM19 20v-7a7 7 0 1 0-14 0v7h14Zm-7-2a5 5 0 1 1 0-10a5 5 0 0 1 0 10Zm0-2a3 3 0 1 0 0-6a3 3 0 0 0 0 6Zm0-2a1 1 0 1 1 0-2a1 1 0 0 1 0 2Z"/>`),
+		g.Group(children),
+	)
+}
+
+func RobotTwoFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M13.5 2c0 .444-.193.843-.5 1.118V5h5a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h5V3.118A1.5 1.5 0 1 1 13.5 2ZM0 10h2v6H0v-6Zm24 0h-2v6h2v-6ZM9 14.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Zm7.5-1.5a1.5 1.5 0 1 0-3 0a1.5 1.5 0 0 0 3 0Z"/>`),
+		g.Group(children),
+	)
+}
+
+func RobotTwoLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M13.5 2c0 .444-.193.843-.5 1.118V5h5a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h5V3.118A1.5 1.5 0 1 1 13.5 2ZM6 7a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H6Zm-4 3H0v6h2v-6Zm20 0h2v6h-2v-6ZM9 14.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Zm6 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Z"/>`),
 		g.Group(children),
 	)
 }
@@ -21771,7 +22197,7 @@ func ServiceLine(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<path fill="currentColor" d="M3.161 4.469a6.5 6.5 0 0 1 8.84-.328a6.5 6.5 0 0 1 9.178 9.154l-7.765 7.79a2 2 0 0 1-2.719.102l-.11-.101l-7.764-7.791a6.5 6.5 0 0 1 .34-8.826Zm1.414 1.414a4.5 4.5 0 0 0-.146 6.21l.146.154L12 19.672l5.303-5.305l-3.535-3.534l-1.06 1.06a3 3 0 0 1-4.244-4.242l2.102-2.103a4.501 4.501 0 0 0-5.837.189l-.154.146Zm8.486 2.828a1 1 0 0 1 1.414 0l4.242 4.242l.708-.706a4.5 4.5 0 0 0-6.211-6.51l-.153.146l-3.182 3.182a1 1 0 0 0-.078 1.327l.078.087a1 1 0 0 0 1.327.078l.087-.078l1.768-1.768Z"/>`),
+		g.Raw(`<path fill="currentColor" d="M3.161 4.47a6.5 6.5 0 0 1 8.84-.329a6.5 6.5 0 0 1 9.178 9.154l-7.765 7.791a2 2 0 0 1-2.719.102l-.11-.102l-7.764-7.79a6.5 6.5 0 0 1 .34-8.827Zm1.414 1.413a4.5 4.5 0 0 0-.146 6.211l.146.153L12 19.672l5.303-5.304l-3.535-3.535l-1.06 1.06a3 3 0 0 1-4.244-4.242l2.102-2.102a4.501 4.501 0 0 0-5.837.188l-.154.146Zm8.486 2.829a1 1 0 0 1 1.414 0l4.242 4.242l.708-.707a4.5 4.5 0 0 0-6.211-6.51l-.153.146l-3.182 3.182a1 1 0 0 0-.078 1.327l.078.088a1 1 0 0 0 1.327.077l.087-.077l1.768-1.768Z"/>`),
 		g.Group(children),
 	)
 }
@@ -21952,6 +22378,26 @@ func ShapeTwoLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" d="M20 16h2v6h-6v-2H8v2H2v-6h2V8H2V2h6v2h8V2h6v6h-2v8Zm-2 0V8h-2V6H8v2H6v8h2v2h8v-2h2ZM4 4v2h2V4H4Zm0 14v2h2v-2H4ZM18 4v2h2V4h-2Zm0 14v2h2v-2h-2Z"/>`),
+		g.Group(children),
+	)
+}
+
+func ShapesFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="m12 1l6 10H6l6-10Zm1 12.5h8v8h-8v-8ZM6.75 22a4.75 4.75 0 1 0 0-9.5a4.75 4.75 0 0 0 0 9.5Z"/>`),
+		g.Group(children),
+	)
+}
+
+func ShapesLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M12 1L6 11h12L12 1Zm0 3.887L14.468 9H9.532L12 4.887ZM6.75 20a2.75 2.75 0 1 1 0-5.5a2.75 2.75 0 0 1 0 5.5Zm0 2a4.75 4.75 0 1 0 0-9.5a4.75 4.75 0 0 0 0 9.5ZM15 15.5v4h4v-4h-4Zm-2 6v-8h8v8h-8Z"/>`),
 		g.Group(children),
 	)
 }
@@ -23016,6 +23462,16 @@ func SlashCommands(children ...g.Node) g.Node {
 	)
 }
 
+func SlashCommandsTwo(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5ZM4 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5Zm5.723 13L16.58 6h-2.303L7.42 18h2.303Z"/>`),
+		g.Group(children),
+	)
+}
+
 func SliceFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -23602,6 +24058,26 @@ func SpyLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" d="M17 13a4 4 0 1 1-4 4h-2a4 4 0 1 1-.535-2h3.07A3.998 3.998 0 0 1 17 13ZM7 15a2 2 0 1 0 0 4a2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4a2 2 0 0 0 0-4ZM16 3a4 4 0 0 1 4 4v3h2v2H2v-2h2V7a4 4 0 0 1 4-4h8Zm0 2H8c-1.054 0-2 .95-2 2v3h12V7c0-1.054-.95-2-2-2Z"/>`),
+		g.Group(children),
+	)
+}
+
+func SquareFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/>`),
+		g.Group(children),
+	)
+}
+
+func SquareLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm1 2v14h14V5H5Z"/>`),
 		g.Group(children),
 	)
 }
@@ -24796,6 +25272,26 @@ func TempHotLine(children ...g.Node) g.Node {
 	)
 }
 
+func TentFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="m12.866 3l9.237 16H23v2H1v-2h.896l9.238-16a1 1 0 0 1 1.732 0ZM12 12.925L8.659 19h6.682L12 12.925Z"/>`),
+		g.Group(children),
+	)
+}
+
+func TentLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M22.103 19L12.866 3a1 1 0 0 0-1.732 0L1.896 19H1v2h22v-2h-.897ZM7.6 19H4.206L12 5.5L19.794 19H16.4L12 11l-4.4 8Zm4.4-3.85L14.117 19H9.883L12 15.15Z"/>`),
+		g.Group(children),
+	)
+}
+
 func TerminalBoxFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -24942,6 +25438,26 @@ func ThermometerLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" d="M20.556 3.444a4 4 0 0 1 0 5.656l-8.2 8.2a4 4 0 0 1-2.386 1.148l-3.38.374l-2.297 2.3a1 1 0 0 1-1.414-1.415l2.298-2.299l.375-3.378A4 4 0 0 1 6.7 11.645l8.2-8.2a4 4 0 0 1 5.658 0Zm-4.242 1.414l-8.2 8.2a2 2 0 0 0-.574 1.193l-.276 2.485l2.485-.276a2 2 0 0 0 1.193-.574l.422-.422L9.95 14.05l1.414-1.414l1.414 1.414l1.414-1.414l-1.414-1.414l1.415-1.414l1.414 1.414l1.414-1.415l-1.414-1.414L17.02 6.98l1.414 1.414l.707-.707a2 2 0 0 0-2.828-2.828Z"/>`),
+		g.Group(children),
+	)
+}
+
+func ThreadsFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M16.705 11.108c-.162-2.987-1.794-4.697-4.534-4.714c-1.652-.01-3.033.69-3.879 1.973L9.8 9.4c.634-.961 1.635-1.16 2.36-1.153c.903.006 1.583.268 2.024.78c.32.372.535.887.642 1.536c-.8-.136-1.666-.178-2.59-.125c-2.606.15-4.28 1.67-4.168 3.781c.057 1.071.59 1.993 1.502 2.595c.77.509 1.764.757 2.795.701c1.363-.075 2.432-.595 3.178-1.545c.566-.722.924-1.658 1.082-2.836c.65.392 1.13.907 1.397 1.527c.452 1.054.478 2.786-.935 4.198c-1.238 1.236-2.726 1.772-4.975 1.788c-2.495-.018-4.382-.819-5.608-2.378c-1.15-1.46-1.743-3.57-1.765-6.269c.022-2.7.616-4.809 1.765-6.27c1.226-1.559 3.113-2.359 5.608-2.377c2.513.019 4.432.822 5.706 2.39c.625.768 1.095 1.734 1.406 2.86l1.766-.47c-.377-1.387-.969-2.582-1.774-3.573c-1.633-2.01-4.033-3.039-7.11-3.06c-3.071.021-5.433 1.055-7.019 3.071c-1.411 1.795-2.14 4.306-2.164 7.436c.024 3.13.753 5.627 2.164 7.422c1.587 2.016 3.96 3.05 7.03 3.071c2.731-.019 4.655-.734 6.24-2.317c2.075-2.073 2.012-4.67 1.329-6.264c-.525-1.225-1.57-2.206-2.98-2.81Zm-4.438 4.557c-1.142.064-2.328-.448-2.387-1.546c-.043-.814.58-1.722 2.457-1.83a9.389 9.389 0 0 1 2.533.174c-.216 2.702-1.485 3.14-2.603 3.202Z"/>`),
+		g.Group(children),
+	)
+}
+
+func ThreadsLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M12.184 1.41h-.002C9.09 1.432 6.7 2.473 5.094 4.516c-1.428 1.815-2.16 4.348-2.184 7.49v.002c.025 3.143.756 5.662 2.184 7.477c1.606 2.042 4.009 3.084 7.1 3.105h.002c2.748-.019 4.697-.74 6.303-2.344c2.104-2.103 2.042-4.741 1.347-6.363c-.53-1.234-1.575-2.221-2.976-2.835c-.18-2.985-1.86-4.726-4.62-4.744c-1.63-.01-3.102.72-4.003 2.087l1.655 1.136c.533-.809 1.377-1.199 2.335-1.19c1.387.009 2.3.774 2.555 2.117a11.738 11.738 0 0 0-2.484-.105c-2.64.152-4.368 1.712-4.253 3.875c.12 2.262 2.312 3.495 4.393 3.381c2.492-.137 3.973-1.976 4.324-4.321c.577.373 1.003.85 1.244 1.413c.44 1.025.468 2.716-.915 4.098c-1.217 1.216-2.68 1.746-4.912 1.762c-2.475-.018-4.332-.811-5.537-2.343C5.52 16.774 4.928 14.688 4.906 12c.022-2.688.614-4.775 1.746-6.213c1.205-1.533 3.062-2.325 5.537-2.344c2.493.019 4.384.815 5.636 2.356c.691.85 1.124 1.866 1.413 2.915l1.94-.517c-.363-1.338-.937-2.613-1.815-3.694c-1.653-2.034-4.081-3.071-7.18-3.093Zm.236 10.968a9.372 9.372 0 0 1 2.432.156c-.14 1.578-.793 2.947-2.512 3.041c-1.112.063-2.237-.434-2.292-1.461c-.04-.764.525-1.63 2.372-1.736Z"/>`),
 		g.Group(children),
 	)
 }
@@ -25386,6 +25902,26 @@ func TreasureMapLine(children ...g.Node) g.Node {
 	)
 }
 
+func TreeFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M18 7c0 .262-.017.52-.05.774A6 6 0 0 1 13 18.658V22h-2v-3.6a5.5 5.5 0 0 1-6.517-8.657A8.006 8.006 0 0 0 6.286 12.6l1.428-1.4A5.989 5.989 0 0 1 6 7a6 6 0 1 1 12 0Z"/>`),
+		g.Group(children),
+	)
+}
+
+func TreeLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M6 7a6 6 0 1 1 11.95.775A6 6 0 0 1 15 19h-2v3h-2v-3H8.5A5.5 5.5 0 0 1 6.191 8.507A6.008 6.008 0 0 1 6 7Zm1.01 3.332A3.502 3.502 0 0 0 8.5 17H15a4 4 0 0 0 1.454-7.728l-.841-.328C15.79 8.304 16 7.672 16 7a4 4 0 1 0-6.4 3.2l-1.2 1.6a6.03 6.03 0 0 1-1.39-1.468Z"/>`),
+		g.Group(children),
+	)
+}
+
 func TrelloFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -25402,6 +25938,26 @@ func TrelloLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" d="M5.001 5v14h14V5h-14Zm0-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-14a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm3 4h2a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1Zm6 0h2a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1Z"/>`),
+		g.Group(children),
+	)
+}
+
+func TriangleFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="m12.866 3l9.526 16.5a1 1 0 0 1-.866 1.5H2.474a1 1 0 0 1-.866-1.5L11.134 3a1 1 0 0 1 1.732 0Z"/>`),
+		g.Group(children),
+	)
+}
+
+func TriangleLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="m12.866 3l9.526 16.5a1 1 0 0 1-.866 1.5H2.474a1 1 0 0 1-.866-1.5L11.134 3a1 1 0 0 1 1.732 0Zm-8.66 16h15.588L12 5.5L4.206 19Z"/>`),
 		g.Group(children),
 	)
 }
@@ -25562,6 +26118,26 @@ func TwitterLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" d="M15.35 5.55a2.9 2.9 0 0 0-2.9 2.846l-.028 1.575a.6.6 0 0 1-.68.584l-1.562-.213c-2.053-.28-4.021-1.225-5.91-2.798c-.597 3.31.57 5.603 3.383 7.372L9.4 16.014a.6.6 0 0 1 .035.992L7.843 18.17c.947.06 1.846.018 2.592-.13c4.718-.942 7.855-4.492 7.855-10.348c0-.478-1.013-2.141-2.94-2.141Zm-4.9 2.81a4.9 4.9 0 0 1 8.385-3.355c.711-.005 1.316.175 2.668-.646c-.334 1.64-.5 2.353-1.213 3.332c0 7.641-4.697 11.358-9.464 12.309c-3.267.652-8.02-.419-9.38-1.842c.693-.053 3.513-.356 5.143-1.55c-1.38-.91-6.868-4.14-3.261-12.822c1.693 1.977 3.41 3.322 5.15 4.037c1.157.475 1.442.465 1.973.538Z"/>`),
+		g.Group(children),
+	)
+}
+
+func TwitterXFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231l5.45-6.231Zm-1.161 17.52h1.833L7.045 4.126H5.078L17.044 19.77Z"/>`),
+		g.Group(children),
+	)
+}
+
+func TwitterXLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M8 2H1l8.26 11.014L1.45 22H4.1l6.388-7.349L16 22h7l-8.608-11.478L21.8 2h-2.65l-5.986 6.886L8 2Zm9 18L5 4h2l12 16h-2Z"/>`),
 		g.Group(children),
 	)
 }
@@ -25882,6 +26458,26 @@ func UserFollowLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" d="M14 14.252v2.09A6 6 0 0 0 6 22H4a8 8 0 0 1 10-7.749ZM12 13c-3.315 0-6-2.685-6-6s2.685-6 6-6s6 2.685 6 6s-2.685 6-6 6Zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4s-4 1.79-4 4s1.79 4 4 4Zm5.793 8.914l3.535-3.535l1.415 1.414l-4.95 4.95l-3.536-3.536l1.415-1.414l2.12 2.121Z"/>`),
+		g.Group(children),
+	)
+}
+
+func UserForbidFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M12 13a6 6 0 1 0 0-12a6 6 0 0 0 0 12Zm3 5a3 3 0 0 1 4.293-2.708l-4 4.001A2.988 2.988 0 0 1 15 18Zm1.707 2.708l4-4.001a3 3 0 0 1-4.001 4.001ZM18 13a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm-6 1c.084 0 .168.001.252.004A6.968 6.968 0 0 0 11 18c0 1.487.464 2.866 1.255 4H4a8 8 0 0 1 8-8Z"/>`),
+		g.Group(children),
+	)
+}
+
+func UserForbidLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M8 7a4 4 0 1 1 8 0a4 4 0 0 1-8 0Zm4-6a6 6 0 1 0 0 12a6 6 0 0 0 0-12Zm3 17a3 3 0 0 1 4.293-2.708l-4 4.001A2.988 2.988 0 0 1 15 18Zm1.707 2.708l4-4.001a3 3 0 0 1-4.001 4.001ZM18 13a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm-6 1c.084 0 .168.001.252.004a6.97 6.97 0 0 0-.975 2.04A6.001 6.001 0 0 0 6 22H4a8 8 0 0 1 8-8Z"/>`),
 		g.Group(children),
 	)
 }
@@ -26212,6 +26808,26 @@ func UserVoiceLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" d="M1 22a8 8 0 0 1 16 0h-2a6 6 0 0 0-12 0H1Zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6s6 2.685 6 6s-2.685 6-6 6Zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4s-4 1.79-4 4s1.79 4 4 4ZM21.548.784A13.942 13.942 0 0 1 23 7c0 2.233-.523 4.344-1.452 6.217l-1.645-1.197A11.956 11.956 0 0 0 21 7a11.96 11.96 0 0 0-1.097-5.02L21.548.784Zm-3.302 2.4A9.97 9.97 0 0 1 19 7a9.97 9.97 0 0 1-.754 3.816l-1.677-1.22A7.99 7.99 0 0 0 17 7a7.99 7.99 0 0 0-.43-2.596l1.676-1.22Z"/>`),
+		g.Group(children),
+	)
+}
+
+func VerifiedBadgeFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M10.007 2.104a3 3 0 0 0-3.595 1.49L5.606 5.17a1 1 0 0 1-.436.436l-1.577.806a3 3 0 0 0-1.49 3.595l.546 1.685a1 1 0 0 1 0 .616l-.545 1.685a3 3 0 0 0 1.49 3.595l1.576.806a1 1 0 0 1 .436.436l.806 1.577a3 3 0 0 0 3.595 1.49l1.685-.546a1 1 0 0 1 .616 0l1.685.545a3 3 0 0 0 3.595-1.489l.806-1.577a1 1 0 0 1 .436-.436l1.577-.805a3 3 0 0 0 1.49-3.596l-.546-1.685a1 1 0 0 1 0-.616l.545-1.685a3 3 0 0 0-1.489-3.595l-1.577-.806a1 1 0 0 1-.436-.436l-.805-1.577a3 3 0 0 0-3.596-1.49l-1.685.546a1 1 0 0 1-.616 0l-1.685-.545ZM6.76 11.757l1.414-1.414l2.828 2.829l5.657-5.657l1.415 1.414l-7.072 7.07l-4.242-4.242Z"/>`),
+		g.Group(children),
+	)
+}
+
+func VerifiedBadgeLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M10.007 2.104a3 3 0 0 0-3.595 1.49L5.606 5.17a1 1 0 0 1-.436.436l-1.577.806a3 3 0 0 0-1.49 3.595l.546 1.685a1 1 0 0 1 0 .616l-.545 1.685a3 3 0 0 0 1.49 3.595l1.576.806a1 1 0 0 1 .436.436l.806 1.577a3 3 0 0 0 3.595 1.49l1.685-.546a1 1 0 0 1 .616 0l1.685.545a3 3 0 0 0 3.595-1.489l.806-1.577a1 1 0 0 1 .436-.436l1.577-.805a3 3 0 0 0 1.49-3.596l-.546-1.685a1 1 0 0 1 0-.616l.545-1.685a3 3 0 0 0-1.489-3.595l-1.577-.806a1 1 0 0 1-.436-.436l-.805-1.577a3 3 0 0 0-3.596-1.49l-1.685.546a1 1 0 0 1-.616 0l-1.685-.545ZM8.193 4.503a1 1 0 0 1 1.198-.496l1.685.545a3 3 0 0 0 1.848 0l1.685-.545a1 1 0 0 1 1.198.496l.806 1.577a3 3 0 0 0 1.307 1.307l1.577.806a1 1 0 0 1 .497 1.198l-.546 1.685a3 3 0 0 0 0 1.848l.546 1.685a1 1 0 0 1-.497 1.198l-1.577.806a3 3 0 0 0-1.307 1.307l-.806 1.577a1 1 0 0 1-1.198.497l-1.685-.546a3 3 0 0 0-1.848 0l-1.685.546a1 1 0 0 1-1.198-.497l-.806-1.577a3 3 0 0 0-1.307-1.307l-1.577-.806a1 1 0 0 1-.496-1.198l.545-1.685a3 3 0 0 0 0-1.848l-.545-1.685a1 1 0 0 1 .496-1.198l1.577-.806A3 3 0 0 0 7.387 6.08l.806-1.577ZM6.76 11.757L11.002 16l7.071-7.071l-1.414-1.414l-5.657 5.657l-2.828-2.829l-1.414 1.414Z"/>`),
 		g.Group(children),
 	)
 }

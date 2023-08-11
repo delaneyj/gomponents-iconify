@@ -30,6 +30,8 @@ func IconFromName(name string) g.Node {
 	case "airConditionOpenLine": return AirConditionOpenLine()
 	case "airbnbFill": return AirbnbFill()
 	case "airbnbLine": return AirbnbLine()
+	case "airdropFill": return AirdropFill()
+	case "airdropLine": return AirdropLine()
 	case "airplaneFill": return AirplaneFill()
 	case "airplaneLine": return AirplaneLine()
 	case "airplayFill": return AirplayFill()
@@ -90,6 +92,10 @@ func IconFromName(name string) g.Node {
 	case "androidLine": return AndroidLine()
 	case "androidTwoFill": return AndroidTwoFill()
 	case "androidTwoLine": return AndroidTwoLine()
+	case "angelFill": return AngelFill()
+	case "angelLine": return AngelLine()
+	case "angryFill": return AngryFill()
+	case "angryLine": return AngryLine()
 	case "anniversaryFill": return AnniversaryFill()
 	case "anniversaryLine": return AnniversaryLine()
 	case "announcementFill": return AnnouncementFill()
@@ -104,14 +110,6 @@ func IconFromName(name string) g.Node {
 	case "appstoreLine": return AppstoreLine()
 	case "archiveFill": return ArchiveFill()
 	case "archiveLine": return ArchiveLine()
-	case "arowToDownFill": return ArowToDownFill()
-	case "arowToDownLine": return ArowToDownLine()
-	case "arowToLeftFill": return ArowToLeftFill()
-	case "arowToLeftLine": return ArowToLeftLine()
-	case "arowToRightFill": return ArowToRightFill()
-	case "arowToRightLine": return ArowToRightLine()
-	case "arowToUpFill": return ArowToUpFill()
-	case "arowToUpLine": return ArowToUpLine()
 	case "arrowDownCircleFill": return ArrowDownCircleFill()
 	case "arrowDownCircleLine": return ArrowDownCircleLine()
 	case "arrowDownFill": return ArrowDownFill()
@@ -140,12 +138,30 @@ func IconFromName(name string) g.Node {
 	case "arrowRightUpCircleLine": return ArrowRightUpCircleLine()
 	case "arrowRightUpFill": return ArrowRightUpFill()
 	case "arrowRightUpLine": return ArrowRightUpLine()
+	case "arrowToDownFill": return ArrowToDownFill()
+	case "arrowToDownLine": return ArrowToDownLine()
+	case "arrowToLeftFill": return ArrowToLeftFill()
+	case "arrowToLeftLine": return ArrowToLeftLine()
+	case "arrowToRightFill": return ArrowToRightFill()
+	case "arrowToRightLine": return ArrowToRightLine()
+	case "arrowToUpFill": return ArrowToUpFill()
+	case "arrowToUpLine": return ArrowToUpLine()
 	case "arrowUpCircleFill": return ArrowUpCircleFill()
 	case "arrowUpCircleLine": return ArrowUpCircleLine()
 	case "arrowUpFill": return ArrowUpFill()
 	case "arrowUpLine": return ArrowUpLine()
+	case "arrowsDownFill": return ArrowsDownFill()
+	case "arrowsDownLine": return ArrowsDownLine()
+	case "arrowsLeftFill": return ArrowsLeftFill()
+	case "arrowsLeftLine": return ArrowsLeftLine()
+	case "arrowsRightFill": return ArrowsRightFill()
+	case "arrowsRightLine": return ArrowsRightLine()
+	case "arrowsUpFill": return ArrowsUpFill()
+	case "arrowsUpLine": return ArrowsUpLine()
 	case "artboardFill": return ArtboardFill()
 	case "artboardLine": return ArtboardLine()
+	case "aspectRatioFill": return AspectRatioFill()
+	case "aspectRatioLine": return AspectRatioLine()
 	case "asteriskFill": return AsteriskFill()
 	case "asteriskLine": return AsteriskLine()
 	case "asteriskTwoFill": return AsteriskTwoFill()
@@ -166,6 +182,8 @@ func IconFromName(name string) g.Node {
 	case "avalancheAvaxLine": return AvalancheAvaxLine()
 	case "awardFill": return AwardFill()
 	case "awardLine": return AwardLine()
+	case "axeFill": return AxeFill()
+	case "axeLine": return AxeLine()
 	case "azSortAscendingLettersFill": return AzSortAscendingLettersFill()
 	case "azSortAscendingLettersLine": return AzSortAscendingLettersLine()
 	case "babyCarriageFill": return BabyCarriageFill()
@@ -228,6 +246,8 @@ func IconFromName(name string) g.Node {
 	case "batteryThreeLine": return BatteryThreeLine()
 	case "batteryTwoFill": return BatteryTwoFill()
 	case "batteryTwoLine": return BatteryTwoLine()
+	case "bearFill": return BearFill()
+	case "bearLine": return BearLine()
 	case "beardFill": return BeardFill()
 	case "beardLine": return BeardLine()
 	case "bedFill": return BedFill()
@@ -300,6 +320,8 @@ func IconFromName(name string) g.Node {
 	case "borderOuterLine": return BorderOuterLine()
 	case "borderRadiusFill": return BorderRadiusFill()
 	case "borderRadiusLine": return BorderRadiusLine()
+	case "borderRightFill": return BorderRightFill()
+	case "borderRightLine": return BorderRightLine()
 	case "borderTopFill": return BorderTopFill()
 	case "borderTopLine": return BorderTopLine()
 	case "borderVerticalFill": return BorderVerticalFill()
@@ -390,6 +412,8 @@ func IconFromName(name string) g.Node {
 	case "calendarWeekLine": return CalendarWeekLine()
 	case "camcorderFill": return CamcorderFill()
 	case "camcorderLine": return CamcorderLine()
+	case "camcorderThreeFill": return CamcorderThreeFill()
+	case "camcorderThreeLine": return CamcorderThreeLine()
 	case "camcorderTwoFill": return CamcorderTwoFill()
 	case "camcorderTwoLine": return CamcorderTwoLine()
 	case "cameraFill": return CameraFill()
@@ -436,6 +460,8 @@ func IconFromName(name string) g.Node {
 	case "cellphoneLine": return CellphoneLine()
 	case "cellphoneVibrationFill": return CellphoneVibrationFill()
 	case "cellphoneVibrationLine": return CellphoneVibrationLine()
+	case "celsiusFill": return CelsiusFill()
+	case "celsiusLine": return CelsiusLine()
 	case "certificateFill": return CertificateFill()
 	case "certificateLine": return CertificateLine()
 	case "certificateTwoFill": return CertificateTwoFill()
@@ -450,6 +476,8 @@ func IconFromName(name string) g.Node {
 	case "chartLineLine": return ChartLineLine()
 	case "chartPieFill": return ChartPieFill()
 	case "chartPieLine": return ChartPieLine()
+	case "chatFourFill": return ChatFourFill()
+	case "chatFourLine": return ChatFourLine()
 	case "chatOneFill": return ChatOneFill()
 	case "chatOneLine": return ChatOneLine()
 	case "chatThreeFill": return ChatThreeFill()
@@ -462,6 +490,10 @@ func IconFromName(name string) g.Node {
 	case "checkLine": return CheckLine()
 	case "checkTwoFill": return CheckTwoFill()
 	case "checkTwoLine": return CheckTwoLine()
+	case "checksFill": return ChecksFill()
+	case "checksLine": return ChecksLine()
+	case "chessFill": return ChessFill()
+	case "chessLine": return ChessLine()
 	case "chickenFill": return ChickenFill()
 	case "chickenLine": return ChickenLine()
 	case "chinesKnotFill": return ChinesKnotFill()
@@ -478,6 +510,8 @@ func IconFromName(name string) g.Node {
 	case "christmasHatLine": return ChristmasHatLine()
 	case "chromeFill": return ChromeFill()
 	case "chromeLine": return ChromeLine()
+	case "churchFill": return ChurchFill()
+	case "churchLine": return ChurchLine()
 	case "clapperboardFill": return ClapperboardFill()
 	case "clapperboardLine": return ClapperboardLine()
 	case "classifyFill": return ClassifyFill()
@@ -504,6 +538,8 @@ func IconFromName(name string) g.Node {
 	case "cloudLine": return CloudLine()
 	case "cloudSnowFill": return CloudSnowFill()
 	case "cloudSnowLine": return CloudSnowLine()
+	case "cloudWindyFill": return CloudWindyFill()
+	case "cloudWindyLine": return CloudWindyLine()
 	case "clubsFill": return ClubsFill()
 	case "clubsLine": return ClubsLine()
 	case "coatFill": return CoatFill()
@@ -534,6 +570,8 @@ func IconFromName(name string) g.Node {
 	case "commandLine": return CommandLine()
 	case "commentFill": return CommentFill()
 	case "commentLine": return CommentLine()
+	case "commentTwoFill": return CommentTwoFill()
+	case "commentTwoLine": return CommentTwoLine()
 	case "compassFill": return CompassFill()
 	case "compassLine": return CompassLine()
 	case "compassTwoFill": return CompassTwoFill()
@@ -544,6 +582,8 @@ func IconFromName(name string) g.Node {
 	case "computerCameraOffLine": return ComputerCameraOffLine()
 	case "computerFill": return ComputerFill()
 	case "computerLine": return ComputerLine()
+	case "confusedFill": return ConfusedFill()
+	case "confusedLine": return ConfusedLine()
 	case "contactsFill": return ContactsFill()
 	case "contactsLine": return ContactsLine()
 	case "cookieFill": return CookieFill()
@@ -716,6 +756,8 @@ func IconFromName(name string) g.Node {
 	case "dribbbleLine": return DribbbleLine()
 	case "drinkFill": return DrinkFill()
 	case "drinkLine": return DrinkLine()
+	case "drizzleFill": return DrizzleFill()
+	case "drizzleLine": return DrizzleLine()
 	case "droneFill": return DroneFill()
 	case "droneLine": return DroneLine()
 	case "dropFill": return DropFill()
@@ -727,9 +769,17 @@ func IconFromName(name string) g.Node {
 	case "earFill": return EarFill()
 	case "earLine": return EarLine()
 	case "earthFill": return EarthFill()
+	case "earthLatitudeFill": return EarthLatitudeFill()
+	case "earthLatitudeLine": return EarthLatitudeLine()
 	case "earthLine": return EarthLine()
+	case "earthLongitudeFill": return EarthLongitudeFill()
+	case "earthLongitudeLine": return EarthLongitudeLine()
+	case "earthTwoFill": return EarthTwoFill()
+	case "earthTwoLine": return EarthTwoLine()
 	case "ebikeFill": return EbikeFill()
 	case "ebikeLine": return EbikeLine()
+	case "edgeFill": return EdgeFill()
+	case "edgeLine": return EdgeLine()
 	case "editFill": return EditFill()
 	case "editLine": return EditLine()
 	case "editThreeFill": return EditThreeFill()
@@ -780,6 +830,8 @@ func IconFromName(name string) g.Node {
 	case "exitLine": return ExitLine()
 	case "expandPlayerFill": return ExpandPlayerFill()
 	case "expandPlayerLine": return ExpandPlayerLine()
+	case "exposureFill": return ExposureFill()
+	case "exposureLine": return ExposureLine()
 	case "externalLinkFill": return ExternalLinkFill()
 	case "externalLinkLine": return ExternalLinkLine()
 	case "eyeCloseFill": return EyeCloseFill()
@@ -802,6 +854,8 @@ func IconFromName(name string) g.Node {
 	case "faceidLine": return FaceidLine()
 	case "factoryFill": return FactoryFill()
 	case "factoryLine": return FactoryLine()
+	case "fahrenheitFill": return FahrenheitFill()
+	case "fahrenheitLine": return FahrenheitLine()
 	case "fanDirectionDownFill": return FanDirectionDownFill()
 	case "fanDirectionDownLine": return FanDirectionDownLine()
 	case "fanDirectionFrontFill": return FanDirectionFrontFill()
@@ -820,6 +874,8 @@ func IconFromName(name string) g.Node {
 	case "fatherChristmasLine": return FatherChristmasLine()
 	case "femaleFill": return FemaleFill()
 	case "femaleLine": return FemaleLine()
+	case "ferrisWheelFill": return FerrisWheelFill()
+	case "ferrisWheelLine": return FerrisWheelLine()
 	case "figmaFill": return FigmaFill()
 	case "figmaLine": return FigmaLine()
 	case "fileCertificateFill": return FileCertificateFill()
@@ -837,8 +893,8 @@ func IconFromName(name string) g.Node {
 	case "fileForbidLine": return FileForbidLine()
 	case "fileImportFill": return FileImportFill()
 	case "fileImportLine": return FileImportLine()
-	case "fileInforFill": return FileInforFill()
-	case "fileInforLine": return FileInforLine()
+	case "fileInfoFill": return FileInfoFill()
+	case "fileInfoLine": return FileInfoLine()
 	case "fileLine": return FileLine()
 	case "fileLockedFill": return FileLockedFill()
 	case "fileLockedLine": return FileLockedLine()
@@ -900,6 +956,8 @@ func IconFromName(name string) g.Node {
 	case "flagThreeLine": return FlagThreeLine()
 	case "flagTwoFill": return FlagTwoFill()
 	case "flagTwoLine": return FlagTwoLine()
+	case "flameFill": return FlameFill()
+	case "flameLine": return FlameLine()
 	case "flashFill": return FlashFill()
 	case "flashLine": return FlashLine()
 	case "flashlightFill": return FlashlightFill()
@@ -918,6 +976,8 @@ func IconFromName(name string) g.Node {
 	case "flipHorizontalLine": return FlipHorizontalLine()
 	case "flipVerticalFill": return FlipVerticalFill()
 	case "flipVerticalLine": return FlipVerticalLine()
+	case "floatingDustFill": return FloatingDustFill()
+	case "floatingDustLine": return FloatingDustLine()
 	case "flowerFill": return FlowerFill()
 	case "flowerFourFill": return FlowerFourFill()
 	case "flowerFourLine": return FlowerFourLine()
@@ -928,6 +988,8 @@ func IconFromName(name string) g.Node {
 	case "flowerTwoLine": return FlowerTwoLine()
 	case "flowerpotFill": return FlowerpotFill()
 	case "flowerpotLine": return FlowerpotLine()
+	case "fogFill": return FogFill()
+	case "fogLine": return FogLine()
 	case "folderCheckFill": return FolderCheckFill()
 	case "folderCheckLine": return FolderCheckLine()
 	case "folderDeleteFill": return FolderDeleteFill()
@@ -937,8 +999,8 @@ func IconFromName(name string) g.Node {
 	case "folderFill": return FolderFill()
 	case "folderForbidFill": return FolderForbidFill()
 	case "folderForbidLine": return FolderForbidLine()
-	case "folderInforFill": return FolderInforFill()
-	case "folderInforLine": return FolderInforLine()
+	case "folderInfoFill": return FolderInfoFill()
+	case "folderInfoLine": return FolderInfoLine()
 	case "folderLine": return FolderLine()
 	case "folderLockedFill": return FolderLockedFill()
 	case "folderLockedLine": return FolderLockedLine()
@@ -1052,6 +1114,8 @@ func IconFromName(name string) g.Node {
 	case "googlePlayLine": return GooglePlayLine()
 	case "governmentFill": return GovernmentFill()
 	case "governmentLine": return GovernmentLine()
+	case "gradienterFill": return GradienterFill()
+	case "gradienterLine": return GradienterLine()
 	case "grassFill": return GrassFill()
 	case "grassLine": return GrassLine()
 	case "greatwallFill": return GreatwallFill()
@@ -1062,10 +1126,16 @@ func IconFromName(name string) g.Node {
 	case "gridTwoLine": return GridTwoLine()
 	case "groupFill": return GroupFill()
 	case "groupLine": return GroupLine()
+	case "hailFill": return HailFill()
+	case "hailLine": return HailLine()
 	case "hairFill": return HairFill()
 	case "hairLine": return HairLine()
 	case "hairTwoFill": return HairTwoFill()
 	case "hairTwoLine": return HairTwoLine()
+	case "hammerFill": return HammerFill()
+	case "hammerLine": return HammerLine()
+	case "handCardFill": return HandCardFill()
+	case "handCardLine": return HandCardLine()
 	case "handFill": return HandFill()
 	case "handFingerFill": return HandFingerFill()
 	case "handFingerLine": return HandFingerLine()
@@ -1073,17 +1143,23 @@ func IconFromName(name string) g.Node {
 	case "handFingerTwoLine": return HandFingerTwoLine()
 	case "handGrabFill": return HandGrabFill()
 	case "handGrabLine": return HandGrabLine()
+	case "handHeartFill": return HandHeartFill()
+	case "handHeartLine": return HandHeartLine()
 	case "handLine": return HandLine()
 	case "handTwoFingersFill": return HandTwoFingersFill()
 	case "handTwoFingersLine": return HandTwoFingersLine()
 	case "handsClappingFill": return HandsClappingFill()
 	case "handsClappingLine": return HandsClappingLine()
+	case "happyFill": return HappyFill()
+	case "happyLine": return HappyLine()
 	case "hashtagFill": return HashtagFill()
 	case "hashtagLine": return HashtagLine()
 	case "hatFill": return HatFill()
 	case "hatLine": return HatLine()
 	case "hatTwoFill": return HatTwoFill()
 	case "hatTwoLine": return HatTwoLine()
+	case "hazeFill": return HazeFill()
+	case "hazeLine": return HazeLine()
 	case "headFill": return HeadFill()
 	case "headLine": return HeadLine()
 	case "headingOneFill": return HeadingOneFill()
@@ -1096,12 +1172,18 @@ func IconFromName(name string) g.Node {
 	case "headphoneLine": return HeadphoneLine()
 	case "headphoneTwoFill": return HeadphoneTwoFill()
 	case "headphoneTwoLine": return HeadphoneTwoLine()
+	case "heartCrackFill": return HeartCrackFill()
+	case "heartCrackLine": return HeartCrackLine()
 	case "heartFill": return HeartFill()
 	case "heartHalfFill": return HeartHalfFill()
 	case "heartHalfLine": return HeartHalfLine()
 	case "heartLine": return HeartLine()
 	case "heartbeatFill": return HeartbeatFill()
 	case "heartbeatLine": return HeartbeatLine()
+	case "heavyRainFill": return HeavyRainFill()
+	case "heavyRainLine": return HeavyRainLine()
+	case "heavySnowFill": return HeavySnowFill()
+	case "heavySnowLine": return HeavySnowLine()
 	case "hexagonFill": return HexagonFill()
 	case "hexagonLine": return HexagonLine()
 	case "hightBeamHeadlightsFill": return HightBeamHeadlightsFill()
@@ -1110,6 +1192,8 @@ func IconFromName(name string) g.Node {
 	case "historyLine": return HistoryLine()
 	case "historyTwoFill": return HistoryTwoFill()
 	case "historyTwoLine": return HistoryTwoLine()
+	case "hoeFill": return HoeFill()
+	case "hoeLine": return HoeLine()
 	case "homeFiveFill": return HomeFiveFill()
 	case "homeFiveLine": return HomeFiveLine()
 	case "homeFourFill": return HomeFourFill()
@@ -1122,6 +1206,8 @@ func IconFromName(name string) g.Node {
 	case "homeThreeLine": return HomeThreeLine()
 	case "homeTwoFill": return HomeTwoFill()
 	case "homeTwoLine": return HomeTwoLine()
+	case "homeWifiFill": return HomeWifiFill()
+	case "homeWifiLine": return HomeWifiLine()
 	case "hoodFill": return HoodFill()
 	case "hoodLine": return HoodLine()
 	case "hornFill": return HornFill()
@@ -1130,6 +1216,8 @@ func IconFromName(name string) g.Node {
 	case "hospitalLine": return HospitalLine()
 	case "hotkeyFill": return HotkeyFill()
 	case "hotkeyLine": return HotkeyLine()
+	case "hoursFill": return HoursFill()
+	case "hoursLine": return HoursLine()
 	case "iceCreamFill": return IceCreamFill()
 	case "iceCreamLine": return IceCreamLine()
 	case "iceCreamTwoFill": return IceCreamTwoFill()
@@ -1152,6 +1240,8 @@ func IconFromName(name string) g.Node {
 	case "informationLine": return InformationLine()
 	case "insFill": return InsFill()
 	case "insLine": return InsLine()
+	case "inspectFill": return InspectFill()
+	case "inspectLine": return InspectLine()
 	case "inventoryFill": return InventoryFill()
 	case "inventoryLine": return InventoryLine()
 	case "inviteFill": return InviteFill()
@@ -1168,6 +1258,8 @@ func IconFromName(name string) g.Node {
 	case "keyTwoLine": return KeyTwoLine()
 	case "keyboardFill": return KeyboardFill()
 	case "keyboardLine": return KeyboardLine()
+	case "keyboardTwoFill": return KeyboardTwoFill()
+	case "keyboardTwoLine": return KeyboardTwoLine()
 	case "keyholeFill": return KeyholeFill()
 	case "keyholeLine": return KeyholeLine()
 	case "kingkeyOneHundredTowerFill": return KingkeyOneHundredTowerFill()
@@ -1192,6 +1284,8 @@ func IconFromName(name string) g.Node {
 	case "largeArrowRightLine": return LargeArrowRightLine()
 	case "largeArrowUpFill": return LargeArrowUpFill()
 	case "largeArrowUpLine": return LargeArrowUpLine()
+	case "layerFill": return LayerFill()
+	case "layerLine": return LayerLine()
 	case "layoutBottomFill": return LayoutBottomFill()
 	case "layoutBottomLine": return LayoutBottomLine()
 	case "layoutEightFill": return LayoutEightFill()
@@ -1240,6 +1334,8 @@ func IconFromName(name string) g.Node {
 	case "lifebuoyLine": return LifebuoyLine()
 	case "lightFill": return LightFill()
 	case "lightLine": return LightLine()
+	case "lightSnowFill": return LightSnowFill()
+	case "lightSnowLine": return LightSnowLine()
 	case "lighthouseFill": return LighthouseFill()
 	case "lighthouseLine": return LighthouseLine()
 	case "lightningFill": return LightningFill()
@@ -1248,6 +1344,8 @@ func IconFromName(name string) g.Node {
 	case "lineAppLine": return LineAppLine()
 	case "lineHeightFill": return LineHeightFill()
 	case "lineHeightLine": return LineHeightLine()
+	case "linearFill": return LinearFill()
+	case "linearLine": return LinearLine()
 	case "linkFill": return LinkFill()
 	case "linkLine": return LinkLine()
 	case "linkThreeFill": return LinkThreeFill()
@@ -1256,6 +1354,8 @@ func IconFromName(name string) g.Node {
 	case "linkTwoLine": return LinkTwoLine()
 	case "linkedinFill": return LinkedinFill()
 	case "linkedinLine": return LinkedinLine()
+	case "linuxFill": return LinuxFill()
+	case "linuxLine": return LinuxLine()
 	case "listCheckFill": return ListCheckFill()
 	case "listCheckLine": return ListCheckLine()
 	case "listCheckThreeFill": return ListCheckThreeFill()
@@ -1288,6 +1388,14 @@ func IconFromName(name string) g.Node {
 	case "lockLine": return LockLine()
 	case "lollipopFill": return LollipopFill()
 	case "lollipopLine": return LollipopLine()
+	case "lookDownFill": return LookDownFill()
+	case "lookDownLine": return LookDownLine()
+	case "lookLeftFill": return LookLeftFill()
+	case "lookLeftLine": return LookLeftLine()
+	case "lookRightFill": return LookRightFill()
+	case "lookRightLine": return LookRightLine()
+	case "lookUpFill": return LookUpFill()
+	case "lookUpLine": return LookUpLine()
 	case "lotusFill": return LotusFill()
 	case "lotusLine": return LotusLine()
 	case "lowBeamHeadlightsFill": return LowBeamHeadlightsFill()
@@ -1356,6 +1464,8 @@ func IconFromName(name string) g.Node {
 	case "micOffLine": return MicOffLine()
 	case "micTwoFill": return MicTwoFill()
 	case "micTwoLine": return MicTwoLine()
+	case "mickeymouseFill": return MickeymouseFill()
+	case "mickeymouseLine": return MickeymouseLine()
 	case "microphoneFill": return MicrophoneFill()
 	case "microphoneLine": return MicrophoneLine()
 	case "microscopeFill": return MicroscopeFill()
@@ -1376,6 +1486,8 @@ func IconFromName(name string) g.Node {
 	case "miyajimaToriiLine": return MiyajimaToriiLine()
 	case "moaiFill": return MoaiFill()
 	case "moaiLine": return MoaiLine()
+	case "moderateSnowFill": return ModerateSnowFill()
+	case "moderateSnowLine": return ModerateSnowLine()
 	case "momentFill": return MomentFill()
 	case "momentLine": return MomentLine()
 	case "monumentFill": return MonumentFill()
@@ -1383,6 +1495,8 @@ func IconFromName(name string) g.Node {
 	case "moonCloudyFill": return MoonCloudyFill()
 	case "moonCloudyLine": return MoonCloudyLine()
 	case "moonFill": return MoonFill()
+	case "moonFogFill": return MoonFogFill()
+	case "moonFogLine": return MoonFogLine()
 	case "moonLine": return MoonLine()
 	case "moonStarsFill": return MoonStarsFill()
 	case "moonStarsLine": return MoonStarsLine()
@@ -1414,6 +1528,8 @@ func IconFromName(name string) g.Node {
 	case "musicThreeLine": return MusicThreeLine()
 	case "musicTwoFill": return MusicTwoFill()
 	case "musicTwoLine": return MusicTwoLine()
+	case "naFill": return NaFill()
+	case "naLine": return NaLine()
 	case "navigationFill": return NavigationFill()
 	case "navigationLine": return NavigationLine()
 	case "necktieFill": return NecktieFill()
@@ -1436,12 +1552,16 @@ func IconFromName(name string) g.Node {
 	case "notificationLine": return NotificationLine()
 	case "notificationOffFill": return NotificationOffFill()
 	case "notificationOffLine": return NotificationOffLine()
+	case "notionFill": return NotionFill()
+	case "notionLine": return NotionLine()
 	case "octagonFill": return OctagonFill()
 	case "octagonLine": return OctagonLine()
 	case "oilFill": return OilFill()
 	case "oilLine": return OilLine()
 	case "omegaFill": return OmegaFill()
 	case "omegaLine": return OmegaLine()
+	case "omgFill": return OmgFill()
+	case "omgLine": return OmgLine()
 	case "openDoorFill": return OpenDoorFill()
 	case "openDoorLine": return OpenDoorLine()
 	case "openaiFill": return OpenaiFill()
@@ -1464,6 +1584,8 @@ func IconFromName(name string) g.Node {
 	case "paletteLine": return PaletteLine()
 	case "paletteTwoFill": return PaletteTwoFill()
 	case "paletteTwoLine": return PaletteTwoLine()
+	case "panoramasFill": return PanoramasFill()
+	case "panoramasLine": return PanoramasLine()
 	case "paperFill": return PaperFill()
 	case "paperLine": return PaperLine()
 	case "parachuteFill": return ParachuteFill()
@@ -1488,6 +1610,8 @@ func IconFromName(name string) g.Node {
 	case "pauseLine": return PauseLine()
 	case "pavilionFill": return PavilionFill()
 	case "pavilionLine": return PavilionLine()
+	case "pawFill": return PawFill()
+	case "pawLine": return PawLine()
 	case "paypalFill": return PaypalFill()
 	case "paypalLine": return PaypalLine()
 	case "pdfFill": return PdfFill()
@@ -1528,6 +1652,8 @@ func IconFromName(name string) g.Node {
 	case "picLine": return PicLine()
 	case "picTwoFill": return PicTwoFill()
 	case "picTwoLine": return PicTwoLine()
+	case "pickaxFill": return PickaxFill()
+	case "pickaxLine": return PickaxLine()
 	case "pigFill": return PigFill()
 	case "pigLine": return PigLine()
 	case "pigMoneyFill": return PigMoneyFill()
@@ -1566,6 +1692,8 @@ func IconFromName(name string) g.Node {
 	case "polkadotDotLine": return PolkadotDotLine()
 	case "polygonFill": return PolygonFill()
 	case "polygonLine": return PolygonLine()
+	case "potFill": return PotFill()
+	case "potLine": return PotLine()
 	case "powerFill": return PowerFill()
 	case "powerLine": return PowerLine()
 	case "pptFill": return PptFill()
@@ -1582,6 +1710,8 @@ func IconFromName(name string) g.Node {
 	case "pumpkinLanternFill": return PumpkinLanternFill()
 	case "pumpkinLanternLine": return PumpkinLanternLine()
 	case "pumpkinLine": return PumpkinLine()
+	case "puzzledFill": return PuzzledFill()
+	case "puzzledLine": return PuzzledLine()
 	case "qqFill": return QqFill()
 	case "qqLine": return QqLine()
 	case "qrcodeFill": return QrcodeFill()
@@ -1596,6 +1726,8 @@ func IconFromName(name string) g.Node {
 	case "quoteLeftLine": return QuoteLeftLine()
 	case "quoteRightFill": return QuoteRightFill()
 	case "quoteRightLine": return QuoteRightLine()
+	case "rabbitFill": return RabbitFill()
+	case "rabbitLine": return RabbitLine()
 	case "radarFill": return RadarFill()
 	case "radarLine": return RadarLine()
 	case "radarTwoFill": return RadarTwoFill()
@@ -1604,6 +1736,10 @@ func IconFromName(name string) g.Node {
 	case "radioLine": return RadioLine()
 	case "rainFill": return RainFill()
 	case "rainLine": return RainLine()
+	case "rainbowFill": return RainbowFill()
+	case "rainbowLine": return RainbowLine()
+	case "rakeFill": return RakeFill()
+	case "rakeLine": return RakeLine()
 	case "rareFogLightsFill": return RareFogLightsFill()
 	case "rareFogLightsLine": return RareFogLightsLine()
 	case "reactFill": return ReactFill()
@@ -1686,6 +1822,10 @@ func IconFromName(name string) g.Node {
 	case "rulerLine": return RulerLine()
 	case "runFill": return RunFill()
 	case "runLine": return RunLine()
+	case "sadFill": return SadFill()
+	case "sadLine": return SadLine()
+	case "safariFill": return SafariFill()
+	case "safariLine": return SafariLine()
 	case "safeAlertFill": return SafeAlertFill()
 	case "safeAlertLine": return SafeAlertLine()
 	case "safeBoxFill": return SafeBoxFill()
@@ -1706,6 +1846,8 @@ func IconFromName(name string) g.Node {
 	case "saleLine": return SaleLine()
 	case "sandglassFill": return SandglassFill()
 	case "sandglassLine": return SandglassLine()
+	case "sandstormFill": return SandstormFill()
+	case "sandstormLine": return SandstormLine()
 	case "saveFill": return SaveFill()
 	case "saveLine": return SaveLine()
 	case "saveTwoFill": return SaveTwoFill()
@@ -1772,6 +1914,8 @@ func IconFromName(name string) g.Node {
 	case "settingsThreeLine": return SettingsThreeLine()
 	case "settingsTwoFill": return SettingsTwoFill()
 	case "settingsTwoLine": return SettingsTwoLine()
+	case "shadowFill": return ShadowFill()
+	case "shadowLine": return ShadowLine()
 	case "shareForwardFill": return ShareForwardFill()
 	case "shareForwardLine": return ShareForwardLine()
 	case "shareThreeFill": return ShareThreeFill()
@@ -1802,12 +1946,22 @@ func IconFromName(name string) g.Node {
 	case "shoppingCartTwoLine": return ShoppingCartTwoLine()
 	case "shortsFill": return ShortsFill()
 	case "shortsLine": return ShortsLine()
+	case "shovelFill": return ShovelFill()
+	case "shovelLine": return ShovelLine()
+	case "showersFill": return ShowersFill()
+	case "showersLine": return ShowersLine()
 	case "shuffleFill": return ShuffleFill()
 	case "shuffleLine": return ShuffleLine()
 	case "shuffleTwoFill": return ShuffleTwoFill()
 	case "shuffleTwoLine": return ShuffleTwoLine()
+	case "sickFill": return SickFill()
+	case "sickLine": return SickLine()
+	case "signalFill": return SignalFill()
+	case "signalLine": return SignalLine()
 	case "signatureFill": return SignatureFill()
 	case "signatureLine": return SignatureLine()
+	case "silentFill": return SilentFill()
+	case "silentLine": return SilentLine()
 	case "sitemapFill": return SitemapFill()
 	case "sitemapLine": return SitemapLine()
 	case "skateboardFill": return SkateboardFill()
@@ -1830,6 +1984,10 @@ func IconFromName(name string) g.Node {
 	case "snowLine": return SnowLine()
 	case "snowmanFill": return SnowmanFill()
 	case "snowmanLine": return SnowmanLine()
+	case "snowstormFill": return SnowstormFill()
+	case "snowstormLine": return SnowstormLine()
+	case "sobFill": return SobFill()
+	case "sobLine": return SobLine()
 	case "sockFill": return SockFill()
 	case "sockLine": return SockLine()
 	case "sofaFill": return SofaFill()
@@ -1840,6 +1998,8 @@ func IconFromName(name string) g.Node {
 	case "sortAscendingLine": return SortAscendingLine()
 	case "sortDescendingFill": return SortDescendingFill()
 	case "sortDescendingLine": return SortDescendingLine()
+	case "spaceFill": return SpaceFill()
+	case "spaceLine": return SpaceLine()
 	case "spacingHorizontalFill": return SpacingHorizontalFill()
 	case "spacingHorizontalLine": return SpacingHorizontalLine()
 	case "spacingVerticalFill": return SpacingVerticalFill()
@@ -1848,6 +2008,8 @@ func IconFromName(name string) g.Node {
 	case "spadeLine": return SpadeLine()
 	case "sparklesFill": return SparklesFill()
 	case "sparklesLine": return SparklesLine()
+	case "sparklesTwoFill": return SparklesTwoFill()
+	case "sparklesTwoLine": return SparklesTwoLine()
 	case "speakerFill": return SpeakerFill()
 	case "speakerLine": return SpeakerLine()
 	case "speechFill": return SpeechFill()
@@ -1901,6 +2063,8 @@ func IconFromName(name string) g.Node {
 	case "sunCloudyFill": return SunCloudyFill()
 	case "sunCloudyLine": return SunCloudyLine()
 	case "sunFill": return SunFill()
+	case "sunFogFill": return SunFogFill()
+	case "sunFogLine": return SunFogLine()
 	case "sunLine": return SunLine()
 	case "sunriseFill": return SunriseFill()
 	case "sunriseLine": return SunriseLine()
@@ -1908,6 +2072,10 @@ func IconFromName(name string) g.Node {
 	case "sunsetLine": return SunsetLine()
 	case "surfboardFill": return SurfboardFill()
 	case "surfboardLine": return SurfboardLine()
+	case "surpriseFill": return SurpriseFill()
+	case "surpriseLine": return SurpriseLine()
+	case "sweatsFill": return SweatsFill()
+	case "sweatsLine": return SweatsLine()
 	case "swimmingPoolFill": return SwimmingPoolFill()
 	case "swimmingPoolLine": return SwimmingPoolLine()
 	case "switchFill": return SwitchFill()
@@ -1936,6 +2104,8 @@ func IconFromName(name string) g.Node {
 	case "taipeiOneHundredOneLine": return TaipeiOneHundredOneLine()
 	case "tajMahalFill": return TajMahalFill()
 	case "tajMahalLine": return TajMahalLine()
+	case "tankFill": return TankFill()
+	case "tankLine": return TankLine()
 	case "targetFill": return TargetFill()
 	case "targetLine": return TargetLine()
 	case "taskFill": return TaskFill()
@@ -1956,6 +2126,8 @@ func IconFromName(name string) g.Node {
 	case "terminalBoxLine": return TerminalBoxLine()
 	case "terminalFill": return TerminalFill()
 	case "terminalLine": return TerminalLine()
+	case "terrorFill": return TerrorFill()
+	case "terrorLine": return TerrorLine()
 	case "tetherUsdtFill": return TetherUsdtFill()
 	case "tetherUsdtLine": return TetherUsdtLine()
 	case "textColorFill": return TextColorFill()
@@ -1974,6 +2146,10 @@ func IconFromName(name string) g.Node {
 	case "thumbUpLine": return ThumbUpLine()
 	case "thumbUpTwoFill": return ThumbUpTwoFill()
 	case "thumbUpTwoLine": return ThumbUpTwoLine()
+	case "thunderstormFill": return ThunderstormFill()
+	case "thunderstormLine": return ThunderstormLine()
+	case "ticketFill": return TicketFill()
+	case "ticketLine": return TicketLine()
 	case "tiktokFill": return TiktokFill()
 	case "tiktokLine": return TiktokLine()
 	case "timeFill": return TimeFill()
@@ -1990,12 +2166,20 @@ func IconFromName(name string) g.Node {
 	case "toggleRightTwoLine": return ToggleRightTwoLine()
 	case "toiletPaperFill": return ToiletPaperFill()
 	case "toiletPaperLine": return ToiletPaperLine()
+	case "tongueFill": return TongueFill()
+	case "tongueLine": return TongueLine()
 	case "toolFill": return ToolFill()
 	case "toolLine": return ToolLine()
+	case "tornadoFill": return TornadoFill()
+	case "tornadoLine": return TornadoLine()
+	case "tornadoTwoFill": return TornadoTwoFill()
+	case "tornadoTwoLine": return TornadoTwoLine()
 	case "towerFill": return TowerFill()
 	case "towerLine": return TowerLine()
 	case "toxophilyFill": return ToxophilyFill()
 	case "toxophilyLine": return ToxophilyLine()
+	case "toyHorseFill": return ToyHorseFill()
+	case "toyHorseLine": return ToyHorseLine()
 	case "trafficConeFill": return TrafficConeFill()
 	case "trafficConeLine": return TrafficConeLine()
 	case "trafficLightsFill": return TrafficLightsFill()
@@ -2044,6 +2228,8 @@ func IconFromName(name string) g.Node {
 	case "truckLine": return TruckLine()
 	case "trunkFill": return TrunkFill()
 	case "trunkLine": return TrunkLine()
+	case "tunnelFill": return TunnelFill()
+	case "tunnelLine": return TunnelLine()
 	case "tvOneFill": return TvOneFill()
 	case "tvOneLine": return TvOneLine()
 	case "tvToweFill": return TvToweFill()
@@ -2062,8 +2248,14 @@ func IconFromName(name string) g.Node {
 	case "umbrellaLine": return UmbrellaLine()
 	case "umbrellaTwoFill": return UmbrellaTwoFill()
 	case "umbrellaTwoLine": return UmbrellaTwoLine()
+	case "unarchiveFill": return UnarchiveFill()
+	case "unarchiveLine": return UnarchiveLine()
 	case "underlineFill": return UnderlineFill()
 	case "underlineLine": return UnderlineLine()
+	case "unhappyDizzyFill": return UnhappyDizzyFill()
+	case "unhappyDizzyLine": return UnhappyDizzyLine()
+	case "unhappyFill": return UnhappyFill()
+	case "unhappyLine": return UnhappyLine()
 	case "unlinkFill": return UnlinkFill()
 	case "unlinkLine": return UnlinkLine()
 	case "unlinkTwoFill": return UnlinkTwoFill()
@@ -2088,20 +2280,56 @@ func IconFromName(name string) g.Node {
 	case "usdCoinUsdcLine": return UsdCoinUsdcLine()
 	case "userAddFill": return UserAddFill()
 	case "userAddLine": return UserAddLine()
+	case "userAddTwoFill": return UserAddTwoFill()
+	case "userAddTwoLine": return UserAddTwoLine()
+	case "userEditFill": return UserEditFill()
+	case "userEditLine": return UserEditLine()
 	case "userFiveFill": return UserFiveFill()
 	case "userFiveLine": return UserFiveLine()
 	case "userFollowFill": return UserFollowFill()
 	case "userFollowLine": return UserFollowLine()
+	case "userFollowTwoFill": return UserFollowTwoFill()
+	case "userFollowTwoLine": return UserFollowTwoLine()
+	case "userForbidFill": return UserForbidFill()
+	case "userForbidLine": return UserForbidLine()
 	case "userFourFill": return UserFourFill()
 	case "userFourLine": return UserFourLine()
+	case "userHeartFill": return UserHeartFill()
+	case "userHeartLine": return UserHeartLine()
+	case "userHideFill": return UserHideFill()
+	case "userHideLine": return UserHideLine()
+	case "userInfoFill": return UserInfoFill()
+	case "userInfoLine": return UserInfoLine()
+	case "userLockFill": return UserLockFill()
+	case "userLockLine": return UserLockLine()
 	case "userOneFill": return UserOneFill()
 	case "userOneLine": return UserOneLine()
+	case "userPinFill": return UserPinFill()
+	case "userPinLine": return UserPinLine()
+	case "userQuestionFill": return UserQuestionFill()
+	case "userQuestionLine": return UserQuestionLine()
 	case "userRemoveFill": return UserRemoveFill()
 	case "userRemoveLine": return UserRemoveLine()
+	case "userRemoveTwoFill": return UserRemoveTwoFill()
+	case "userRemoveTwoLine": return UserRemoveTwoLine()
+	case "userSearchFill": return UserSearchFill()
+	case "userSearchLine": return UserSearchLine()
+	case "userSecurityFill": return UserSecurityFill()
+	case "userSecurityLine": return UserSecurityLine()
+	case "userSettingFill": return UserSettingFill()
+	case "userSettingLine": return UserSettingLine()
+	case "userStarFill": return UserStarFill()
+	case "userStarLine": return UserStarLine()
 	case "userThreeFill": return UserThreeFill()
 	case "userThreeLine": return UserThreeLine()
 	case "userTwoFill": return UserTwoFill()
 	case "userTwoLine": return UserTwoLine()
+	case "userVisibleFill": return UserVisibleFill()
+	case "userVisibleLine": return UserVisibleLine()
+	case "userWarningFill": return UserWarningFill()
+	case "userWarningLine": return UserWarningLine()
+	case "userXFill": return UserXFill()
+	case "userXLine": return UserXLine()
 	case "vectorBezierFill": return VectorBezierFill()
 	case "vectorBezierLine": return VectorBezierLine()
 	case "vectorBezierThreeFill": return VectorBezierThreeFill()
@@ -2114,6 +2342,8 @@ func IconFromName(name string) g.Node {
 	case "versionLine": return VersionLine()
 	case "vestFill": return VestFill()
 	case "vestLine": return VestLine()
+	case "viberMessengerFill": return ViberMessengerFill()
+	case "viberMessengerLine": return ViberMessengerLine()
 	case "videoFill": return VideoFill()
 	case "videoLine": return VideoLine()
 	case "vipFourFill": return VipFourFill()
@@ -2126,10 +2356,14 @@ func IconFromName(name string) g.Node {
 	case "vipTwoLine": return VipTwoLine()
 	case "visaFill": return VisaFill()
 	case "visaLine": return VisaLine()
+	case "visonProFill": return VisonProFill()
+	case "visonProLine": return VisonProLine()
 	case "vkontakteFill": return VkontakteFill()
 	case "vkontakteLine": return VkontakteLine()
 	case "voiceFill": return VoiceFill()
 	case "voiceLine": return VoiceLine()
+	case "voiceTwoFill": return VoiceTwoFill()
+	case "voiceTwoLine": return VoiceTwoLine()
 	case "volleyballFill": return VolleyballFill()
 	case "volleyballLine": return VolleyballLine()
 	case "volumeFill": return VolumeFill()
@@ -2172,6 +2406,8 @@ func IconFromName(name string) g.Node {
 	case "webLine": return WebLine()
 	case "wechatFill": return WechatFill()
 	case "wechatLine": return WechatLine()
+	case "wechatPayFill": return WechatPayFill()
+	case "wechatPayLine": return WechatPayLine()
 	case "weiboFill": return WeiboFill()
 	case "weiboLine": return WeiboLine()
 	case "whatsappFill": return WhatsappFill()
@@ -2200,12 +2436,16 @@ func IconFromName(name string) g.Node {
 	case "worldTwoLine": return WorldTwoLine()
 	case "wreathFill": return WreathFill()
 	case "wreathLine": return WreathLine()
+	case "xSkewFill": return XSkewFill()
+	case "xSkewLine": return XSkewLine()
 	case "xboxFill": return XboxFill()
 	case "xboxLine": return XboxLine()
 	case "xlsFill": return XlsFill()
 	case "xlsLine": return XlsLine()
 	case "xrpFill": return XrpFill()
 	case "xrpLine": return XrpLine()
+	case "ySkewFill": return YSkewFill()
+	case "ySkewLine": return YSkewLine()
 	case "yinyangFill": return YinyangFill()
 	case "yinyangLine": return YinyangLine()
 	case "youtubeFill": return YoutubeFill()
@@ -2419,6 +2659,26 @@ func AirbnbLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2.065c.992 0 1.899.443 2.678 1.163c1.46 1.349 2.772 3.697 3.843 6.043c1.089 2.385 1.994 4.914 2.6 6.749c.672 2.033-.207 4.198-2.004 5.276a4.634 4.634 0 0 1-5.876-.914A417.1 417.1 0 0 1 12 18.955c-.424.49-.848.977-1.242 1.427a4.634 4.634 0 0 1-5.875.914c-1.797-1.078-2.676-3.243-2.004-5.276c.606-1.835 1.511-4.364 2.6-6.749C6.55 6.925 7.86 4.577 9.32 3.228c.78-.72 1.687-1.163 2.679-1.163Zm1.316 15.354c.63-.745 1.17-1.401 1.484-1.82c.94-1.253 1.181-2.85.714-4.18c-.486-1.384-1.727-2.42-3.514-2.42c-1.787 0-3.028 1.036-3.514 2.42c-.467 1.33-.227 2.927.714 4.18c.313.419.853 1.075 1.484 1.82c-.48.556-.972 1.12-1.43 1.646a2.634 2.634 0 0 1-3.342.516c-1.034-.62-1.498-1.832-1.134-2.934c.595-1.8 1.474-4.254 2.52-6.545c1.063-2.33 2.238-4.35 3.38-5.405c.516-.476.961-.632 1.322-.632c.36 0 .805.156 1.322.632c1.142 1.055 2.316 3.076 3.38 5.405c1.046 2.291 1.925 4.745 2.52 6.545c.364 1.102-.1 2.313-1.134 2.934a2.634 2.634 0 0 1-3.341-.516c-.46-.525-.951-1.09-1.431-1.646ZM12 15.877a39.115 39.115 0 0 1-1.2-1.477c-.56-.746-.663-1.649-.427-2.319C10.59 11.465 11.099 11 12 11c.9 0 1.41.464 1.627 1.082c.235.67.132 1.572-.427 2.318a38.43 38.43 0 0 1-1.2 1.477Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func AirdropFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 4.5a7.5 7.5 0 0 0-3.354 14.21a1.5 1.5 0 1 1-1.344 2.683A10.5 10.5 0 0 1 1.5 12C1.5 6.201 6.201 1.5 12 1.5S22.5 6.201 22.5 12a10.5 10.5 0 0 1-5.802 9.393a1.5 1.5 0 0 1-1.344-2.683A7.5 7.5 0 0 0 12 4.5Zm0 4a3.5 3.5 0 0 0-1.565 6.632a1.5 1.5 0 0 1-1.343 2.682a6.5 6.5 0 1 1 5.817 0a1.5 1.5 0 1 1-1.344-2.682A3.5 3.5 0 0 0 12 8.5ZM9.5 12a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func AirdropLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 4a8 8 0 0 0-3.578 15.157a1 1 0 0 1-.896 1.789A10 10 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10a10 10 0 0 1-5.526 8.946a1 1 0 1 1-.896-1.789A8 8 0 0 0 12 4Zm0 4a4 4 0 0 0-1.789 7.579a1 1 0 0 1-.895 1.788a6 6 0 1 1 5.369 0a1 1 0 0 1-.896-1.788A4 4 0 0 0 12 8Zm-2 4a2 2 0 1 1 4 0a2 2 0 0 1-4 0Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -3023,6 +3283,46 @@ func AndroidTwoLine(children ...g.Node) g.Node {
 	)
 }
 
+func AngelFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c2.536 0 4.862.228 6.58.61c.852.189 1.61.428 2.178.726c.283.15.569.338.795.584c.23.25.447.616.447 1.08c0 .464-.216.83-.447 1.08a2.919 2.919 0 0 1-.795.584a4.81 4.81 0 0 1-.23.112A9.953 9.953 0 0 1 22 12c0 5.523-4.477 10-10 10S2 17.523 2 12c0-1.915.538-3.703 1.471-5.224a4.878 4.878 0 0 1-.229-.112a2.919 2.919 0 0 1-.795-.584C2.217 5.83 2 5.464 2 5c0-.464.216-.83.447-1.08c.226-.246.512-.435.795-.584c.569-.298 1.326-.537 2.177-.726C7.138 2.228 9.464 2 12 2Zm1.984 13.25c-.53.468-1.223.75-1.984.75a2.985 2.985 0 0 1-1.984-.75a1 1 0 1 0-1.324 1.5A4.987 4.987 0 0 0 12 18a4.985 4.985 0 0 0 3.308-1.25a1 1 0 0 0-1.324-1.5ZM8.5 10c-1.087 0-1.958.68-2.394 1.552a1 1 0 0 0 1.73.997l.058-.101c.162-.324.41-.448.606-.448c.17 0 .382.095.541.336l.065.112a1 1 0 1 0 1.788-.896C10.457 10.681 9.587 10 8.5 10Zm7 0c-1.087 0-1.957.68-2.394 1.552a1 1 0 0 0 1.73.997l.058-.101c.162-.324.41-.448.606-.448c.17 0 .382.095.541.336l.065.112a1 1 0 1 0 1.788-.896C17.458 10.681 16.587 10 15.5 10ZM12 4c-2.435 0-4.609.22-6.147.562l-.432.102l-.233.064l-.188.06c-.416.149-.416.275 0 .423l.188.061l.233.064l.432.102C7.391 5.78 9.565 6 12 6s4.609-.22 6.147-.562l.432-.102l.233-.064l.188-.06c.416-.149.416-.275 0-.423l-.188-.061l-.233-.064l-.432-.102C16.609 4.22 14.435 4 12 4Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func AngelLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M21.43 8.667A9.984 9.984 0 0 1 22 12c0 5.523-4.477 10-10 10S2 17.523 2 12c0-1.167.2-2.29.57-3.333a1 1 0 1 1 1.885.666a8 8 0 1 0 15.09 0a1 1 0 0 1 1.886-.666Zm-6.034 6.671a1 1 0 0 1-.088 1.412A4.984 4.984 0 0 1 12 18a4.984 4.984 0 0 1-3.308-1.25a1 1 0 1 1 1.324-1.5c.53.468 1.223.75 1.984.75c.761 0 1.455-.282 1.984-.75a1 1 0 0 1 1.412.088ZM8.5 10c1.087 0 1.957.68 2.394 1.552a1 1 0 0 1-1.73.997l-.058-.101C8.944 12.124 8.696 12 8.5 12c-.17 0-.382.095-.541.336l-.065.112a1 1 0 0 1-1.788-.896C6.542 10.68 7.413 10 8.5 10Zm7 0c1.087 0 1.957.68 2.394 1.552a1 1 0 0 1-1.73.997l-.058-.101c-.162-.324-.41-.448-.606-.448c-.17 0-.382.095-.541.336l-.065.112a1 1 0 1 1-1.788-.896C13.543 10.68 14.413 10 15.5 10ZM12 2c2.536 0 4.862.228 6.58.61c.852.189 1.61.428 2.178.726c.283.15.569.338.795.584c.23.25.447.616.447 1.08c0 .464-.216.83-.447 1.08a2.919 2.919 0 0 1-.795.584c-.569.298-1.326.537-2.177.726C16.862 7.772 14.536 8 12 8c-2.536 0-4.862-.228-6.58-.61c-.852-.189-1.61-.428-2.178-.726a2.919 2.919 0 0 1-.795-.584C2.217 5.83 2 5.464 2 5c0-.464.216-.83.447-1.08c.226-.246.512-.435.795-.584c.569-.298 1.326-.537 2.177-.726C7.138 2.228 9.464 2 12 2Zm0 2c-2.435 0-4.609.22-6.147.562l-.432.102c-1.105.283-.96.465.432.774C7.391 5.78 9.565 6 12 6s4.609-.22 6.147-.562l.432-.102c1.105-.283.96-.465-.432-.774C16.609 4.22 14.435 4 12 4Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func AngryFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10Zm-2.8-5.856a1 1 0 0 1-1.4-1.428a5.984 5.984 0 0 1 4.2-1.715c1.635 0 3.119.655 4.2 1.715a1 1 0 1 1-1.4 1.428a3.984 3.984 0 0 0-2.8-1.143c-1.09 0-2.077.435-2.8 1.143ZM7.106 8.553a1 1 0 0 1 1.341-.447l2 1a1 1 0 1 1-.894 1.788l-2-1a1 1 0 0 1-.447-1.341Zm8.447-.447a1 1 0 1 1 .894 1.788l-2 1a1 1 0 1 1-.894-1.788l2-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func AngryLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 4a8 8 0 1 0 0 16a8 8 0 0 0 0-16ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12Zm5.106-3.447a1 1 0 0 1 1.341-.447l2 1a1 1 0 1 1-.894 1.788l-2-1a1 1 0 0 1-.447-1.341Zm9.788 0a1 1 0 0 1-.447 1.341l-2 1a1 1 0 1 1-.894-1.788l2-1a1 1 0 0 1 1.341.447ZM7.8 14.716A5.984 5.984 0 0 1 12 13c1.635 0 3.119.655 4.2 1.715a1 1 0 1 1-1.4 1.428A3.984 3.984 0 0 0 12 15c-1.09 0-2.077.435-2.8 1.143a1 1 0 0 1-1.4-1.428Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func AnniversaryFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -3159,86 +3459,6 @@ func ArchiveLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M16.586 3A2 2 0 0 1 18 3.586L20.414 6A2 2 0 0 1 21 7.414V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7.414A2 2 0 0 1 3.586 6L6 3.586A2 2 0 0 1 7.414 3h9.172ZM19 9H5v10h14V9Zm-7 1a1 1 0 0 1 1 1v3.186l.414-.414a1 1 0 1 1 1.414 1.414l-2.12 2.121a1 1 0 0 1-1.415 0l-2.121-2.121a1 1 0 1 1 1.414-1.414l.414.414V11a1 1 0 0 1 1-1Zm4.586-5H7.414l-2 2h13.172l-2-2Z"/></g>`),
-		g.Group(children),
-	)
-}
-
-func ArowToDownFill(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		h.Width("24"),
-		h.Height("24"),
-		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5 18.5a1.5 1.5 0 0 0 0 3h14a1.5 1.5 0 0 0 0-3H5Zm12.303-7.556a1.5 1.5 0 0 0-2.121 0L13.5 12.625V4a1.5 1.5 0 0 0-3 0v8.626l-1.682-1.682a1.5 1.5 0 1 0-2.122 2.121l4.243 4.243a1.5 1.5 0 0 0 2.121 0l4.243-4.243a1.5 1.5 0 0 0 0-2.121Z"/></g>`),
-		g.Group(children),
-	)
-}
-
-func ArowToDownLine(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		h.Width("24"),
-		h.Height("24"),
-		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5 19a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2H5Zm11.95-7.703a1 1 0 0 0-1.415 0L13 13.833V4a1 1 0 0 0-2 0v9.833l-2.536-2.536a1 1 0 0 0-1.414 1.415l4.243 4.242a1 1 0 0 0 1.414 0l4.242-4.242a1 1 0 0 0 0-1.415Z"/></g>`),
-		g.Group(children),
-	)
-}
-
-func ArowToLeftFill(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		h.Width("24"),
-		h.Height("24"),
-		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5.5 6a1.5 1.5 0 1 0-3 0v12a1.5 1.5 0 0 0 3 0V6Zm7.556 11.303a1.5 1.5 0 0 0 0-2.121L11.374 13.5H20a1.5 1.5 0 0 0 0-3h-8.626l1.682-1.682a1.5 1.5 0 1 0-2.121-2.122L6.692 10.94a1.5 1.5 0 0 0 0 2.121l4.243 4.243a1.5 1.5 0 0 0 2.121 0Z"/></g>`),
-		g.Group(children),
-	)
-}
-
-func ArowToLeftLine(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		h.Width("24"),
-		h.Height("24"),
-		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5 6a1 1 0 0 0-2 0v12a1 1 0 1 0 2 0V6Zm7.703 10.95a1 1 0 0 0 0-1.415L10.167 13H20a1 1 0 1 0 0-2h-9.833l2.536-2.536a1 1 0 0 0-1.415-1.414l-4.242 4.243a1 1 0 0 0 0 1.414l4.242 4.242a1 1 0 0 0 1.415 0Z"/></g>`),
-		g.Group(children),
-	)
-}
-
-func ArowToRightFill(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		h.Width("24"),
-		h.Height("24"),
-		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18.5 19a1.5 1.5 0 0 0 3 0V5a1.5 1.5 0 0 0-3 0v14ZM10.944 6.697a1.5 1.5 0 0 0 0 2.121l1.682 1.682H4a1.5 1.5 0 0 0 0 3h8.626l-1.682 1.682a1.5 1.5 0 1 0 2.121 2.121l4.243-4.242a1.5 1.5 0 0 0 0-2.121l-4.243-4.243a1.5 1.5 0 0 0-2.121 0Z"/></g>`),
-		g.Group(children),
-	)
-}
-
-func ArowToRightLine(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		h.Width("24"),
-		h.Height("24"),
-		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M19 19a1 1 0 1 0 2 0V5a1 1 0 1 0-2 0v14ZM11.297 7.05a1 1 0 0 0 0 1.415L13.833 11H4a1 1 0 0 0 0 2h9.833l-2.536 2.536a1 1 0 0 0 1.415 1.414l4.242-4.243a1 1 0 0 0 0-1.414L12.712 7.05a1 1 0 0 0-1.415 0Z"/></g>`),
-		g.Group(children),
-	)
-}
-
-func ArowToUpFill(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		h.Width("24"),
-		h.Height("24"),
-		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M19 5.5a1.5 1.5 0 0 0 0-3H5a1.5 1.5 0 1 0 0 3h14ZM6.697 13.056a1.5 1.5 0 0 0 2.121 0l1.682-1.681V20a1.5 1.5 0 0 0 3 0v-8.626l1.682 1.682a1.5 1.5 0 1 0 2.121-2.121l-4.242-4.243a1.5 1.5 0 0 0-2.121 0l-4.243 4.243a1.5 1.5 0 0 0 0 2.121Z"/></g>`),
-		g.Group(children),
-	)
-}
-
-func ArowToUpLine(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		h.Width("24"),
-		h.Height("24"),
-		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M19 5a1 1 0 1 0 0-2H5a1 1 0 1 0 0 2h14ZM7.05 12.703a1 1 0 0 0 1.415 0L11 10.167V20a1 1 0 0 0 2 0v-9.833l2.536 2.536a1 1 0 0 0 1.414-1.415l-4.243-4.242a1 1 0 0 0-1.414 0L7.05 11.288a1 1 0 0 0 0 1.415Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -3523,6 +3743,86 @@ func ArrowRightUpLine(children ...g.Node) g.Node {
 	)
 }
 
+func ArrowToDownFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5 18.5a1.5 1.5 0 0 0 0 3h14a1.5 1.5 0 0 0 0-3H5Zm12.303-7.556a1.5 1.5 0 0 0-2.121 0L13.5 12.625V4a1.5 1.5 0 0 0-3 0v8.626l-1.682-1.682a1.5 1.5 0 1 0-2.122 2.121l4.243 4.243a1.5 1.5 0 0 0 2.121 0l4.243-4.243a1.5 1.5 0 0 0 0-2.121Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ArrowToDownLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5 19a1 1 0 1 0 0 2h14a1 1 0 1 0 0-2H5Zm11.95-7.703a1 1 0 0 0-1.415 0L13 13.833V4a1 1 0 0 0-2 0v9.833l-2.536-2.536a1 1 0 0 0-1.414 1.415l4.243 4.242a1 1 0 0 0 1.414 0l4.242-4.242a1 1 0 0 0 0-1.415Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ArrowToLeftFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5.5 6a1.5 1.5 0 1 0-3 0v12a1.5 1.5 0 0 0 3 0V6Zm7.556 11.303a1.5 1.5 0 0 0 0-2.121L11.374 13.5H20a1.5 1.5 0 0 0 0-3h-8.626l1.682-1.682a1.5 1.5 0 1 0-2.121-2.122L6.692 10.94a1.5 1.5 0 0 0 0 2.121l4.243 4.243a1.5 1.5 0 0 0 2.121 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ArrowToLeftLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5 6a1 1 0 0 0-2 0v12a1 1 0 1 0 2 0V6Zm7.703 10.95a1 1 0 0 0 0-1.415L10.167 13H20a1 1 0 1 0 0-2h-9.833l2.536-2.536a1 1 0 0 0-1.415-1.414l-4.242 4.243a1 1 0 0 0 0 1.414l4.242 4.242a1 1 0 0 0 1.415 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ArrowToRightFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18.5 19a1.5 1.5 0 0 0 3 0V5a1.5 1.5 0 0 0-3 0v14ZM10.944 6.697a1.5 1.5 0 0 0 0 2.121l1.682 1.682H4a1.5 1.5 0 0 0 0 3h8.626l-1.682 1.682a1.5 1.5 0 1 0 2.121 2.121l4.243-4.242a1.5 1.5 0 0 0 0-2.121l-4.243-4.243a1.5 1.5 0 0 0-2.121 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ArrowToRightLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M19 19a1 1 0 1 0 2 0V5a1 1 0 1 0-2 0v14ZM11.297 7.05a1 1 0 0 0 0 1.415L13.833 11H4a1 1 0 0 0 0 2h9.833l-2.536 2.536a1 1 0 0 0 1.415 1.414l4.242-4.243a1 1 0 0 0 0-1.414L12.712 7.05a1 1 0 0 0-1.415 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ArrowToUpFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M19 5.5a1.5 1.5 0 0 0 0-3H5a1.5 1.5 0 1 0 0 3h14ZM6.697 13.056a1.5 1.5 0 0 0 2.121 0l1.682-1.681V20a1.5 1.5 0 0 0 3 0v-8.626l1.682 1.682a1.5 1.5 0 1 0 2.121-2.121l-4.242-4.243a1.5 1.5 0 0 0-2.121 0l-4.243 4.243a1.5 1.5 0 0 0 0 2.121Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ArrowToUpLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M19 5a1 1 0 1 0 0-2H5a1 1 0 1 0 0 2h14ZM7.05 12.703a1 1 0 0 0 1.415 0L11 10.167V20a1 1 0 0 0 2 0v-9.833l2.536 2.536a1 1 0 0 0 1.414-1.415l-4.243-4.242a1 1 0 0 0-1.414 0L7.05 11.288a1 1 0 0 0 0 1.415Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func ArrowUpCircleFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -3563,6 +3863,86 @@ func ArrowUpLine(children ...g.Node) g.Node {
 	)
 }
 
+func ArrowsDownFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5.94 5.94a1.5 1.5 0 0 1 2.12 0L12 9.878l3.94-3.94a1.5 1.5 0 0 1 2.12 2.122l-5 5a1.5 1.5 0 0 1-2.12 0l-5-5a1.5 1.5 0 0 1 0-2.122Zm0 6a1.5 1.5 0 0 1 2.12 0L12 15.878l3.94-3.94a1.5 1.5 0 0 1 2.12 2.122l-5 5a1.5 1.5 0 0 1-2.12 0l-5-5a1.5 1.5 0 0 1 0-2.122Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ArrowsDownLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6.293 6.293a1 1 0 0 1 1.414 0L12 10.586l4.293-4.293a1 1 0 1 1 1.414 1.414l-5 5a1 1 0 0 1-1.414 0l-5-5a1 1 0 0 1 0-1.414Zm0 6a1 1 0 0 1 1.414 0L12 16.586l4.293-4.293a1 1 0 0 1 1.414 1.414l-5 5a1 1 0 0 1-1.414 0l-5-5a1 1 0 0 1 0-1.414Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ArrowsLeftFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12.06 5.94a1.5 1.5 0 0 1 0 2.12L8.122 12l3.94 3.94a1.5 1.5 0 0 1-2.122 2.12l-5-5a1.5 1.5 0 0 1 0-2.12l5-5a1.5 1.5 0 0 1 2.122 0Zm6 0a1.5 1.5 0 0 1 0 2.12L14.122 12l3.94 3.94a1.5 1.5 0 0 1-2.122 2.12l-5-5a1.5 1.5 0 0 1 0-2.12l5-5a1.5 1.5 0 0 1 2.122 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ArrowsLeftLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11.707 6.293a1 1 0 0 1 0 1.414L7.414 12l4.293 4.293a1 1 0 0 1-1.414 1.414l-5-5a1 1 0 0 1 0-1.414l5-5a1 1 0 0 1 1.414 0Zm6 0a1 1 0 0 1 0 1.414L13.414 12l4.293 4.293a1 1 0 0 1-1.414 1.414l-5-5a1 1 0 0 1 0-1.414l5-5a1 1 0 0 1 1.414 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ArrowsRightFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5.94 5.94a1.5 1.5 0 0 1 2.12 0l5 5a1.5 1.5 0 0 1 0 2.12l-5 5a1.5 1.5 0 0 1-2.12-2.12L9.878 12l-3.94-3.94a1.5 1.5 0 0 1 0-2.12Zm6 0a1.5 1.5 0 0 1 2.12 0l5 5a1.5 1.5 0 0 1 0 2.12l-5 5a1.5 1.5 0 0 1-2.12-2.12L15.878 12l-3.94-3.94a1.5 1.5 0 0 1 0-2.12Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ArrowsRightLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6.293 6.293a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-5 5a1 1 0 0 1-1.414-1.414L10.586 12L6.293 7.707a1 1 0 0 1 0-1.414Zm6 0a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-5 5a1 1 0 0 1-1.414-1.414L16.586 12l-4.293-4.293a1 1 0 0 1 0-1.414Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ArrowsUpFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 4.5a1.5 1.5 0 0 1 1.06.44l5 5a1.5 1.5 0 0 1-2.12 2.12L12 8.122l-3.94 3.94A1.5 1.5 0 0 1 5.94 9.94l5-5A1.5 1.5 0 0 1 12 4.5Zm0 6a1.5 1.5 0 0 1 1.06.44l5 5a1.5 1.5 0 0 1-2.12 2.12L12 14.122l-3.94 3.94a1.5 1.5 0 0 1-2.12-2.122l5-5A1.5 1.5 0 0 1 12 10.5Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ArrowsUpLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 5a1 1 0 0 1 .707.293l5 5a1 1 0 0 1-1.414 1.414L12 7.414l-4.293 4.293a1 1 0 0 1-1.414-1.414l5-5A1 1 0 0 1 12 5Zm0 6a1 1 0 0 1 .707.293l5 5a1 1 0 0 1-1.414 1.414L12 13.414l-4.293 4.293a1 1 0 0 1-1.414-1.414l5-5A1 1 0 0 1 12 11Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func ArtboardFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -3579,6 +3959,26 @@ func ArtboardLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5 17a2 2 0 0 1 2 2v1a1 1 0 1 1-2 0v-1H4a1 1 0 1 1 0-2h1Zm15 0a1 1 0 0 1 .117 1.993L20 19h-1v1a1 1 0 0 1-1.993.117L17 20v-1a2 2 0 0 1 1.85-1.995L19 17h1ZM16 6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h8Zm0 2H8v8h8V8ZM6 3a1 1 0 0 1 1 1v1a2 2 0 0 1-2 2H4a1 1 0 0 1 0-2h1V4a1 1 0 0 1 1-1Zm12 0a1 1 0 0 1 .993.883L19 4v1h1a1 1 0 0 1 .117 1.993L20 7h-1a2 2 0 0 1-1.995-1.85L17 5V4a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func AspectRatioFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M20 4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h16Zm-2 8a1 1 0 0 0-1 1v2h-2a1 1 0 1 0 0 2h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1ZM9 7H6a1 1 0 0 0-.993.883L5 8v3a1 1 0 0 0 1.993.117L7 11V9h2a1 1 0 0 0 .117-1.993L9 7Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func AspectRatioLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Zm18 0H4v12h16V6ZM6 9a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2H8v2a1 1 0 1 1-2 0V9Zm12 3a1 1 0 1 0-2 0v2h-2a1 1 0 1 0 0 2h3a1 1 0 0 0 1-1v-3Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -3779,6 +4179,26 @@ func AwardLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2a8 8 0 0 1 5 14.245v4.61a1.1 1.1 0 0 1-1.486 1.03L12 20.569l-3.514 1.318A1.1 1.1 0 0 1 7 20.856v-4.61A8 8 0 0 1 12 2Zm3 15.419A7.978 7.978 0 0 1 12 18a7.978 7.978 0 0 1-3-.581v2.138l2.298-.862a2 2 0 0 1 1.404 0l2.298.862v-2.138ZM12 4a6 6 0 1 0 0 12a6 6 0 0 0 0-12Zm0 2a4 4 0 1 1 0 8a4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4a2 2 0 0 0 0-4Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func AxeFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M7.555 2.168a1 1 0 0 0-.777-.143c-.452.103-.662.475-.841.862a8.89 8.89 0 0 0-.389 1A11.768 11.768 0 0 0 5 7.5c0 1.526.271 2.755.548 3.612c.14.429.28.766.389 1.001c.188.407.303.74.84.862a1 1 0 0 0 .778-.143c.913-.609 2.097-1.039 3.445-1.33V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V10.984a52.356 52.356 0 0 1 1.958-.006A2.01 2.01 0 0 0 20 8.97V6.03a2.01 2.01 0 0 0-2.042-2.007c-1.825.026-3.823-.023-5.685-.296c-1.877-.274-3.527-.764-4.718-1.558Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func AxeLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6.778 2.025a1 1 0 0 1 .777.143c1.191.794 2.841 1.284 4.718 1.558c1.862.273 3.86.322 5.685.296a2.011 2.011 0 0 1 2.036 1.854l.006.153V8.97a2.01 2.01 0 0 1-2.042 2.007a55.816 55.816 0 0 0-1.296-.004l-.662.01V21a1 1 0 0 1-.883.993L15 22h-3a1 1 0 0 1-.993-.883L11 21v-9.498c-1.348.291-2.532.721-3.445 1.33a1 1 0 0 1-.777.143c-.391-.09-.559-.29-.694-.548l-.147-.314l-.057-.126l-.126-.302a9.59 9.59 0 0 1-.206-.573A11.769 11.769 0 0 1 5 7.5c0-1.526.271-2.755.548-3.612c.093-.286.186-.531.27-.732l.119-.27c.179-.386.389-.758.84-.861ZM14 11.083c-.335.026-.669.058-1 .096V20h1v-8.917ZM7.478 4.422A9.724 9.724 0 0 0 7 7.5c0 1.338.247 2.39.478 3.078c1.354-.662 2.926-1.052 4.505-1.283C13.998 9 16.131 8.973 18 9l.003-.364L18 6c-1.87.027-4.002 0-6.017-.295c-1.58-.23-3.151-.621-4.505-1.283Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -4318,7 +4738,7 @@ func BatteryFourFill(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M4 6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-1a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2V8a2 2 0 0 0-2-2H4Zm2 3a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1Zm4 1a1 1 0 0 0-2 0v4a1 1 0 1 0 2 0v-4Zm2-1a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1Zm4 1a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0v-4Z"/></g>`),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18 6a2 2 0 0 1 1.995 1.85L20 8v1a2 2 0 0 1 1.995 1.85L22 11v2a2 2 0 0 1-1.85 1.995L20 15v1a2 2 0 0 1-1.85 1.995L18 18H4a2 2 0 0 1-1.995-1.85L2 16V8a2 2 0 0 1 1.85-1.995L4 6h14ZM6 9a1 1 0 0 0-.993.883L5 10v4a1 1 0 0 0 1.993.117L7 14v-4a1 1 0 0 0-1-1Zm3 0a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0v-4a1 1 0 0 0-1-1Zm3 0a1 1 0 0 0-.993.883L11 10v4a1 1 0 0 0 1.993.117L13 14v-4a1 1 0 0 0-1-1Zm3 0a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0v-4a1 1 0 0 0-1-1Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -4368,7 +4788,7 @@ func BatteryThreeFill(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M2 8a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2v1a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8Zm5 2a1 1 0 0 0-2 0v4a1 1 0 1 0 2 0v-4Zm2-1a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1Zm4 1a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0v-4Z"/></g>`),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18 6a2 2 0 0 1 2 2v1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2v1a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h14ZM6 9a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0v-4a1 1 0 0 0-1-1Zm3 0a1 1 0 0 0-.993.883L8 10v4a1 1 0 0 0 1.993.117L10 14v-4a1 1 0 0 0-1-1Zm3 0a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0v-4a1 1 0 0 0-1-1Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -4388,7 +4808,7 @@ func BatteryTwoFill(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M4 6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-1a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2V8a2 2 0 0 0-2-2H4Zm2 3a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1Zm4 1a1 1 0 0 0-2 0v4a1 1 0 1 0 2 0v-4Z"/></g>`),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18 6a2 2 0 0 1 1.995 1.85L20 8v1a2 2 0 0 1 1.995 1.85L22 11v2a2 2 0 0 1-1.85 1.995L20 15v1a2 2 0 0 1-1.85 1.995L18 18H4a2 2 0 0 1-1.995-1.85L2 16V8a2 2 0 0 1 1.85-1.995L4 6h14ZM6 9a1 1 0 0 0-.993.883L5 10v4a1 1 0 0 0 1.993.117L7 14v-4a1 1 0 0 0-1-1Zm3 0a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0v-4a1 1 0 0 0-1-1Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -4399,6 +4819,26 @@ func BatteryTwoLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18 6a2 2 0 0 1 1.995 1.85L20 8v1a2 2 0 0 1 1.995 1.85L22 11v2a2 2 0 0 1-1.85 1.995L20 15v1a2 2 0 0 1-1.85 1.995L18 18H4a2 2 0 0 1-1.995-1.85L2 16V8a2 2 0 0 1 1.85-1.995L4 6h14Zm0 2H4v8h14V8ZM6 9a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1Zm3 0a1 1 0 0 1 .993.883L10 10v4a1 1 0 0 1-1.993.117L8 14v-4a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func BearFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18.5 2a3.5 3.5 0 0 1 1.796 6.505A9 9 0 1 1 3 12c0-1.24.25-2.42.704-3.495a3.5 3.5 0 1 1 4.8-4.8A8.972 8.972 0 0 1 12 2.999c1.24 0 2.42.25 3.495.704A3.498 3.498 0 0 1 18.5 2ZM12 12a1.5 1.5 0 0 0-1.012 2.608a.5.5 0 0 1-.488.392a1 1 0 1 0 0 2a2.49 2.49 0 0 0 1.5-.5c.418.314.937.5 1.5.5a1 1 0 1 0 0-2a.5.5 0 0 1-.488-.392A1.5 1.5 0 0 0 12 12ZM9 8a1 1 0 0 0-1 1v1a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1Zm6 0a1 1 0 0 0-.993.883L14 9v1a1 1 0 0 0 1.993.117L16 10V9a1 1 0 0 0-1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func BearLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18.5 2a3.5 3.5 0 0 1 1.796 6.505A9 9 0 1 1 3 12c0-1.24.25-2.42.704-3.495a3.5 3.5 0 1 1 4.8-4.8A8.972 8.972 0 0 1 12 2.999c1.24 0 2.42.25 3.495.704A3.498 3.498 0 0 1 18.5 2ZM12 5a7 7 0 1 0 0 14a7 7 0 0 0 0-14Zm0 7a1.5 1.5 0 0 1 1.012 2.608a.5.5 0 0 0 .488.392a1 1 0 1 1 0 2a2.49 2.49 0 0 1-1.5-.5a2.49 2.49 0 0 1-1.5.5a1 1 0 1 1 0-2a.5.5 0 0 0 .488-.392A1.5 1.5 0 0 1 12 12ZM9 9a1 1 0 0 1 .993.883L10 10v1a1 1 0 0 1-1.993.117L8 11v-1a1 1 0 0 1 1-1Zm6 0a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1ZM5.5 4a1.5 1.5 0 0 0-.817 2.758a9.052 9.052 0 0 1 2.075-2.075A1.499 1.499 0 0 0 5.5 4Zm13 0a1.5 1.5 0 0 0-1.258.683a9.053 9.053 0 0 1 2.075 2.075A1.499 1.499 0 0 0 18.5 4Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -5123,6 +5563,26 @@ func BorderRadiusLine(children ...g.Node) g.Node {
 	)
 }
 
+func BorderRightFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M4 2.5a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm4 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm4 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm4 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm-12 4a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm8 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm-8 4a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm4 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm4 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm4 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm-12 4a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm8 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm-8 4a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm4 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm4 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm4 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3ZM21.5 4a1.5 1.5 0 0 0-3 0v16a1.5 1.5 0 0 0 3 0V4Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func BorderRightLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm3 1a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm5-1a1 1 0 1 1-2 0a1 1 0 0 1 2 0ZM5 20a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm3 1a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm5-1a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm-5-5a1 1 0 1 1 0 2a1 1 0 0 1 0-2Zm0-4a1 1 0 1 1 0 2a1 1 0 0 1 0-2Zm1-3a1 1 0 1 0-2 0a1 1 0 0 0 2 0Zm-8 8a1 1 0 1 0-2 0a1 1 0 0 0 2 0Zm0-4a1 1 0 1 0-2 0a1 1 0 0 0 2 0ZM4 7a1 1 0 1 1 0 2a1 1 0 0 1 0-2Zm4 6a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm8 0a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm5-9a1 1 0 1 0-2 0v16a1 1 0 1 0 2 0V4Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func BorderTopFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -5648,7 +6108,7 @@ func BuildingSixFill(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M17 19v-7.72l2 .5V19h-2Zm0-15.278v5.497l2.864.716A1.5 1.5 0 0 1 21 11.39V19a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2v-7.69a1.5 1.5 0 0 1 .83-1.343L7 8.382V6.347a1.5 1.5 0 0 1 .973-1.405l7-2.625A1.5 1.5 0 0 1 17 3.722ZM7 10.618V19H5v-7.382l2-1Z"/></g>`),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M17 3.722v5.497l2.864.716A1.5 1.5 0 0 1 21 11.39V19a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2v-7.69a1.5 1.5 0 0 1 .83-1.343L7 8.382V6.347a1.5 1.5 0 0 1 .973-1.405l7-2.625A1.5 1.5 0 0 1 17 3.722Zm0 7.559V19h2v-7.22l-2-.5Zm-10-.663l-2 1V19h2v-8.382Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -6019,6 +6479,26 @@ func CamcorderLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M16 4a2 2 0 0 1 1.995 1.85L18 6v2.21l2.094-1.29a1.25 1.25 0 0 1 1.9.943l.006.12v8.034a1.25 1.25 0 0 1-1.8 1.122l-.106-.058L18 15.79V18a2 2 0 0 1-1.85 1.995L16 20H4a2 2 0 0 1-1.995-1.85L2 18V6a2 2 0 0 1 1.85-1.995L4 4h12Zm0 2H4v12h12V6Zm4 3.327l-2 1.232v2.883l2 1.232V9.327Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func CamcorderThreeFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 4a6 6 0 1 0 0 12a6 6 0 0 0 0-12Zm0 2a4 4 0 1 1 0 8a4 4 0 0 1 0-8Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func CamcorderThreeLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 4a8 8 0 1 0 0 16a8 8 0 0 0 0-16ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12Zm10-4a4 4 0 1 0 0 8a4 4 0 0 0 0-8Zm-6 4a6 6 0 1 1 12 0a6 6 0 0 1-12 0Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -6483,6 +6963,26 @@ func CellphoneVibrationLine(children ...g.Node) g.Node {
 	)
 }
 
+func CelsiusFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6 3.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7ZM5.5 7a.5.5 0 1 1 1 0a.5.5 0 0 1-1 0Zm10-3.5a5 5 0 0 0-5 5v7a5 5 0 0 0 5 5h1a5 5 0 0 0 5-5V15a1.5 1.5 0 0 0-3 0v.5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2V9a1.5 1.5 0 0 0 3 0v-.5a5 5 0 0 0-5-5h-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func CelsiusLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6 4a3 3 0 1 0 0 6a3 3 0 0 0 0-6ZM5 7a1 1 0 1 1 2 0a1 1 0 0 1-2 0Zm10.5-3A4.5 4.5 0 0 0 11 8.5v7a4.5 4.5 0 0 0 4.5 4.5h1a4.5 4.5 0 0 0 4.5-4.5V15a1 1 0 1 0-2 0v.5a2.5 2.5 0 0 1-2.5 2.5h-1a2.5 2.5 0 0 1-2.5-2.5v-7A2.5 2.5 0 0 1 15.5 6h1A2.5 2.5 0 0 1 19 8.5V9a1 1 0 1 0 2 0v-.5A4.5 4.5 0 0 0 16.5 4h-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func CertificateFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -6623,6 +7123,26 @@ func ChartPieLine(children ...g.Node) g.Node {
 	)
 }
 
+func ChatFourFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M17 3a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H3a1 1 0 0 1-1-1V8a5 5 0 0 1 5-5h10Zm-8 7a1 1 0 0 0-.993.883L8 11v2a1 1 0 0 0 1.993.117L10 13v-2a1 1 0 0 0-1-1Zm6 0a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-2a1 1 0 0 0-1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ChatFourLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M17 3a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H3a1 1 0 0 1-1-1V8a5 5 0 0 1 5-5h10Zm0 2H7a3 3 0 0 0-3 3v11h13a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3Zm-8 5a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1Zm6 0a1 1 0 0 1 .993.883L16 11v2a1 1 0 0 1-1.993.117L14 13v-2a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func ChatOneFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -6739,6 +7259,46 @@ func CheckTwoLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M19.495 3.133a1 1 0 0 1 1.352.308l.99 1.51a1 1 0 0 1-.155 1.28l-.003.004l-.014.013l-.057.053l-.225.215a83.86 83.86 0 0 0-3.62 3.736c-2.197 2.416-4.806 5.578-6.562 8.646c-.49.856-1.687 1.04-2.397.301l-6.485-6.738a1 1 0 0 1 .051-1.436l1.96-1.768A1 1 0 0 1 5.6 9.2l3.309 2.481c5.168-5.097 8.1-7.053 10.586-8.548Zm.21 2.216c-2.29 1.432-5.148 3.509-9.998 8.358A1 1 0 0 1 8.4 13.8l-3.342-2.506l-.581.524l5.317 5.526c1.846-3.07 4.387-6.126 6.49-8.438a85.904 85.904 0 0 1 3.425-3.552l-.003-.005Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ChecksFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18.131 5.111a1.5 1.5 0 0 1 0 2.121l-4.95 4.95a1.5 1.5 0 0 1-2.12-2.121l4.95-4.95a1.5 1.5 0 0 1 2.12 0Zm5 0a1.5 1.5 0 0 1 0 2.121l-9.828 9.83a1.6 1.6 0 0 1-2.263 0l-4.172-4.173a1.5 1.5 0 1 1 2.121-2.121l3.182 3.182l8.84-8.839a1.5 1.5 0 0 1 2.12 0ZM1.868 10.768a1.5 1.5 0 0 1 2.121 0l4.243 4.242a1.5 1.5 0 1 1-2.121 2.122l-4.243-4.243a1.5 1.5 0 0 1 0-2.121Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ChecksLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M2.222 11.121a1 1 0 0 1 1.32-.083l.094.083l4.242 4.243a1 1 0 0 1-1.32 1.497l-.094-.083l-4.242-4.242a1 1 0 0 1 0-1.415Zm20.556-5.656a1 1 0 0 1 .083 1.32l-.083.094l-9.829 9.828a1.1 1.1 0 0 1-1.46.086l-.096-.085l-4.171-4.172a1 1 0 0 1 1.32-1.498l.094.083l3.535 3.536l9.193-9.192a1 1 0 0 1 1.414 0Zm-5 0a1 1 0 0 1 .083 1.32l-.083.094l-4.95 4.95a1 1 0 0 1-1.497-1.32l.083-.095l4.95-4.95a1 1 0 0 1 1.414 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ChessFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M7 2h3c2.222 0 5.757 1.108 6.949 4.684c.545 1.636.322 3.047.096 4.481c-.02.12-.038.241-.057.362c-.217 1.414-.43 3.078-.125 5.473H18a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1.106c.232-1.144.9-2.718 2.564-4.356c.182-.18.29-.387.335-.592A25.191 25.191 0 0 1 6.7 13.79a1.484 1.484 0 0 1-1.64-.316l-1.477-1.477a1.5 1.5 0 0 1-.188-1.893l3.451-5.176l-.74-1.48A1 1 0 0 1 7 2Zm2 7a1 1 0 1 0 0-2a1 1 0 0 0 0 2Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ChessLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M10 2c2.222 0 5.757 1.108 6.949 4.684c.436 1.308.38 2.473.225 3.621l-.261 1.732c-.185 1.305-.319 2.85-.05 4.963H18a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1.106c.232-1.144.9-2.718 2.564-4.356c.182-.18.29-.387.335-.592c-.342.217-.683.418-1.01.601l-.482.262l-.453.235l-.417.207l-.537.252l-.287.129a21.62 21.62 0 0 1-.119.052a1.484 1.484 0 0 1-1.64-.316l-1.477-1.477a1.5 1.5 0 0 1-.188-1.893l3.451-5.176l-.74-1.48A1 1 0 0 1 7 2h3Zm7 17H7v1h10v-1ZM10 4H8.618l.276.553a1 1 0 0 1 .004.886l-.066.116l-3.545 5.318l.94.94l.37-.173l.208-.1l.456-.227c.798-.409 1.766-.96 2.628-1.604a1 1 0 0 1 1.318.084c1.205 1.205.993 3.043-.015 4.152l-.12.125c-1.084 1.067-1.61 2.047-1.859 2.786L9.167 17h5.682a19.41 19.41 0 0 1 .046-4.97l.077-.546l.17-1.116c.178-1.2.244-2.047-.09-3.052C14.242 4.892 11.777 4 10 4ZM9 7a1 1 0 1 1 0 2a1 1 0 0 1 0-2Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -6899,6 +7459,26 @@ func ChromeLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2ZM4.546 9.09a8.002 8.002 0 0 0 6.096 10.796l.248.038l1.708-2.96a4.997 4.997 0 0 1-4.86-2.35L4.546 9.09ZM19.419 9H16c.628.836 1 1.874 1 3c0 .942-.26 1.823-.713 2.575l-3.08 5.335A8.002 8.002 0 0 0 19.419 9ZM12 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6Zm0-5a7.983 7.983 0 0 0-6.134 2.864l-.172.213L7.4 10.034a5.002 5.002 0 0 1 4.362-3.028L12 7h6.245A7.985 7.985 0 0 0 12 4Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ChurchFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M13 3a1 1 0 1 0-2 0v1h-1a1 1 0 0 0 0 2h1v1.5l-3.6 2.7a1 1 0 0 0-.4.8v1.465l-2.555 1.703A1 1 0 0 0 4 15v5a1 1 0 1 0 0 2h16a1 1 0 1 0 0-2v-5a1 1 0 0 0-.445-.832L17 12.465V11a1 1 0 0 0-.4-.8L13 7.5V6h1a1 1 0 1 0 0-2h-1V3Zm1 14v3h-4v-3a2 2 0 1 1 4 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ChurchLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2a1 1 0 0 1 .993.883L13 3v1h1a1 1 0 0 1 .117 1.993L14 6h-1v1.5l3.6 2.7a1 1 0 0 1 .393.683L17 11v1.465l2.555 1.703a1 1 0 0 1 .437.708L20 15v5a1 1 0 0 1 .117 1.993L20 22H4a1 1 0 0 1-.117-1.993L4 20v-5a1 1 0 0 1 .346-.757l.1-.075L7 12.465V11a1 1 0 0 1 .31-.724l.09-.076L11 7.5V6h-1a1 1 0 0 1-.117-1.993L10 4h1V3a1 1 0 0 1 1-1Zm0 7.25L9 11.5V13a1 1 0 0 1-.346.757l-.1.075L6 15.535V20h3v-3a3 3 0 0 1 5.995-.176L15 17v3h3v-4.465l-2.555-1.703a1 1 0 0 1-.437-.708L15 13v-1.5l-3-2.25ZM12 16a1 1 0 0 0-.993.883L11 17v3h2v-3l-.007-.117A1 1 0 0 0 12 16Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -7159,6 +7739,26 @@ func CloudSnowLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M14.5 19a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm-4-2a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm4-2a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm-3-13a6.502 6.502 0 0 1 6.086 4.212A6.002 6.002 0 0 1 19.6 16.8a1 1 0 0 1-1.202-1.6a4.001 4.001 0 0 0-1.744-7.148a1.01 1.01 0 0 1-.81-.731A4.5 4.5 0 0 0 7.027 9a1.01 1.01 0 0 1-.76 1.09a3.002 3.002 0 0 0-.019 5.816a1 1 0 0 1-.498 1.936A5.002 5.002 0 0 1 5 8.416A6.5 6.5 0 0 1 11.5 2Zm-1 11a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func CloudWindyFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M14.5 16a2.5 2.5 0 1 1-1.667 4.363a1 1 0 0 1 1.235-1.568l.099.078A.5.5 0 1 0 14.5 18H7a1 1 0 1 1 0-2h7.5Zm-3-14a6.502 6.502 0 0 1 6.086 4.212a6.002 6.002 0 0 1 1.25 11.077a4.508 4.508 0 0 0-3.306-3.17a5 5 0 0 0-8.86-4.62A2.986 2.986 0 0 0 6.267 11H3c-.21 0-.413.021-.61.062A5.018 5.018 0 0 1 5 8.416A6.5 6.5 0 0 1 11.5 2ZM11 9a3 3 0 1 1 0 6H3a1 1 0 1 1 0-2h8a1 1 0 1 0-.803-1.596l-.064.097a1 1 0 0 1-1.731-1.002A3 3 0 0 1 11 9Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func CloudWindyLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M14.5 16a2.5 2.5 0 1 1-1.667 4.363a1 1 0 0 1 1.235-1.568l.099.078A.5.5 0 1 0 14.5 18H7a1 1 0 1 1 0-2h7.5Zm-3-14a6.502 6.502 0 0 1 6.086 4.212A6.002 6.002 0 0 1 19.6 16.799a1 1 0 0 1-1.201-1.598a4.001 4.001 0 0 0-1.75-7.148a1 1 0 0 1-.804-.727a4.5 4.5 0 0 0-8.817 1.68a1 1 0 0 1-.754 1.082a2.999 2.999 0 0 0-1.525.928a1 1 0 1 1-1.5-1.324A5.012 5.012 0 0 1 5 8.416A6.5 6.5 0 0 1 11.5 2ZM11 9a3 3 0 1 1 0 6H3a1 1 0 1 1 0-2h8a1 1 0 1 0-.803-1.596l-.064.097a1 1 0 0 1-1.731-1.002A3 3 0 0 1 11 9Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -7463,6 +8063,26 @@ func CommentLine(children ...g.Node) g.Node {
 	)
 }
 
+func CommentTwoFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M16.5 11a5.5 5.5 0 0 1 4.821 8.148l.386 1.311a1.005 1.005 0 0 1-1.248 1.248l-1.31-.386A5.5 5.5 0 1 1 16.5 11ZM11 3a9.004 9.004 0 0 1 8.708 6.719a7.5 7.5 0 0 0-9.22 11.267a8.953 8.953 0 0 1-4.097-1.255l-2.65.78a1.008 1.008 0 0 1-1.252-1.252l.78-2.65A9 9 0 0 1 11 3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func CommentTwoLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M4 12a7 7 0 0 1 13.491-2.625a1 1 0 0 0 1.854-.75A9.003 9.003 0 1 0 3.27 16.61l-.78 2.649a1.008 1.008 0 0 0 1.252 1.252l2.65-.78a8.948 8.948 0 0 0 3.485 1.2a1 1 0 1 0 .248-1.985a6.95 6.95 0 0 1-2.88-1.038a1.429 1.429 0 0 0-1.171-.168l-1.152.339l.339-1.152c.12-.408.047-.834-.168-1.17A6.962 6.962 0 0 1 4 12Zm16 4.5a3.5 3.5 0 1 0-1.627 2.957a1.26 1.26 0 0 1 .91-.175a1.26 1.26 0 0 1 .174-.91A3.48 3.48 0 0 0 20 16.5ZM16.5 11a5.5 5.5 0 0 1 4.821 8.148l.386 1.311a1.005 1.005 0 0 1-1.248 1.248l-1.31-.386A5.5 5.5 0 1 1 16.5 11Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func CompassFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -7559,6 +8179,26 @@ func ComputerLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2h-4v1h1a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2h1v-1H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm-6 15h-2v1h2v-1Zm6-13H5v11h14V5Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ConfusedFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm-1.832 13.445a1 1 0 0 0 1.664 1.11c.799-1.199 2.391-1.969 3.925-1.585a1 1 0 1 0 .486-1.94c-2.466-.616-4.874.614-6.075 2.415ZM9.5 8a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm6-1a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ConfusedLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16Zm-1.832 11.445c1.201-1.801 3.61-3.032 6.075-2.415a1 1 0 1 1-.485 1.94c-1.535-.384-3.127.386-3.926 1.585a1 1 0 0 1-1.664-1.11ZM9.5 8a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm6-1a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -7838,7 +8478,7 @@ func CupcakeLine(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 3a6.002 6.002 0 0 0-5.678 4.057a4.001 4.001 0 0 0-2.31 6.603c.015.088.041.175.08.26l2.464 5.337A3 3 0 0 0 9.28 21h5.44a3 3 0 0 0 2.724-1.743l2.464-5.338a1.02 1.02 0 0 0 .08-.259a4.001 4.001 0 0 0-2.31-6.603A6.002 6.002 0 0 0 12 3ZM8.08 8.2a4.002 4.002 0 0 1 7.84 0a1 1 0 0 0 1.013.801L17 9a2 2 0 1 1 0 4H7a2 2 0 1 1 .067-3.999a1 1 0 0 0 1.013-.8ZM17 15H7c-.31 0 1.136 2.909 1.372 3.42a1 1 0 0 0 .908.58h5.44a1 1 0 0 0 .908-.58C15.864 17.907 17.31 15 17 15Z"/></g>`),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 3a6.002 6.002 0 0 1 5.678 4.057a4.001 4.001 0 0 1 2.31 6.603c-.01.058-.025.117-.045.174l-.035.085l-2.464 5.338a3 3 0 0 1-2.53 1.737L14.72 21H9.28a3 3 0 0 1-2.637-1.57l-.087-.173l-2.464-5.338a1.002 1.002 0 0 1-.08-.259a4.001 4.001 0 0 1 2.31-6.603A6.002 6.002 0 0 1 12 3Zm5 12H7c-.077 0-.045.182.05.462l.097.263l.189.46l.222.503l.31.672l.504 1.06a1 1 0 0 0 .908.58h5.44a1 1 0 0 0 .908-.58l.658-1.391l.232-.51l.146-.334l.131-.314l.11-.282c.128-.352.183-.589.095-.589ZM12 5a4.002 4.002 0 0 0-3.92 3.2a1 1 0 0 1-1.013.801L7 9a2 2 0 0 0-.15 3.995L7 13h10a2 2 0 0 0 .15-3.995L17 9l-.067.001a1 1 0 0 1-1.013-.8A4.002 4.002 0 0 0 12 5Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -8578,7 +9218,7 @@ func DeskLine(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M2 6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2v12a1 1 0 1 1-2 0v-2h-3.5a1.5 1.5 0 0 1-1.5-1.5V11H5v8a1 1 0 1 1-2 0V7a1 1 0 0 1-1-1Zm17 9v-4h-3v4h3Zm0-6V7h-3v2h3Zm-5 0H5V7h9v2Z"/></g>`),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M21 5a1 1 0 1 1 0 2v12a1 1 0 1 1-2 0v-2h-3.5a1.5 1.5 0 0 1-1.5-1.5V11H5v8a1 1 0 1 1-2 0V7a1 1 0 0 1 0-2h18Zm-2 6h-3v4h3v-4Zm0-4h-3v2h3V7Zm-5 0H5v2h9V7Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -8958,7 +9598,7 @@ func DocumentsLine(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M8 4a2 2 0 0 1 2-2h5.586A2 2 0 0 1 17 2.586L20.414 6A2 2 0 0 1 21 7.414V16a2 2 0 0 1-2 2h-2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2V4Zm11 12h-9V4h4v3.5A1.5 1.5 0 0 0 15.5 9H19v7Zm-.414-9H16V4.414L18.586 7ZM8 16V8H6v12h9v-2h-5a2 2 0 0 1-2-2Z"/></g>`),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M15.586 2A2 2 0 0 1 17 2.586L20.414 6A2 2 0 0 1 21 7.414V16a2 2 0 0 1-2 2h-2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2V4a2 2 0 0 1 2-2h5.586ZM8 8H6v12h9v-2h-5a2 2 0 0 1-2-2V8Zm6-4h-4v12h9V9h-3.5a1.5 1.5 0 0 1-1.493-1.356L14 7.5V4Zm2 .414V7h2.586L16 4.414Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -9283,6 +9923,26 @@ func DrinkLine(children ...g.Node) g.Node {
 	)
 }
 
+func DrizzleFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M10.924 15.792a1 1 0 0 1 1.932.518l-.259.966a1 1 0 0 1-1.932-.518l.26-.966ZM11.5 2a6.502 6.502 0 0 1 6.086 4.212A6.002 6.002 0 0 1 16 18h-1.534c.023-.068.044-.136.063-.207l.259-.965a3 3 0 1 0-5.796-1.553l-.259.966a2.986 2.986 0 0 0 0 1.552a2.99 2.99 0 0 0-.189.207H7a5 5 0 0 1-2-9.584A6.5 6.5 0 0 1 11.5 2Zm.32 18.174a1 1 0 1 0-1.931-.518l-.259.966a1 1 0 0 0 1.932.518l.259-.966Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func DrizzleLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M10.924 15.792a1 1 0 0 1 1.932.518l-.259.966a1 1 0 0 1-1.932-.518l.26-.966ZM11.5 2a6.502 6.502 0 0 1 6.086 4.212a6.002 6.002 0 0 1-.387 11.668a1 1 0 1 1-.398-1.96a4.002 4.002 0 0 0-.15-7.868a1 1 0 0 1-.806-.726a4.5 4.5 0 0 0-8.817 1.68a1 1 0 0 1-.753 1.082a3.002 3.002 0 0 0-.169 5.777l.169.047a1 1 0 0 1-.481 1.941A5.002 5.002 0 0 1 5 8.416A6.5 6.5 0 0 1 11.5 2Zm.32 18.174a1 1 0 1 0-1.931-.518l-.259.966a1 1 0 0 0 1.932.518l.259-.966Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func DroneFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -9338,7 +9998,7 @@ func DrumLine(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M7.087 5c-.479 0-.973.171-1.352.539A8.976 8.976 0 0 0 3 12a8.976 8.976 0 0 0 2.735 6.461c.379.368.873.539 1.352.539h9.826c.479 0 .973-.171 1.352-.539A8.976 8.976 0 0 0 21 12a8.976 8.976 0 0 0-2.735-6.461A1.937 1.937 0 0 0 16.913 5H7.087Zm-.832 3c.25-.36.534-.694.846-1h9.798c.312.306.596.64.846 1H6.255Zm-.965 2A7.003 7.003 0 0 0 5 12c0 .695.101 1.366.29 2h13.42c.189-.634.29-1.305.29-2c0-.695-.101-1.366-.29-2H5.29Zm12.456 6H6.255c.25.36.534.694.846 1h9.798c.312-.306.596-.64.846-1Z"/></g>`),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M16.913 5c.479 0 .973.171 1.352.539A8.976 8.976 0 0 1 21 12a8.976 8.976 0 0 1-2.735 6.461a1.926 1.926 0 0 1-1.192.533l-.16.006H7.087c-.479 0-.973-.171-1.352-.539A8.976 8.976 0 0 1 3 12a8.976 8.976 0 0 1 2.735-6.461a1.926 1.926 0 0 1 1.192-.533L7.087 5h9.826Zm.832 11H6.255c.25.36.534.694.846 1h9.798c.312-.306.596-.64.846-1Zm.965-6H5.29A7.003 7.003 0 0 0 5 12c0 .695.101 1.366.29 2h13.42c.189-.634.29-1.305.29-2c0-.695-.101-1.366-.29-2ZM16.9 7H7.101c-.234.23-.452.475-.652.735L6.255 8h11.49a7.04 7.04 0 0 0-.617-.765L16.899 7Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -9393,12 +10053,72 @@ func EarthFill(children ...g.Node) g.Node {
 	)
 }
 
+func EarthLatitudeFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M4.859 19a9.97 9.97 0 0 0 7.14 3a9.97 9.97 0 0 0 7.142-3H4.86Zm-1.521-2a9.936 9.936 0 0 1-1.289-4h19.902a9.936 9.936 0 0 1-1.289 4H3.338Zm18.613-6H2.049a9.936 9.936 0 0 1 1.289-4h17.324a9.937 9.937 0 0 1 1.289 4ZM12 2a9.97 9.97 0 0 0-7.141 3H19.14A9.97 9.97 0 0 0 12 2Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func EarthLatitudeLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12Zm2.062-1A7.948 7.948 0 0 1 5.07 8h13.86a7.947 7.947 0 0 1 1.008 3H4.062ZM12 4a7.97 7.97 0 0 1 5.292 2H6.708A7.97 7.97 0 0 1 12 4Zm5.292 14A7.97 7.97 0 0 1 12 20a7.97 7.97 0 0 1-5.292-2h10.584Zm1.638-2H5.07a7.948 7.948 0 0 1-1.008-3h15.876a7.947 7.947 0 0 1-1.008 3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func EarthLine(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm1.683 13.95a28.45 28.45 0 0 1-3.366 0c.136.786.309 1.494.51 2.098c.252.756.53 1.296.79 1.626c.088.11.223.326.385.326c.145-.013.302-.227.38-.326c.26-.33.539-.87.79-1.626a14.35 14.35 0 0 0 .51-2.098Zm5.83-1.195c-.265.114-.544.219-.833.315c-.852.284-1.848.512-2.94.67a17.191 17.191 0 0 1-.67 2.94c-.096.29-.201.568-.315.833a8.023 8.023 0 0 0 4.758-4.758Zm-15.026 0a8.023 8.023 0 0 0 4.758 4.758a10.567 10.567 0 0 1-.315-.833a17.191 17.191 0 0 1-.67-2.94a17.191 17.191 0 0 1-2.94-.67c-.29-.096-.568-.201-.833-.315Zm5.585-4.683a25.528 25.528 0 0 0 0 3.856c1.282.097 2.574.097 3.856 0a25.537 25.537 0 0 0 0-3.856a25.526 25.526 0 0 0-3.856 0Zm5.878.245a28.45 28.45 0 0 1 0 3.366a14.438 14.438 0 0 0 2.098-.51c.756-.252 1.296-.53 1.626-.79c.11-.087.326-.224.326-.385c-.013-.145-.227-.302-.326-.38c-.33-.26-.87-.539-1.626-.79a14.438 14.438 0 0 0-2.098-.51Zm-7.9 0c-.786.136-1.493.309-2.098.51c-.756.252-1.295.53-1.626.79c-.24.19-.312.333-.323.368c-.045.15.23.323.323.397c.33.26.87.539 1.626.79c.605.202 1.312.375 2.098.51a28.415 28.415 0 0 1 0-3.364Zm1.195-5.83a8.024 8.024 0 0 0-4.758 4.758c.265-.114.544-.219.833-.315a17.191 17.191 0 0 1 2.94-.67c.158-1.092.386-2.088.67-2.94c.096-.29.201-.568.315-.833Zm5.51 0c.114.265.219.544.315.833c.284.852.512 1.848.67 2.94c1.092.158 2.088.386 2.94.67c.29.096.568.201.833.315a8.023 8.023 0 0 0-4.758-4.758ZM12 4c-.139 0-.312.237-.382.326c-.26.33-.539.87-.79 1.626a14.437 14.437 0 0 0-.51 2.098a28.415 28.415 0 0 1 3.364 0a14.437 14.437 0 0 0-.51-2.098c-.251-.756-.53-1.295-.79-1.626C12.312 4.236 12.14 4 12 4Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func EarthLongitudeFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M8.393 2.67c-.51.502-.97 1.09-1.367 1.731C5.795 6.381 5 9.067 5 12.001c0 2.945.847 5.632 2.1 7.606a9.69 9.69 0 0 0 1.426 1.773A10.004 10.004 0 0 1 2 12c0-4.25 2.653-7.883 6.393-9.33ZM11 3.236v17.499c-.71-.354-1.495-1.07-2.212-2.2C7.745 16.892 7 14.578 7 12c0-2.59.705-4.904 1.724-6.543c.661-1.063 1.397-1.764 2.1-2.135L11 3.236Zm4.607-.566A10.004 10.004 0 0 1 22 12c0 4.251-2.653 7.883-6.393 9.33c.51-.502.97-1.09 1.367-1.73C18.205 17.618 19 14.932 19 12s-.795-5.619-2.026-7.599a9.373 9.373 0 0 0-1.367-1.73ZM13 3.236c.755.343 1.56 1.07 2.276 2.221C16.295 7.097 17 9.411 17 12c0 2.59-.705 4.904-1.724 6.543c-.661 1.063-1.397 1.764-2.1 2.136l-.176.086V3.235Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func EarthLongitudeLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12Zm2 0a7.993 7.993 0 0 1 3.595-6.68C6.62 7.095 6 9.445 6 12c0 2.59.673 4.962 1.683 6.736A7.994 7.994 0 0 1 4 12Zm16 0c0 2.79-1.43 5.248-3.595 6.68C17.38 16.905 18 14.555 18 12s-.62-4.906-1.595-6.68A7.993 7.993 0 0 1 20 12Zm-9 7.611c-.48-.332-1.012-.9-1.518-1.76C8.62 16.388 8 14.317 8 12c0-2.328.587-4.4 1.429-5.86C9.94 5.253 10.49 4.675 11 4.348v15.263Zm2 .04V4.348c.51.327 1.06.905 1.571 1.792C15.413 7.6 16 9.672 16 12c0 2.328-.587 4.4-1.429 5.86c-.511.887-1.061 1.465-1.571 1.791Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func EarthTwoFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M21.815 13.925a10.013 10.013 0 0 1-7.46 7.796c.51-.602.952-1.382 1.319-2.267c.365-.88.67-1.901.896-3.02c1.677-.432 3.196-1.096 4.47-1.945c.268-.179.527-.367.775-.564Zm-19.63 0c.248.197.507.385.775.564c1.273.849 2.792 1.513 4.47 1.945c.225 1.119.53 2.14.896 3.02c.366.884.808 1.665 1.318 2.267a10.013 10.013 0 0 1-7.459-7.796Zm12.242 2.92a13.45 13.45 0 0 1-.601 1.844c-.347.838-.729 1.455-1.091 1.846c-.37.4-.624.465-.735.465c-.111 0-.364-.065-.735-.465c-.362-.39-.744-1.008-1.091-1.846a13.45 13.45 0 0 1-.601-1.844c.788.102 1.6.155 2.427.155a18.9 18.9 0 0 0 2.427-.155Zm.536-6.116a21.686 21.686 0 0 1-.142 4.035c-.897.154-1.843.236-2.821.236a16.76 16.76 0 0 1-2.822-.236a21.212 21.212 0 0 1-.141-4.035c.946.177 1.94.271 2.963.271a16.14 16.14 0 0 0 2.963-.271Zm6.103-2.954c.46.986.765 2.06.88 3.189c-.501.673-1.177 1.302-2.016 1.86c-.87.58-1.896 1.07-3.039 1.437a23.46 23.46 0 0 0 .042-4.045a11.97 11.97 0 0 0 2.683-1.281a9.146 9.146 0 0 0 1.45-1.16Zm-18.132 0c.43.427.92.815 1.45 1.16a11.95 11.95 0 0 0 2.683 1.281a23.591 23.591 0 0 0 .041 4.045c-1.143-.367-2.169-.856-3.039-1.436c-.838-.559-1.514-1.188-2.016-1.861c.116-1.13.42-2.203.88-3.19ZM12 3c.11 0 .364.066.735.466c.362.39.744 1.008 1.091 1.846c.39.943.714 2.108.922 3.421C13.886 8.906 12.963 9 12 9a14.01 14.01 0 0 1-2.749-.267c.208-1.313.532-2.478.923-3.42c.347-.839.729-1.456 1.09-1.847c.372-.4.625-.466.736-.466Zm2.355-.721a10.007 10.007 0 0 1 5.64 3.715a6.72 6.72 0 0 1-1.469 1.264a9.716 9.716 0 0 1-1.842.923c-.231-1.361-.58-2.595-1.01-3.634c-.367-.885-.809-1.666-1.32-2.268Zm-4.71 0c-.51.602-.952 1.383-1.319 2.268c-.43 1.04-.78 2.273-1.01 3.634a9.715 9.715 0 0 1-1.842-.923a6.723 6.723 0 0 1-1.47-1.264a10.007 10.007 0 0 1 5.641-3.715Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func EarthTwoLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm1.482 14.94a18.214 18.214 0 0 1-2.964 0c.093.397.197.765.31 1.102c.251.755.53 1.293.79 1.622c.127.162.23.248.3.29l.051.028l.03.008l.032-.008l.051-.027a1.21 1.21 0 0 0 .3-.29c.26-.33.539-.868.79-1.623c.113-.337.217-.705.31-1.102Zm-8.675-1.435a8.026 8.026 0 0 0 4.441 4.01a10.52 10.52 0 0 1-.318-.84a15.818 15.818 0 0 1-.52-2.033a17.87 17.87 0 0 1-3.603-1.137Zm14.386 0c-1.144.5-2.35.883-3.604 1.137a15.63 15.63 0 0 1-.52 2.034c-.096.29-.202.572-.318.838a8.027 8.027 0 0 0 4.443-4.01Zm-5.217-4.634a15.119 15.119 0 0 1-3.952 0a26.02 26.02 0 0 0 .141 4.025a16.195 16.195 0 0 0 3.67 0A25.04 25.04 0 0 0 14 12c0-.384-.008-.76-.024-1.13ZM4.568 9.032a7.978 7.978 0 0 0-.52 3.856a15.893 15.893 0 0 0 4.067 1.637a27.889 27.889 0 0 1-.074-4.053a14.915 14.915 0 0 1-3.473-1.44Zm14.864 0a14.916 14.916 0 0 1-3.473 1.44a27.879 27.879 0 0 1-.074 4.053a15.892 15.892 0 0 0 4.066-1.637a7.978 7.978 0 0 0-.52-3.855Zm-7.416-5.02l-.011-.002l-.02.003l-.038.015a1.233 1.233 0 0 0-.33.307c-.26.33-.538.868-.79 1.622c-.27.808-.488 1.8-.633 2.919a13.123 13.123 0 0 0 3.612 0c-.145-1.12-.364-2.111-.633-2.919c-.252-.754-.53-1.293-.79-1.622a1.233 1.233 0 0 0-.3-.29l-.067-.032Zm-2.768.474a8.022 8.022 0 0 0-3.71 2.797c.843.484 1.746.876 2.695 1.163c.16-1.164.397-2.223.697-3.122c.097-.291.203-.572.318-.838Zm5.504 0c.115.266.22.547.318.838c.3.9.537 1.958.697 3.122a12.927 12.927 0 0 0 2.695-1.163a8.021 8.021 0 0 0-3.71-2.797Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -9419,6 +10139,26 @@ func EbikeLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M14 3a2 2 0 0 1 2 2h3a2 2 0 0 1 2 2v2a2 2 0 0 1-1.51 1.94l2.142 4.996c.264.527.368.985.368 1.564a3.5 3.5 0 0 1-6.663 1.5H9.663a3.5 3.5 0 0 1-6.628-1H3a1 1 0 0 1-1-1V9a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2a2 2 0 1 0 4 0V5h-2a1 1 0 1 1 0-2h2ZM6.5 16a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm12 0a1.5 1.5 0 1 0 1.5 1.5c0-.811-.685-1.5-1.5-1.5Zm-1.16-5H16a4 4 0 0 1-7.465 2H4v2.05A3.5 3.5 0 0 1 9.965 17h5.07c.25-1.749 1.83-3.06 3.592-2.998L17.341 11ZM8 9H4v2h4V9Zm11-2h-3v2h3V7Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func EdgeFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M10.184 11.77c.029 1.06.603 2.334 1.956 3.462C13.317 16.212 15.353 17 17 17a7.05 7.05 0 0 0 1.669-.2a1 1 0 0 1 1.004 1.613a9.988 9.988 0 0 1-6.34 3.499a.837.837 0 0 1-.31-.014C10.884 21.37 8.5 18.688 8.5 16c0-2.374.84-3.645 1.684-4.23Zm-.706-3.731a3.579 3.579 0 0 1 2.18 1.234a5.233 5.233 0 0 0-1.474.278C8.177 10.221 6.5 12.388 6.5 16c0 2.537 1.199 4.266 2.771 5.623c-3.987-1.129-6.962-4.668-7.248-8.944a.9.9 0 0 1 .21-.642l.17-.196l.324-.358l.267-.281l.149-.154l.332-.333l.378-.369l.208-.197c1.91-1.803 3.9-2.368 5.417-2.11ZM12 2c4.76 0 8.742 3.325 9.752 7.779c.36 1.585-.113 2.825-.827 3.688a5.03 5.03 0 0 1-2.09 1.476c-.965.341-2.05.327-2.912.176c-.77-.135-1.73-.395-2.203-1.072a1 1 0 0 1 .109-1.277c.485-.49.709-.995.742-1.447a1.863 1.863 0 0 0-.045-.54c-.582-2.62-2.386-4.321-4.713-4.716c-2.76-.469-5.379.957-7.315 2.808C3.81 4.883 7.568 2 12 2Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func EdgeLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c4.76 0 8.742 3.325 9.752 7.779c.36 1.585-.113 2.825-.827 3.688a5.031 5.031 0 0 1-2.09 1.476c-.965.341-2.05.327-2.912.176a5.616 5.616 0 0 1-1.213-.346c-.308-.132-.73-.354-.99-.726a1 1 0 0 1 .109-1.277c.485-.49.709-.995.742-1.447c.032-.44-.107-.936-.549-1.45c-.703-.813-1.887-.97-2.723-.374c-.804.577-1.188 1.457-1.104 2.454c.085 1.016.67 2.216 1.945 3.279C13.317 16.212 15.353 17 17 17a7.05 7.05 0 0 0 1.669-.2a1 1 0 0 1 1.004 1.613A9.981 9.981 0 0 1 12 22c-.77 0-1.52-.087-2.242-.252C5.315 20.73 2 16.753 2 12c0-.994.145-1.956.417-2.864C3.648 5.01 7.47 2 12 2ZM8.316 12.862A7.241 7.241 0 0 0 8 15c0 1.827.938 3.548 2.435 4.847a8.044 8.044 0 0 0 5.558-.913c-1.871-.238-3.847-1.094-5.133-2.166c-1.365-1.138-2.23-2.51-2.544-3.906ZM9.951 7.92a5.998 5.998 0 0 0-1.168.023c-1.475.17-3.007.873-4.532 2.06A8.016 8.016 0 0 0 4 12a7.98 7.98 0 0 0 2.574 5.88A7.577 7.577 0 0 1 6 15c0-3.298 1.717-5.976 3.553-6.894c.132-.066.264-.129.398-.187ZM12 4a7.98 7.98 0 0 0-5.906 2.603a9.304 9.304 0 0 1 2.459-.648c2.067-.24 4.125.303 6.047 1.745c1.36 1.02 2.068 2.371 1.966 3.77a3.943 3.943 0 0 1-.503 1.638c.065.015.133.028.204.04c.651.114 1.363.1 1.899-.09a3.06 3.06 0 0 0 1.218-.865c.364-.44.625-1.057.418-1.972A8.004 8.004 0 0 0 12 4Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -9923,6 +10663,26 @@ func ExpandPlayerLine(children ...g.Node) g.Node {
 	)
 }
 
+func ExposureFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18 3a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h12Zm.707 2.293L5.293 18.707c.18.181.43.293.707.293h12a1 1 0 0 0 1-1V6a.997.997 0 0 0-.293-.707ZM17 15a1 1 0 1 1 0 2h-4a1 1 0 1 1 0-2h4ZM9 6a1 1 0 0 0-1 1v1H7a1 1 0 0 0 0 2h1v1a1 1 0 1 0 2 0v-1h1a1 1 0 1 0 0-2h-1V7a1 1 0 0 0-1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ExposureLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18 3a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h12Zm1 3.414L6.414 19H18a1 1 0 0 0 1-1V6.414ZM17.586 5H6a1 1 0 0 0-1 1v11.586L17.586 5ZM17 15a1 1 0 1 1 0 2h-4a1 1 0 1 1 0-2h4ZM9 6a1 1 0 0 1 1 1v1h1a1 1 0 1 1 0 2h-1v1a1 1 0 1 1-2 0v-1H7a1 1 0 0 1 0-2h1V7a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func ExternalLinkFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -10143,6 +10903,26 @@ func FactoryLine(children ...g.Node) g.Node {
 	)
 }
 
+func FahrenheitFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M2.5 7a3.5 3.5 0 1 1 7 0a3.5 3.5 0 0 1-7 0ZM6 6.5a.5.5 0 1 0 0 1a.5.5 0 0 0 0-1Zm4.5-.5A2.5 2.5 0 0 1 13 3.5h7a1.5 1.5 0 0 1 0 3h-6.5v4H19a1.5 1.5 0 0 1 0 3h-5.5V19a1.5 1.5 0 0 1-3 0V6Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func FahrenheitLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6 4a3 3 0 1 1 0 6a3 3 0 0 1 0-6Zm0 2a1 1 0 1 0 0 2a1 1 0 0 0 0-2Zm7-2a2 2 0 0 0-2 2v13a1 1 0 1 0 2 0v-6h6a1 1 0 1 0 0-2h-6V6h7a1 1 0 1 0 0-2h-7Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func FanDirectionDownFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -10323,6 +11103,26 @@ func FemaleLine(children ...g.Node) g.Node {
 	)
 }
 
+func FerrisWheelFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2a3 3 0 0 0-2.931 3.642c-.39.18-.762.395-1.11.641a3 3 0 1 0-2.931 5.077a7.09 7.09 0 0 0 0 1.28a3 3 0 1 0 2.93 5.077c.287.202.588.383.902.541l-.809 2.426a1 1 0 0 0 1.898.632l.808-2.426a7.048 7.048 0 0 0 2.486 0l.808 2.426a1 1 0 0 0 1.898-.632l-.809-2.426a7.1 7.1 0 0 0 .9-.54a3 3 0 1 0 2.93-5.077a7.094 7.094 0 0 0 .001-1.281a3 3 0 1 0-2.931-5.077a6.99 6.99 0 0 0-1.109-.641A3 3 0 0 0 12 2Zm2.498 14.332a5.02 5.02 0 0 0 .595-.403a2.987 2.987 0 0 1 .37-1.929a2.987 2.987 0 0 1 1.487-1.286a5.043 5.043 0 0 0 0-1.428A2.987 2.987 0 0 1 15.463 10a2.987 2.987 0 0 1-.371-1.929a4.993 4.993 0 0 0-1.236-.715A2.987 2.987 0 0 1 12 8c-.701 0-1.346-.24-1.857-.644c-.447.18-.863.421-1.236.715A2.987 2.987 0 0 1 8.536 10a2.987 2.987 0 0 1-1.485 1.286a5.043 5.043 0 0 0 0 1.428a2.995 2.995 0 0 1 1.856 3.216c.188.147.387.282.595.402l1.55-4.648a1 1 0 0 1 1.897 0l1.55 4.648Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func FerrisWheelLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2a3 3 0 0 1 2.931 3.642c.39.18.762.395 1.11.641a3 3 0 1 1 2.931 5.077a7.097 7.097 0 0 1 0 1.28a3 3 0 1 1-2.93 5.077c-.192.135-.389.26-.592.376l-.31.165l.809 2.426a1 1 0 0 1-1.854.74l-.044-.108l-.808-2.426a7.048 7.048 0 0 1-2.181.048l-.305-.048l-.808 2.426a1 1 0 0 1-1.928-.52l.03-.112l.809-2.426a6.993 6.993 0 0 1-.9-.54a3 3 0 1 1-2.93-5.077a7.088 7.088 0 0 1-.001-1.281A3 3 0 1 1 7.96 6.283a6.992 6.992 0 0 1 1.109-.641A3 3 0 0 1 12 2Zm0 13.162l-.6 1.803a5.047 5.047 0 0 0 1.2 0l-.6-1.803ZM6.804 15a1 1 0 1 0-1.732 1a1 1 0 0 0 1.732-1Zm10.392 0a1 1 0 1 0 1.732 1a1 1 0 0 0-1.732-1Zm-3.34-7.644A2.987 2.987 0 0 1 12 8c-.701 0-1.346-.24-1.857-.644c-.447.18-.863.421-1.236.715A2.987 2.987 0 0 1 8.536 10a2.987 2.987 0 0 1-1.485 1.286a5.043 5.043 0 0 0 0 1.428a2.995 2.995 0 0 1 1.856 3.216c.188.147.387.282.595.402l1.55-4.648a1 1 0 0 1 1.897 0l1.55 4.648a5.02 5.02 0 0 0 .594-.403a2.987 2.987 0 0 1 .37-1.929a2.987 2.987 0 0 1 1.487-1.286a5.043 5.043 0 0 0 0-1.428A2.987 2.987 0 0 1 15.463 10a2.987 2.987 0 0 1-.371-1.929a4.993 4.993 0 0 0-1.236-.715ZM5.073 8a1 1 0 1 0 1.732 1a1 1 0 0 0-1.732-1Zm12.49-.366a1 1 0 1 0 1 1.732a1 1 0 0 0-1-1.732ZM12 4a1 1 0 1 0 0 2a1 1 0 0 0 0-2Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func FigmaFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -10493,7 +11293,7 @@ func FileImportLine(children ...g.Node) g.Node {
 	)
 }
 
-func FileInforFill(children ...g.Node) g.Node {
+func FileInfoFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
@@ -10503,7 +11303,7 @@ func FileInforFill(children ...g.Node) g.Node {
 	)
 }
 
-func FileInforLine(children ...g.Node) g.Node {
+func FileInfoLine(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
@@ -11123,6 +11923,26 @@ func FlagTwoLine(children ...g.Node) g.Node {
 	)
 }
 
+func FlameFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M7.747 5.591a24.263 24.263 0 0 1 3.672-3.405a1 1 0 0 1 1.162 0a25.16 25.16 0 0 1 3.672 3.405C18.584 8.258 20 11.088 20 14a8 8 0 1 1-16 0c0-2.912 1.415-5.743 3.747-8.409ZM12.005 21a3.694 3.694 0 0 0 3.694-3.694c0-3.167-3.694-5.806-3.694-5.806S8.31 14.139 8.31 17.306A3.694 3.694 0 0 0 12.004 21Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func FlameLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M7.747 5.591a24.263 24.263 0 0 1 3.672-3.405a1 1 0 0 1 1.162 0a25.16 25.16 0 0 1 3.672 3.405C18.584 8.258 20 11.088 20 14a8 8 0 1 1-16 0c0-2.912 1.415-5.743 3.747-8.409Zm4.696-.957A18.464 18.464 0 0 0 12 4.265l-.443.37a22.74 22.74 0 0 0-2.304 2.274C7.21 9.242 6 11.662 6 14c0 1.429.5 2.74 1.333 3.77a4.747 4.747 0 0 1-.023-.464c0-1.673.796-3.265 2.095-4.75c.6-.685 1.28-1.331 2.018-1.87a1 1 0 0 1 1.163 0c.74.53 1.42 1.187 2.018 1.87c1.3 1.485 2.095 3.077 2.095 4.75c0 .152-.007.303-.022.452A5.975 5.975 0 0 0 18 14c0-2.338-1.21-4.757-3.253-7.091a22.736 22.736 0 0 0-2.304-2.275Zm-.439 8.152c-.385.342-.755.7-1.094 1.088c-1.01 1.154-1.6 2.334-1.6 3.432a2.694 2.694 0 0 0 5.389 0c0-1.098-.59-2.278-1.6-3.432c-.19-.218-1.133-1.121-1.095-1.088Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func FlashFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -11303,6 +12123,26 @@ func FlipVerticalLine(children ...g.Node) g.Node {
 	)
 }
 
+func FloatingDustFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M4.5 4A1.5 1.5 0 0 1 6 2.5h1.5a1.5 1.5 0 1 1 0 3H6A1.5 1.5 0 0 1 4.5 4ZM10 4a1.5 1.5 0 0 1 1.5-1.5H20a1.5 1.5 0 0 1 0 3h-8.5A1.5 1.5 0 0 1 10 4ZM2.5 9A1.5 1.5 0 0 1 4 7.5h8.5a1.5 1.5 0 0 1 0 3H4A1.5 1.5 0 0 1 2.5 9ZM15 9a1.5 1.5 0 0 1 1.5-1.5H18a1.5 1.5 0 0 1 0 3h-1.5A1.5 1.5 0 0 1 15 9ZM4.5 14A1.5 1.5 0 0 1 6 12.5h1.5a1.5 1.5 0 0 1 0 3H6A1.5 1.5 0 0 1 4.5 14Zm5.5 0a1.5 1.5 0 0 1 1.5-1.5H20a1.5 1.5 0 0 1 0 3h-8.5A1.5 1.5 0 0 1 10 14Zm-7.5 5A1.5 1.5 0 0 1 4 17.5h8.5a1.5 1.5 0 0 1 0 3H4A1.5 1.5 0 0 1 2.5 19ZM15 19a1.5 1.5 0 0 1 1.5-1.5H18a1.5 1.5 0 0 1 0 3h-1.5A1.5 1.5 0 0 1 15 19Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func FloatingDustLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H6a1 1 0 0 1-1-1Zm5 0a1 1 0 0 1 1-1h9a1 1 0 1 1 0 2h-9a1 1 0 0 1-1-1ZM3 9a1 1 0 0 1 1-1h9a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1Zm12 0a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1ZM5 14a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Zm5 0a1 1 0 0 1 1-1h9a1 1 0 1 1 0 2h-9a1 1 0 0 1-1-1Zm-7 5a1 1 0 0 1 1-1h9a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1Zm12 0a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func FlowerFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -11403,6 +12243,26 @@ func FlowerpotLine(children ...g.Node) g.Node {
 	)
 }
 
+func FogFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5 8.416a6.5 6.5 0 0 1 12.586-2.204a6.002 6.002 0 0 1 4.385 6.387a1 1 0 0 1-.996.901H3.031a1 1 0 0 1-.992-1.124A5.004 5.004 0 0 1 5 8.416ZM3 16a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1Zm5 3a1 1 0 1 0 0 2h9a1 1 0 1 0 0-2H8Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func FogLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11.5 2A6.5 6.5 0 0 0 5 8.416a5.004 5.004 0 0 0-2.961 3.96a1 1 0 1 0 1.984.248A3.004 3.004 0 0 1 6.27 10.09A1.01 1.01 0 0 0 7.027 9a4.5 4.5 0 0 1 8.817-1.679c.104.382.421.668.811.732a4.001 4.001 0 0 1 3.325 4.348a1 1 0 1 0 1.99.198a6.002 6.002 0 0 0-4.385-6.387A6.502 6.502 0 0 0 11.5 2ZM3 16a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1Zm4 4a1 1 0 0 1 1-1h9a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func FolderCheckFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -11493,7 +12353,7 @@ func FolderForbidLine(children ...g.Node) g.Node {
 	)
 }
 
-func FolderInforFill(children ...g.Node) g.Node {
+func FolderInfoFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
@@ -11503,7 +12363,7 @@ func FolderInforFill(children ...g.Node) g.Node {
 	)
 }
 
-func FolderInforLine(children ...g.Node) g.Node {
+func FolderInfoLine(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
@@ -12258,7 +13118,7 @@ func GasStationLine(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5 3a2 2 0 0 0-2 2v14a1 1 0 1 0 0 2h12a1 1 0 1 0 0-2v-5h1v2.5a2.5 2.5 0 0 0 5 0v-6.086A2 2 0 0 0 20.414 9l-2.707-2.707a1 1 0 1 0-1.414 1.414l1.1 1.101A1.999 1.999 0 0 0 19 12l.001 4.5a.5.5 0 0 1-1 0V14a2 2 0 0 0-2-2h-1V5a2 2 0 0 0-2-2H5Zm8 8V5H5v6h8Zm-8 2h8v6H5v-6Z"/></g>`),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M13 3a2 2 0 0 1 1.995 1.85L15 5v7h1a2 2 0 0 1 1.995 1.85L18 14v2.5a.5.5 0 0 0 .992.09L19 16.5V12a2.017 2.017 0 0 1-1.123-.345a2 2 0 0 1-.558-2.738l.075-.109l-1.101-1.1a1 1 0 0 1 1.32-1.498l.094.083L20.414 9a2 2 0 0 1 .578 1.238l.008.176V16.5a2.5 2.5 0 0 1-4.995.164L16 16.5V14h-1v5a1 1 0 0 1 .117 1.993L15 21H3a1 1 0 0 1-.117-1.993L3 19V5a2 2 0 0 1 1.85-1.995L5 3h8Zm0 10H5v6h8v-6Zm0-8H5v6h8V5Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -12643,6 +13503,26 @@ func GovernmentLine(children ...g.Node) g.Node {
 	)
 }
 
+func GradienterFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 8.5a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3ZM8 11H4a1 1 0 0 0-.117 1.993L4 13h4a1 1 0 0 0 .117-1.993L8 11Zm12 0h-4a1 1 0 0 0-.117 1.993L16 13h4a1 1 0 0 0 .117-1.993L20 11Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func GradienterLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M4.455 9.333a8.004 8.004 0 0 1 15.09 0a1 1 0 0 0 1.886-.666C20.058 4.784 16.356 2 12 2C7.643 2 3.94 4.784 2.568 8.667a1 1 0 1 0 1.886.666Zm0 5.334a1 1 0 1 0-1.886.666C3.942 19.216 7.644 22 12 22c4.356 0 8.058-2.784 9.43-6.667a1 1 0 1 0-1.885-.666a8.004 8.004 0 0 1-15.09 0ZM13.5 12a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0ZM2 12a1 1 0 0 1 1-1h5a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm13 0a1 1 0 0 1 1-1h5a1 1 0 1 1 0 2h-5a1 1 0 0 1-1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func GrassFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -12743,6 +13623,26 @@ func GroupLine(children ...g.Node) g.Node {
 	)
 }
 
+func HailFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M14 18a2 2 0 1 1 0 4a2 2 0 0 1 0-4Zm-4.5-1a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm2-15a6.502 6.502 0 0 1 6.086 4.212a6.002 6.002 0 0 1-.217 11.631a4.004 4.004 0 0 0-.12-.177a3.5 3.5 0 0 0-3.71-5.533a4 4 0 1 0-6.788 4.2c-.355.45-.602.988-.701 1.577A5.002 5.002 0 0 1 5 8.416A6.5 6.5 0 0 1 11.5 2Zm3 12a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3ZM10 12a2 2 0 1 1 0 4a2 2 0 0 1 0-4Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HailLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M14 18a2 2 0 1 1 0 4a2 2 0 0 1 0-4Zm-4.5-1a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm2-15a6.502 6.502 0 0 1 6.086 4.212A6.002 6.002 0 0 1 19.6 16.8a1 1 0 0 1-1.202-1.6a4.001 4.001 0 0 0-1.744-7.148a1.01 1.01 0 0 1-.81-.731A4.5 4.5 0 0 0 7.027 9a1.01 1.01 0 0 1-.76 1.09A3.002 3.002 0 0 0 5.5 15.6a1 1 0 1 1-1.002 1.73A5 5 0 0 1 5 8.417A6.5 6.5 0 0 1 11.5 2Zm3 12a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3ZM10 12a2 2 0 1 1 0 4a2 2 0 0 1 0-4Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func HairFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -12779,6 +13679,46 @@ func HairTwoLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M9.84 20.275c-.419.972-1.585 1.533-2.668.979c-2.046-1.049-3.454-2.248-4.315-3.58c-.871-1.349-1.14-2.766-1.019-4.15C2.074 10.841 3.784 8.29 5.2 6.4C7.084 3.888 9.48 2.5 12 2.5c2.52 0 4.916 1.388 6.8 3.9c1.401 1.868 3.24 4.434 3.54 7.125c.155 1.397-.1 2.832-1.008 4.194c-.894 1.342-2.373 2.54-4.538 3.585c-1.083.523-2.238-.047-2.643-1.023c-.722.454-1.478.719-2.15.719c-.676 0-1.437-.268-2.162-.725ZM6.8 7.6c1.616-2.154 3.47-3.1 5.2-3.1s3.584.946 5.2 3.1c1.454 1.938 2.922 4.082 3.152 6.146c.109.98-.065 1.934-.684 2.864c-.626.938-1.751 1.92-3.668 2.857v-.901c.866-1.15 1.5-2.692 1.5-4.566c0-.383-.02-.755-.061-1.113a1 1 0 0 0-.984-.887a4.501 4.501 0 0 1-4.425-3.977a1.01 1.01 0 0 0-1.268-.847C8.368 7.86 6.5 10.405 6.5 14c0 1.874.634 3.416 1.5 4.566v.864c-1.787-.928-2.856-1.904-3.463-2.843c-.607-.938-.793-1.902-.706-2.887c.18-2.055 1.54-4.196 2.97-6.1ZM8.5 14c0-2.222.85-3.674 1.843-4.412a6.508 6.508 0 0 0 5.157 4.336c.012 1.408-.468 2.789-1.425 3.832C13.245 18.663 12.367 19 12 19c-.366 0-1.243-.337-2.075-1.244C9.138 16.897 8.5 15.633 8.5 14Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HammerFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6 3a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4v12a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V9h4a1 1 0 0 0 1-1V7a1 1 0 0 0-.293-.707l-.657-.657A9 9 0 0 0 12.686 3H6Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HammerLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6 3a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4v12a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V9h4a1 1 0 0 0 1-1V7a1 1 0 0 0-.293-.707l-.657-.657A9 9 0 0 0 12.686 3H6Zm7 6h-1v11h1V9Zm1-2h3.585a7 7 0 0 0-4.899-2H7v2h7Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HandCardFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M8 6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-5l-5.867 4.4a3 3 0 0 1-1.8.6H3a1 1 0 1 1 0-2h4.333a1 1 0 0 0 .6-.2l6.545-4.908l-.286-.286a2 2 0 0 0-2.664-.148l-2.903 2.323a1 1 0 1 1-1.25-1.562l.625-.5V9.073a3 3 0 0 0-1.464.806l-2.829 2.828a1 1 0 0 1-1.414-1.414L5.12 8.464A5 5 0 0 1 8 7.044V6Zm2 3V8a1 1 0 0 0-1-1h11a1 1 0 1 1 0 2H10Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HandCardLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M10 4a2 2 0 0 0-2 2v1.043a5 5 0 0 0-2.879 1.421l-2.828 2.829a1 1 0 1 0 1.414 1.414L6.536 9.88A3 3 0 0 1 8 9.073v3.646l-.625.5a1 1 0 0 0 1.25 1.562l2.903-2.323a2 2 0 0 1 2.664.148l.286.286L7.933 17.8a1 1 0 0 1-.6.2H3a1 1 0 1 0 0 2h4.333a3 3 0 0 0 1.8-.6L15 15h5a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H10Zm0 7.12l.279-.223a4 4 0 0 1 5.327.295l.286.286c.421.421.612.978.583 1.522H20V9H10v2.12ZM20 7V6H10v1h10Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -12853,6 +13793,26 @@ func HandGrabLine(children ...g.Node) g.Node {
 	)
 }
 
+func HandHeartFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M20.999 6.854c.033-1.48-.721-2.774-1.833-3.422c-.954-.556-2.135-.607-3.166.037c-1.03-.644-2.212-.593-3.166-.037c-1.112.648-1.866 1.942-1.833 3.422c.043 1.909 1.521 3.464 3.684 4.749c.402.238.831.508 1.315.508s.913-.27 1.315-.508c2.163-1.285 3.641-2.84 3.684-4.749Zm-12.61 5.474l-1.99 1.243A1.994 1.994 0 0 0 5 13.001H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h1a2 2 0 0 0 1.732-1h.796a1 1 0 0 1 .447.105l2.35 1.175a5 5 0 0 0 3.217.43l3.21-.641a2.986 2.986 0 0 0 1.21-.542l3.071-2.303A2.417 2.417 0 0 0 22 16.292v-.056c0-1.77-1.863-2.922-3.447-2.13c-.69.345-1.327.875-1.968 1.303c.37-1.113-.219-2.348-1.39-2.64l-3.716-.93a4 4 0 0 0-3.09.489Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HandHeartLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="m11.253 11.79l.226.05l3.716.928c1.171.293 1.76 1.528 1.39 2.64l.32-.22l.646-.462c.325-.23.657-.448 1.002-.62c1.536-.768 3.334.291 3.442 1.971l.005.16v.055c0 .697-.3 1.357-.82 1.814l-.147.12l-3.07 2.302c-.299.224-.636.39-.994.49l-.218.052l-3.21.642a5 5 0 0 1-2.964-.314l-.252-.117l-2.35-1.175a1 1 0 0 0-.331-.1L7.528 20h-.796a2 2 0 0 1-1.563.993L5 21H4a2 2 0 0 1-1.995-1.85L2 19v-4a2 2 0 0 1 1.85-1.994L4 13h1c.484 0 .928.172 1.274.459l.125.112l1.99-1.243a4 4 0 0 1 2.636-.575l.228.036Zm-1.804 2.234L7 15.554V18h.528a3 3 0 0 1 1.342.317l2.35 1.175a3 3 0 0 0 1.93.258l3.209-.642a.998.998 0 0 0 .404-.18l3.07-2.303c.128-.096.167-.237.167-.389a.382.382 0 0 0-.513-.359l-2.428 1.62a3 3 0 0 1-1.665.503H12v-2h1.559a1 1 0 0 0 .948-.684l.203-.608l-3.716-.928a2 2 0 0 0-1.545.244ZM5 15H4v4h1v-4ZM16 3.47c1.03-.644 2.212-.593 3.166-.037c1.112.648 1.866 1.942 1.833 3.422c-.041 1.835-1.41 3.344-3.438 4.6l-.398.239c-.358.212-.74.418-1.163.418c-.423 0-.805-.206-1.163-.418l-.398-.24C12.41 10.198 11.042 8.69 11 6.854c-.033-1.48.721-2.774 1.833-3.422c.954-.556 2.135-.607 3.166.037Zm2.159 1.691c-.379-.22-.83-.246-1.278.136l-.206.19a1.084 1.084 0 0 1-1.35 0l-.206-.19c-.449-.382-.9-.357-1.278-.136c-.461.269-.858.87-.84 1.65c.017.778.618 1.78 2.468 2.929l.238.144l.293.171l.293-.17C18.33 8.673 18.981 7.62 19 6.808c.018-.779-.379-1.38-.84-1.649Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func HandLine(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -12899,6 +13859,26 @@ func HandsClappingLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M9.402 3.596a2.5 2.5 0 0 1 3.763.45l.09.146l.69 1.197c.047-.065.098-.129.15-.19c.574-.676 1.404-1.102 2.337-1.259c.78-.13 1.384.37 1.61.937l.041.114c.205.668.578 1.48 1.05 2.348c1.578 2.913 1.355 6.589-.76 9.037c-.42 1.911-1.545 3.642-3.4 4.713a7.036 7.036 0 0 1-9.61-2.575a258.441 258.441 0 0 0-2.196-3.733a2.487 2.487 0 0 1 1.184-3.58l.151-.056l-.773-1.34a2.5 2.5 0 0 1 1.45-3.647a2.5 2.5 0 0 1 4.223-2.562ZM5.644 8.12a.5.5 0 0 0-.183.683l3.25 5.63a1 1 0 1 1-1.732 1l-1.257-2.176a.487.487 0 1 0-.84.494c.75 1.25 1.484 2.5 2.213 3.762a5.036 5.036 0 0 0 6.878 1.843c1.316-.76 2.155-2.037 2.463-3.48l.025-.58c.05-1.329.007-2.504-.685-3.78c-.412-.76-.786-1.537-1.052-2.265c-.46.168-.743.449-.878.738c-.275.59 0 1.216.3 1.736a1 1 0 0 1-1.715 1.03c-.357-.573-.7-1.157-1.037-1.744l-1.001-1.768a125.5 125.5 0 0 0-.503-.88a.5.5 0 0 0-.831.552l2.25 3.897a1 1 0 0 1-1.732 1l-.808-1.38l-1.63-2.742c-.272-.459-.543-.92-.812-1.387a.5.5 0 0 0-.683-.183Zm10.679-2.093a1.66 1.66 0 0 0-.704.466a1.184 1.184 0 0 0-.282.673c.579.107 1 .568 1.148 1.049c.205.668.578 1.479 1.05 2.348c.243.45.444.92.602 1.4a6.474 6.474 0 0 0-.763-3.672c-.412-.759-.786-1.536-1.051-2.264Zm-5.483-1.02a.5.5 0 0 0-.184.682l1.692 2.922a3.3 3.3 0 0 1 .564-.599l.163-.127l-1.552-2.695a.5.5 0 0 0-.683-.183Zm-3.598-.232a.5.5 0 0 0-.183.683l.772 1.338a2.511 2.511 0 0 1 .865-.502L7.925 4.96a.5.5 0 0 0-.683-.183Zm14.123-.778a1 1 0 0 1-.266 1.303l-.097.064l-.84.487a1 1 0 0 1-1.102-1.666l.098-.064l.84-.487a1 1 0 0 1 1.367.363Zm-2.732-2.91a1 1 0 0 1 .731 1.11l-.024.115l-.129.483a1 1 0 0 1-1.955-.403l.023-.114l.13-.483a1 1 0 0 1 1.224-.707Zm-3.647 0a1 1 0 0 1 1.188.597l.037.11l.13.484a1 1 0 0 1-1.896.628l-.036-.11l-.13-.484a1 1 0 0 1 .707-1.224Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HappyFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm1.984 12.25c-.53.468-1.223.75-1.984.75a2.985 2.985 0 0 1-1.984-.75a1 1 0 1 0-1.324 1.5A4.987 4.987 0 0 0 12 17a4.984 4.984 0 0 0 3.308-1.25a1 1 0 0 0-1.324-1.5ZM8.5 8c-1.087 0-1.958.68-2.394 1.552a1 1 0 0 0 1.73.997l.058-.101c.162-.324.41-.448.606-.448c.17 0 .382.095.541.336l.065.112a1 1 0 0 0 1.788-.896C10.457 8.68 9.587 8 8.5 8Zm7 0c-1.087 0-1.957.68-2.394 1.552a1 1 0 0 0 1.73.997l.058-.101c.162-.324.41-.448.606-.448c.17 0 .382.095.541.336l.065.112a1 1 0 1 0 1.788-.896C17.458 8.68 16.587 8 15.5 8Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HappyLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 4a8 8 0 1 0 0 16a8 8 0 0 0 0-16ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12Zm6.5-2c-.195 0-.444.124-.606.448a1 1 0 0 1-1.788-.896C6.542 8.68 7.413 8 8.5 8c1.087 0 1.957.68 2.394 1.552a1 1 0 0 1-1.788.896C8.944 10.124 8.696 10 8.5 10Zm7 0c-.195 0-.444.124-.606.448a1 1 0 1 1-1.788-.896C13.543 8.68 14.413 8 15.5 8c1.087 0 1.957.68 2.394 1.552a1 1 0 0 1-1.788.896c-.162-.324-.41-.448-.606-.448Zm-6.896 4.338a1 1 0 0 1 1.412-.088c.53.468 1.223.75 1.984.75c.761 0 1.455-.282 1.984-.75a1 1 0 1 1 1.324 1.5A4.984 4.984 0 0 1 12 17a4.984 4.984 0 0 1-3.308-1.25a1 1 0 0 1-.088-1.412Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -12959,6 +13939,26 @@ func HatTwoLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M15.5 4a1.5 1.5 0 0 1 1.493 1.356L17 5.5v.082a8.004 8.004 0 0 1 4.995 7.131L22 13v2a1 1 0 0 1-.9.995c-.623.062-1.232.11-1.83.14C16.415 18.889 14.162 20 11.939 20c-1.144 0-2.198-.296-3.216-.693a29.532 29.532 0 0 1-1.535-.664l-1.06-.489a53.567 53.567 0 0 0-.533-.24c-.637-.283-1.048-.336-1.328-.33l-.152.007l-.502.062a2.137 2.137 0 0 1-.22.011a1.52 1.52 0 0 1-1.1-.457a1 1 0 0 1 .002-1.416l.092-.08l3.615-2.812a8 8 0 0 1 7.752-7.895L14.085 5A1.5 1.5 0 0 1 15.5 4Zm-8 10.266l-1.937 1.508c.258.075.538.177.843.312l.433.195l1.549.711c.361.163.71.314 1.061.451c.904.353 1.695.557 2.489.557c1.144 0 2.478-.427 4.292-1.852c-2.704-.13-5.297-.656-8.154-1.672l-.575-.21Zm9.93-6.19c.182.45.341.925.473 1.414c.385 1.428.554 3.063.3 4.684a32.487 32.487 0 0 0 1.797-.09V13a5.993 5.993 0 0 0-2.57-4.923ZM14 7a6 6 0 0 0-5.963 5.33c2.902 1.102 5.464 1.668 8.141 1.813c.268-1.37.147-2.823-.206-4.133c-.344-1.278-.883-2.331-1.397-2.983A6.07 6.07 0 0 0 14 7Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HazeFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5.5 3a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3ZM12 3a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm5 1.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0ZM5.5 18a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm5 1.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0Zm8-1.5a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3ZM3.905 15.269a4.623 4.623 0 0 1 6.26-6.794L12 10.033l1.836-1.558a4.623 4.623 0 1 1 0 7.05L12 13.967l-1.836 1.558a4.623 4.623 0 0 1-6.26-.256Zm2.121-4.416a1.623 1.623 0 0 0 2.197 2.384L9.682 12l-1.459-1.237a1.623 1.623 0 0 0-2.197.09ZM14.318 12l1.459 1.237a1.623 1.623 0 1 0 0-2.474L14.318 12Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HazeLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5.5 3a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3ZM12 3a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm6.5 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm-13 15a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm6.5 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm6.5 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3ZM4.258 14.915a4.123 4.123 0 0 1 5.583-6.059L12 10.688l2.16-1.832a4.123 4.123 0 1 1 0 6.287L12 13.311l-2.16 1.832a4.123 4.123 0 0 1-5.582-.228ZM5.673 10.5a2.123 2.123 0 0 0 2.874 3.12L10.454 12l-1.907-1.619a2.123 2.123 0 0 0-2.874.118Zm7.873 1.5l1.907 1.618a2.123 2.123 0 1 0 0-3.236L13.546 12Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -13083,6 +14083,26 @@ func HeadphoneTwoLine(children ...g.Node) g.Node {
 	)
 }
 
+func HeartCrackFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11.94 4.29c-2.06-1.636-4.493-1.62-6.434-.489c-2.095 1.221-3.569 3.7-3.504 6.592C2.14 16.5 10.5 21 12 21s9.861-4.5 9.998-10.607c.065-2.892-1.409-5.37-3.504-6.592a5.755 5.755 0 0 0-2.75-.799L11.37 7.957l2.336 2.336a1 1 0 0 1 .125 1.262l-2 3a1 1 0 0 1-1.664-1.11l1.545-2.318l-2.42-2.42a1 1 0 0 1-.043-1.369l2.69-3.048Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HeartCrackLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M21.998 10.393c.065-2.892-1.409-5.37-3.504-6.592c-1.96-1.141-4.422-1.148-6.494.538c-2.072-1.686-4.534-1.68-6.494-.538c-2.095 1.221-3.569 3.7-3.504 6.592c.081 3.61 2.89 6.794 7.679 9.638c.694.412 1.474.97 2.319.97c.861 0 1.61-.548 2.32-.97c4.787-2.844 7.597-6.029 7.678-9.638Zm-9.155-4.121c1.508-1.526 3.25-1.554 4.644-.742c1.444.841 2.56 2.628 2.511 4.818c-.056 2.512-2.04 5.195-6.7 7.964c-.408.242-.834.553-1.298.682c-.464-.129-.89-.44-1.298-.682c-4.66-2.77-6.644-5.452-6.7-7.964c-.05-2.19 1.067-3.977 2.511-4.818c1.227-.715 2.723-.778 4.092.256L9.247 7.342a1 1 0 0 0 .046 1.365l2.42 2.42l-1.545 2.318a1 1 0 1 0 1.664 1.11l2-3a1 1 0 0 0-.125-1.262l-2.339-2.34l1.385-1.585c.03-.033.059-.065.09-.096Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func HeartFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -13139,6 +14159,46 @@ func HeartbeatLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M9.514 3a1 1 0 0 1 .949.73l3.673 13.06l1.928-5.141A1 1 0 0 1 17 11h3a1 1 0 1 1 0 2h-2.307l-2.757 7.351a1 1 0 0 1-1.899-.08L9.45 7.514l-1.496 4.784A1 1 0 0 1 7 13H4a1 1 0 1 1 0-2h2.265l2.28-7.298A1 1 0 0 1 9.516 3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HeavyRainFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M9.889 19.656a1 1 0 0 1 1.932.518l-.259.966a1 1 0 0 1-1.932-.518l.259-.966Zm-2.195-1.862a1 1 0 0 1 .707 1.224l-.259.966a1 1 0 1 1-1.932-.517l.259-.966a1 1 0 0 1 1.225-.707Zm7.333 0a1 1 0 0 1 .707 1.224l-.258.966a1 1 0 1 1-1.932-.517l.258-.966a1 1 0 0 1 1.225-.707Zm-2.878-2.709a1 1 0 0 1 .707 1.225l-.259.966a1 1 0 1 1-1.932-.518l.26-.966a1 1 0 0 1 1.224-.707ZM11.5 2a6.502 6.502 0 0 1 6.086 4.212a6.002 6.002 0 0 1 .344 11.471a2.99 2.99 0 0 0 .512-1.045l.26-.966a3 3 0 0 0-5.478-2.309a3.01 3.01 0 0 0-2.277-.16a3 3 0 0 0-5.375.917l-.259.965a2.986 2.986 0 0 0 0 1.553a2.96 2.96 0 0 0-.581.819A5 5 0 0 1 5 8.417A6.5 6.5 0 0 1 11.5 2ZM8.729 13.93a1 1 0 0 1 .707 1.225l-.259.966a1 1 0 1 1-1.932-.518l.26-.966a1 1 0 0 1 1.224-.707Zm7.334 0a1 1 0 0 1 .707 1.225l-.26.966a1 1 0 1 1-1.931-.518l.259-.966a1 1 0 0 1 1.225-.707Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HeavyRainLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M9.889 19.656a1 1 0 0 1 1.931.518l-.258.966a1 1 0 0 1-1.932-.518l.259-.966Zm-2.196-1.862a1 1 0 0 1 .708 1.224l-.26.966a1 1 0 1 1-1.931-.517l.259-.966a1 1 0 0 1 1.224-.707Zm7.334 0a1 1 0 0 1 .707 1.224l-.259.966a1 1 0 1 1-1.932-.517l.26-.966a1 1 0 0 1 1.224-.707Zm-2.878-2.709a1 1 0 0 1 .707 1.225l-.259.966a1 1 0 0 1-1.932-.518l.259-.966a1 1 0 0 1 1.225-.707ZM11.5 2a6.502 6.502 0 0 1 6.086 4.212A6.002 6.002 0 0 1 19.6 16.799a1 1 0 1 1-1.202-1.598A3.983 3.983 0 0 0 20 12a4.001 4.001 0 0 0-3.344-3.948a1.01 1.01 0 0 1-.81-.732A4.5 4.5 0 0 0 7.027 9a1.01 1.01 0 0 1-.76 1.09a3.002 3.002 0 0 0-1.252 5.16a1 1 0 1 1-1.324 1.5A5 5 0 0 1 5 8.416A6.5 6.5 0 0 1 11.5 2ZM8.729 13.93a1 1 0 0 1 .707 1.225l-.259.966a1 1 0 0 1-1.932-.518l.259-.966a1 1 0 0 1 1.225-.707Zm7.333 0a1 1 0 0 1 .707 1.225l-.258.966a1 1 0 0 1-1.932-.518l.258-.966a1 1 0 0 1 1.225-.707Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HeavySnowFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M8 16a1 1 0 0 1 1 1v.268l.232-.134a1 1 0 1 1 1 1.732L10 19l.232.134a1 1 0 0 1-1 1.732L9 20.732V21a1 1 0 1 1-2 0v-.268l-.232.134a1 1 0 1 1-1-1.732L6 19l-.232-.134a1 1 0 1 1 1-1.732l.232.134V17a1 1 0 0 1 1-1Zm8 0a1 1 0 0 1 1 1v.268l.232-.134a1 1 0 1 1 1 1.732L18 19l.232.134a1 1 0 0 1-1 1.732L17 20.732V21a1 1 0 1 1-2 0v-.268l-.232.134a1 1 0 1 1-1-1.732L14 19l-.232-.134a1 1 0 1 1 1-1.732l.232.134V17a1 1 0 0 1 1-1ZM11.5 2a6.502 6.502 0 0 1 6.086 4.212a6.002 6.002 0 0 1 2.61 10.077a2.994 2.994 0 0 0-1.916-1.239a3 3 0 0 0-1.549-.96a3.013 3.013 0 0 0-.17-1.09a2.993 2.993 0 0 0-.23-2.5a2.993 2.993 0 0 0-2.05-1.45A2.994 2.994 0 0 0 12 8c-.913 0-1.73.407-2.28 1.05a2.993 2.993 0 0 0-2.05 1.45a2.993 2.993 0 0 0-.23 2.5a3.013 3.013 0 0 0-.171 1.09a3 3 0 0 0-1.55.96a2.993 2.993 0 0 0-2.05 1.45l-.082.154A5 5 0 0 1 5 8.416A6.5 6.5 0 0 1 11.5 2Zm.5 8a1 1 0 0 1 1 1v.268l.232-.134a1 1 0 1 1 1 1.732L14 13l.232.134a1 1 0 0 1-1 1.732L13 14.732V15a1 1 0 1 1-2 0v-.268l-.232.134a1 1 0 1 1-1-1.732L10 13l-.232-.134a1 1 0 1 1 1-1.732l.232.134V11a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HeavySnowLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M16 16a1 1 0 0 1 1 1v.268l.232-.134a1 1 0 1 1 1 1.732L18 19l.232.134a1 1 0 0 1-1 1.732L17 20.732V21a1 1 0 1 1-2 0v-.268l-.232.134a1 1 0 1 1-1-1.732L14 19l-.232-.134a1 1 0 1 1 1-1.732l.232.134V17a1 1 0 0 1 1-1Zm-8 0a1 1 0 0 1 1 1v.268l.232-.134a1 1 0 1 1 1 1.732L10 19l.232.134a1 1 0 0 1-1 1.732L9 20.732V21a1 1 0 1 1-2 0v-.268l-.232.134a1 1 0 1 1-1-1.732L6 19l-.232-.134a1 1 0 1 1 1-1.732l.232.134V17a1 1 0 0 1 1-1Zm4-6a1 1 0 0 1 1 1v.268l.232-.134a1 1 0 1 1 1 1.732L14 13l.232.134a1 1 0 0 1-1 1.732L13 14.732V15a1 1 0 1 1-2 0v-.268l-.232.134a1 1 0 1 1-1-1.732L10 13l-.232-.134a1 1 0 1 1 1-1.732l.232.134V11a1 1 0 0 1 1-1Zm-.5-8a6.502 6.502 0 0 1 6.086 4.212a6.002 6.002 0 0 1 3.214 9.389a1 1 0 0 1-1.6-1.202a4.001 4.001 0 0 0-2.545-6.346a1.01 1.01 0 0 1-.81-.732A4.5 4.5 0 0 0 7.027 9a1.01 1.01 0 0 1-.76 1.09a3.002 3.002 0 0 0-1.97 4.216l.103.193a1 1 0 1 1-1.731 1.002A5 5 0 0 1 5 8.416A6.5 6.5 0 0 1 11.5 2Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -13219,6 +14279,26 @@ func HistoryTwoLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6.57 5.563a1.2 1.2 0 0 0 0 1.874l4.48 3.584c.786.628 1.95.07 1.95-.937V8.5a1 1 0 0 0-1.997-.078L8.601 6.5L11 4.58V5a1 1 0 0 0 1 1a7.001 7.001 0 0 1 6.93 6H18a1 1 0 1 0 0 2h.93A7.004 7.004 0 0 1 13 19.93V18a1 1 0 1 0-2 0v1.93A7.004 7.004 0 0 1 5.07 14H6a1 1 0 1 0 0-2h-.93c.082-.567.23-1.111.438-1.625a1 1 0 1 0-1.853-.75A9 9 0 1 0 13 4.055V2.916c0-1.006-1.164-1.565-1.95-.937L6.57 5.563Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HoeFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5.636 5.636a5 5 0 0 0-1.414 4.243l.424 2.97a1 1 0 0 0 1.697.565l2.828-2.828l7.779 7.778a1 1 0 0 0 1.414-1.414l-7.778-7.78l2.828-2.828a1 1 0 0 0-.566-1.697l-2.97-.424a5 5 0 0 0-4.242 1.414Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HoeLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5.636 5.636A5 5 0 0 0 4.222 9.88l.424 2.97a1 1 0 0 0 1.697.566l2.829-2.829l7.777 7.778a1 1 0 0 0 1.415-1.414l-7.778-7.778l2.828-2.829a1 1 0 0 0-.566-1.697l-2.97-.424a5 5 0 0 0-4.242 1.414Zm2.85 2.808l2.1-2.1l-.99-.142a3 3 0 0 0-3.394 3.394l.141.99l2.1-2.1a.998.998 0 0 1 .042-.042Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -13343,6 +14423,26 @@ func HomeTwoLine(children ...g.Node) g.Node {
 	)
 }
 
+func HomeWifiFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="m13.2 2.65l7 5.25a2 2 0 0 1 .8 1.6V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9.5a2 2 0 0 1 .8-1.6l7-5.25a2 2 0 0 1 2.4 0ZM12 15a1 1 0 1 0 0 2a1 1 0 0 0 0-2Zm0-3a3.988 3.988 0 0 0-2.634.99a1 1 0 0 0 1.317 1.505A1.989 1.989 0 0 1 12 14c.505 0 .964.186 1.317.495a1 1 0 0 0 1.317-1.505A3.988 3.988 0 0 0 12 12Zm0-3c-1.765 0-3.38.654-4.61 1.732a1 1 0 1 0 1.318 1.505A4.977 4.977 0 0 1 12 11c1.262 0 2.412.466 3.292 1.237a1 1 0 0 0 1.318-1.505A6.977 6.977 0 0 0 12 9Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HomeWifiLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="m13.2 2.65l7 5.25a2 2 0 0 1 .8 1.6V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9.5a2 2 0 0 1 .8-1.6l7-5.25a2 2 0 0 1 2.4 0ZM12 4.25L5 9.5V19h14V9.5l-7-5.25ZM12 15a1 1 0 1 1 0 2a1 1 0 0 1 0-2Zm0-3c1.008 0 1.931.374 2.634.99a1 1 0 1 1-1.317 1.505A1.988 1.988 0 0 0 12 14c-.505 0-.964.186-1.317.495a1 1 0 1 1-1.317-1.505A3.988 3.988 0 0 1 12 12Zm0-3c1.765 0 3.38.654 4.61 1.732a1 1 0 0 1-1.318 1.505A4.977 4.977 0 0 0 12 11a4.977 4.977 0 0 0-3.292 1.237a1 1 0 0 1-1.318-1.505A6.977 6.977 0 0 1 12 9Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func HoodFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -13419,6 +14519,26 @@ func HotkeyLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18 3a3 3 0 0 1 2.995 2.824L21 6v12a3 3 0 0 1-2.824 2.995L18 21H6a3 3 0 0 1-2.995-2.824L3 18V6a3 3 0 0 1 2.824-2.995L6 3h12Zm-2.707 13.708A2.99 2.99 0 0 1 14 17H5v1a1 1 0 0 0 1 1h11.586l-2.293-2.292ZM18 5h-1v9c0 .386-.073.755-.206 1.094l-.086.2L19 17.585V6a1 1 0 0 0-.883-.993L18 5Zm-3 0H6a1 1 0 0 0-.993.883L5 6v9h9a1 1 0 0 0 .993-.883L15 14V5ZM9 7a1 1 0 0 1 .993.883L10 8v.631l1.445-.963a1 1 0 0 1 1.203 1.594l-.093.07l-1.377.918l1.377.918a1 1 0 0 1-1.009 1.723l-.1-.059L10 11.868V12a1 1 0 0 1-1.993.117L8 12V8a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HoursFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M17.03 14.758a1 1 0 0 1 1.962.37l-.022.115L18.28 18H19v-1a1 1 0 0 1 1.993-.116L21 17v1a1 1 0 0 1 .117 1.993L21 20v1a1 1 0 0 1-1.993.117L19 21v-1h-2a1 1 0 0 1-.993-1.113l.023-.13l1-4ZM13.5 14a2.5 2.5 0 0 1 2.5 2.5v.325c0 .675-.241 1.327-.68 1.839L14.174 20H15a1 1 0 0 1 0 2h-3a1 1 0 0 1-.76-1.65l2.561-2.988a.825.825 0 0 0 .199-.537V16.5a.5.5 0 1 0-1 0a1 1 0 1 1-2 0a2.5 2.5 0 0 1 2.5-2.5ZM12 3a9 9 0 0 1 8.796 10.913a2.996 2.996 0 0 0-2.068-1.823a3 3 0 0 0-2.724.67A4.5 4.5 0 0 0 9 16.5c0 .886.384 1.682.994 2.23l-.272.318a2.998 2.998 0 0 0-.68 1.455A9 9 0 0 1 12 3Zm-1 3a1 1 0 0 0-1 1v3H9a1 1 0 1 0 0 2h2a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func HoursLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18.242 14.03a1 1 0 0 1 .728 1.213L18.28 18H19v-1a1 1 0 1 1 2 0v1a1 1 0 1 1 0 2v1a1 1 0 1 1-2 0v-1h-2a1 1 0 0 1-.97-1.242l1-4a1 1 0 0 1 1.212-.728ZM13.5 14a2.5 2.5 0 0 1 2.495 2.336L16 16.5v.325c0 .6-.19 1.181-.541 1.663l-.14.175L14.175 20H15a1 1 0 0 1 .117 1.993L15 22h-3a1 1 0 0 1-.837-1.548l.078-.103l2.56-2.987a.825.825 0 0 0 .19-.42l.009-.117V16.5a.5.5 0 0 0-1 0a1 1 0 1 1-2 0a2.5 2.5 0 0 1 2.5-2.5ZM12 3c4.195 0 7.717 2.87 8.716 6.75a1 1 0 1 1-1.937.5A7 7 0 1 0 8.5 18.064a1 1 0 0 1-1 1.73A9 9 0 0 1 12 3Zm0 4a1 1 0 0 1 .993.883L13 8v4a1 1 0 0 1-.883.993L12 13h-2a1 1 0 0 1-.117-1.993L10 11h1V8a1 1 0 0 1 1-1Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -13643,6 +14763,26 @@ func InsLine(children ...g.Node) g.Node {
 	)
 }
 
+func InspectFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M10.611 10.611a1 1 0 0 1 1.11-.208l8.839 3.889a1 1 0 0 1-.14 1.88l-2.787.76a1 1 0 0 0-.701.702l-.76 2.786a1 1 0 0 1-1.88.14l-3.89-8.84a1 1 0 0 1 .209-1.109ZM17 3a3 3 0 0 1 3 3v5.86l-7.474-3.288a3 3 0 0 0-3.954 3.954L11.861 20H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h11Zm2.62 15.463a3.014 3.014 0 0 1-1.157 1.157l.248-.91l.909-.247Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func InspectLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M10.611 10.611a1 1 0 0 1 1.11-.208l8.839 3.889a1 1 0 0 1-.14 1.88l-3.338.91l-.91 3.338a1 1 0 0 1-1.88.14l-3.89-8.84a1 1 0 0 1 .209-1.109ZM17 3a3 3 0 0 1 3 3v3a1 1 0 1 1-2 0V6a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h3a1 1 0 1 1 0 2H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h11Zm-3.73 10.269l1.715 3.9l.318-1.164a1 1 0 0 1 .701-.702l1.165-.318l-3.9-1.716Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func InventoryFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -13799,6 +14939,26 @@ func KeyboardLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M20 4a2 2 0 0 1 1.995 1.85L22 6v12a2 2 0 0 1-1.85 1.995L20 20H4a2 2 0 0 1-1.995-1.85L2 18V6a2 2 0 0 1 1.85-1.995L4 4h16Zm0 2H4v12h16V6Zm-3 8a1 1 0 0 1 .117 1.993L17 16H7a1 1 0 0 1-.117-1.993L7 14h10Zm-9-3a1 1 0 1 1 0 2H7a1 1 0 1 1 0-2h1Zm4.5 0a1 1 0 0 1 .117 1.993L12.5 13h-1a1 1 0 0 1-.117-1.993L11.5 11h1Zm4.5 0a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2h1ZM8 8a1 1 0 0 1 .117 1.993L8 10H7a1 1 0 0 1-.117-1.993L7 8h1Zm4.5 0a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2h1ZM17 8a1 1 0 0 1 .117 1.993L17 10h-1a1 1 0 0 1-.117-1.993L16 8h1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func KeyboardTwoFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M19 5a1 1 0 1 0-2 0v.5a.5.5 0 0 1-.5.5h-3A2.5 2.5 0 0 0 11 8.5V9H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-7v-.5a.5.5 0 0 1 .5-.5h3A2.5 2.5 0 0 0 19 5.5V5ZM7 12a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H7Zm-1 4a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func KeyboardTwoLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18 4a1 1 0 0 1 1 1v.5A2.5 2.5 0 0 1 16.5 8h-3a.5.5 0 0 0-.5.5V9h7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h7v-.5A2.5 2.5 0 0 1 13.5 6h3a.5.5 0 0 0 .5-.5V5a1 1 0 0 1 1-1ZM4 11v7h16v-7H4Zm2 2a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm0 3a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -14039,6 +15199,26 @@ func LargeArrowUpLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M17.586 10L12 4.413L6.414 10H9c.545 0 1 .455 1 1v9h4v-9a1 1 0 0 1 1-1h2.586Zm1.926-.902c1.071 1.07.313 2.902-1.202 2.902H16v8a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-8H5.69c-1.515 0-2.273-1.831-1.202-2.902l6.451-6.453a1.5 1.5 0 0 1 2.121 0l6.452 6.453Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func LayerFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="m5.555 5.168l5.554 3.703A2 2 0 0 1 12 10.535V21a1 1 0 0 1-1.555.832L4.891 18.13A2 2 0 0 1 4 16.465V6a1 1 0 0 1 1.555-.832Zm2.973-2.05a1 1 0 0 1 1.027.05l5.554 3.703A2 2 0 0 1 16 8.535V19a1 1 0 0 1-1.555.832l-.945-.63v-8.667a3.5 3.5 0 0 0-1.559-2.912L8 4.995V4a1 1 0 0 1 .528-.882Zm5.027-1.95l5.554 3.703A2 2 0 0 1 20 6.535V17a1 1 0 0 1-1.555.832l-.945-.63V8.535a3.5 3.5 0 0 0-1.559-2.912L12 2.995V2a1 1 0 0 1 1.555-.832Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func LayerLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12.528 1.118a1 1 0 0 1 1.027.05l5.554 3.703A2 2 0 0 1 20 6.535V17a1 1 0 0 1-1.555.832L16 16.202V19a1 1 0 0 1-1.555.832L12 18.202V21a1 1 0 0 1-1.555.832L4.891 18.13A2 2 0 0 1 4 16.465V6a1 1 0 0 1 1.555-.832L8 6.798V4a1 1 0 0 1 1.555-.832L12 4.798V2a1 1 0 0 1 .528-.882ZM14 6.131l1.11.74A2 2 0 0 1 16 8.535v5.263l2 1.334V6.535L14 3.87v2.26Zm-4 2l1.11.74a2 2 0 0 1 .89 1.664v5.263l2 1.333V8.535L10 5.87v2.26ZM6 7.87v8.596l4 2.666v-8.596L6 7.87Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -14523,6 +15703,26 @@ func LightLine(children ...g.Node) g.Node {
 	)
 }
 
+func LightSnowFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 13a1 1 0 0 1 1 1v1.268l1.098-.634a1 1 0 1 1 1 1.732L14 17l1.098.634a1 1 0 1 1-1 1.732L13 18.732V20a1 1 0 1 1-2 0v-1.268l-1.098.634a1 1 0 1 1-1-1.732L10 17l-1.098-.634a1 1 0 1 1 1-1.732l1.098.634V14a1 1 0 0 1 1-1Zm-.5-11a6.502 6.502 0 0 1 6.086 4.212a6.002 6.002 0 0 1-.07 11.595a3.01 3.01 0 0 0-.32-.807a2.999 2.999 0 0 0-2.598-4.5a2.999 2.999 0 0 0-5.196 0A2.999 2.999 0 0 0 6.803 17a3.02 3.02 0 0 0-.354.97a5 5 0 0 1-1.448-9.554A6.5 6.5 0 0 1 11.5 2Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func LightSnowLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 13a1 1 0 0 1 1 1v1.268l1.098-.634a1 1 0 1 1 1 1.732L14 17l1.098.634a1 1 0 1 1-1 1.732L13 18.732V20a1 1 0 1 1-2 0v-1.268l-1.098.634a1 1 0 1 1-1-1.732L10 17l-1.098-.634a1 1 0 1 1 1-1.732l1.098.634V14a1 1 0 0 1 1-1Zm-.5-11a6.502 6.502 0 0 1 6.086 4.212A6.002 6.002 0 0 1 19.6 16.799a1 1 0 1 1-1.202-1.598a4.001 4.001 0 0 0-1.744-7.147a1.01 1.01 0 0 1-.81-.733A4.5 4.5 0 0 0 7.027 9a1.01 1.01 0 0 1-.76 1.09a3.002 3.002 0 0 0-1.252 5.16a1 1 0 1 1-1.324 1.5A5 5 0 0 1 5 8.416A6.5 6.5 0 0 1 11.5 2Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func LighthouseFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -14603,6 +15803,26 @@ func LineHeightLine(children ...g.Node) g.Node {
 	)
 }
 
+func LinearFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M4.929 4.929c3.905-3.905 10.237-3.905 14.142 0c3.905 3.905 3.905 10.237 0 14.142a1 1 0 0 1-1.414 0L4.929 6.343a1 1 0 0 1 0-1.414Zm-1.76 2.483a1 1 0 0 1 1.415 0l12.004 12.004a1 1 0 1 1-1.415 1.414L3.17 8.827a1 1 0 0 1 0-1.415Zm-.862 3.38a1 1 0 0 1 1.414 0l9.487 9.487a1 1 0 0 1-1.414 1.414l-9.487-9.487a1 1 0 0 1 0-1.414Zm.5 4.744a1 1 0 0 1 1.415 0l4.242 4.242a1 1 0 1 1-1.414 1.414L2.808 16.95a1 1 0 0 1 0-1.414Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func LinearLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M17.657 6.343a8 8 0 0 0-11.314 0A1 1 0 0 1 4.929 4.93c3.905-3.905 10.237-3.905 14.142 0c3.905 3.905 3.905 10.237 0 14.142a1 1 0 0 1-1.414-1.414a8 8 0 0 0 0-11.314ZM3.17 7.413a1 1 0 0 1 1.414 0l12.003 12.003a1 1 0 1 1-1.414 1.414L3.17 8.827a1 1 0 0 1 0-1.415Zm-.863 3.379a1 1 0 0 1 1.414 0l9.487 9.487a1 1 0 0 1-1.414 1.414l-9.487-9.487a1 1 0 0 1 0-1.414Zm.5 4.744a1 1 0 0 1 1.415 0l4.242 4.242a1 1 0 1 1-1.414 1.414L2.807 16.95a1 1 0 0 1 0-1.414Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func LinkFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -14679,6 +15899,26 @@ func LinkedinLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18 3a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h12Zm0 2H6a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1ZM8 10a1 1 0 0 1 .993.883L9 11v5a1 1 0 0 1-1.993.117L7 16v-5a1 1 0 0 1 1-1Zm3-1a1 1 0 0 1 .984.821a5.82 5.82 0 0 1 .623-.313c.667-.285 1.666-.442 2.568-.159c.473.15.948.43 1.3.907c.315.425.485.942.519 1.523L17 12v4a1 1 0 0 1-1.993.117L15 16v-4c0-.33-.08-.484-.132-.555a.548.548 0 0 0-.293-.188c-.348-.11-.849-.052-1.182.09c-.5.214-.958.55-1.27.861L12 12.34V16a1 1 0 0 1-1.993.117L10 16v-6a1 1 0 0 1 1-1ZM8 7a1 1 0 1 1 0 2a1 1 0 0 1 0-2Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func LinuxFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M8.264 15.29a1 1 0 0 1 .822.522l1.892 3.493a1.809 1.809 0 0 1-1.856 2.65l-3.93-.582a1 1 0 0 1-.672-1.563l.623-.89l-.174-.984a1 1 0 0 1 .811-1.159l.985-.173l.623-.89a1 1 0 0 1 .876-.425Zm6.347-.024a1 1 0 0 1 .858-.043l.116.057l.94.543l.966-.259a1 1 0 0 1 1.188.596l.037.111l.259.966l.94.543a1 1 0 0 1 .154 1.623l-.103.078l-3.315 2.188a1.809 1.809 0 0 1-2.805-1.46l.003-.158l.238-3.965a1 1 0 0 1 .524-.82ZM12 2a4 4 0 0 1 4 4v1c0 1.214.502 2.267 1.166 3.354l.736 1.165c.1.16.195.315.28.457c.32.541.628 1.14.788 1.781a7.182 7.182 0 0 1 .194 1.358a2 2 0 0 0-1.932-.516l-.565.151l-.582-.336a2 2 0 0 0-2.996 1.613l-.238 3.965c-.021.345.022.684.121 1.003l-.269.005h-.406c-.076 0-.151-.001-.226-.004c.22-.71.152-1.492-.214-2.167l-1.891-3.493a2 2 0 0 0-3.397-.195l-.385.55l-.33.058a5.42 5.42 0 0 1 .024-1.16c.037-.285.086-.567.152-.832c.198-.792.535-1.459.857-2.02l.437-.74C7.74 10.28 8 9.722 8 9V6a4 4 0 0 1 4-4Zm-1.438 5.778l-.822.41c.224.597.572 1.156.897 1.6l.204.269l.184.225l.081.094l.25-.141l.329-.197c.176-.109.368-.232.566-.367c.604-.412 1.225-.91 1.662-1.427l-2.316-.58a1.5 1.5 0 0 0-1.035.114Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func LinuxLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2a4 4 0 0 1 4 4v1c0 1.224.535 2.31 1.156 3.334l.29.468l.512.805c.423.675.818 1.375 1.012 2.15c.262 1.046.275 2.157-.075 3.184l.08.296l.94.543a1 1 0 0 1 .051 1.7l-3.315 2.19a1.809 1.809 0 0 1-2.657-.793a6.916 6.916 0 0 1-1.29.123h-.407c-.418 0-.837-.04-1.25-.115a1.81 1.81 0 0 1-1.925 1.07l-3.93-.582a1 1 0 0 1-.672-1.563l.623-.89l-.174-.984a1 1 0 0 1 .811-1.159l.259-.045c-.284-.968-.252-2.002-.01-2.974c.199-.793.536-1.46.858-2.021l.268-.457C7.577 10.575 8 9.847 8 9V6a4 4 0 0 1 4-4ZM8.095 18.18a1 1 0 0 1-.444.29l-.13.032l-.409.071l.072.408a1 1 0 0 1-.05.528l-.055.122l1.958.29l-.942-1.74Zm8.948-.425l-.4.107l-.133.026a1 1 0 0 1-.397-.03l-.126-.044l-.119 1.976l1.652-1.09l-.102-.088a1 1 0 0 1-.224-.33l-.044-.127l-.107-.4Zm-2.464-8.032a10.28 10.28 0 0 1-.979.827c-.386.29-.769.542-1.1.747l-.371.223c-.224.13-.45.258-.68.374a1.002 1.002 0 0 1-1.156-.187a8.087 8.087 0 0 1-.365-.4l-.206-.248a10.722 10.722 0 0 1-.114-.144c-.177.429-.392.81-.597 1.16l-.151.254c-.389.656-.712 1.201-.89 1.913c-.09.362-.145.742-.13 1.116a.998.998 0 0 1 1.178.345l.068.109l1.586 2.929c.419.139.869.226 1.34.251l.285.008h.406c.317 0 .626-.028.924-.081l.293-.062l.167-2.77a1 1 0 0 1 1.382-.864l.116.057l.94.543l.61-.164c.063-.471.01-.956-.105-1.417c-.141-.564-.446-1.083-.765-1.58l-.317-.489c-.505-.788-1.005-1.585-1.369-2.45Zm-3.244-1.598a1 1 0 0 0-.445.055l-.104.045l-.4.2l.136.261a7.37 7.37 0 0 0 .7 1.047c.34-.201.76-.47 1.178-.783l.276-.214l.262-.22l-1.463-.366l-.14-.025ZM12 4a2 2 0 0 0-2 2v.385a3 3 0 0 1 1.96-.176l2.04.51V6a2 2 0 0 0-2-2Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -14999,6 +16239,86 @@ func LollipopLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M2 11a9 9 0 1 1 16.032 5.618l3.675 3.675a1 1 0 0 1-1.414 1.414l-3.675-3.675A9 9 0 0 1 2 11Zm9-7a7 7 0 0 0-1.061 13.92a6.703 6.703 0 0 1-4.872-7.215a5.563 5.563 0 0 1 6.15-4.906a4.65 4.65 0 0 1 4.102 5.141a3.92 3.92 0 0 1-4.331 3.458a3.333 3.333 0 0 1-2.95-3.686a2.87 2.87 0 0 1 3.173-2.529c.98.11 1.71.936 1.783 1.87C13.08 11.158 12.249 12 11 12a1 1 0 0 1-.942-.663l-.034-.119l.002.018c.022.198.09.39.196.56l.087.122c.222.277.544.454.9.493a1.921 1.921 0 0 0 2.123-1.695a2.65 2.65 0 0 0-2.338-2.93a3.564 3.564 0 0 0-3.94 3.144a4.702 4.702 0 0 0 4.146 5.203c1.526.172 3.341-.422 4.692-1.5c1.234-.984 1.897-2.24 2.084-3.905c.004-.031.009-.062.015-.092A7 7 0 0 0 11 4Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func LookDownFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm1 14h-2a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2Zm-4.5-5a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm7 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func LookDownLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16Zm1 12a1 1 0 1 1 0 2h-2a1 1 0 1 1 0-2h2Zm-4.5-5a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm7 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func LookLeftFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M22 12c0 5.523-4.477 10-10 10c-4.739 0-8.708-3.297-9.74-7.722l.056.049c.186.163.381.32.584.473c.384.288.796.524 1.23.712c1.254.544 2.55.653 3.707.522c.161-.019.283-.038.36-.053a1 1 0 1 0-.393-1.962a2.23 2.23 0 0 1-.193.027c-.84.096-1.801.014-2.685-.369A4.058 4.058 0 0 1 4.1 13.2a8.093 8.093 0 0 1-.469-.38a7.323 7.323 0 0 1-1.354-1.555a5.956 5.956 0 0 1-.217-.365C2.607 5.895 6.849 2 12 2c5.523 0 10 4.477 10 10ZM9 9.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func LookLeftLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 2a8 8 0 0 0-7.912 9.191l.012.01c.255.19.531.349.825.476c.885.383 1.846.465 2.686.37l.193-.027a1 1 0 0 1 .392 1.96l-.148.026a7.418 7.418 0 0 1-3.084-.195A8 8 0 1 0 12 4ZM8.5 8a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func LookRightFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M2.06 12c0 5.523 4.477 10 10 10c4.74 0 8.708-3.297 9.74-7.722l-.056.049a9.86 9.86 0 0 1-.584.473a6.062 6.062 0 0 1-1.23.712c-1.254.544-2.55.653-3.707.522a4.56 4.56 0 0 1-.36-.053a1 1 0 1 1 .393-1.962c.023.005.09.016.193.027c.84.096 1.801.014 2.685-.369a4.06 4.06 0 0 0 .826-.477c.163-.122.32-.25.469-.38a7.322 7.322 0 0 0 1.355-1.555c.09-.14.161-.263.216-.365c-.547-5.005-4.789-8.9-9.94-8.9c-5.523 0-10 4.477-10 10Zm13-2.5a1.5 1.5 0 1 0 3 0a1.5 1.5 0 0 0-3 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func LookRightLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 2a8 8 0 1 0 7.036 11.81a7.418 7.418 0 0 1-2.873.224l-.211-.028a3.17 3.17 0 0 1-.148-.025a1 1 0 0 1 .276-1.978l.309.043c.84.096 1.801.014 2.686-.369c.22-.095.43-.208.63-.34l.207-.146A8 8 0 0 0 12 4Zm3.5 4a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func LookUpFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm1 10h-2a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2ZM8.5 7a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm7 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func LookUpLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16Zm1 8a1 1 0 1 1 0 2h-2a1 1 0 1 1 0-2h2ZM8.5 7a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm7 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -15478,7 +16798,7 @@ func MediumLine(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M8 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8Zm0 2A6 6 0 1 0 8 6a6 6 0 0 0 0 12Zm9.5-6c0-.866-.092-1.798-.456-2.597a.048.048 0 0 0-.088 0c-.363.8-.456 1.731-.456 2.597c0 .866.092 1.798.456 2.597c.018.038.07.038.088 0c.363-.8.456-1.731.456-2.597Zm-.5 5c1.5 0 2.5-2.239 2.5-5s-1-5-2.5-5s-2.5 2.239-2.5 5s1 5 2.5 5Zm4-.5c.552 0 1-1.739 1-4.5s-.448-4.5-1-4.5s-1 1.739-1 4.5s.448 4.5 1 4.5Z"/></g>`),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path fill="currentColor" d="M8 6a6 6 0 1 1 0 12A6 6 0 0 1 8 6Zm9 1c1.5 0 2.5 2.239 2.5 5s-1 5-2.5 5s-2.5-2.239-2.5-5s1-5 2.5-5Zm4 .5c.38 0 .712.827.88 2.246l.047.443l.019.235l.03.494l.01.259l.012.541L22 12l-.002.282l-.012.541l-.01.26l-.03.493l-.02.235l-.045.443c-.169 1.42-.5 2.246-.881 2.246c-.38 0-.712-.827-.88-2.246l-.047-.443a16.683 16.683 0 0 1-.019-.235l-.03-.494a20.863 20.863 0 0 1-.01-.259l-.012-.541v-.564l.012-.541l.01-.26l.03-.493l.02-.235l.045-.443c.169-1.42.5-2.246.881-2.246ZM8 8a4 4 0 1 0 0 8a4 4 0 0 0 0-8Zm8.956 1.403c-.363.8-.456 1.731-.456 2.597c0 .866.092 1.798.456 2.597c.018.038.07.038.088 0c.363-.8.456-1.731.456-2.597c0-.866-.092-1.798-.456-2.597a.048.048 0 0 0-.088 0Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -15683,6 +17003,26 @@ func MicTwoLine(children ...g.Node) g.Node {
 	)
 }
 
+func MickeymouseFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M10.98 7.074a4.5 4.5 0 1 0-5.643 4.774a7 7 0 1 0 13.326 0A4.502 4.502 0 0 0 17.5 3a4.5 4.5 0 0 0-4.48 4.074a7.058 7.058 0 0 0-2.04 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func MickeymouseLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M17.5 3a4.5 4.5 0 0 1 1.163 8.848a7 7 0 1 1-13.326 0A4.502 4.502 0 0 1 6.5 3a4.5 4.5 0 0 1 4.48 4.074a7.058 7.058 0 0 1 2.04 0A4.5 4.5 0 0 1 17.5 3ZM12 9a5 5 0 1 0 0 10a5 5 0 0 0 0-10ZM6.5 5a2.5 2.5 0 0 0-.238 4.989a7.03 7.03 0 0 1 2.732-2.312A2.5 2.5 0 0 0 6.5 5Zm11 0a2.5 2.5 0 0 0-2.494 2.677a7.03 7.03 0 0 1 2.732 2.312A2.5 2.5 0 0 0 17.5 5Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func MicrophoneFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -15758,7 +17098,7 @@ func MidiLine(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5Zm8 14h2v-5h-2v5Zm-2-5v5H5V5h2v8a1 1 0 0 0 1 1h1Zm6 0v5h4V5h-2v8a1 1 0 0 1-1 1h-1Zm0-9h-2v7h2V5Zm-4 7H9V5h2v7Z"/></g>`),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14Zm-6 11h-2v5h2v-5ZM7 5H5v14h4v-5H8a1 1 0 0 1-.993-.883L7 13V5Zm12 0h-2v8a1 1 0 0 1-1 1h-1v5h4V5Zm-4 0h-2v7h2V5Zm-4 0H9v7h2V5Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -15883,6 +17223,26 @@ func MoaiLine(children ...g.Node) g.Node {
 	)
 }
 
+func ModerateSnowFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M9 16a1 1 0 0 1 1 1v.268l.232-.134a1 1 0 1 1 1 1.732L11 19l.232.134a1 1 0 0 1-1 1.732L10 20.732V21a1 1 0 1 1-2 0v-.268l-.232.134a1 1 0 1 1-1-1.732L7 19l-.232-.134a1 1 0 1 1 1-1.732l.232.134V17a1 1 0 0 1 1-1Zm2.5-14a6.502 6.502 0 0 1 6.086 4.212a6.002 6.002 0 0 1-1.346 11.783l.04-.046a2.993 2.993 0 0 0 2.05-1.449c.456-.79.512-1.702.23-2.5a2.993 2.993 0 0 0-.23-2.5a2.993 2.993 0 0 0-2.05-1.45A2.993 2.993 0 0 0 14 9c-.913 0-1.73.407-2.28 1.05a2.994 2.994 0 0 0-2.05 1.45a2.993 2.993 0 0 0-.23 2.5l-.011.03a2.993 2.993 0 0 0-2.71 1.02a2.993 2.993 0 0 0-2.356 2.199A5 5 0 0 1 5 8.416A6.5 6.5 0 0 1 11.5 2Zm2.5 9a1 1 0 0 1 1 1v.268l.232-.134a1 1 0 1 1 1 1.732L16 14l.232.134a1 1 0 0 1-1 1.732L15 15.732V16a1 1 0 1 1-2 0v-.268l-.232.134a1 1 0 1 1-1-1.732L12 14l-.232-.134a1 1 0 1 1 1-1.732l.232.134V12a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ModerateSnowLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M9 16a1 1 0 0 1 1 1v.268l.232-.134a1 1 0 1 1 1 1.732L11 19l.232.134a1 1 0 0 1-1 1.732L10 20.732V21a1 1 0 1 1-2 0v-.268l-.232.134a1 1 0 1 1-1-1.732L7 19l-.232-.134a1 1 0 1 1 1-1.732l.232.134V17a1 1 0 0 1 1-1Zm5-5a1 1 0 0 1 1 1v.268l.232-.134a1 1 0 1 1 1 1.732L16 14l.232.134a1 1 0 0 1-1 1.732L15 15.732V16a1 1 0 1 1-2 0v-.268l-.232.134a1 1 0 1 1-1-1.732L12 14l-.232-.134a1 1 0 1 1 1-1.732l.232.134V12a1 1 0 0 1 1-1Zm-2.5-9a6.502 6.502 0 0 1 6.086 4.212A6.002 6.002 0 0 1 19.6 16.799a1 1 0 0 1-1.201-1.598a4.001 4.001 0 0 0-1.75-7.148a1 1 0 0 1-.804-.727a4.5 4.5 0 0 0-8.817 1.68a1 1 0 0 1-.754 1.082a3.002 3.002 0 0 0-1.26 5.162a1 1 0 1 1-1.323 1.5A5 5 0 0 1 5 8.416A6.5 6.5 0 0 1 11.5 2Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func MomentFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -15949,6 +17309,26 @@ func MoonFill(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M13.574 3.138a1.01 1.01 0 0 0-1.097 1.408a6 6 0 0 1-7.931 7.931a1.01 1.01 0 0 0-1.409 1.097A9 9 0 0 0 21 12a9.001 9.001 0 0 0-7.426-8.862Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func MoonFogFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M13.44 2.13a1 1 0 0 0-1.055 1.465a5 5 0 0 1-6.79 6.79A1 1 0 0 0 4.13 11.44a7.95 7.95 0 0 0 .641 1.989a1 1 0 0 0 .904.57h12.652a1 1 0 0 0 .904-.57a8.002 8.002 0 0 0-5.79-11.3ZM3 16a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1Zm3 4a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func MoonFogLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M13.44 2.13a1 1 0 0 0-1.055 1.465a5 5 0 0 1-6.79 6.79A1 1 0 0 0 4.13 11.44a7.95 7.95 0 0 0 .641 1.989a1 1 0 0 0 1.896-.556a7 7 0 0 0 8.22-8.134a6 6 0 0 1 2.537 7.832a1 1 0 1 0 1.807.858a8.002 8.002 0 0 0-5.79-11.3ZM3 16a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1Zm3 4a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -16138,7 +17518,7 @@ func MouthLine(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M20.314 8.038c-1.407-.965-3.372-1.96-5.387-2.036c-.806-.03-1.482.305-2.167.645c-.192.096-.385.191-.581.28c-.155.069-.203.069-.358 0a16.311 16.311 0 0 1-.58-.28c-.685-.34-1.362-.676-2.168-.645c-2.015.076-3.98 1.071-5.387 2.036C2.763 8.67 1 9.684 1 11c0 1.451 1.937 3.116 2.914 3.948C5.73 16.496 8.451 18 12 18c3.549 0 6.27-1.504 8.086-3.05C21.102 14.083 23 12.512 23 11c0-1.277-1.794-2.35-2.686-2.962Zm-7.317.714c-.242.108-.602.25-.997.25s-.755-.142-.997-.25C10.42 8.49 9.811 7.976 9.15 8c-1.912.072-3.742 1.142-5.194 2.332c1.863.75 4.89 1.167 8.045 1.167c3.155 0 6.182-.417 8.045-1.167c-1.452-1.19-3.282-2.26-5.194-2.332c-.649-.025-1.282.494-1.854.75ZM4.3 12.565c2.162.64 4.976.935 7.699.935s5.537-.295 7.7-.935C17.698 14.673 14.932 16 12 16s-5.699-1.327-7.699-3.435Z"/></g>`),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M14.927 6.002c1.903.072 3.762.963 5.148 1.875l.799.539l.317.22l.324.24C22.274 9.457 23 10.188 23 11c0 1.07-.952 2.172-1.869 3.03l-.32.293l-.308.27l-.417.355C18.27 16.496 15.549 18 12 18c-3.422 0-6.075-1.399-7.888-2.885l-.325-.274l-.428-.372l-.313-.284C2.09 13.298 1 12.09 1 11.001c0-.779.616-1.45 1.31-2.001l.324-.245c.054-.04.108-.078.162-.116l.319-.219l.57-.382c1.408-.965 3.373-1.96 5.388-2.036c.645-.024 1.207.186 1.756.445l.411.2c.192.096.385.191.581.28c.155.069.203.069.358 0l.292-.137l.7-.343c.55-.26 1.11-.47 1.756-.445Zm4.772 6.563c-2.162.64-4.976.935-7.699.935s-5.537-.295-7.699-.935C6.301 14.673 9.067 16 12 16s5.699-1.327 7.7-3.435ZM14.851 8c-.39-.015-.773.166-1.141.368l-.363.204a4.728 4.728 0 0 1-.35.179c-.242.108-.602.25-.997.25s-.755-.142-.997-.25a4.637 4.637 0 0 1-.354-.182l-.36-.203c-.365-.202-.743-.381-1.14-.366c-1.912.072-3.742 1.142-5.194 2.332c1.863.75 4.89 1.167 8.045 1.167c3.155 0 6.182-.417 8.045-1.167c-1.452-1.19-3.282-2.26-5.194-2.332Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -16259,6 +17639,26 @@ func MusicTwoLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18.633 9.177L14 10.72v6.78a4.5 4.5 0 1 1-2-3.742V6.442a3 3 0 0 1 2.051-2.846l3.975-1.325A1.5 1.5 0 0 1 20 3.694v3.585a2 2 0 0 1-1.367 1.898Zm-3.95-3.684L18 4.387V7.28l-4 1.334V6.442a1 1 0 0 1 .684-.95ZM12 17.5a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func NaFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M1.5 6A1.5 1.5 0 0 1 3 4.5h.5a1.5 1.5 0 0 1 1.302.756L6.5 8.226V6a1.5 1.5 0 1 1 3 0v7A1.5 1.5 0 0 1 8 14.5h-.5a1.5 1.5 0 0 1-1.302-.756L4.5 10.774V13a1.5 1.5 0 0 1-3 0V6Zm13.67.658a1.5 1.5 0 0 1 .672 2.013l-4 8a1.5 1.5 0 1 1-2.684-1.342l4-8a1.5 1.5 0 0 1 2.013-.67Zm.917 3.837A1.5 1.5 0 0 1 17.5 9.5h1a1.5 1.5 0 0 1 1.413.995l1.952 5.468c.009.021.016.043.024.065l.524 1.468a1.5 1.5 0 1 1-2.826 1.009l-.18-.505h-2.814l-.18.505a1.5 1.5 0 1 1-2.826-1.01l.524-1.467c.008-.022.015-.044.024-.065l1.952-5.467ZM17.664 15h.672L18 14.06l-.336.94Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func NaLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M2 6a1 1 0 0 1 1-1h.5a1 1 0 0 1 .868.504L7 10.109V6a1 1 0 0 1 2 0v7a1 1 0 0 1-1 1h-.5a1 1 0 0 1-.868-.504L4 8.891V13a1 1 0 1 1-2 0V6Zm12.947 1.106a1 1 0 0 1 .447 1.341l-4 8a1 1 0 1 1-1.788-.894l4-8a1 1 0 0 1 1.341-.447Zm1.607 3.57A1 1 0 0 1 17.5 10h1a1 1 0 0 1 .946.676l1.707 4.979l.778 1.98a1 1 0 0 1-1.862.73L19.533 17h-3.066l-.536 1.366a1 1 0 0 1-1.862-.732l.778-1.98l1.707-4.978ZM17.186 15h1.628L18 12.625L17.186 15Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -16483,6 +17883,26 @@ func NotificationOffLine(children ...g.Node) g.Node {
 	)
 }
 
+func NotionFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="m17.94 2.434l.19.117l1.98 1.32a2 2 0 0 1 .883 1.498l.007.166v12.539a2 2 0 0 1-1.692 1.976l-.155.018l-11.529.887a2 2 0 0 1-1.646-.663l-.107-.131L3.6 17.133a3 3 0 0 1-.592-1.584L3 15.333V4.926A2 2 0 0 1 4.692 2.95l.155-.018l11.388-.876a3 3 0 0 1 1.704.378ZM19 7.08L8 7.926V18.92l11-.846V7.08ZM16 8.5a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-.5a1 1 0 0 1-.852-.476L12 12.72V17a1 1 0 1 1-2 0v-7a1 1 0 0 1 1-1h.5a1 1 0 0 1 .852.476L15 13.779V9.5a1 1 0 0 1 1-1Zm.388-4.45l-10.143.78l1.137 1.137l10.998-.845l-1.36-.907a1 1 0 0 0-.632-.165Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func NotionLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M16.388 4.05a1 1 0 0 1 .632.165l1.36.907l-10.998.845L6.245 4.83l10.143-.78ZM5 6.414v8.92a1 1 0 0 0 .2.6L6 17V7.414l-1-1Zm14 11.66L8 18.92V7.926l11-.846v10.994Zm2 0a2 2 0 0 1-1.847 1.994l-11.529.887a2 2 0 0 1-1.753-.794L3.6 17.133a3 3 0 0 1-.6-1.8V4.926a2 2 0 0 1 1.847-1.994l11.388-.876a3 3 0 0 1 1.894.495l1.98 1.32A2 2 0 0 1 21 5.535v12.539ZM17 9.5a1 1 0 1 0-2 0v4.28l-2.648-4.304A1 1 0 0 0 11.5 9H11a1 1 0 0 0-1 1v7a1 1 0 1 0 2 0v-4.28l2.648 4.304a1 1 0 0 0 .852.476h.5a1 1 0 0 0 1-1v-7Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func OctagonFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -16539,6 +17959,26 @@ func OmegaLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 4a7 7 0 0 0-1.914 13.735c.524.15.914.63.914 1.207v1.808c0 .69-.56 1.25-1.25 1.25H6a1 1 0 1 1 0-2h3v-.512a9 9 0 1 1 6 0V20h3a1 1 0 1 1 0 2h-3.75c-.69 0-1.25-.56-1.25-1.25v-1.808c0-.577.39-1.058.914-1.207A7 7 0 0 0 12 4Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func OmgFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm1 10c-.859 0-1.367.67-1.601 1.139C11.133 13.667 11 14.326 11 15c0 .674.134 1.333.399 1.861C11.633 17.33 12.14 18 13 18s1.367-.67 1.601-1.139c.265-.528.399-1.187.399-1.861c0-.674-.134-1.333-.399-1.861C14.367 12.67 13.86 12 13 12ZM8.5 8a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5Zm7-1a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5Zm-7 3a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1Zm7-1a.5.5 0 1 1 0 1a.5.5 0 0 1 0-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func OmgLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16Zm1 8c.859 0 1.367.67 1.601 1.139c.265.528.399 1.187.399 1.861c0 .674-.134 1.333-.399 1.861C14.367 17.33 13.86 18 13 18s-1.367-.67-1.601-1.139C11.133 16.333 11 15.674 11 15c0-.674.134-1.333.399-1.861C11.633 12.67 12.14 12 13 12ZM8.5 8a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5Zm7-1a2.5 2.5 0 1 1 0 5a2.5 2.5 0 0 1 0-5Zm-7 3a.5.5 0 1 0 0 1a.5.5 0 0 0 0-1Zm7-1a.5.5 0 1 0 0 1a.5.5 0 0 0 0-1Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -16759,6 +18199,26 @@ func PaletteTwoLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M10 3a2 2 0 0 1 2 2v.636L13.636 4a2 2 0 0 1 2.828 0L20 7.536a2 2 0 0 1 0 2.828L18.364 12H19a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5Zm0 2H5v14h5V5Zm9 9h-2.636L12 18.364V19h7v-5ZM7.5 15a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm7.55-9.586L12 8.464v7.071l6.585-6.585l-3.535-3.536Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func PanoramasFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M2 6.81c0-1.12 1.15-1.806 2.119-1.408C5.437 5.945 8.465 7 12 7s6.563-1.055 7.881-1.598C20.85 5.004 22 5.69 22 6.81v10.382c0 1.12-1.15 1.805-2.119 1.407C18.563 18.056 15.535 17 12 17s-6.563 1.056-7.881 1.598C3.15 18.996 2 18.31 2 17.19V6.81Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func PanoramasLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M4 7.504v8.993C5.653 15.879 8.599 15 12 15s6.347.88 8 1.497V7.504C18.347 8.12 15.401 9 12 9s-6.347-.879-8-1.496Zm-2-.695c0-1.12 1.15-1.805 2.119-1.407C5.437 5.945 8.465 7 12 7s6.563-1.055 7.881-1.598C20.85 5.004 22 5.69 22 6.81v10.382c0 1.12-1.15 1.805-2.119 1.407C18.563 18.056 15.535 17 12 17s-6.563 1.056-7.881 1.598C3.15 18.996 2 18.31 2 17.19V6.81Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -16999,6 +18459,26 @@ func PavilionLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11.097 2.57a1.01 1.01 0 0 1 1.806 0c.944 1.884 1.964 3.096 3.208 3.907c1.254.817 2.828 1.287 4.989 1.528c.59.066.979.614.884 1.173c-.33 1.95-1.665 2.922-2.804 3.377l-.18.069V20h1a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2h1v-7.377a5.738 5.738 0 0 1-.18-.068c-1.14-.455-2.474-1.428-2.804-3.377A1.01 1.01 0 0 1 2.9 8.005c2.16-.241 3.735-.711 4.988-1.528c1.245-.811 2.264-2.023 3.209-3.907ZM8 13H7v7h1v-7Zm6 0h-4v7h4v-7Zm3 0h-1v7h1v-7Zm-5-7.972c-.852 1.32-1.83 2.349-3.02 3.124C7.665 9.01 6.15 9.52 4.376 9.82c.302.427.73.697 1.185.879c.453.18.953.291 1.442.302h10.008a4.228 4.228 0 0 0 1.427-.302c.455-.182.884-.452 1.186-.88c-1.773-.299-3.289-.808-4.604-1.666c-1.191-.775-2.169-1.804-3.02-3.124Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func PawFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 3a1 1 0 0 1 1 1v.19c1.257.504 2 1.93 2 3.31c0 1.713-1.146 3.5-3 3.5S9 9.213 9 7.5c0-1.38.743-2.806 2-3.31V4a1 1 0 0 1 1-1Zm6.6 3.543a2.56 2.56 0 0 0-1.093.307c-.608.325-1.115.878-1.431 1.556c-.316.677-.414 1.421-.272 2.095c.142.675.545 1.342 1.27 1.68c.724.338 1.495.218 2.103-.107c.607-.325 1.114-.878 1.43-1.555c.316-.678.414-1.422.272-2.096a2.562 2.562 0 0 0-.467-1.035a1 1 0 0 0-1.813-.845Zm-15.012.849c-.238.31-.39.67-.467 1.035c-.142.674-.044 1.418.272 2.095c.316.678.823 1.23 1.43 1.556c.608.325 1.379.445 2.103.107c.725-.338 1.128-1.006 1.27-1.68c.142-.674.044-1.418-.272-2.096c-.316-.677-.823-1.23-1.43-1.555A2.561 2.561 0 0 0 5.4 6.547a1 1 0 0 0-1.813.845Zm3.563 6.227A8.068 8.068 0 0 1 12 12c1.89 0 3.6.666 4.849 1.619c1.213.925 2.151 2.255 2.151 3.659c0 1.407-1.184 2.335-2.349 2.857C15.406 20.692 13.76 21 12 21c-1.76 0-3.406-.308-4.651-.865C6.184 19.613 5 18.685 5 17.278c0-1.404.938-2.734 2.151-3.66Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func PawLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5.402 6.55a1 1 0 1 0-1.812.846l1.813-.845Zm15.008.842a1 1 0 1 0-1.813-.845l1.813.845ZM13 4a1 1 0 0 0-2 0h2Zm4 13.278c0 .148-.16.58-1.166 1.032c-.926.414-2.28.69-3.834.69v2c1.76 0 3.406-.308 4.651-.865c1.165-.522 2.349-1.45 2.349-2.857h-2ZM12 19c-1.554 0-2.908-.276-3.834-.69C7.159 17.858 7 17.425 7 17.277H5c0 1.407 1.184 2.335 2.349 2.857C8.594 20.692 10.24 21 12 21v-2Zm-5-1.722c0-.529.405-1.338 1.364-2.069A6.069 6.069 0 0 1 12 14v-2c-1.89 0-3.6.666-4.849 1.619C5.938 14.544 5 15.874 5 17.278h2ZM12 14c1.425 0 2.714.506 3.636 1.21c.959.73 1.364 1.54 1.364 2.068h2c0-1.404-.938-2.734-2.151-3.66A8.068 8.068 0 0 0 12 12v2ZM6.112 9.255c.15.323.171.627.127.839c-.045.21-.132.266-.158.278l.845 1.813c.725-.338 1.128-1.006 1.27-1.68c.142-.674.044-1.418-.272-2.096l-1.812.846Zm-.031 1.117c-.026.012-.125.044-.315-.058c-.19-.102-.41-.313-.56-.637l-1.813.845c.316.678.823 1.23 1.43 1.556c.608.325 1.379.445 2.103.107l-.845-1.813Zm-.876-.695c-.15-.323-.171-.628-.127-.839c.044-.211.132-.266.158-.278L4.39 6.747c-.725.338-1.128 1.005-1.27 1.68c-.142.674-.044 1.418.272 2.095l1.812-.845Zm.03-1.117c.027-.013.125-.044.316.058c.19.102.41.313.56.637l1.813-.846c-.316-.677-.823-1.23-1.43-1.555c-.608-.325-1.379-.445-2.103-.107l.845 1.813Zm.484-1.33l-.317-.68l-1.812.846l.317.68l1.812-.845Zm13.076 2.443c-.151.324-.37.535-.561.637c-.19.102-.289.07-.315.058l-.845 1.813c.724.338 1.495.218 2.103-.107c.607-.325 1.114-.878 1.43-1.555l-1.812-.846Zm-.876.695c-.026-.012-.113-.067-.158-.278c-.044-.212-.023-.516.127-.84l-1.812-.844c-.316.677-.414 1.421-.272 2.095c.142.675.545 1.342 1.27 1.68l.845-1.813Zm-.03-1.117c.15-.324.37-.535.56-.637c.19-.102.289-.07.315-.058l.845-1.813c-.724-.338-1.495-.218-2.103.107c-.607.325-1.114.878-1.43 1.556l1.812.845Zm.875-.695c.026.012.114.067.158.278c.044.212.023.516-.127.84l1.812.845c.316-.678.414-1.422.272-2.096c-.142-.675-.545-1.342-1.27-1.68l-.845 1.813Zm1.33-.484l.316-.68l-1.813-.845l-.317.68l1.813.845ZM13 7.5c0 1.048-.644 1.5-1 1.5v2c1.854 0 3-1.787 3-3.5h-2ZM12 9c-.356 0-1-.452-1-1.5H9c0 1.713 1.146 3.5 3 3.5V9Zm-1-1.5c0-1.048.644-1.5 1-1.5V4c-1.854 0-3 1.787-3 3.5h2ZM12 6c.356 0 1 .452 1 1.5h2C15 5.787 13.854 4 12 4v2Zm1-1V4h-2v1h2Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -17403,6 +18883,26 @@ func PicTwoLine(children ...g.Node) g.Node {
 	)
 }
 
+func PickaxFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="m7.079 5.662l-.051-.048a1 1 0 0 0-1.414 1.414l.048.05c-1.716 2.007-2.807 4.558-2.42 7.24a1 1 0 0 0 1.682.517c.797-.949 1.6-1.89 2.465-2.778a21.29 21.29 0 0 1 1.568-1.47l7.618 8.108a1.001 1.001 0 0 0 1.436.023l.707-.707a1 1 0 0 0-.023-1.436l-8.108-7.618a21.5 21.5 0 0 1 1.47-1.568c.86-.838 1.768-1.617 2.69-2.386a1 1 0 0 0-.43-1.762c-2.68-.386-5.232.705-7.238 2.421Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func PickaxLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M3.241 14.318c-.386-2.681.705-5.233 2.421-7.239l-.048-.051a1 1 0 0 1 1.414-1.414l.05.048c2.007-1.716 4.558-2.807 7.24-2.42a1 1 0 0 1 .428 1.76c-.92.77-1.83 1.55-2.689 2.387a21.294 21.294 0 0 0-1.47 1.568l8.108 7.617a1 1 0 0 1 .022 1.436l-.707.708a1 1 0 0 1-1.436-.023l-7.617-8.108a21.5 21.5 0 0 0-1.568 1.47c-.865.888-1.668 1.83-2.465 2.778a1 1 0 0 1-1.683-.518Zm7.803-8.728l-.383.367c-.429.418-.823.824-1.175 1.216c-.363.411-.723.826-1.033 1.28c-.448.298-.766.57-1.28 1.033a30.62 30.62 0 0 0-1.216 1.175l-.367.383c.482-1.248 1.222-2.341 2.167-3.287a9.486 9.486 0 0 1 3.287-2.167Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func PigFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -17783,6 +19283,26 @@ func PolygonLine(children ...g.Node) g.Node {
 	)
 }
 
+func PotFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5.902 7.438a1 1 0 0 0-.498.926L5.47 9.48a1 1 0 0 0 .28.635l.867.898l-2.788-.4a1 1 0 0 0-1.108.731l-.183.683a1 1 0 0 0 .415 1.093l6.912 4.564l.804 1.782a2 2 0 0 0 2.823.91l5.902-3.408a2 2 0 0 0 .65-2.862l-1.702-2.486a4.502 4.502 0 0 0-4.994-7.294l-.06-.087a1 1 0 0 0-1.325-.301l-6.062 3.5Zm8.615-1.407l2.658 3.883a2.5 2.5 0 0 0-2.659-3.883ZM8.325 14.27l-.479-1.06l-1.44-.207l1.919 1.267Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func PotLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5.902 7.438a1 1 0 0 0-.498.926l.067 1.116a1 1 0 0 0 .28.635l.868.898l-2.79-.4a1 1 0 0 0-1.107.731l-.183.683a1 1 0 0 0 .415 1.094l6.912 4.563l.804 1.782a2 2 0 0 0 2.823.91l5.902-3.408a2 2 0 0 0 .65-2.862l-1.702-2.486a4.502 4.502 0 0 0-4.994-7.294l-.06-.087a1 1 0 0 0-1.325-.301l-6.062 3.5Zm6.26-1.305l6.233 9.103l-5.902 3.408l-1.002-2.22l.029-.044l-.07-.046l-2.636-5.843a1.001 1.001 0 0 0-.193-.284L7.445 8.99l-.008-.13l4.725-2.728Zm2.355-.102a2.501 2.501 0 0 1 2.757 3.735l-.099.148l-2.658-3.883Zm-6.192 8.24l-1.92-1.268l1.441.206l.48 1.062Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func PowerFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -17938,7 +19458,27 @@ func PumpkinLine(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M13.482 4.64a4.048 4.048 0 0 0-.286.58c.313.117.607.278.882.473c.138.098.272.204.4.32c.998-.723 2.176-1.11 3.411-.891c1.673.294 2.865 1.59 3.527 3.17c.666 1.59.864 3.6.5 5.663c-.364 2.064-1.237 3.884-2.407 5.15c-1.162 1.258-2.726 2.068-4.398 1.773a3.985 3.985 0 0 1-1.235-.437A3.513 3.513 0 0 1 12 21c-.688 0-1.32-.21-1.877-.559a3.93 3.93 0 0 1-1.234.437c-1.672.295-3.236-.515-4.398-1.772c-1.17-1.267-2.044-3.087-2.407-5.15c-.364-2.065-.166-4.074.5-5.664c.662-1.58 1.854-2.876 3.527-3.17c1.235-.218 2.413.168 3.41.89c.13-.115.263-.221.4-.32c.369-.26.772-.46 1.206-.577c.137-.52.371-1.055.64-1.505a4.35 4.35 0 0 1 .844-1.038C12.939 2.288 13.414 2 14 2a1 1 0 0 1 .039 2a.595.595 0 0 0-.118.084a2.358 2.358 0 0 0-.439.556ZM8.285 7.585c-.64-.445-1.27-.593-1.827-.495c-.775.137-1.527.775-2.029 1.973c-.497 1.188-.683 2.8-.376 4.544c.308 1.743 1.034 3.195 1.907 4.14c.882.955 1.807 1.297 2.582 1.16a1.62 1.62 0 0 0 .044-.007a8.162 8.162 0 0 1-.817-1.578C7.278 16.07 7 14.582 7 13c0-1.582.278-3.07.77-4.323a8.62 8.62 0 0 1 .515-1.091Zm2.793 11.09c-.524-.372-1.05-1.072-1.447-2.083C9.24 15.593 9 14.356 9 13c0-1.356.24-2.594.631-3.593c.397-1.01.923-1.71 1.447-2.082c.323-.228.637-.325.922-.325c.285 0 .6.096.922.325c.524.37 1.05 1.071 1.447 2.082c.392 1 .631 2.237.631 3.593c0 1.356-.24 2.594-.631 3.593c-.397 1.01-.923 1.71-1.447 2.082c-.323.229-.633.325-.922.325c-.289 0-.6-.096-.922-.325Zm4.336.225l.044.008c.775.137 1.7-.206 2.582-1.16c.873-.946 1.6-2.398 1.907-4.141c.307-1.744.121-3.357-.376-4.544c-.503-1.198-1.254-1.836-2.03-1.973c-.556-.098-1.187.05-1.827.495c.195.343.367.71.517 1.09C16.722 9.93 17 11.419 17 13c0 1.582-.278 3.07-.77 4.323a8.165 8.165 0 0 1-.816 1.578Z"/></g>`),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M14 2a1 1 0 0 1 .039 2l-.043.025l-.075.059a2.358 2.358 0 0 0-.439.556a4.048 4.048 0 0 0-.286.58c.313.117.607.278.882.473c.138.098.272.204.4.32c.998-.723 2.176-1.11 3.411-.891c1.673.294 2.865 1.59 3.527 3.17c.666 1.59.864 3.6.5 5.663c-.364 2.064-1.237 3.884-2.407 5.15c-1.162 1.258-2.726 2.068-4.398 1.773a3.985 3.985 0 0 1-1.235-.437A3.513 3.513 0 0 1 12 21c-.688 0-1.32-.21-1.877-.559a3.93 3.93 0 0 1-1.234.437c-1.672.295-3.236-.515-4.398-1.772c-1.17-1.267-2.044-3.087-2.407-5.15c-.364-2.065-.166-4.074.5-5.664c.662-1.58 1.854-2.876 3.527-3.17c1.235-.218 2.413.168 3.41.89c.13-.115.263-.221.4-.32c.369-.26.772-.46 1.206-.577c.137-.52.371-1.055.64-1.505a4.35 4.35 0 0 1 .844-1.038C12.939 2.288 13.414 2 14 2Zm-2 5c-.285 0-.599.097-.922.325c-.524.371-1.05 1.071-1.447 2.082C9.24 10.407 9 11.644 9 13c0 1.356.24 2.594.631 3.593c.397 1.01.923 1.71 1.447 2.082c.322.229.633.325.922.325c.289 0 .6-.096.922-.325c.524-.371 1.05-1.071 1.447-2.082c.392-1 .631-2.237.631-3.593c0-1.356-.24-2.594-.631-3.593c-.397-1.01-.923-1.711-1.447-2.082C12.6 7.096 12.285 7 12 7Zm-5.542.091c-.775.137-1.527.775-2.029 1.973c-.497 1.188-.683 2.8-.376 4.544c.308 1.743 1.034 3.195 1.907 4.14c.827.896 1.691 1.252 2.435 1.18l.19-.027a8.162 8.162 0 0 1-.816-1.578C7.278 16.07 7 14.582 7 13c0-1.582.278-3.07.77-4.323a8.62 8.62 0 0 1 .515-1.091c-.64-.445-1.27-.593-1.827-.495Zm9.256.495c.195.343.367.71.517 1.09C16.722 9.93 17 11.419 17 13c0 1.582-.278 3.07-.77 4.323a8.165 8.165 0 0 1-.816 1.578l.044.008c.775.137 1.7-.206 2.582-1.16c.873-.946 1.6-2.398 1.907-4.141c.307-1.744.121-3.357-.376-4.544c-.503-1.198-1.254-1.836-2.03-1.973c-.556-.098-1.187.05-1.827.495Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func PuzzledFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c1.89 0 3.657.524 5.165 1.435A3.497 3.497 0 0 0 17 4.5a2 2 0 0 0 1.644 1.968l-.003.11c0 .346.1.751.356 1.103a2 2 0 0 0 2.884 2.766c.078.506.119 1.025.119 1.553c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm2.684 10.551c-.508.17-1.036.396-1.576.666c-.276.138-.544.282-.801.428l-.377.22c-.223.134-.389.24-.485.303a1 1 0 1 0 1.11 1.664l.294-.186l.11-.066c.327-.196.68-.392 1.044-.574c.46-.23.904-.42 1.313-.557a1 1 0 1 0-.632-1.898ZM9.5 9a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm5-2a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm6 1a1 1 0 1 1 0 2a1 1 0 0 1 0-2Zm0-6a2.5 2.5 0 0 1 1.546 4.464l-.568.47c-.327.262-.666.488-.978.488c-.625 0-.86-.49-.86-.844s.211-.734.385-.948c.254-.313.565-.564.784-.737A.5.5 0 1 0 20 4.5a1 1 0 1 1-2 0A2.5 2.5 0 0 1 20.5 2Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func PuzzledLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c.762 0 1.506.085 2.221.248a1 1 0 1 1-.442 1.95a8 8 0 1 0 6.023 9.58a1 1 0 1 1 1.95.443C20.742 18.675 16.76 22 12 22C6.477 22 2 17.523 2 12S6.477 2 12 2Zm3.949 11.184a1 1 0 0 1-.633 1.265c-.409.136-.853.326-1.313.557c-.243.121-.48.249-.71.378l-.334.196c-.194.116-.333.205-.404.252a1 1 0 0 1-1.11-1.664l.358-.226l.127-.077c.368-.22.765-.441 1.178-.648c.54-.27 1.068-.496 1.576-.666a1 1 0 0 1 1.265.633ZM9.5 9a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm5-2a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm5 1a1 1 0 1 1 0 2a1 1 0 0 1 0-2Zm0-6a2.5 2.5 0 0 1 1.546 4.464l-.568.47c-.327.262-.666.488-.978.488c-.625 0-.86-.49-.86-.844s.211-.734.385-.948c.254-.313.565-.564.784-.737A.5.5 0 1 0 19 4.5a1 1 0 1 1-2 0A2.5 2.5 0 0 1 19.5 2Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -18083,6 +19623,26 @@ func QuoteRightLine(children ...g.Node) g.Node {
 	)
 }
 
+func RabbitFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 11.054C12 7.5 11 5 10.074 3.734c-.728-.907-1.765-1.599-2.94-1.284c-1.174.314-1.726 1.432-1.903 2.582c-.182 1.188-.038 2.73.447 4.537a21.95 21.95 0 0 0 1.143 3.22C5.728 13.731 5 15.02 5 16.5c0 1.628.882 3.026 2.157 3.982C8.432 21.438 10.147 22 12 22c1.852 0 3.568-.562 4.843-1.518S19 18.128 19 16.5c0-1.482-.728-2.769-1.82-3.71a21.946 21.946 0 0 0 1.142-3.22c.485-1.807.629-3.35.447-4.538c-.177-1.15-.729-2.268-1.903-2.582c-1.175-.315-2.212.377-2.94 1.284C13 5 12 7.5 12 11.054Zm-1.417 5.94a1.5 1.5 0 1 1 2.834 0A.504.504 0 0 0 13.5 17a1 1 0 1 1 0 2a2.49 2.49 0 0 1-1.5-.5a2.49 2.49 0 0 1-1.5.5a1 1 0 1 1 0-2a.504.504 0 0 0 .083-.007Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func RabbitLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M7.652 4.382c.026-.007.323-.068.861.603c.514.641 1.066 1.759 1.511 3.42c.327 1.22.538 2.515.616 3.67a1 1 0 0 0 1.043.932a7.09 7.09 0 0 1 .634 0a1 1 0 0 0 1.043-.931c.078-1.156.289-2.452.616-3.671c.445-1.661.997-2.779 1.51-3.42c.54-.671.836-.61.862-.603c.026.006.313.102.444.953c.124.812.044 2.056-.401 3.717a19.649 19.649 0 0 1-1.358 3.599a1 1 0 0 0 .35 1.286C16.448 14.629 17 15.565 17 16.5c0 .857-.461 1.71-1.357 2.382C14.746 19.554 13.46 20 12 20c-1.461 0-2.746-.445-3.643-1.118C7.461 18.21 7 17.357 7 16.5c0-.935.552-1.871 1.617-2.563a1 1 0 0 0 .35-1.286a19.643 19.643 0 0 1-1.358-3.6c-.445-1.66-.525-2.904-.4-3.716c.13-.85.417-.947.443-.953Zm4.304 3.505c-.484-1.807-1.13-3.215-1.882-4.153c-.728-.907-1.765-1.599-2.94-1.284c-1.174.314-1.726 1.432-1.903 2.582c-.182 1.188-.038 2.73.447 4.537a21.95 21.95 0 0 0 1.143 3.22C5.728 13.731 5 15.02 5 16.5c0 1.628.882 3.026 2.157 3.982C8.432 21.438 10.147 22 12 22c1.852 0 3.568-.562 4.843-1.518S19 18.128 19 16.5c0-1.482-.728-2.769-1.82-3.71a21.946 21.946 0 0 0 1.142-3.22c.485-1.807.629-3.35.447-4.538c-.177-1.15-.729-2.268-1.903-2.582c-1.175-.315-2.212.377-2.94 1.284c-.752.938-1.398 2.346-1.882 4.153L12 8.054a21.98 21.98 0 0 0-.044-.167Zm-1.373 9.106a1.5 1.5 0 1 1 2.834 0A.504.504 0 0 0 13.5 17a1 1 0 1 1 0 2a2.49 2.49 0 0 1-1.5-.5a2.49 2.49 0 0 1-1.5.5a1 1 0 1 1 0-2a.504.504 0 0 0 .083-.007Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func RadarFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -18159,6 +19719,46 @@ func RainLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 19a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1Zm3-2a1 1 0 0 1 .993.883L16 18v1a1 1 0 0 1-1.993.117L14 19v-1a1 1 0 0 1 1-1Zm-6 0a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1Zm3-2a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1Zm-.5-13a6.502 6.502 0 0 1 6.086 4.212A6.002 6.002 0 0 1 19.6 16.799a1 1 0 1 1-1.202-1.598a4.001 4.001 0 0 0-1.744-7.147a1.01 1.01 0 0 1-.81-.733A4.5 4.5 0 0 0 7.027 9a1.01 1.01 0 0 1-.76 1.09A3.002 3.002 0 0 0 5.5 15.6a1 1 0 1 1-1.002 1.73A5 5 0 0 1 5 8.417A6.5 6.5 0 0 1 11.5 2ZM9 13a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1Zm6 0a1 1 0 0 1 .993.883L16 14v1a1 1 0 0 1-1.993.117L14 15v-1a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func RainbowFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 7.5A8.5 8.5 0 0 0 3.5 16v1a1.5 1.5 0 0 1-3 0v-1C.5 9.649 5.649 4.5 12 4.5S23.5 9.649 23.5 16v1a1.5 1.5 0 0 1-3 0v-1A8.5 8.5 0 0 0 12 7.5Zm0 4A4.5 4.5 0 0 0 7.5 16v1a1.5 1.5 0 0 1-3 0v-1a7.5 7.5 0 0 1 15 0v1a1.5 1.5 0 0 1-3 0v-1a4.5 4.5 0 0 0-4.5-4.5Zm-.5 4.5a.5.5 0 0 1 1 0v1a1.5 1.5 0 0 0 3 0v-1a3.5 3.5 0 1 0-7 0v1a1.5 1.5 0 0 0 3 0v-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func RainbowLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 5c6.075 0 11 4.925 11 11v1a1 1 0 1 1-2 0v-1a9 9 0 1 0-18 0v1a1 1 0 1 1-2 0v-1C1 9.925 5.925 5 12 5Zm0 4a7 7 0 0 1 7 7v1a1 1 0 1 1-2 0v-1a5 5 0 0 0-10 0v1a1 1 0 1 1-2 0v-1a7 7 0 0 1 7-7Zm0 4a3 3 0 0 1 3 3v1a1 1 0 1 1-2 0v-1a1 1 0 1 0-2 0v1a1 1 0 1 1-2 0v-1a3 3 0 0 1 3-3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func RakeFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M4.575 10.94a1.5 1.5 0 1 0-2.121 2.12l1.414 1.415a3.5 3.5 0 0 0 4.95 0l1.406-1.406l.008-.008l.008-.009l.346-.345l7.424 7.425a1.5 1.5 0 0 0 2.122-2.122l-7.425-7.424l.354-.354l1.414-1.414a3.5 3.5 0 0 0 0-4.95L13.06 2.454a1.5 1.5 0 1 0-2.122 2.121l1.415 1.415a.5.5 0 0 1 0 .707L12 7.05l-1.768-1.768a1.5 1.5 0 0 0-2.121 2.122l1.768 1.768l-.708.707L7.404 8.11a1.5 1.5 0 0 0-2.122 2.121L7.05 12l-.353.354a.5.5 0 0 1-.707 0l-1.415-1.415Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func RakeLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M4.222 11.293a1 1 0 0 0-1.414 1.414l1.414 1.414a3 3 0 0 0 4.242 0L10.586 12l7.778 7.778a1 1 0 0 0 1.414-1.414L12 10.586l.706-.707h.002l1.413-1.415a3 3 0 0 0 0-4.242l-1.414-1.414a1 1 0 1 0-1.414 1.414l1.414 1.414a1 1 0 0 1 0 1.414L12 7.757l-2.122-2.12A1 1 0 1 0 8.464 7.05l2.122 2.122l-1.414 1.413l-2.122-2.12a1 1 0 0 0-1.414 1.413L7.757 12l-.707.707a1 1 0 0 1-1.414 0l-1.414-1.414Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -18983,6 +20583,46 @@ func RunLine(children ...g.Node) g.Node {
 	)
 }
 
+func SadFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 11a5.984 5.984 0 0 0-4.2 1.716a1 1 0 1 0 1.4 1.428a3.984 3.984 0 0 1 2.8-1.143c1.09 0 2.077.435 2.8 1.143a1 1 0 1 0 1.4-1.428a5.983 5.983 0 0 0-4.2-1.715ZM8.5 8a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm7 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SadLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 4a8 8 0 1 0 0 16a8 8 0 0 0 0-16ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12Zm5-2.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0Zm7 0a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0Zm-6.2 5.216A5.984 5.984 0 0 1 12 13c1.635 0 3.119.655 4.2 1.715a1 1 0 1 1-1.4 1.428A3.984 3.984 0 0 0 12 15c-1.09 0-2.077.435-2.8 1.143a1 1 0 0 1-1.4-1.428Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SafariFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 2.05a9.954 9.954 0 0 0-5.33 2.206l.319.318A1 1 0 0 1 4.575 5.99l-.318-.319A9.954 9.954 0 0 0 2.049 11h.45a1 1 0 0 1 0 2h-.45A10.003 10.003 0 0 0 11 21.95v-.45a1 1 0 0 1 2 0v.45a9.954 9.954 0 0 0 5.33-2.207l-.319-.318a1 1 0 1 1 1.415-1.415l.318.319a9.954 9.954 0 0 0 2.208-5.33H21.5a1 1 0 1 1 0-2h.45A10.003 10.003 0 0 0 13 2.05v.45a1 1 0 1 1-2 0v-.45Zm5.466 4.794l-5.693 3.622a1 1 0 0 0-.307.307l-3.622 5.693c-.287.45.239.977.69.69l5.693-3.623a1 1 0 0 0 .306-.306l3.623-5.693c.287-.451-.24-.977-.69-.69Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SafariLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M13 4.062V4.5a1 1 0 1 1-2 0v-.438A7.96 7.96 0 0 0 7.094 5.68l.31.31A1 1 0 1 1 5.99 7.404l-.31-.31A7.96 7.96 0 0 0 4.062 11H4.5a1 1 0 1 1 0 2h-.438A8.004 8.004 0 0 0 11 19.938V19.5a1 1 0 1 1 2 0v.438a7.96 7.96 0 0 0 3.906-1.618l-.31-.31a1 1 0 0 1 1.414-1.414l.31.31A7.96 7.96 0 0 0 19.938 13H19.5a1 1 0 1 1 0-2h.438A8.004 8.004 0 0 0 13 4.062ZM2 12c0 5.523 4.477 10 10 10s10-4.477 10-10S17.523 2 12 2S2 6.477 2 12Zm14.466-5.156l-5.693 3.622a1 1 0 0 0-.307.307l-3.622 5.693c-.287.45.24.977.69.69l5.693-3.623a1 1 0 0 0 .306-.306l3.623-5.693c.287-.451-.24-.977-.69-.69Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func SafeAlertFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -19183,6 +20823,26 @@ func SandglassLine(children ...g.Node) g.Node {
 	)
 }
 
+func SandstormFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18.5 5.5a4 4 0 0 1 0 8H3a1.5 1.5 0 0 1 0-3h15.5a1 1 0 1 0-.727-1.687L17.7 8.9a1.5 1.5 0 1 1-2.398-1.802A3.996 3.996 0 0 1 18.5 5.5Zm-7.5-3a3.5 3.5 0 1 1 0 7H5a1.5 1.5 0 1 1 0-3h6a.5.5 0 1 0-.249-.934A1.5 1.5 0 1 1 9.25 2.969A3.49 3.49 0 0 1 11 2.5ZM5 3a1 1 0 1 1 0 2a1 1 0 0 1 0-2Zm12 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2ZM9 19a1 1 0 1 1 0 2a1 1 0 0 1 0-2Zm5.5-4.5a3 3 0 1 1-1 5.829a1.5 1.5 0 0 1 .001-2.829H7a1.5 1.5 0 0 1 0-3h7.5ZM21 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SandstormLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18.5 6a3.5 3.5 0 1 1 0 7H3a1 1 0 1 1 0-2h15.5a1.5 1.5 0 1 0-1.436-1.936l-.034.135a1 1 0 1 1-1.96-.398A3.5 3.5 0 0 1 18.5 6ZM11 3a3 3 0 1 1 0 6H5a1 1 0 0 1 0-2h6a1 1 0 1 0-.803-1.596l-.064.097a1 1 0 0 1-1.731-1.002A3 3 0 0 1 11 3ZM5 3a1 1 0 1 1 0 2a1 1 0 0 1 0-2Zm12 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2ZM9 19a1 1 0 1 1 0 2a1 1 0 0 1 0-2Zm5.5-4a2.5 2.5 0 1 1-1.667 4.363a1 1 0 0 1 1.235-1.568l.099.078A.5.5 0 1 0 14.5 17H7a1 1 0 1 1 0-2h7.5Zm6.5 2a1 1 0 1 1-2 0a1 1 0 0 1 2 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func SaveFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -19218,7 +20878,7 @@ func SaveTwoLine(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M3 5a2 2 0 0 1 2-2h10.586A2 2 0 0 1 17 3.586L19.414 6A2 2 0 0 1 20 7.414V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5Zm5 0H5v14h2v-5a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v5h2V7.414L15.586 5H15v2.5A1.5 1.5 0 0 1 13.5 9h-4A1.5 1.5 0 0 1 8 7.5V5Zm2 0v2h3V5h-3Zm4 14H9v-5h5v5Z"/></g>`),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M15.586 3A2 2 0 0 1 17 3.586L19.414 6A2 2 0 0 1 20 7.414V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h10.586ZM8 5H5v14h2v-5a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v5h2V7.414L15.586 5H15v2.5A1.5 1.5 0 0 1 13.5 9h-4A1.5 1.5 0 0 1 8 7.5V5Zm6 9H9v5h5v-5Zm-1-9h-3v2h3V5Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -19358,7 +21018,7 @@ func ScienceLine(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M13.91 18.29a9.18 9.18 0 0 0 1.038.403c1.698.536 2.816.27 3.416-.33c.6-.599.866-1.718.33-3.415a9.097 9.097 0 0 0-.404-1.04a22.82 22.82 0 0 1-2.047 2.335a22.768 22.768 0 0 1-2.334 2.046ZM12 17.2a19.75 19.75 0 0 0 2.829-2.372A19.75 19.75 0 0 0 17.199 12a19.744 19.744 0 0 0-2.37-2.829A19.754 19.754 0 0 0 12 6.801a19.75 19.75 0 0 0-2.828 2.37A19.75 19.75 0 0 0 6.8 12a19.754 19.754 0 0 0 2.37 2.828c.963.963 1.916 1.75 2.83 2.372Zm-6.29-3.291c.59.778 1.274 1.56 2.048 2.334a22.769 22.769 0 0 0 2.333 2.046a9.102 9.102 0 0 1-1.039.404c-1.697.536-2.816.27-3.416-.329c-.6-.6-.865-1.718-.329-3.416c.105-.333.24-.68.404-1.04ZM4.445 12c-.456.803-.805 1.59-1.044 2.345c-.645 2.043-.53 4.08.822 5.433c1.353 1.353 3.39 1.468 5.433.822A12.26 12.26 0 0 0 12 19.556c.803.456 1.59.805 2.345 1.044c2.044.645 4.08.53 5.433-.822c1.353-1.353 1.468-3.39.822-5.433A12.265 12.265 0 0 0 19.556 12c.456-.803.805-1.59 1.044-2.345c.646-2.043.531-4.08-.822-5.433c-1.352-1.353-3.39-1.468-5.433-.822A12.26 12.26 0 0 0 12 4.444A12.26 12.26 0 0 0 9.655 3.4c-2.043-.646-4.08-.531-5.433.822c-1.353 1.353-1.467 3.39-.822 5.433A12.26 12.26 0 0 0 4.444 12Zm1.267-1.909c.59-.778 1.273-1.56 2.047-2.334a22.772 22.772 0 0 1 2.333-2.046a9.113 9.113 0 0 0-1.039-.404c-1.697-.536-2.816-.27-3.416.329c-.6.6-.865 1.718-.329 3.416c.105.333.24.68.404 1.04Zm8.198-4.38a9.111 9.111 0 0 1 1.039-.404c1.698-.536 2.816-.27 3.416.329c.6.6.866 1.718.33 3.416c-.106.333-.24.68-.404 1.04a22.77 22.77 0 0 0-2.047-2.335a22.772 22.772 0 0 0-2.334-2.046ZM13.5 12a1.5 1.5 0 1 1-3-.001a1.5 1.5 0 0 1 3 0Z"/></g>`),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M9.655 3.4A12.26 12.26 0 0 1 12 4.444A12.26 12.26 0 0 1 14.345 3.4c2.044-.646 4.08-.531 5.433.822c1.353 1.353 1.468 3.39.822 5.433A12.266 12.266 0 0 1 19.556 12c.456.803.805 1.59 1.044 2.345c.646 2.043.531 4.08-.822 5.433c-1.352 1.353-3.39 1.468-5.433.822A12.26 12.26 0 0 1 12 19.556A12.26 12.26 0 0 1 9.655 20.6c-2.043.645-4.08.531-5.433-.822c-1.353-1.353-1.467-3.39-.822-5.433c.239-.756.588-1.542 1.044-2.345A12.26 12.26 0 0 1 3.4 9.655c-.645-2.044-.53-4.08.822-5.433c1.353-1.353 3.39-1.468 5.433-.822Zm8.635 10.509c-.59.778-1.274 1.56-2.047 2.334a22.768 22.768 0 0 1-2.334 2.046c.359.164.706.299 1.039.404c1.698.536 2.816.27 3.416-.33c.6-.599.866-1.718.33-3.415a9.097 9.097 0 0 0-.404-1.04Zm-12.58 0a9.118 9.118 0 0 0-.403 1.039c-.536 1.698-.27 2.816.33 3.416c.599.6 1.718.865 3.415.329c.334-.105.68-.24 1.04-.404a22.769 22.769 0 0 1-2.334-2.046a22.772 22.772 0 0 1-2.047-2.334ZM12 6.8a19.75 19.75 0 0 0-2.828 2.372A19.75 19.75 0 0 0 6.8 12a19.754 19.754 0 0 0 2.37 2.828c.963.963 1.916 1.75 2.83 2.372a19.75 19.75 0 0 0 2.828-2.372A19.75 19.75 0 0 0 17.199 12a19.744 19.744 0 0 0-2.37-2.829A19.754 19.754 0 0 0 12 6.801Zm0 3.7a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3ZM5.636 5.636c-.6.6-.865 1.718-.329 3.416c.105.333.24.68.404 1.04c.59-.78 1.273-1.561 2.047-2.335a22.772 22.772 0 0 1 2.333-2.046a9.113 9.113 0 0 0-1.039-.404c-1.697-.536-2.816-.27-3.416.329Zm9.312-.329c-.333.105-.68.24-1.039.404c.778.59 1.56 1.273 2.334 2.046a22.77 22.77 0 0 1 2.047 2.334c.164-.359.298-.706.403-1.039c.537-1.698.271-2.816-.329-3.416c-.6-.6-1.718-.865-3.416-.329Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -19843,6 +21503,26 @@ func SettingsTwoLine(children ...g.Node) g.Node {
 	)
 }
 
+func ShadowFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm5 15h-5a1 1 0 1 0 0 2h5a1 1 0 1 0 0-2Zm2-3h-7a1 1 0 0 0-.117 1.993L12 16h7a1 1 0 0 0 .117-1.993L19 14Zm1-3h-8a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2Zm-1-3h-7a1 1 0 0 0-.117 1.993L12 10h7a1 1 0 0 0 .117-1.993L19 8Zm-2-3h-5a1 1 0 1 0 0 2h5a1 1 0 1 0 0-2Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ShadowLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M4 12a8 8 0 0 1 11.876-7H12a1 1 0 1 0 0 2h6c.077 0 .153-.009.225-.025c.26.322.496.664.705 1.025H12a1 1 0 1 0 0 2h7.748c.084.326.148.66.19 1H12a1 1 0 1 0 0 2h7.938a7.88 7.88 0 0 1-.19 1H12a1 1 0 1 0 0 2h6.93a8.01 8.01 0 0 1-.705 1.025A1.004 1.004 0 0 0 18 17h-6a1 1 0 1 0 0 2h3.876A8 8 0 0 1 4 12Zm18 0c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10s10-4.477 10-10Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func ShareForwardFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -20143,6 +21823,46 @@ func ShortsLine(children ...g.Node) g.Node {
 	)
 }
 
+func ShovelFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M16.242 3.515a1 1 0 0 1 1.415 0l1.41 1.41l.004.004l.005.004l1.41 1.41a1 1 0 0 1-1.415 1.414l-.707-.707l-4.95 4.95l1.414 1.414a2 2 0 0 1 0 2.829l-2.494 2.494a5 5 0 0 1-5.117 1.208l-.949-.316a3 3 0 0 1-1.897-1.898l-.316-.948a5 5 0 0 1 1.208-5.117l2.494-2.495a2 2 0 0 1 2.829 0L12 10.586l4.95-4.95l-.707-.707a1 1 0 0 1 0-1.414Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ShovelLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M16.243 3.515a1 1 0 0 1 1.414 0l2.828 2.828a1 1 0 1 1-1.414 1.414l-.707-.707l-4.95 4.95l1.415 1.414a2 2 0 0 1 0 2.829l-2.495 2.494a5 5 0 0 1-5.117 1.208l-.948-.316A3 3 0 0 1 4.37 17.73l-.316-.948a5 5 0 0 1 1.208-5.117L7.757 9.17a2 2 0 0 1 2.828 0L12 10.586l4.95-4.95l-.707-.707a1 1 0 0 1 0-1.414ZM10.586 12l-1.414-1.414l-2.495 2.494a3 3 0 0 0-.725 3.07l.317.949a1 1 0 0 0 .632.632l.949.316a3 3 0 0 0 3.07-.724l2.494-2.495L12 13.414l-.707.707a1 1 0 0 1-1.414-1.414l.707-.707Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ShowersFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M9.104 18.949a1 1 0 0 1 .707 1.224l-.26.967a1 1 0 0 1-1.931-.518l.259-.966a1 1 0 0 1 1.225-.707Zm4.67-1.155a1 1 0 0 1 .706 1.224l-.258.966a1 1 0 1 1-1.932-.517l.259-.966a1 1 0 0 1 1.224-.707Zm-3.635-2.709a1 1 0 0 1 .707 1.225l-.259.966a1 1 0 0 1-1.932-.518l.26-.966a1 1 0 0 1 1.224-.707ZM11.5 2a6.502 6.502 0 0 1 6.086 4.212a6.002 6.002 0 0 1-1.172 11.774c.36-.363.633-.82.775-1.348l.259-.966a3 3 0 0 0-5.664-1.94a3 3 0 0 0-4.802 1.543l-.258.966a2.986 2.986 0 0 0-.001 1.552a2.99 2.99 0 0 0-.172.187a5 5 0 0 1-1.55-9.564A6.5 6.5 0 0 1 11.5 2Zm3.309 11.93a1 1 0 0 1 .707 1.225l-.26.966a1 1 0 0 1-1.931-.518l.259-.966a1 1 0 0 1 1.225-.707Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ShowersLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M9.104 18.949a1 1 0 0 1 .707 1.224l-.26.967a1 1 0 0 1-1.931-.518l.259-.966a1 1 0 0 1 1.225-.707Zm4.67-1.155a1 1 0 0 1 .706 1.224l-.258.966a1 1 0 1 1-1.932-.517l.259-.966a1 1 0 0 1 1.224-.707Zm-3.635-2.709a1 1 0 0 1 .707 1.225l-.259.966a1 1 0 0 1-1.932-.518l.26-.966a1 1 0 0 1 1.224-.707ZM11.5 2a6.502 6.502 0 0 1 6.086 4.212A6.002 6.002 0 0 1 19.6 16.799a1 1 0 1 1-1.202-1.598a4.001 4.001 0 0 0-1.744-7.147a1.01 1.01 0 0 1-.81-.733A4.5 4.5 0 0 0 7.027 9a1.01 1.01 0 0 1-.76 1.09a3.002 3.002 0 0 0-1.252 5.16a1 1 0 1 1-1.324 1.5A5 5 0 0 1 5 8.416A6.5 6.5 0 0 1 11.5 2Zm3.309 11.93a1 1 0 0 1 .707 1.225l-.26.966a1 1 0 0 1-1.931-.518l.259-.966a1 1 0 0 1 1.225-.707Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func ShuffleFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -20183,6 +21903,46 @@ func ShuffleTwoLine(children ...g.Node) g.Node {
 	)
 }
 
+func SickFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm2.918 12.571l-.018-.016a2.014 2.014 0 0 0-2.89-.001a.013.013 0 0 1-.02 0a2.014 2.014 0 0 0-2.768-.116l-.122.117c-.016.016-.036.037-.058.034l-.023-.011l-.343-.315a1 1 0 0 0-1.439 1.384l.087.09l.344.315a2.043 2.043 0 0 0 2.721.035l.132-.126c.009-.011.022-.027.034-.015c.79.816 2.1.816 2.89 0l.012-.002l.028.024c.73.752 1.9.825 2.715.195l.132-.111l.344-.315a1 1 0 0 0-1.254-1.553l-.098.079l-.343.315c-.023.02-.045.01-.063-.007ZM8.5 8a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm7 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SickLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16Zm.01 10.554a2.013 2.013 0 0 1 2.767-.116l.123.116c.021.022.05.052.08.024l.344-.315a1 1 0 0 1 1.352 1.474l-.344.315a2.043 2.043 0 0 1-2.721.035l-.126-.119c-.01-.011-.03-.033-.04-.022c-.79.816-2.1.816-2.89 0c-.015-.015-.031.013-.04.022a2.043 2.043 0 0 1-2.847.084l-.344-.315a1 1 0 0 1 1.352-1.474l.343.315c.023.021.045.01.064-.007l.017-.017a2.012 2.012 0 0 1 2.89 0a.013.013 0 0 0 .02 0ZM8.5 8a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm7 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SignalFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M20 3.5A1.5 1.5 0 0 1 21.5 5v14a1.5 1.5 0 0 1-3 0V5A1.5 1.5 0 0 1 20 3.5Zm-4 3A1.5 1.5 0 0 1 17.5 8v11a1.5 1.5 0 0 1-3 0V8A1.5 1.5 0 0 1 16 6.5Zm-4 3a1.5 1.5 0 0 1 1.5 1.5v8a1.5 1.5 0 0 1-3 0v-8A1.5 1.5 0 0 1 12 9.5Zm-4 3A1.5 1.5 0 0 1 9.5 14v5a1.5 1.5 0 0 1-3 0v-5A1.5 1.5 0 0 1 8 12.5Zm-4 3A1.5 1.5 0 0 1 5.5 17v2a1.5 1.5 0 0 1-3 0v-2A1.5 1.5 0 0 1 4 15.5Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SignalLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M20 4a1 1 0 0 1 1 1v14a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1Zm-4 3a1 1 0 0 1 1 1v11a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1Zm-4 3a1 1 0 0 1 1 1v8a1 1 0 1 1-2 0v-8a1 1 0 0 1 1-1Zm-4 3a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0v-5a1 1 0 0 1 1-1Zm-4 3a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func SignatureFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -20199,6 +21959,26 @@ func SignatureLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M16.239 4.79c-.595.127-1.456.478-2.55 1.085c-2.034 1.127-4.763 3.294-7.949 6.798a1 1 0 1 1-1.48-1.346c3.276-3.603 6.172-5.934 8.458-7.202c1.16-.643 2.225-1.104 3.107-1.29c.778-.166 1.942-.211 2.541.768c.271.443.313.948.265 1.404c-.048.461-.197.965-.417 1.499c-.44 1.069-1.232 2.42-2.397 4.07c-1.362 1.93-2.103 3.241-2.437 4.09a3.86 3.86 0 0 0-.163.5c.105-.022.23-.056.378-.105c.555-.185 1.235-.525 1.89-.918c.64-.384 1.22-.662 1.722-.74c.263-.04.609-.043.946.126c.369.185.576.497.673.793c.143.439.078.913-.024 1.352c-.165.713-.443 1.395-.621 2.104c.109-.046.232-.103.372-.172a1 1 0 0 1 .894 1.788c-.65.325-1.265.552-1.81.55a1.567 1.567 0 0 1-.934-.29a1.468 1.468 0 0 1-.54-.798c-.136-.481-.049-1.007.033-1.372c.13-.592.337-1.162.514-1.74c-.804.457-1.6.92-2.483 1.215a4.314 4.314 0 0 1-1.16.237c-.374.015-.873-.04-1.29-.38c-.452-.366-.603-.892-.602-1.376c0-.463.134-.971.344-1.506c.423-1.076 1.276-2.544 2.664-4.51c1.13-1.6 1.824-2.811 2.181-3.68c.13-.316.264-.66.283-1.006c-.083 0-.213.011-.408.053Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SilentFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2ZM9.793 12.793a1 1 0 0 0 0 1.414l.793.793l-.793.793a1 1 0 1 0 1.414 1.414l.793-.793l.793.793a1 1 0 0 0 1.414-1.414L13.414 15l.793-.793a1 1 0 0 0-1.414-1.414l-.793.793l-.793-.793a1 1 0 0 0-1.414 0ZM8.5 8a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm7 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SilentLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16Zm-.793 8.793l.793.793l.793-.793a1 1 0 0 1 1.414 1.414l-.793.793l.793.793a1 1 0 0 1-1.414 1.414L12 16.414l-.793.793a1 1 0 0 1-1.414-1.414l.793-.793l-.793-.793a1 1 0 1 1 1.414-1.414ZM8.5 8a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Zm7 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -20423,6 +22203,46 @@ func SnowmanLine(children ...g.Node) g.Node {
 	)
 }
 
+func SnowstormFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M19.248 8.53a1.5 1.5 0 0 1 1.172 1.768A4 4 0 0 1 16.5 13.5H3a1.5 1.5 0 0 1 0-3h13.5a1 1 0 0 0 .95-.687l.03-.111a1.5 1.5 0 0 1 1.768-1.172ZM9 2.5a3.5 3.5 0 1 1 0 7H5a1.5 1.5 0 1 1 0-3h4a.5.5 0 1 0-.249-.934A1.5 1.5 0 1 1 7.25 2.969A3.49 3.49 0 0 1 9 2.5Zm7.002.5a1 1 0 0 1 1 1v.268l.232-.134a1 1 0 0 1 1 1.732L18.002 6l.232.134a1 1 0 1 1-1 1.732l-.232-.134V8a1 1 0 0 1-2 0v-.268l-.232.134a1 1 0 1 1-1-1.732L14.002 6l-.232-.134a1 1 0 0 1 1-1.732l.232.134V4a1 1 0 0 1 1-1ZM6 14.5a1.5 1.5 0 0 0 0 3h5.501a1.5 1.5 0 0 0-.001 2.829a3 3 0 1 0 1-5.829H6Zm13-.5a1 1 0 0 1 1 1v.268l.232-.134a1 1 0 1 1 1 1.732L21 17l.232.134a1 1 0 0 1-1 1.732L20 18.732V19a1 1 0 1 1-2 0v-.268l-.232.134a1 1 0 1 1-1-1.732L17 17l-.232-.134a1 1 0 1 1 1-1.732l.232.134V15a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SnowstormLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M19.149 9.02a1 1 0 0 1 .781 1.179A3.5 3.5 0 0 1 16.5 13H3a1 1 0 1 1 0-2h13.5a1.5 1.5 0 0 0 1.436-1.064l.034-.135a1 1 0 0 1 1.179-.781ZM9 3a3 3 0 1 1 0 6H5a1 1 0 0 1 0-2h4a1 1 0 1 0-.803-1.596l-.064.097a1 1 0 1 1-1.731-1.002A3 3 0 0 1 9 3Zm7.002 0a1 1 0 0 1 1 1v.268l.232-.134a1 1 0 0 1 1 1.732L18.002 6l.232.134a1 1 0 1 1-1 1.732l-.232-.134V8a1 1 0 0 1-2 0v-.268l-.232.134a1 1 0 1 1-1-1.732L14.002 6l-.232-.134a1 1 0 0 1 1-1.732l.232.134V4a1 1 0 0 1 1-1ZM6 15a1 1 0 1 0 0 2h6.5a.5.5 0 1 1-.262.926l-.071-.053a1 1 0 1 0-1.334 1.49A2.5 2.5 0 1 0 12.5 15H6Zm13-1a1 1 0 0 1 1 1v.268l.232-.134a1 1 0 1 1 1 1.732L21 17l.232.134a1 1 0 0 1-1 1.732L20 18.732V19a1 1 0 1 1-2 0v-.268l-.232.134a1 1 0 1 1-1-1.732L17 17l-.232-.134a1 1 0 1 1 1-1.732l.232.134V15a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SobFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10a9.996 9.996 0 0 1-5 8.662V13a1 1 0 1 0-2 0v8c0 .182.049.352.133.5c-.985.324-2.039.5-3.133.5a9.991 9.991 0 0 1-3.133-.5A.996.996 0 0 0 9 21v-8a1 1 0 1 0-2 0v7.662A9.996 9.996 0 0 1 2 12C2 6.477 6.477 2 12 2Zm-2 6H7a1 1 0 0 0-.117 1.993L7 10h3a1 1 0 0 0 .117-1.993L10 8Zm7 0h-3a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SobLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 4a8 8 0 0 0-5 14.245V13a1 1 0 1 1 2 0v6.419c.926.375 1.94.581 3 .581s2.074-.206 3-.581V13a1 1 0 1 1 2 0v5.245A8 8 0 0 0 12 4Zm5 16.662A9.995 9.995 0 0 0 22 12c0-5.523-4.477-10-10-10S2 6.477 2 12a9.996 9.996 0 0 0 5 8.662V21a1 1 0 0 0 1.867.5c.985.324 2.039.5 3.133.5a9.992 9.992 0 0 0 3.133-.5A1 1 0 0 0 17 21v-.338ZM6 9a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm7 0a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func SockFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -20523,6 +22343,26 @@ func SortDescendingLine(children ...g.Node) g.Node {
 	)
 }
 
+func SpaceFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M3 8.5A1.5 1.5 0 0 1 4.5 10v2.5h15V10a1.5 1.5 0 0 1 3 0v3a2.5 2.5 0 0 1-2.5 2.5H4A2.5 2.5 0 0 1 1.5 13v-3A1.5 1.5 0 0 1 3 8.5Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SpaceLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M3 9a1 1 0 0 1 1 1v3h16v-3a1 1 0 1 1 2 0v3a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-3a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func SpacingHorizontalFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -20603,6 +22443,26 @@ func SparklesLine(children ...g.Node) g.Node {
 	)
 }
 
+func SparklesTwoFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M14 6.24c.335 0 .588.141.777.342c.305.324.434.801.624 1.196a11.71 11.71 0 0 0 4.429 4.91l.434.257c.393.239.735.518.736 1.053c.001.732-.636.986-1.17 1.313a11.711 11.711 0 0 0-4.429 4.91c-.19.396-.32.873-.624 1.197c-.188.201-.442.342-.777.342s-.589-.141-.777-.342c-.176-.187-.292-.422-.395-.662l-.15-.36a4.365 4.365 0 0 0-.079-.174a11.71 11.71 0 0 0-4.429-4.91l-.321-.191c-.433-.26-.85-.556-.849-1.123c.002-.73.637-.982 1.17-1.309a11.71 11.71 0 0 0 4.429-4.91c.19-.396.32-.873.624-1.197c.188-.2.442-.342.777-.342Zm-7.253-.415c.149.183.238.39.34.601c.274.57.688 1.06 1.201 1.422l.198.13c.856.525.888 1.41.12 1.964l-.12.08a3.7 3.7 0 0 0-1.4 1.552l-.114.242c-.097.2-.21.391-.406.518c-.315.202-.817.202-1.132 0c-.265-.17-.39-.488-.52-.76a3.701 3.701 0 0 0-1.4-1.552c-.178-.11-.348-.213-.495-.367a1.081 1.081 0 0 1 .001-1.312c.15-.156.31-.252.495-.365a3.7 3.7 0 0 0 1.399-1.552c.104-.216.187-.414.34-.6a1.071 1.071 0 0 1 1.493 0ZM10 2a1 1 0 0 1 1 1a1 1 0 1 1 0 2a1 1 0 1 1-2 0a1 1 0 1 1 0-2a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SparklesTwoLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M14 6.24c.335 0 .588.141.777.342c.305.324.434.801.624 1.196a11.71 11.71 0 0 0 4.429 4.91l.434.257c.393.239.735.518.736 1.053c.001.732-.636.986-1.17 1.313a11.711 11.711 0 0 0-4.429 4.91c-.19.396-.32.873-.624 1.197c-.188.201-.442.342-.777.342s-.589-.141-.777-.342c-.176-.187-.292-.422-.395-.662l-.15-.36a4.365 4.365 0 0 0-.079-.174a11.71 11.71 0 0 0-4.429-4.91l-.321-.191c-.433-.26-.85-.556-.849-1.123c.002-.73.637-.982 1.17-1.309a11.71 11.71 0 0 0 4.429-4.91c.19-.396.32-.873.624-1.197c.188-.2.442-.342.777-.342Zm-.001 3.176c-1.041 1.812-2.435 3.418-4.181 4.584c1.743 1.177 3.13 2.771 4.182 4.583c1.053-1.814 2.45-3.388 4.18-4.583c-1.738-1.186-3.129-2.772-4.181-4.584Zm-7.252-3.59c.149.182.238.39.34.6c.274.57.688 1.06 1.201 1.422l.198.13c.856.525.888 1.41.12 1.964l-.12.08a3.7 3.7 0 0 0-1.4 1.552l-.114.242c-.097.2-.21.391-.406.518c-.315.202-.817.202-1.132 0c-.265-.17-.39-.488-.52-.76a3.701 3.701 0 0 0-1.4-1.552c-.178-.11-.348-.213-.495-.367a1.081 1.081 0 0 1 .001-1.312c.15-.156.31-.252.495-.365a3.7 3.7 0 0 0 1.399-1.552c.104-.216.187-.414.34-.6a1.071 1.071 0 0 1 1.493 0ZM6 8.42a4.789 4.789 0 0 1-.376.42L5.457 9l.167.16c.132.133.256.274.376.418c.119-.146.244-.285.377-.419L6.54 9l-.164-.16A4.386 4.386 0 0 1 6 8.422ZM10 2a1 1 0 0 1 1 1a1 1 0 1 1 0 2a1 1 0 1 1-2 0a1 1 0 1 1 0-2a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func SpeakerFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -20658,7 +22518,7 @@ func SpoonLine(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6.138 5.665a.337.337 0 1 0-.473.473l2.287 1.814l-1.814-2.287Zm5.892 8.074L4.422 7.705a2.337 2.337 0 1 1 3.283-3.283l6.034 7.608c1.307-.571 3.3-.648 4.979 1.03c1.015 1.016 1.647 2.258 1.863 3.44c.21 1.15.049 2.426-.803 3.278c-.851.852-2.128 1.013-3.277.803c-1.182-.216-2.425-.848-3.44-1.864c-1.68-1.679-1.602-3.671-1.031-4.978Zm2.09.38l.034-.028c.466-.405 1.901-.865 3.15.384c.74.741 1.17 1.62 1.31 2.385c.146.798-.04 1.295-.25 1.504c-.21.209-.706.395-1.503.25c-.765-.14-1.645-.57-2.386-1.31c-1.248-1.25-.789-2.684-.384-3.15l.029-.035Z"/></g>`),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="m7.705 4.422l6.034 7.608c1.307-.571 3.3-.648 4.979 1.03c1.015 1.016 1.647 2.258 1.863 3.44c.21 1.15.049 2.426-.803 3.278c-.851.852-2.128 1.013-3.277.803c-1.182-.216-2.425-.848-3.44-1.864c-1.68-1.679-1.602-3.671-1.031-4.978L4.422 7.705a2.337 2.337 0 1 1 3.283-3.283Zm9.598 10.053c-1.2-1.2-2.572-.822-3.091-.431l-.092.075l-.029.035c-.405.466-.864 1.9.384 3.15c.741.74 1.62 1.17 2.386 1.31c.797.145 1.294-.041 1.503-.25c.21-.21.396-.706.25-1.504c-.14-.765-.57-1.644-1.31-2.385ZM5.636 5.635a.337.337 0 0 0 .029.503l2.287 1.814l-1.814-2.287a.337.337 0 0 0-.502-.03Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -21068,7 +22928,7 @@ func SuitcaseFill(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M7 7a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3Zm2 0a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1H9ZM8 8a1 1 0 0 1 1 1v10a1 1 0 1 1-2 0V9a1 1 0 0 1 1-1Zm9 1a1 1 0 1 0-2 0v10a1 1 0 1 0 2 0V9Z"/></g>`),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M14 4a3 3 0 0 1 3 3h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h3a3 3 0 0 1 3-3h4ZM8 8a1 1 0 0 0-.993.883L7 9v10a1 1 0 0 0 1.993.117L9 19V9a1 1 0 0 0-1-1Zm8 0a1 1 0 0 0-1 1v10a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1Zm-2-2h-4a1 1 0 0 0-.993.883L9 7h6a1 1 0 0 0-.883-.993L14 6Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -21129,6 +22989,26 @@ func SunFill(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 19a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1Zm6.364-2.05l.707.707a1 1 0 0 1-1.414 1.414l-.707-.707a1 1 0 0 1 1.414-1.414Zm-12.728 0a1 1 0 0 1 1.497 1.32l-.083.094l-.707.707a1 1 0 0 1-1.497-1.32l.083-.094l.707-.707ZM12 6a6 6 0 1 1 0 12a6 6 0 0 1 0-12Zm-8 5a1 1 0 0 1 .117 1.993L4 13H3a1 1 0 0 1-.117-1.993L3 11h1Zm17 0a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2h1ZM4.929 4.929a1 1 0 0 1 1.32-.083l.094.083l.707.707a1 1 0 0 1-1.32 1.497l-.094-.083l-.707-.707a1 1 0 0 1 0-1.414Zm14.142 0a1 1 0 0 1 0 1.414l-.707.707a1 1 0 1 1-1.414-1.414l.707-.707a1 1 0 0 1 1.414 0ZM12 2a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SunFogFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 6a6 6 0 0 1 5.88 7.2a1 1 0 0 1-.98.8H7.1a1 1 0 0 1-.98-.8A6 6 0 0 1 12 6Zm9 5a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2h1ZM4 11a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2h1Zm15.071-6.07a1 1 0 0 1 0 1.414l-.707.707a1 1 0 1 1-1.414-1.414l.707-.707a1 1 0 0 1 1.414 0Zm-12.728 0l.707.707A1 1 0 0 1 5.636 7.05l-.707-.707A1 1 0 1 1 6.343 4.93ZM12 2a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1ZM4 15a1 1 0 1 0 0 2h16a1 1 0 1 0 0-2H4Zm3 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H7Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SunFogLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 6a6 6 0 0 1 5.88 7.2a1 1 0 0 1-1.96-.399a4 4 0 1 0-7.84 0a1 1 0 1 1-1.96.398A6 6 0 0 1 12 6Zm9 5a1 1 0 1 1 0 2h-1a1 1 0 1 1 0-2h1ZM4 11a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2h1Zm15.071-6.07a1 1 0 0 1 0 1.414l-.707.707a1 1 0 1 1-1.414-1.414l.707-.707a1 1 0 0 1 1.414 0Zm-12.728 0l.707.707A1 1 0 0 1 5.636 7.05l-.707-.707A1 1 0 1 1 6.343 4.93ZM12 2a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1ZM4 15a1 1 0 1 0 0 2h16a1 1 0 1 0 0-2H4Zm3 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H7Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -21199,6 +23079,46 @@ func SurfboardLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M4.23 19.786L5.543 21.1a1.95 1.95 0 0 0 1.832.529c2.468-.592 5.578-2.096 8.16-4.678c2.305-2.305 3.583-5.16 4.212-7.494c.315-1.17.474-2.235.513-3.07c.032-.701.055-1.628-.482-2.164c-.537-.537-1.463-.514-2.165-.482c-.834.038-1.899.198-3.069.513c-2.335.629-5.189 1.907-7.494 4.211c-2.582 2.583-4.086 5.693-4.678 8.16a1.95 1.95 0 0 0 .529 1.833l1.313 1.313a.429.429 0 0 0 .016.016ZM8.464 9.88c1.991-1.991 4.5-3.13 6.6-3.695c.616-.166 1.187-.28 1.69-.352L4.929 17.657l-.603-.603c.518-2.128 1.847-4.884 4.138-7.175Zm-2.12 9.192L18.167 7.246a14.461 14.461 0 0 1-.352 1.69c-.566 2.1-1.704 4.608-3.695 6.6c-2.29 2.29-5.047 3.62-7.175 4.138l-.603-.603Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SurpriseFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 10a3 3 0 1 0 0 6a3 3 0 0 0 0-6Zm0 2a1 1 0 1 1 0 2a1 1 0 0 1 0-2ZM8.5 8a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm7 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SurpriseLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 4a8 8 0 1 0 0 16a8 8 0 0 0 0-16ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12Zm5-2.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0Zm7 0a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0ZM12 14a1 1 0 1 0 0 2a1 1 0 0 0 0-2Zm-3 1a3 3 0 1 1 6 0a3 3 0 0 1-6 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SweatsFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c2.106 0 4.06.65 5.67 1.762c-.169.244-.35.519-.527.814l-.096.164l-.203.365C16.431 5.882 16 6.927 16 8c0 1.97 1.563 4 4 4c.752 0 1.421-.193 1.987-.519c.009.172.013.345.013.519c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 12H9a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2Zm-3-4H6a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2Zm6 0h-3a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2Zm5.05-5.94l.238.3l.205.272C21.085 5.44 22 6.872 22 8c0 1-.797 2-2 2c-1.203 0-2-1-2-2c0-.845.515-1.862 1.022-2.66l.215-.326l.205-.293l.187-.253l.223-.288l.098-.12a.064.064 0 0 1 .1 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func SweatsLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c2.173 0 4.186.694 5.826 1.872l.244-.316l.11-.133a1.064 1.064 0 0 1 1.64 0l.246.307l.275.367l.21.298c.037.053.073.107.11.163l.225.348l.113.184C21.459 5.857 22 6.952 22 8c0 .486-.122.963-.345 1.388c.225.834.345 1.71.345 2.612c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 2a8 8 0 1 0 7.92 6.86A3.02 3.02 0 0 1 19 11c-1.82 0-3-1.515-3-3c0-.614.184-1.224.403-1.746c.101-.24.215-.475.335-.7A7.96 7.96 0 0 0 12 4Zm0 10a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2h3Zm-3-4a1 1 0 1 1 0 2H6a1 1 0 1 1 0-2h3Zm6 0a1 1 0 1 1 0 2h-3a1 1 0 1 1 0-2h3Zm4-4.329l-.124.19a7.86 7.86 0 0 0-.629 1.168c-.17.404-.247.733-.247.971c0 .515.414 1 1 1a.96.96 0 0 0 .78-.377c.144-.186.22-.412.22-.623c0-.462-.279-1.15-.717-1.882c-.094-.157-.19-.307-.283-.447Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -21483,6 +23403,26 @@ func TajMahalLine(children ...g.Node) g.Node {
 	)
 }
 
+func TankFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M7 7a3 3 0 0 1 3-3h1.53a5.002 5.002 0 0 1 4.584 3H20a1 1 0 1 1 0 2h-3.418l.285 2h.633a4.5 4.5 0 1 1 0 9h-11a4.5 4.5 0 1 1 0-9H7V7Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func TankLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M7 7a3 3 0 0 1 3-3h1.53a5.002 5.002 0 0 1 4.584 3H20a1 1 0 1 1 0 2h-3.418l.285 2h.633a4.5 4.5 0 1 1 0 9h-11a4.5 4.5 0 1 1 0-9H7V7Zm7.5 1.576L14.848 11H9V7a1 1 0 0 1 1-1h1.53a3 3 0 0 1 2.97 2.576ZM6.5 13h11a2.5 2.5 0 0 1 0 5h-11a2.5 2.5 0 0 1 0-5Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func TargetFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -21683,6 +23623,26 @@ func TerminalLine(children ...g.Node) g.Node {
 	)
 }
 
+func TerrorFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 9a3 3 0 0 0-3 3v1a3 3 0 1 0 6 0v-1a3 3 0 0 0-3-3Zm0 2a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1ZM8.422 7.276c-.46.115-.895.383-1.245.733c-.35.35-.618.785-.733 1.245c-.11.437-.113 1.091.38 1.583c.492.493 1.146.489 1.583.38c.46-.115.894-.383 1.245-.733c.35-.35.618-.785.732-1.245c.11-.437.114-1.091-.379-1.584c-.492-.492-1.146-.488-1.583-.379Zm5.573.38c-.493.492-.489 1.146-.38 1.583c.115.46.383.895.733 1.245c.35.35.785.618 1.245.733c.437.109 1.091.113 1.584-.38c.492-.492.488-1.146.379-1.583c-.115-.46-.383-.895-.733-1.245c-.35-.35-.785-.618-1.245-.733c-.437-.109-1.09-.113-1.583.38Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func TerrorLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16Zm0 7a3 3 0 0 1 3 3v1a3 3 0 1 1-6 0v-1a3 3 0 0 1 3-3Zm0 2a1 1 0 0 0-1 1v1a1 1 0 1 0 2 0v-1a1 1 0 0 0-1-1Zm-1.995-5.344c.493.492.489 1.146.38 1.583c-.115.46-.383.895-.733 1.245c-.35.35-.785.618-1.245.733c-.437.109-1.091.113-1.584-.38c-.492-.492-.488-1.146-.379-1.583c.115-.46.383-.895.733-1.245c.35-.35.785-.618 1.245-.733c.437-.109 1.09-.113 1.583.38Zm3.99 0c.492-.493 1.146-.489 1.583-.38c.46.115.895.383 1.245.733c.35.35.618.785.733 1.245c.11.437.113 1.091-.38 1.584c-.492.492-1.146.488-1.583.379c-.46-.115-.895-.383-1.245-.733c-.35-.35-.618-.785-.732-1.245c-.11-.437-.114-1.091.379-1.583Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func TetherUsdtFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -21863,6 +23823,46 @@ func ThumbUpTwoLine(children ...g.Node) g.Node {
 	)
 }
 
+func ThunderstormFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12.496 12.632a1 1 0 0 1 .372 1.364L11.723 16h1.105a1.1 1.1 0 0 1 .955 1.646l-1.915 3.35a1 1 0 0 1-1.736-.992L11.277 18h-1.105a1.1 1.1 0 0 1-.955-1.646l1.915-3.35a1 1 0 0 1 1.364-.372Zm2.503 5.869a1 1 0 1 1 1.931.517l-.258.966a1 1 0 1 1-1.932-.517l.259-.966Zm-9.78 0a1 1 0 1 1 1.932.517l-.26.966a1 1 0 0 1-1.931-.517l.259-.966ZM11.5 2a6.502 6.502 0 0 1 6.086 4.212a6.002 6.002 0 0 1 2.001 10.598l.027-.085l.284-1.053a3 3 0 0 0-4.994-2.924a3 3 0 0 0-5.51-.737l-.305.537a3 3 0 0 0-4.767 1.571l-.259.966a2.986 2.986 0 0 0 0 1.553a2.997 2.997 0 0 0-.217.242A5 5 0 0 1 5 8.417A6.5 6.5 0 0 1 11.5 2Zm5.759 11.93a1 1 0 0 1 .707 1.225l-.259.966a1 1 0 0 1-1.932-.518l.259-.966a1 1 0 0 1 1.225-.707Zm-9.78 0a1 1 0 0 1 .707 1.225l-.259.966a1 1 0 0 1-1.932-.518l.259-.966a1 1 0 0 1 1.225-.707Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ThunderstormLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12.496 12.632a1 1 0 0 1 .372 1.364L11.723 16h1.105a1.1 1.1 0 0 1 .955 1.646l-1.915 3.35a1 1 0 1 1-1.736-.992L11.277 18h-1.105a1.1 1.1 0 0 1-.955-1.646l1.915-3.35a1 1 0 0 1 1.364-.372ZM15 18.5a1 1 0 0 1 1.931.517l-.258.966a1 1 0 1 1-1.932-.517L15 18.5Zm-9.78 0a1 1 0 0 1 1.932.517l-.26.966a1 1 0 1 1-1.931-.517l.259-.966Zm12.04-4.571a1 1 0 0 1 .707 1.225l-.259.966a1 1 0 0 1-1.932-.518l.259-.966a1 1 0 0 1 1.225-.707Zm-9.78 0a1 1 0 0 1 .707 1.225l-.259.966a1 1 0 1 1-1.932-.518l.259-.966a1 1 0 0 1 1.225-.707ZM11.5 2a6.502 6.502 0 0 1 6.086 4.212a6.002 6.002 0 0 1 3.214 9.389a1 1 0 0 1-1.6-1.202a4.001 4.001 0 0 0-2.545-6.346a1.01 1.01 0 0 1-.81-.732A4.5 4.5 0 0 0 7.027 9a1.01 1.01 0 0 1-.76 1.09a3.002 3.002 0 0 0-1.97 4.216l.103.193a1 1 0 1 1-1.731 1.002A5 5 0 0 1 5 8.416A6.5 6.5 0 0 1 11.5 2Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func TicketFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M13 4a1 1 0 0 1 .993.883L14 5a1 1 0 0 0 1.993.117L16 5a1 1 0 0 1 1-1h2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-2a1 1 0 0 1-.993-.883L16 19a1 1 0 0 0-1.993-.117L14 19a1 1 0 0 1-1 1H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h8Zm2 9a1 1 0 0 0-1 1v1a1 1 0 1 0 2 0v-1a1 1 0 0 0-1-1Zm0-5a1 1 0 0 0-.993.883L14 9v1a1 1 0 0 0 1.993.117L16 10V9a1 1 0 0 0-1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func TicketLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5 6a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h7.17a3.001 3.001 0 0 1 5.66 0H19a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-1.17a3.001 3.001 0 0 1-5.66 0H5ZM2 7a3 3 0 0 1 3-3h8a1 1 0 0 1 1 1a1 1 0 1 0 2 0a1 1 0 0 1 1-1h2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-2a1 1 0 0 1-1-1a1 1 0 1 0-2 0a1 1 0 0 1-1 1H5a3 3 0 0 1-3-3V7Zm13 2a1 1 0 0 1 1 1v.5a1 1 0 1 1-2 0V10a1 1 0 0 1 1-1Zm1 4.5a1 1 0 1 0-2 0v.5a1 1 0 1 0 2 0v-.5Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func TiktokFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -22023,6 +24023,26 @@ func ToiletPaperLine(children ...g.Node) g.Node {
 	)
 }
 
+func TongueFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10ZM8.5 11a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Zm.5 2a1 1 0 1 0 0 2v1a3 3 0 1 0 6 0v-1a1 1 0 1 0 0-2H9Zm7.949-5.316a1 1 0 0 0-1.265-.633a4.045 4.045 0 0 0-1.792 1.214a4.333 4.333 0 0 0-.84 1.419A1 1 0 0 0 14 11c.5.026.952.367 1.293.707a1 1 0 1 0 1.414-1.414c-.352-.336-.726-.641-1.157-.872c.259-.235.55-.386.875-.516a1 1 0 0 0 .524-1.221Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func TongueLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 4a8 8 0 1 0 0 16a8 8 0 0 0 0-16ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12Zm5-2.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0ZM9 13a1 1 0 1 0 0 2v1a3 3 0 1 0 6 0v-1a1 1 0 1 0 0-2H9Zm2 3v-1h2v1a1 1 0 1 1-2 0Zm5.949-8.316a1 1 0 0 0-1.265-.633a4.045 4.045 0 0 0-1.792 1.214a4.333 4.333 0 0 0-.84 1.419A1 1 0 0 0 14 11c.255 0 .751.165 1.293.707a1 1 0 1 0 1.414-1.414c-.352-.336-.726-.641-1.157-.872a2.17 2.17 0 0 1 .766-.472a1 1 0 0 0 .633-1.265Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func ToolFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -22039,6 +24059,46 @@ func ToolLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6.798 2.884a7.002 7.002 0 0 1 9.294 8.565l4.394 3.718a3.76 3.76 0 1 1-5.3 5.3l-3.717-4.394a7.002 7.002 0 0 1-8.565-9.295c.358-.894 1.48-1.007 2.063-.373L8.17 9.883l1.446-.288l.29-1.449l-3.48-3.198c-.634-.583-.522-1.706.373-2.064ZM8.805 4.42l2.763 2.54c.322.296.466.738.38 1.165l-.47 2.354a1.25 1.25 0 0 1-.982.981l-2.35.467a1.25 1.25 0 0 1-1.164-.38L4.438 8.785a5.002 5.002 0 0 0 6.804 5.25a1.257 1.257 0 0 1 1.422.355l4.05 4.786a1.76 1.76 0 1 0 2.48-2.48l-4.785-4.05a1.257 1.257 0 0 1-.355-1.422a5.001 5.001 0 0 0-5.25-6.804Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func TornadoFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M7.25 16.582c.327.678.937 1.201 1.582 1.56c.99.55 2.288.858 3.668.858c.693 0 1.365-.078 1.988-.225c-.271.3-.61.526-.92.68C12.86 19.81 11.95 20 11 20s-1.86-.19-2.569-.545C7.782 19.131 7 18.497 7 17.5c0-.35.096-.655.25-.918Zm10.718-2.483c.02.13.032.263.032.401c0 1.218-.877 2.111-1.832 2.642c-.99.55-2.288.858-3.668.858c-1.38 0-2.679-.309-3.668-.858c-.733-.408-1.42-1.029-1.7-1.847c1.237.451 2.756.705 4.368.705c1.906 0 3.68-.354 5.015-.97a5.82 5.82 0 0 0 1.453-.931Zm-13.946-3.43c.51.491 1.177.897 1.92 1.222C7.544 12.591 9.686 13 12 13c2.314 0 4.456-.408 6.058-1.109c.318-.14.621-.293.905-.462c-.214 1.223-1.325 2.082-2.448 2.6c-1.335.617-3.109.971-5.015.971c-1.906 0-3.68-.354-5.015-.97C5.235 13.451 4 12.453 4 11c0-.113.007-.223.022-.33ZM12 3c2.314 0 4.456.408 6.058 1.109c.799.35 1.509.792 2.032 1.334c.529.546.91 1.243.91 2.057c0 .814-.381 1.51-.91 2.057c-.523.542-1.233.984-2.032 1.334C16.456 11.591 14.314 12 12 12c-2.314 0-4.456-.408-6.058-1.109c-.799-.35-1.509-.792-2.032-1.334C3.38 9.011 3 8.314 3 7.5c0-.814.381-1.51.91-2.057c.523-.542 1.233-.984 2.032-1.334C7.544 3.409 9.686 3 12 3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func TornadoLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 3c2.592 0 4.986.465 6.77 1.258c.89.396 1.674.893 2.247 1.496C21.596 6.362 22 7.122 22 8c0 1.365-.94 2.421-2.15 3.175c.095.255.15.53.15.825c0 .847-.453 1.538-1.023 2.045a5.41 5.41 0 0 1-1.086.736c.07.226.109.466.109.719c0 1.004-.605 1.795-1.332 2.324a5.754 5.754 0 0 1-1.673.813c-.067.918-.807 1.509-1.426 1.818c-.71.355-1.619.545-2.569.545s-1.86-.19-2.569-.545C7.782 20.131 7 19.497 7 18.5c0-.573.27-1.036.6-1.368c-.363-.453-.6-.998-.6-1.632c0-.106.007-.21.02-.313c-.649-.245-1.23-.546-1.704-.902C4.608 13.753 4 12.985 4 12c0-.294.055-.57.15-.825C2.94 10.42 2 9.364 2 8c0-.878.404-1.638.983-2.246c.573-.603 1.356-1.1 2.247-1.496C7.014 3.465 9.408 3 12 3ZM9.272 18.361a1.25 1.25 0 0 0-.21.14c.05.042.132.1.264.165c.377.189.967.334 1.674.334c.225 0 .438-.015.636-.04a7.601 7.601 0 0 1-2.364-.599ZM16 15.502c-1.18.32-2.55.498-4 .498c-1.032 0-2.022-.09-2.93-.257c.094.178.3.408.725.646c.64.358 1.594.611 2.705.611c.382 0 .75-.03 1.094-.085c.823-.133 1.476-.402 1.897-.708c.426-.31.508-.57.509-.705Zm1.995-3.45C16.32 12.655 14.232 13 12 13s-4.319-.345-5.995-.948c.021.119.122.34.512.633c.446.335 1.147.66 2.07.904c.976.257 2.145.411 3.413.411c1.601 0 3.04-.245 4.126-.63c.701-.25 1.208-.54 1.52-.818c.26-.23.332-.4.35-.5ZM12 5c-2.379 0-4.484.43-5.958 1.085c-.738.328-1.273.693-1.61 1.047C4.099 7.482 4 7.773 4 8c0 .453.457 1.198 1.992 1.892C7.467 10.559 9.592 11 12 11c2.407 0 4.534-.44 6.008-1.108C19.543 9.198 20 8.453 20 8c0-.227-.1-.518-.432-.868c-.337-.354-.872-.719-1.61-1.047C16.484 5.431 14.378 5 12 5Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func TornadoTwoFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M2.5 4A1.5 1.5 0 0 1 4 2.5h16a1.5 1.5 0 0 1 0 3H4A1.5 1.5 0 0 1 2.5 4Zm1 4A1.5 1.5 0 0 1 5 6.5h12a1.5 1.5 0 0 1 0 3H5A1.5 1.5 0 0 1 3.5 8Zm4 4A1.5 1.5 0 0 1 9 10.5h10a1.5 1.5 0 0 1 0 3H9A1.5 1.5 0 0 1 7.5 12Zm3 4a1.5 1.5 0 0 1 1.5-1.5h5a1.5 1.5 0 0 1 0 3h-5a1.5 1.5 0 0 1-1.5-1.5Zm-1 4a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 0 3h-3A1.5 1.5 0 0 1 9.5 20Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func TornadoTwoLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M3 4a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1Zm1 4a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1Zm4 4a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1Zm3 4a1 1 0 0 1 1-1h5a1 1 0 1 1 0 2h-5a1 1 0 0 1-1-1Zm-1 4a1 1 0 0 1 1-1h3a1 1 0 1 1 0 2h-3a1 1 0 0 1-1-1Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -22079,6 +24139,26 @@ func ToxophilyLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M10.707 2.293a1 1 0 0 0-1.414 1.414l.437.438L5.446 11H5a1 1 0 1 0 0 2h.446l4.284 6.855l-.437.438a1 1 0 1 0 1.414 1.414l.93-.93l1.776-1.184a5 5 0 0 0 1.97-2.579L16.72 13H18a1 1 0 0 0 1.707.707l1-1a1 1 0 0 0 0-1.414l-1-1A1 1 0 0 0 18 11h-1.28l-1.337-4.014a5 5 0 0 0-1.97-2.58l-1.776-1.183l-.93-.93Zm.595 16.304l1.001-.668a3 3 0 0 0 1.182-1.547L14.613 13H7.804l3.498 5.597ZM7.804 11h6.809l-1.128-3.382a3 3 0 0 0-1.182-1.547l-1-.668L7.803 11Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ToyHorseFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="m3.606 3.447l.23.462l-2.15 3.01a1 1 0 0 0 .107 1.288l1.5 1.5a1 1 0 0 0 1.154.187l1.254-.626l.692.922l-2.07 6.626a7.583 7.583 0 0 1-.17-.13a4.845 4.845 0 0 1-.43-.376a1 1 0 0 0-1.45 1.377l.636.565c.397.315.98.725 1.748 1.132C6.2 20.2 8.483 21 11.5 21s5.301-.8 6.843-1.616a11.394 11.394 0 0 0 1.748-1.132c.154-.123.655-.582.636-.565a1 1 0 0 0-1.275-1.524l-1.03-5.151c.523.489 1.088 1.245 1.684 2.435a1 1 0 1 0 1.788-.894c-1.056-2.113-2.186-3.317-3.447-3.947C17.39 8.077 16.34 8.01 15.45 8h-3.692a11.022 11.022 0 0 0-.339-.894c-.409-.954-1.097-2.198-2.212-3.313c-1.159-1.159-2.353-1.623-3.293-1.78a4.868 4.868 0 0 0-1.141-.057c-.113.008-.45.057-.516.074a1 1 0 0 0-.651 1.417Zm10.72 15.268L13.306 16h-2.614l-1.079 2.876c.585.079 1.213.124 1.886.124c1.049 0 1.99-.11 2.825-.285Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ToyHorseLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="m3.606 3.447l.23.462l-2.15 3.01a1 1 0 0 0 .107 1.288l1.5 1.5a1 1 0 0 0 1.154.187l1.254-.626l.692.922l-2.07 6.626a5.428 5.428 0 0 1-.6-.506a1 1 0 0 0-1.45 1.377l.636.565c.397.315.98.725 1.748 1.132C6.2 20.2 8.483 21 11.5 21s5.301-.8 6.843-1.616a11.38 11.38 0 0 0 1.748-1.132c.154-.123.655-.582.636-.565a1 1 0 0 0-1.275-1.524l-1.03-5.151c.523.489 1.088 1.245 1.684 2.435a1 1 0 1 0 1.788-.894c-1.056-2.113-2.186-3.317-3.447-3.947c-.96-.48-2.026-.606-3.087-.606h-3.602a11.022 11.022 0 0 0-.339-.894c-.409-.954-1.097-2.198-2.212-3.313c-1.159-1.159-2.353-1.623-3.293-1.78c-.533-.088-1.125-.116-1.657.017a1 1 0 0 0-.651 1.417ZM17.674 17.47l-1.333-6.666c-.134-.668-.772-.8-1.358-.804H11c-.483 0-.882-.348-.983-.813a7.81 7.81 0 0 0-.436-1.293c-.341-.796-.903-1.802-1.788-2.687c-.653-.653-1.284-.971-1.796-1.125a1 1 0 0 1-.183.5l-2.008 2.81l.391.391l1.356-.677A1 1 0 0 1 6.8 7.4l1.5 2a1 1 0 0 1 .154.898L6.09 17.863c.451.21.967.414 1.548.589l1.426-3.803A1 1 0 0 1 10 14h4a1 1 0 0 1 .936.649l1.312 3.497c.55-.215 1.026-.449 1.426-.676Zm-3.349 1.246L13.307 16h-2.614l-1.079 2.877A14.25 14.25 0 0 0 11.5 19c1.049 0 1.99-.11 2.825-.284Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -22563,6 +24643,26 @@ func TrunkLine(children ...g.Node) g.Node {
 	)
 }
 
+func TunnelFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 19.5a1 1 0 0 1 .993.883L13 20.5v.5a1 1 0 0 1-1.993.117L11 21v-.5a1 1 0 0 1 1-1ZM12 2a8 8 0 0 1 7.996 7.75L20 10v11a1 1 0 0 1-1.696.718l-.085-.093L14.52 17h-1.653c.064.11.107.234.125.366L13 17.5v.5a1 1 0 0 1-1.993.117L11 18v-.5c0-.137.027-.267.077-.385l.057-.115H9.48l-3.7 4.625a1 1 0 0 1-1.773-.5L4 21V10a8 8 0 0 1 8-8Zm0 8a2 2 0 0 0-2 2v3h4v-3a2 2 0 0 0-2-2Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func TunnelLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 19.5a1 1 0 0 1 .993.883L13 20.5v.5a1 1 0 0 1-1.993.117L11 21v-.5a1 1 0 0 1 1-1ZM12 2a8 8 0 0 1 7.996 7.75L20 10v11a1 1 0 0 1-1.696.718l-.085-.093L14.52 17h-1.653c.064.11.107.234.125.366L13 17.5v.5a1 1 0 0 1-1.993.117L11 18v-.5c0-.137.027-.267.077-.385l.057-.115H9.48l-3.7 4.625a1 1 0 0 1-1.773-.5L4 21V10a8 8 0 0 1 8-8Zm0 2a6 6 0 0 0-5.996 5.775L6 10v8.15l2-2.5V12a4 4 0 0 1 7.995-.2L16 12v3.65l2 2.5V10a6 6 0 0 0-6-6Zm0 6a2 2 0 0 0-2 2v3h4v-3a2 2 0 0 0-2-2Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func TvOneFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -22743,6 +24843,26 @@ func UmbrellaTwoLine(children ...g.Node) g.Node {
 	)
 }
 
+func UnarchiveFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6 3.586A2 2 0 0 1 7.414 3h9.172A2 2 0 0 1 18 3.586L20.414 6a2 2 0 0 1 .543 1H3.043a2 2 0 0 1 .543-1L6 3.586ZM3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Zm8 9a1 1 0 1 0 2 0v-3.186l.414.414a1 1 0 1 0 1.414-1.414l-2.12-2.121a1 1 0 0 0-1.415 0l-2.121 2.121a1 1 0 1 0 1.414 1.414l.414-.414V18Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UnarchiveLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M16.586 3a2 2 0 0 1 1.284.467l.13.119L20.414 6a2 2 0 0 1 .578 1.238l.008.176V19a2 2 0 0 1-1.85 1.995L19 21H5a2 2 0 0 1-1.995-1.85L3 19V7.414a2 2 0 0 1 .467-1.284L3.586 6L6 3.586a2 2 0 0 1 1.238-.578L7.414 3h9.172ZM19 9H5v10h14V9Zm-7 1.4a1 1 0 0 1 .608.206l.1.087l2.12 2.121a1 1 0 0 1-1.32 1.498l-.094-.084l-.414-.414V17a1 1 0 0 1-1.993.117L11 17v-3.186l-.414.414a1 1 0 0 1-1.498-1.32l.084-.094l2.12-2.121A1 1 0 0 1 12 10.4ZM16.586 5H7.414l-2 2h13.172l-2-2Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func UnderlineFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -22759,6 +24879,46 @@ func UnderlineLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18 19a1 1 0 0 1 .117 1.993L18 21H6a1 1 0 0 1-.117-1.993L6 19h12ZM17 3a1 1 0 0 1 .993.883L18 4v8a6 6 0 0 1-11.996.225L6 12V4a1 1 0 0 1 1.993-.117L8 4v8a4 4 0 0 0 7.995.2L16 12V4a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UnhappyDizzyFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 12a4.984 4.984 0 0 0-3.308 1.25a1 1 0 1 0 1.324 1.5A2.985 2.985 0 0 1 12 16c.761 0 1.455.282 1.984.75a1 1 0 1 0 1.324-1.5A4.984 4.984 0 0 0 12 14ZM8.707 8.293a1 1 0 0 0-1.497 1.32l.083.094l.293.293l-.293.293a1 1 0 0 0 1.32 1.497l.094-.083l.293-.293l.293.293a1 1 0 0 0 1.497-1.32l-.083-.094l-.293-.293l.293-.293a1 1 0 0 0-1.32-1.497l-.094.083L9 8.586l-.293-.293Zm4.586 0a1 1 0 0 0 0 1.414l.293.293l-.293.293a1 1 0 0 0 1.414 1.414l.293-.293l.293.293a1 1 0 0 0 1.414-1.414L16.414 10l.293-.293a1 1 0 0 0-1.414-1.414L15 8.586l-.293-.293a1 1 0 0 0-1.414 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UnhappyDizzyLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 4a8 8 0 1 0 0 16a8 8 0 0 0 0-16ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12Zm5.293-3.707a1 1 0 0 1 1.414 0L9 8.586l.293-.293a1 1 0 1 1 1.414 1.414l-.293.293l.293.293a1 1 0 0 1-1.414 1.414L9 11.414l-.293.293a1 1 0 0 1-1.414-1.414L7.586 10l-.293-.293a1 1 0 0 1 0-1.414Zm6 0a1 1 0 0 1 1.414 0l.293.293l.293-.293a1 1 0 1 1 1.414 1.414l-.293.293l.293.293a1 1 0 0 1-1.414 1.414L15 11.414l-.293.293a1 1 0 0 1-1.414-1.414l.293-.293l-.293-.293a1 1 0 0 1 0-1.414Zm-4.6 6.957A4.984 4.984 0 0 1 12 14c1.267 0 2.427.473 3.308 1.25a1 1 0 0 1-1.324 1.5A2.985 2.985 0 0 0 12 16c-.761 0-1.455.282-1.984.75a1 1 0 1 1-1.324-1.5Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UnhappyFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 12a4.984 4.984 0 0 0-3.308 1.25a1 1 0 1 0 1.324 1.5A2.985 2.985 0 0 1 12 16c.761 0 1.455.282 1.984.75a1 1 0 1 0 1.324-1.5A4.984 4.984 0 0 0 12 14ZM9.164 9.45l-.058.102c-.162.324-.41.448-.606.448c-.17 0-.382-.095-.541-.336l-.065-.112a1 1 0 1 0-1.788.896C6.542 11.32 7.413 12 8.5 12c1.087 0 1.957-.68 2.394-1.552a1 1 0 0 0-1.73-.997Zm8.284-.344a1 1 0 0 0-1.284.345l-.058.101c-.162.324-.41.448-.606.448c-.17 0-.382-.095-.541-.336l-.065-.112a1 1 0 1 0-1.788.896C13.543 11.32 14.413 12 15.5 12c1.087 0 1.957-.68 2.394-1.552a1 1 0 0 0-.446-1.342Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UnhappyLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16Zm0 10c1.267 0 2.427.473 3.308 1.25a1 1 0 1 1-1.324 1.5A2.985 2.985 0 0 0 12 16c-.761 0-1.455.282-1.984.75a1 1 0 1 1-1.323-1.5A4.985 4.985 0 0 1 12 14ZM9.041 9.664l.065-.112a1 1 0 1 1 1.788.896C10.457 11.32 9.587 12 8.5 12c-1.087 0-1.958-.68-2.394-1.552a1 1 0 0 1 1.73-.997l.058.101c.162.324.41.448.606.448c.17 0 .382-.095.541-.336Zm8.407-.558a1 1 0 0 1 .446 1.342C17.458 11.32 16.587 12 15.5 12c-1.087 0-1.957-.68-2.394-1.552a1 1 0 0 1 1.73-.997l.058.101c.162.324.41.448.606.448c.17 0 .382-.095.541-.336l.065-.112a1 1 0 0 1 1.342-.446Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -23003,6 +25163,46 @@ func UserAddLine(children ...g.Node) g.Node {
 	)
 }
 
+func UserAddTwoFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6 7a5 5 0 1 1 10 0A5 5 0 0 1 6 7Zm-1.178 7.671C6.425 13.694 8.605 13 11 13c.447 0 .887.024 1.316.07a1 1 0 0 1 .72 1.557A5.968 5.968 0 0 0 12 18c0 .92.207 1.79.575 2.567a1 1 0 0 1-.89 1.428L11 22c-2.229 0-4.335-.14-5.913-.558c-.785-.208-1.524-.506-2.084-.956C2.41 20.01 2 19.345 2 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69ZM18 14a1 1 0 0 1 1 1v2h2a1 1 0 1 1 0 2h-2v2a1 1 0 1 1-2 0v-2h-2a1 1 0 1 1 0-2h2v-2a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserAddTwoLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 2a5 5 0 1 0 0 10a5 5 0 0 0 0-10ZM8 7a3 3 0 1 1 6 0a3 3 0 0 1-6 0ZM4 18.5c0-.18.09-.489.413-.899c.316-.4.804-.828 1.451-1.222C7.157 15.589 8.977 15 11 15c.375 0 .744.02 1.105.059a1 1 0 1 0 .211-1.99A12.905 12.905 0 0 0 11 13c-2.395 0-4.575.694-6.178 1.671c-.8.49-1.484 1.065-1.978 1.69C2.358 16.977 2 17.713 2 18.5c0 .845.411 1.511 1.003 1.986c.56.45 1.299.748 2.084.956C6.665 21.859 8.771 22 11 22l.685-.005a1 1 0 1 0-.027-2L11 20c-2.19 0-4.083-.143-5.4-.492c-.663-.175-1.096-.382-1.345-.582C4.037 18.751 4 18.622 4 18.5ZM18 14a1 1 0 0 1 1 1v2h2a1 1 0 1 1 0 2h-2v2a1 1 0 1 1-2 0v-2h-2a1 1 0 1 1 0-2h2v-2a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserEditFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 2a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm0 11c.59 0 1.167.042 1.724.12a1 1 0 0 1 .539 1.726a6.979 6.979 0 0 0-2.21 6.022a1 1 0 0 1-1.012 1.123c-2.01-.04-3.89-.216-5.294-.646c-.702-.215-1.364-.517-1.866-.962C2.35 19.913 2 19.28 2 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69C6.425 13.694 8.605 13 11 13Zm10.212 1.034a2.5 2.5 0 0 1 0 3.535l-3.418 3.418a1.5 1.5 0 0 1-.848.424l-2.309.33a1.001 1.001 0 0 1-1.132-1.133l.33-2.308a1.5 1.5 0 0 1 .424-.849l3.418-3.418a2.5 2.5 0 0 1 3.535 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserEditLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6 7a5 5 0 1 1 10 0A5 5 0 0 1 6 7Zm5-3a3 3 0 1 0 0 6a3 3 0 0 0 0-6ZM4.413 17.601c-.323.41-.413.72-.413.899c0 .118.035.232.205.384c.197.176.55.37 1.11.543c1.12.346 2.756.521 4.706.563a1 1 0 1 1-.042 2c-1.997-.043-3.86-.221-5.254-.652c-.696-.216-1.354-.517-1.852-.962C2.347 19.906 2 19.274 2 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69C6.425 13.694 8.605 13 11 13c.447 0 .887.024 1.316.07a1 1 0 0 1-.211 1.989C11.745 15.02 11.375 15 11 15c-2.023 0-3.843.59-5.136 1.379c-.647.394-1.135.822-1.45 1.222Zm16.8-3.567a2.5 2.5 0 0 0-3.536 0l-3.418 3.417a1.5 1.5 0 0 0-.424.849l-.33 2.308a1.001 1.001 0 0 0 1.133 1.133l2.308-.33a1.5 1.5 0 0 0 .849-.424l3.417-3.418a2.5 2.5 0 0 0 0-3.535Zm-2.122 1.414a.5.5 0 0 1 .707.707l-3.3 3.3l-.825.118l.118-.825l3.3-3.3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func UserFiveFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -23043,6 +25243,46 @@ func UserFollowLine(children ...g.Node) g.Node {
 	)
 }
 
+func UserFollowTwoFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 2a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm0 11c-2.395 0-4.575.694-6.178 1.671c-.8.49-1.484 1.065-1.978 1.69C2.358 16.977 2 17.713 2 18.5c0 .845.411 1.511 1.003 1.986c.56.45 1.299.748 2.084.956C6.665 21.859 8.771 22 11 22c.23 0 .46-.002.685-.005a1 1 0 0 0 .89-1.428A5.973 5.973 0 0 1 12 18c0-1.252.383-2.412 1.037-3.373a1 1 0 0 0-.72-1.557c-.43-.046-.87-.07-1.317-.07Zm10.708 3.068a1 1 0 0 0-1.414-1.414l-3.182 3.182l-1.414-1.414a1 1 0 0 0-1.414 1.414l2.05 2.05a1.1 1.1 0 0 0 1.556 0l3.818-3.818Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserFollowTwoLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 4a3 3 0 1 0 0 6a3 3 0 0 0 0-6ZM6 7a5 5 0 1 1 10 0A5 5 0 0 1 6 7ZM4.413 17.601c-.323.41-.413.72-.413.899c0 .122.037.251.255.426c.249.2.682.407 1.344.582C6.917 19.858 8.811 20 11 20c.222 0 .441-.002.658-.005a1 1 0 0 1 .027 2c-.226.003-.455.005-.685.005c-2.229 0-4.335-.14-5.913-.558c-.785-.208-1.524-.506-2.084-.956C2.41 20.01 2 19.345 2 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69C6.425 13.694 8.605 13 11 13c.447 0 .887.024 1.316.07a1 1 0 0 1-.211 1.989C11.745 15.02 11.375 15 11 15c-2.023 0-3.843.59-5.136 1.379c-.647.394-1.135.822-1.45 1.222Zm17.295-1.533a1 1 0 0 0-1.414-1.414l-3.182 3.182l-1.414-1.414a1 1 0 0 0-1.414 1.414l2.05 2.05a1.1 1.1 0 0 0 1.556 0l3.818-3.818Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserForbidFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6 7a5 5 0 1 1 10 0A5 5 0 0 1 6 7Zm-1.178 7.671C6.425 13.694 8.605 13 11 13c.447 0 .887.024 1.316.07a1 1 0 0 1 .72 1.557A5.968 5.968 0 0 0 12 18c0 .92.207 1.79.575 2.567a1 1 0 0 1-.89 1.428c-.226.003-.455.005-.685.005c-2.229 0-4.335-.14-5.913-.558c-.785-.208-1.524-.506-2.084-.956C2.41 20.01 2 19.345 2 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69Zm11.246 2.811a2 2 0 0 0 2.45 2.45l-2.45-2.45Zm1.414-1.414l2.45 2.45a2 2 0 0 0-2.45-2.45ZM14 18a4 4 0 1 1 8 0a4 4 0 0 1-8 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserForbidLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M8 7a3 3 0 1 1 6 0a3 3 0 0 1-6 0Zm3-5a5 5 0 1 0 0 10a5 5 0 0 0 0-10ZM4 18.5c0-.18.09-.489.413-.899c.316-.4.804-.828 1.451-1.222C7.157 15.589 8.977 15 11 15c.375 0 .744.02 1.105.059a1 1 0 1 0 .211-1.99A12.905 12.905 0 0 0 11 13c-2.395 0-4.575.694-6.178 1.671c-.8.49-1.484 1.065-1.978 1.69C2.358 16.977 2 17.713 2 18.5c0 .845.411 1.511 1.003 1.986c.56.45 1.299.748 2.084.956C6.665 21.859 8.771 22 11 22c.23 0 .46-.002.685-.005a1 1 0 1 0-.027-2c-.217.003-.436.005-.658.005c-2.19 0-4.083-.143-5.4-.492c-.663-.175-1.096-.382-1.345-.582C4.037 18.751 4 18.622 4 18.5Zm12.068-1.018a2 2 0 0 0 2.45 2.45l-2.45-2.45Zm1.414-1.414l2.45 2.45a2 2 0 0 0-2.45-2.45ZM14 18a4 4 0 1 1 8 0a4 4 0 0 1-8 0Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func UserFourFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -23059,6 +25299,86 @@ func UserFourLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10a9.959 9.959 0 0 1-2.258 6.33l.02.022l-.132.112A9.978 9.978 0 0 1 12 22c-2.95 0-5.6-1.277-7.43-3.307l-.2-.23l-.132-.11l.02-.024A9.958 9.958 0 0 1 2 12C2 6.477 6.477 2 12 2Zm0 15c-1.86 0-3.541.592-4.793 1.405A7.965 7.965 0 0 0 12 20a7.965 7.965 0 0 0 4.793-1.595A8.897 8.897 0 0 0 12 17Zm0-13a8 8 0 0 0-6.258 12.984C7.363 15.821 9.575 15 12 15s4.637.821 6.258 1.984A8 8 0 0 0 12 4Zm0 2a4 4 0 1 1 0 8a4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4a2 2 0 0 0 0-4Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserHeartFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 2a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm0 11c-2.395 0-4.575.694-6.178 1.671c-.8.49-1.484 1.065-1.978 1.69C2.358 16.977 2 17.713 2 18.5c0 .845.411 1.511 1.003 1.986c.56.45 1.299.748 2.084.956C6.665 21.859 8.771 22 11 22l.685-.005a1 1 0 0 0 .89-1.428A5.973 5.973 0 0 1 12 18c0-1.252.383-2.412 1.037-3.373a1 1 0 0 0-.72-1.557c-.43-.046-.87-.07-1.317-.07Zm4.5 1.691c.753-.439 1.679-.496 2.5-.046c.821-.45 1.747-.393 2.5.046c.916.534 1.526 1.59 1.5 2.788c-.036 1.57-1.248 2.798-2.886 3.771c-.343.203-.703.417-1.114.417c-.41 0-.771-.214-1.114-.417c-1.638-.973-2.85-2.202-2.885-3.77c-.027-1.198.583-2.255 1.499-2.789Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserHeartLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 13c.447 0 .887.024 1.316.07a1 1 0 0 1-.211 1.989C11.745 15.02 11.375 15 11 15c-2.023 0-3.843.59-5.136 1.379c-.647.394-1.135.822-1.45 1.222c-.324.41-.414.72-.414.899c0 .122.037.251.255.426c.249.2.682.407 1.344.582C6.917 19.858 8.811 20 11 20l.658-.005a1 1 0 0 1 .027 2L11 22c-2.229 0-4.335-.14-5.913-.558c-.785-.208-1.524-.506-2.084-.956C2.41 20.01 2 19.345 2 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69C6.425 13.694 8.605 13 11 13Zm9.5 1.691c.916.534 1.526 1.59 1.5 2.788c-.036 1.57-1.248 2.798-2.886 3.771c-.342.204-.704.417-1.114.417c-.41 0-.772-.213-1.114-.417c-1.638-.973-2.85-2.202-2.885-3.77c-.027-1.198.583-2.255 1.499-2.789c.753-.439 1.679-.496 2.5-.046c.821-.45 1.747-.393 2.5.046Zm-1.273 1.643l-.078.003a.604.604 0 0 0-.315.15l-.08.072c-.385.39-.998.418-1.416.084l-.093-.084c-.163-.165-.3-.211-.394-.222a.552.552 0 0 0-.344.082c-.265.154-.518.52-.507 1.015c.01.45.36 1.13 1.7 1.97l.3.182l.092-.055c1.512-.898 1.897-1.625 1.908-2.096c.01-.497-.242-.862-.507-1.016a.59.59 0 0 0-.266-.085ZM11 2a5 5 0 1 1 0 10a5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6a3 3 0 0 0 0-6Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserHideFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 2a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm.123 12.55a1 1 0 0 0-.913-1.525c-2.21.14-4.195.858-5.651 1.813c-.728.478-1.348 1.031-1.796 1.63C2.32 17.057 2 17.755 2 18.5c0 1.535 1.278 2.346 2.495 2.763c1.28.439 2.99.638 4.832.707a1 1 0 0 0 .995-1.29A7.498 7.498 0 0 1 10 18.5a7.46 7.46 0 0 1 1.123-3.95Zm6.288 6.232a5.348 5.348 0 0 1-.822 0l-.087.325a1 1 0 0 1-1.932-.518l.09-.337c-.24-.12-.473-.26-.693-.42l-.26.259a1 1 0 0 1-1.414-1.414l.33-.331a5.405 5.405 0 0 1-.517-1.202a1 1 0 0 1 1.918-.568c.878 2.963 5.074 2.963 5.952 0a1 1 0 1 1 1.918.568c-.13.44-.306.841-.518 1.202l.331.33a1 1 0 0 1-1.414 1.415l-.26-.26c-.22.16-.453.3-.693.421l.09.337a1 1 0 1 1-1.932.518l-.087-.325Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserHideLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6 7a5 5 0 1 1 10 0A5 5 0 0 1 6 7Zm5-3a3 3 0 1 0 0 6a3 3 0 0 0 0-6Zm.271 9.96a1 1 0 0 1-.934 1.061c-1.87.12-3.52.728-4.681 1.49c-.58.38-1.014.783-1.293 1.155c-.284.38-.363.666-.363.834l.005.062c.029.175.207.49 1.139.81c.995.34 2.467.532 4.258.6a1 1 0 1 1-.075 1.998c-1.842-.069-3.553-.268-4.832-.707C3.278 20.846 2 20.034 2 18.5c0-.744.32-1.443.763-2.033c.448-.598 1.068-1.151 1.796-1.629c1.456-.955 3.442-1.672 5.65-1.813a1 1 0 0 1 1.062.935Zm6.14 6.822a5.348 5.348 0 0 1-.822 0l-.087.325a1 1 0 0 1-1.932-.518l.09-.337c-.24-.12-.473-.26-.693-.42l-.26.259a1 1 0 0 1-1.414-1.414l.33-.331a5.405 5.405 0 0 1-.517-1.202a1 1 0 0 1 1.918-.568c.878 2.963 5.074 2.963 5.952 0a1 1 0 1 1 1.918.568c-.13.44-.306.841-.518 1.202l.331.33a1 1 0 0 1-1.414 1.415l-.26-.26c-.22.16-.453.3-.693.421l.09.337a1 1 0 1 1-1.932.518l-.087-.325Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserInfoFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6 7a5 5 0 1 1 10 0A5 5 0 0 1 6 7Zm-1.178 7.671C6.425 13.694 8.605 13 11 13c.447 0 .887.024 1.316.07a1 1 0 0 1 .72 1.557A5.968 5.968 0 0 0 12 18c0 .92.207 1.79.575 2.567a1 1 0 0 1-.89 1.428L11 22c-2.229 0-4.335-.14-5.913-.558c-.785-.208-1.524-.506-2.084-.956C2.41 20.01 2 19.345 2 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69ZM16 18a1 1 0 0 1 1-1h.99c.558 0 1.01.452 1.01 1.01v2.124A1 1 0 0 1 18.5 22h-.49A1.01 1.01 0 0 1 17 20.99V19a1 1 0 0 1-1-1Zm2-4a1 1 0 0 0-.117 1.993l.119.007a1 1 0 0 0 .117-1.993L18 14Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserInfoLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 2a5 5 0 1 0 0 10a5 5 0 0 0 0-10ZM8 7a3 3 0 1 1 6 0a3 3 0 0 1-6 0ZM4 18.5c0-.18.09-.489.413-.899c.316-.4.804-.828 1.451-1.222C7.157 15.589 8.977 15 11 15c.375 0 .744.02 1.105.059a1 1 0 1 0 .211-1.99A12.905 12.905 0 0 0 11 13c-2.395 0-4.575.694-6.178 1.671c-.8.49-1.484 1.065-1.978 1.69C2.358 16.977 2 17.713 2 18.5c0 .845.411 1.511 1.003 1.986c.56.45 1.299.748 2.084.956C6.665 21.859 8.771 22 11 22l.685-.005a1 1 0 1 0-.027-2L11 20c-2.19 0-4.083-.143-5.4-.492c-.663-.175-1.096-.382-1.345-.582C4.037 18.751 4 18.622 4 18.5Zm12-.5a1 1 0 0 1 1-1h.99c.558 0 1.01.452 1.01 1.01v2.124A1 1 0 0 1 18.5 22h-.49A1.01 1.01 0 0 1 17 20.99V19a1 1 0 0 1-1-1Zm2-4a1 1 0 0 0-.117 1.993l.119.007a1 1 0 0 0 .117-1.993L18 14Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserLockFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 13c.447 0 .887.024 1.316.07a1 1 0 0 1 .72 1.557A5.968 5.968 0 0 0 12 18c0 .92.207 1.79.575 2.567a1 1 0 0 1-.89 1.428L11 22c-2.229 0-4.335-.14-5.913-.558c-.785-.208-1.524-.506-2.084-.956C2.41 20.01 2 19.345 2 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69C6.425 13.694 8.605 13 11 13Zm7.5 0a2.5 2.5 0 0 1 2.5 2.5v.585a1.5 1.5 0 0 1 1 1.415v3a1.5 1.5 0 0 1-1.5 1.5h-4a1.5 1.5 0 0 1-1.5-1.5v-3a1.5 1.5 0 0 1 1-1.415V15.5a2.5 2.5 0 0 1 2.5-2.5Zm0 2a.5.5 0 0 0-.492.41L18 15.5v.5h1v-.5a.5.5 0 0 0-.5-.5ZM11 2a5 5 0 1 1 0 10a5 5 0 0 1 0-10Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserLockLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 13c.447 0 .887.024 1.316.07a1 1 0 0 1-.211 1.989C11.745 15.02 11.375 15 11 15c-2.023 0-3.843.59-5.136 1.379c-.647.394-1.135.822-1.45 1.222c-.324.41-.414.72-.414.899c0 .122.037.251.255.426c.249.2.682.407 1.344.582C6.917 19.858 8.811 20 11 20l.658-.005a1 1 0 0 1 .027 2L11 22c-2.229 0-4.335-.14-5.913-.558c-.785-.208-1.524-.506-2.084-.956C2.41 20.01 2 19.345 2 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69C6.425 13.694 8.605 13 11 13Zm7.5 0a2.5 2.5 0 0 1 2.495 2.336L21 15.5v.585c.538.19.935.678.993 1.266L22 17.5v3a1.5 1.5 0 0 1-1.356 1.493L20.5 22h-4a1.5 1.5 0 0 1-1.493-1.356L15 20.5v-3a1.5 1.5 0 0 1 .869-1.361l.131-.054V15.5a2.5 2.5 0 0 1 2.5-2.5Zm1.5 5h-3v2h3v-2Zm-1.5-3a.5.5 0 0 0-.5.5v.5h1v-.5a.5.5 0 0 0-.5-.5ZM11 2a5 5 0 1 1 0 10a5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6a3 3 0 0 0 0-6Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -23083,6 +25403,46 @@ func UserOneLine(children ...g.Node) g.Node {
 	)
 }
 
+func UserPinFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 13c.447 0 .887.024 1.316.07a1 1 0 0 1 .72 1.557A5.968 5.968 0 0 0 12 18c0 .92.207 1.79.575 2.567a1 1 0 0 1-.763 1.419l-.127.01L11 22c-2.229 0-4.335-.14-5.913-.558c-.785-.208-1.524-.506-2.084-.956C2.41 20.01 2 19.345 2 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69C6.425 13.694 8.605 13 11 13Zm7 0a4 4 0 0 1 4 4c0 1.387-.755 2.48-1.469 3.21c-.446.456-.92.817-1.301 1.073l-.383.244l-.192.113a1.33 1.33 0 0 1-1.31 0l-.192-.113l-.245-.152c-.4-.26-.938-.652-1.44-1.165C14.756 19.48 14 18.387 14 17a4 4 0 0 1 4-4Zm0 3a1 1 0 1 0 0 2a1 1 0 0 0 0-2ZM11 2a5 5 0 1 1 0 10a5 5 0 0 1 0-10Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserPinLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 2a5 5 0 1 0 0 10a5 5 0 0 0 0-10ZM8 7a3 3 0 1 1 6 0a3 3 0 0 1-6 0ZM4 18.5c0-.18.09-.489.413-.899c.316-.4.804-.828 1.451-1.222C7.157 15.589 8.977 15 11 15c.375 0 .744.02 1.105.059a1 1 0 1 0 .211-1.99A12.905 12.905 0 0 0 11 13c-2.395 0-4.575.694-6.178 1.671c-.8.49-1.484 1.065-1.978 1.69C2.358 16.977 2 17.713 2 18.5c0 .845.411 1.511 1.003 1.986c.56.45 1.299.748 2.084.956C6.665 21.859 8.771 22 11 22l.685-.005a1 1 0 1 0-.027-2L11 20c-2.19 0-4.083-.143-5.4-.492c-.663-.175-1.096-.382-1.345-.582C4.037 18.751 4 18.622 4 18.5ZM18 13a4 4 0 0 1 4 4c0 1.387-.755 2.48-1.469 3.21c-.446.456-.92.817-1.301 1.073l-.266.173c-.041.025-.08.05-.117.071l-.192.113a1.33 1.33 0 0 1-1.31 0l-.192-.113l-.245-.152c-.4-.26-.938-.652-1.44-1.165C14.756 19.48 14 18.387 14 17a4 4 0 0 1 4-4Zm0 2a2 2 0 0 0-2 2c0 .636.35 1.251.899 1.811a6.47 6.47 0 0 0 1.101.888c.31-.2.725-.503 1.101-.888c.548-.56.899-1.175.899-1.811a2 2 0 0 0-2-2Zm0 1a1 1 0 1 1 0 2a1 1 0 0 1 0-2Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserQuestionFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6 7a5 5 0 1 1 10 0A5 5 0 0 1 6 7Zm-1.178 7.671C6.425 13.694 8.605 13 11 13c.447 0 .887.024 1.316.07a1 1 0 0 1 .72 1.557A5.968 5.968 0 0 0 12 18c0 .92.207 1.79.575 2.567a1 1 0 0 1-.89 1.428L11 22c-2.229 0-4.335-.14-5.913-.558c-.785-.208-1.524-.506-2.084-.956C2.41 20.01 2 19.345 2 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69ZM17 21a1 1 0 0 1 .883-.993l.119-.007a1 1 0 0 1 .117 1.993L18 22a1 1 0 0 1-1-1Zm.567-4.75a.5.5 0 0 1 .933.25c0 .135-.048.255-.321.48l-.145.114l-.11.082c-.074.055-.162.12-.243.186l-.139.116a1.7 1.7 0 0 0-.488.697a1 1 0 0 0 1.835.782l.097-.077l.357-.27l.107-.086l.181-.158c.406-.374.869-.968.869-1.866a2.5 2.5 0 0 0-4.662-1.257a1 1 0 0 0 1.729 1.007Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserQuestionLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 2a5 5 0 1 0 0 10a5 5 0 0 0 0-10ZM8 7a3 3 0 1 1 6 0a3 3 0 0 1-6 0ZM4 18.5c0-.18.09-.489.413-.899c.316-.4.804-.828 1.451-1.222C7.157 15.589 8.977 15 11 15c.375 0 .744.02 1.105.059a1 1 0 1 0 .211-1.99A12.905 12.905 0 0 0 11 13c-2.395 0-4.575.694-6.178 1.671c-.8.49-1.484 1.065-1.978 1.69C2.358 16.977 2 17.713 2 18.5c0 .845.411 1.511 1.003 1.986c.56.45 1.299.748 2.084.956C6.665 21.859 8.771 22 11 22l.685-.005a1 1 0 1 0-.027-2L11 20c-2.19 0-4.083-.143-5.4-.492c-.663-.175-1.096-.382-1.345-.582C4.037 18.751 4 18.622 4 18.5ZM17 21a1 1 0 0 1 .883-.993l.119-.007a1 1 0 0 1 .117 1.993L18 22a1 1 0 0 1-1-1Zm.567-4.75a.5.5 0 0 1 .933.25c0 .135-.048.255-.321.48l-.145.114l-.11.082c-.074.055-.162.12-.243.186l-.139.116a1.7 1.7 0 0 0-.488.697a1 1 0 0 0 1.835.782l.097-.077l.357-.27l.107-.086l.181-.158c.406-.374.869-.968.869-1.866a2.5 2.5 0 0 0-4.662-1.257a1 1 0 0 0 1.729 1.007Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func UserRemoveFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -23099,6 +25459,106 @@ func UserRemoveLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M16 14a5 5 0 0 1 5 5v2a1 1 0 1 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 1 1-2 0v-2a5 5 0 0 1 5-5h8ZM12 2a5 5 0 1 1 0 10a5 5 0 0 1 0-10Zm10 8a1 1 0 0 1 .117 1.993L22 12h-4a1 1 0 0 1-.117-1.993L18 10h4ZM12 4a3 3 0 1 0 0 6a3 3 0 0 0 0-6Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserRemoveTwoFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 2a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm0 11c-2.395 0-4.575.694-6.178 1.671c-.8.49-1.484 1.065-1.978 1.69C2.358 16.977 2 17.713 2 18.5c0 .845.411 1.511 1.003 1.986c.56.45 1.299.748 2.084.956C6.665 21.859 8.771 22 11 22c.23 0 .46-.002.685-.005a1 1 0 0 0 .89-1.428A5.973 5.973 0 0 1 12 18c0-1.252.383-2.412 1.037-3.373a1 1 0 0 0-.72-1.557c-.43-.046-.87-.07-1.317-.07Zm4 4a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2h-6Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserRemoveTwoLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 4a3 3 0 1 0 0 6a3 3 0 0 0 0-6ZM6 7a5 5 0 1 1 10 0A5 5 0 0 1 6 7ZM4.413 17.601c-.323.41-.413.72-.413.899c0 .122.037.251.255.426c.249.2.682.407 1.344.582C6.917 19.858 8.811 20 11 20c.222 0 .441-.002.658-.005a1 1 0 0 1 .027 2c-.226.003-.455.005-.685.005c-2.229 0-4.335-.14-5.913-.558c-.785-.208-1.524-.506-2.084-.956C2.41 20.01 2 19.345 2 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69C6.425 13.694 8.605 13 11 13c.447 0 .887.024 1.316.07a1 1 0 0 1-.211 1.989C11.745 15.02 11.375 15 11 15c-2.023 0-3.843.59-5.136 1.379c-.647.394-1.135.822-1.45 1.222ZM14 18a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2h-6a1 1 0 0 1-1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserSearchFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6 7a5 5 0 1 1 10 0A5 5 0 0 1 6 7Zm-1.178 7.671C6.425 13.694 8.605 13 11 13c.447 0 .887.024 1.316.07a1 1 0 0 1 .72 1.557A5.968 5.968 0 0 0 12 18c0 .92.207 1.79.575 2.567a1 1 0 0 1-.89 1.428c-.226.003-.455.005-.685.005c-2.229 0-4.335-.14-5.913-.558c-.785-.208-1.524-.506-2.084-.956C2.41 20.01 2 19.345 2 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69ZM17.5 16a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3ZM14 17.5a3.5 3.5 0 1 1 6.58 1.665l.834.835A1 1 0 1 1 20 21.414l-.835-.835A3.5 3.5 0 0 1 14 17.5Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserSearchLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M8 7a3 3 0 1 1 6 0a3 3 0 0 1-6 0Zm3-5a5 5 0 1 0 0 10a5 5 0 0 0 0-10ZM4 18.5c0-.18.09-.489.413-.899c.316-.4.804-.828 1.451-1.222C7.157 15.589 8.977 15 11 15c.375 0 .744.02 1.105.059a1 1 0 1 0 .211-1.99A12.905 12.905 0 0 0 11 13c-2.395 0-4.575.694-6.178 1.671c-.8.49-1.484 1.065-1.978 1.69C2.358 16.977 2 17.713 2 18.5c0 .845.411 1.511 1.003 1.986c.56.45 1.299.748 2.084.956C6.665 21.859 8.771 22 11 22c.23 0 .46-.002.685-.005a1 1 0 1 0-.027-2c-.217.003-.436.005-.658.005c-2.19 0-4.083-.143-5.4-.492c-.663-.175-1.096-.382-1.345-.582C4.037 18.751 4 18.622 4 18.5ZM17.5 16a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3ZM14 17.5a3.5 3.5 0 1 1 6.58 1.665l.834.835A1 1 0 1 1 20 21.414l-.835-.835A3.5 3.5 0 0 1 14 17.5Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserSecurityFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 2a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm0 11c-2.395 0-4.575.694-6.178 1.671c-.8.49-1.484 1.065-1.978 1.69C2.358 16.977 2 17.713 2 18.5c0 .845.411 1.511 1.003 1.986c.56.45 1.299.748 2.084.956C6.665 21.859 8.771 22 11 22l.685-.005a1 1 0 0 0 .89-1.428A5.973 5.973 0 0 1 12 18c0-1.252.383-2.412 1.037-3.373a1 1 0 0 0-.72-1.557c-.43-.046-.87-.07-1.317-.07Zm7.316 1.051a1 1 0 0 0-.632 0l-3 1A1 1 0 0 0 14 16v1.671a4.346 4.346 0 0 0 3.866 4.32c.09.01.179.01.268 0A4.346 4.346 0 0 0 22 17.671V16a1 1 0 0 0-.684-.949l-3-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserSecurityLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 4a3 3 0 1 0 0 6a3 3 0 0 0 0-6ZM6 7a5 5 0 1 1 10 0A5 5 0 0 1 6 7ZM4.413 17.601c-.323.41-.413.72-.413.899c0 .122.037.251.255.426c.249.2.682.407 1.344.582C6.917 19.858 8.811 20 11 20c.222 0 .441-.002.658-.005a1 1 0 0 1 .027 2c-.226.003-.455.005-.685.005c-2.229 0-4.335-.14-5.913-.558c-.785-.208-1.524-.506-2.084-.956C2.41 20.01 2 19.345 2 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69C6.425 13.694 8.605 13 11 13c.447 0 .887.024 1.316.07a1 1 0 0 1-.211 1.989C11.745 15.02 11.375 15 11 15c-2.023 0-3.843.59-5.136 1.379c-.647.394-1.135.822-1.45 1.222Zm13.903-3.55a1 1 0 0 0-.632 0l-3 1A1 1 0 0 0 14 16v1.671a4.346 4.346 0 0 0 3.866 4.32c.09.01.179.01.268 0A4.346 4.346 0 0 0 22 17.671V16a1 1 0 0 0-.684-.949l-3-1ZM16 17.671v-.95l2-.667l2 .667v.95c0 1.167-.855 2.15-2 2.321a2.346 2.346 0 0 1-2-2.32Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserSettingFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 2a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm0 11c-2.395 0-4.575.694-6.178 1.671c-.8.49-1.484 1.065-1.978 1.69C2.358 16.977 2 17.713 2 18.5c0 .845.411 1.511 1.003 1.986c.56.45 1.299.748 2.084.956C6.665 21.859 8.771 22 11 22l.685-.005a1 1 0 0 0 .89-1.428A5.973 5.973 0 0 1 12 18c0-1.252.383-2.412 1.037-3.373a1 1 0 0 0-.72-1.557c-.43-.046-.87-.07-1.317-.07Zm9.616 2.469a1 1 0 1 0-1.732-1l-.336.582a2.995 2.995 0 0 0-1.097-.001l-.335-.581a1 1 0 1 0-1.732 1l.335.58a2.997 2.997 0 0 0-.547.951H14.5a1 1 0 0 0 0 2h.671a3.021 3.021 0 0 0 .549.95l-.336.581a1 1 0 1 0 1.732 1l.336-.581c.359.066.73.068 1.097 0l.335.581a1 1 0 1 0 1.732-1l-.335-.58c.242-.284.426-.607.547-.951h.672a1 1 0 1 0 0-2h-.671a3.029 3.029 0 0 0-.549-.95l.336-.581Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserSettingLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M18.884 14.469a1 1 0 0 1 1.784.896l-.052.104l-.335.58a3.016 3.016 0 0 1 .482.782l.066.169h.671a1 1 0 0 1 .117 1.993L21.5 19h-.671a3 3 0 0 1-.41.776l-.138.174l.335.581a1 1 0 0 1-1.668 1.098l-.064-.098l-.335-.58c-.293.054-.59.063-.88.03l-.217-.032l-.336.582a1 1 0 0 1-1.784-.896l.052-.104l.335-.581a3.026 3.026 0 0 1-.482-.78l-.066-.17H14.5a1 1 0 0 1-.117-1.993L14.5 17h.672a3 3 0 0 1 .41-.776l.137-.174l-.335-.581a1 1 0 0 1 1.668-1.098l.064.098l.335.58c.293-.054.59-.063.88-.03l.217.031l.336-.581ZM11 13c.447 0 .887.024 1.316.07a1 1 0 0 1-.211 1.989C11.745 15.02 11.375 15 11 15c-2.023 0-3.843.59-5.136 1.379c-.647.394-1.135.822-1.45 1.222c-.324.41-.414.72-.414.899c0 .122.037.251.255.426c.249.2.682.407 1.344.582C6.917 19.858 8.811 20 11 20l.658-.005a1 1 0 0 1 .027 2L11 22c-2.229 0-4.335-.14-5.913-.558c-.785-.208-1.524-.506-2.084-.956C2.41 20.01 2 19.345 2 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69C6.425 13.694 8.605 13 11 13Zm7 4a1 1 0 1 0 0 2a1 1 0 0 0 0-2ZM11 2a5 5 0 1 1 0 10a5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6a3 3 0 0 0 0-6Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserStarFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 2a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm0 11c-2.395 0-4.575.694-6.178 1.671c-.8.49-1.484 1.065-1.978 1.69C2.358 16.977 2 17.713 2 18.5c0 .845.411 1.511 1.003 1.986c.56.45 1.299.748 2.084.956C6.665 21.859 8.771 22 11 22c.23 0 .46-.002.685-.005a1 1 0 0 0 .89-1.428A5.973 5.973 0 0 1 12 18c0-1.252.383-2.412 1.037-3.373a1 1 0 0 0-.72-1.557c-.43-.046-.87-.07-1.317-.07Zm7.864.997a1 1 0 0 0-1.728 0l-.91 1.562l-1.766.382a1 1 0 0 0-.534 1.644l1.204 1.348l-.182 1.798a1 1 0 0 0 1.398 1.016l1.654-.73l1.654.73a1 1 0 0 0 1.398-1.016l-.182-1.799l1.204-1.347a1 1 0 0 0-.534-1.644l-1.766-.382l-.91-1.562Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserStarLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 4a3 3 0 1 0 0 6a3 3 0 0 0 0-6ZM6 7a5 5 0 1 1 10 0A5 5 0 0 1 6 7ZM4.413 17.601c-.323.41-.413.72-.413.899c0 .122.037.251.255.426c.249.2.682.407 1.344.582C6.917 19.858 8.811 20 11 20c.222 0 .441-.002.658-.005a1 1 0 0 1 .027 2c-.226.003-.455.005-.685.005c-2.229 0-4.335-.14-5.913-.558c-.785-.208-1.524-.506-2.084-.956C2.41 20.01 2 19.345 2 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69C6.425 13.694 8.605 13 11 13c.447 0 .887.024 1.316.07a1 1 0 0 1-.211 1.989C11.745 15.02 11.375 15 11 15c-2.023 0-3.843.59-5.136 1.379c-.647.394-1.135.822-1.45 1.222Zm14.451-3.604a1 1 0 0 0-1.728 0l-.91 1.562l-1.766.382a1 1 0 0 0-.534 1.644l1.204 1.348l-.182 1.798a1 1 0 0 0 1.398 1.016l1.654-.73l1.654.73a1 1 0 0 0 1.398-1.016l-.182-1.799l1.204-1.347a1 1 0 0 0-.534-1.644l-1.766-.382l-.91-1.562Zm-1.131 2.949l.267-.46l.267.46a1 1 0 0 0 .653.474l.52.112l-.355.397a1 1 0 0 0-.25.767l.054.528l-.486-.214a1 1 0 0 0-.806 0l-.486.214l.053-.528a1 1 0 0 0-.25-.767l-.353-.397l.52-.112a1 1 0 0 0 .652-.474Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -23139,6 +25599,66 @@ func UserTwoLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M16 14a5 5 0 0 1 4.995 4.783L21 19v1a2 2 0 0 1-1.85 1.995L19 22H5a2 2 0 0 1-1.995-1.85L3 20v-1a5 5 0 0 1 4.783-4.995L8 14h8Zm0 2H8a3 3 0 0 0-2.995 2.824L5 19v1h14v-1a3 3 0 0 0-2.824-2.995L16 16ZM12 2a5 5 0 1 1 0 10a5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6a3 3 0 0 0 0-6Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserVisibleFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 2a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm.123 12.55a1 1 0 0 0-.913-1.525c-2.21.14-4.195.858-5.651 1.813c-.728.478-1.348 1.031-1.796 1.63C2.32 17.057 2 17.755 2 18.5c0 1.535 1.278 2.346 2.495 2.763c1.28.439 2.99.638 4.832.707a1 1 0 0 0 .995-1.29A7.498 7.498 0 0 1 10 18.5a7.46 7.46 0 0 1 1.123-3.95Zm2.387.728c.858-.757 2.084-1.39 3.49-1.39c1.406 0 2.632.633 3.49 1.39a5.3 5.3 0 0 1 1.057 1.26c.252.427.453.94.453 1.462c0 .523-.2 1.035-.453 1.462a5.3 5.3 0 0 1-1.057 1.26c-.858.757-2.084 1.39-3.49 1.39c-1.406 0-2.632-.633-3.49-1.39a5.3 5.3 0 0 1-1.057-1.26C12.2 19.035 12 18.522 12 18c0-.523.2-1.035.453-1.462a5.3 5.3 0 0 1 1.057-1.26Zm4.486 2.635a.667.667 0 0 1-.91-.91L17.001 17a1 1 0 1 0 1 1l-.004-.087Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserVisibleLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 2a5 5 0 1 0 0 10a5 5 0 0 0 0-10ZM8 7a3 3 0 1 1 6 0a3 3 0 0 1-6 0Zm2.337 8.021a1 1 0 0 0-.127-1.996c-2.21.14-4.195.858-5.651 1.813c-.728.478-1.348 1.031-1.796 1.63C2.32 17.057 2 17.755 2 18.5c0 1.535 1.278 2.346 2.495 2.763c1.28.439 2.99.638 4.832.707a1 1 0 0 0 .075-1.998c-1.791-.068-3.263-.26-4.258-.6c-.932-.32-1.11-.635-1.139-.81L4 18.5c0-.168.079-.454.363-.834c.279-.372.712-.774 1.293-1.156c1.161-.761 2.812-1.37 4.68-1.489ZM17 13.89c1.406 0 2.632.632 3.49 1.39a5.3 5.3 0 0 1 1.057 1.259c.252.427.453.94.453 1.462c0 .523-.2 1.035-.453 1.462a5.3 5.3 0 0 1-1.057 1.26c-.858.757-2.084 1.39-3.49 1.39c-1.406 0-2.632-.633-3.49-1.39a5.3 5.3 0 0 1-1.057-1.26C12.2 19.035 12 18.522 12 18c0-.523.2-1.035.453-1.462a5.3 5.3 0 0 1 1.057-1.26c.858-.757 2.084-1.39 3.49-1.39Zm0 2c-.803 0-1.577.368-2.167.889a3.31 3.31 0 0 0-.657.775a1.536 1.536 0 0 0-.155.339l-.02.087v.042l.02.087c.023.077.068.19.155.34c.144.243.366.517.657.774c.59.52 1.364.89 2.167.89c.803 0 1.577-.37 2.167-.89a3.31 3.31 0 0 0 .657-.775c.087-.148.132-.262.155-.339l.02-.087A.176.176 0 0 0 20 18l-.008-.058a1.376 1.376 0 0 0-.168-.39a3.31 3.31 0 0 0-.657-.774c-.59-.52-1.364-.89-2.167-.89Zm.087 1.115a.667.667 0 0 0 .91.91l.003.086a1 1 0 1 1-.913-.996Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserWarningFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M6 7a5 5 0 1 1 10 0A5 5 0 0 1 6 7Zm-1.178 7.671C6.425 13.694 8.605 13 11 13c.447 0 .887.024 1.316.07a1 1 0 0 1 .72 1.557A5.968 5.968 0 0 0 12 18c0 .92.207 1.79.575 2.567a1 1 0 0 1-.89 1.428L11 22c-2.229 0-4.335-.14-5.913-.558c-.785-.208-1.524-.506-2.084-.956C2.41 20.01 2 19.345 2 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69ZM18 14a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1Zm0 6a1 1 0 0 0-.117 1.993l.119.007a1 1 0 0 0 .117-1.993L18 20Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserWarningLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 2a5 5 0 1 0 0 10a5 5 0 0 0 0-10ZM8 7a3 3 0 1 1 6 0a3 3 0 0 1-6 0ZM4 18.5c0-.18.09-.489.413-.899c.316-.4.804-.828 1.451-1.222C7.157 15.589 8.977 15 11 15c.375 0 .744.02 1.105.059a1 1 0 1 0 .211-1.99A12.905 12.905 0 0 0 11 13c-2.395 0-4.575.694-6.178 1.671c-.8.49-1.484 1.065-1.978 1.69C2.358 16.977 2 17.713 2 18.5c0 .845.411 1.511 1.003 1.986c.56.45 1.299.748 2.084.956C6.665 21.859 8.771 22 11 22l.685-.005a1 1 0 1 0-.027-2L11 20c-2.19 0-4.083-.143-5.4-.492c-.663-.175-1.096-.382-1.345-.582C4.037 18.751 4 18.622 4 18.5ZM18 14a1 1 0 0 1 1 1v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1-1Zm0 6a1 1 0 0 0-.117 1.993l.119.007a1 1 0 0 0 .117-1.993L18 20Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserXFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 2a5 5 0 1 0 0 10a5 5 0 0 0 0-10Zm0 11c-2.395 0-4.575.694-6.178 1.671c-.8.49-1.484 1.065-1.978 1.69C2.358 16.977 2 17.713 2 18.5c0 .845.411 1.511 1.003 1.986c.56.45 1.299.748 2.084.956C6.665 21.859 8.771 22 11 22c.23 0 .46-.002.685-.005a1 1 0 0 0 .89-1.428A5.973 5.973 0 0 1 12 18c0-1.252.383-2.412 1.037-3.373a1 1 0 0 0-.72-1.557c-.43-.046-.87-.07-1.317-.07Zm5.586 2.172a1 1 0 0 0-1.414 1.414L16.586 18l-1.414 1.414a1 1 0 1 0 1.414 1.414L18 19.414l1.414 1.414a1 1 0 1 0 1.414-1.414L19.414 18l1.414-1.414a1 1 0 0 0-1.414-1.414L18 16.586l-1.414-1.414Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func UserXLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11 4a3 3 0 1 0 0 6a3 3 0 0 0 0-6ZM6 7a5 5 0 1 1 10 0A5 5 0 0 1 6 7ZM4.413 17.601c-.323.41-.413.72-.413.899c0 .122.037.251.255.426c.249.2.682.407 1.344.582C6.917 19.858 8.811 20 11 20c.222 0 .441-.002.658-.005a1 1 0 0 1 .027 2c-.226.003-.455.005-.685.005c-2.229 0-4.335-.14-5.913-.558c-.785-.208-1.524-.506-2.084-.956C2.41 20.01 2 19.345 2 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69C6.425 13.694 8.605 13 11 13c.447 0 .887.024 1.316.07a1 1 0 0 1-.211 1.989C11.745 15.02 11.375 15 11 15c-2.023 0-3.843.59-5.136 1.379c-.647.394-1.135.822-1.45 1.222Zm12.173-2.43a1 1 0 0 0-1.414 1.415L16.586 18l-1.414 1.414a1 1 0 1 0 1.414 1.414L18 19.414l1.414 1.414a1 1 0 1 0 1.414-1.414L19.414 18l1.414-1.414a1 1 0 0 0-1.414-1.414L18 16.586l-1.414-1.414Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -23263,6 +25783,26 @@ func VestLine(children ...g.Node) g.Node {
 	)
 }
 
+func ViberMessengerFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M9.365 3.108a56.096 56.096 0 0 1 6.27 0l.632.036l.582.042c.932.08 1.682.219 2.384.597a5.311 5.311 0 0 1 2.035 2.04c.415.774.538 1.593.61 2.639l.053.91a40.18 40.18 0 0 1 0 4.256l-.053.91c-.072 1.047-.195 1.865-.61 2.639a5.31 5.31 0 0 1-2.035 2.04c-.843.454-1.754.563-2.966.639l-.632.037A56.56 56.56 0 0 1 12.5 20l-1.634.005c-.165 0-.332-.002-.499-.005l-.501-.012l-2.241 1.793a1 1 0 0 1-1.617-.654L6 21v-1.666a4.24 4.24 0 0 1-.233-.117a5.31 5.31 0 0 1-2.035-2.04c-.414-.774-.538-1.592-.61-2.638l-.036-.595l-.017-.316a40.052 40.052 0 0 1 0-4.256l.053-.91c.072-1.046.196-1.865.61-2.638a5.31 5.31 0 0 1 2.035-2.04c.772-.417 1.603-.544 2.67-.62l.605-.038l.323-.018Zm-.4 3.777c-.977.419-1.813 1.478-1.772 2.58l.009.162l.019.195c.004.035.008.07.014.108l.038.24c.179.974.726 2.555 2.365 4.193c1.638 1.639 3.22 2.186 4.193 2.365l.24.038l.21.025l.254.017c1.101.04 2.16-.79 2.579-1.767a.735.735 0 0 0-.095-.742c-.433-.556-.982-.993-1.552-1.4l-.573-.4a.751.751 0 0 0-1.028.166l-.635.967a.242.242 0 0 1-.322.08c-.43-.245-1.056-.663-1.506-1.114c-.45-.45-.843-1.048-1.064-1.45a.24.24 0 0 1 .07-.308l.976-.724a.752.752 0 0 0 .128-.993l-.33-.485c-.401-.586-.874-1.22-1.495-1.674a.735.735 0 0 0-.723-.079Zm4.628 2.002a1 1 0 0 0-.666 1.886c.113.04.208.12.268.224l.037.081a1 1 0 0 0 1.886-.666a2.504 2.504 0 0 0-1.525-1.525Zm-.276-2.22a1 1 0 0 0 .61 1.276a3.513 3.513 0 0 1 2.134 2.134a1 1 0 1 0 1.886-.666a5.513 5.513 0 0 0-3.354-3.354a1 1 0 0 0-1.276.61Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func ViberMessengerLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M9.365 3.108a56.096 56.096 0 0 1 6.27 0l.632.036c1.212.076 2.123.185 2.966.64a5.311 5.311 0 0 1 2.035 2.04c.528.984.583 2.041.663 3.548a40.073 40.073 0 0 1 0 4.256l-.053.91c-.072 1.047-.195 1.865-.61 2.639a5.31 5.31 0 0 1-2.035 2.04c-.983.53-2.06.59-3.598.676A56.56 56.56 0 0 1 12.5 20l-1.546.005c-.359 0-.724-.005-1.088-.017l-2.241 1.793A1 1 0 0 1 6 21.001v-1.667a4.24 4.24 0 0 1-.233-.117a5.31 5.31 0 0 1-2.035-2.04c-.527-.985-.583-2.042-.663-3.549a40.052 40.052 0 0 1 0-4.256l.053-.91c.072-1.046.196-1.865.61-2.638a5.31 5.31 0 0 1 2.035-2.04c.983-.53 2.06-.59 3.598-.676Zm5.964 1.986a50.348 50.348 0 0 0-5.658 0l-.95.057c-1.098.076-1.57.158-2.005.393a3.325 3.325 0 0 0-1.22 1.224c-.293.546-.345 1.13-.44 2.897a34.357 34.357 0 0 0 0 3.67l.043.753c.074 1.198.15 1.684.396 2.144c.25.467.755.973 1.22 1.224c.557.3 1.285.353 1.285 1.174v.29l.908-.727a1 1 0 0 1 .672-.218c.486.024.97.03 1.457.03L12.5 18c.848 0 1.837-.038 2.83-.093l.736-.044c1.252-.08 1.755-.157 2.218-.407a3.325 3.325 0 0 0 1.221-1.224c.293-.546.345-1.13.439-2.897a34.351 34.351 0 0 0 0-3.67l-.043-.753c-.074-1.197-.15-1.684-.396-2.144a3.325 3.325 0 0 0-1.22-1.224c-.545-.294-1.146-.349-2.956-.45Zm-6.364 1.79a.735.735 0 0 1 .722.08c.8.583 1.352 1.465 1.826 2.159a.752.752 0 0 1-.128.993l-.975.724a.24.24 0 0 0-.071.308c.22.402.614 1 1.064 1.45c.45.45 1.076.869 1.506 1.114a.242.242 0 0 0 .322-.08l.634-.967a.751.751 0 0 1 1.029-.166c.764.528 1.547 1.059 2.125 1.8a.734.734 0 0 1 .095.742c-.416.97-1.483 1.807-2.579 1.767l-.161-.01c-.832-.062-2.742-.44-4.737-2.435c-2.136-2.137-2.418-4.177-2.444-4.897c-.041-1.103.795-2.162 1.772-2.581Zm4.628 2.003a2.504 2.504 0 0 1 1.525 1.525a1 1 0 0 1-1.84.774l-.046-.108a.505.505 0 0 0-.224-.268l-.081-.037a1 1 0 0 1 .666-1.886Zm-.276-2.22a1 1 0 0 1 1.276-.61a5.513 5.513 0 0 1 3.354 3.354a1 1 0 0 1-1.886.666a3.513 3.513 0 0 0-2.134-2.134a1 1 0 0 1-.61-1.276Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func VideoFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -23298,7 +25838,7 @@ func VipFourLine(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12.8 1.401a1.001 1.001 0 0 0-1.6 0L8.5 5H3.855a1.5 1.5 0 0 0-1.307 2.235l8.363 14.868a1.25 1.25 0 0 0 2.178 0l8.364-14.868A1.5 1.5 0 0 0 20.145 5H15.5l-2.7-3.6Zm-2.597 4.661L12 3.667l1.797 2.395L12 9.056l-1.796-2.994ZM8.434 7H4.71L12 19.96L19.29 7h-3.724l-2.623 4.371a1.1 1.1 0 0 1-1.886 0L8.434 7Z"/></g>`),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M11.2 1.401a1.001 1.001 0 0 1 1.516-.1l.085.1L15.5 5h4.645a1.5 1.5 0 0 1 1.367 2.119l-.06.116l-8.363 14.868a1.25 1.25 0 0 1-2.105.115l-.073-.115L2.548 7.235a1.5 1.5 0 0 1 1.177-2.23L3.855 5H8.5l2.7-3.6ZM8.433 7H4.71L12 19.96L19.29 7h-3.724l-2.623 4.371a1.1 1.1 0 0 1-1.886 0L8.434 7ZM12 3.667l-1.796 2.395L12 9.056l1.797-2.994L12 3.667Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -23383,6 +25923,26 @@ func VisaLine(children ...g.Node) g.Node {
 	)
 }
 
+func VisonProFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5.303 6.641C7.083 6.283 9.333 6 12 6s4.917.283 6.697.641c3.39.682 4.902 4.086 4.129 7.178l-.12.48a6.056 6.056 0 0 1-4.406 4.407a4.37 4.37 0 0 1-2.683-.182l-2.874-1.15a2 2 0 0 0-1.486 0l-2.874 1.15a4.37 4.37 0 0 1-2.683.182A6.055 6.055 0 0 1 1.294 14.3l-.12-.48c-.773-3.093.74-6.497 4.129-7.179Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func VisonProLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 8c-2.525 0-4.643.268-6.303.602c-2.015.405-3.147 2.476-2.583 4.732l.12.48a4.055 4.055 0 0 0 2.951 2.951c.484.121.993.087 1.455-.098l2.874-1.15a4 4 0 0 1 2.972 0l2.873 1.15c.463.185.972.22 1.456.098a4.055 4.055 0 0 0 2.95-2.95l.12-.48c.565-2.257-.567-4.328-2.583-4.733C16.642 8.268 14.525 8 12 8ZM5.303 6.641C7.083 6.283 9.333 6 12 6s4.917.283 6.697.641c3.39.682 4.902 4.086 4.129 7.178l-.12.48a6.056 6.056 0 0 1-4.406 4.407a4.37 4.37 0 0 1-2.683-.182l-2.874-1.15a2 2 0 0 0-1.486 0l-2.874 1.15a4.37 4.37 0 0 1-2.683.182A6.055 6.055 0 0 1 1.294 14.3l-.12-.48c-.773-3.093.74-6.497 4.129-7.179Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func VkontakteFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -23419,6 +25979,26 @@ func VoiceLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 3a1 1 0 0 1 .993.883L13 4v16a1 1 0 0 1-1.993.117L11 20V4a1 1 0 0 1 1-1ZM8 6a1 1 0 0 1 1 1v10a1 1 0 1 1-2 0V7a1 1 0 0 1 1-1Zm8 0a1 1 0 0 1 1 1v10a1 1 0 1 1-2 0V7a1 1 0 0 1 1-1ZM4 9a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1Zm16 0a1 1 0 0 1 .993.883L21 10v4a1 1 0 0 1-1.993.117L19 14v-4a1 1 0 0 1 1-1Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func VoiceTwoFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M20 3.5A1.5 1.5 0 0 1 21.5 5v14a1.5 1.5 0 0 1-3 0V5A1.5 1.5 0 0 1 20 3.5Zm-10 3A1.5 1.5 0 0 1 11.5 8v11a1.5 1.5 0 0 1-3 0V8A1.5 1.5 0 0 1 10 6.5Zm5 3a1.5 1.5 0 0 1 1.5 1.5v8a1.5 1.5 0 0 1-3 0v-8A1.5 1.5 0 0 1 15 9.5Zm-10 3A1.5 1.5 0 0 1 6.5 14v5a1.5 1.5 0 0 1-3 0v-5A1.5 1.5 0 0 1 5 12.5Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func VoiceTwoLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M20 4a1 1 0 0 1 1 1v14a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1ZM10 7a1 1 0 0 1 1 1v11a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1Zm5 3a1 1 0 0 1 1 1v8a1 1 0 1 1-2 0v-8a1 1 0 0 1 1-1ZM5 13a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0v-5a1 1 0 0 1 1-1Z"/></g>`),
 		g.Group(children),
 	)
 }
@@ -23843,6 +26423,26 @@ func WechatLine(children ...g.Node) g.Node {
 	)
 }
 
+func WechatPayFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 3C6.656 3 2 6.643 2 11.5c0 2.798 1.577 5.223 3.906 6.744c.174.383.143.852.115 1.293c-.01.16-.021.316-.021.463a1 1 0 0 0 1 1c1.25 0 2.071-.411 2.639-.81c.197-.14.357-.272.45-.345c.619.102 1.258.155 1.911.155c5.344 0 10-3.643 10-8.5a7.434 7.434 0 0 0-.96-3.658l-.003.002l-11 7a1 1 0 0 1-1.405-.348l-2-3.5a1 1 0 0 1 1.383-1.353l1.58.947a1 1 0 0 0 .944.046l9.297-4.427C17.974 4.228 15.103 3 12 3Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func WechatPayLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M12 5c-4.597 0-8 3.073-8 6.5c0 2.014 1.141 3.872 3.042 5.096c.427.276.647.688.766 1.022c.137.384.19.794.206 1.2c.38-.156.674-.433 1.004-.67v-.001c.15-.108.591-.424 1.168-.315c.582.11 1.189.168 1.814.168c4.597 0 8-3.073 8-6.5c0-.91-.231-1.782-.657-2.578l-9.306 5.922a1 1 0 0 1-1.405-.348l-2-3.5a1 1 0 0 1 1.383-1.353l1.58.947a1 1 0 0 0 .944.046l7.371-3.51C16.463 5.836 14.37 5 12 5ZM2 11.5C2 6.643 6.656 3 12 3c3.454 0 6.552 1.49 8.362 3.83C21.389 8.16 22 9.764 22 11.5c0 4.857-4.656 8.5-10 8.5c-.653 0-1.292-.053-1.911-.155c-.093.073-.253.205-.45.344C9.07 20.59 8.249 21 7 21a1 1 0 0 1-1-1c0-.389.046-.742.009-1.229c-.014-.174-.03-.366-.103-.527C3.577 16.723 2 14.298 2 11.5Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func WeiboFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -24123,6 +26723,26 @@ func WreathLine(children ...g.Node) g.Node {
 	)
 }
 
+func XSkewFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M3 4.603a1.5 1.5 0 0 1 1.776-1.475L19.37 5.864A2 2 0 0 1 21 7.83v8.34a2 2 0 0 1-1.631 1.966L4.776 20.872A1.5 1.5 0 0 1 3 19.398V4.603Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func XSkewLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M3 4.603a1.5 1.5 0 0 1 1.776-1.475L19.37 5.864A2 2 0 0 1 21 7.83v8.34a2 2 0 0 1-1.631 1.966L4.776 20.872A1.5 1.5 0 0 1 3 19.398V4.603Zm2 .602v13.59l14-2.625V7.83L5 5.205Z"/></g>`),
+		g.Group(children),
+	)
+}
+
 func XboxFill(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -24179,6 +26799,26 @@ func XrpLine(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<g fill="none"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5.707 4.293a1 1 0 0 0-1.414 1.414L8.464 9.88a5 5 0 0 0 7.072 0l4.171-4.172a1 1 0 0 0-1.414-1.414l-4.173 4.17a3 3 0 0 1-4.242 0L5.707 4.293Zm0 15.414a1 1 0 0 1-1.414-1.414l4.171-4.172a5 5 0 0 1 7.072 0l4.171 4.172a1 1 0 0 1-1.414 1.414l-4.172-4.171a3 3 0 0 0-4.242 0l-4.172 4.171Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func YSkewFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5.831 5.45A2 2 0 0 1 7.754 4h8.492a2 2 0 0 1 1.923 1.45l3.61 12.638A1.5 1.5 0 0 1 20.337 20H3.663a1.5 1.5 0 0 1-1.443-1.912L5.831 5.45Z"/></g>`),
+		g.Group(children),
+	)
+}
+
+func YSkewLine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036c-.01-.003-.019 0-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.016-.018Zm.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="currentColor" d="M5.831 5.45A2 2 0 0 1 7.754 4h8.492a2 2 0 0 1 1.923 1.45l3.61 12.638A1.5 1.5 0 0 1 20.337 20H3.663a1.5 1.5 0 0 1-1.443-1.912L5.831 5.45ZM16.246 6H7.754L4.326 18h15.348L16.246 6Z"/></g>`),
 		g.Group(children),
 	)
 }

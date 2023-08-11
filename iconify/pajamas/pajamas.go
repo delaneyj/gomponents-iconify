@@ -6,7 +6,7 @@ import (
 	s "github.com/maragudk/gomponents/svg"
 )
 
-const IconifyVersion = "3.53.0"
+const IconifyVersion = "3.59.0"
 
 func IconFromName(name string) g.Node {
 	switch name {
@@ -45,12 +45,14 @@ func IconFromName(name string) g.Node {
 	case "cancel": return Cancel()
 	case "canceledCircle": return CanceledCircle()
 	case "car": return Car()
+	case "catalogCheckmark": return CatalogCheckmark()
 	case "chart": return Chart()
 	case "check": return Check()
 	case "checkCircle": return CheckCircle()
 	case "checkCircleDashed": return CheckCircleDashed()
 	case "checkCircleFilled": return CheckCircleFilled()
 	case "checkSm": return CheckSm()
+	case "checkXs": return CheckXs()
 	case "cherryPickCommit": return CherryPickCommit()
 	case "chevronDoubleLgLeft": return ChevronDoubleLgLeft()
 	case "chevronDoubleLgRight": return ChevronDoubleLgRight()
@@ -66,6 +68,7 @@ func IconFromName(name string) g.Node {
 	case "clearAll": return ClearAll()
 	case "clock": return Clock()
 	case "close": return Close()
+	case "closeXs": return CloseXs()
 	case "cloudGear": return CloudGear()
 	case "cloudPod": return CloudPod()
 	case "cloudTerminal": return CloudTerminal()
@@ -192,6 +195,7 @@ func IconFromName(name string) g.Node {
 	case "issueTypeRequirements": return IssueTypeRequirements()
 	case "issueTypeTask": return IssueTypeTask()
 	case "issueTypeTestCase": return IssueTypeTestCase()
+	case "issueTypeTicket": return IssueTypeTicket()
 	case "issueUpdate": return IssueUpdate()
 	case "issues": return Issues()
 	case "italic": return Italic()
@@ -736,6 +740,16 @@ func Car(children ...g.Node) g.Node {
 	)
 }
 
+func CatalogCheckmark(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5.75 1a.75.75 0 1 0 0 1.5h4.5a.75.75 0 1 0 0-1.5h-4.5Zm-2 2.5a.75.75 0 1 0 0 1.5h8.5a.75.75 0 1 0 0-1.5h-8.5Zm-1.25 4v6h11v-6h-11ZM2 6a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H2Zm8.28 3.83a.75.75 0 1 0-1.06-1.06l-1.97 1.97l-.47-.47a.75.75 0 1 0-1.06 1.06l1 1a.75.75 0 0 0 1.06 0l2.5-2.5Z" clip-rule="evenodd"/>`),
+		g.Group(children),
+	)
+}
+
 func Chart(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -792,6 +806,16 @@ func CheckSm(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M10.78 2.62a.75.75 0 0 1 0 1.06L4.683 9.777a.75.75 0 0 1-1.069-.009L1.211 7.284a.75.75 0 0 1 1.078-1.043l1.873 1.936L9.72 2.62a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd"/>`),
+		g.Group(children),
+	)
+}
+
+func CheckXs(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M9.53 3.22a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06 0l-1.5-1.5a.75.75 0 0 1 1.06-1.06l.97.97l3.97-3.97a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd"/>`),
 		g.Group(children),
 	)
 }
@@ -942,6 +966,16 @@ func Close(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4.28 3.22a.75.75 0 0 0-1.06 1.06L6.94 8l-3.72 3.72a.75.75 0 1 0 1.06 1.06L8 9.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L9.06 8l3.72-3.72a.75.75 0 0 0-1.06-1.06L8 6.94L4.28 3.22Z" clip-rule="evenodd"/>`),
+		g.Group(children),
+	)
+}
+
+func CloseXs(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4.28 3.22a.75.75 0 0 0-1.06 1.06L4.94 6L3.22 7.72a.75.75 0 0 0 1.06 1.06L6 7.06l1.72 1.72a.75.75 0 0 0 1.06-1.06L7.06 6l1.72-1.72a.75.75 0 0 0-1.06-1.06L6 4.94L4.28 3.22Z" clip-rule="evenodd"/>`),
 		g.Group(children),
 	)
 }
@@ -2202,6 +2236,16 @@ func IssueTypeTestCase(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" d="M6.751 7.834L7.5 7.4V3.5h1v3.9l.749.434A2.498 2.498 0 0 1 10.5 10h-5c0-.923.5-1.732 1.251-2.166z"/><path fill="currentColor" fill-rule="evenodd" d="M4 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4H4zm6 3.5v3.035a4 4 0 1 1-4 0V3.5h-.25a.75.75 0 0 1 0-1.5h4.5a.75.75 0 0 1 0 1.5H10z" clip-rule="evenodd"/>`),
+		g.Group(children),
+	)
+}
+
+func IssueTypeTicket(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4H4Zm-.707 11.293l-.232-.232l-.829-.829L2 10l1.06-1.06l5.88-5.88L10 2l.232.232l.829.829l.232.232a1 1 0 0 0 1.415 1.414l.231.232l.829.829L14 6l-1.06 1.06l-5.88 5.88L6 14l-.232-.232l-.829-.829l-.232-.232a1 1 0 1 0-1.414-1.414Zm3.144.148A2.504 2.504 0 0 0 4.56 9.563l3-3.003l1.878 1.878l-3.002 3.002Z" clip-rule="evenodd"/>`),
 		g.Group(children),
 	)
 }

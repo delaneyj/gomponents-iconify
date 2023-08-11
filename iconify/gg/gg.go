@@ -6,7 +6,7 @@ import (
 	s "github.com/maragudk/gomponents/svg"
 )
 
-const IconifyVersion = "2.0.0"
+const IconifyVersion = "2.1.1"
 
 func IconFromName(name string) g.Node {
 	switch name {
@@ -693,6 +693,7 @@ func IconFromName(name string) g.Node {
 	case "userList": return UserList()
 	case "userRemove": return UserRemove()
 	case "userlane": return Userlane()
+	case "vercel": return Vercel()
 	case "viewCols": return ViewCols()
 	case "viewComfortable": return ViewComfortable()
 	case "viewDay": return ViewDay()
@@ -711,7 +712,6 @@ func IconFromName(name string) g.Node {
 	case "workAlt": return WorkAlt()
 	case "yinyang": return Yinyang()
 	case "youtube": return Youtube()
-	case "zeit": return Zeit()
 	case "zoomIn": return ZoomIn()
 	case "zoomOut": return ZoomOut()
 	default:
@@ -3714,7 +3714,7 @@ func FormatBold(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-width="2" d="m12.946 10.783l-1.67 1.426l2.172.324A3.001 3.001 0 0 1 13 12.5H8v-1h3a3 3 0 0 0 1.946-.717Z"/>`),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11 4.504H7v14.992h6a4 4 0 0 0 .604-7.955A4 4 0 0 0 11 4.505Zm-2 2h2a2 2 0 1 1 0 4H9v-4Zm0 10.991v-4h4a2 2 0 1 1 0 4H9Z" clip-rule="evenodd"/>`),
 		g.Group(children),
 	)
 }
@@ -7549,6 +7549,16 @@ func Userlane(children ...g.Node) g.Node {
 	)
 }
 
+func Vercel(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M17.992 17.023L11.981 6.977L6.008 17.023h11.984Z"/>`),
+		g.Group(children),
+	)
+}
+
 func ViewCols(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -7725,16 +7735,6 @@ func Youtube(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5 7h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1ZM2 8a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V8Zm8 1l4 3l-4 3V9Z" clip-rule="evenodd"/>`),
-		g.Group(children),
-	)
-}
-
-func Zeit(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		h.Width("24"),
-		h.Height("24"),
-		g.Raw(`<path fill="currentColor" d="M17.992 17.023L11.981 6.977L6.008 17.023h11.984Z"/>`),
 		g.Group(children),
 	)
 }

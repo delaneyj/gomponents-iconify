@@ -8,6 +8,9 @@ tasks:
   default:
     sources:
       - gentmp/iconify
+    generates:
+      - iconify/**/*
     cmds:
+      - rm -rf iconify
+      - rm -rf gentmp
       - go run internal/main.go
-    silent: true
