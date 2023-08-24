@@ -6,7 +6,7 @@ import (
 	s "github.com/maragudk/gomponents/svg"
 )
 
-const IconifyVersion = "11.24.0"
+const IconifyVersion = "11.25.0"
 
 func IconFromName(name string) g.Node {
 	switch name {
@@ -545,6 +545,7 @@ func IconFromName(name string) g.Node {
 	case "dbTwoDatabase": return DbTwoDatabase()
 	case "debug": return Debug()
 	case "decisionTree": return DecisionTree()
+	case "delete": return Delete()
 	case "delivery": return Delivery()
 	case "deliveryAdd": return DeliveryAdd()
 	case "deliveryParcel": return DeliveryParcel()
@@ -1516,6 +1517,7 @@ func IconFromName(name string) g.Node {
 	case "resultNew": return ResultNew()
 	case "resultOld": return ResultOld()
 	case "retryFailed": return RetryFailed()
+	case "return": return Return()
 	case "review": return Review()
 	case "rewindFive": return RewindFive()
 	case "rewindTen": return RewindTen()
@@ -7460,6 +7462,16 @@ func DecisionTree(children ...g.Node) g.Node {
 		h.Width("32"),
 		h.Height("32"),
 		g.Raw(`<path fill="currentColor" d="M30 12V4h-8v3h-4a2.002 2.002 0 0 0-2 2v6h-6v-3H2v8h8v-3h6v6a2.002 2.002 0 0 0 2 2h4v3h8v-8h-8v3h-4V9h4v3ZM8 18H4v-4h4Zm16 4h4v4h-4Zm0-16h4v4h-4Z"/>`),
+		g.Group(children),
+	)
+}
+
+func Delete(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 32 32"),
+		h.Width("32"),
+		h.Height("32"),
+		g.Raw(`<path fill="currentColor" d="M29 26H12a1 1 0 0 1-.707-.293l-9-9a1 1 0 0 1 0-1.414l9-9A1 1 0 0 1 12 6h17a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1Zm-16.586-2H28V8H12.414l-8 8l8 8Z"/><path fill="currentColor" d="M20.414 16L25 11.414L23.586 10L19 14.586L14.414 10L13 11.414L17.586 16L13 20.586L14.414 22L19 17.414L23.586 22L25 20.586L20.414 16z"/>`),
 		g.Group(children),
 	)
 }
@@ -17170,6 +17182,16 @@ func RetryFailed(children ...g.Node) g.Node {
 		h.Width("32"),
 		h.Height("32"),
 		g.Raw(`<path fill="currentColor" d="M26.41 25L30 21.41L28.59 20L25 23.59L21.41 20L20 21.41L23.59 25L20 28.59L21.41 30L25 26.41L28.59 30L30 28.59L26.41 25zM18 2A12.035 12.035 0 0 0 6 14v6.2l-3.6-3.6L1 18l6 6l6-6l-1.4-1.4L8 20.2V14a10 10 0 0 1 20 0v3h2v-3A12.035 12.035 0 0 0 18 2z"/>`),
+		g.Group(children),
+	)
+}
+
+func Return(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 32 32"),
+		h.Width("32"),
+		h.Height("32"),
+		g.Raw(`<path fill="currentColor" d="M22 8v2c2.206 0 4 1.794 4 4s-1.794 4-4 4H10v-5l-6 6l6 6v-5h12c3.309 0 6-2.691 6-6s-2.691-6-6-6Z"/>`),
 		g.Group(children),
 	)
 }

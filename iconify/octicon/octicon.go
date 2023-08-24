@@ -6,7 +6,7 @@ import (
 	s "github.com/maragudk/gomponents/svg"
 )
 
-const IconifyVersion = "19.5.0"
+const IconifyVersion = "19.6.0"
 
 func IconFromName(name string) g.Node {
 	switch name {
@@ -244,8 +244,16 @@ func IconFromName(name string) g.Node {
 	case "feedDiscussionSixteen": return FeedDiscussionSixteen()
 	case "feedForkedSixteen": return FeedForkedSixteen()
 	case "feedHeartSixteen": return FeedHeartSixteen()
+	case "feedIssueClosedSixteen": return FeedIssueClosedSixteen()
+	case "feedIssueDraftSixteen": return FeedIssueDraftSixteen()
+	case "feedIssueOpenSixteen": return FeedIssueOpenSixteen()
 	case "feedMergedSixteen": return FeedMergedSixteen()
 	case "feedPersonSixteen": return FeedPersonSixteen()
+	case "feedPlusSixteen": return FeedPlusSixteen()
+	case "feedPublicSixteen": return FeedPublicSixteen()
+	case "feedPullRequestClosedSixteen": return FeedPullRequestClosedSixteen()
+	case "feedPullRequestDraftSixteen": return FeedPullRequestDraftSixteen()
+	case "feedPullRequestOpenSixteen": return FeedPullRequestOpenSixteen()
 	case "feedRepoSixteen": return FeedRepoSixteen()
 	case "feedRocketSixteen": return FeedRocketSixteen()
 	case "feedStarSixteen": return FeedStarSixteen()
@@ -3128,6 +3136,36 @@ func FeedHeartSixteen(children ...g.Node) g.Node {
 	)
 }
 
+func FeedIssueClosedSixteen(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M8.5 0a8 8 0 1 1 0 16a8 8 0 0 1 0-16Zm3.457 6.957a.999.999 0 1 0-1.414-1.414L7.75 8.336L6.457 7.043a.999.999 0 1 0-1.414 1.414l2 2a.999.999 0 0 0 1.414 0Z"/>`),
+		g.Group(children),
+	)
+}
+
+func FeedIssueDraftSixteen(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M8.5 0a8 8 0 1 1 0 16a8 8 0 0 1 0-16ZM4.302 7.334a.75.75 0 0 0-1.482-.233a5.8 5.8 0 0 0 0 1.798a.749.749 0 1 0 1.482-.233a4.296 4.296 0 0 1 0-1.332ZM8.5 2.25a5.8 5.8 0 0 0-.899.07a.749.749 0 1 0 .233 1.482a4.296 4.296 0 0 1 1.332 0a.75.75 0 0 0 .233-1.482a5.8 5.8 0 0 0-.899-.07Zm5.68 4.851a.749.749 0 1 0-1.482.233a4.296 4.296 0 0 1 0 1.332a.75.75 0 0 0 1.482.233a5.8 5.8 0 0 0 0-1.798Zm-6.346 5.097a.75.75 0 0 0-.233 1.482a5.8 5.8 0 0 0 1.798 0a.749.749 0 1 0-.233-1.482a4.296 4.296 0 0 1-1.332 0ZM6.002 4.561a.75.75 0 0 0-.882-1.213A5.77 5.77 0 0 0 3.848 4.62a.749.749 0 1 0 1.213.882c.263-.361.58-.678.941-.941Zm-.941 5.937a.75.75 0 0 0-1.213.882a5.77 5.77 0 0 0 1.272 1.272a.749.749 0 1 0 .882-1.213a4.285 4.285 0 0 1-.941-.941Zm6.819-7.15a.749.749 0 1 0-.882 1.213c.36.263.679.58.941.941a.75.75 0 0 0 1.213-.882a5.77 5.77 0 0 0-1.272-1.272Zm1.272 8.032a.749.749 0 1 0-1.213-.882c-.262.36-.581.679-.941.941a.75.75 0 0 0 .882 1.213a5.77 5.77 0 0 0 1.272-1.272Z"/>`),
+		g.Group(children),
+	)
+}
+
+func FeedIssueOpenSixteen(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M.5 8a8 8 0 1 1 16 0a8 8 0 0 1-16 0Zm3.427-4.323a.25.25 0 0 0-.427.177V6c0 .138.112.25.25.25h2.146a.25.25 0 0 0 .177-.427l-.524-.524a4.003 4.003 0 0 1 6.862 1.858a.75.75 0 0 0 1.467-.314a5.502 5.502 0 0 0-9.39-2.605Zm9.573 8.469V10a.25.25 0 0 0-.25-.25h-2.146a.25.25 0 0 0-.177.427l.524.524a4.002 4.002 0 0 1-6.862-1.858a.75.75 0 0 0-1.467.314a5.502 5.502 0 0 0 9.39 2.605l.561.561a.25.25 0 0 0 .427-.177ZM10 8a1.5 1.5 0 1 0-3.001.001A1.5 1.5 0 0 0 10 8Z"/>`),
+		g.Group(children),
+	)
+}
+
 func FeedMergedSixteen(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
@@ -3144,6 +3182,56 @@ func FeedPersonSixteen(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16Zm.847-8.145a2.502 2.502 0 1 0-1.694 0C5.471 8.261 4 9.775 4 11c0 .395.145.995 1 .995h6c.855 0 1-.6 1-.995c0-1.224-1.47-2.74-3.153-3.145Z"/>`),
+		g.Group(children),
+	)
+}
+
+func FeedPlusSixteen(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M8.5 0a8 8 0 1 1 0 16a8 8 0 0 1 0-16Zm1.062 4.312a1 1 0 1 0-2 0v2.75h-2.75a1 1 0 0 0 0 2h2.75v2.75a1 1 0 1 0 2 0v-2.75h2.75a1 1 0 1 0 0-2h-2.75Z"/>`),
+		g.Group(children),
+	)
+}
+
+func FeedPublicSixteen(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M.5 8a8 8 0 1 1 16 0a8 8 0 0 1-16 0Zm4.5.25v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1H7.5v-1.5a1.5 1.5 0 0 1 2.443-1.167a.749.749 0 1 0 .943-1.166A3 3 0 0 0 6 5.75v1.5a1 1 0 0 0-1 1Z"/>`),
+		g.Group(children),
+	)
+}
+
+func FeedPullRequestClosedSixteen(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M8.5 0a8 8 0 1 1 0 16a8 8 0 0 1 0-16ZM6 12.25a1.75 1.75 0 0 0 .5-3.428V6.928A1.752 1.752 0 0 0 6 3.5a1.75 1.75 0 0 0-.5 3.428v1.894A1.752 1.752 0 0 0 6 12.25Zm5-5a.5.5 0 0 0-.5.5v1.072a1.752 1.752 0 0 0 .5 3.428a1.75 1.75 0 0 0 .5-3.428V7.75a.5.5 0 0 0-.5-.5Zm1.255-2.763a.5.5 0 0 0-.707-.707l-.53.531l-.531-.531a.5.5 0 0 0-.707.707l.531.531l-.531.53a.5.5 0 0 0 .707.707l.531-.53l.53.53a.5.5 0 0 0 .707-.707l-.53-.53Z"/>`),
+		g.Group(children),
+	)
+}
+
+func FeedPullRequestDraftSixteen(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M.5 8a8 8 0 1 1 16 0a8 8 0 0 1-16 0Zm7.25 2.5c0-.793-.527-1.462-1.25-1.678V6.928A1.752 1.752 0 0 0 6 3.5a1.75 1.75 0 0 0-.5 3.428v1.894A1.752 1.752 0 0 0 6 12.25a1.75 1.75 0 0 0 1.75-1.75ZM11 12.25a1.75 1.75 0 1 0 .001-3.499A1.75 1.75 0 0 0 11 12.25Zm0-4.5a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5Zm.75-3.25a.75.75 0 1 0-1.5 0a.75.75 0 0 0 1.5 0Z"/>`),
+		g.Group(children),
+	)
+}
+
+func FeedPullRequestOpenSixteen(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M.5 8a8 8 0 1 1 16 0a8 8 0 0 1-16 0Zm6.75 2.5c0-.793-.527-1.462-1.25-1.678V6.928A1.752 1.752 0 0 0 5.5 3.5A1.75 1.75 0 0 0 5 6.928v1.894a1.752 1.752 0 0 0 .5 3.428a1.75 1.75 0 0 0 1.75-1.75Zm3.25-5h.25a.5.5 0 0 1 .5.5v2.822a1.752 1.752 0 0 0 .5 3.428a1.75 1.75 0 0 0 .5-3.428V6a1.5 1.5 0 0 0-1.5-1.5h-.25V3.129a.25.25 0 0 0-.427-.177L8.202 4.823a.25.25 0 0 0 0 .354l1.871 1.871a.25.25 0 0 0 .427-.177Z"/>`),
 		g.Group(children),
 	)
 }

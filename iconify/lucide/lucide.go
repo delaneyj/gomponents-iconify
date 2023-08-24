@@ -999,7 +999,7 @@ func IconFromName(name string) g.Node {
 	case "searchSlash": return SearchSlash()
 	case "searchX": return SearchX()
 	case "send": return Send()
-	case "sendHorizonal": return SendHorizonal()
+	case "sendHorizontal": return SendHorizontal()
 	case "sendToBack": return SendToBack()
 	case "separatorHorizontal": return SeparatorHorizontal()
 	case "separatorVertical": return SeparatorVertical()
@@ -3227,7 +3227,7 @@ func Box(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.29 7L12 12l8.71-5M12 22V12"/></g>`),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7l8.7 5l8.7-5M12 22V12"/></g>`),
 		g.Group(children),
 	)
 }
@@ -9427,7 +9427,7 @@ func Package(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16.5 9.4L7.55 4.24M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.29 7L12 12l8.71-5M12 22V12"/></g>`),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m7.5 4.27l9 5.15M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7l8.7 5l8.7-5M12 22V12"/></g>`),
 		g.Group(children),
 	)
 }
@@ -9437,7 +9437,7 @@ func PackageCheck(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m16 16l2 2l4-4"/><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14M16.5 9.4L7.55 4.24"/><path d="M3.29 7L12 12l8.71-5M12 22V12"/></g>`),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m16 16l2 2l4-4"/><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14M7.5 4.27l9 5.15"/><path d="M3.29 7L12 12l8.71-5M12 22V12"/></g>`),
 		g.Group(children),
 	)
 }
@@ -9447,7 +9447,7 @@ func PackageMinus(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 16h6m-1-6V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14M16.5 9.4L7.55 4.24"/><path d="M3.29 7L12 12l8.71-5M12 22V12"/></g>`),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 16h6m-1-6V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14M7.5 4.27l9 5.15"/><path d="M3.29 7L12 12l8.71-5M12 22V12"/></g>`),
 		g.Group(children),
 	)
 }
@@ -9467,7 +9467,7 @@ func PackagePlus(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 16h6m-3-3v6m2-9V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14M16.5 9.4L7.55 4.24"/><path d="M3.29 7L12 12l8.71-5M12 22V12"/></g>`),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 16h6m-3-3v6m2-9V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14M7.5 4.27l9 5.15"/><path d="M3.29 7L12 12l8.71-5M12 22V12"/></g>`),
 		g.Group(children),
 	)
 }
@@ -9477,7 +9477,7 @@ func PackageSearch(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14M16.5 9.4L7.55 4.24"/><path d="M3.29 7L12 12l8.71-5M12 22V12"/><circle cx="18.5" cy="15.5" r="2.5"/><path d="M20.27 17.27L22 19"/></g>`),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14M7.5 4.27l9 5.15"/><path d="M3.29 7L12 12l8.71-5M12 22V12"/><circle cx="18.5" cy="15.5" r="2.5"/><path d="M20.27 17.27L22 19"/></g>`),
 		g.Group(children),
 	)
 }
@@ -9497,7 +9497,7 @@ func PackageX(children ...g.Node) g.Node {
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),
 		h.Height("24"),
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14M16.5 9.4L7.55 4.24"/><path d="M3.29 7L12 12l8.71-5M12 22V12m5 1l5 5m-5 0l5-5"/></g>`),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14M7.5 4.27l9 5.15"/><path d="M3.29 7L12 12l8.71-5M12 22V12m5 1l5 5m-5 0l5-5"/></g>`),
 		g.Group(children),
 	)
 }
@@ -11152,7 +11152,7 @@ func Send(children ...g.Node) g.Node {
 	)
 }
 
-func SendHorizonal(children ...g.Node) g.Node {
+func SendHorizontal(children ...g.Node) g.Node {
 	return s.SVG(
 		g.Attr("viewbox", "0 0 24 24"),
 		h.Width("24"),

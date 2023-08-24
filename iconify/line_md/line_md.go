@@ -6,7 +6,7 @@ import (
 	s "github.com/maragudk/gomponents/svg"
 )
 
-const IconifyVersion = "0.2.10"
+const IconifyVersion = "0.2.12"
 
 func IconFromName(name string) g.Node {
 	switch name {
@@ -356,6 +356,8 @@ func IconFromName(name string) g.Node {
 	case "thumbsUpTwotone": return ThumbsUpTwotone()
 	case "twitter": return Twitter()
 	case "twitterTwotone": return TwitterTwotone()
+	case "twitterX": return TwitterX()
+	case "twitterXAlt": return TwitterXAlt()
 	case "uploadLoop": return UploadLoop()
 	case "uploadOffLoop": return UploadOffLoop()
 	case "uploadOffOutline": return UploadOffOutline()
@@ -3833,6 +3835,26 @@ func TwitterTwotone(children ...g.Node) g.Node {
 		h.Width("24"),
 		h.Height("24"),
 		g.Raw(`<path fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-dasharray="62" stroke-dashoffset="62" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.8906 7.34375C19.7969 7.67188 19.4001 8.50548 18.7219 9.29669C18.2698 17.9717 9.84907 20.7974 4.08456 17.8869C3.29335 16.8414 6.93856 17.2653 8.26666 15.259C3.23684 12.6876 3.63244 5.82103 4.64971 6.1036C7.02333 9.29669 10.8381 9.57926 11.4597 9.29669C11.4597 8.562 11.1489 6.97958 12.8726 5.65148C13.8616 4.94505 15.9297 4.3125 17.8047 6.34375C18.125 6.55469 18.5859 6.64844 19.2734 6.49219C19.6797 6.28125 20.2262 6.427 19.9453 7.15625"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="62;0"/><animate fill="freeze" attributeName="fill-opacity" begin="0.6s" dur="0.15s" values="0;0.3"/></path>`),
+		g.Group(children),
+	)
+}
+
+func TwitterX(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<g fill="currentColor"><path d="M1 2h2.5L3.5 2h-2.5z"><animate fill="freeze" attributeName="d" dur="0.4s" values="M1 2h2.5L3.5 2h-2.5z;M1 2h2.5L18.5 22h-2.5z"/></path><path d="M5.5 2h2.5L7.2 2h-2.5z"><animate fill="freeze" attributeName="d" dur="0.4s" values="M5.5 2h2.5L7.2 2h-2.5z;M5.5 2h2.5L23 22h-2.5z"/></path><path d="M3 2h5v0h-5z" opacity="0"><set attributeName="opacity" begin="0.4s" to="1"/><animate fill="freeze" attributeName="d" begin="0.4s" dur="0.4s" values="M3 2h5v0h-5z;M3 2h5v2h-5z"/></path><path d="M16 22h5v0h-5z" opacity="0"><set attributeName="opacity" begin="0.4s" to="1"/><animate fill="freeze" attributeName="d" begin="0.4s" dur="0.4s" values="M16 22h5v0h-5z;M16 22h5v-2h-5z"/></path><path d="M18.5 2h3.5L22 2h-3.5z" opacity="0"><set attributeName="opacity" begin="0.5s" to="1"/><animate fill="freeze" attributeName="d" begin="0.5s" dur="0.4s" values="M18.5 2h3.5L22 2h-3.5z;M18.5 2h3.5L5 22h-3.5z"/></path></g>`),
+		g.Group(children),
+	)
+}
+
+func TwitterXAlt(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		h.Width("24"),
+		h.Height("24"),
+		g.Raw(`<path fill="currentColor" d="M8.5 2h2.5L11 2h-2.5zM13 2h2.5L15.5 2h-2.5zM10.5 2h5v0h-5zM8.5 2h5v0h-5zM10 2h3.5L13.5 2h-3.5z"><animate fill="freeze" attributeName="d" dur="0.8s" keyTimes="0;0.3;0.5;1" values="M8.5 2h2.5L11 2h-2.5zM13 2h2.5L15.5 2h-2.5zM10.5 2h5v0h-5zM8.5 2h5v0h-5zM10 2h3.5L13.5 2h-3.5z;M8.5 2h2.5L11 22h-2.5zM13 2h2.5L15.5 22h-2.5zM10.5 2h5v2h-5zM8.5 20h5v2h-5zM10 2h3.5L13.5 22h-3.5z;M8.5 2h2.5L11 22h-2.5zM13 2h2.5L15.5 22h-2.5zM10.5 2h5v2h-5zM8.5 20h5v2h-5zM10 2h3.5L13.5 22h-3.5z;M1 2h2.5L18.5 22h-2.5zM5.5 2h2.5L23 22h-2.5zM3 2h5v2h-5zM16 20h5v2h-5zM18.5 2h3.5L5 22h-3.5z"/></path>`),
 		g.Group(children),
 	)
 }
