@@ -147,11 +147,13 @@ func GenerateIconify(ctx context.Context, gentmpDir, output string) error {
 		}
 
 		iconPkg := IconPackage{
-			Name:    toolbelt.Cased(packageName),
-			Icons:   namedIcons,
-			Width:   unknownToDimension(details.Info.Height),
-			Height:  unknownToDimension(details.Info.Height),
-			Version: details.Info.Version,
+			Name:       toolbelt.Cased(packageName),
+			Icons:      namedIcons,
+			Width:      unknownToDimension(details.Info.Height),
+			Height:     unknownToDimension(details.Info.Height),
+			ViewWidth:  unknownToDimension(details.Width),
+			ViewHeight: unknownToDimension(details.Height),
+			Version:    details.Info.Version,
 		}
 		if iconPkg.Width == 0 && iconPkg.Height > 0 {
 			iconPkg.Width = iconPkg.Height
@@ -297,10 +299,11 @@ func unknownToDimension(x interface{}) int {
 }
 
 type IconPackage struct {
-	Name          toolbelt.CasedString
-	Icons         []NamedIcon
-	Width, Height int
-	Version       string
+	Name                  toolbelt.CasedString
+	Icons                 []NamedIcon
+	Width, Height         int
+	ViewWidth, ViewHeight int
+	Version               string
 }
 
 type NamedIcon struct {

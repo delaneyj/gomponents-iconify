@@ -21,7 +21,7 @@ func IconFromName(name string) g.Node {
 {{range .Icons -}}
 func {{.Name.Pascal}}(children ...g.Node) g.Node {
 	return s.SVG(
-		g.Attr("viewbox", "0 0 {{$.Width}} {{$.Height}}"),
+		g.Attr("viewbox", "0 0 {{$.ViewWidth}} {{$.ViewHeight}}"),
 		h.Width("{{$.Width}}"),
 		h.Height("{{$.Height}}"),
 		g.Raw(`{{.Icon.SvgBody}}`),
