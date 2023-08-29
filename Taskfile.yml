@@ -15,3 +15,4 @@ tasks:
       - rm -rf iconify
       - rm -rf gentmp
       - go run internal/main.go
+      - go fmt ./...
