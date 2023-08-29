@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Badminton(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<path fill="#d0cfce" stroke="#d0cfce" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M48.4 52.237a2.429 2.429 0 1 0-4.8 0v3.598L38 67.036h3.2l1.6-1.6l1.6 1.6l1.6-1.6l1.6 1.6l1.6-1.6l1.6 1.6H54l-5.6-11.198v-3.155Z"/><path fill="#d22f27" d="M49.176 53.437v2.4s-6.35-.012-6.35 0v-2.4Z"/><path fill="#9b9b9a" stroke="#9b9b9a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23.641 67.036V53.202l.854-6.697h2.022l.853 6.697v13.834h-3.729z"/><path fill="#3f3f3f" d="M24.752 29.507h1.5v16h-1.5z"/><path fill="none" stroke="#d0cfce" stroke-miterlimit="10" stroke-width="1.5" d="M25.696 4.5v24m-3-23.5v23m-3-20.5v18m9-20.5v23m3-20.5v18M16.252 14h18m-18 3h18m-17.5 3h17m-16-9h15.5m-14-3h12m-12 18h12m-14-3h16"/><ellipse cx="25.752" cy="16.842" fill="none" stroke="#3f3f3f" stroke-miterlimit="10" stroke-width="2" rx="9" ry="11.842"/><g fill="none" stroke="#000" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M48.4 52.237a2.429 2.429 0 1 0-4.8 0v3.598l-2.05 4.098l-.495.991L38 67.035h3.2l1.6-1.6l1.6 1.6l1.6-1.6l1.6 1.6l1.6-1.6l1.6 1.6l3.2.001l-3.063-6.126l-.563-1.126l-1.973-3.947v-3.155Z"/><path stroke-miterlimit="10" d="M48.4 53.437v2.4s-4.8-.011-4.8 0v-2.4Z"/></g><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m24.22 48.658l-.579 4.545v13.834h3.729V53.203"/><path d="M24.752 29.507h1.5v16h-1.5z"/><ellipse cx="25.752" cy="16.842" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2" rx="9" ry="11.842"/>`),
+		g.Group(children),
+	)
+}

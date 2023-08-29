@@ -1,0 +1,14 @@
+package pepicons_pop
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func TelevisionOff(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 26 26"),
+		g.Raw(`<g fill="currentColor"><path fill-rule="evenodd" d="M2 8v7a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3Zm3 8a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H5Z" clip-rule="evenodd"/><path d="M11.28 5.625a1 1 0 0 1-1.56-1.25l2-2.5a1 1 0 0 1 1.56 1.25l-2 2.5Z"/><path d="M8.72 5.625a1 1 0 0 0 1.56-1.25l-2-2.5a1 1 0 0 0-1.56 1.25l2 2.5ZM1.293 2.707a1 1 0 0 1 1.414-1.414l16 16a1 1 0 0 1-1.414 1.414l-16-16Z"/></g>`),
+		g.Group(children),
+	)
+}

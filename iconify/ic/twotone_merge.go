@@ -1,0 +1,14 @@
+package ic
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func TwotoneMerge(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M6.41 21L5 19.59l4.83-4.83c.75-.75 1.17-1.77 1.17-2.83v-5.1L9.41 8.41L8 7l4-4l4 4l-1.41 1.41L13 6.83v5.1c0 1.06.42 2.08 1.17 2.83L19 19.59L17.59 21L12 15.41L6.41 21z"/>`),
+		g.Group(children),
+	)
+}

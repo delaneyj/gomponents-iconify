@@ -1,0 +1,14 @@
+package jam
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Beer(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M2 6v9a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6H2zm10 0h1a3 3 0 0 1 3 3v3a3 3 0 0 1-3 3h-1a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2zm0 2v5h1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-1zM4 8a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1zm4 0a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0V9a1 1 0 0 1 1-1zM6.5 0A4.5 4.5 0 0 1 11 4.5v1.509H0V4.5a3.5 3.5 0 0 1 3.667-3.496A4.481 4.481 0 0 1 6.5 0zM2 4h7a2 2 0 0 0-2-2H6a2 2 0 0 0-1.75 1.031A1.002 1.002 0 0 0 4 3H3a1 1 0 0 0-1 1z"/>`),
+		g.Group(children),
+	)
+}

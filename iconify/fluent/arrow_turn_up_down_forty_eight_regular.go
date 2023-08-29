@@ -1,0 +1,14 @@
+package fluent
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ArrowTurnUpDownFortyEightRegular(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="M10.407 38.474a1.25 1.25 0 0 1-2.313-.948l12.824-31.31c.763-1.863 3.401-1.863 4.164 0l12.373 30.208l4.168-8.713a1.25 1.25 0 1 1 2.255 1.078l-5.5 11.5c-.287.6-.994.87-1.608.615l-12-5a1.25 1.25 0 1 1 .961-2.308l9.483 3.952L23 7.727L10.407 38.474Z"/>`),
+		g.Group(children),
+	)
+}

@@ -1,0 +1,14 @@
+package streamline_emojis
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ClapperBoard(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 48 48"),
+		g.Raw(`<path fill="#45413c" d="M5.66 45.5a14 1.5 0 1 0 28 0a14 1.5 0 1 0-28 0Z" opacity=".15"/><path fill="#87898c" d="M2.5 22.27h33.32a.48.48 0 0 1 .48.48V43a1 1 0 0 1-1 1H3.47a1 1 0 0 1-1-1V22.27Z"/><path fill="#656769" d="M2.5 22.27v8.21h33.81v-7.73a.48.48 0 0 0-.49-.48Z"/><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M2.5 22.27h33.32a.48.48 0 0 1 .48.48V43a1 1 0 0 1-1 1H3.47a1 1 0 0 1-1-1V22.27h0Z"/><path fill="#f0f0f0" d="m2.554 16.862l31.404-5.43a1 1 0 0 1 1.155.815l.658 3.803a.48.48 0 0 1-.391.555L2.508 22.289l-.745-4.306a1 1 0 0 1 .79-1.121Z"/><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="m2.554 16.862l31.404-5.43a1 1 0 0 1 1.155.815l.658 3.803a.48.48 0 0 1-.391.555L2.508 22.289h0l-.745-4.306a1 1 0 0 1 .79-1.121Z"/><path fill="#f0f0f0" d="M2.5 22.27h33.32a.48.48 0 0 1 .48.48v4.83H2.5v-5.31Z"/><path fill="#fff" d="M2.5 22.27v2.41h33.81v-1.93a.48.48 0 0 0-.49-.48Z"/><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M2.5 22.27h33.32a.48.48 0 0 1 .48.48v4.83h0H2.5h0v-5.31h0Zm2.9 15.45h10.14M5.4 40.14h28.01M5.4 32.89h28.01m-13.52-2.9v2.9"/><path fill="#656769" d="m16.3 19.88l-4.76.82l-3.76-4.74l4.76-.82l3.76 4.74z"/><path fill="#87898c" d="m12.54 15.14l-4.76.82l1.6 2.01l4.75-.82l-1.59-2.01z"/><path fill="#656769" d="m29.15 17.66l-4.76.82l-3.76-4.74l4.76-.82l3.76 4.74z"/><path fill="#87898c" d="m25.39 12.92l-4.76.82l1.6 2.01l4.75-.82l-1.59-2.01z"/><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="m16.3 19.88l-4.76.82l-3.76-4.74l4.76-.82l3.76 4.74zm12.85-2.22l-4.76.82l-3.76-4.74l4.76-.82l3.76 4.74z"/><path fill="#656769" d="M16.51 22.27h-4.83l-2.9 5.31h4.83l2.9-5.31zm13.04 0h-4.83l-2.9 5.31h4.83l2.9-5.31z"/><path fill="#87898c" d="m15.19 24.68l1.32-2.41h-4.83l-1.32 2.41h4.83zm13.04 0l1.32-2.41h-4.83l-1.32 2.41h4.83z"/><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M16.51 22.27h-4.83l-2.9 5.31h4.83l2.9-5.31zm13.04 0h-4.83l-2.9 5.31h4.83l2.9-5.31z"/><path fill="#fff" stroke="#45413c" stroke-linejoin="round" d="M35.46 2.72a.32.32 0 0 0-.3 0A.33.33 0 0 0 35 3l-.42 4.61a.35.35 0 0 0 .63.22L37.71 4a.35.35 0 0 0-.17-.52Zm-8.04-.07a.35.35 0 0 0-.22.21a.34.34 0 0 0 0 .31l2.44 3.92a.34.34 0 0 0 .4.15a.35.35 0 0 0 .24-.35L30 2.33a.34.34 0 0 0-.14-.26a.35.35 0 0 0-.3 0Zm15.9 5.14a.36.36 0 0 1 .1.29a.37.37 0 0 1-.17.26l-4 2.28a.33.33 0 0 1-.42-.06a.35.35 0 0 1-.05-.42l2.42-3.86a.38.38 0 0 1 .26-.16a.36.36 0 0 1 .28.1Zm3.37 7.3a.34.34 0 0 1-.1.29a.31.31 0 0 1-.29.1l-4.58-.61a.35.35 0 0 1-.08-.67l4.28-1.59a.33.33 0 0 1 .46.27Z"/>`),
+		g.Group(children),
+	)
+}

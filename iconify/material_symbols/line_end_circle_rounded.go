@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func LineEndCircleRounded(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M16 18q-2.25 0-3.913-1.425T10.075 13H3q-.425 0-.713-.288T2 12q0-.425.288-.713T3 11h7.075q.35-2.15 2.013-3.575T16 6q2.5 0 4.25 1.75T22 12q0 2.5-1.75 4.25T16 18Z"/>`),
+		g.Group(children),
+	)
+}

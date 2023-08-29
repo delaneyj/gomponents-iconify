@@ -1,0 +1,14 @@
+package fluent
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func SearchVisualSixteenRegular(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="M11.5 2A2.5 2.5 0 0 1 14 4.5v1a.5.5 0 0 1-1 0v-1A1.5 1.5 0 0 0 11.5 3h-1a.5.5 0 0 1 0-1h1Zm-7 0A2.5 2.5 0 0 0 2 4.5v1a.5.5 0 0 0 1 0v-1A1.5 1.5 0 0 1 4.5 3h1a.5.5 0 0 0 0-1h-1Zm7 12a2.5 2.5 0 0 0 2.5-2.5v-1a.5.5 0 0 0-1 0v1a1.5 1.5 0 0 1-1.5 1.5h-1a.5.5 0 0 0 0 1h1ZM2 11.5A2.5 2.5 0 0 0 4.5 14h1a.5.5 0 0 0 0-1h-1A1.5 1.5 0 0 1 3 11.5v-1a.5.5 0 0 0-1 0v1ZM8 10a2 2 0 1 0 0-4a2 2 0 0 0 0 4Zm0-1a1 1 0 1 1 0-2a1 1 0 0 1 0 2ZM5 5.75a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5Z"/>`),
+		g.Group(children),
+	)
+}

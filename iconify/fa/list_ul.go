@@ -1,0 +1,14 @@
+package fa
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ListUl(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 1536 1536"),
+		g.Raw(`<path fill="currentColor" d="M384 1216q0 80-56 136t-136 56t-136-56t-56-136t56-136t136-56t136 56t56 136zm0-512q0 80-56 136t-136 56t-136-56T0 704t56-136t136-56t136 56t56 136zm1408 416v192q0 13-9.5 22.5t-22.5 9.5H544q-13 0-22.5-9.5T512 1312v-192q0-13 9.5-22.5t22.5-9.5h1216q13 0 22.5 9.5t9.5 22.5zM384 192q0 80-56 136t-136 56t-136-56T0 192T56 56T192 0t136 56t56 136zm1408 416v192q0 13-9.5 22.5T1760 832H544q-13 0-22.5-9.5T512 800V608q0-13 9.5-22.5T544 576h1216q13 0 22.5 9.5t9.5 22.5zm0-512v192q0 13-9.5 22.5T1760 320H544q-13 0-22.5-9.5T512 288V96q0-13 9.5-22.5T544 64h1216q13 0 22.5 9.5T1792 96z"/>`),
+		g.Group(children),
+	)
+}

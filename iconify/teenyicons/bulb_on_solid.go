@@ -1,0 +1,14 @@
+package teenyicons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func BulbOnSolid(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 15 15"),
+		g.Raw(`<path fill="currentColor" d="M7 0v2h1V0H7ZM3.354 3.646l-1.5-1.5l-.708.708l1.5 1.5l.708-.708Zm9 .708l1.5-1.5l-.708-.708l-1.5 1.5l.708.708ZM7.5 3a3.959 3.959 0 0 0-3.92 3.4l-.01.07a3.951 3.951 0 0 0 .79 2.989c.383.495.64.968.64 1.442V12.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-1.599c0-.474.257-.947.64-1.442c.63-.814.948-1.875.79-2.99l-.01-.07A3.959 3.959 0 0 0 7.5 3ZM0 8h2V7H0v1Zm13 0h2V7h-2v1Zm-7 7h3v-1H6v1Z"/>`),
+		g.Group(children),
+	)
+}

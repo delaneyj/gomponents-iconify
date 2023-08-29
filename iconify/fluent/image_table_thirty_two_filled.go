@@ -1,0 +1,14 @@
+package fluent
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ImageTableThirtyTwoFilled(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="M8 3h-.5A4.5 4.5 0 0 0 3 7.5V8h5V3Zm-5 7v12h5V10H3Zm7-2h12V3H10v5Zm14-5v5h5v-.5A4.5 4.5 0 0 0 24.5 3H24Zm5 7h-5v12h5V10Zm0 14h-5v5h.5a4.5 4.5 0 0 0 4.5-4.5V24Zm-7 5v-5H10v5h12ZM8 29v-5H3v.5A4.5 4.5 0 0 0 7.5 29H8Zm2-8.535l4.232-4.233a2.5 2.5 0 0 1 3.536 0L22 20.465V10H10v10.465ZM17 13a2 2 0 1 1 4 0a2 2 0 0 1-4 0Zm3.707 9l-4.353-4.354a.5.5 0 0 0-.708 0L11.293 22h9.414Z"/>`),
+		g.Group(children),
+	)
+}

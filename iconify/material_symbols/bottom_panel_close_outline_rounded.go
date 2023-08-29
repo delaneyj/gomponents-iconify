@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func BottomPanelCloseOutlineRounded(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="m12.7 10.8l2.45-2.45q.25-.25.125-.55t-.475-.3H9.2q-.35 0-.475.3t.125.55l2.45 2.45q.3.3.7.3t.7-.3ZM19 3q.825 0 1.413.588T21 5v14q0 .825-.588 1.413T19 21H5q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h14ZM5 16v3h14v-3H5Zm14-2V5H5v9h14ZM5 16v3v-3Z"/>`),
+		g.Group(children),
+	)
+}

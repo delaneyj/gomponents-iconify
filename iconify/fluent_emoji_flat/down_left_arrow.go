@@ -1,0 +1,14 @@
+package fluent_emoji_flat
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func DownLeftArrow(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 32 32"),
+		g.Raw(`<g fill="none"><path fill="#00A6ED" d="M2 6a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V6Z"/><path fill="#fff" d="M8 22.246a.75.75 0 0 0 .754.754l7.293-.037a.75.75 0 0 0 .526-1.28l-1.916-1.917c-.127-.127-.081-.348.049-.472a.771.771 0 0 0 .018-.018l7.586-7.586a1 1 0 0 0 0-1.414L20.724 8.69a1 1 0 0 0-1.414 0l-7.586 7.586a1.037 1.037 0 0 0-.018.018c-.124.13-.345.176-.472.05l-1.916-1.917a.75.75 0 0 0-1.28.526L8 22.246Z"/></g>`),
+		g.Group(children),
+	)
+}

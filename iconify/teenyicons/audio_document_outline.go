@@ -1,0 +1,14 @@
+package teenyicons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func AudioDocumentOutline(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 15 15"),
+		g.Raw(`<path fill="currentColor" d="M13.5 3.5h.5v-.207l-.146-.147l-.354.354Zm-3-3l.354-.354L10.707 0H10.5v.5Zm-3 4l.4-.3a.5.5 0 0 0-.9.3h.5Zm.3.4l.4-.3l-.4.3Zm4.7 9.1h-10v1h10v-1ZM2 13.5v-12H1v12h1Zm11-10v10h1v-10h-1ZM2.5 1h8V0h-8v1Zm7.646-.146l3 3l.708-.708l-3-3l-.708.708ZM2.5 14a.5.5 0 0 1-.5-.5H1A1.5 1.5 0 0 0 2.5 15v-1Zm10 1a1.5 1.5 0 0 0 1.5-1.5h-1a.5.5 0 0 1-.5.5v1ZM2 1.5a.5.5 0 0 1 .5-.5V0A1.5 1.5 0 0 0 1 1.5h1ZM6 11a1 1 0 0 1-1-1H4a2 2 0 0 0 2 2v-1Zm1-1a1 1 0 0 1-1 1v1a2 2 0 0 0 2-2H7ZM6 9a1 1 0 0 1 1 1h1a2 2 0 0 0-2-2v1Zm0-1a2 2 0 0 0-2 2h1a1 1 0 0 1 1-1V8Zm1-1.5V10h1V6.5H7ZM8 7V4.5H7V7h1Zm-.9-2.2l.3.4l.8-.6l-.3-.4l-.8.6Zm.3.4A4.5 4.5 0 0 0 11 7V6a3.5 3.5 0 0 1-2.8-1.4l-.8.6Z"/>`),
+		g.Group(children),
+	)
+}

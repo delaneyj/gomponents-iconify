@@ -1,0 +1,14 @@
+package fluent
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func MailThirtyTwoFilled(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="M2.004 9.303A4.5 4.5 0 0 1 6.5 5h19a4.5 4.5 0 0 1 4.496 4.303l-1.476.82L16 16.864L3.48 10.123l-1.476-.82ZM2 11.588V22.5A4.5 4.5 0 0 0 6.5 27h19a4.5 4.5 0 0 0 4.5-4.5V11.588l-.526.293l-13 7a1 1 0 0 1-.948 0L2.514 11.874L2 11.588Z"/>`),
+		g.Group(children),
+	)
+}

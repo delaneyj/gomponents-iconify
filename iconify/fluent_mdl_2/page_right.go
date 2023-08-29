@@ -1,0 +1,14 @@
+package fluent_mdl_2
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func PageRight(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 2048 2048"),
+		g.Raw(`<path fill="currentColor" d="M1029 256q-105 0-202 27t-183 77t-154 119t-119 155t-77 182t-28 203q0 105 27 202t77 183t119 154t155 119t182 77t203 28q105 0 202-27t183-77t154-119t119-155t77-182t28-203q0-105-27-202t-77-182t-120-155t-154-119t-182-77t-203-28zm0-128q123 0 236 32t213 90t180 139t140 181t90 212t32 237q0 123-32 236t-90 213t-139 180t-181 140t-212 90t-237 32q-123 0-236-32t-213-90t-180-139t-140-181t-90-212t-32-237q0-123 32-236t90-213t139-180t181-140t212-90t237-32zm-88 1357l-90-90l370-371l-370-371l90-90l461 461l-461 461z"/>`),
+		g.Group(children),
+	)
+}

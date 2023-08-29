@@ -1,0 +1,14 @@
+package carbon
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func VpnPolicy(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 32 32"),
+		g.Raw(`<path fill="currentColor" d="M30 15a6 6 0 1 0-10 4.46V29l4-1.884L28 29v-9.54A5.98 5.98 0 0 0 30 15Zm-4 10.848l-2-.942l-2 .942V20.65a5.888 5.888 0 0 0 4 0ZM24 19a4 4 0 1 1 4-4a4.005 4.005 0 0 1-4 4Z"/><path fill="currentColor" d="M14 2a6.007 6.007 0 0 0-6 6v6H6a2.002 2.002 0 0 0-2 2v12a2.002 2.002 0 0 0 2 2h11v-2H6V16h9v-2h-5V8a4 4 0 0 1 7.92-.8l1.96-.4A6.017 6.017 0 0 0 14 2Z"/>`),
+		g.Group(children),
+	)
+}

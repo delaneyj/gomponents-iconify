@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func NestDisplayOutline(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M12 19q-2.475 0-4.237-.338T6 17.85V17H4.175Q3.3 17 2.7 16.35t-.525-1.525l.675-8q.05-.775.625-1.3T4.85 5h14.3q.8 0 1.375.525t.625 1.3l.675 8q.075.875-.525 1.525t-1.475.65H18v.85q0 .475-1.763.813T12 19Zm-7.825-4h15.65l-.675-8H4.85l-.675 8ZM12 11Z"/>`),
+		g.Group(children),
+	)
+}

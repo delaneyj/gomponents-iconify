@@ -1,0 +1,14 @@
+package file_icons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Haxedevelop(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 512 512"),
+		g.Raw(`<path fill="currentColor" d="M493.09 457.91L255.939 62.635L18.91 457.764l474.179.146zM94.256 219.587l-67.472 203.23L230.362 83.481L94.256 219.587zm390.838 203.15l-67.935-203.96L281.493 83.425l203.6 339.312zM99.212 371.754H274.87v11.262H99.21v-11.262zm205.684 0H413.6v11.262H304.896v-11.262zm-227.488 45.05h91.405v11.262H77.408v-11.263zm122.77 0h148.348v11.262H200.18v-11.263zm177.022 0h61.087v11.262H377.2v-11.263zM258.011 44.085L426.755 212.84L512 469.113l-512-.119l84.638-255.342L254.407 43.557c1.495-1.135 2.648-.741 3.604.53z"/>`),
+		g.Group(children),
+	)
+}

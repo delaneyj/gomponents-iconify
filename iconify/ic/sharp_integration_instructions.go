@@ -1,0 +1,14 @@
+package ic
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func SharpIntegrationInstructions(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M21 3h-6.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H3v18h18V3zM11 14.17l-1.41 1.42L6 12l3.59-3.59L11 9.83L8.83 12L11 14.17zm1-9.92c-.41 0-.75-.34-.75-.75s.34-.75.75-.75s.75.34.75.75s-.34.75-.75.75zm2.41 11.34L13 14.17L15.17 12L13 9.83l1.41-1.42L18 12l-3.59 3.59z"/>`),
+		g.Group(children),
+	)
+}

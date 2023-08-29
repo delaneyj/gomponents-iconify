@@ -1,0 +1,14 @@
+package fluent
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func PersonMailTwentyEightFilled(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="M13.17 26a2.997 2.997 0 0 1-.17-1v-7c0-.768.289-1.47.764-2H6a3 3 0 0 0-3 3v.715C3 23.433 7.21 26 13 26h.17ZM19 8A6 6 0 1 0 7 8a6 6 0 0 0 12 0Zm-2.5 8a2.5 2.5 0 0 0-2.5 2.5v.191l6.5 3.25l6.5-3.25V18.5a2.5 2.5 0 0 0-2.5-2.5h-8ZM27 19.809l-6.276 3.138a.5.5 0 0 1-.448 0L14 19.81v4.69a2.5 2.5 0 0 0 2.5 2.5h8a2.5 2.5 0 0 0 2.5-2.5v-4.691Z"/>`),
+		g.Group(children),
+	)
+}

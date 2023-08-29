@@ -1,0 +1,14 @@
+package flat_color_icons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Export(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 48 48"),
+		g.Raw(`<path fill="#FFCCBC" d="M7 40V8c0-2.2 1.8-4 4-4h24c2.2 0 4 1.8 4 4v32c0 2.2-1.8 4-4 4H11c-2.2 0-4-1.8-4-4z"/><g fill="#FF5722"><path d="M42.7 24L32 33V15z"/><path d="M14 21h23v6H14z"/></g>`),
+		g.Group(children),
+	)
+}

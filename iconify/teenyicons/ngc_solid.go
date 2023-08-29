@@ -1,0 +1,14 @@
+package teenyicons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func NgcSolid(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 15 15"),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12.117 3.005a11.58 11.58 0 0 0-9.234 0A3.065 3.065 0 0 0 0 6.065v6.199a1.736 1.736 0 0 0 3.289.776l.516-1.033A2.422 2.422 0 0 0 7.13 9.133L6.806 8h1.388l-.323 1.133a2.422 2.422 0 0 0 3.324 2.874l.516 1.033A1.736 1.736 0 0 0 15 12.264V6.065a3.065 3.065 0 0 0-2.883-3.06Zm-7.473.433c.65.39 1.15 1.018 1.368 1.785L6.52 7h1.96l.508-1.777a3.063 3.063 0 0 1 1.368-1.785a10.582 10.582 0 0 0-5.712 0ZM14 8.925l-1.909 2.386a2.416 2.416 0 0 1-.08.095l.595 1.187a.736.736 0 0 0 1.394-.33V8.926Zm-11.012 2.48a2.516 2.516 0 0 1-.08-.094L1 8.925v3.339a.736.736 0 0 0 1.394.33l.594-1.188Z" clip-rule="evenodd"/>`),
+		g.Group(children),
+	)
+}

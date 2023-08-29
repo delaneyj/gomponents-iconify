@@ -1,0 +1,14 @@
+package cib
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ElasticSearch(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 32 32"),
+		g.Raw(`<path fill="currentColor" d="M15.027 20.771H2.146A15.76 15.76 0 0 1 1.427 16c0-1.667.24-3.265.719-4.771h21.147A4.759 4.759 0 0 1 28.069 16a4.747 4.747 0 0 1-4.735 4.771zm-.6 1.604H2.735a15.735 15.735 0 0 0 5.853 6.907a15.722 15.722 0 0 0 8.745 2.625c5.531 0 10.375-2.828 13.24-7.068a8.119 8.119 0 0 0-5.803-2.479zM24.771 9.64a8.096 8.096 0 0 0 5.803-2.468A15.944 15.944 0 0 0 2.735 9.64z"/>`),
+		g.Group(children),
+	)
+}

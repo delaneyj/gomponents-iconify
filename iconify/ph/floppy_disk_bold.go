@@ -1,0 +1,14 @@
+package ph
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func FloppyDiskBold(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 256 256"),
+		g.Raw(`<path fill="currentColor" d="m222.14 77.17l-43.31-43.31A19.86 19.86 0 0 0 164.69 28H48a20 20 0 0 0-20 20v160a20 20 0 0 0 20 20h160a20 20 0 0 0 20-20V91.31a19.86 19.86 0 0 0-5.86-14.14ZM164 204H92v-48h72Zm40 0h-16v-52a20 20 0 0 0-20-20H88a20 20 0 0 0-20 20v52H52V52h111l41 41ZM164 80a12 12 0 0 1-12 12H96a12 12 0 0 1 0-24h56a12 12 0 0 1 12 12Z"/>`),
+		g.Group(children),
+	)
+}

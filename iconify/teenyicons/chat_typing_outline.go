@@ -1,0 +1,14 @@
+package teenyicons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ChatTypingOutline(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 15 15"),
+		g.Raw(`<path fill="currentColor" d="m5.5 11.493l.416-.278a.5.5 0 0 0-.416-.222v.5Zm2 2.998l-.416.277a.5.5 0 0 0 .832 0l-.416-.277Zm2-2.998v-.5a.5.5 0 0 0-.416.222l.416.278Zm-4.416.277l2 2.998l.832-.555l-2-2.998l-.832.555Zm2.832 2.998l2-2.998l-.832-.555l-2 2.998l.832.555ZM9.5 11.993h4v-1h-4v1Zm4 0c.829 0 1.5-.67 1.5-1.5h-1c0 .277-.223.5-.5.5v1Zm1.5-1.5V1.5h-1v8.994h1ZM15 1.5c0-.83-.671-1.5-1.5-1.5v1c.277 0 .5.223.5.5h1ZM13.5 0h-12v1h12V0Zm-12 0C.671 0 0 .67 0 1.5h1c0-.277.223-.5.5-.5V0ZM0 1.5v8.993h1V1.5H0Zm0 8.993c0 .83.671 1.5 1.5 1.5v-1a.499.499 0 0 1-.5-.5H0Zm1.5 1.5h4v-1h-4v1ZM7 7h1V6H7v1ZM4 7h1V6H4v1Zm6 0h1V6h-1v1Z"/>`),
+		g.Group(children),
+	)
+}

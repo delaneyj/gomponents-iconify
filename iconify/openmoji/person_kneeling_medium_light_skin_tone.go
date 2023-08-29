@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func PersonKneelingMediumLightSkinTone(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<g fill="#debb90"><circle cx="37.809" cy="18.053" r="3"/><path d="M29.004 51.322c4.042 0 6.785-.268 8.864-.419a5.488 5.488 0 0 0 5.264-5.7l-.96-14.881c0-.739-.185-4.916-4.5-4.916a3.353 3.353 0 0 0-2.627 1.198a7.732 7.732 0 0 0-1.918 5.345l.044 4.373l-1.917 4.057l-.472 4.129l-7.616 2.51a4.427 4.427 0 0 0-1.75 1.018l-.075.07a4.376 4.376 0 0 0 .31 6.702a7.793 7.793 0 0 0 4.413 1.302c6.94.211 16.395-1.851 16.395-1.851L39.405 51"/></g><g fill="none" stroke="#000" stroke-width="2"><circle cx="37.809" cy="18.053" r="3" stroke-miterlimit="10"/><path stroke-linecap="round" stroke-linejoin="round" d="M28.84 51.001c4.042 0 6.95-.113 9.028-.264a5.492 5.492 0 0 0 5.1-5.855l-.203-5.3l-.632-10.538A4.367 4.367 0 0 0 37.84 25h0a4.631 4.631 0 0 0-4.446 4.017l-.554 4.962l-.7 7.021"/><path stroke-linecap="round" stroke-linejoin="round" d="m31.438 44.853l-8.458 2.311a4.495 4.495 0 0 0-1.75.962l-.075.067a3.988 3.988 0 0 0 .31 6.327a8.12 8.12 0 0 0 4.413 1.23a145.205 145.205 0 0 0 15.94-.745m-3.863-25.053l-.746 10.313l-10.524 2.942"/></g>`),
+		g.Group(children),
+	)
+}

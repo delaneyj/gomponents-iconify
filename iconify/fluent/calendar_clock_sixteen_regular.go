@@ -1,0 +1,14 @@
+package fluent
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func CalendarClockSixteenRegular(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="M11.5 2A2.5 2.5 0 0 1 14 4.5v2.1a5.465 5.465 0 0 0-1-.393V6H3v5.5A1.5 1.5 0 0 0 4.5 13h1.707c.099.349.23.683.393 1H4.5A2.5 2.5 0 0 1 2 11.5v-7A2.5 2.5 0 0 1 4.5 2h7Zm0 1h-7A1.5 1.5 0 0 0 3 4.5V5h10v-.5A1.5 1.5 0 0 0 11.5 3Zm4.5 8.5a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0ZM11.5 9a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5H13a.5.5 0 0 0 0-1h-1V9.5a.5.5 0 0 0-.5-.5Z"/>`),
+		g.Group(children),
+	)
+}

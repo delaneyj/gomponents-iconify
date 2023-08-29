@@ -1,0 +1,14 @@
+package mdi
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func FormatLineHeight(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M21 22H3v-2h18v2m0-18H3V2h18v2m-11 9.7h4l-2-5.4l-2 5.4M11.2 6h1.7l4.7 12h-2l-.9-2.6H9.4L8.5 18h-2l4.7-12Z"/>`),
+		g.Group(children),
+	)
+}

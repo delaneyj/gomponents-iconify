@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func CallSplit(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M11 20v-7.6l-5-5V10H4V4h6v2H7.4l5.6 5.6V20h-2Zm3.85-9.4L13.4 9.15L16.6 6H14V4h6v6h-2V7.4l-3.15 3.2Z"/>`),
+		g.Group(children),
+	)
+}

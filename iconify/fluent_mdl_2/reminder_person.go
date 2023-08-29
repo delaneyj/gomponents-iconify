@@ -1,0 +1,14 @@
+package fluent_mdl_2
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ReminderPerson(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 2048 2048"),
+		g.Raw(`<path fill="currentColor" d="m2029 1453l-557 558l-269-270l90-90l179 178l467-466l90 90zm-434 72q-111-122-259-183t-312-62q-108 0-206 27t-184 76t-155 119t-119 155t-77 184t-27 207H128q0-143 41-275t119-243t186-195t245-132q-78-42-140-102T474 968t-67-156t-23-172q0-133 50-249t137-204T774 50t250-50q133 0 249 50t204 137t137 203t50 250q0 89-23 172t-67 156t-106 133t-140 102q102 36 192 95t163 139l-88 88zM512 640q0 106 40 199t110 162t163 110t199 41q106 0 199-40t162-110t110-163t41-199q0-106-40-199t-110-162t-163-110t-199-41q-106 0-199 40T663 278T553 441t-41 199z"/>`),
+		g.Group(children),
+	)
+}

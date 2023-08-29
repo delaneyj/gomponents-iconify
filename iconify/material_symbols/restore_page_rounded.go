@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func RestorePageRounded(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M9.7 10.75q.425-.45 1.025-.725T12 9.75q1.35 0 2.3.95t.95 2.3q0 1.35-.95 2.3t-2.3.95q-.9 0-1.637-.45T9.2 14.625q-.15-.275-.437-.363T8.2 14.3q-.3.125-.412.438t.062.587q.6 1.1 1.7 1.763t2.45.662q1.95 0 3.35-1.4t1.4-3.35q0-1.95-1.4-3.35T12 8.25q-.95 0-1.775.35t-1.475.95v-.8q0-.325-.213-.537T8 8q-.325 0-.537.213t-.213.537v2.75q0 .325.213.537T8 12.25h2.75q.325 0 .537-.213t.213-.537q0-.325-.213-.537t-.537-.213H9.7ZM6 22q-.825 0-1.413-.588T4 20V4q0-.825.588-1.413T6 2h7.175q.4 0 .763.15t.637.425l4.85 4.85q.275.275.425.638t.15.762V20q0 .825-.588 1.413T18 22H6Z"/>`),
+		g.Group(children),
+	)
+}

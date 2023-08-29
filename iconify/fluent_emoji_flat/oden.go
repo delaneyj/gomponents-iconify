@@ -1,0 +1,14 @@
+package fluent_emoji_flat
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Oden(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 32 32"),
+		g.Raw(`<g fill="none"><g clip-path="url(#fluentEmojiFlatOden0)"><path fill="#D3883E" d="M-.124-.121a1.5 1.5 0 0 1 2.121-.003l25 24.94a1.5 1.5 0 1 1-2.118 2.124L-.121 2A1.5 1.5 0 0 1-.124-.121Z"/><path fill="#635994" d="m3.51 7.35l1.89 7.06c.62 2.33 3.54 3.11 5.24 1.4l5.17-5.17c1.71-1.71.92-4.62-1.4-5.24L7.35 3.51c-2.33-.62-4.46 1.51-3.84 3.84Z"/><path fill="#E39D89" d="M16.78 23.63a6.85 6.85 0 1 0 0-13.7a6.85 6.85 0 0 0 0 13.7Z"/><path fill="#FFDEA7" d="m28.4 21.95l-6.45 6.45a3.664 3.664 0 0 1-5.18-5.18l6.45-6.45a3.664 3.664 0 0 1 5.18 5.18Z"/><path fill="#D3883E" d="M23.538 23.49a1.5 1.5 0 0 1 2.121-.002l3.4 3.39a1.5 1.5 0 0 1-2.118 2.124l-3.4-3.39a1.5 1.5 0 0 1-.003-2.121Z"/></g><defs><clipPath id="fluentEmojiFlatOden0"><path fill="#fff" d="M0 0h32v32H0z"/></clipPath></defs></g>`),
+		g.Group(children),
+	)
+}

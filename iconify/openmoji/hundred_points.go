@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func HundredPoints(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<defs><path id="openmojiHundredPoints0" d="M59.183 46.059h-46m46 8h-46m19.8-17.054a6.279 6.279 0 0 1-6.279-6.28V20.339a6.28 6.28 0 0 1 6.28-6.279a6.28 6.28 0 0 1 6.278 6.28v10.387a6.279 6.279 0 0 1-6.279 6.279zm19.927 0a6.279 6.279 0 0 1-6.28-6.28V20.339a6.28 6.28 0 0 1 6.28-6.279a6.28 6.28 0 0 1 6.278 6.28v10.387a6.279 6.279 0 0 1-6.279 6.279zm-39.926-18.12l6.353-4.759v22.946"/></defs><use href="#openmojiHundredPoints0" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/><use href="#openmojiHundredPoints0" fill="none" stroke="#D22F27" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4.1"/>`),
+		g.Group(children),
+	)
+}

@@ -1,0 +1,14 @@
+package logos
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Karma(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 256 256"),
+		g.Raw(`<path fill="#429F87" d="m154.565 138.602l39.246 58.547h62.043l-70.31-103.883l-30.979 45.336M29.492 169.994l28.736-27.07l45.942 54.225L74.678 88.375l-24.9 40.962l-20.286 40.657"/><path fill="#56C5A8" d="m29.492 169.994l45.186-81.62l-28.728 27.084L0 61.23l29.492 108.764M249.938.603h-62.043l-37.999 56.144V.603H92.985v58.229l30.344 111.834l7.071 26.483h19.496v-49.138L249.938.603"/>`),
+		g.Group(children),
+	)
+}

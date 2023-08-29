@@ -1,0 +1,14 @@
+package cil
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func HandPointDown(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 512 512"),
+		g.Raw(`<path fill="currentColor" d="M460.579 101.868L409.06 16H264.892L41.573 263.245a24 24 0 0 0 2.007 34.148A90.41 90.41 0 0 0 173.089 286.6l18.493-22.6H216v180a52 52 0 0 0 104 0V332.162l126.423-35.119A24.071 24.071 0 0 0 464 273.919v-159.7a24.006 24.006 0 0 0-3.421-12.351ZM432 267.838l-144 40V444a20 20 0 0 1-40 0V232h-71.582l-28.1 34.34a58.439 58.439 0 0 1-77.181 11.91L279.108 48H390.94L432 116.433Z"/>`),
+		g.Group(children),
+	)
+}

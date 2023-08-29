@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func BackgroundGridSmall(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M5 21h1v-3H3v1q0 .825.588 1.413T5 21Zm3 0h3v-3H8v3Zm5 0h3v-3h-3v3Zm5 0h1q.825 0 1.413-.588T21 19v-1h-3v3ZM3 6h3V3H5q-.825 0-1.413.588T3 5v1Zm0 5h3V8H3v3Zm0 5h3v-3H3v3ZM8 6h3V3H8v3Zm0 5h3V8H8v3Zm0 5h3v-3H8v3Zm5-10h3V3h-3v3Zm0 5h3V8h-3v3Zm0 5h3v-3h-3v3Zm5-10h3V5q0-.825-.588-1.413T19 3h-1v3Zm0 5h3V8h-3v3Zm0 5h3v-3h-3v3Z"/>`),
+		g.Group(children),
+	)
+}

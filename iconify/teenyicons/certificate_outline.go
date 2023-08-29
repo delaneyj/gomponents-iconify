@@ -1,0 +1,14 @@
+package teenyicons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func CertificateOutline(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 15 15"),
+		g.Raw(`<path fill="currentColor" d="M9.5 14.5H9a.5.5 0 0 0 .8.4l-.3-.4Zm2-1.5l.3-.4a.5.5 0 0 0-.6 0l.3.4Zm2 1.5l-.3.4a.5.5 0 0 0 .8-.4h-.5Zm-2-3.5A2.5 2.5 0 0 1 9 8.5H8a3.5 3.5 0 0 0 3.5 3.5v-1ZM14 8.5a2.5 2.5 0 0 1-2.5 2.5v1A3.5 3.5 0 0 0 15 8.5h-1ZM11.5 6A2.5 2.5 0 0 1 14 8.5h1A3.5 3.5 0 0 0 11.5 5v1Zm0-1A3.5 3.5 0 0 0 8 8.5h1A2.5 2.5 0 0 1 11.5 6V5ZM9 10.5v4h1v-4H9Zm.8 4.4l2-1.5l-.6-.8l-2 1.5l.6.8Zm1.4-1.5l2 1.5l.6-.8l-2-1.5l-.6.8Zm2.8 1.1v-4h-1v4h1ZM15 5V1.5h-1V5h1Zm-1.5-5h-12v1h12V0ZM0 1.5v12h1v-12H0ZM1.5 15H8v-1H1.5v1ZM0 13.5A1.5 1.5 0 0 0 1.5 15v-1a.5.5 0 0 1-.5-.5H0ZM1.5 0A1.5 1.5 0 0 0 0 1.5h1a.5.5 0 0 1 .5-.5V0ZM15 1.5A1.5 1.5 0 0 0 13.5 0v1a.5.5 0 0 1 .5.5h1ZM3 5h5V4H3v1Zm0 3h3V7H3v1Z"/>`),
+		g.Group(children),
+	)
+}

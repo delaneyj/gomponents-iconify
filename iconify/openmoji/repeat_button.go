@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func RepeatButton(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M11.5 45.81a17.26 17.26 0 0 1-1.5-7.064v-1.108c0-9.463 7.575-17.135 16.92-17.135h30.908m2.666 5.465A17.38 17.38 0 0 1 62 33.071v1.114c0 9.515-7.603 17.229-16.98 17.229H14m43.828-30.911l-8.185-8.214m0 16.427l8.185-8.213M14 51.414l8.185-8.214m0 16.428L14 51.414"/>`),
+		g.Group(children),
+	)
+}

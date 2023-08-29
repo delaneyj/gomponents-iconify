@@ -1,0 +1,14 @@
+package jam
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func FeatherF(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="m16.393 12.029l-4.461-1.196l3.018-3.018a1 1 0 1 0-1.414-1.414l-.897.897l-1.195-4.462l.677-.677a5 5 0 0 1 7.071 7.07l-2.799 2.8zm-1.633 1.633l-3.766 3.766l-5.318-.339l4.623-4.623l4.461 1.196zM4.343 15.594l1.414 1.414l-3.535 3.535A1 1 0 1 1 .808 19.13l3.45-3.45l-.326-5.331L9.811 4.47l1.195 4.462l-6.663 6.663z"/>`),
+		g.Group(children),
+	)
+}

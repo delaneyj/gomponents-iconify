@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func JumpToElement(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M11 13V9h2v2h2v2h-4Zm7 0v-2h2V9h2v4h-4Zm-7-7V2h4v2h-2v2h-2Zm9 0V4h-2V2h4v4h-2ZM3.4 22L2 20.6L7.6 15H3v-2h8v8H9v-4.6L3.4 22Z"/>`),
+		g.Group(children),
+	)
+}

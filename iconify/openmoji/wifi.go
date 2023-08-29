@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Wifi(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<defs><path id="openmojiWifi0" d="M58.37 30.524c-5.651-5.651-13.458-9.146-22.081-9.146c-8.637 0-16.455 3.506-22.108 9.172l-3.813-3.763c6.624-6.65 15.792-10.767 25.92-10.767c10.103 0 19.25 4.095 25.87 10.716l-3.788 3.788z"/><path id="openmojiWifi1" d="M21.916 38.286a20.453 20.453 0 0 1 14.638-6.142a20.449 20.449 0 0 1 14.373 5.876l3.784-3.792a25.788 25.788 0 0 0-18.157-7.44a25.793 25.793 0 0 0-18.425 7.71l3.787 3.788z"/><path id="openmojiWifi2" d="M43.352 45.596a9.77 9.77 0 0 0-6.798-2.74a9.774 9.774 0 0 0-7.062 3.005l-3.814-3.814a15.114 15.114 0 0 1 10.876-4.6a15.11 15.11 0 0 1 10.61 4.332l-3.812 3.817z"/></defs><g fill="#9B9B9A"><use href="#openmojiWifi0"/><use href="#openmojiWifi1"/><use href="#openmojiWifi2"/><circle cx="36.289" cy="52.605" r="2.672"/></g><g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"><use href="#openmojiWifi0"/><use href="#openmojiWifi1"/><use href="#openmojiWifi2"/><circle cx="36.289" cy="52.605" r="2.672"/></g>`),
+		g.Group(children),
+	)
+}

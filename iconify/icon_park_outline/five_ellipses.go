@@ -1,0 +1,14 @@
+package icon_park_outline
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func FiveEllipses(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 48 48"),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M41 33c1.657 0 3-3.582 3-8s-1.343-8-3-8s-3 3.582-3 8s1.343 8 3 8ZM7 33c1.657 0 3-3.582 3-8s-1.343-8-3-8s-3 3.582-3 8s1.343 8 3 8Zm17 11c3.314 0 6-8.954 6-20S27.314 4 24 4s-6 8.954-6 20s2.686 20 6 20Zm10-4c2.21 0 4-7.163 4-16S36.21 8 34 8s-4 7.163-4 16s1.79 16 4 16Zm-20 0c2.21 0 4-7.163 4-16S16.21 8 14 8s-4 7.163-4 16s1.79 16 4 16Z"/>`),
+		g.Group(children),
+	)
+}

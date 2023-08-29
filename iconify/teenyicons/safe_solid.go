@@ -1,0 +1,14 @@
+package teenyicons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func SafeSolid(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 15 15"),
+		g.Raw(`<path fill="currentColor" d="M8 7.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0Z"/><path fill="currentColor" fill-rule="evenodd" d="M1.5 0A1.5 1.5 0 0 0 0 1.5v11A1.5 1.5 0 0 0 1.5 14H2v1h1v-1h9v1h1v-1h.5a1.5 1.5 0 0 0 1.5-1.5v-11A1.5 1.5 0 0 0 13.5 0h-12ZM2 3v3h1V3H2Zm7.5 2a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5ZM2 11V8h1v3H2Z" clip-rule="evenodd"/>`),
+		g.Group(children),
+	)
+}

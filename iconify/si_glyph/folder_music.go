@@ -1,0 +1,14 @@
+package si_glyph
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func FolderMusic(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 17 0"),
+		g.Raw(`<g fill="currentColor" fill-rule="evenodd"><path d="M7.35 5L5.788 2.042H2.021v1.021H.023v9.913h1.02l.002 1h14.902L15.968 5H7.35zm2.495 6.959a1.977 1.977 0 0 1-.752.155c-.499 0-.9-.221-1.048-.576c-.225-.551.214-1.255.978-1.571c.287-.118.595-.184.864-.184l.056.001V7.318l-2.884.781l.001 3.521c-.054.468-.714 1.2-1.284 1.438a1.979 1.979 0 0 1-.749.153c-.5 0-.902-.221-1.051-.576c-.224-.551.217-1.255.981-1.571a2.045 2.045 0 0 1 .985-.143V7.215l5.116-1.279l.016 4.683c-.053.463-.64 1.097-1.229 1.34z"/><path d="M13.964 3.982v-.94h-5.94l.33.94h5.61z"/></g>`),
+		g.Group(children),
+	)
+}

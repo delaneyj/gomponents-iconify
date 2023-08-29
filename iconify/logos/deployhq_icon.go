@@ -1,0 +1,14 @@
+package logos
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func DeployhqIcon(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 256 256"),
+		g.Raw(`<path fill="#4B25BB" d="M64 255.642v-63.905L0 255.642zm127.999-.001h-64V63.924h64z"/><path d="M192 319.529H64l64-63.907zM64 95.858c0 17.648 14.326 31.953 32 31.953c17.673 0 32-14.305 32-31.953c0-17.647-14.327-31.952-32-31.952c-17.674 0-32 14.305-32 31.952"/><path fill="#40CF9F" d="M192 255.642h64l-64-63.905zM128 0l64 63.905H64zm0 255.644H64.001V127.832H128z"/>`),
+		g.Group(children),
+	)
+}

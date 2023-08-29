@@ -1,0 +1,14 @@
+package teenyicons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func NoteOutline(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 15 15"),
+		g.Raw(`<path fill="currentColor" d="M10.5 14.5H10a.5.5 0 0 0 .854.354L10.5 14.5Zm0-4V10a.5.5 0 0 0-.5.5h.5Zm4 0l.354.354A.5.5 0 0 0 14.5 10v.5ZM1.5 1h12V0h-12v1ZM1 13.5v-12H0v12h1Zm13-12v8.586h1V1.5h-1ZM10.086 14H1.5v1h8.586v-1Zm3.768-3.56l-3.415 3.414l.707.707l3.415-3.415l-.707-.707ZM10.086 15a1.5 1.5 0 0 0 1.06-.44l-.707-.706a.5.5 0 0 1-.353.146v1ZM14 10.086a.5.5 0 0 1-.146.353l.707.707a1.5 1.5 0 0 0 .439-1.06h-1ZM0 13.5A1.5 1.5 0 0 0 1.5 15v-1a.5.5 0 0 1-.5-.5H0ZM13.5 1a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 13.5 0v1Zm-12-1A1.5 1.5 0 0 0 0 1.5h1a.5.5 0 0 1 .5-.5V0ZM11 14.5v-4h-1v4h1Zm-.5-3.5h4v-1h-4v1Zm3.646-.854l-4 4l.708.708l4-4l-.708-.708ZM3 4h9V3H3v1Z"/>`),
+		g.Group(children),
+	)
+}

@@ -1,0 +1,14 @@
+package jam
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ArrowSquareLeftF(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M5.293 9.293a.997.997 0 0 0 0 1.414l4.243 4.243a1 1 0 1 0 1.414-1.414L8.414 11H14a1 1 0 0 0 0-2H8.414l2.536-2.536A1 1 0 1 0 9.536 5.05L5.293 9.293zM4 0h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z"/>`),
+		g.Group(children),
+	)
+}

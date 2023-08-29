@@ -1,0 +1,14 @@
+package nimbus
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Volume(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 0 0"),
+		g.Raw(`<path fill="currentColor" d="M15.32 7.45h-2v1.06h2V8a4.93 4.93 0 0 0 0-.55zM12.91 11l1.56.37a6.28 6.28 0 0 0 .45-1L13.16 10zm2-5.43a6.28 6.28 0 0 0-.45-1l-1.55.34l.25 1zm-4.29-3.06L1.9 6.3v-.69H.65v4.78H1.9v-.71l8.72 3.79v1h1.25V1.5h-1.25zM1.9 8.32v-.65l8.72-3.8v8.24z"/>`),
+		g.Group(children),
+	)
+}

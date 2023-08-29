@@ -1,0 +1,14 @@
+package fluent
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func EyeFortyEightFilled(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="M41.56 26.13a1.251 1.251 0 0 0 1.57.81c.65-.21 1.02-.91.81-1.57l-.001-.003C43.85 25.1 38.841 10 23.999 10C9.16 10 4.15 25.1 4.062 25.367l-.001.003c-.21.66.15 1.36.81 1.57c.66.21 1.36-.15 1.57-.81c.18-.56 4.51-13.63 17.56-13.63c13.05 0 17.38 13.07 17.56 13.63ZM24 36a9 9 0 1 0 0-18a9 9 0 0 0 0 18Z"/>`),
+		g.Group(children),
+	)
+}

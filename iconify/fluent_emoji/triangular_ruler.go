@@ -1,0 +1,14 @@
+package fluent_emoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func TriangularRuler(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 32 32"),
+		g.Raw(`<g fill="none"><g filter="url(#f2402id1)"><path fill="url(#f2402id0)" fill-rule="evenodd" d="M6.204 2.802C4.693 1.29 2.106 2.36 2.106 4.498v23.409a2 2 0 0 0 2 2H27.49c2.137 0 3.208-2.584 1.698-4.097L6.204 2.802Zm1.7 20.43v-6.913a.75.75 0 0 1 1.282-.528l6.856 6.913a.75.75 0 0 1-.533 1.278H8.653a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/></g><path fill="#9D73E9" d="M7.182 3.781L5.241 5.722a.53.53 0 1 1-.75-.75l1.942-1.94l.75.75Zm4.709 4.714l-1.9 1.9a.53.53 0 0 0 .75.75l1.9-1.9l-.75-.75Zm5.466 5.472l-1.865 1.865a.53.53 0 0 0 .749.75l1.865-1.865l-.75-.75Zm5.489 5.495l-1.855 1.855a.53.53 0 0 0 .75.75l1.854-1.855l-.75-.75Zm5.427 5.433l-1.844 1.843a.53.53 0 0 0 .75.75l1.843-1.843l-.75-.75Zm-3.516-1.99a.53.53 0 1 1 .75.75l-.75.749a.53.53 0 1 1-.75-.75l.75-.75ZM19.35 17.42a.53.53 0 1 1 .75.75l-.75.75a.53.53 0 0 1-.75-.75l.75-.75Zm-5.468-5.453a.53.53 0 1 1 .75.75l-.75.75a.53.53 0 1 1-.75-.75l.75-.75ZM8.397 6.514a.53.53 0 0 1 .75.75l-.75.75a.53.53 0 0 1-.75-.75l.75-.75Z"/><defs><linearGradient id="f2402id0" x1="18.872" x2="8.122" y1="16.373" y2="26.81" gradientUnits="userSpaceOnUse"><stop stop-color="#C3C1CA"/><stop offset="1" stop-color="#B4B1BB"/></linearGradient><filter id="f2402id1" width="28.387" height="28.413" x="1.806" y="1.793" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx=".3" dy="-.3"/><feGaussianBlur stdDeviation=".3"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0.658824 0 0 0 0 0.65098 0 0 0 0 0.678431 0 0 0 1 0"/><feBlend in2="shape" result="effect1_innerShadow_18_23266"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.3"/><feGaussianBlur stdDeviation=".3"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0.529412 0 0 0 0 0.494118 0 0 0 0 0.615686 0 0 0 1 0"/><feBlend in2="effect1_innerShadow_18_23266" result="effect2_innerShadow_18_23266"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="-.3" dy=".3"/><feGaussianBlur stdDeviation=".3"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0.913725 0 0 0 0 0.909804 0 0 0 0 0.92549 0 0 0 1 0"/><feBlend in2="effect2_innerShadow_18_23266" result="effect3_innerShadow_18_23266"/></filter></defs></g>`),
+		g.Group(children),
+	)
+}

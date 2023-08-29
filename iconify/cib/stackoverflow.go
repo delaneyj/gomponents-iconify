@@ -1,0 +1,14 @@
+package cib
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Stackoverflow(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 32 32"),
+		g.Raw(`<path fill="currentColor" d="M25.312 29.151v-8.536h2.849V32H2.458V20.615h2.839v8.536zM8.145 26.307h14.324v-2.848H8.145zm.35-6.468l13.975 2.916l.599-2.76L9.1 17.083zm1.812-6.74l12.939 6.037l1.203-2.6l-12.937-6.041l-1.204 2.584zm3.62-6.38L24.88 15.86l1.813-2.163L15.74 4.562l-1.803 2.151zM21 0l-2.328 1.724l8.541 11.473l2.328-1.724z"/>`),
+		g.Group(children),
+	)
+}

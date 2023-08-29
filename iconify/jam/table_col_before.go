@@ -1,0 +1,14 @@
+package jam
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func TableColBefore(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M8 12V2H2v1a1 1 0 1 1-2 0V2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-1a1 1 0 0 1 2 0v1h6Zm2 0h2v-2h-2v2Zm2-4V6h-2v2h2Zm0-4V2h-2v2h2ZM3 6V5a1 1 0 1 1 2 0v1h1a1 1 0 1 1 0 2H5v1a1 1 0 1 1-2 0V8H2a1 1 0 1 1 0-2h1Z"/>`),
+		g.Group(children),
+	)
+}

@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Hospital(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<g stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"><path fill="#FFF" d="M22.5 12h27v48h-27zm-9 13h9v35h-9zm36 0h9v35h-9z"/><path fill="#92D3F5" d="M29.5 44h13v16h-13z"/><path fill="#EA5A47" d="M43.5 23h-5v-5h-5v5h-5v5h5v5h5v-5h5z"/><path fill="none" stroke="#92D3F5" d="M17 30h2v5h-2zm0 10h2v5h-2zm0 10h2v5h-2zm36-20h2v5h-2zm0 10h2v5h-2zm0 10h2v5h-2z"/></g><g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"><path d="M22.5 12h27v48h-27zm-9 13h9v35h-9zm36 0h9v35h-9z"/><path d="M29.5 44h13v16h-13zM36 60V44m7.5-21h-5v-5h-5v5h-5v5h5v5h5v-5h5zM19 35h-2v-5m2 15h-2v-5m2 15h-2v-5m38-15h-2v-5m2 15h-2v-5m2 15h-2v-5"/></g>`),
+		g.Group(children),
+	)
+}

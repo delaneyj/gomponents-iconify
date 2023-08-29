@@ -1,0 +1,14 @@
+package ph
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ChatCircleDots(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 256 256"),
+		g.Raw(`<path fill="currentColor" d="M140 128a12 12 0 1 1-12-12a12 12 0 0 1 12 12Zm-56-12a12 12 0 1 0 12 12a12 12 0 0 0-12-12Zm88 0a12 12 0 1 0 12 12a12 12 0 0 0-12-12Zm60 12a104 104 0 0 1-152.88 91.82l-34.05 11.35a16 16 0 0 1-20.24-20.24l11.35-34.05A104 104 0 1 1 232 128Zm-16 0a88 88 0 1 0-164.19 44.06a8 8 0 0 1 .66 6.54L40 216l37.4-12.47a7.85 7.85 0 0 1 2.53-.42a8 8 0 0 1 4 1.08A88 88 0 0 0 216 128Z"/>`),
+		g.Group(children),
+	)
+}

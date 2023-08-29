@@ -1,0 +1,14 @@
+package flag
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func BgOneXOne(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 512 512"),
+		g.Raw(`<g fill-rule="evenodd" stroke-width="1pt"><path fill="#d62612" d="M0 341.3h512V512H0z"/><path fill="#fff" d="M0 0h512v170.7H0z"/><path fill="#00966e" d="M0 170.7h512v170.6H0z"/></g>`),
+		g.Group(children),
+	)
+}

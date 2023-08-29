@@ -1,0 +1,14 @@
+package teenyicons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func AudioCableOutline(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 15 15"),
+		g.Raw(`<path fill="currentColor" d="m6.5 1.5l-.354-.354A.5.5 0 0 0 6 1.5h.5Zm1-1l.354-.354a.5.5 0 0 0-.708 0L7.5.5Zm1 1H9a.5.5 0 0 0-.146-.354L8.5 1.5ZM6.5 9h2V8h-2v1Zm2.5.5v3h1v-3H9ZM8.5 13h-2v1h2v-1ZM6 12.5v-3H5v3h1Zm.5.5a.5.5 0 0 1-.5-.5H5A1.5 1.5 0 0 0 6.5 14v-1Zm2.5-.5a.5.5 0 0 1-.5.5v1a1.5 1.5 0 0 0 1.5-1.5H9ZM8.5 9a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 8.5 8v1Zm-2-1A1.5 1.5 0 0 0 5 9.5h1a.5.5 0 0 1 .5-.5V8Zm.5.5v-5H6v5h1ZM6.5 4h2V3h-2v1ZM8 3.5v5h1v-5H8ZM7 13v2h1v-2H7Zm0-9.5v-2H6v2h1Zm-.146-1.646l1-1l-.708-.708l-1 1l.708.708Zm.292-1l1 1l.708-.708l-1-1l-.708.708ZM8 1.5v2h1v-2H8Z"/>`),
+		g.Group(children),
+	)
+}

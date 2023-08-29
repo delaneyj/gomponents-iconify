@@ -1,0 +1,14 @@
+package fluent
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func CloudWordsTwentyEightRegular(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="M11.75 11a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5h-4.5ZM6 16.75a.75.75 0 0 1 .75-.75h5.5a.75.75 0 0 1 0 1.5h-5.5a.75.75 0 0 1-.75-.75Zm9.75-.75a.75.75 0 0 0 0 1.5h5.5a.75.75 0 0 0 0-1.5h-5.5ZM14 6a6.5 6.5 0 0 0-6.481 6H7.25a4.75 4.75 0 1 0 0 9.5h13.5a4.75 4.75 0 1 0 0-9.5h-.269A6.5 6.5 0 0 0 14 6Zm-5 6.5a5 5 0 0 1 10 0v.25c0 .414.336.75.75.75h1a3.25 3.25 0 0 1 0 6.5H7.25a3.25 3.25 0 0 1 0-6.5h1a.75.75 0 0 0 .75-.75v-.25Z"/>`),
+		g.Group(children),
+	)
+}

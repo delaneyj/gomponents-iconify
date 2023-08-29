@@ -1,0 +1,14 @@
+package fa_6_brands
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Sitrox(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 448 512"),
+		g.Raw(`<path fill="currentColor" d="M212.439.008V0H448v128H64C64 57.6 141.755.475 212.439.008ZM237.256 192v.007C307.135 192.475 384 249.6 384 320H210.809v-.005C140.915 319.563 64 262.424 64 192h173.256Zm-1.691 319.993C306.251 511.521 384 454.399 384 384H0v128h235.565v-.007Z"/>`),
+		g.Group(children),
+	)
+}

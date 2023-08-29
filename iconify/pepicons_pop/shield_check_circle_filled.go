@@ -1,0 +1,14 @@
+package pepicons_pop
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ShieldCheckCircleFilled(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 26 26"),
+		g.Raw(`<g fill="none"><defs><mask id="pepiconsPopShieldCheckCircleFilled0"><path fill="#fff" d="M0 0h26v26H0z"/><g fill="#000" fill-rule="evenodd" clip-rule="evenodd"><path d="M14.335 6.03a3 3 0 0 0-2.67 0L8.029 7.836c-.95.472-1.537 1.374-1.528 2.344c.016 1.774.21 4.03.9 5.477c.766 1.607 2.65 3.272 4.216 4.44c.83.619 1.936.619 2.766 0c1.566-1.168 3.45-2.833 4.216-4.44c.69-1.447.884-3.703.9-5.477c.009-.97-.579-1.872-1.528-2.344L14.335 6.03Zm-3.56-1.791a5 5 0 0 1 4.45 0l3.636 1.806c1.552.772 2.654 2.329 2.638 4.153c-.016 1.785-.197 4.439-1.095 6.32c-.998 2.094-3.254 4.01-4.825 5.183a4.293 4.293 0 0 1-5.158 0c-1.571-1.172-3.827-3.09-4.825-5.183c-.898-1.881-1.079-4.535-1.095-6.32c-.016-1.824 1.086-3.381 2.638-4.153l3.636-1.806Z"/><path d="M16.14 10.751a1 1 0 0 1 .128 1.408l-1.799 2.16a2 2 0 0 1-2.95.133l1.414-1.414l1.799-2.159a1 1 0 0 1 1.408-.128Zm-5.847 1.061a1 1 0 0 1 1.414 0l1.226 1.226l-1.414 1.414l-1.226-1.226a1 1 0 0 1 0-1.414Z"/></g></mask></defs><circle cx="13" cy="13" r="13" fill="currentColor" mask="url(#pepiconsPopShieldCheckCircleFilled0)"/></g>`),
+		g.Group(children),
+	)
+}

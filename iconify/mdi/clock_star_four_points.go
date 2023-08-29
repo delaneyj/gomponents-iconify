@@ -1,0 +1,14 @@
+package mdi
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ClockStarFourPoints(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M14.4 15.1c-.9 1.1-1.4 2.4-1.4 3.9c0 1 .3 2 .7 2.8c-.5.1-1.1.2-1.7.2c-5.5 0-10-4.5-10-10S6.5 2 12 2s10 4.5 10 10c0 .5-.08.97-.16 1.5l-.04.2C21 13.3 20 13 19 13c-1.3 0-2.4.4-3.4 1.1l-3.1-1.9V7H11v6l3.4 2.1m3.34 2.65L19 15l1.25 2.75L23 19l-2.75 1.26L19 23l-1.26-2.74L15 19l2.74-1.25Z"/>`),
+		g.Group(children),
+	)
+}

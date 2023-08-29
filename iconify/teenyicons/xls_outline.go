@@ -1,0 +1,14 @@
+package teenyicons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func XlsOutline(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 15 15"),
+		g.Raw(`<path fill="currentColor" d="M13.5 3.5h.5v-.207l-.146-.147l-.354.354Zm-3-3l.354-.354L10.707 0H10.5v.5Zm-4 10H6v.5h.5v-.5Zm-2-1H5v-.207l-.146-.147L4.5 9.5Zm-2-2H2v.207l.146.147L2.5 7.5Zm8-1V6H10v.5h.5Zm0 2H10V9h.5v-.5Zm2 0h.5V8h-.5v.5Zm0 2v.5h.5v-.5h-.5Zm-10-1l-.354-.354L2 9.293V9.5h.5Zm2-2l.354.354L5 7.707V7.5h-.5ZM2 5V1.5H1V5h1Zm11-1.5V5h1V3.5h-1ZM2.5 1h8V0h-8v1Zm7.646-.146l3 3l.708-.708l-3-3l-.708.708ZM2 1.5a.5.5 0 0 1 .5-.5V0A1.5 1.5 0 0 0 1 1.5h1ZM1 12v1.5h1V12H1Zm1.5 3h10v-1h-10v1ZM14 13.5V12h-1v1.5h1ZM12.5 15a1.5 1.5 0 0 0 1.5-1.5h-1a.5.5 0 0 1-.5.5v1ZM1 13.5A1.5 1.5 0 0 0 2.5 15v-1a.5.5 0 0 1-.5-.5H1ZM6 6v4.5h1V6H6Zm.5 5H9v-1H6.5v1ZM4 9.5V11h1V9.5H4Zm.854-.354l-2-2l-.708.708l2 2l.708-.708ZM3 7.5V6H2v1.5h1ZM13 6h-2.5v1H13V6Zm-3 .5v2h1v-2h-1Zm.5 2.5h2V8h-2v1Zm1.5-.5v2h1v-2h-1Zm.5 1.5H10v1h2.5v-1ZM3 11V9.5H2V11h1Zm-.146-1.146l2-2l-.708-.708l-2 2l.708.708ZM5 7.5V6H4v1.5h1Z"/>`),
+		g.Group(children),
+	)
+}

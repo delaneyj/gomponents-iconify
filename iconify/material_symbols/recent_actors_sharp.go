@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func RecentActorsSharp(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M1 19V5h14v14H1Zm2-3.65q1.1-.65 2.35-1T8 14q1.4 0 2.65.35t2.35 1V7H3v8.35Zm5-2.1q-1.15 0-1.95-.8t-.8-1.95q0-1.15.8-1.95T8 7.75q1.15 0 1.95.8t.8 1.95q0 1.15-.8 1.95t-1.95.8ZM17 19V5h2v14h-2Zm4 0V5h2v14h-2Z"/>`),
+		g.Group(children),
+	)
+}

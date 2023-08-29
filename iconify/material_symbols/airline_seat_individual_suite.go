@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func AirlineSeatIndividualSuite(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M1 17V7h2v8h8V7h8q1.65 0 2.825 1.175T23 11v6H1Zm6-3q1.25 0 2.125-.875T10 11q0-1.25-.875-2.125T7 8q-1.25 0-2.125.875T4 11q0 1.25.875 2.125T7 14Z"/>`),
+		g.Group(children),
+	)
+}

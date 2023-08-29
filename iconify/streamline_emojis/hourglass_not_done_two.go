@@ -1,0 +1,14 @@
+package streamline_emojis
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func HourglassNotDoneTwo(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 48 48"),
+		g.Raw(`<path fill="#45413c" d="M8.5 46.22a15.5 1.72 0 1 0 31 0a15.5 1.72 0 1 0-31 0Z" opacity=".15"/><path fill="#00b8f0" d="M24 24a11.25 11.25 0 0 1 11.25 11.23v8.31a2 2 0 0 1-2 2H14.71a2 2 0 0 1-2-2v-8.31A11.25 11.25 0 0 1 24 24Z"/><path fill="#4acfff" d="M24 24a11.25 11.25 0 0 0-11.25 11.23v8.31L30.35 26A11.19 11.19 0 0 0 24 24Z"/><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M24 24a11.25 11.25 0 0 1 11.25 11.23v8.31a2 2 0 0 1-2 2H14.71a2 2 0 0 1-2-2v-8.31A11.25 11.25 0 0 1 24 24Z"/><path fill="#00b8f0" d="M35.25 12.74V4.42a2 2 0 0 0-2-1.95H14.71a2 2 0 0 0-2 1.95v8.32a11.25 11.25 0 0 0 22.5 0Z"/><path fill="#4acfff" d="M32.8 2.47H14.71a2 2 0 0 0-2 1.95v8.32a11.2 11.2 0 0 0 2.6 7.18Z"/><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M35.25 12.74V4.42a2 2 0 0 0-2-1.95H14.71a2 2 0 0 0-2 1.95v8.32a11.25 11.25 0 0 0 22.5 0Z"/><path fill="#bf8256" d="M12.75 2.47a2 2 0 0 0 0 3.91h22.5a2 2 0 0 0 0-3.91Z"/><path fill="#dea47a" d="M37.2 4.42a2 2 0 0 0-2-1.95H12.75a2 2 0 0 0-1.95 1.95Z"/><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M12.75 2.47a2 2 0 0 0 0 3.91h22.5a2 2 0 0 0 0-3.91Z"/><path fill="#bf8256" d="M12.75 41.59a2 2 0 0 0 0 3.91h22.5a2 2 0 0 0 0-3.91Z"/><path fill="#915e3a" d="M10.8 43.54a2 2 0 0 0 1.95 2h22.5a2 2 0 0 0 2-2Z"/><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M12.75 41.59a2 2 0 0 0 0 3.91h22.5a2 2 0 0 0 0-3.91Z"/><path fill="#f0d5a8" d="M31.42 13.2a1 1 0 0 1 1.24 1.14a8.81 8.81 0 0 1-17.32 0a1 1 0 0 1 1.24-1.14a26.89 26.89 0 0 0 7.42 1a26.89 26.89 0 0 0 7.42-1Z"/><path fill="#fff5e3" d="m17.09 18.18l4.11-4.12a25.25 25.25 0 0 1-4.62-.86a1 1 0 0 0-1.24 1.14a8.82 8.82 0 0 0 1.75 3.84Z"/><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M31.42 13.2a1 1 0 0 1 1.24 1.14a8.81 8.81 0 0 1-17.32 0a1 1 0 0 1 1.24-1.14a26.89 26.89 0 0 0 7.42 1a26.89 26.89 0 0 0 7.42-1Z"/><path fill="#f0d5a8" d="M14.71 37.68a2 2 0 0 0 1.95 2h14.68a2 2 0 0 0 1.95-2s-1.95-3.92-9.29-3.92s-9.29 3.92-9.29 3.92Z"/><path fill="#fff5e3" d="M22.47 33.83c-6.08.5-7.76 3.85-7.76 3.85a2 2 0 0 0 1.95 2Z"/><path fill="none" stroke="#45413c" stroke-linecap="round" stroke-linejoin="round" d="M14.71 37.68a2 2 0 0 0 1.95 2h14.68a2 2 0 0 0 1.95-2s-1.95-3.92-9.29-3.92s-9.29 3.92-9.29 3.92Z"/>`),
+		g.Group(children),
+	)
+}

@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Bear(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<path fill="#6A462F" d="m24.754 17.919l-6.666-5.333l-8.167 1l-3 4.666l.5 6.667l3.833 5.833s1.834 1.167 2.667 1.667l-2.5 7.667l-.333 6.333l1.5 5.5l2.833 3.667l5.5 3.833s15.667 9 30.667.167l5.833-4.834l3.167-6l.666-4.666l-1.333-8.834l-1.667-2.5l2.834-2.166l2.5-4.834l1.666-5.333l-1.666-5l-4.334-3l-4.166-.167l-6 3.834l-1.334 1.5l-8.333-1.667h-8.167l-6.5 2z"/><path fill="#A57939" d="m29.588 37.752l-2 5l-.834 6.667l2 3.167l.334 4.333l2.833 2.167l8.667-.334l2.333-1l.167-5.167l2-3.166l-1.167-6.667l-2.5-5.5s-7-4.833-11.833.5z"/><path fill="#3F3F3F" d="M30.754 47.752s4.334-4.667 9.834-.333l-1.834 2.833l-6-.167l-2-2.333z"/><path fill="#A57939" d="M47.754 18.419s12.834-4 15.167 8l2-4l-.167-5.5l-3.5-3.833l-5.5-1.334l-5.5 3.667l-2.5 3zm-23.5 0s-12.833-4-15.166 8l-2-4l.166-5.5l3.5-3.833l5.5-1.334l5.5 3.667l2.5 3z"/><circle cx="28.634" cy="36.999" r="2"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M26.009 19.895S18.32 8.27 11.07 13.082c-6.6 4.382-3.91 13.959.603 16.915"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M21.071 58.582c-15.937-6.312-7.85-24.013-7.85-24.013s3.645-9.359 9.341-11.609m28.536 35.622c15.937-6.312 7.85-24.013 7.85-24.013s-3.645-9.359-9.341-11.609"/><circle cx="43.366" cy="36.999" r="2"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="m43.495 43.331l1.56 4.804c.22.817.086 1.682-.367 2.396c-1.22 1.924-4.054 5.119-8.26 2.239h-.857c-4.205 2.88-7.04-.315-8.26-2.239a3.007 3.007 0 0 1-.367-2.396l1.56-4.804"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M40.172 47.924c-.101 3.008-2.805 1.656-2.805 1.656L36 48.904l-1.367.676s-2.704 1.352-2.805-1.656m14.163-28.029S53.68 8.27 60.93 13.082c6.6 4.382 3.91 13.959-.603 16.915M29.946 57.148s5.188 6.601 12.108.562M24.665 17.951s8.71-4.93 22.326 0M36 52.77v-3.19"/>`),
+		g.Group(children),
+	)
+}

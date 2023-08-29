@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func FlagStVincentAndGrenadines(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<path fill="#fcea2b" d="M5 17h62v38H5z"/><path fill="#1e50a0" d="M5 17h21v38H5z"/><path fill="#5c9e31" d="M46 17h21v38H46zm-6.818 24L36 46l-3.182-5L36 36l3.182 5zM43 35l-3.182 5l-3.182-5l3.182-5L43 35zm-7.636 0l-3.182 5L29 35l3.182-5l3.182 5z"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h62v38H5z"/>`),
+		g.Group(children),
+	)
+}

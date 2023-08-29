@@ -1,0 +1,14 @@
+package ic
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func OutlineMuseum(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M22 11V9L12 2L2 9v2h2v9H2v2h20v-2h-2v-9h2zm-4 9H6V9h12v11z"/><path fill="currentColor" d="m10 14l2 3l2-3v4h2v-7h-2l-2 3l-2-3H8v7h2z"/>`),
+		g.Group(children),
+	)
+}

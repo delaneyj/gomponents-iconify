@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func FitWidthRounded(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M4 21q-.425 0-.713-.288T3 20V4q0-.425.288-.713T4 3q.425 0 .713.288T5 4v16q0 .425-.288.713T4 21Zm3-8v-2h2v2H7Zm4 0v-2h2v2h-2Zm4 0v-2h2v2h-2Zm5 8q-.425 0-.713-.288T19 20V4q0-.425.288-.713T20 3q.425 0 .713.288T21 4v16q0 .425-.288.713T20 21Z"/>`),
+		g.Group(children),
+	)
+}

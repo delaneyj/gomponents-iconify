@@ -1,0 +1,14 @@
+package mdi
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func WidgetsOutline(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="m16.7 4.5l2.8 2.8l-2.8 2.8l-2.8-2.8l2.8-2.8M9 5v4H5V5h4m10 10v4h-4v-4h4M16.7 1.7L11 7.3l5.7 5.7H13v8h8v-8h-4.3l5.6-5.7l-5.6-5.6M11 3H3v8h8V3M9 15v4H5v-4h4m2-2H3v8h8v-8Z"/>`),
+		g.Group(children),
+	)
+}

@@ -1,0 +1,14 @@
+package fluent_emoji_flat
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Dango(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 32 32"),
+		g.Raw(`<g fill="none"><path fill="#D3883E" d="M6.777 8.238c-.37 0-.74-.14-1.03-.43l-3.32-3.32c-.57-.57-.57-1.49 0-2.06c.57-.57 1.49-.57 2.06 0l3.31 3.32c.57.57.57 1.49 0 2.06c-.28.29-.65.43-1.02.43Z"/><path fill="#FBB8AB" d="M9.177 14.908a6.06 6.06 0 1 0 0-12.12a6.06 6.06 0 0 0 0 12.12Z"/><path fill="#FFDEA7" d="M15.438 21.168a6.06 6.06 0 1 0 0-12.12a6.06 6.06 0 0 0 0 12.12Z"/><path fill="#00F397" d="M21.707 27.438a6.06 6.06 0 1 0 0-12.12a6.06 6.06 0 0 0 0 12.12Z"/><path fill="#D3883E" d="M28.587 29.997c-.37 0-.74-.14-1.03-.43l-4.38-4.33c-.57-.57-.57-1.49 0-2.06c.57-.57 1.49-.57 2.06 0l4.38 4.33c.57.57.57 1.49 0 2.06c-.29.29-.66.43-1.03.43Z"/></g>`),
+		g.Group(children),
+	)
+}

@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Collaboration(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<g fill="#FCEA2B"><circle cx="21" cy="17" r="3"/><circle cx="55.992" cy="26.324" r="3"/><circle cx="29.993" cy="47.008" r="3"/><path d="m15.437 27.104l3.081-2.714l4.834-.198l2.969 2.827l.684 3.98l-12.081-.008zm35.054 9.326l3.082-2.714l4.834-.198l2.968 2.827l.685 3.98l-12.082-.007zM24.485 57.112l3.081-2.714l4.835-.198l2.968 2.827l.684 3.98l-12.081-.008z"/></g><g fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"><circle cx="21" cy="17" r="3"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 30s1-4.311 3-5.311s4-1 6 0S27 30 27 30"/><circle cx="55.992" cy="26.324" r="3"/><path stroke-linecap="round" stroke-linejoin="round" d="M49.992 39.324s1-4.311 3-5.311s4-1 6 0s3 5.31 3 5.31"/><circle cx="29.993" cy="47.008" r="3"/><path stroke-linecap="round" stroke-linejoin="round" d="M23.993 60.008s1-4.311 3-5.311s4-1 6 0s3 5.31 3 5.31m16.559-39.871C48.333 15.159 42.035 12 35 12c-2.77 0-5.424.49-7.883 1.387m12.316 44.186c8.213-1.604 14.862-7.577 17.427-15.402m-44.773-9.183A23.274 23.274 0 0 0 12 35c0 7.974 4.058 15 10.222 19.127"/></g>`),
+		g.Group(children),
+	)
+}

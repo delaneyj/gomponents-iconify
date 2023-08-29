@@ -1,0 +1,14 @@
+package fluent_mdl_2
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Lightbulb(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 2048 2048"),
+		g.Raw(`<path fill="currentColor" d="M960 0q97 0 187 25t168 71t143 110t110 142t71 169t25 187q0 145-55 269t-157 225q-83 82-127 183t-45 219v256q0 40-15 75t-41 61t-61 41t-75 15H832q-40 0-75-15t-61-41t-41-61t-15-75v-256q0-118-44-219t-128-183q-102-101-157-225t-55-269q0-97 25-187t71-168t110-143T604 96t169-71T960 0zm128 1920q26 0 45-19t19-45v-192H768v192q0 26 19 45t45 19h256zm67-384q13-129 66-234t143-196q83-84 127-183t45-219q0-119-45-224t-124-183t-183-123t-224-46q-119 0-224 45T553 297T430 480t-46 224q0 119 44 218t128 184q90 91 143 196t66 234h390z"/>`),
+		g.Group(children),
+	)
+}

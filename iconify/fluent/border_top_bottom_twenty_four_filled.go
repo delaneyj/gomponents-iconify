@@ -1,0 +1,14 @@
+package fluent
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func BorderTopBottomTwentyFourFilled(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="M4 7a1 1 0 0 1-1-1a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3a1 1 0 1 1-2 0a1 1 0 0 0-1-1H6a1 1 0 0 0-1 1a1 1 0 0 1-1 1Zm1 4a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2Zm14 0a1 1 0 1 1 2 0v2a1 1 0 1 1-2 0v-2ZM3 18a1 1 0 1 1 2 0a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1a1 1 0 1 1 2 0a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3Z"/>`),
+		g.Group(children),
+	)
+}

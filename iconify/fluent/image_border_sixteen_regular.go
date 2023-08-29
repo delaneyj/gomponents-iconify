@@ -1,0 +1,14 @@
+package fluent
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ImageBorderSixteenRegular(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="M9 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2ZM4.501 4A.501.501 0 0 0 4 4.501v6.998a.5.5 0 0 0 .501.501h6.998a.501.501 0 0 0 .501-.501V4.501A.501.501 0 0 0 11.499 4H4.501ZM5 11V5h6v6h-.296L9.202 9.498a1.7 1.7 0 0 0-2.404 0L5.296 11H5Zm3.495-.795L9.29 11H6.71l.795-.795a.7.7 0 0 1 .99 0ZM4.5 2A2.5 2.5 0 0 0 2 4.5v7A2.5 2.5 0 0 0 4.5 14h7a2.5 2.5 0 0 0 2.5-2.5v-7A2.5 2.5 0 0 0 11.5 2h-7ZM3 4.5A1.5 1.5 0 0 1 4.5 3h7A1.5 1.5 0 0 1 13 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 11.5v-7Z"/>`),
+		g.Group(children),
+	)
+}

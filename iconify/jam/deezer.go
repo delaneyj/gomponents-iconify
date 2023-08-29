@@ -1,0 +1,14 @@
+package jam
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Deezer(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M0 9.786h3.64v1.062H0zm0-1.381h3.64v1.062H0zm0-1.38h3.64v1.062H0zm0-1.38h3.64v1.062H0zm0-1.381h3.64v1.062H0zm4.082 5.522h3.641v1.062H4.082zm0-1.381h3.641v1.062H4.082zm0-1.38h3.641v1.062H4.082zm4.082 2.761h3.641v1.062H8.164zm0-1.381h3.641v1.062H8.164zm0-1.38h3.641v1.062H8.164zm0-1.38h3.641v1.062H8.164zm0-1.381h3.641v1.062H8.164zm0-1.38h3.641v1.062H8.164zm0-1.381h3.641v1.062H8.164zm4.082 8.283h3.641v1.062h-3.641zm0-1.381h3.641v1.062h-3.641zm0-1.38h3.641v1.062h-3.641zm0-1.38h3.641v1.062h-3.641zm0-1.381h3.641v1.062h-3.641zm4.082 5.522h3.641v1.062h-3.641zm0-1.381h3.641v1.062h-3.641zm0-1.38h3.641v1.062h-3.641zm0-1.38h3.641v1.062h-3.641zm0-1.381h3.641v1.062h-3.641zm0-1.38h3.641v1.062h-3.641zm0-1.381h3.641v1.062h-3.641zm0-1.381h3.641v1.062h-3.641z"/>`),
+		g.Group(children),
+	)
+}

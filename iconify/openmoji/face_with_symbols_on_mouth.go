@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func FaceWithSymbolsOnMouth(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M44.96 44.374v4.471"/><circle cx="44.926" cy="51.647" r="1"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m28.147 44.081l-1.101 7.238m4.323-7.238l-1.101 7.238m-4.48-5.222l7.321-.007m-7.803 3.193l7.322-.007m7.59-3.557a1.532 1.532 0 0 0-1.418-.827a1.571 1.571 0 0 0-1.677 1.352s-.243 1.37 1.813 1.434c0 0 1.46.243 1.46 1.46c0 1.334-1.433 1.38-1.433 1.38s-1.37.104-1.752-.732m1.594-5.147v-1.005m0 8.144v-1.005"/><path fill="#ea5a47" d="M36 13a23 23 0 1 0 23 23a23.026 23.026 0 0 0-23-23Z"/><rect width="32.264" height="13.575" x="19.518" y="41.076" fill="#3f3f3f" rx="4.077"/><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M44.96 44.374v4.471"/><circle cx="44.926" cy="51.647" r="1" fill="#fff"/><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m28.147 44.081l-1.101 7.238m4.323-7.238l-1.101 7.238m-4.48-5.222l7.321-.007m-7.803 3.193l7.322-.007m7.59-3.557a1.532 1.532 0 0 0-1.418-.827a1.571 1.571 0 0 0-1.677 1.352s-.243 1.37 1.813 1.434c0 0 1.46.243 1.46 1.46c0 1.334-1.433 1.38-1.433 1.38s-1.37.104-1.752-.732m1.594-5.147v-1.005m0 8.144v-1.005"/><circle cx="36" cy="36" r="23" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/><path d="M30 33.925a3 3 0 1 1-3-3a3.001 3.001 0 0 1 3 3m18 0a3 3 0 1 1-3-3a3.001 3.001 0 0 1 3 3"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m23 25.113l7 4m19-4l-7 4"/><rect width="32.264" height="13.575" x="19.868" y="41.076" fill="none" stroke="#000" stroke-miterlimit="2" stroke-width="2" rx="4.077"/>`),
+		g.Group(children),
+	)
+}

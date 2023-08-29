@@ -1,0 +1,14 @@
+package clarity
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func FileSolidBadged(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 36 36"),
+		g.Raw(`<path fill="currentColor" d="M27.25 13H21V5.84l1.64 1.6a7.25 7.25 0 0 1 0-2.74l-.75-.7H7.83A1.88 1.88 0 0 0 6 5.91v24.18A1.88 1.88 0 0 0 7.83 32h20.34A1.88 1.88 0 0 0 30 30.09V13.5a7.47 7.47 0 0 1-2.75-.5Z" class="clr-i-solid--badged clr-i-solid-path-1--badged"/><circle cx="30" cy="6" r="5" fill="currentColor" class="clr-i-solid--badged clr-i-solid-path-2--badged clr-i-badge"/><path fill="none" d="M0 0h36v36H0z"/>`),
+		g.Group(children),
+	)
+}

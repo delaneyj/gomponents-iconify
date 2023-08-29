@@ -1,0 +1,14 @@
+package game_icons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func IBrick(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 512 512"),
+		g.Raw(`<path fill="currentColor" d="M208 26a9.5 9.5 0 0 0-9.5 9.5v96a9.5 9.5 0 0 0 9.5 9.5a9.5 9.5 0 0 0-9.5 9.5v96a9.5 9.5 0 0 0 9.5 9.5a9.5 9.5 0 0 0-9.5 9.5v96a9.5 9.5 0 0 0 9.5 9.5a9.5 9.5 0 0 0-9.5 9.5v96a9.5 9.5 0 0 0 9.5 9.5h96a9.5 9.5 0 0 0 9.5-9.5v-96a9.5 9.5 0 0 0-9.5-9.5a9.5 9.5 0 0 0 9.5-9.5v-96a9.5 9.5 0 0 0-9.5-9.5a9.5 9.5 0 0 0 9.5-9.5v-96a9.5 9.5 0 0 0-9.5-9.5a9.5 9.5 0 0 0 9.5-9.5v-96A9.5 9.5 0 0 0 304 26h-96zm9.5 19h77v77h-77V45zm0 115h77v77h-77v-77zm0 115h77v77h-77v-77zm0 115h77v77h-77v-77z"/>`),
+		g.Group(children),
+	)
+}

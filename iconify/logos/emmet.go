@@ -1,0 +1,14 @@
+package logos
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Emmet(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 256 256"),
+		g.Raw(`<circle cx="127.555" cy="128.184" r="127.555" fill="#1C1C20"/><path fill="#BAFFA9" d="m178.496 124.737l-14.205-14.205l7.306-30.035l-30.441 6.9l-13.8-13.8l68.187-17.047l-17.047 68.187Z"/><path fill="#7ACB16" d="M154.956 218.901L33.192 97.138L101.38 80.09l13.8 13.8l-48.706 12.176l27.6 27.6l32.064-7.712l-8.117 31.658l27.6 27.6l12.176-48.705l14.205 14.206l-17.046 68.187Z"/>`),
+		g.Group(children),
+	)
+}

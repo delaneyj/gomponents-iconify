@@ -1,0 +1,14 @@
+package cib
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Statuspage(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 32 32"),
+		g.Raw(`<path fill="currentColor" d="M16.01 12.797a7.49 7.49 0 0 1 5.365 2.161c1.427 1.406 2.234 3.328 2.234 5.333s-.807 3.927-2.234 5.339a7.505 7.505 0 0 1-5.365 2.161a7.5 7.5 0 0 1-7.396-7.5a7.496 7.496 0 0 1 7.396-7.495zM.203 11.625l4.031 4.76a.846.846 0 0 0 1.214.094c6.516-5.839 14.63-5.839 21.12 0a.857.857 0 0 0 1.224-.094l4.005-4.76a.858.858 0 0 0-.099-1.208c-9.464-8.276-21.948-8.276-31.406 0a.867.867 0 0 0-.089 1.208z"/>`),
+		g.Group(children),
+	)
+}

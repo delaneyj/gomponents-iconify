@@ -1,0 +1,14 @@
+package si_glyph
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func CashierMachine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 17 0"),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M13.641 4.012h-1.656V2.957h1.352c.346 0 .625-.346.625-.771V.772c0-.427-.279-.771-.625-.771H9.646c-.346 0-.624.345-.624.771v1.414c0 .426.278.771.624.771h1.378v1.055H4.353c-.37 0-.67.3-.67.668l-1.67 8.631V16h13.998v-2.689L14.312 4.68a.67.67 0 0 0-.671-.668zm-7.625 8.004H4.985v-1.047h1.031v1.047zm-1.032-2V8.969h1.031v1.047H4.984zm3.032 2.015H6.985v-1.062h1.031v1.062zm0-2.031H6.969V8.984h1.047V10zm2 2.029H8.969v-1.061h1.047v1.061zM8.969 10V8.969h1.047V10H8.969zm1.047-2H4.985V6h5.031v2zM13 8h-2.018V6.98H13V8z"/>`),
+		g.Group(children),
+	)
+}

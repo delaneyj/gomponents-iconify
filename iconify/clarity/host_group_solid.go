@@ -1,0 +1,14 @@
+package clarity
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func HostGroupSolid(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 36 36"),
+		g.Raw(`<path fill="currentColor" d="M15.08 31h-14A1.08 1.08 0 0 1 0 30V9c0-.596.484-1.08 1.08-1.08h14c.596 0 1.08.484 1.08 1.08v21a1.08 1.08 0 0 1-1.08 1Zm-11-19.04v2h8v-2h-8Zm3 12.92v2.16h2v-2.16h-2Z" class="clr-i-solid clr-i-solid-path-1"/><path fill="currentColor" d="M20.1 24.81h-2V6h-12V4h13a1 1 0 0 1 1 1v19.81Z" class="clr-i-solid clr-i-solid-path-2"/><path fill="currentColor" d="M24.08 20h-2V2h-11V0h12a1 1 0 0 1 1 1v19Z" class="clr-i-solid clr-i-solid-path-3"/><path fill="none" d="M0 0h36v36H0z"/>`),
+		g.Group(children),
+	)
+}

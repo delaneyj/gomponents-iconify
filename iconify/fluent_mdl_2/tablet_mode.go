@@ -1,0 +1,14 @@
+package fluent_mdl_2
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func TabletMode(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 2048 2048"),
+		g.Raw(`<path fill="currentColor" d="M1920 1035q29 10 52 28t41 42t26 52t9 59v256q0 119-45 224t-124 183t-183 123t-224 46q-110 0-208-39t-176-108t-127-162t-62-203H128q-27 0-50-10t-40-27t-28-41t-10-50V256q0-27 10-50t27-40t41-28t50-10h1664q27 0 50 10t40 27t28 41t10 50v779zM896 1280q0-53 20-99t55-82t81-55t100-20V704q0-40 15-75t41-61t61-41t75-15q40 0 74 15t61 41t41 61t15 75v160q0 79 1 160h256V256H128v1152h768v-128zm1024-64q0-26-19-45t-45-19h-448V704q0-26-19-45t-45-19q-26 0-45 19t-19 45v768q0 26-19 45t-45 19q-26 0-45-19t-19-45v-320q-27 0-50 10t-40 27t-28 41t-10 50v192q0 93 35 174t96 142t142 96t175 36q93 0 174-35t142-96t96-142t36-175v-256z"/>`),
+		g.Group(children),
+	)
+}

@@ -1,0 +1,14 @@
+package fluent
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func TableInsertColumnSixteenRegular(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="M3 2.5a.5.5 0 0 0-1 0v11a.5.5 0 0 0 1 0v-11Zm11 0a.5.5 0 0 0-1 0v11a.5.5 0 0 0 1 0v-11ZM6.5 2A1.5 1.5 0 0 0 5 3.5v9A1.5 1.5 0 0 0 6.5 14h3a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 9.5 2h-3ZM6 3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V5H6V3.5ZM6 6h4v4H6V6Zm0 5h4v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V11Z"/>`),
+		g.Group(children),
+	)
+}

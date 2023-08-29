@@ -1,0 +1,14 @@
+package whh
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Honeycomb(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 1024 1024"),
+		g.Raw(`<path fill="currentColor" d="M1024 689v224l-192 112l-160-93l-160 93l-160-93l-160 93L0 913V689l192-112V449L0 337V113L192 0l160 94L512 0l160 94L832 0l192 113v224l-128 74v203zM384 881l128 80l128-80V721l-110-69l-146 85v144zM192 641L64 721v160l128 80l128-80V721zm128-496L192 65L64 145v160l128 80l128-80V145zm-64 288v160l128 80l128-80V433l-128-80zm384-288L512 65l-128 80v144l146 85l110-69V145zm-64 288v160l128 80l128-80V433l-128-80zm384-128V145L832 65l-128 80v144l146 85zM850 652l-146 85v144l128 80l128-80V721z"/>`),
+		g.Group(children),
+	)
+}

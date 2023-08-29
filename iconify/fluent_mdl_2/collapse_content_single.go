@@ -1,0 +1,14 @@
+package fluent_mdl_2
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func CollapseContentSingle(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 2048 2048"),
+		g.Raw(`<path fill="currentColor" d="M1792 256v1664H128V256h1664zm-128 128H256v1408h1408V384zm-256 768H512v-128h896v128z"/>`),
+		g.Group(children),
+	)
+}

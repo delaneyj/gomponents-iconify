@@ -1,0 +1,14 @@
+package fluent
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func HeadphonesSoundWaveTwentyEightFilled(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="M3.5 14C3.5 8.201 8.201 3.5 14 3.5S24.5 8.201 24.5 14v2.5h-2.75a.75.75 0 0 0-.75.75v8c0 .414.336.75.75.75H23a3 3 0 0 0 3-3v-9c0-6.627-5.373-12-12-12S2 7.373 2 14v9a3 3 0 0 0 3 3h1.25a.75.75 0 0 0 .75-.75v-8a.75.75 0 0 0-.75-.75H3.5V14Zm11.25-.25a.75.75 0 0 0-1.5 0v12.5a.75.75 0 0 0 1.5 0v-12.5Zm-4.5 2.5A.75.75 0 0 1 11 17v5.25a.75.75 0 0 1-1.5 0V17a.75.75 0 0 1 .75-.75Zm8.25.75a.75.75 0 0 0-1.5 0v5.25a.75.75 0 0 0 1.5 0V17Z"/>`),
+		g.Group(children),
+	)
+}

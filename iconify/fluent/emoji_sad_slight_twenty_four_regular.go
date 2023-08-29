@@ -1,0 +1,14 @@
+package fluent
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func EmojiSadSlightTwentyFourRegular(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="M10.25 10a1.25 1.25 0 1 0-2.499 0a1.25 1.25 0 0 0 2.499 0Zm6 0a1.25 1.25 0 1 0-2.499 0a1.25 1.25 0 0 0 2.499 0Zm-.5 4c-.85 0-1.757.213-2.541.519c-.777.302-1.514.724-1.99 1.2a.75.75 0 1 0 1.061 1.06c.275-.274.803-.602 1.473-.862c.66-.257 1.379-.418 1.997-.418h.6a.75.75 0 0 0 0-1.5h-.6Zm6.252-2c0-5.524-4.478-10.002-10.002-10.002C6.476 1.998 2 6.476 2 12c-.001 5.523 4.476 10 10 10s10.002-4.478 10.002-10.001ZM3.499 12a8.502 8.502 0 1 1 17.003 0a8.502 8.502 0 0 1-17.003 0Z"/>`),
+		g.Group(children),
+	)
+}

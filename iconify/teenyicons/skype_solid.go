@@ -1,0 +1,14 @@
+package teenyicons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func SkypeSolid(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 15 15"),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M0 4.457A4.456 4.456 0 0 1 6.778.652A6.46 6.46 0 0 1 7.5.61a6.892 6.892 0 0 1 6.891 6.89c0 .248-.017.49-.043.723a4.457 4.457 0 0 1-6.126 6.125a6.477 6.477 0 0 1-.722.043A6.891 6.891 0 0 1 .609 7.5c0-.248.017-.49.043-.723A4.435 4.435 0 0 1 0 4.457ZM6 6a1 1 0 0 1 1-1h.882c.496 0 .949.28 1.17.724l.895-.448A2.309 2.309 0 0 0 7.882 4H7a2 2 0 1 0 0 4h1a1 1 0 0 1 0 2h-.882c-.496 0-.95-.28-1.17-.724l-.895.448A2.309 2.309 0 0 0 7.118 11H8a2 2 0 1 0 0-4H7a1 1 0 0 1-1-1Z" clip-rule="evenodd"/>`),
+		g.Group(children),
+	)
+}

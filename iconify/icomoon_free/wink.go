@@ -1,0 +1,14 @@
+package icomoon_free
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Wink(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 0 0"),
+		g.Raw(`<path fill="currentColor" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM8 1.5a6.5 6.5 0 1 1 0 13a6.5 6.5 0 0 1 0-13zm.48 9.61c2.191-.433 3.892-1.43 4.507-2.759C12.649 10.975 10.463 13 7.817 13c-1.863 0-3.498-1.004-4.42-2.515c1.1.86 3.04 1.028 5.083.625zM10 5.5c0-.828.448-1.5 1-1.5s1 .672 1 1.5S11.552 7 11 7s-1-.672-1-1.5zm-4.5.305c-.653 0-1.208.245-1.414.586C4.031 6.299 4 5.888 4 5.786c0-.485.672-.879 1.5-.879s1.5.394 1.5.879c0 .103-.03.514-.086.605c-.206-.341-.761-.586-1.414-.586z"/>`),
+		g.Group(children),
+	)
+}

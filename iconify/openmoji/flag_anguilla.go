@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func FlagAnguilla(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<path fill="#1e50a0" d="M5 17h62v38H5z"/><path fill="#fff" d="M59 29v5c0 9-2.667 13-8 15c-5.333-2-8-6-8-15v-5ZM9.887 18H6v2.332L32.113 36H36v-2.332L9.887 18z"/><path fill="#fff" d="M36 20.332V18h-3.887L6 33.668V36h3.887L36 20.332z"/><path fill="#fff" d="M6 24h30v6H6z"/><path fill="#fff" d="M18 18h6v18h-6z"/><path fill="#d22f27" d="M20 18h2v18h-2z"/><path fill="#d22f27" d="M6 26h30v2H6zm30 7.668L29.887 30H26l10 6v-2.332zM36 18h-3.887L24 22.868V24h2l10-6zM6 20.332L12.113 24H16L6 18v2.332zM6 36h3.887L18 31.132V30h-2L6 36z"/><path fill="none" stroke="#f1b31c" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M54.5 32.5c-2.204-.506-3.5.187-4 2m-3.964 1.402c.664 2.162 1.912 2.938 3.732 2.464m3.196 2.732c1.54-1.656 1.588-3.125.268-4.464"/><path fill="#92d3f5" d="M44.455 43A10.67 10.67 0 0 0 51 49a10.67 10.67 0 0 0 6.545-6Z"/><path fill="none" stroke="#fcea2b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M59 29v5c0 9-2.667 13-8 15c-5.333-2-8-6-8-15v-5Z"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h62v38H5z"/>`),
+		g.Group(children),
+	)
+}

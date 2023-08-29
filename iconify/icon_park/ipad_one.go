@@ -1,0 +1,14 @@
+package icon_park
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func IpadOne(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 48 48"),
+		g.Raw(`<g fill="none" stroke-width="4"><rect width="38" height="30" x="5" y="10" fill="#2F88FF" stroke="#000" rx="2"/><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M11 27V23"/></g>`),
+		g.Group(children),
+	)
+}

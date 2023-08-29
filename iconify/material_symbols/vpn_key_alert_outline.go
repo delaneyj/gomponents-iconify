@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func VpnKeyAlertOutline(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M15 18v-3h-2.8q-.8 1.35-2.175 2.175T7 18q-2.5 0-4.25-1.75T1 12q0-2.5 1.75-4.25T7 6q1.65 0 3.025.825T12.2 9H19v2h-8.15q-.2-.975-1.2-1.988T7 8Q5.35 8 4.175 9.175T3 12q0 1.65 1.175 2.825T7 16q1.65 0 2.65-1.012T10.85 13H17v3h2v2h-4Zm-8-4q.825 0 1.413-.588T9 12q0-.825-.588-1.413T7 10q-.825 0-1.413.588T5 12q0 .825.588 1.413T7 14Zm0-2Zm15 6q-.425 0-.713-.288T21 17q0-.425.288-.713T22 16q.425 0 .713.288T23 17q0 .425-.288.713T22 18Zm-1-4V9h2v5h-2Z"/>`),
+		g.Group(children),
+	)
+}

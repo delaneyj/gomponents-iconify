@@ -2,6 +2,7 @@ package iconify
 
 import (
 	"context"
+	"errors"
 	"fmt"
 	"log"
 	"net/http"
@@ -10,6 +11,7 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
+	"sync"
 	"text/template"
 
 	"github.com/delaneyj/toolbelt"
@@ -27,19 +29,23 @@ import (
 //go:embed generateIcon.gotmpl
 var generateIconTmpl string
 
+//go:embed generateIconNamespace.gotmpl
+var generateIconNamespaceTmpl string
+
 func GenerateIconify(ctx context.Context, gentmpDir, output string) error {
 	generateIconTmpl := template.Must(template.New("generateIcon").Parse(generateIconTmpl))
+	generateIconNamespaceTmpl := template.Must(template.New("generateIconNamespace").Parse(generateIconNamespaceTmpl))
 
 	tmpParentDir := filepath.Join(gentmpDir, "iconify")
 	tmpIconSetsDir := filepath.Join(tmpParentDir, "json")
 	if _, err := os.Stat(filepath.Join(tmpParentDir, "collections.json")); os.IsNotExist(err) {
 		if err := os.MkdirAll(tmpIconSetsDir, 0755); err != nil {
-			return fmt.Errorf("could not create iconify directory: %v", err)
+			return fmt.Errorf("could not create iconify directory: %w", err)
 		}
 
 		iconCollections := map[string]iconBasicCollectionInfo{}
 		if err := updateIconifyCache(ctx, tmpParentDir, "collections.json", &iconCollections); err != nil {
-			return fmt.Errorf("could not get iconify collections: %v", err)
+			return fmt.Errorf("could not get iconify collections: %w", err)
 		}
 		log.Print("got icon collections")
 
@@ -52,7 +58,7 @@ func GenerateIconify(ctx context.Context, gentmpDir, output string) error {
 			eg.Go(func() error {
 				path := fmt.Sprintf("json/%s.json", collectionName)
 				if err := updateIconifyCache(ctx, tmpParentDir, path, &details); err != nil {
-					log.Printf("!!!! could not get iconify collection %s: %v", collectionName, err)
+					log.Printf("!!!! could not get iconify collection %s: %w", collectionName, err)
 				} else {
 					log.Printf("got icon collection %s", collectionName)
 				}
@@ -61,16 +67,16 @@ func GenerateIconify(ctx context.Context, gentmpDir, output string) error {
 		}
 
 		if err := eg.Wait(); err != nil {
-			return fmt.Errorf("could not get iconify collections: %v", err)
+			return fmt.Errorf("could not get iconify collections: %w", err)
 		}
 	}
 
 	iconifyPath := filepath.Join(output, "iconify")
 	if err := os.RemoveAll(iconifyPath); err != nil {
-		return fmt.Errorf("could not remove iconify directory: %v", err)
+		return fmt.Errorf("could not remove iconify directory: %w", err)
 	}
 	if err := os.MkdirAll(iconifyPath, 0755); err != nil {
-		return fmt.Errorf("could not create iconify directory: %v", err)
+		return fmt.Errorf("could not create iconify directory: %w", err)
 	}
 
 	numberWordGroupsRegex := regexp.MustCompile(`(?P<number>\d*)*(?P<word>\D*)`)
@@ -87,12 +93,12 @@ func GenerateIconify(ctx context.Context, gentmpDir, output string) error {
 
 		b, err := os.ReadFile(path)
 		if err != nil {
-			return fmt.Errorf("could not read file %s: %v", path, err)
+			return fmt.Errorf("could not read file %s: %w", path, err)
 		}
 
 		details := iconCollectionDetailsInfo{}
 		if err := json.Unmarshal(b, &details); err != nil {
-			return fmt.Errorf("could not unmarshal JSON: %v", err)
+			return fmt.Errorf("could not unmarshal JSON: %w", err)
 		}
 
 		// some icons have a prefix that is not a valid Go identifier.  Specifically, the
@@ -113,7 +119,7 @@ func GenerateIconify(ctx context.Context, gentmpDir, output string) error {
 					if numbersStr != "" {
 						number, err := strconv.Atoi(numbersStr)
 						if err != nil {
-							return fmt.Errorf("could not convert %s to number: %v", numbersStr, err)
+							return fmt.Errorf("could not convert %s to number: %w", numbersStr, err)
 						}
 						numbersStr = num2words.Convert(number) + "_"
 					}
@@ -166,25 +172,84 @@ func GenerateIconify(ctx context.Context, gentmpDir, output string) error {
 
 		packagePath := filepath.Join(iconifyPath, packageName)
 		if err := os.MkdirAll(packagePath, 0755); err != nil {
-			return fmt.Errorf("could not create iconify directory: %v", err)
+			return fmt.Errorf("could not create iconify directory: %w", err)
 		}
-		fullPath := filepath.Join(packagePath, fmt.Sprintf("%s.go", packageName))
+		namespaceFullPath := filepath.Join(packagePath, fmt.Sprintf("%s_pkg_info.go", packageName))
 
-		f, err := os.Create(fullPath)
+		namespaceFile, err := os.Create(namespaceFullPath)
 		if err != nil {
-			return fmt.Errorf("could not create file %s: %v", fullPath, err)
+			return fmt.Errorf("could not create file %s: %w", namespaceFullPath, err)
 		}
-		defer f.Close()
+		defer namespaceFile.Close()
 
-		if err := generateIconTmpl.Execute(f, iconPkg); err != nil {
-			return fmt.Errorf("could not execute template: %v", err)
+		if err := generateIconNamespaceTmpl.Execute(namespaceFile, iconPkg); err != nil {
+			return fmt.Errorf("could not execute template: %w", err)
 		}
 
-		log.Printf("wrote %s", fullPath)
+		type IconCtx struct {
+			Name                  toolbelt.CasedString
+			PackageName           toolbelt.CasedString
+			SvgBody               string
+			ViewWidth, ViewHeight int
+		}
+
+		wg := &sync.WaitGroup{}
+		wg.Add(len(iconPkg.Icons))
+		errCh := make(chan error, len(iconPkg.Icons))
+
+		for _, icon := range iconPkg.Icons {
+			func(icon NamedIcon) {
+				defer wg.Done()
+
+				iconFullPath := filepath.Join(packagePath, fmt.Sprintf("%s.go", icon.Name.Snake))
+				iconFile, err := os.Create(iconFullPath)
+				if err != nil {
+					errCh <- fmt.Errorf("could not create file %s: %w", iconFullPath, err)
+					return
+				}
+				defer iconFile.Close()
+
+				iconCtx := IconCtx{
+					PackageName: iconPkg.Name,
+					Name:        icon.Name,
+					SvgBody:     icon.Icon.SvgBody,
+					ViewWidth:   iconPkg.ViewWidth,
+					ViewHeight:  iconPkg.ViewHeight,
+				}
+
+				buf := bytebufferpool.Get()
+				defer bytebufferpool.Put(buf)
+
+				err = generateIconTmpl.Execute(buf, iconCtx)
+				if err != nil {
+					err = fmt.Errorf("could not execute template: %w", err)
+					errCh <- err
+					return
+				}
+
+				if _, err := iconFile.Write(buf.Bytes()); err != nil {
+					err = fmt.Errorf("could not write file %s: %w", iconFullPath, err)
+					errCh <- err
+					return
+				}
+
+			}(icon)
+		}
+		wg.Wait()
+
+		if len(errCh) > 0 {
+			errs := []error{}
+			for err := range errCh {
+				errs = append(errs, err)
+			}
+			return errors.Join(errs...)
+		}
+
+		log.Printf("wrote %s", namespaceFullPath)
 
 		return nil
 	}); err != nil {
-		return fmt.Errorf("could not walk iconify directory: %v", err)
+		return fmt.Errorf("could not walk iconify directory: %w", err)
 	}
 
 	return nil
@@ -202,16 +267,16 @@ func updateIconifyCache(ctx context.Context, gentmpDir, iconifyJSONPath string, 
 
 	req, err := http.NewRequestWithContext(ctx, http.MethodGet, fullURL, nil)
 	if err != nil {
-		return fmt.Errorf("could not create request: %v", err)
+		return fmt.Errorf("could not create request: %w", err)
 	}
 
 	res, err := http.DefaultClient.Do(req)
 	if err != nil {
-		return fmt.Errorf("could not get iconify %s: %v", fullURL, err)
+		return fmt.Errorf("could not get iconify %s: %w", fullURL, err)
 	}
 	defer res.Body.Close()
 	if res.StatusCode != http.StatusOK {
-		return fmt.Errorf("could not get iconify %s: %v", fullURL, res.Status)
+		return fmt.Errorf("could not get iconify %s: %w", fullURL, res.Status)
 	}
 
 	buf := bytebufferpool.Get()
@@ -219,27 +284,27 @@ func updateIconifyCache(ctx context.Context, gentmpDir, iconifyJSONPath string, 
 
 	_, err = buf.ReadFrom(res.Body)
 	if err != nil {
-		return fmt.Errorf("could not read body: %v", err)
+		return fmt.Errorf("could not read body: %w", err)
 	}
 
 	b := buf.Bytes()
 
 	if err := json.Unmarshal(b, v); err != nil {
-		return fmt.Errorf("could not unmarshal JSON: %v", err)
+		return fmt.Errorf("could not unmarshal JSON: %w", err)
 	}
 
 	jsonPath := filepath.Join(gentmpDir, iconifyJSONPath)
 	subDirPath := filepath.Dir(jsonPath)
 	if err := os.MkdirAll(subDirPath, 0755); err != nil {
-		return fmt.Errorf("could not create directory %s: %v", subDirPath, err)
+		return fmt.Errorf("could not create directory %s: %w", subDirPath, err)
 	}
 
 	bytes, err := json.MarshalIndent(v, "", "  ")
 	if err != nil {
-		return fmt.Errorf("could not marshal JSON: %v", err)
+		return fmt.Errorf("could not marshal JSON: %w", err)
 	}
 	if err := os.WriteFile(jsonPath, bytes, 0644); err != nil {
-		return fmt.Errorf("could not write file %s: %v", jsonPath, err)
+		return fmt.Errorf("could not write file %s: %w", jsonPath, err)
 	}
 
 	return nil

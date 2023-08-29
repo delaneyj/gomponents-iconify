@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func TireRepairSharp(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M19 8q-.425 0-.713-.288T18 7q0-.2.088-.388T18.3 6.3q.3-.3 1.375-.675l1.075-.375l-.375 1.075q-.15.425-.338.825t-.337.55q-.125.125-.312.213T19 8ZM4 21q-.825 0-1.413-.588T2 19V5q0-.825.588-1.413T4 3h6q.825 0 1.413.588T12 5v8h4v6h2v-6h-1v-1.425q-1.35-.575-2.175-1.8T14 7q0-2.075 1.463-3.538T19 2q2.075 0 3.538 1.463T24 7q0 1.55-.825 2.775T21 11.575V13h-1v8h-6v-6h-2v4q0 .825-.588 1.413T10 21H4Zm15-11q1.25 0 2.125-.875T22 7q0-1.25-.875-2.125T19 4q-1.25 0-2.125.875T16 7q0 1.25.875 2.125T19 10ZM6 9V6.175L4.825 5H4v2l2 2Zm2 0l2-2V5h-.825L8 6.175V9Zm-2 5v-2.825l-2-2V12l2 2Zm2 0l2-2V9.175l-2 2V14Zm-2 5v-2.825l-2-2V17l2 2Zm2 0l2-2v-2.825l-2 2V19Z"/>`),
+		g.Group(children),
+	)
+}

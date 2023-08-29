@@ -1,0 +1,14 @@
+package fluent
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func TextFontInfoSixteenRegular(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="M5.47 1.827a.5.5 0 0 0-.939 0l-3.5 9.5a.5.5 0 0 0 .938.346L2.954 9h2.253c.099-.349.23-.683.393-1H3.322L5 3.446l1.293 3.51a5.6 5.6 0 0 1 .785-.762L5.47 1.827Zm5.03 6.048a.625.625 0 1 0 0 1.25a.625.625 0 0 0 0-1.25Zm0 5.125a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-1 0v2a.5.5 0 0 0 .5.5Zm0-7a4.5 4.5 0 1 0 0 9a4.5 4.5 0 0 0 0-9Zm0 8a3.5 3.5 0 1 1 0-7a3.5 3.5 0 0 1 0 7Z"/>`),
+		g.Group(children),
+	)
+}

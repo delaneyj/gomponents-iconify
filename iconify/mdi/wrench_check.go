@@ -1,0 +1,14 @@
+package mdi
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func WrenchCheck(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M9 2c1.8.6 3 2.3 3 4.2c0 2-1.2 3.7-3 4.3v11c0 .3-.2.5-.5.5h-2c-.3 0-.5-.2-.5-.6v-11c-1.8-.6-3-2.3-3-4.2S4.2 2.6 6 2v3.7h3V2m11.6 11l1.4 1.41L15.47 21L12 17.5l1.4-1.41l2.07 2.08L20.6 13"/>`),
+		g.Group(children),
+	)
+}

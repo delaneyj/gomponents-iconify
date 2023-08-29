@@ -1,0 +1,14 @@
+package fluent_emoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func DropOfBlood(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 32 32"),
+		g.Raw(`<g fill="none"><path fill="url(#f413id3)" d="M7.283 14.94L13.9 3.322a2.466 2.466 0 0 1 4.292.011l6.738 11.97h-.011a10.02 10.02 0 0 1 1.143 4.665c0 5.557-4.505 10.062-10.062 10.062c-5.557 0-10.063-4.505-10.063-10.062c0-1.742.443-3.38 1.221-4.808h-.002l.063-.11l.064-.112Z"/><path fill="url(#f413id0)" d="M7.283 14.94L13.9 3.322a2.466 2.466 0 0 1 4.292.011l6.738 11.97h-.011a10.02 10.02 0 0 1 1.143 4.665c0 5.557-4.505 10.062-10.062 10.062c-5.557 0-10.063-4.505-10.063-10.062c0-1.742.443-3.38 1.221-4.808h-.002l.063-.11l.064-.112Z"/><path fill="url(#f413id1)" d="M7.283 14.94L13.9 3.322a2.466 2.466 0 0 1 4.292.011l6.738 11.97h-.011a10.02 10.02 0 0 1 1.143 4.665c0 5.557-4.505 10.062-10.062 10.062c-5.557 0-10.063-4.505-10.063-10.062c0-1.742.443-3.38 1.221-4.808h-.002l.063-.11l.064-.112Z"/><path fill="url(#f413id2)" d="M7.283 14.94L13.9 3.322a2.466 2.466 0 0 1 4.292.011l6.738 11.97h-.011a10.02 10.02 0 0 1 1.143 4.665c0 5.557-4.505 10.062-10.062 10.062c-5.557 0-10.063-4.505-10.063-10.062c0-1.742.443-3.38 1.221-4.808h-.002l.063-.11l.064-.112Z"/><path fill="url(#f413id4)" d="M7.283 14.94L13.9 3.322a2.466 2.466 0 0 1 4.292.011l6.738 11.97h-.011a10.02 10.02 0 0 1 1.143 4.665c0 5.557-4.505 10.062-10.062 10.062c-5.557 0-10.063-4.505-10.063-10.062c0-1.742.443-3.38 1.221-4.808h-.002l.063-.11l.064-.112Z"/><defs><radialGradient id="f413id0" cx="0" cy="0" r="1" gradientTransform="matrix(0 17.2646 -15.1956 0 16 12.767)" gradientUnits="userSpaceOnUse"><stop offset=".901" stop-color="#FF5AB2" stop-opacity="0"/><stop offset="1" stop-color="#FF5AB2"/></radialGradient><radialGradient id="f413id1" cx="0" cy="0" r="1" gradientTransform="matrix(-8.28031 6.06516 -3.80655 -5.1968 23.378 18.199)" gradientUnits="userSpaceOnUse"><stop stop-color="#FF6B8D"/><stop offset="1" stop-color="#FF6B8D" stop-opacity="0"/></radialGradient><radialGradient id="f413id2" cx="0" cy="0" r="1" gradientTransform="matrix(7.17264 13.44897 -6.63395 3.53803 20.266 3.96)" gradientUnits="userSpaceOnUse"><stop stop-color="#FF60AB"/><stop offset="1" stop-color="#FF60AB" stop-opacity="0"/></radialGradient><linearGradient id="f413id3" x1="16" x2="16" y1="8.75" y2="29.25" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2A85"/><stop offset="1" stop-color="#FF1F5D"/></linearGradient><linearGradient id="f413id4" x1="9.313" x2="16" y1="10.75" y2="13" gradientUnits="userSpaceOnUse"><stop offset=".032" stop-color="#AF4963"/><stop offset="1" stop-color="#E5254F" stop-opacity="0"/></linearGradient></defs></g>`),
+		g.Group(children),
+	)
+}

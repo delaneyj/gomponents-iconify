@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func DoorSlidingOutlineSharp(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M9 13q-.425 0-.713-.288T8 12q0-.425.288-.713T9 11q.425 0 .713.288T10 12q0 .425-.288.713T9 13Zm6 0q-.425 0-.713-.288T14 12q0-.425.288-.713T15 11q.425 0 .713.288T16 12q0 .425-.288.713T15 13ZM3 21v-2h1V3h16v16h1v2H3Zm3-2h5V5H6v14Zm7 0h5V5h-5v14Zm-1-8Z"/>`),
+		g.Group(children),
+	)
+}

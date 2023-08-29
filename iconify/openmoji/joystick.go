@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Joystick(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<path fill="#EA5A47" d="M17 55v-3h7v3"/><circle cx="36" cy="17" r="10" fill="#EA5A47"/><path fill="#3F3F3F" d="M27 55c0-3.866 4.03-7 9-7s9 3.134 9 7"/><path fill="#9B9B9A" stroke="#9B9B9A" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M33 27h6v21h-6z"/><path fill="#9B9B9A" d="M14 55h44v10H14z"/><path fill="#D22F27" d="m41 8l-7 19l6-1l5-5l1-6z"/><g fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 55h44v10H14z"/><path d="M27 55c0-3.866 4.03-7 9-7s9 3.134 9 7"/><path stroke-linecap="round" stroke-linejoin="round" d="M17 55v-3h7v3m15-10.297V27h-6v17.705"/><circle cx="36" cy="17" r="10"/></g>`),
+		g.Group(children),
+	)
+}

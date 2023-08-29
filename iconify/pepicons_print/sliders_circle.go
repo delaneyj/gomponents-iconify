@@ -1,0 +1,14 @@
+package pepicons_print
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func SlidersCircle(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 26 26"),
+		g.Raw(`<g fill="currentColor"><path fill-rule="evenodd" d="M13.5 26C20.404 26 26 20.404 26 13.5S20.404 1 13.5 1S1 6.596 1 13.5S6.596 26 13.5 26Zm0-2C19.299 24 24 19.299 24 13.5S19.299 3 13.5 3S3 7.701 3 13.5S7.701 24 13.5 24Z" clip-rule="evenodd" opacity=".2"/><g opacity=".2"><path fill-rule="evenodd" d="M6 9.25a1 1 0 0 1 1-1h6.5a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm11.375 0a1 1 0 0 1 1-1H20a1 1 0 1 1 0 2h-1.625a1 1 0 0 1-1-1Z" clip-rule="evenodd"/><path d="M19 9.5a2.75 2.75 0 1 1-5.5 0a2.75 2.75 0 0 1 5.5 0Z"/><path fill-rule="evenodd" d="M16.25 10.25a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5Zm0 2a2.75 2.75 0 1 0 0-5.5a2.75 2.75 0 0 0 0 5.5ZM6 19.25a1 1 0 0 1 1-1h6.5a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm11.375 0a1 1 0 0 1 1-1H20a1 1 0 1 1 0 2h-1.625a1 1 0 0 1-1-1Z" clip-rule="evenodd"/><path d="M19 19.5a2.75 2.75 0 1 1-5.5 0a2.75 2.75 0 0 1 5.5 0Z"/><path fill-rule="evenodd" d="M16.25 20.25a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5Zm0 2a2.75 2.75 0 1 0 0-5.5a2.75 2.75 0 0 0 0 5.5ZM6 14.25a1 1 0 0 1 1-1h1.625a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1Zm6.5 0a1 1 0 0 1 1-1H20a1 1 0 1 1 0 2h-6.5a1 1 0 0 1-1-1Z" clip-rule="evenodd"/><path d="M14 14.5a2.75 2.75 0 1 1-5.5 0a2.75 2.75 0 0 1 5.5 0Z"/><path fill-rule="evenodd" d="M11.25 15.25a.75.75 0 1 0 0-1.5a.75.75 0 0 0 0 1.5Zm0 2a2.75 2.75 0 1 0 0-5.5a2.75 2.75 0 0 0 0 5.5Z" clip-rule="evenodd"/></g><path fill-rule="evenodd" d="M6 7.75a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm11.38 0a.5.5 0 0 1 .5-.5h1.62a.5.5 0 0 1 0 1h-1.62a.5.5 0 0 1-.5-.5Z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M15.75 9.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Zm0 1a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5ZM6 17.75a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm11.38 0a.5.5 0 0 1 .5-.5h1.62a.5.5 0 0 1 0 1h-1.62a.5.5 0 0 1-.5-.5Z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M15.75 19.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Zm0 1a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5ZM6 12.75a.5.5 0 0 1 .5-.5h2.13a.5.5 0 0 1 0 1H6.5a.5.5 0 0 1-.5-.5Zm6.5 0a.5.5 0 0 1 .5-.5h6.5a.5.5 0 0 1 0 1H13a.5.5 0 0 1-.5-.5Z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M10.75 14.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Zm0 1a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5Z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M13 24.5c6.351 0 11.5-5.149 11.5-11.5S19.351 1.5 13 1.5S1.5 6.649 1.5 13S6.649 24.5 13 24.5Zm0 1c6.904 0 12.5-5.596 12.5-12.5S19.904.5 13 .5S.5 6.096.5 13S6.096 25.5 13 25.5Z" clip-rule="evenodd"/></g>`),
+		g.Group(children),
+	)
+}

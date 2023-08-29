@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func DeployedCodeHistoryRounded(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M17.5 17.8v-2.3q0-.2-.15-.35T17 15q-.2 0-.35.15t-.15.35v2.275q0 .2.075.388t.225.337l1.5 1.5q.15.15.35.15T19 20q.15-.15.15-.35T19 19.3l-1.5-1.5ZM11 2.275Q11.475 2 12 2t1 .275L20 6.3q.475.275.738.725t.262 1v4.225q-.85-.6-1.863-.925T17 11q-.425 0-.813.038t-.787.137L19 9.1V8.05l-1.075-.625L12 10.85L6.075 7.425L5 8.05V9.1l6 3.475V14.4q-.475.8-.738 1.7T10 18q0 1.05.288 2t.812 1.775q-.025-.025-.05-.025t-.05-.025L4 17.7q-.475-.275-.738-.725t-.262-1v-7.95q0-.55.263-1T4 6.3l7-4.025ZM17 23q-2.075 0-3.538-1.463T12 18q0-2.075 1.463-3.538T17 13q2.075 0 3.538 1.463T22 18q0 2.075-1.463 3.538T17 23Z"/>`),
+		g.Group(children),
+	)
+}

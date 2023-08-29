@@ -1,0 +1,14 @@
+package teenyicons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func DockerOutline(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 15 15"),
+		g.Raw(`<path fill="currentColor" d="M.5 5.5V5H0v.5h.5Zm2-2V3H2v.5h.5Zm4-2V1H6v.5h.5Zm2 0H9V1h-.5v.5Zm4 6H12V8h.5v-.5ZM1 7.5v-2H0v2h1Zm2 0v-4H2v4h1ZM2.5 4h6V3h-6v1ZM8 3.5v4h1v-4H8Zm-3 4v-4H4v4h1Zm2 0v-6H6v6h1ZM6.5 2h2V1h-2v1ZM8 1.5v2h1v-2H8Zm5.736 8.5H15V9h-1.264v1ZM10 5v.5h1V5h-1Zm2 1.5v1h1v-1h-1Zm.5 1.5h1V7h-1v1Zm1.5.5v1h1v-1h-1Zm-.5-.5a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 13.5 7v1Zm-2-2a.5.5 0 0 1 .5.5h1A1.5 1.5 0 0 0 11.5 5v1ZM3 10h1V9H3v1Zm5.5-3h-8v1h8V7ZM0 7.5v1h1v-1H0ZM5.5 14h.528v-1H5.5v1Zm.528 0a7.736 7.736 0 0 0 6.23-3.15l-.805-.593A6.737 6.737 0 0 1 6.028 13v1ZM0 8.5A5.5 5.5 0 0 0 5.5 14v-1A4.5 4.5 0 0 1 1 8.5H0ZM.5 6h11V5H.5v1Zm9.5-.5A1.5 1.5 0 0 1 8.5 7v1A2.5 2.5 0 0 0 11 5.5h-1ZM13.736 9c-.96 0-1.769.558-2.283 1.257l.806.593c.383-.522.922-.85 1.477-.85V9Z"/>`),
+		g.Group(children),
+	)
+}

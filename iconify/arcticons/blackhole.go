@@ -1,0 +1,14 @@
+package arcticons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Blackhole(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 48 48"),
+		g.Raw(`<circle cx="24.619" cy="24.745" r="3.268" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M29.908 29.54a7.973 7.973 0 1 0-10.664-.077m-.335-15.119a10.416 10.416 0 0 0-6.803 15.197"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M14.068 29.54a12.26 12.26 0 1 0 17.78-14.498"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M9.07 35.131a18.5 18.5 0 1 1 18.818 7.164"/>`),
+		g.Group(children),
+	)
+}

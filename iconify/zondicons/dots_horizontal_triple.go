@@ -1,0 +1,14 @@
+package zondicons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func DotsHorizontalTriple(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="M10 12a2 2 0 1 1 0-4a2 2 0 0 1 0 4zm0-6a2 2 0 1 1 0-4a2 2 0 0 1 0 4zm0 12a2 2 0 1 1 0-4a2 2 0 0 1 0 4z"/>`),
+		g.Group(children),
+	)
+}

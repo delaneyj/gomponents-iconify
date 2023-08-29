@@ -1,0 +1,14 @@
+package skill_icons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ActivitypubLight(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 256 256"),
+		g.Raw(`<g fill="none"><rect width="256" height="256" fill="#F4F2ED" rx="60"/><path fill="#F1027E" fill-rule="evenodd" d="m137.15 52l86.841 63.279v25.237l-86.841 63.655v-25.236l69.533-50.849l-69.533-50.473V52Z" clip-rule="evenodd"/><path fill="#F1027E" fill-rule="evenodd" d="m137.15 102.849l34.617 25.237l-34.617 25.236v-50.473Z" clip-rule="evenodd"/><path fill="#6D6D6D" fill-rule="evenodd" d="M119.841 52L33 115.279v25.237l69.533-50.473v101.322l17.308 12.806V52Zm-34.617 76.086L50.31 153.322l34.617 25.236v-50.472h.298Z" clip-rule="evenodd"/></g>`),
+		g.Group(children),
+	)
+}

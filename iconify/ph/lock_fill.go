@@ -1,0 +1,14 @@
+package ph
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func LockFill(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 256 256"),
+		g.Raw(`<path fill="currentColor" d="M208 80h-32V56a48 48 0 0 0-96 0v24H48a16 16 0 0 0-16 16v112a16 16 0 0 0 16 16h160a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16Zm-80 84a12 12 0 1 1 12-12a12 12 0 0 1-12 12Zm32-84H96V56a32 32 0 0 1 64 0Z"/>`),
+		g.Group(children),
+	)
+}

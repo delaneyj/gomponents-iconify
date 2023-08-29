@@ -1,0 +1,14 @@
+package fluent_emoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ChequeredFlag(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 32 32"),
+		g.Raw(`<g fill="none"><g filter="url(#f240id5)"><rect width="28" height="20" x="2.19" y="6" fill="url(#f240id0)" rx="2"/></g><path fill="url(#f240id1)" d="M18.19 14v4h4v-4h-4Z"/><path fill="url(#f240id2)" d="M6.19 6h-3a1 1 0 0 0-1 1v3h4v4h-4v4h4v4h-4v3a1 1 0 0 0 1 1h3v-4h4v4h4v-4h4v4h4v-4h4v4h3a1 1 0 0 0 1-1v-3h-4v-4h4v-4h-4v-4h4V7a1 1 0 0 0-1-1h-3v4h-4V6h-4v4h-4V6h-4v4h-4V6Zm4 8v-4h4v4h-4Zm0 4h4v-4h4v-4h4v4h4v4h-4v4h-4v-4h-4v4h-4v-4Zm0 0h-4v-4h4v4Z"/><path fill="url(#f240id3)" d="M3.19 6h3v4h4V6h4v4h4V6h4v4h4V6h3a1 1 0 0 1 1 1v3h-28V7a1 1 0 0 1 1-1Z"/><path fill="url(#f240id4)" d="M26.19 26V6h3a1 1 0 0 1 1 1v3h-4v4h4v4h-4v4h4v3a1 1 0 0 1-1 1h-3Z"/><defs><linearGradient id="f240id0" x1="16.19" x2="16.19" y1="6" y2="26" gradientUnits="userSpaceOnUse"><stop stop-color="#F5EEFE"/><stop offset="1" stop-color="#F2E4FF"/></linearGradient><linearGradient id="f240id1" x1="16.19" x2="16.19" y1="6" y2="26" gradientUnits="userSpaceOnUse"><stop stop-color="#353138"/><stop offset="1" stop-color="#36323C"/></linearGradient><linearGradient id="f240id2" x1="16.19" x2="16.19" y1="6" y2="26" gradientUnits="userSpaceOnUse"><stop stop-color="#353138"/><stop offset="1" stop-color="#36323C"/></linearGradient><linearGradient id="f240id3" x1="16.19" x2="16.19" y1="6" y2="7.557" gradientUnits="userSpaceOnUse"><stop stop-color="#39383A"/><stop offset="1" stop-color="#39383A" stop-opacity="0"/></linearGradient><linearGradient id="f240id4" x1="30.435" x2="29.107" y1="25.154" y2="25.154" gradientUnits="userSpaceOnUse"><stop offset=".476" stop-color="#4A494C"/><stop offset="1" stop-color="#4A494C" stop-opacity="0"/></linearGradient><filter id="f240id5" width="29" height="21" x="1.69" y="5.5" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx=".5" dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0.894118 0 0 0 0 0.819608 0 0 0 0 0.976471 0 0 0 1 0"/><feBlend in2="shape" result="effect1_innerShadow_4_7833"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="-.5" dy=".5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/><feBlend in2="effect1_innerShadow_4_7833" result="effect2_innerShadow_4_7833"/></filter></defs></g>`),
+		g.Group(children),
+	)
+}

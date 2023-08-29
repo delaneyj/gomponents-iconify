@@ -1,0 +1,14 @@
+package oi
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func People(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 8 8"),
+		g.Raw(`<path fill="currentColor" d="M5.5 0c-.51 0-.95.35-1.22.88c.45.54.72 1.28.72 2.13c0 .29-.03.55-.09.81c.19.11.38.19.59.19c.83 0 1.5-.9 1.5-2s-.67-2-1.5-2zm-3 1C1.67 1 1 1.9 1 3s.67 2 1.5 2S4 4.1 4 3s-.67-2-1.5-2zm4.75 3.16c-.43.51-1.02.82-1.69.84c.27.38.44.84.44 1.34V7h2V5.34c0-.52-.31-.97-.75-1.19zm-6.5 1C.31 5.38 0 5.83 0 6.35v1.66h5V6.35c0-.52-.31-.97-.75-1.19C3.8 5.69 3.19 6 2.5 6S1.2 5.68.75 5.16z"/>`),
+		g.Group(children),
+	)
+}

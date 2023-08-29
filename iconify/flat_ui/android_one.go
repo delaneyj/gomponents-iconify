@@ -1,0 +1,14 @@
+package flat_ui
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func AndroidOne(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 100 100"),
+		g.Raw(`<path fill="#EBEEEF" d="M6 0h42c3.312 0 6 2.688 6 6v88c0 3.312-2.688 6-6 6H6c-3.312 0-6-2.688-6-6V6a6 6 0 0 1 6-6z"/><path fill="#1C3C50" d="M0 10h54v80H0V10z"/><path fill="#24485F" d="M4 14h46v72H4V14z"/><path fill="#BCC3C8" d="M13 93h28v4H13v-4zm0-90h28v4H13V3z"/><path fill="#1C3C50" d="M46 3a2 2 0 1 0 .001 4.001A2 2 0 0 0 46 3zM9 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2zM6 5a1 1 0 1 0 0 2a1 1 0 0 0 0-2z"/>`),
+		g.Group(children),
+	)
+}

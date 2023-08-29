@@ -1,0 +1,14 @@
+package twemoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func RedTrianglePointedUp(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 36 36"),
+		g.Raw(`<path fill="#E75A70" d="M19.146 7.639c-.63-.901-1.637-.884-2.236.038L6.09 24.323C5.491 25.245 5.9 26 7 26h23c1.1 0 1.483-.737.854-1.639L19.146 7.639z"/>`),
+		g.Group(children),
+	)
+}

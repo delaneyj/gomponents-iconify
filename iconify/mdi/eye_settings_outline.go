@@ -1,0 +1,14 @@
+package mdi
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func EyeSettingsOutline(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M12 9a3 3 0 0 1 3 3a3 3 0 0 1-3 3a3 3 0 0 1-3-3a3 3 0 0 1 3-3m0-4.5c4.86 0 9.22 3 11 7.5c-2.39 6.08-9.25 9.06-15.33 6.67C4.62 17.47 2.2 15.06 1 12c1.78-4.5 6.14-7.5 11-7.5M3.18 12c2.38 4.87 8.27 6.89 13.14 4.5a9.811 9.811 0 0 0 4.5-4.5c-2.38-4.87-8.27-6.89-13.14-4.5a9.811 9.811 0 0 0-4.5 4.5M9 22H7v2h2v-2m4 0h-2v2h2v-2m4 0h-2v2h2v-2Z"/>`),
+		g.Group(children),
+	)
+}

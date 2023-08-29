@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func TvRemote(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M12 15q1.25 0 2.125-.875T15 12q0-1.25-.875-2.125T12 9q-1.25 0-2.125.875T9 12q0 1.25.875 2.125T12 15Zm-3 8q-.825 0-1.413-.588T7 21V3q0-.825.588-1.413T9 1h6q.825 0 1.413.588T17 3v18q0 .825-.588 1.413T15 23H9Zm3-9.5q-.625 0-1.063-.438T10.5 12q0-.625.438-1.063T12 10.5q.625 0 1.063.438T13.5 12q0 .625-.438 1.063T12 13.5ZM12 6q.425 0 .713-.288T13 5q0-.425-.288-.713T12 4q-.425 0-.713.288T11 5q0 .425.288.713T12 6Z"/>`),
+		g.Group(children),
+	)
+}

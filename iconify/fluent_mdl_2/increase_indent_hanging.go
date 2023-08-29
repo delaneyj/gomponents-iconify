@@ -1,0 +1,14 @@
+package fluent_mdl_2
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func IncreaseIndentHanging(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 2048 2048"),
+		g.Raw(`<path fill="currentColor" d="M128 128h1792v128H128V128zm1024 1664v-128h768v128h-768zm0-1024V640h768v128h-768zm0 512v-128h768v128h-768zM483 733l90-90l317 317l-317 317l-90-90l163-163H0V896h646L483 733z"/>`),
+		g.Group(children),
+	)
+}

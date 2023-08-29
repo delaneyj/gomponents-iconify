@@ -1,0 +1,14 @@
+package line_md
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func MastodonTwotone(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" fill-opacity="0" stroke-dasharray="80" stroke-dashoffset="80" d="M15.5 21.5C6 23.5 6.5 16.5 7.5 16.5C11 16.5 21 19 21 12.5V8.5C21 4.5 18.5 3 14 3H10C5.5 3 3 4 3 10V13C3 19 5 24 15.5 21.5Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="80;160"/><animate fill="freeze" attributeName="fill-opacity" begin="1.2s" dur="0.15s" values="0;0.3"/></path><path fill="none" stroke-dasharray="32" stroke-dashoffset="32" d="M7 13.5L7 8C7 8 7.5 6 9.5 6C11.5 6 12 8 12 8L12 10.5L12 8C12 8 12.5 6 14.5 6C16.5 6 17 8 17 8L17 13.5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.4s" values="32;0"/></path></g>`),
+		g.Group(children),
+	)
+}

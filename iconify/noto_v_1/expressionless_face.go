@@ -1,0 +1,14 @@
+package noto_v_1
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ExpressionlessFace(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 128 128"),
+		g.Raw(`<path fill="#fcc21b" d="M64 9.9C1.99 9.9.51 79.42.51 93.19c0 13.76 28.43 24.91 63.49 24.91c35.07 0 63.49-11.16 63.49-24.91c0-13.77-1.47-83.29-63.49-83.29z"/><path fill="#2f2f2f" d="M53.13 55.59h-17.9c-1.66 0-3-1.34-3-3s1.34-3 3-3h17.9c1.66 0 3 1.34 3 3s-1.34 3-3 3zm39.63 0h-17.9c-1.66 0-3-1.34-3-3s1.34-3 3-3h17.9c1.66 0 3 1.34 3 3s-1.34 3-3 3zm-3.07 29.16H38.31c-1.66 0-3-1.34-3-3s1.34-3 3-3H89.7c1.66 0 3 1.34 3 3s-1.35 3-3.01 3z"/>`),
+		g.Group(children),
+	)
+}

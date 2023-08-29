@@ -1,0 +1,14 @@
+package twemoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func FlagBahrain(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 36 36"),
+		g.Raw(`<path fill="#EEE" d="M15 6L8 5H4a4 4 0 0 0-4 4v18a4 4 0 0 0 4 4h4l7-1V6z"/><path fill="#CE1126" d="M32 5H8l6.081 2.6L8 10.2l6.081 2.6L8 15.4l6.081 2.6L8 20.6l6.081 2.6L8 25.8l6.081 2.6L8 31h24a4 4 0 0 0 4-4V9a4 4 0 0 0-4-4z"/>`),
+		g.Group(children),
+	)
+}

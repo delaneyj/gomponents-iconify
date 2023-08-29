@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func DetectorSmokeOutlineSharp(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="m13 22.3l-1.9-.6l.4-1.3q.15-.6.1-1.163t-.4-1.137q-.625-.95-.787-1.963T10.6 14l.4-1.3l1.9.6l-.4 1.3q-.2.575-.125 1.188T12.8 16.9q.575.95.763 2T13.4 21l-.4 1.3Zm-4.4 0l-1.9-.6l.4-1.3q.15-.575.1-1.175T6.8 18.1q-.65-.925-.8-1.975T6.2 14l.4-1.3l1.9.6l-.4 1.3q-.2.575-.125 1.2t.425 1.1q.6.9.775 1.988T9 21l-.4 1.3Zm8.7 0l-1.9-.6l.4-1.3q.15-.575.1-1.175t-.4-1.125q-.65-.925-.8-1.975T14.9 14l.4-1.3l1.9.6l-.4 1.3q-.2.6-.125 1.187T17.1 16.9q.6.95.763 2T17.7 21l-.4 1.3ZM5 5v1h14V5H5Zm3.1 3l.3 1h7.2l.3-1H8.1Zm-1.15 3L6 8H3V3h18v5h-3l-1.15 3h-9.9ZM5 5v1v-1Z"/>`),
+		g.Group(children),
+	)
+}

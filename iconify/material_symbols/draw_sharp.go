@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func DrawSharp(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M13 21v-2h1q1.175 0 2.087-.463T17 17.5q0-.35-.325-.65t-.9-.55l1.475-1.475q.8.475 1.275 1.125T19 17.5q0 1.65-1.575 2.575T14 21h-1Zm-8.425-7.65q-.725-.425-1.15-.987T3 11q0-1.05.775-1.763T6.55 7.65q1.575-.725 2.013-1.012T9 6q0-.4-.488-.7T7 5q-.875 0-1.438.325T5 6H3q0-1.2 1.1-2.1T7 3q1.8 0 2.9.813T11 6q0 .975-.725 1.75T7.35 9.475q-1.45.625-1.9.925T5 11q0 .225.287.438t.788.412l-1.5 1.5ZM18.85 10.4L14.6 6.15l2.475-2.475l4.25 4.25L18.85 10.4ZM4 21v-4.25l9.2-9.2l4.25 4.25l-9.2 9.2H4Z"/>`),
+		g.Group(children),
+	)
+}

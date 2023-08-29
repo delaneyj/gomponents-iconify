@@ -1,0 +1,14 @@
+package pajamas
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ReviewWarning(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 0 0"),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M9 2.5a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm1.45-.5a2.5 2.5 0 0 0-4.9 0H3a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1h-2.55ZM8 5H5.5V3.5h-2v11h9v-11h-2V5H8Zm1 7a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm-.25-4.75a.75.75 0 0 0-1.5 0v2a.75.75 0 0 0 1.5 0v-2Z" clip-rule="evenodd"/>`),
+		g.Group(children),
+	)
+}

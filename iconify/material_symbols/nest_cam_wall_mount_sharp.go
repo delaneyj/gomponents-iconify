@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func NestCamWallMountSharp(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M4 17.45q-.825 0-1.413-.588T2 15.45v-8q0-.825.588-1.412T4 5.45q.825 0 1.413.6T6 7.475q.875-1.375 2.313-2.2T11.5 4.45q1.3 0 2.488.488T16.1 6.35l5.725 5.725l-9.175 9.175l-5.75-5.7q-.275-.275-.487-.55T6 14.425v1.025q0 .825-.588 1.413T4 17.45Z"/>`),
+		g.Group(children),
+	)
+}

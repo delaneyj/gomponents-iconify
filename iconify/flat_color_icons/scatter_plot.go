@@ -1,0 +1,14 @@
+package flat_color_icons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ScatterPlot(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 48 48"),
+		g.Raw(`<path fill="#CFD8DC" d="M9 39V6H7v35h35v-2z"/><g fill="#00BCD4"><circle cx="39" cy="11" r="3"/><circle cx="31" cy="13" r="3"/><circle cx="37" cy="19" r="3"/><circle cx="34" cy="26" r="3"/><circle cx="28" cy="20" r="3"/><circle cx="26" cy="28" r="3"/><circle cx="20" cy="23" r="3"/><circle cx="21" cy="33" r="3"/><circle cx="14" cy="30" r="3"/></g>`),
+		g.Group(children),
+	)
+}

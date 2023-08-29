@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func NetscapeNavigator(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<path fill="#61B2E4" d="M58 11H14a3 3 0 0 0-3 3v44a3 3 0 0 0 3 3h44a3 3 0 0 0 3-3V14a3 3 0 0 0-3-3Z"/><g fill="#3F3F3F"><path fill-rule="evenodd" d="M61 46.247C53.353 42.873 44.895 41 36 41s-17.353 1.873-25 5.247V58a3 3 0 0 0 3 3h44a3 3 0 0 0 3-3V46.247Z" clip-rule="evenodd"/><path d="M61 46.247h1v-.652l-.596-.263l-.404.915Zm-50 0l-.404-.915l-.596.263v.652h1ZM36 42c8.754 0 17.074 1.843 24.596 5.162l.808-1.83C53.632 41.903 45.037 40 36 40v2Zm-24.596 5.162C18.926 43.843 27.247 42 36 42v-2c-9.037 0-17.632 1.903-25.404 5.332l.808 1.83ZM10 46.247V58h2V46.247h-2ZM10 58a4 4 0 0 0 4 4v-2a2 2 0 0 1-2-2h-2Zm4 4h44v-2H14v2Zm44 0a4 4 0 0 0 4-4h-2a2 2 0 0 1-2 2v2Zm4-4V46.247h-2V58h2Z"/></g><g fill="#fff"><path fill-rule="evenodd" d="M44 19h-1v3h1a2 2 0 0 1 2 2v15L29 20h-8v3h2a2 2 0 0 1 2 2v17a2 2 0 0 1-2 2h-1v3h9v-3h-1a2 2 0 0 1-2-2V25l13.956 16.282c2.39.228 4.74.592 7.044 1.083V24a2 2 0 0 1 2-2h1v-3h-8Z" clip-rule="evenodd"/><path d="M43 19v-1a1 1 0 0 0-1 1h1Zm0 3h-1a1 1 0 0 0 1 1v-1Zm3 17l-.745.667A1 1 0 0 0 47 39h-1ZM29 20l.745-.667A1 1 0 0 0 29 19v1Zm-8 0v-1a1 1 0 0 0-1 1h1Zm0 3h-1a1 1 0 0 0 1 1v-1Zm4 2h-1h1Zm0 17h1h-1Zm-3 2v-1a1 1 0 0 0-1 1h1Zm0 3h-1a1 1 0 0 0 1 1v-1Zm9 0v1a1 1 0 0 0 1-1h-1Zm0-3h1a1 1 0 0 0-1-1v1Zm-3-2h1h-1Zm0-17l.76-.65A1 1 0 0 0 27 25h1Zm13.956 16.282l-.759.651a1 1 0 0 0 .664.345l.095-.996ZM49 42.365l-.209.978A1 1 0 0 0 50 42.365h-1ZM52 22v1a1 1 0 0 0 1-1h-1Zm0-3h1a1 1 0 0 0-1-1v1Zm-9 1h1v-2h-1v2Zm1 2v-3h-2v3h2Zm0-1h-1v2h1v-2Zm3 3a3 3 0 0 0-3-3v2a1 1 0 0 1 1 1h2Zm0 15V24h-2v15h2ZM28.255 20.667l17 19l1.49-1.334l-17-19l-1.49 1.334ZM28 21h1v-2h-1v2Zm-5 0h5v-2h-5v2Zm-2 0h2v-2h-2v2Zm1 2v-3h-2v3h2Zm1-1h-2v2h2v-2Zm3 3a3 3 0 0 0-3-3v2a1 1 0 0 1 1 1h2Zm0 17V25h-2v17h2Zm-3 3a3 3 0 0 0 3-3h-2a1 1 0 0 1-1 1v2Zm-1 0h1v-2h-1v2Zm1 2v-3h-2v3h2Zm0-1h-1v2h1v-2Zm7 0h-7v2h7v-2Zm1 0h-1v2h1v-2Zm-1-2v3h2v-3h-2Zm0 1h1v-2h-1v2Zm-3-3a3 3 0 0 0 3 3v-2a1 1 0 0 1-1-1h-2Zm0-17v17h2V25h-2Zm15.716 15.632L28.759 24.349l-1.518 1.302l13.956 16.282l1.519-1.301Zm6.493.755c-2.34-.5-4.73-.869-7.158-1.1l-.19 1.99c2.352.225 4.665.583 6.93 1.066l.418-1.956ZM48 42v.365h2V42h-2Zm0-18v18h2V24h-2Zm3-3a3 3 0 0 0-3 3h2a1 1 0 0 1 1-1v-2Zm1 0h-1v2h1v-2Zm-1-2v3h2v-3h-2Zm0 1h1v-2h-1v2Zm-7 0h7v-2h-7v2Z"/></g><g fill="none" stroke="#000" stroke-width="2"><path stroke-miterlimit="10" d="M58 11H14a3 3 0 0 0-3 3v44a3 3 0 0 0 3 3h44a3 3 0 0 0 3-3V14a3 3 0 0 0-3-3Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M40 39L28 25v17a2 2 0 0 0 2 2h1v3h-9v-3h1a2 2 0 0 0 2-2V25a2 2 0 0 0-2-2h-2v-3h8l17 19V24a2 2 0 0 0-2-2h-1v-3h9v3h-1a2 2 0 0 0-2 2v16"/><path stroke-linecap="round" d="M61 46.247C53.353 42.873 44.895 41 36 41c-1.683 0-3.35.067-5 .199m-20 5.048a61.53 61.53 0 0 1 9-3.163"/></g>`),
+		g.Group(children),
+	)
+}

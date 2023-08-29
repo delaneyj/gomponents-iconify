@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func BridgeAtNight(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<defs><path id="openmojiBridgeAtNight0" d="M41.773 19.473a7.218 7.218 0 0 1-5.695 9.864"/><path id="openmojiBridgeAtNight1" d="M41.773 19.473a6.054 6.054 0 0 1-5.695 9.864"/></defs><g stroke="#000"><g fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"><use href="#openmojiBridgeAtNight0"/><use href="#openmojiBridgeAtNight1"/></g><path stroke-linejoin="round" stroke-width="2" d="m22 22.381l1.854 1.325l-.688-2.173L25 20.18l-2.279-.107L22 18l-.721 2.162L19 20.18l1.834 1.353l-.688 2.173L22 22.381z"/><path stroke-linejoin="round" stroke-width=".75" d="m27 32.46l.618.442l-.229-.724l.611-.451l-.76-.006L27 31l-.24.721l-.76.006l.611.361l-.229.814l.618-.442z"/><path stroke-linejoin="round" d="m51.5 26.337l.927.663l-.344-1.087l.917-.676l-1.14-.099l-.36-.991l-.36 1.081l-1.14.009l.917.676L50.573 27l.927-.663z"/></g><rect width="48" height="48" x="12" y="12" fill="#1e50a0" rx="1"/><g stroke="#f1b31c"><g fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"><use href="#openmojiBridgeAtNight0"/><use href="#openmojiBridgeAtNight1"/></g><path fill="#f1b31c" stroke-linejoin="round" stroke-width="2" d="m22 22.381l1.854 1.325l-.688-2.173L25 20.18l-2.279-.107L22 18l-.721 2.162L19 20.18l1.834 1.353l-.688 2.173L22 22.381z"/><path fill="#f1b31c" stroke-linejoin="round" stroke-width=".75" d="m27 32.46l.618.442l-.229-.724l.611-.451l-.76-.006L27 31l-.24.721l-.76.006l.611.361l-.229.814l.618-.442z"/><path fill="#f1b31c" stroke-linejoin="round" d="m51.5 26.337l.927.663l-.344-1.087l.917-.676l-1.14-.099l-.36-.991l-.36 1.081l-1.14.009l.917.676L50.573 27l.927-.663z"/></g><g fill="none" stroke="#000" stroke-width="2"><path stroke-linecap="round" stroke-miterlimit="10" d="M12.923 48.038h46.154M24 36.962L12 48.038"/><path stroke-miterlimit="10" d="M24 36.962v23.076m24 0V36.962m-24 4.26l-7.385 6.816M24 45.482l-2.769 2.556"/><path stroke-linecap="round" stroke-miterlimit="10" d="M48 36.962L36 48.038"/><path stroke-miterlimit="10" d="m48 41.222l-7.385 6.816M48 45.482l-2.769 2.556"/><path stroke-linecap="round" stroke-miterlimit="10" d="m24 36.962l12 11.076"/><path stroke-miterlimit="10" d="m24 41.222l7.385 6.816M24 45.482l2.769 2.556"/><path stroke-linecap="round" stroke-miterlimit="10" d="m48 36.962l12 11.076"/><path stroke-miterlimit="10" d="m48 41.222l7.385 6.816M48 45.482l2.769 2.556"/><rect width="48" height="48" x="12" y="12" stroke-linejoin="round" rx="1"/></g>`),
+		g.Group(children),
+	)
+}

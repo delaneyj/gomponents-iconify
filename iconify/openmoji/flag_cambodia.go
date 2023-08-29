@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func FlagCambodia(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<path fill="#d22f27" d="M5 17h62v38H5z"/><path fill="#1e50a0" d="M5 45h62v10H5zm0-28h62v10H5z"/><path fill="#fff" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M45.882 42H26.118l2.117-4.235h15.53L45.882 42zm-7.058-6.353h-5.648L36 30l2.824 5.647zm4.235 0h-3.53l1.324-2.823h.882l1.324 2.823zm-10.588 0h-3.53l1.324-2.823h.882l1.324 2.823zm-4.236 0h15.529v2.118H28.235z"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 17h62v38H5z"/>`),
+		g.Group(children),
+	)
+}

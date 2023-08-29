@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func HourglassRounded(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M5 22q-.425 0-.713-.288T4 21q0-.425.288-.713T5 20h1v-3q0-1.525.713-2.863T8.7 12q-1.275-.8-1.987-2.138T6 7V4H5q-.425 0-.713-.288T4 3q0-.425.288-.713T5 2h14q.425 0 .713.288T20 3q0 .425-.288.713T19 4h-1v3q0 1.525-.713 2.863T15.3 12q1.275.8 1.988 2.138T18 17v3h1q.425 0 .713.288T20 21q0 .425-.288.713T19 22H5Z"/>`),
+		g.Group(children),
+	)
+}

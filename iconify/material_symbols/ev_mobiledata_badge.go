@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func EvMobiledataBadge(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M3 21q-.825 0-1.413-.588T1 19V5q0-.825.588-1.413T3 3h18q.825 0 1.413.588T23 5v14q0 .825-.588 1.413T21 21H3Zm2-4h6v-2H7v-2h3v-2H7V9h4V7H5v10Zm9.5 0h2L19 7h-2l-1.5 6L14 7h-2l2.5 10Z"/>`),
+		g.Group(children),
+	)
+}

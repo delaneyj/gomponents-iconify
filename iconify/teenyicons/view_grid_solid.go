@@ -1,0 +1,14 @@
+package teenyicons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ViewGridSolid(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 15 15"),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 1V0h1v1h3V0h1v1h3V0h1v1h3V0h1v1h1v1h-1v3h1v1h-1v3h1v1h-1v3h1v1h-1v1h-1v-1h-3v1H9v-1H6v1H5v-1H2v1H1v-1H0v-1h1v-3H0V9h1V6H0V5h1V2H0V1h1Zm1 1v3h3V2H2Zm4 0v3h3V2H6Zm4 0v3h3V2h-3Zm3 4h-3v3h3V6Zm0 4h-3v3h3v-3Zm-4 3v-3H6v3h3Zm-4 0v-3H2v3h3ZM2 9h3V6H2v3Zm4-3v3h3V6H6Z" clip-rule="evenodd"/>`),
+		g.Group(children),
+	)
+}

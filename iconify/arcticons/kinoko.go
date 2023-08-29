@@ -1,0 +1,14 @@
+package arcticons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Kinoko(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 48 48"),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M10.244 15.786c0-6.232 3.429-11.088 11.28-11.283c8.236-.205 15.413 10.66 11.803 13.428"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M10.613 12.924A97.47 97.47 0 0 0 9.461 43.5m23.084-30.125s1.186 14.505.616 23.511M14.815 23.855c.098 4.553.566 16.262 2.797 19.645m12.119-33.1s.002 6.329-3.986 10.771m.307-9.961c-.24 3.021.025 4.147-2.473 8.512m.181-7.914c.126 2.542-1.152 5.123-3.133 8.074a54.282 54.282 0 0 0 .544-5.433"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M21.343 12.358s.518 3.804-3.72 8.666"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M22.29 6.277c-.106-.047-9.444 7.927-2.065 24.721"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M19.386 10.44s9.262-4.52 13.159 2.935M21.147 7.53a11.774 11.774 0 0 1 10.412 2.188m1.736 19.032s1.568 6.204 2.3 7.437m-16.402-8.035s3.836 3.09 6.302 3.322m0 0s.909.6 4.64-4.17a22.793 22.793 0 0 0 1.617-8.523M17.685 33.318a11.352 11.352 0 0 0 .323-4.123"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M24.763 31.337s-.975 2.13 2.49 4.508"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m25.57 34.351l10.952 2.12s.633-.02 1.894 4.1m-20.731-7.253s5.489 9.933 11.629 10.182m-2.062-7.655s2.192 3.986 2.062 7.655"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M24.331 41.22a6.333 6.333 0 0 1 4.644-.899M40.917 43.5l-.297-1.019a18.322 18.322 0 0 0-6.7-4.103a11.123 11.123 0 0 0-4.741 2.969s.516 1.992 2.108 2.045"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M29.701 42.446a17.788 17.788 0 0 1 3.876-2.28m-2.29 3.226c.931-.032 1.499-.703 2.206-1.129l2.032.06m-1.948-2.157a3.682 3.682 0 0 1 1.65.393M16.36 16.33c-.744-6.23-2.596-5.014-2.596-5.014s-1.016-1.34-3.166 4.907"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M13.764 11.316a39.46 39.46 0 0 0-2.946 9.64m2.946-9.64a49.265 49.265 0 0 1 .45 9.829m-1.53 1.47A56.284 56.284 0 0 0 13.739 43.5m7.674 0s-3.568-1.53-4.899-3.095m13.824-20.446a18.746 18.746 0 0 0 .704-8.61M17.685 33.318l-2.096 1.164m7.991-14.76s.095-4.154-.086-5.53m2.251 6.979a53.57 53.57 0 0 0 .095-7.212m-5.616 17.038c-.555.094-2.525-1.86-5.392-6.492M8.924 38.397A7.06 7.06 0 0 0 7.091 43.5m22.934-8.286a35.986 35.986 0 0 0 .054-5.161"/>`),
+		g.Group(children),
+	)
+}

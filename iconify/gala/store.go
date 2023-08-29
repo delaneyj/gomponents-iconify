@@ -1,0 +1,14 @@
+package gala
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Store(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 256 256"),
+		g.Raw(`<g id="galaStore0" fill="none" stroke="currentColor" stroke-dasharray="none" stroke-miterlimit="4" stroke-width="16"><path id="galaStore1" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="1" d="M 48.000545,207.99268 V 128"/><path id="galaStore2" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="1" d="M 207.99947,207.99946 V 127.8564"/><path id="galaStore3" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="1" d="M 32.000626,16.00074 H 223.99935"/><path id="galaStore4" stroke-linecap="round" stroke-linejoin="round" d="m 183.99963,100.00018 a 27.999813,27.999813 0 0 1 -13.99991,24.24855 27.999813,27.999813 0 0 1 -27.99981,0 A 27.999813,27.999813 0 0 1 128,100.00018"/><path id="galaStore5" stroke-linecap="round" stroke-linejoin="round" d="m 239.99926,100.00018 a 27.999813,27.999813 0 0 1 -13.9999,24.24855 27.999813,27.999813 0 0 1 -27.99982,0 27.999813,27.999813 0 0 1 -13.9999,-24.24855"/><path id="galaStore6" stroke-linecap="round" stroke-linejoin="round" d="m 72.000366,100.00067 a 27.999813,27.999813 0 0 1 -13.999907,24.24855 27.999813,27.999813 0 0 1 -27.999813,0 27.999813,27.999813 0 0 1 -13.999906,-24.24855"/><path id="galaStore7" stroke-linecap="round" stroke-linejoin="round" d="m 128,100.00067 a 27.999813,27.999813 0 0 1 -13.99991,24.24855 27.999813,27.999813 0 0 1 -27.999814,0 27.999813,27.999813 0 0 1 -13.999906,-24.24855"/><path id="galaStore8" stroke-linecap="butt" stroke-linejoin="miter" stroke-opacity="1" d="M 16.000734,100.00252 32.000626,16.00074"/><path id="galaStore9" stroke-linecap="butt" stroke-linejoin="miter" stroke-opacity="1" d="m 223.99935,16.00074 15.99989,83.99945"/><path id="galaStorea" stroke-linecap="butt" stroke-linejoin="miter" stroke-opacity="1" d="M 183.99963,100.00108 175.99967,16.00074"/><path id="galaStoreb" stroke-linecap="butt" stroke-linejoin="miter" stroke-opacity="1" d="M 72.000386,100.00067 80.000307,16.00074"/><path id="galaStorec" stroke-linecap="butt" stroke-linejoin="miter" stroke-opacity="1" d="M 127.99999,100.00093 V 16.00074"/><path id="galaStored" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="1" d="M 32.000626,191.99958 H 223.99935"/><path id="galaStoree" stroke-linecap="butt" stroke-linejoin="miter" stroke-opacity="1" d="M 80.000307,239.99926 H 175.99967"/><path id="galaStoref" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="1" d="m 207.99944,207.99947 a 31.999786,31.999786 0 0 1 -31.99979,31.99978"/><path id="galaStoreg" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="1" d="M -48.000534,207.99947 A 31.999786,31.999786 0 0 1 -80.00032,239.99925" transform="scale(-1 1)"/></g>`),
+		g.Group(children),
+	)
+}

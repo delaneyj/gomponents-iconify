@@ -1,0 +1,14 @@
+package cil
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Gamepad(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 512 512"),
+		g.Raw(`<path fill="currentColor" d="M368 168h-96v-64h176a24.027 24.027 0 0 0 24-24V16h-32v56H264a24.027 24.027 0 0 0-24 24v72h-96A128.145 128.145 0 0 0 16 296v100.953A91.15 91.15 0 0 0 107.047 488h1.8a90.807 90.807 0 0 0 69.953-32.76L231.5 392h48.628l52.666 68.465A91.046 91.046 0 0 0 496 404.953V296a128.145 128.145 0 0 0-128-128Zm96 236.953a59.047 59.047 0 0 1-105.849 36L295.878 360h-79.372l-62.294 74.754A58.893 58.893 0 0 1 108.85 456h-1.8A59.113 59.113 0 0 1 48 396.953V296a96.108 96.108 0 0 1 96-96h224a96.108 96.108 0 0 1 96 96Z"/><path fill="currentColor" d="M360 248h32v32h-32zm0 80h32v32h-32zm-40-40h32v32h-32zm80 0h32v32h-32zm-248-40h-32v40H80v32h40v40h32v-40h40v-32h-40v-40z"/>`),
+		g.Group(children),
+	)
+}

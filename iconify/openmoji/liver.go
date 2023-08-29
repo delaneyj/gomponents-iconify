@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Liver(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<defs><path id="openmojiLiver0" d="M22.56 44.718c-.578-2.516-2.038-10.502 1.239-15.72a6.68 6.68 0 0 1 2.559-2.33c2.445-1.293 7.565-2.995 13.658.752v13.552a70.962 70.962 0 0 1-7.699.677a3.056 3.056 0 0 0-2.493 1.32c-1.344 1.963-4.042 5.174-6.316 3.355a2.842 2.842 0 0 1-.949-1.606Zm17.456-17.31v13.564A14.93 14.93 0 0 0 47.776 36s2.644-2.823 4.636-3.338c0 0 3.571-1.785-.79-3.743a32.771 32.771 0 0 0-11.606-1.51Z"/></defs><use href="#openmojiLiver0" fill="#d22f27"/><use href="#openmojiLiver0" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>`),
+		g.Group(children),
+	)
+}

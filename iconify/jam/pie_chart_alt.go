@@ -1,0 +1,14 @@
+package jam
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func PieChartAlt(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M19.95 11c-.501 5.053-4.765 9-9.95 9c-5.523 0-10-4.477-10-10C0 4.815 3.947.551 9 .05v2.012A8.001 8.001 0 0 0 10 18a8.001 8.001 0 0 0 7.938-7h2.013zm0-2h-2.012A8.004 8.004 0 0 0 11 2.062V.049A10.003 10.003 0 0 1 19.95 9z"/>`),
+		g.Group(children),
+	)
+}

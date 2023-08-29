@@ -1,0 +1,14 @@
+package ph
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func MagnifyingGlassMinusBold(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 256 256"),
+		g.Raw(`<path fill="currentColor" d="M156 112a12 12 0 0 1-12 12H80a12 12 0 0 1 0-24h64a12 12 0 0 1 12 12Zm76.49 120.49a12 12 0 0 1-17 0L168 185a92.12 92.12 0 1 1 17-17l47.54 47.53a12 12 0 0 1-.05 16.96ZM112 180a68 68 0 1 0-68-68a68.08 68.08 0 0 0 68 68Z"/>`),
+		g.Group(children),
+	)
+}

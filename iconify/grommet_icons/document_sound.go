@@ -1,0 +1,14 @@
+package grommet_icons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func DocumentSound(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-width="2" d="M2.998 9V1H17.5L21 4.5V23h-3M16 1v5h5M1 14.01v4h3l4 3V11l-4 3.01H1ZM11 18a2 2 0 1 0 0-4m0 8a6 6 0 1 0 0-12"/>`),
+		g.Group(children),
+	)
+}

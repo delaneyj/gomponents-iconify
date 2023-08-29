@@ -1,0 +1,14 @@
+package ic
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func OutlineGrade(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="m12 7.13l.97 2.29l.47 1.11l1.2.1l2.47.21l-1.88 1.63l-.91.79l.27 1.18l.56 2.41l-2.12-1.28l-1.03-.64l-1.03.62l-2.12 1.28l.56-2.41l.27-1.18l-.91-.79l-1.88-1.63l2.47-.21l1.2-.1l.47-1.11l.97-2.27M12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2z"/>`),
+		g.Group(children),
+	)
+}

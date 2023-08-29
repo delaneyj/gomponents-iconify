@@ -1,0 +1,17 @@
+package {{ .Name.Lower }}
+
+import (
+	g "github.com/maragudk/gomponents"
+)
+
+const IconifyVersion = "{{.Version}}"
+
+func IconFromName(name string) g.Node {
+	switch name {
+	{{range .Icons -}}
+	case "{{.Name.Camel}}": return {{.Name.Pascal}}()
+	{{end -}}
+	default:
+		panic("Unknown icon name: " + name)
+	}
+}

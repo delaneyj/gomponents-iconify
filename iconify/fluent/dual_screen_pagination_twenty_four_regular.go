@@ -1,0 +1,14 @@
+package fluent
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func DualScreenPaginationTwentyFourRegular(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="m12.748 4.002l-.001.002h7.498c.967 0 1.75.784 1.75 1.75V18.25a1.75 1.75 0 0 1-1.75 1.75h-8.997l-.001-.002H3.75A1.75 1.75 0 0 1 2 18.247V5.752c0-.967.784-1.75 1.75-1.75h8.998Zm7.497 1.502h-7.497V18.5h7.497a.25.25 0 0 0 .25-.25V5.755a.25.25 0 0 0-.25-.25Zm-8.997-.002H3.75a.25.25 0 0 0-.25.25v12.495c0 .138.112.25.25.25h7.498V5.502Zm5.377 9.999a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5Zm2.5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5Zm-5 0a.75.75 0 1 1 0 1.5a.75.75 0 0 1 0-1.5Z"/>`),
+		g.Group(children),
+	)
+}

@@ -1,0 +1,14 @@
+package whh
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Tetristwo(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 1024 1024"),
+		g.Raw(`<path fill="currentColor" d="M640 704H384v256q0 26-19 45t-45 19H64q-26 0-45-19T0 960V384q0-26 19-45t45-19h256V64q0-26 18.5-45T384 0h256q26 0 45 19t19 45v576q0 27-19 45.5T640 704zM320 410q0-11-7.5-18.5T294 384H90q-11 0-18.5 7.5T64 410v204q0 11 7.5 18.5T90 640h204q11 0 18.5-7.5T320 614V410zm0 320q0-11-7.5-18.5T294 704H90q-11 0-18.5 7.5T64 730v204q0 11 7.5 18.5T90 960h204q11 0 18.5-7.5T320 934V730zM640 96q0-13-9.5-22.5T608 64H416q-13 0-22.5 9.5T384 96v192q0 13 9.5 22.5T416 320h192q13 0 22.5-9.5T640 288V96zm0 314q0-11-7.5-18.5T614 384H410q-11 0-18.5 7.5T384 410v204q0 11 7.5 18.5T410 640h204q11 0 18.5-7.5T640 614V410z"/>`),
+		g.Group(children),
+	)
+}

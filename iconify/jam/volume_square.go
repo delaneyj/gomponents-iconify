@@ -1,0 +1,14 @@
+package jam
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func VolumeSquare(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M4 0h12a4 4 0 0 1 4 4v12a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4zm0 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H4zm3.336 11.241a2 2 0 0 1-2-2v-2.5a2 2 0 0 1 2-2H8.34l1.823-1.709a2 2 0 0 1 1.368-.54h.205a1.6 1.6 0 0 1 1.6 1.6v7.8a1.6 1.6 0 0 1-1.6 1.6h-.205a2 2 0 0 1-1.368-.542L8.34 13.241H7.336zm1.795-4.5H7.336v2.5H9.13l2.205 2.067V6.674L9.13 8.741z"/>`),
+		g.Group(children),
+	)
+}

@@ -1,32 +1,14 @@
-package {{ .Name.Lower }}
+package {{ .PackageName.Lower }}
 
 import (
 	g "github.com/maragudk/gomponents"
-	h "github.com/maragudk/gomponents/html"
 	s "github.com/maragudk/gomponents/svg"
 )
 
-const IconifyVersion = "{{.Version}}"
-
-func IconFromName(name string) g.Node {
-	switch name {
-	{{range .Icons -}}
-	case "{{.Name.Camel}}": return {{.Name.Pascal}}()
-	{{end -}}
-	default:
-		panic("Unknown icon name: " + name)
-	}
-}
-
-{{range .Icons -}}
 func {{.Name.Pascal}}(children ...g.Node) g.Node {
 	return s.SVG(
-		g.Attr("viewbox", "0 0 {{$.ViewWidth}} {{$.ViewHeight}}"),
-		h.Width("{{$.Width}}"),
-		h.Height("{{$.Height}}"),
-		g.Raw(`{{.Icon.SvgBody}}`),
+		g.Attr("viewbox", "0 0 {{.ViewWidth}} {{.ViewHeight}}"),
+		g.Raw(`{{.SvgBody}}`),
 		g.Group(children),
 	)
 }
-
-{{end}}

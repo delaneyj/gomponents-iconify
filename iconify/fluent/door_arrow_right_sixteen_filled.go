@@ -1,0 +1,14 @@
+package fluent
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func DoorArrowRightSixteenFilled(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="M3 2.75C3 1.784 3.784 1 4.75 1h6.5c.966 0 1.75.784 1.75 1.75v3.457A5.5 5.5 0 0 0 7.257 15H4.75A1.75 1.75 0 0 1 3 13.25V2.75ZM6 9a1 1 0 1 0 0-2a1 1 0 0 0 0 2Zm5.5 7a4.5 4.5 0 1 0 0-9a4.5 4.5 0 0 0 0 9Zm.354-2.146a.5.5 0 0 1-.708-.708L12.293 12H9.5a.5.5 0 0 1 0-1h2.793l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 .146.351v.006a.5.5 0 0 1-.144.348l-.003.003l-2 2Z"/>`),
+		g.Group(children),
+	)
+}

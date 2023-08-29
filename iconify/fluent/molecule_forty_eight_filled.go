@@ -1,0 +1,14 @@
+package fluent
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func MoleculeFortyEightFilled(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="M32 24c5.523 0 10-4.477 10-10S37.523 4 32 4S22 8.477 22 14a9.96 9.96 0 0 0 1.453 5.195l-5.387 3.589a8 8 0 1 0 .443 9.868l7.682 3.84a6 6 0 1 0 1.12-2.235l-7.682-3.84A7.996 7.996 0 0 0 20 28a7.98 7.98 0 0 0-.618-3.089l5.634-3.754A9.968 9.968 0 0 0 32 24Z"/>`),
+		g.Group(children),
+	)
+}

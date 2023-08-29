@@ -1,0 +1,14 @@
+package clarity
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func ControlLunSolidAlerted(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 36 36"),
+		g.Raw(`<g id="clarityControlLunSolidAlerted0" fill="currentColor"><path d="M16.11 27a1 1 0 1 0 1 1a1 1 0 0 0-1-1Z"/><path d="M32.09 21H32v-3.68c-1.9 2.93-10.46 3.3-14 3.3a42.43 42.43 0 0 1-10-1.06v-1.68A40.59 40.59 0 0 0 18 19c4.85 0 12.8-.79 13.91-3.62h-9.68a3.68 3.68 0 0 1-2.73-1.23H18a42.12 42.12 0 0 1-10-1.04V11a40.59 40.59 0 0 0 10 1.14h.59a3.61 3.61 0 0 1 .46-2.29l3.46-6c-1.6-.15-3.17-.21-4.51-.21c-5.14 0-13.79.88-14 4.15v19.7c0 2.16 3.64 3.3 7.63 3.84l2.84 3l.59.62h17a3 3 0 0 0 3-3v-8.02A3 3 0 0 0 32.09 21ZM8 26.08V24.4a25.79 25.79 0 0 0 3.46.7l-1.24 1.44c-.76-.12-1.51-.27-2.22-.46ZM33.09 32a1 1 0 0 1-1 1H15.92l-4.52-4.77L15.92 23h16.17a1 1 0 0 1 1 1Z"/><path d="m26.85 1.14l-5.72 9.91a1.27 1.27 0 0 0 1.1 1.95h11.45a1.27 1.27 0 0 0 1.1-1.91l-5.72-9.95a1.28 1.28 0 0 0-2.21 0Z"/></g>`),
+		g.Group(children),
+	)
+}

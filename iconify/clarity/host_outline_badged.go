@@ -1,0 +1,14 @@
+package clarity
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func HostOutlineBadged(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 36 36"),
+		g.Raw(`<g id="clarityHostOutlineBadged0" fill="currentColor"><path d="M15 25.78a3 3 0 1 0 3-3a3 3 0 0 0-3 3Zm4.5 0a1.5 1.5 0 1 1-1.5-1.5a1.5 1.5 0 0 1 1.5 1.5ZM12 11.8h12v-1.31c-.07-.1-.15-.19-.21-.29H12Zm0-5.6v1.6h10.73a7 7 0 0 1-.22-1.6Z"/><path d="M26 32H10V4h12.78a7.65 7.65 0 0 1 .88-2H9.5A1.5 1.5 0 0 0 8 3.5V34h20V13.22a7.65 7.65 0 0 1-2-.88Z"/><circle cx="30" cy="6" r="5"/></g>`),
+		g.Group(children),
+	)
+}

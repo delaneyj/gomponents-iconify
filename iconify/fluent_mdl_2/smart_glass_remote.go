@@ -1,0 +1,14 @@
+package fluent_mdl_2
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func SmartGlassRemote(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 2048 2048"),
+		g.Raw(`<path fill="currentColor" d="M768 1152v128H640v-128h128zm384 384v-128h128v128h-128zm-256-256v-128h128v128H896zm256 0v-128h128v128h-128zm-384 128v128H640v-128h128zm128 128v-128h128v128H896zm-128 128v128H640v-128h128zm384 128v-128h128v128h-128zm-256 0v-128h128v128H896zm64-896q-66 0-124-25t-102-68t-69-102t-25-125q0-66 25-124t68-101t102-69t125-26q66 0 124 25t101 69t69 102t26 124q0 66-25 124t-69 102t-102 69t-124 25zm0-512q-40 0-75 15t-61 41t-41 61t-15 75q0 40 15 75t41 61t61 41t75 15q40 0 75-15t61-41t41-61t15-75q0-40-15-75t-41-61t-61-41t-75-15zM384 0h1152v2048H384V0zm1024 1920V128H512v1792h896z"/>`),
+		g.Group(children),
+	)
+}

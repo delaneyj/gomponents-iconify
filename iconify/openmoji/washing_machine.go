@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func WashingMachine(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<path fill="#D0CFCE" d="M53.908 63.031H18.01a1 1 0 0 1-1-1V13.068a1 1 0 0 1 1-1h35.9a1 1 0 0 1 1 1V62.03a1 1 0 0 1-1 1z"/><circle cx="36.024" cy="45.016" r="12" fill="#FFF"/><path fill="#92D3F5" d="M24.024 45.016c0 6.627 5.373 12 12 12s12-5.373 12-12"/><path fill="#9B9B9A" d="M17 17.009h16v9.95H17z"/><circle cx="36.024" cy="45.016" r="7" fill="#D0CFCE"/><path fill="#61B2E4" d="M29.024 45.016a7 7 0 1 0 14 0"/><circle cx="36.024" cy="45.016" r="12" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/><circle cx="36.024" cy="45.016" r="7" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="2"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M53.908 63.031H18.01a1 1 0 0 1-1-1V13.068a1 1 0 0 1 1-1h35.9a1 1 0 0 1 1 1V62.03a1 1 0 0 1-1 1z"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M17 17.009h16v9.95H17zM37 19h7m-7 4h7m-21-2h4"/><circle cx="49" cy="21" r="2"/>`),
+		g.Group(children),
+	)
+}

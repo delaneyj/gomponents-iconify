@@ -1,0 +1,14 @@
+package si_glyph
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Note(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 17 0"),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M14.938 0H3a2 2 0 0 0-2 2v2h16l-.062-2a2 2 0 0 0-2-2zM1 8h4v2H1zm0 3h4v2H1zm4 5v-2H1c.066 1.045.927 2 1.987 2H5zM1 5h4v2H1zm5 0v2h11l-.062-2H6zm0 6v2h11l-.062-2H6zm8.938 5C16 16 16.935 15.045 17 14H6v2h8.938zM6 8v2h11l-.062-2H6z"/>`),
+		g.Group(children),
+	)
+}

@@ -1,0 +1,14 @@
+package teenyicons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func KanbanOutline(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 15 15"),
+		g.Raw(`<path fill="currentColor" d="M.5 3.5V3a.5.5 0 0 0-.5.5h.5Zm6 0H7a.5.5 0 0 0-.5-.5v.5Zm0 11v.5a.5.5 0 0 0 .5-.5h-.5Zm-6 0H0a.5.5 0 0 0 .5.5v-.5Zm8-11V3a.5.5 0 0 0-.5.5h.5Zm6 0h.5a.5.5 0 0 0-.5-.5v.5Zm0 6v.5a.5.5 0 0 0 .5-.5h-.5Zm-6 0H8a.5.5 0 0 0 .5.5v-.5ZM0 1h7V0H0v1Zm8 0h7V0H8v1ZM.5 4h6V3h-6v1ZM6 3.5v11h1v-11H6ZM6.5 14h-6v1h6v-1Zm-5.5.5v-11H0v11h1ZM8.5 4h6V3h-6v1Zm5.5-.5v6h1v-6h-1Zm.5 5.5h-6v1h6V9ZM9 9.5v-6H8v6h1Z"/>`),
+		g.Group(children),
+	)
+}

@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func BusStop(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<defs><path id="openmojiBusStop0" d="M32.7 18v10.9M39 18v10.9m0-5.5h-6.3"/></defs><path fill="#D0CFCE" d="M34.1 3.9h4V68h-4z"/><path fill="#FFF" d="M48.9 38.5H23.4c-1.1 0-2-.9-2-2V10.9c0-1.1.9-2 2-2h25.5c1.1 0 2 .9 2 2v25.6c0 1.1-.9 2-2 2z"/><circle cx="36.1" cy="23.6" r="10" fill="#FCEA2B" stroke="#5C9E31" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"><path d="M34.1 8.5V3.9h4v4.6m0 30.5v29h-4V38.9m14.8-.4H23.4c-1.1 0-2-.9-2-2V10.9c0-1.1.9-2 2-2h25.5c1.1 0 2 .9 2 2v25.6c0 1.1-.9 2-2 2z"/><circle cx="36.1" cy="23.6" r="10"/><use href="#openmojiBusStop0"/></g><g fill="none" stroke="#5C9E31" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2.1"><circle cx="36.1" cy="23.6" r="10"/><use href="#openmojiBusStop0"/></g>`),
+		g.Group(children),
+	)
+}

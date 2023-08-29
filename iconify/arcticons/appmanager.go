@@ -1,0 +1,14 @@
+package arcticons
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Appmanager(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 48 48"),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M7.5 5.5a2 2 0 0 0-2 2v33a2 2 0 0 0 2 2h33a2 2 0 0 0 2-2v-33a2 2 0 0 0-2-2Z"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M34.4 25.37a12.44 12.44 0 0 0 .1-1.37a12.08 12.08 0 0 0-.1-1.36l3-2.32a.7.7 0 0 0 .17-.9l-2.8-4.85a.7.7 0 0 0-.86-.3l-3.48 1.41A10.35 10.35 0 0 0 28 14.3l-.52-3.71a.73.73 0 0 0-.7-.59H21.2a.72.72 0 0 0-.7.59L20 14.3a10.41 10.41 0 0 0-2.37 1.38l-3.48-1.41a.72.72 0 0 0-.86.3l-2.8 4.85a.71.71 0 0 0 .17.9l2.95 2.32A10.24 10.24 0 0 0 13.5 24a12.44 12.44 0 0 0 .09 1.37l-2.95 2.31a.7.7 0 0 0-.17.9l2.8 4.85a.7.7 0 0 0 .86.3l3.48-1.41A10 10 0 0 0 20 33.7l.52 3.71a.72.72 0 0 0 .7.59h5.6a.71.71 0 0 0 .69-.59L28 33.7a9.86 9.86 0 0 0 2.37-1.38l3.49 1.41a.69.69 0 0 0 .85-.3l2.8-4.85a.7.7 0 0 0-.17-.9ZM24 28.9a4.9 4.9 0 1 1 4.9-4.9a4.9 4.9 0 0 1-4.9 4.9Z"/>`),
+		g.Group(children),
+	)
+}

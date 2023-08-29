@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Goblin(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<path fill="#EA5A47" stroke="#EA5A47" stroke-miterlimit="10" d="M15.313 11h41v34l-1 5l-3 4l-3 4l-3 2l-4 2h-6l-7-1l-5-2l-3-3l-3-4l-2-3l-1-6z"/><path fill="#FFF" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" d="m23.298 23.865l.454-.558a3.537 3.537 0 0 1 4.976-.507l4.594 3.745a3.537 3.537 0 0 1 .506 4.976l-.454.557a3.537 3.537 0 0 1-4.976.507l-4.594-3.744a3.537 3.537 0 0 1-.506-4.976zm16.454 8.213l-.454-.557a3.537 3.537 0 0 1 .506-4.976l4.594-3.745a3.537 3.537 0 0 1 4.976.507l.454.558a3.537 3.537 0 0 1-.506 4.976l-4.594 3.744a3.537 3.537 0 0 1-4.976-.507z"/><g fill="#D22F27"><path d="m36.313 41l10-6h17l1 1l1 1v3l-2 1h-15z"/><path d="M38.867 35h8.892a2.554 2.554 0 0 1 2.554 2.554v.892A2.554 2.554 0 0 1 47.759 41h-8.892a2.554 2.554 0 0 1-2.554-2.554v-.892A2.554 2.554 0 0 1 38.867 35z"/></g><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.5 42V11h41v21.201"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M56.418 43.85c-1.023 11.278-10.993 19.59-22.269 18.567C23.59 61.458 15.501 52.604 15.5 42"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M43.813 50.541a20.571 20.571 0 0 0-15.627 0"/><path d="M33.63 28.925a3 3 0 1 1-3-3c1.656 0 3 1.344 3 3m12 0a3 3 0 1 1-3-3a3 3 0 0 1 3 3"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m25.313 17l7 6m15-6l-7 6m15.058 12H39.254m21.059 0H55.43m1.07 6h4.813s4 0 4-3a2.938 2.938 0 0 0-3-3h-2m-24 6H56.5m-20.187 4s4-3 8 0a6.422 6.422 0 0 0 2.615 1.264m-11-1.264s-4-3-8 0a6.422 6.422 0 0 1-2.615 1.264"/>`),
+		g.Group(children),
+	)
+}

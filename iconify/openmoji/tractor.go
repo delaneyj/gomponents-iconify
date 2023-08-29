@@ -1,0 +1,14 @@
+package openmoji
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Tractor(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 72 72"),
+		g.Raw(`<path fill="#3F3F3F" d="M26.682 28.364h3.167v4.417h-3.167z"/><path fill="#B1CC33" d="M51.095 20.284s-9.83-1.17-16.16.58l-.5 10.58s-18.84 1.59-22.59 5.59l1.25 13.5h40.25s1.155-10.477.494-19.424c-.332-4.506-1.779-8.367-2.744-10.826zm-11.262 17.28l-2.679.032l.141-12.634c5.39-1.89 11.64.072 11.64.072l.07 4.9c-7.85 2.07-9.172 7.63-9.172 7.63z"/><path fill="#3F3F3F" d="M11.48 42.519s16.636-2.645 30.997-3.035c0 0 4.006-4.207 6.038-4.911c1.938-.672 4.882-1.213 5.279-.875c.4.34.232 2.672.331 5.915l-.721 11.954l-41.062-.214l-.862-8.834z"/><circle cx="52.98" cy="46.59" r="5" fill="#EA5A47"/><circle cx="15.02" cy="51.59" r="3" fill="#EA5A47"/><path fill="#FCEA2B" d="M14.07 41.135h1.758c.967 0 1.758-.45 1.758-1v-2.12c-.141.226.341-1-.625-1l-1.472.336a1.086 1.086 0 0 0-.824.843l-.595 2.941z"/><path d="M52.98 35.59c-6.065 0-11 4.935-11 11s4.935 11 11 11s11-4.935 11-11s-4.934-11-11-11zm4 11c0 2.206-1.793 4-4 4s-4-1.794-4-4s1.794-4 4-4s4 1.794 4 4zm-41.96-1c-3.309 0-6 2.691-6 6s2.691 6 6 6s6-2.691 6-6s-2.691-6-6-6zm0 8c-1.103 0-2-.897-2-2s.897-2 2-2s2 .897 2 2s-.897 2-2 2z"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M26.682 32.3v-3.936h3.167v3.487m-3.167.449c-5.143.8-11.774 2.197-14.407 4.337a1.02 1.02 0 0 0-.38.886l.686 6.544"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M29.849 31.851c-.94.121-2.017.27-3.167.449m26.137-1.833c-.346-3.695-.886-8.055-1.72-10.186c0 0-10.834-1.167-17.167.583l-.5 10.584s-1.438.128-3.583.403m-7.334 18.68h17.837m0-7.059c1.537-6.946 8.414-11.33 15.36-9.794a12.823 12.823 0 0 1 6.917 4.1"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M48.967 23.669s-5.919-.877-11.669.29l-.284 13.463h2.501s2.875-4.641 9.523-6.85l-.07-6.903z"/><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M28.12 28.364s.337-3.583-1.285-3.583"/><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M37.017 37.279h2.66s2.749-4.86 9.36-6.706m-31.993 7.442v2.12c0 .55-.45 1-1 1h-1"/>`),
+		g.Group(children),
+	)
+}

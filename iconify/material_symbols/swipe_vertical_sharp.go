@@ -1,0 +1,14 @@
+package material_symbols
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func SwipeVerticalSharp(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 24 24"),
+		g.Raw(`<path fill="currentColor" d="M2 22v-1.5h2.025q-1.475-1.8-2.25-3.975T1 12q0-2.35.775-4.525T4.025 3.5H2V2h5v5H5.5V4.1Q4.05 5.75 3.275 7.775T2.5 12q0 2.2.775 4.225T5.5 19.9V17H7v5H2Zm13.275-.75L7.6 17.675l.95-2.075l2.9-.225l-3.15-8.6l1.875-.7l2.75 7.525l.95-.35L12.5 9.525l1.875-.725l1.375 3.775l.925-.35l-1.025-2.8l1.875-.7l1.025 2.825l.95-.35l-.35-.925l1.875-.7l3.125 8.45l-8.875 3.225Z"/>`),
+		g.Group(children),
+	)
+}

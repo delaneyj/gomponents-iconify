@@ -1,0 +1,14 @@
+package fluent
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func DiamondSixteenRegular(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 20 20"),
+		g.Raw(`<path fill="currentColor" d="M1.586 9.397a2 2 0 0 1 0-2.828L6.57 1.586a2 2 0 0 1 2.83 0l4.984 4.983a2 2 0 0 1 0 2.828L9.399 14.38a2 2 0 0 1-2.829 0L1.586 9.397Zm.707-2.121a1 1 0 0 0 0 1.414l4.985 4.983a1 1 0 0 0 1.414 0l4.985-4.983a1 1 0 0 0 0-1.414L8.692 2.293a1 1 0 0 0-1.414 0L2.293 7.276Z"/>`),
+		g.Group(children),
+	)
+}

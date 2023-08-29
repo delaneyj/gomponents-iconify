@@ -1,0 +1,14 @@
+package flagpack
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Na(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 32 24"),
+		g.Raw(`<defs><path id="flagpackNa0" fill="#fff" d="M0 0h32v24H0z"/></defs><g fill="none"><g clip-path="url(#flagpackNa2)"><use href="#flagpackNa0"/><path fill="#093" fill-rule="evenodd" d="M0 0v24h32V0H0Z" clip-rule="evenodd"/><mask id="flagpackNa1" width="32" height="24" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:luminance"><path fill="#fff" fill-rule="evenodd" d="M0 0v24h32V0H0Z" clip-rule="evenodd"/></mask><g mask="url(#flagpackNa1)"><path fill="#3195F9" fill-rule="evenodd" d="M0 0v24L32 0H0Z" clip-rule="evenodd"/><path fill="#E31D1C" stroke="#F7FCFF" stroke-width="2" d="m-1.012 27.094l.53.96l.908-.617l34.832-23.71l.702-.477l-.358-.77l-2.342-5.04l-.491-1.057l-.97.647l-35.356 23.556l-.766.51l.445.805l2.866 5.193Z"/><path fill="#FECA00" fill-rule="evenodd" d="m6.23 9.245l-1.294 1.614l-.314-2.045l-1.928.751l.751-1.928L1.4 7.324L3.015 6.03L1.4 4.736l2.045-.314l-.75-1.928l1.927.751l.314-2.045L6.23 2.815L7.524 1.2l.313 2.045l1.928-.75l-.751 1.927l2.045.314L9.445 6.03l1.614 1.294l-2.045.313l.751 1.928l-1.928-.751l-.313 2.045L6.23 9.245Zm0-.715a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5Zm2-2.5a2 2 0 1 1-4 0a2 2 0 0 1 4 0Z" clip-rule="evenodd"/></g></g><defs><clipPath id="flagpackNa2"><use href="#flagpackNa0"/></clipPath></defs></g>`),
+		g.Group(children),
+	)
+}

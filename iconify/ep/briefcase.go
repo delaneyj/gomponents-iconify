@@ -1,0 +1,14 @@
+package ep
+
+import (
+	g "github.com/maragudk/gomponents"
+	s "github.com/maragudk/gomponents/svg"
+)
+
+func Briefcase(children ...g.Node) g.Node {
+	return s.SVG(
+		g.Attr("viewbox", "0 0 1024 1024"),
+		g.Raw(`<path fill="currentColor" d="M320 320V128h384v192h192v192H128V320h192zM128 576h768v320H128V576zm256-256h256.064V192H384v128z"/>`),
+		g.Group(children),
+	)
+}
