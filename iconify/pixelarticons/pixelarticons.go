@@ -5,7 +5,494 @@ import (
 	s "github.com/maragudk/gomponents/svg"
 )
 
-const IconifyVersion = "1.7.0"
+const (
+	IconifyVersion                 = "1.7.0"
+	abTestingPath                  = `<path fill="currentColor" d="M3 3h6v2H5v2h4v2H5v2h4v2H3V3zm6 8h2V9H9v2zm0-4h2V5H9v2zm4 4h8v10h-2v-4h-4v4h-2V11zm2 4h4v-2h-4v2zm0-12h6v6h-2V5h-4V3zM3 15h2v4h4v2H3v-6z"/>`
+	acPath                         = `<path fill="currentColor" d="M13 2h-2v4H9V4H7v2h2v2h2v3H8V9H6V7H4v2h2v2H2v2h4v2H4v2h2v-2h2v-2h3v3H9v2H7v2h2v-2h2v4h2v-4h2v2h2v-2h-2v-2h-2v-3h3v2h2v2h2v-2h-2v-2h4v-2h-4V9h2V7h-2v2h-2v2h-3V8h2V6h2V4h-2v2h-2V2z"/>`
+	addBoxPath                     = `<path fill="currentColor" d="M3 3h18v18H3V3zm16 16V5H5v14h14zm-6-8h4v2h-4v4h-2v-4H7v-2h4V7h2v4z"/>`
+	addBoxMultiplePath             = `<path fill="currentColor" d="M3 3h14v14H3V3zm12 12V5H5v10h10zm-8 6v-2h12V7h2v14H7zm4-12h2v2h-2v2H9v-2H7V9h2V7h2v2z"/>`
+	addColPath                     = `<path fill="currentColor" d="M2 2h10v20H2v-2h8v-4H2v-2h8v-4H2V8h8V4H2V2zm17 9h3v2h-3v3h-2v-3h-3v-2h3V8h2v3z"/>`
+	addGridPath                    = `<path fill="currentColor" d="M3 3h8v8H3V3zm6 6V5H5v4h4zm9 4h-2v3h-3v2h3v3h2v-3h3v-2h-3v-3zM15 3h6v8h-8V3h2zm4 6V5h-4v4h4zM5 13h6v8H3v-8h2zm4 6v-4H5v4h4z"/>`
+	addRowPath                     = `<path fill="currentColor" d="M4 10V2H2v10h20V2h-2v8h-4V2h-2v8h-4V2H8v8H4zm9 9v3h-2v-3H8v-2h3v-3h2v3h3v2h-3z"/>`
+	alertPath                      = `<path fill="currentColor" d="M13 1h-2v2H9v2H7v2H5v2H3v2H1v2h2v2h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v-2h2v-2h2v-2h-2V9h-2V7h-2V5h-2V3h-2V1zm0 2v2h2v2h2v2h2v2h2v2h-2v2h-2v2h-2v2h-2v2h-2v-2H9v-2H7v-2H5v-2H3v-2h2V9h2V7h2V5h2V3h2zm0 4h-2v6h2V7zm0 8h-2v2h2v-2z"/>`
+	alignCenterPath                = `<path fill="currentColor" d="M20 5H4v2h16V5zm-4 4H8v2h8V9zM4 13h16v2H4v-2zm12 4H8v2h8v-2z"/>`
+	alignJustifyPath               = `<path fill="currentColor" d="M20 5H4v2h16V5zm0 4H4v2h16V9zM4 13h16v2H4v-2zm16 4H4v2h16v-2z"/>`
+	alignLeftPath                  = `<path fill="currentColor" d="M20 5H4v2h16V5zm-8 4H4v2h8V9zm8 4v2H4v-2h16zm-8 4H4v2h8v-2z"/>`
+	alignRightPath                 = `<path fill="currentColor" d="M4 5h16v2H4V5zm8 4h8v2h-8V9zm-8 4v2h16v-2H4zm8 4h8v2h-8v-2z"/>`
+	analyticsPath                  = `<path fill="currentColor" d="M3 3h18v18H3V3zm16 2H5v14h14V5zM7 12h2v5H7v-5zm10-5h-2v10h2V7zm-6 3h2v2h-2v-2zm2 4h-2v3h2v-3z"/>`
+	anchorPath                     = `<path fill="currentColor" d="M14 3h-4v2H8v4h2v2h1v8H6v-4h2v-2H4v6h2v2h12v-2h2v-6h-4v2h2v4h-5v-8h1V9h2V5h-2V3zm0 2v4h-4V5h4z"/>`
+	androidPath                    = `<path fill="currentColor" d="M2 5h2v2H2V5zm4 4H4V7h2v2zm2 0H6v2H4v2H2v6h20v-6h-2v-2h-2V9h2V7h2V5h-2v2h-2v2h-2V7H8v2zm0 0h8v2h2v2h2v4H4v-4h2v-2h2V9zm2 4H8v2h2v-2zm4 0h2v2h-2v-2z"/>`
+	animationPath                  = `<path fill="currentColor" d="M4 2H2v12h2V4h10V2H4zm2 4h12v2H8v10H6V6zm4 4h12v12H10V10zm10 10v-8h-8v8h8z"/>`
+	archivePath                    = `<path fill="currentColor" d="M22 4H2v6h2v10h16V10h2V4zM6 10h12v8H6v-8zm14-4v2H4V6h16zm-5 6H9v2h6v-2z"/>`
+	arrowBarDownPath               = `<path fill="currentColor" d="M11 4h2v8h2v2h-2v2h-2v-2H9v-2h2V4zm-2 8H7v-2h2v2zm6 0v-2h2v2h-2zM4 18h16v2H4v-2z"/>`
+	arrowBarLeftPath               = `<path fill="currentColor" d="M6 4v16H4V4h2zm14 7v2h-8v2h-2v-2H8v-2h2V9h2v2h8zm-8-2V7h2v2h-2zm0 6h2v2h-2v-2z"/>`
+	arrowBarRightPath              = `<path fill="currentColor" d="M18 4v16h2V4h-2zM4 11v2h8v2h-2v2h2v-2h2v-2h2v-2h-2V9h-2V7h-2v2h2v2H4z"/>`
+	arrowBarUpPath                 = `<path fill="currentColor" d="M4 6h16V4H4v2zm7 14h2v-8h2v2h2v-2h-2v-2h-2V8h-2v2H9v2H7v2h2v-2h2v8z"/>`
+	arrowDownPath                  = `<path fill="currentColor" d="M11 4h2v12h2v2h-2v2h-2v-2H9v-2h2V4zM7 14v2h2v-2H7zm0 0v-2H5v2h2zm10 0v2h-2v-2h2zm0 0v-2h2v2h-2z"/>`
+	arrowDownBoxPath               = `<path fill="currentColor" d="M3 3h18v18H3V3zm16 16V5H5v14h14zM11 7h2v6h2v2h-2v2h-2v-2H9v-2h2V7zm-2 4v2H7v-2h2zm8 0h-2v2h2v-2z"/>`
+	arrowLeftPath                  = `<path fill="currentColor" d="M20 11v2H8v2H6v-2H4v-2h2V9h2v2h12zM10 7H8v2h2V7zm0 0h2V5h-2v2zm0 10H8v-2h2v2zm0 0h2v2h-2v-2z"/>`
+	arrowLeftBoxPath               = `<path fill="currentColor" d="M21 3v18H3V3h18zM5 19h14V5H5v14zm12-8v2h-6v2H9v-2H7v-2h2V9h2v2h6zm-4-2h-2V7h2v2zm0 8v-2h-2v2h2z"/>`
+	arrowRightPath                 = `<path fill="currentColor" d="M4 11v2h12v2h2v-2h2v-2h-2V9h-2v2H4zm10-4h2v2h-2V7zm0 0h-2V5h2v2zm0 10h2v-2h-2v2zm0 0h-2v2h2v-2z"/>`
+	arrowRightBoxPath              = `<path fill="currentColor" d="M3 21V3h18v18H3zM19 5H5v14h14V5zM7 13v-2h6V9h2v2h2v2h-2v2h-2v-2H7zm4 2h2v2h-2v-2zm0-8v2h2V7h-2z"/>`
+	arrowUpPath                    = `<path fill="currentColor" d="M11 20h2V8h2V6h-2V4h-2v2H9v2h2v12zM7 10V8h2v2H7zm0 0v2H5v-2h2zm10 0V8h-2v2h2zm0 0v2h2v-2h-2z"/>`
+	arrowUpBoxPath                 = `<path fill="currentColor" d="M3 21h18V3H3v18zM19 5v14H5V5h14zm-8 12h2v-6h2V9h-2V7h-2v2H9v2h2v6zm-2-4v-2H7v2h2zm8 0h-2v-2h2v2z"/>`
+	arrowsHorizontalPath           = `<path fill="currentColor" d="M15 9V7h2v2h-2zm2 6v-2h-4v-2h4V9h2v2h2v2h-2v2h-2zm0 0v2h-2v-2h2zm-6-4v2H7v2H5v-2H3v-2h2V9h2v2h4zm-4 4h2v2H7v-2zm2-8v2H7V7h2z"/>`
+	arrowsVerticalPath             = `<path fill="currentColor" d="M11 11h2V7h2v2h2V7h-2V5h-2V3h-2v2H9v2H7v2h2V7h2v4zm0 2h2v4h2v2h-2v2h-2v-2H9v-2h2v-4zm-2 4v-2H7v2h2zm6 0v-2h2v2h-2z"/>`
+	artTextPath                    = `<path fill="currentColor" d="M2 7h10v10H2V7zm8 8V9H4v6h6zm12-8h-8v2h8V7zm-8 4h8v2h-8v-2zm8 4h-8v2h8v-2z"/>`
+	articlePath                    = `<path fill="currentColor" d="M5 3H3v18h18V3H5zm14 2v14H5V5h14zm-2 2H7v2h10V7zM7 11h10v2H7v-2zm7 4H7v2h7v-2z"/>`
+	articleMultiplePath            = `<path fill="currentColor" d="M3 1H1v18h18V1H3zm14 2v14H3V3h14zm4 18H5v2h18V5h-2v16zM15 5H5v2h10V5zM5 9h10v2H5V9zm7 4H5v2h7v-2z"/>`
+	aspectRatioPath                = `<path fill="currentColor" d="M2 4h20v16H2V4zm2 14h16V6H4v12zM8 8h2v2H8v2H6V8h2zm8 8h-2v-2h2v-2h2v4h-2z"/>`
+	atPath                         = `<path fill="currentColor" d="M4 4h16v12H8V8h8v6h2V6H6v12h14v2H4V4zm10 10v-4h-4v4h4z"/>`
+	attachmentPath                 = `<path fill="currentColor" d="M7 5v14H5V3h14v18H9V7h6v10h-2V9h-2v10h6V5H7z"/>`
+	audioDevicePath                = `<path fill="currentColor" d="M4 4h4v2H4v8h4v2H2V4h2zm6 0h10v2h-8v12h8v2H10V4zm12 0h-2v16h2V4zm-7 4h2v2h-2V8zm3 4h-4v4h4v-4zM8 18H4v2h4v-2z"/>`
+	avatarPath                     = `<path fill="currentColor" d="M3 3h18v18H3V3zm16 16V5H5v14h14zM14 7h-4v4h4V7zm1 6H9v2H7v2h2v-2h6v2h2v-2h-2v-2z"/>`
+	backburgerPath                 = `<path fill="currentColor" d="M11 7h10v2H11V7zm-8 4h2V9h2v2h14v2H7v2H5v-2H3v-2zm4 4v2h2v-2H7zm0-6V7h2v2H7zm14 6H11v2h10v-2z"/>`
+	batteryPath                    = `<path fill="currentColor" d="M4 5H2v14h18v-4h2V9h-2V5H4zm14 2v10H4V7h14z"/>`
+	batteryChargingPath            = `<path fill="currentColor" d="M4 5H2v14h6v-2H4V7h4V5H4zm10 0h6v4h2v6h-2v4h-6v-2h4V7h-4V5zm-4 2h2v4h4v2h-2v2h-2v2h-2v-4H6v-2h2V9h2V7z"/>`
+	batteryFullPath                = `<path fill="currentColor" d="M18 5H2v14h18v-4h2V9h-2V5h-2zm0 2v10H4V7h14zM8 9H6v6h2V9zm2 0h2v6h-2V9zm6 0h-2v6h2V9z"/>`
+	batteryOnePath                 = `<path fill="currentColor" d="M4 5H2v14h18v-4h2V9h-2V5H4zm14 2v10H4V7h14zM8 9H6v6h2V9z"/>`
+	batteryTwoPath                 = `<path fill="currentColor" d="M4 5H2v14h18v-4h2V9h-2V5H4zm14 2v10H4V7h14zM6 9h2v6H6V9zm6 0h-2v6h2V9z"/>`
+	bedPath                        = `<path fill="currentColor" d="M0 4h2v12h10V8h10v2h-8v6h8v-6h2v10h-2v-2H2v2H0V4zm3 5h2v4H3V9zm6 4v2H5v-2h4zm0-4h2v4H9V9zm0 0H5V7h4v2z"/>`
+	bitcoinPath                    = `<path fill="currentColor" d="M13 3h2v2h2v2H9v4h8v2H9v4h8v2h-2v2h-2v-2h-2v2H9v-2H5v-2h2v-4H5v-2h2V7H5V5h4V3h2v2h2V3zm4 14v-4h2v4h-2zm0-6V7h2v4h-2z"/>`
+	bluetoothPath                  = `<path fill="currentColor" d="M15 3h-2v2h2v2h2v2h-2v2h2V9h2V7h-2V5h-2V3zm-2 0h-2v6H9V7H7V5H5v2h2v2h2v2h2v2H9v2H7v2H5v2h2v-2h2v-2h2v6h2V3zm2 8h-2v2h2v2h2v2h-2v2h-2v2h2v-2h2v-2h2v-2h-2v-2h-2v-2z"/>`
+	bookPath                       = `<path fill="currentColor" d="M8 2h12v20H4V2h4zm4 8h-2v2H8V4H6v16h12V4h-4v8h-2v-2z"/>`
+	bookOpenPath                   = `<path fill="currentColor" d="M3 3h8v2H3v12h8V5h2v12h8V5h-8V3h10v16H13v2h-2v-2H1V3h2zm16 7h-4v2h4v-2zm-4-3h4v2h-4V7zm2 6h-2v2h2v-2z"/>`
+	bookmarkPath                   = `<path fill="currentColor" d="M18 2H6v2h12v16h-2v-2h-2v-2h-4v2H8v2H6V2H4v20h4v-2h2v-2h4v2h2v2h4V2h-2z"/>`
+	bookmarksPath                  = `<path fill="currentColor" d="M21 18V2H7v2h12v14h2zM5 6H3v16h4v-2h2v-2h2v2h2v2h4V6H5zm8 14v-2h-2v-2H9v2H7v2H5V8h10v12h-2z"/>`
+	briefcasePath                  = `<path fill="currentColor" d="M8 3h8v4h6v14H2V7h6V3zm2 4h4V5h-4v2zM4 9v10h16V9H4z"/>`
+	briefcaseAccountPath           = `<path fill="currentColor" d="M16 3H8v4H2v14h20V7h-6V3zm-2 4h-4V5h4v2zM4 19V9h16v10H4zm6-8h4v3h-4v-3zm-2 4h8v2H8v-2z"/>`
+	briefcaseCheckPath             = `<path fill="currentColor" d="M16 3H8v4H2v14h20V7h-6V3zm-2 4h-4V5h4v2zM4 19V9h16v10H4zm10-8h2v2h-2v-2zm-2 4v-2h2v2h-2zm-2 0h2v2h-2v-2zm0 0H8v-2h2v2z"/>`
+	briefcaseDeletePath            = `<path fill="currentColor" d="M16 3H8v4H2v14h12v-2H4V9h16v4h2V7h-6V3zm-2 4h-4V5h4v2zm4 8h-2v2h2v2h-2v2h2v-2h2v2h2v-2h-2v-2h2v-2h-2v2h-2v-2z"/>`
+	briefcaseDownloadPath          = `<path fill="currentColor" d="M8 3h8v4h6v14h-5v-2h3V9H4v10h3v2H2V7h6V3zm6 2h-4v2h4V5zm-3 6h2v6h2v2h-2v2h-2v-2H9v-2h2v-6zm-2 6H7v-2h2v2zm6 0v-2h2v2h-2z"/>`
+	briefcaseMinusPath             = `<path fill="currentColor" d="M8 3h8v4h6v6h-2V9H4v10h10v2H2V7h6V3zm6 2h-4v2h4V5zm2 12h6v2h-6v-2z"/>`
+	briefcasePlusPath              = `<path fill="currentColor" d="M8 3h8v4h6v4h-2V9H4v10h8v2H2V7h6V3zm2 4h4V5h-4v2zm7 14h2v-3h3v-2h-3v-3h-2v3h-3v2h3v3z"/>`
+	briefcaseSearchPath            = `<path fill="currentColor" d="M16 3H8v4H2v14h10v-2H4V9h16v2h2V7h-6V3zm-2 4h-4V5h4v2zm6 6h-6v6h6v2h2v-2h-2v-6zm-4 4v-2h2v2h-2z"/>`
+	briefcaseSearchOnePath         = `<path fill="currentColor" d="M16 3H8v4H2v14h7v-2H4V9h18V7h-6V3zm-2 4h-4V5h4v2zm0 4h8v2h-8v-2zm0 10h-2v-8h2v8zm8 0v2h-8v-2h8zm0 0h2v-8h-2v8zm-6-6h2v2h2v2h-4v-4z"/>`
+	briefcaseUploadPath            = `<path fill="currentColor" d="M8 3h8v4h6v14h-5v-2h3V9H4v10h3v2H2V7h6V3zm6 2h-4v2h4V5zm-3 16h2v-6h2v2h2v-2h-2v-2h-2v-2h-2v2H9v2H7v2h2v-2h2v6z"/>`
+	bugPath                        = `<path fill="currentColor" d="M8 2h2v4h4V2h2v4h2v3h2v2h-2v2h4v2h-4v2h2v2h-2v3H6v-3H4v-2h2v-2H2v-2h4v-2H4V9h2V6h2V2Zm8 6H8v3h8V8Zm-5 5H8v7h3v-7Zm2 7h3v-7h-3v7ZM4 9H2V7h2v2Zm0 10v2H2v-2h2Zm16 0h2v2h-2v-2Zm0-10V7h2v2h-2Z"/>`
+	buildingPath                   = `<path fill="currentColor" d="M3 2h18v20H3V2zm12 16v2h4V4H5v16h4v-2h6zM7 6h2v2H7V6zm6 0h-2v2h2V6zm2 0h2v2h-2V6zm-6 4H7v2h2v-2zm2 0h2v2h-2v-2zm6 0h-2v2h2v-2zM7 14h2v2H7v-2zm6 0h-2v2h2v-2zm4 0h-2v2h2v-2z"/>`
+	buildingCommunityPath          = `<path fill="currentColor" d="M20 2h2v20H2v-8h2v6h4v-4h2v4h4v-6h2v6h4V4H10v2H8V2h12zm-8 10h2v2h-2v-2zm-2-2h2v2h-2v-2zm-2 0V8h2v2H8zm-2 2v-2h2v2H6zm0 0H4v2h2v-2zm10-6h2v2h-2V6zm-2 0h-2v2h2V6zm2 4h2v2h-2v-2z"/>`
+	buildingSkyscraperPath         = `<path fill="currentColor" d="M10 2h4v5h2v2h-2v11h4v-9h2v9h2v2H2v-2h2V8h2v12h6V4h-2V2zM8 6V4h2v2H8zm0 0H6v2h2V6zm10 5h-2V9h2v2zm-8-1H8v2h2v-2zm-2 4h2v2H8v-2z"/>`
+	buildingsPath                  = `<path fill="currentColor" d="M2 2h14v4h6v16H2V2zm18 6h-4v2h2v2h-2v2h2v2h-2v2h2v2h2V8zm-6-4H4v16h2v-2h6v2h2V4zM6 6h2v2H6V6zm6 0h-2v2h2V6zm-6 4h2v2H6v-2zm6 0h-2v2h2v-2zm-6 4h2v2H6v-2zm6 0h-2v2h2v-2z"/>`
+	bulletlistPath                 = `<path fill="currentColor" d="M2 11V5h6v6H2zm4-2V7H4v2h2zm16-4H10v2h12V5zm0 4H10v2h12V9zm-12 4h12v2H10v-2zm12 4H10v2h12v-2zM2 13v6h6v-6H2zm4 2v2H4v-2h2z"/>`
+	bullseyePath                   = `<path fill="currentColor" d="M18 2H6v2H4v2H2v12h2v2h2v2h12v-2h2v-2h2V6h-2V4h-2V2zm0 2v2h2v12h-2v2H6v-2H4V6h2V4h12zm-8 6h4v4h-4v-4zM8 6h8v2H8V6zm0 10H6V8h2v8zm8 0v2H8v-2h8zm0 0h2V8h-2v8z"/>`
+	bullseyeArrowPath              = `<path fill="currentColor" d="M6 2h10v2H6V2zM4 6V4h2v2H4zm0 12H2V6h2v12zm2 2H4v-2h2v2zm12 0H6v2h12v-2zm2-2v2h-2v-2h2zm0 0h2V8h-2v10zM12 6H8v2H6v8h2v2h8v-2h2v-4h-2v4H8V8h4V6zm2 8v-4h2V8h2V6h4V4h-2V2h-2v4h-2v2h-2v2h-4v4h4z"/>`
+	busPath                        = `<path fill="currentColor" d="M5 2h14v2H5V2zm0 2v6h14V4h2v16h-2v2h-4v-2H9v2H5v-2H3V4h2zm0 14h14v-6H5v6zm2-4h2v2H7v-2zm10 0h-2v2h2v-2z"/>`
+	cakePath                       = `<path fill="currentColor" d="M6 2h2v2H6V2zm2 3H6v3H2v9h6v-2h2v2h4v-2h2v2h6V8h-4V5h-2v3h-3V5h-2v3H8V5zm12 10h-4v-3h-2v3h-4v-3H8v3H4v-5h16v5zM2 20h20v2H2v-2zM13 2h-2v2h2V2zm3 0h2v2h-2V2zM2 17h2v3H2zm18 0h2v3h-2z"/>`
+	calculatorPath                 = `<path fill="currentColor" d="M5 2H3v20h18V2H5zm14 18H5V4h14v16zM17 6H7v4h10V6zM7 12h2v2H7v-2zm6 0h-2v2h2v-2zm2 0h2v2h-2v-2zm-6 4H7v2h2v-2zm2 0h2v2h-2v-2zm6 0h-2v2h2v-2z"/>`
+	calendarPath                   = `<path fill="currentColor" d="M15 2h2v2h4v18H3V4h4V2h2v2h6V2zM5 8h14V6H5v2zm0 2v10h14V10H5z"/>`
+	calendarAlertPath              = `<path fill="currentColor" d="M7 5V4H5v2H3v14h14V6h-2V4h-2v2H7V5zm-2 5V8h10v2H5zm0 2h10v6H5v-6zm16-3V8h-2v6h2V9zm0 6h-2v2h2v-2z"/>`
+	calendarArrowLeftPath          = `<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v8h2v-2h14v10h-8v2h10V4h-4V2zm2 6H5V6h14v2zm-6 8H7v-2h2v-2H7v2H5v2H3v2h2v2h2v2h2v-2H7v-2h6v-2z"/>`
+	calendarArrowRightPath         = `<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h10v-2H5V10h14v2h2V4h-4V2zM7 6h12v2H5V6h2zm14 10h-2v-2h-2v-2h-2v2h2v2h-6v2h6v2h-2v2h2v-2h2v-2h2v-2z"/>`
+	calendarCheckPath              = `<path fill="currentColor" d="M15 2h2v2h4v18H3V4h4V2h2v2h6V2zm4 6V6H5v2h14zm0 2H5v10h14V10zm-3 2v2h-2v-2h2zm-4 4v-2h2v2h-2zm-2 0h2v2h-2v-2zm0 0H8v-2h2v2z"/>`
+	calendarExportPath             = `<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h4v-2H5V10h14v10h-2v2h4V4h-4V2zM7 6h12v2H5V6h2zm6 6h-2v6H9v-2H7v2h2v2h2v2h2v-2h2v-2h2v-2h-2v2h-2v-6z"/>`
+	calendarGridPath               = `<path fill="currentColor" d="M3 3h18v18H3V3zm2 2v2h14V5H5zm14 4h-6v2h6V9zm0 4h-6v2h6v-2zm0 4h-6v2h6v-2zm-8 2v-2H5v2h6zm-6-4h6v-2H5v2zm0-4h6V9H5v2z"/>`
+	calendarImportPath             = `<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h4v-2H5V10h14v10h-2v2h4V4h-4V2zM7 6h12v2H5V6h2zm6 16h-2v-6H9v-2h2v-2h2v2h2v2h-2v6zm2-6v2h2v-2h-2zm-6 0v2H7v-2h2z"/>`
+	calendarMinusPath              = `<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h18V4h-4V2zM7 6h12v2H5V6h2zM5 20V10h14v10H5zm10-6H9v2h6v-2z"/>`
+	calendarMonthPath              = `<path fill="currentColor" d="M15 2h2v2h4v18H3V4h4V2h2v2h6V2zM9 6H5v2h14V6H9zm-4 4v10h14V10H5zm2 2h2v2H7v-2zm6 0h-2v2h2v-2zm2 0h2v2h-2v-2zm-6 4H7v2h2v-2zm2 0h2v2h-2v-2zm6 0h-2v2h2v-2z"/>`
+	calendarMultiplePath           = `<path fill="currentColor" d="M17 2h2v2h4v14H5V4h4V2h2v2h6V2zm-6 4H7v2h14V6H11zm-4 4v6h14v-6H7zM3 20h16v2H1V8h2v12z"/>`
+	calendarMultipleCheckPath      = `<path fill="currentColor" d="M17 2h2v2h4v10h-2v-4H7v6h6v2H5V4h4V2h2v2h6V2zm-6 4H7v2h14V6H11zm2 14v2H1V8h2v12h10zm2-2h2v2h-2v-2zm4 2v2h-2v-2h2zm2-2h-2v2h2v-2zm0 0v-2h2v2h-2z"/>`
+	calendarPlusPath               = `<path fill="currentColor" d="M15 2h2v2h4v18H3V4h4V2h2v2h6V2zM9 6H5v2h14V6H9zm-4 4v10h14V10H5zm6 2h2v2h2v2h-2v2h-2v-2H9v-2h2v-2z"/>`
+	calendarRangePath              = `<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h18V4h-4V2zM7 6h12v2H5V6h2zM5 20V10h14v10H5zm4-8H7v2h2v-2zm2 0h2v2h-2v-2zm6 0h-2v2h2v-2z"/>`
+	calendarRemovePath             = `<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h18V4h-4V2zM7 6h12v2H5V6h2zM5 20V10h14v10H5zm6-4H9v2h2v-2zm0-2v-2H9v2h2zm2 0h-2v2h2v2h2v-2h-2v-2zm0 0v-2h2v2h-2z"/>`
+	calendarSearchPath             = `<path fill="currentColor" d="M15 2h2v2h4v8h-2v-2H5v10h6v2H3V4h4V2h2v2h6V2zM9 6H5v2h14V6H9zm8 6v2h-4v-2h4zm-4 6h-2v-4h2v4zm4 0h-4v2h6v2h2v-2h-2v-6h-2v4z"/>`
+	calendarSortAscendingPath      = `<path fill="currentColor" d="M10 5H8v2H4V5H2v2H0v12h12V7h-2V5zM2 9h8v2H2V9zm0 8v-4h8v4H2zM20 7h-2v8h-2v-2h-2v2h2v2h2v2h2v-2h2v-2h2v-2h-2v2h-2V7z"/>`
+	calendarSortDescendingPath     = `<path fill="currentColor" d="M10 5H8v2H4V5H2v2H0v12h12V7h-2V5zM2 9h8v2H2V9zm0 8v-4h8v4H2zm18 2h-2v-8h-2V9h2V7h2v2h2v2h-2v8zm2-8v2h2v-2h-2zm-6 0v2h-2v-2h2z"/>`
+	calendarTextPath               = `<path fill="currentColor" d="M15 2h2v2h4v18H3V4h4V2h2v2h6V2zM9 6H5v2h14V6H9zm-4 4v10h14V10H5zm2 2h8v2H7v-2zm4 6v-2H7v2h4z"/>`
+	calendarTodayPath              = `<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h18V4h-4V2zM7 6h12v2H5V6h2zM5 20V10h14v10H5zm6-4v-4H7v4h4z"/>`
+	calendarTomorrowPath           = `<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h18V4h-4V2zM7 6h12v2H5V6h2zM5 20V10h14v10H5zm12-2v-4h-4v4h4z"/>`
+	calendarWeekPath               = `<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h18V4h-4V2zM7 6h12v2H5V6h2zM5 20V10h14v10H5zm12-8H7v2h10v-2z"/>`
+	calendarWeekBeginPath          = `<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h18V4h-4V2zM7 6h12v2H5V6h2zM5 20V10h14v10H5zm4-8H7v6h2v-6z"/>`
+	calendarWeekendPath            = `<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h18V4h-4V2zM7 6h12v2H5V6h2zM5 20V10h14v10H5zm12-8h-2v6h2v-6z"/>`
+	cameraPath                     = `<path fill="currentColor" d="M9 3H7v2H2v16h20V5h-5V3H9zm8 4h3v12H4V7h5V5h6v2h2zm-7 2h4v2h-4V9zm4 6h-4v2h4v-2h2v-4h-2v4zm-6-4h2v4H8v-4z"/>`
+	cameraAddPath                  = `<path fill="currentColor" d="M5 2H3v3H0v2h3v3h2V7h3V5H5V2zm12 1h-7v2h5v2h5v12H5v-7H3v9h19V5h-5V3zm-7 6h4v2h2v4h-2v2h-4v-2h4v-4h-4V9zm-2 2h2v4H8v-4z"/>`
+	cameraAltPath                  = `<path fill="currentColor" d="M4 4H2v16h20V4H4zm16 2v12H4V6h16zM8 8H6v2h2V8zm4 0h4v2h-4V8zm-2 2h2v4h-2v-4zm6 4h2v-4h-2v4zm0 0h-4v2h4v-2z"/>`
+	cameraFacePath                 = `<path fill="currentColor" d="M7 3h10v2h5v16H2V7h2v12h16V7h-5V5H9v2H2V5h5V3zm7 12h-4v2h4v-2zm-4-2v2H8v-2h2zm0-2V9H8v2h2zm6 2v2h-2v-2h2zm0-2V9h-2v2h2z"/>`
+	carPath                        = `<path fill="currentColor" d="M17 4H7v2H5v2H3v12h4v-2h10v2h4V8h-2V6h-2V4zm0 2v2h2v2H5V8h2V6h10zm2 10H5v-4h14v4zm-2-3h-2v2h2v-2zM7 13h2v2H7v-2z"/>`
+	cardPath                       = `<path fill="currentColor" d="M2 4h20v16H2V4zm18 14V6H4v12h16z"/>`
+	cardIdPath                     = `<path fill="currentColor" d="M2 4h20v16H2V4zm2 2v4h16V6H4zm16 6H10v2h10v-2zm0 4h-4v2h4v-2zm-6 2v-2H4v2h10zM4 14h4v-2H4v2z"/>`
+	cardPlusPath                   = `<path fill="currentColor" d="M22 4H2v16h10v-2H4V6h16v4h2V4zm-3 13h3v-2h-3v-3h-2v3h-3v2h3v3h2v-3z"/>`
+	cardStackPath                  = `<path fill="currentColor" d="M4 4h18v12H2V4h2zm16 10V6H4v8h16zm2 4H2v2h20v-2z"/>`
+	cardTextPath                   = `<path fill="currentColor" d="M4 4H2v16h20V4H4zm0 2h16v12H4V6zm2 2h12v2H6V8zm0 4h10v2H6v-2z"/>`
+	cartPath                       = `<path fill="currentColor" d="M2 2h4v4h16v11H4V4H2V2zm4 13h14V8H6v7zm0 4h3v3H6v-3zm14 0h-3v3h3v-3z"/>`
+	castPath                       = `<path fill="currentColor" d="M4 3h18v18h-8v-2h6V5H4v4H2V3h2zm0 16H2v2h2v-2zm-2-4h4v2H2v-2zm8-4H2v2h8v8h2V11h-2zm-4 4h2v6H6v-6z"/>`
+	cellularSignalOffPath          = `<path fill="currentColor" d="M4 2H2v2h2v2H2v2h2V6h2v2h2V6H6V4h2V2H6v2H4V2Zm12 2v16h6V4h-6Zm2 2h2v12h-2V6Zm-9 4v10h6V10H9Zm2 8v-6h2v6h-2Zm-3-4v6H2v-6h6Zm-2 4v-2H4v2h2Z"/>`
+	cellularSignalOnePath          = `<path fill="currentColor" d="M16 4v16h6V4h-6Zm2 2h2v12h-2V6Zm-9 4v10h6V10H9Zm2 8v-6h2v6h-2Zm-3-4H2v6h6v-6Z"/>`
+	cellularSignalThreePath        = `<path fill="currentColor" d="M16 4h6v16h-6V4ZM2 14h6v6H2v-6Zm13-4H9v10h6V10Z"/>`
+	cellularSignalTwoPath          = `<path fill="currentColor" d="M16 4v16h6V4h-6Zm4 2v12h-2V6h2ZM2 14h6v6H2v-6Zm13-4H9v10h6V10Z"/>`
+	cellularSignalZeroPath         = `<path fill="currentColor" d="M22 4v16h-6V4h6Zm-2 2h-2v12h2V6Zm-5 4v10H9V10h6Zm-2 8v-6h-2v6h2Zm-5-4v6H2v-6h6Zm-2 4v-2H4v2h2Z"/>`
+	chartPath                      = `<path fill="currentColor" d="M5 3H3v18h18V3H5zm14 2v14H5V5h14zM9 11H7v6h2v-6zm2-4h2v10h-2V7zm6 6h-2v4h2v-4z"/>`
+	chartAddPath                   = `<path fill="currentColor" d="M3 3h10v2H5v14h14v-8h2v10H3V3zm6 8H7v6h2v-6zm2-4h2v10h-2V7zm6 6h-2v4h2v-4zm0-10h2v2h2v2h-2v2h-2V7h-2V5h2V3z"/>`
+	chartBarPath                   = `<path fill="currentColor" d="M13 5h2v14h-2V5zm-2 4H9v10h2V9zm-4 4H5v6h2v-6zm12 0h-2v6h2v-6z"/>`
+	chartDeletePath                = `<path fill="currentColor" d="M13 3H3v18h18V11h-2v8H5V5h8V3zm-6 8h2v6H7v-6zm6-4h-2v10h2V7zm2 6h2v4h-2v-4zm2-6h-2v2h2V7zm0-2V3h-2v2h2zm2 0h-2v2h2v2h2V7h-2V5zm0 0V3h2v2h-2z"/>`
+	chartMinusPath                 = `<path fill="currentColor" d="M13 3H3v18h18V11h-2v8H5V5h8V3zm-6 8h2v6H7v-6zm6-4h-2v10h2V7zm2 6h2v4h-2v-4zm6-8h-6v2h6V5z"/>`
+	chartMultiplePath              = `<path fill="currentColor" d="M3 2H1v16h18V2H3zm0 2h14v12H3V4zm18 2v14H5v2h18V6h-2zM7 8H5v6h2V8zm2-2h2v8H9V6zm6 4h-2v4h2v-4z"/>`
+	chatPath                       = `<path fill="currentColor" d="M20 2H2v20h2V4h16v12H6v2H4v2h2v-2h16V2h-2z"/>`
+	checkPath                      = `<path fill="currentColor" d="M18 6h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm-2 2h2v-2h-2v2zm-2 2h2v-2h-2v2zm-2 0v2h2v-2H8zm-2-2h2v2H6v-2zm0 0H4v-2h2v2z"/>`
+	checkDoublePath                = `<path fill="currentColor" d="M15 6h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm-2 2v-2h2v2H9zm-2 2v-2h2v2H7zm-2 0h2v2H5v-2zm-2-2h2v2H3v-2zm0 0H1v-2h2v2zm8 2h2v2h-2v-2zm4-2v2h-2v-2h2zm2-2v2h-2v-2h2zm2-2v2h-2v-2h2zm2-2h-2v2h2V8zm0 0h2V6h-2v2z"/>`
+	checkboxPath                   = `<path fill="currentColor" d="M5 3H3v18h18V3H5zm0 2h14v14H5V5zm4 7H7v2h2v2h2v-2h2v-2h2v-2h2V8h-2v2h-2v2h-2v2H9v-2z"/>`
+	checkboxOnPath                 = `<path fill="currentColor" d="M3 3h18v18H3V3zm16 16V5H5v14h14z"/>`
+	checklistPath                  = `<path fill="currentColor" d="M19 4h2v2h-2V4zm-2 4V6h2v2h-2zm-2 0h2v2h-2V8zm0 0h-2V6h2v2zM3 6h8v2H3V6zm8 10H3v2h8v-2zm7 2v-2h2v-2h-2v2h-2v-2h-2v2h2v2h-2v2h2v-2h2zm0 0v2h2v-2h-2z"/>`
+	chessPath                      = `<path fill="currentColor" d="M2 2h20v20H2V2zm2 2v4h4v4H4v4h4v4h4v-4h4v4h4v-4h-4v-4h4V8h-4V4h-4v4H8V4H4zm8 8H8v4h4v-4zm0-4v4h4V8h-4z"/>`
+	chevronDownPath                = `<path fill="currentColor" d="M7 8H5v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2V8h-2v2h-2v2h-2v2h-2v-2H9v-2H7V8z"/>`
+	chevronLeftPath                = `<path fill="currentColor" d="M16 5v2h-2V5h2zm-4 4V7h2v2h-2zm-2 2V9h2v2h-2zm0 2H8v-2h2v2zm2 2v-2h-2v2h2zm0 0h2v2h-2v-2zm4 4v-2h-2v2h2z"/>`
+	chevronRightPath               = `<path fill="currentColor" d="M8 5v2h2V5H8zm4 4V7h-2v2h2zm2 2V9h-2v2h2zm0 2h2v-2h-2v2zm-2 2v-2h2v2h-2zm0 0h-2v2h2v-2zm-4 4v-2h2v2H8z"/>`
+	chevronUpPath                  = `<path fill="currentColor" d="M7 16H5v-2h2v-2h2v-2h2V8h2v2h2v2h2v2h2v2h-2v-2h-2v-2h-2v-2h-2v2H9v2H7v2z"/>`
+	chevronsHorizontalPath         = `<path fill="currentColor" d="M8 9V7h2v2H8zm-2 2V9h2v2H6zm0 2H4v-2h2v2zm2 2v-2H6v2h2zm0 0h2v2H8v-2zm8-6V7h-2v2h2zm2 2V9h-2v2h2zm0 2v-2h2v2h-2zm-2 2v-2h2v2h-2zm0 0v2h-2v-2h2z"/>`
+	chevronsVerticalPath           = `<path fill="currentColor" d="M11 4h2v2h-2V4zM9 8V6h2v2H9zm0 0v2H7V8h2zm6 0h-2V6h2v2zm0 0h2v2h-2V8zm-6 8H7v-2h2v2zm2 2H9v-2h2v2zm2 0v2h-2v-2h2zm2-2h-2v2h2v-2zm0 0v-2h2v2h-2z"/>`
+	circlePath                     = `<path fill="currentColor" d="M17 3H7v2H5v2H3v10h2v2h2v2h10v-2h2v-2h2V7h-2V5h-2V3zm0 2v2h2v10h-2v2H7v-2H5V7h2V5h10z"/>`
+	clipboardPath                  = `<path fill="currentColor" d="M10 2h6v2h4v18H4V4h4V2h2zm6 4v2H8V6H6v14h12V6h-2zm-2 0V4h-4v2h4z"/>`
+	clockPath                      = `<path fill="currentColor" d="M19 3H5v2H3v14h2v2h14v-2h2V5h-2V3zm0 2v14H5V5h14zm-8 2h2v6h4v2h-6V7z"/>`
+	closePath                      = `<path fill="currentColor" d="M5 5h2v2H5V5zm4 4H7V7h2v2zm2 2H9V9h2v2zm2 0h-2v2H9v2H7v2H5v2h2v-2h2v-2h2v-2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2zm2-2v2h-2V9h2zm2-2v2h-2V7h2zm0 0V5h2v2h-2z"/>`
+	closeBoxPath                   = `<path fill="currentColor" d="M5 3H3v18h18V3H5zm14 2v14H5V5h14zm-8 4H9V7H7v2h2v2h2v2H9v2H7v2h2v-2h2v-2h2v2h2v2h2v-2h-2v-2h-2v-2h2V9h2V7h-2v2h-2v2h-2V9z"/>`
+	cloudPath                      = `<path fill="currentColor" d="M16 4h-6v2H8v2H4v2H2v2H0v6h2v2h20v-2h2v-6h-2v-2h-2V8h-2V6h-2V4zm2 8h4v6H2v-6h2v-2h4v2h2v-2H8V8h2V6h6v2h2v4zm0 0v2h-2v-2h2z"/>`
+	cloudDonePath                  = `<path fill="currentColor" d="M16 4h-6v2H8v2H4v2H2v2H0v6h2v2h20v-2h2v-6h-2v-2h-2V8h-2V6h-2V4zm0 2v2h2v4h4v6H2v-6h2v-2h4V8h2V6h6zm-6 6H8v2h2v2h2v-2h2v-2h2v-2h-2v2h-2v2h-2v-2z"/>`
+	cloudDownloadPath              = `<path fill="currentColor" d="M10 4h6v2h-6V4zM8 8V6h2v2H8zm-4 2V8h4v2H4zm-2 2v-2h2v2H2zm0 6H0v-6h2v6zm0 0h5v2H2v-2zM18 8h-2V6h2v2zm4 4h-4V8h2v2h2v2zm0 6v-6h2v6h-2zm0 0v2h-5v-2h5zm-11 2h2v-2h2v-2h2v-2h-4V9h-2v5H7v2h2v2h2v2z"/>`
+	cloudMoonPath                  = `<path fill="currentColor" d="M18 2h-8v2H8v2H6v4h2V6h2V4h4v2h-2v4h2v2h4v-2h2v4h-2v2h2v-2h2V6h-2v2h-2v2h-4V6h2V4h2V2ZM8 14v-2h4v2H8Zm0 2v-2H4v2H2v4h2v2h10v-2h2v-4h-2v-2h-2v2h2v4H4v-4h4Zm0 0h2v2H8v-2Z"/>`
+	cloudSunPath                   = `<path fill="currentColor" d="M11 0h2v4h-2V0Zm1 12H8v2H4v2H2v4h2v2h10v-2h2v-4h-2v-2h-2v-2Zm0 2v2h2v4H4v-4h4v2h2v-2H8v-2h4ZM8 6h6v2H8V6Zm0 2v2H6V8h2Zm8 2h-2V8h2v2Zm0 0h2v2h-2v-2Zm4-8h2v2h-2V2Zm0 2v2h-2V4h2ZM2 2h2v2H2V2Zm2 2h2v2H4V4Zm20 7h-4v2h4v-2Z"/>`
+	cloudUploadPath                = `<path fill="currentColor" d="M10 4h6v2h-6V4zM8 8V6h2v2H8zm-4 2V8h4v2H4zm-2 2v-2h2v2H2zm0 6H0v-6h2v6zm0 0h7v2H2v-2zM18 8h-2V6h2v2zm4 4h-4V8h2v2h2v2zm0 6v-6h2v6h-2zm0 0v2h-7v-2h7zM11 9h2v2h2v2h2v2h-4v5h-2v-5H7v-2h2v-2h2V9z"/>`
+	cocktailPath                   = `<path fill="currentColor" d="M19 3H3v4h2v2h2v2h2v2h2v6H7v2h10v-2h-4v-6h2v-2h2V9h2V7h2V3h-2zm0 4H5V5h14v2z"/>`
+	codePath                       = `<path fill="currentColor" d="M8 5h2v2H8V5zM6 7h2v2H6V7zM4 9h2v2H4V9zm-2 2h2v2H2v-2zm2 2h2v2H4v-2zm2 2h2v2H6v-2zm2 2h2v2H8v-2zm8-12h-2v2h2V5zm2 2h-2v2h2V7zm2 2h-2v2h2V9zm2 2h-2v2h2v-2zm-2 2h-2v2h2v-2zm-2 2h-2v2h2v-2zm-2 2h-2v2h2v-2z"/>`
+	coffeePath                     = `<path fill="currentColor" d="M4 4h18v7h-4v5H4V4zm14 5h2V6h-2v3zm-2-3H6v8h10V6zm3 14H3v-2h16v2z"/>`
+	coffeeAltPath                  = `<path fill="currentColor" d="M7 3H5v4h2V3zm4 0H9v4h2V3zm2 0h2v4h-2V3zm8 6H3v12h14v-5h4V9zm-2 5h-2v-3h2v3zM5 11h10v8H5v-8z"/>`
+	coinPath                       = `<path fill="currentColor" d="M6 2h12v2H6V2zM4 6V4h2v2H4zm0 12V6H2v12h2zm2 2v-2H4v2h2zm12 0v2H6v-2h12zm2-2v2h-2v-2h2zm0-12h2v12h-2V6zm0 0V4h-2v2h2zm-9-1h2v2h3v2h-6v2h6v6h-3v2h-2v-2H8v-2h6v-2H8V7h3V5z"/>`
+	collapsePath                   = `<path fill="currentColor" d="M17 3h-2v2h-2v2h-2V5H9V3H7v2h2v2h2v2h2V7h2V5h2V3zM4 13h16v-2H4v2zm9 4h-2v-2h2v2zm2 2h-2v-2h2v2zm0 0h2v2h-2v-2zm-6 0h2v-2H9v2zm0 0H7v2h2v-2z"/>`
+	colorsSwatchPath               = `<path fill="currentColor" d="M14 2h8v20H12V2h2zm6 2h-6v16h6V4zM10 20H4v-6h6v-2H6v-2H4V8h2V6h2V4h2V2H8v2H6v2H4v2H2v2h2v2H2v10h8v-2zm8-4h-2v2h2v-2z"/>`
+	commandPath                    = `<path fill="currentColor" d="M4 2H2v8h2V2zm16 0h2v8h-2V2zm-6 6h-4V2H4v2h4v4H4v2h4v4H4v2h4v4H4v2h6v-6h4v6h2v-6h4v-2h-4v-4h4V8h-4V2h-2v6zm-4 6v-4h4v4h-4zM20 2h-4v2h4V2zM2 14h2v8H2v-8zm14 6h4v2h-4v-2zm6-6h-2v8h2v-8z"/>`
+	commentPath                    = `<path fill="currentColor" d="M22 2H2v14h2V4h16v12h-8v2h-2v2H8v-4H2v2h4v4h4v-2h2v-2h10V2z"/>`
+	contactPath                    = `<path fill="currentColor" d="M2 3H0v18h24V3H2zm20 2v14H2V5h20zM10 7H6v4h4V7zm-6 6h8v4H4v-4zm16-6h-6v2h6V7zm-6 4h6v2h-6v-2zm6 4h-6v2h6v-2z"/>`
+	contactDeletePath              = `<path fill="currentColor" d="M22 3H0v18h16v-2H2V5h20v10h2V3h-2zM6 7h4v4H6V7zm0 8H4v2h2v-2zm4 0H6v-2h4v2zm0 0v2h2v-2h-2zm4-8h6v2h-6V7zm6 4h-6v2h6v-2zm-6 4h2v2h-2v-2zm8 4h-2v-2h-2v2h2v2h-2v2h2v-2h2v2h2v-2h-2v-2zm0 0h2v-2h-2v2z"/>`
+	contactMultiplePath            = `<path fill="currentColor" d="M4 3h20v14H4V3zm18 12V5H6v10h16zm-2 4H2V7H0v14h20v-2zM9 7h2v2H9V7zm3 4H8v2h4v-2zm2-4h6v2h-6V7zm6 4h-6v2h6v-2z"/>`
+	contactPlusPath                = `<path fill="currentColor" d="M2 3h22v11h-2V5H2v14h12v2H0V3h2zm8 4H6v4h4V7zm-6 6h8v4H4v-4zm16-6h-6v2h6V7zm-6 4h6v2h-6v-2zm3 4h-3v2h3v-2zm4 6v3h-2v-3h-3v-2h3v-3h2v3h3v2h-3z"/>`
+	copyPath                       = `<path fill="currentColor" d="M4 2h11v2H6v13H4V2zm4 4h12v16H8V6zm2 2v12h8V8h-8z"/>`
+	cornerDownLeftPath             = `<path fill="currentColor" d="M18 16H8v2H6v-2H4v-2h2v-2h2v2h10V4h2v12h-2zM8 12v-2h2v2H8zm0 6v2h2v-2H8z"/>`
+	cornerDownRightPath            = `<path fill="currentColor" d="M6 16h10v2h2v-2h2v-2h-2v-2h-2v2H6V4H4v12h2zm10-4v-2h-2v2h2zm0 6v2h-2v-2h2z"/>`
+	cornerLeftDownPath             = `<path fill="currentColor" d="M8 6v10H6v2h2v2h2v-2h2v-2h-2V6h10V4H8v2zm4 10h2v-2h-2v2zm-6 0H4v-2h2v2z"/>`
+	cornerLeftUpPath               = `<path fill="currentColor" d="M8 18V8H6V6h2V4h2v2h2v2h-2v10h10v2H8v-2zm4-10h2v2h-2V8zM6 8H4v2h2V8z"/>`
+	cornerRightDownPath            = `<path fill="currentColor" d="M16 6v10h2v2h-2v2h-2v-2h-2v-2h2V6H4V4h12v2zm-4 10h-2v-2h2v2zm6 0h2v-2h-2v2z"/>`
+	cornerRightUpPath              = `<path fill="currentColor" d="M16 18V8h2V6h-2V4h-2v2h-2v2h2v10H4v2h12v-2zM12 8h-2v2h2V8zm6 0h2v2h-2V8z"/>`
+	cornerUpLeftPath               = `<path fill="currentColor" d="M18 8H8V6H6v2H4v2h2v2h2v-2h10v10h2V8h-2zM8 12v2h2v-2H8zm0-6V4h2v2H8z"/>`
+	cornerUpRightPath              = `<path fill="currentColor" d="M6 8h10V6h2v2h2v2h-2v2h-2v-2H6v10H4V8h2zm10 4v2h-2v-2h2zm0-6V4h-2v2h2z"/>`
+	creditCardPath                 = `<path fill="currentColor" d="M4 4h16v2H4v2h16v4H4v6h16v2H2V4h2zm18 0h-2v16h2V4z"/>`
+	creditCardDeletePath           = `<path fill="currentColor" d="M20 4H2v16h12v-2H4v-6h16V8H4V6h16V4zm0 0h2v8h-2V4zm2 14h-2v-2h2v-2h-2v2h-2v-2h-2v2h2v2h-2v2h2v-2h2v2h2v-2z"/>`
+	creditCardMinusPath            = `<path fill="currentColor" d="M20 4H2v16h12v-2H4v-6h16V8H4V6h16V4zm0 0h2v8h-2V4zm2 12h-6v2h6v-2z"/>`
+	creditCardMultiplePath         = `<path fill="currentColor" d="M1 3h16v2H3v2h14v4H3v4h14v2H1V3zm18 0h-2v14h2V3zM5 19h16v2H5v-2zM23 7h-2v14h2V7z"/>`
+	creditCardPlusPath             = `<path fill="currentColor" d="M2 4h18v2H4v2h16v4H4v6h10v2H2V4zm20 0h-2v8h2V4zm-4 10h2v2h2v2h-2v2h-2v-2h-2v-2h2v-2z"/>`
+	creditCardSettingsPath         = `<path fill="currentColor" d="M20 4H2v16h18v-2H4v-6h16V8H4V6h16V4zm0 0h2v16h-2V4zm-7 18h-2v2h2v-2zm2 0h2v2h-2v-2zm-6 0H7v2h2v-2z"/>`
+	creditCardWirelessPath         = `<path fill="currentColor" d="M16 2H8v2H6v2h2V4h8v2h2V4h-2V2zM8 8h2v2H8V8zm6 0V6h-4v2h4zm0 0h2v2h-2V8zM4 11h16v12H4V11zm14 10v-3H6v3h12zm0-6v-2H6v2h12z"/>`
+	cropPath                       = `<path fill="currentColor" d="M8 2H6v4H2v2h14v14h2v-4h4v-2h-4V6H8V2zm0 8H6v8h8v-2H8v-6z"/>`
+	cutPath                        = `<path fill="currentColor" d="M2 2h2v2H2V2zm4 4H4V4h2v2zm2 2H6V6h2v2zm2 2V8H8v2h2zm4 0h-4v4H2v8h8v-8h4v8h8v-8h-8v-4zm2-2v2h-2V8h2zm2-2v2h-2V6h2zm2-2h-2v2h2V4zm0 0V2h2v2h-2zM4 20v-4h4v4H4zm12 0v-4h4v4h-4z"/>`
+	dashbaordPath                  = `<path fill="currentColor" d="M3 3h8v10H3V3zm2 2v6h4V5H5zm8-2h8v6h-8V3zm2 2v2h4V5h-4zm-2 6h8v10h-8V11zm2 2v6h4v-6h-4zM3 15h8v6H3v-6zm2 2v2h4v-2H5z"/>`
+	debugPath                      = `<g fill="currentColor"><path d="M6 2h2v2H6V2Zm4 9h4v2h-4v-2Zm4 4h-4v2h4v-2Z"/><path d="M16 4h-2v2h-4V4H8v2H6v3H4V7H2v2h2v2h2v2H2v2h4v2H4v2H2v2h2v-2h2v3h12v-3h2v2h2v-2h-2v-2h-2v-2h4v-2h-4v-2h2V9h2V7h-2v2h-2V6h-2V4ZM8 20V8h8v12H8Zm8-16V2h2v2h-2Z"/></g>`
+	debugCheckPath                 = `<path fill="currentColor" d="M8 2H6v2h2v2H6v3H4V7H2v2h2v2h2v2H2v2h4v2H4v2H2v2h2v-2h2v3h6v-2H8V8h8v6h2v-3h2V9h2V7h-2v2h-2V6h-2V4h2V2h-2v2h-2v2h-4V4H8V2Zm6 9h-4v2h4v-2Zm-4 4h2v2h-2v-2Zm4 3h2v2h-2v-2Zm4 2v2h-2v-2h2Zm2-2h-2v2h2v-2Zm0 0v-2h2v2h-2Z"/>`
+	debugOffPath                   = `<path fill="currentColor" d="M16 2h2v2h-2V2Zm4 7h-2V6h-2V4h-2v2h-2v2h4v5h2v2h4v-2h-4v-2h2V9Zm0 0V7h2v2h-2ZM8 20v-9H6V9H4V7H2v2h2v2h2v2H2v2h4v2H4v2H2v2h2v-2h2v3h10v-2H8Zm2-5h2v2h-2v-2ZM2 2h2v2H2V2Zm4 4H4V4h2v2Zm2 2H6V6h2v2Zm2 2H8V8h2v2Zm0 0v2h2v2h2v2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2h-2v-2h-2v-2h-2Z"/>`
+	debugPausePath                 = `<path fill="currentColor" d="M8 2H6v2h2v2H6v3H4V7H2v2h2v2h2v2H2v2h4v2H4v2H2v2h2v-2h2v3h8v-2H8V8h8v6h2v-3h2V9h2V7h-2v2h-2V6h-2V4h2V2h-2v2h-2v2h-4V4H8V2Zm6 9h-4v2h4v-2Zm-4 4h4v2h-4v-2Zm6 1h2v6h-2v-6Zm6 0h-2v6h2v-6Z"/>`
+	debugPlayPath                  = `<path fill="currentColor" d="M6 2h2v2H6V2Zm10 2h-2v2h-4V4H8v2H6v3H4V7H2v2h2v2h2v2H2v2h4v2H4v2H2v2h2v-2h2v3h8v-2H8V8h8v3h4V9h2V7h-2v2h-2V6h-2V4Zm0 0V2h2v2h-2Zm-6 7h4v2h-4v-2Zm4 4h-4v2h4v-2Zm4-2h-2v10h2v-2h2v-2h2v-2h-2v-2h-2v-2Z"/>`
+	debugStopPath                  = `<path fill="currentColor" d="M6 2h2v2H6V2Zm10 2h-2v2h-4V4H8v2H6v3H4V7H2v2h2v2h2v2H2v2h4v2H4v2H2v2h2v-2h2v3h8v-2H8V8h8v6h2v-3h2V9h2V7h-2v2h-2V6h-2V4Zm0 0V2h2v2h-2Zm-6 7h4v2h-4v-2Zm4 4h-4v2h4v-2Zm8 1h-6v6h6v-6Z"/>`
+	deletePath                     = `<path fill="currentColor" d="M21 5H7v2H5v2H3v2H1v2h2v2h2v2h2v2h16V5h-2zM7 17v-2H5v-2H3v-2h2V9h2V7h14v10H7zm8-6h-2V9h-2v2h2v2h-2v2h2v-2h2v2h2v-2h-2v-2zm0 0V9h2v2h-2z"/>`
+	deskphonePath                  = `<path fill="currentColor" d="M3 3h18v18H3V3zm2 2v6h8V5H5zm10 0v14h4V5h-4zm-2 14v-2h-3v2h3zm-5 0v-2H5v2h3zm-3-4h3v-2H5v2zm5-2v2h3v-2h-3z"/>`
+	deviceLaptopPath               = `<path fill="currentColor" d="M6 4H4v12h16V4H6zm12 2v8H6V6h12zm4 12H2v2h20v-2z"/>`
+	devicePhonePath                = `<path fill="currentColor" d="M6 3h12v18H6V3zm10 16V5h-2v2h-4V5H8v14h8zm-5-4h2v2h-2v-2z"/>`
+	deviceTabletPath               = `<path fill="currentColor" d="M6 2H4v20h16V2H6zm12 2v16H6V4h12zm-5 12h-2v2h2v-2z"/>`
+	deviceTvPath                   = `<path fill="currentColor" d="M2 20h20V6h-7V4h-2v2h-2V4H9v2H2v14zM9 4V2H7v2h2zm6 0h2V2h-2v2zm5 4v10H4V8h16z"/>`
+	deviceTvSmartPath              = `<path fill="currentColor" d="M4 4h18v14h-6v2H8v-2H2V4h2zm16 12V6H4v10h16z"/>`
+	deviceVibratePath              = `<path fill="currentColor" d="M8 3H6v18h12V3H8zm8 2v14H8V5h8zm-3 10h-2v2h2v-2zm7-8h2v2h-2V7zm2 4V9h2v2h-2zm0 2h-2v-2h2v2zm0 2v-2h2v2h-2zm0 0v2h-2v-2h2zM2 17h2v-2H2v-2h2v-2H2V9h2V7H2v2H0v2h2v2H0v2h2v2z"/>`
+	deviceWatchPath                = `<path fill="currentColor" d="M8 2h8v4h5v12h-5v4H8v-4H3V6h5V2zM5 16h14V8H5v8zm6-6h2v2h2v2h-4v-4z"/>`
+	devicesPath                    = `<path fill="currentColor" d="M2 2h16v6h4v14H12v-6H2V2zm14 6V4H4v10h8V8h4zm-6-2H6v2h4V6zm10 14V10h-6v10h6zm-4-4h2v2h-2v-2zM6 10h4v2H6v-2z"/>`
+	dicePath                       = `<path fill="currentColor" d="M5 3H3v18h18V3H5zm14 2v14H5V5h14zM9 7H7v2h2V7zm6 0h2v2h-2V7zm-6 8H7v2h2v-2zm6 0h2v2h-2v-2zm-2-4h-2v2h2v-2z"/>`
+	dollarPath                     = `<path fill="currentColor" d="M11 2h2v4h6v2H7v3H5V6h6V2zM5 18h6v4h2v-4h6v-2H5v2zm14-7H5v2h12v3h2v-5z"/>`
+	downasaurPath                  = `<path fill="currentColor" d="M6 4h14v2h2v6h-8v2h6v2h-4v2h-2v2H2V8h2V6h2V4zm2 6h2V8H8v2z"/>`
+	downloadPath                   = `<path fill="currentColor" d="M13 17V3h-2v10H9v-2H7v2h2v2h2v2h2zm8 2v-4h-2v4H5v-4H3v6h18v-2zm-8-6v2h2v-2h2v-2h-2v2h-2z"/>`
+	draftPath                      = `<path fill="currentColor" d="M14 2h-4v2H8v2H6v2H4v2H2v12h20V10h-2V8h-2V6h-2V4h-2V2zm0 2v2h2v2h2v4h-2v2h-2v2h-4v-2H8v-2H6V8h2V6h2V4h4zm-8 8v2h2v2h2v2h4v-2h2v-2h2v-2h2v8H4v-8h2z"/>`
+	dragAndDropPath                = `<path fill="currentColor" d="M5 3H3v2h2V3zm14 4h2v6h-2V9H9v10h4v2H7V7h12zM7 3h2v2H7V3zM5 7H3v2h2V7zm-2 4h2v2H3v-2zm2 4H3v2h2v-2zm6-12h2v2h-2V3zm6 0h-2v2h2V3zm-2 14v-2h6v2h-2v2h-2v2h-2v-4zm4 2v2h2v-2h-2z"/>`
+	dropPath                       = `<path fill="currentColor" d="M13 2h-2v2H9v4H7v4H5v6h2v2h2v2h6v-2h2v-2h2v-6h-2V8h-2V4h-2V2zm0 2v4h2v4h2v6h-2v2H9v-2H7v-6h2V8h2V4h2z"/>`
+	dropAreaPath                   = `<path fill="currentColor" d="M5 3H3v2h2V3zm2 0h2v2H7V3zm6 0h-2v2h2V3zm2 0h2v2h-2V3zm4 0h2v2h-2V3zM3 7h2v2H3V7zm2 4H3v2h2v-2zm-2 4h2v2H3v-2zm2 4H3v2h2v-2zm2 0h2v2H7v-2zm6 0h-2v2h2v-2zm6-8h2v2h-2v-2zm2-4h-2v2h2V7zm-6 10v-2h6v2h-2v2h-2v2h-2v-4zm4 2v2h2v-2h-2z"/>`
+	dropFullPath                   = `<path fill="currentColor" d="M11 2h2v2h2v4h2v4h2v6h-2v2h-2v2H9v-2H7v-2H5v-6h2V8h2V4h2V2z"/>`
+	dropHalfPath                   = `<path fill="currentColor" d="M13 2h-2v2H9v4H7v4H5v6h2v2h2v2h6v-2h2v-2h2v-6h-2V8h-2V4h-2V2zm0 2v4h2v4h2v3H7v-3h2V8h2V4h2z"/>`
+	duplicatePath                  = `<path fill="currentColor" d="M5 3h12v4h4v14H7v-4H3V3h2zm10 4V5H5v10h2V7h8zM9 17v2h10V9H9v8z"/>`
+	duplicateAltPath               = `<path fill="currentColor" d="M5 1H3v14h10v2h-2v2h2v-2h2v-2h2v-2h-2v-2h-2V9h-2v2h2v2H5V3h12V1H5zm4 4H7v6h2V7h10v14H9v-4H7v6h14V5H9z"/>`
+	editPath                       = `<path fill="currentColor" d="M18 2h-2v2h-2v2h-2v2h-2v2H8v2H6v2H4v2H2v6h6v-2h2v-2h2v-2h2v-2h2v-2h2v-2h2V8h2V6h-2V4h-2V2zm0 8h-2v2h-2v2h-2v2h-2v2H8v-2H6v-2h2v-2h2v-2h2V8h2V6h2v2h2v2zM6 16H4v4h4v-2H6v-2z"/>`
+	editBoxPath                    = `<path fill="currentColor" d="M18 2h-2v2h2V2zM4 4h6v2H4v14h14v-6h2v8H2V4h2zm4 8H6v6h6v-2h2v-2h-2v2H8v-4zm4-2h-2v2H8v-2h2V8h2V6h2v2h-2v2zm2-6h2v2h-2V4zm4 0h2v2h2v2h-2v2h-2v2h-2v-2h2V8h2V6h-2V4zm-4 8h2v2h-2v-2z"/>`
+	euroPath                       = `<path fill="currentColor" d="M9 4h10v2H9v3h7v2H9v2h7v2H9v3h10v2H7v-5H5v-2h2v-2H5V9h2V4h2z"/>`
+	expandPath                     = `<path fill="currentColor" d="M11 5h2v2h2v2h2V7h-2V5h-2V3h-2v2zM9 7V5h2v2H9zm0 0v2H7V7h2zm-5 6h16v-2H4v2zm9 6h-2v-2H9v-2H7v2h2v2h2v2h2v-2zm2-2h-2v2h2v-2zm0 0h2v-2h-2v2z"/>`
+	externalLinkPath               = `<path fill="currentColor" d="M21 11V3h-8v2h4v2h-2v2h-2v2h-2v2H9v2h2v-2h2v-2h2V9h2V7h2v4h2zM11 5H3v16h16v-8h-2v6H5V7h6V5z"/>`
+	eyePath                        = `<path fill="currentColor" d="M8 6h8v2H8V6zm-4 4V8h4v2H4zm-2 2v-2h2v2H2zm0 2v-2H0v2h2zm2 2H2v-2h2v2zm4 2H4v-2h4v2zm8 0v2H8v-2h8zm4-2v2h-4v-2h4zm2-2v2h-2v-2h2zm0-2h2v2h-2v-2zm-2-2h2v2h-2v-2zm0 0V8h-4v2h4zm-10 1h4v4h-4v-4z"/>`
+	eyeClosedPath                  = `<path fill="currentColor" d="M0 7h2v2H0V7zm4 4H2V9h2v2zm4 2v-2H4v2H2v2h2v-2h4zm8 0H8v2H6v2h2v-2h8v2h2v-2h-2v-2zm4-2h-4v2h4v2h2v-2h-2v-2zm2-2v2h-2V9h2zm0 0V7h2v2h-2z"/>`
+	filePath                       = `<path fill="currentColor" d="M3 22h18V8h-2V6h-2v2h-2V6h2V4h-2V2H3v20zm2-2V4h8v6h6v10H5z"/>`
+	fileAltPath                    = `<path fill="currentColor" d="M21 22H3V2h12v2h2v2h2v2h2v14zM17 6h-2v2h2V6zM5 4v16h14V10h-6V4H5zm8 12H7v2h6v-2zm-6-4h10v2H7v-2zm4-4H7v2h4V8z"/>`
+	fileDeletePath                 = `<path fill="currentColor" d="M11 22h10V8h-2V6h-2v2h-2V6h2V4h-2V2H3v12h2V4h8v6h6v10h-8v2zm-4-2H5v2H3v-2h2v-2H3v-2h2v2h2v-2h2v2H7v2zm0 0h2v2H7v-2z"/>`
+	fileFlashPath                  = `<path fill="currentColor" d="M19 22h-6v-2h6V10h-6V4H5v8H3V2h12v2h2v2h2v2h2v14h-2zM17 6h-2v2h2V6zM7 12h2v4h4v2h-2v2H9v2H7v-4H3v-2h2v-2h2v-2z"/>`
+	fileMinusPath                  = `<path fill="currentColor" d="M13 22h8V8h-2V6h-2v2h-2V6h2V4h-2V2H3v13h2V4h8v6h6v10h-6v2zm-2-3H3v-2h8v2z"/>`
+	fileMultiplePath               = `<path fill="currentColor" d="M21 18H7V2h8v2h2v2h-2v2h2V6h2v2h2v10zM9 4v12h10v-6h-6V4H9zM3 6h2v14h12v2H3V6z"/>`
+	fileOffPath                    = `<path fill="currentColor" d="M5 2H3v2h2v2h2v2h2v2h2v2h2v2h2v2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2h-2v-2h-2v-2h6v4h2V8h-2V6h-2V4h-2V2H9v2h4v6h-2V8H9V6H7V4H5V2zm12 4v2h-2V6h2zM3 8h2v12h12v2H3V8z"/>`
+	filePlusPath                   = `<path fill="currentColor" d="M19 22h-7v-2h7V10h-6V4H5v8H3V2h12v2h2v2h2v2h2v14h-2zM17 6h-2v2h2V6zM8 19h3v-2H8v-3H6v3H3v2h3v3h2v-3z"/>`
+	fillPath                       = `<path fill="currentColor" d="M9 2h2v2H9V2zm4 4V4h-2v2H9v2H7v2H5v2H3v2h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v6h2V12h-2v-2h-2V8h-2V6h-2zm0 0v2h2v2h2v2h2v2h-2v2h-2v2h-2v2h-2v-2H9v-2H7v-2H5v-2h2v-2h2V8h2V6h2z"/>`
+	fillHalfPath                   = `<path fill="currentColor" d="M9 2h2v2H9V2zm4 4V4h-2v2H9v2H7v2H5v2H3v2h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v6h2V12h-2v-2h-2V8h-2V6h-2zm0 0v2h2v2h2v2h2v2H5v-2h2v-2h2V8h2V6h2z"/>`
+	fiveGPath                      = `<path fill="currentColor" d="M10 7H3v6h5v2H3v2h7v-6H5V9h5V7zm11 0h-9v10h9v-6h-4v2h2v2h-5V9h7V7z"/>`
+	flagPath                       = `<path fill="currentColor" d="M3 2h10v2h8v14H11v-2H5v6H3V2zm2 12h8v2h6V6h-8V4H5v10z"/>`
+	flattenPath                    = `<path fill="currentColor" d="M11 2h2v8h2v2h-2v2h-2v-2H9v-2h2V2zm-2 8H7V8h2v2zm6 0V8h2v2h-2zm5 6H4v2h16v-2zm-4 4H8v2h8v-2z"/>`
+	flipToBackPath                 = `<path fill="currentColor" d="M9 3H7v2h2V3zm0 12H7v2h2v-2zm2-12h2v2h-2V3zm2 12h-2v2h2v-2zm2-12h2v2h-2V3zm2 12h-2v2h2v-2zm2-12h2v2h-2V3zm2 4h-2v2h2V7zM7 7h2v2H7V7zm14 4h-2v2h2v-2zM7 11h2v2H7v-2zm14 4h-2v2h2v-2zM3 7h2v12h12v2H3V7z"/>`
+	flipToFrontPath                = `<path fill="currentColor" d="M21 3H7v14h14V3zm-2 12H9V5h10v10zM5 7H3v2h2V7zm-2 4h2v2H3v-2zm2 4H3v2h2v-2zm-2 4h2v2H3v-2zm6 0H7v2h2v-2zm2 0h2v2h-2v-2zm6 0h-2v2h2v-2z"/>`
+	floatCenterPath                = `<path fill="currentColor" d="M10 4h6v8H8V4h2zm4 6V6h-4v4h4zM2 6h4v2H2V6zm20 0h-4v2h4V6zm0 4h-4v2h4v-2zM6 10H2v2h4v-2zm-4 4h20v2H2v-2zm20 4H2v2h20v-2z"/>`
+	floatLeftPath                  = `<path fill="currentColor" d="M4 4h6v8H2V4h2zm4 6V6H4v4h4zm14-4H12v2h10V6zm0 4H12v2h10v-2zm0 4v2H2v-2h20zm0 6v-2H2v2h20z"/>`
+	floatRightPath                 = `<path fill="currentColor" d="M16 4h6v8h-8V4h2zm4 6V6h-4v4h4zm-8-4H2v2h10V6zm0 4H2v2h10v-2zm10 4v2H2v-2h20zm0 6v-2H2v2h20z"/>`
+	folderPath                     = `<path fill="currentColor" d="M4 4h8v2h10v14H2V4h2zm16 4H10V6H4v12h16V8z"/>`
+	folderMinusPath                = `<path fill="currentColor" d="M12 4H2v16h20V6H12V4zm-2 4h10v10H4V6h6v2zm8 6v-2h-6v2h6z"/>`
+	folderPlusPath                 = `<path fill="currentColor" d="M4 4h8v2h10v14H2V4h2zm16 4H10V6H4v12h16V8zm-6 2h2v2h2v2h-2v2h-2v-2h-2v-2h2v-2z"/>`
+	folderXPath                    = `<path fill="currentColor" d="M12 4H2v16h20V6H12V4zm-2 4h10v10H4V6h6v2zm6 4h-2v-2h-2v2h2v2h-2v2h2v-2h2v2h2v-2h-2v-2zm0 0h2v-2h-2v2z"/>`
+	forwardPath                    = `<path fill="currentColor" d="M14 5h-2v4H6v2H4v6h2v-2h6v4h2v-2h2v-2h2v-2h2v-2h-2V9h-2V7h-2V5z"/>`
+	forwardburgerPath              = `<path fill="currentColor" d="M13 7H3v2h10V7zm8 4h-2V9h-2V7h-2v2h2v2H3v2h14v2h-2v2h2v-2h2v-2h2v-2zM3 15h10v2H3v-2z"/>`
+	fourGPath                      = `<path fill="currentColor" d="M5 7H3v6h5v4h2V7H8v4H5V7zm16 0h-9v10h9v-6h-4v2h2v2h-5V9h7V7z"/>`
+	fourKPath                      = `<path fill="currentColor" d="M3 7h2v4h4V7h2v10H9v-4H3V7zm10 0h2v4h2v2h-2v4h-2V7zm6 8h-2v-2h2v2zm0 0h2v2h-2v-2zm0-6h-2v2h2V9zm0 0V7h2v2h-2z"/>`
+	fourKBoxPath                   = `<path fill="currentColor" d="M3 4H1v16h22V4H3zm18 2v12H3V6h18zM7 8H5v5h4v3h2V8H9v3H7V8zm8 0h-2v8h2v-3h2v3h2v-3h-2v-2h2V8h-2v3h-2V8z"/>`
+	framePath                      = `<path fill="currentColor" d="M2 3h20v18H2V3zm18 16V7H4v12h16z"/>`
+	frameAddPath                   = `<path fill="currentColor" d="M2 3h20v18H2V3zm18 16V7H4v12h16zm-7-7h3v2h-3v3h-2v-3H8v-2h3V9h2v3z"/>`
+	frameCheckPath                 = `<path fill="currentColor" d="M2 3h20v18H2V3zm18 16V7H4v12h16zm-4-9h-2v2h-2v2h-2v-2H8v2h2v2h2v-2h2v-2h2v-2z"/>`
+	frameDeletePath                = `<path fill="currentColor" d="M2 3h20v18H2V3zm18 16V7H4v12h16zM9 10h2v2H9v-2zm4 2h-2v2H9v2h2v-2h2v2h2v-2h-2v-2zm0 0v-2h2v2h-2z"/>`
+	frameMinusPath                 = `<path fill="currentColor" d="M2 3h20v18H2V3zm18 16V7H4v12h16zM8 12h8v2H8v-2z"/>`
+	gamepadPath                    = `<path fill="currentColor" d="M2 5h20v14H2V5zm18 12V7H4v10h16zM8 9h2v2h2v2h-2v2H8v-2H6v-2h2V9zm6 0h2v2h-2V9zm4 4h-2v2h2v-2z"/>`
+	gifPath                        = `<path fill="currentColor" d="M3 7h6v2H3v6h4v-2H5v-2h4v6H1V7h2zm14 0h6v2h-6v2h4v2h-4v4h-2V7h2zm-4 0h-2v10h2V7z"/>`
+	giftPath                       = `<path fill="none" stroke="currentColor" stroke-width="2" d="M19 12v8h-7m7-8h2V8h-3m1 4H5m13-4V4h-6m6 4H6m0 0V4h6M6 8H3v4h2m0 0v8h7m0 0V4"/>`
+	gitBranchPath                  = `<path fill="currentColor" d="M5 2h2v12h3v3h7v-7h-3V2h8v8h-3v9h-9v3H2v-8h3V2zm15 6V4h-4v4h4zM8 19v-3H4v4h4v-1z"/>`
+	gitCommitPath                  = `<path fill="currentColor" d="M7 7h10v4h5v2h-5v4H7v-4H2v-2h5V7zm2 2v6h6V9H9z"/>`
+	gitMergePath                   = `<path fill="currentColor" d="M10 2H2v8h3v12h2V10h3v2h2v2h2v8h8v-8h-8v-2h-2v-2h-2V2zM4 8V4h4v4H4zm12 12v-4h4v4h-4z"/>`
+	gitPullRequestPath             = `<path fill="currentColor" d="M2 2h8v8H7v12H5V10H2V2zm2 2v4h4V4H4zm8 1h7.09v9H22v8h-8v-8h3.09V7H12V5zm4 11v4h4v-4h-4z"/>`
+	gpsPath                        = `<path fill="currentColor" d="M13 2v4h5v5h4v2h-4v5h-5v4h-2v-4H6v-5H2v-2h4V6h5V2h2zM8 8v8h8V8H8zm2 2h4v4h-4v-4z"/>`
+	gridPath                       = `<path fill="currentColor" d="M2 2h20v20H2V2zm2 2v4h4V4H4zm6 0v4h4V4h-4zm6 0v4h4V4h-4zm4 6h-4v4h4v-4zm0 6h-4v4h4v-4zm-6 4v-4h-4v4h4zm-6 0v-4H4v4h4zm-4-6h4v-4H4v4zm6-4v4h4v-4h-4z"/>`
+	groupPath                      = `<path fill="currentColor" d="M3 3h18v18H3V3zm2 2v14h14V5H5zm2 2h4v4H7V7zm6 0h4v4h-4V7zm-6 6h4v4H7v-4zm6 0h4v4h-4v-4z"/>`
+	hdPath                         = `<path fill="currentColor" d="M3 7h2v4h4V7h2v10H9v-4H5v4H3V7zm10 8V7h6v2h-4v6h4v2h-6v-2zm6 0V9h2v6h-2z"/>`
+	headphonePath                  = `<path fill="currentColor" d="M19 4H5v2H3v14h7v-8H5V6h14v6h-5v8h7V6h-2V4zm-3 10h3v4h-3v-4zm-8 0v4H5v-4h3z"/>`
+	headsetPath                    = `<path fill="currentColor" d="M19 2H5v2H3v14h7v-8H5V4h14v6h-5v8h3v2h-6v2h8v-4h2V4h-2V2zm-3 10h3v4h-3v-4zm-8 0v4H5v-4h3z"/>`
+	heartPath                      = `<path fill="currentColor" d="M9 2H5v2H3v2H1v6h2v2h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v-2h2v-2h2V6h-2V4h-2V2h-4v2h-2v2h-2V4H9V2zm0 2v2h2v2h2V6h2V4h4v2h2v6h-2v2h-2v2h-2v2h-2v2h-2v-2H9v-2H7v-2H5v-2H3V6h2V4h4z"/>`
+	hiddenPath                     = `<path fill="currentColor" d="M8 6h8v2H8V6zm-4 4V8h4v2H4zm-2 2v-2h2v2H2zm0 2v-2H0v2h2zm2 2H2v-2h2v2zm4 2H4v-2h4v2zm8 0v2H8v-2h8zm4-2v2h-4v-2h4zm2-2v2h-2v-2h2zm0-2h2v2h-2v-2zm-2-2h2v2h-2v-2zm0 0V8h-4v2h4zM9 10h2v2H9v-2zm4 2h-2v2H9v2h2v-2h2v2h2v-2h-2v-2zm0 0v-2h2v2h-2z"/>`
+	homePath                       = `<path fill="currentColor" d="M14 2h-4v2H8v2H6v2H4v2H2v2h2v10h7v-6h2v6h7V12h2v-2h-2V8h-2V6h-2V4h-2V2zm0 2v2h2v2h2v2h2v2h-2v8h-3v-6H9v6H6v-8H4v-2h2V8h2V6h2V4h4z"/>`
+	hourglassPath                  = `<path fill="currentColor" d="M18 2H6v6h2v2h2v4H8v2H6v6h12v-6h-2v-2h-2v-4h2V8h2V2zm-2 6h-2v2h-4V8H8V4h8v4zm-2 6v2h2v4H8v-4h2v-2h4z"/>`
+	hqPath                         = `<path fill="currentColor" d="M3 7h2v4h4V7h2v10H9v-4H5v4H3V7zm10 2h2v6h-2V9zm6 6h-4v2h8v-2h-2V9h-2V7h-4v2h4v6z"/>`
+	humanPath                      = `<path fill="currentColor" d="M10 2h4v4h-4V2zM3 7h18v2h-6v13h-2v-6h-2v6H9V9H3V7z"/>`
+	humanHandsdownPath             = `<path fill="currentColor" d="M10 2h4v4h-4V2zM7 7h10v2h-2v13h-2v-6h-2v6H9V9H7V7zm-2 4h2V9H5v2zm0 0v2H3v-2h2zm14 0h-2V9h2v2zm0 0h2v2h-2v-2z"/>`
+	humanHandsupPath               = `<path fill="currentColor" d="M10 2h4v4h-4V2zM7 7h10v2h-2v13h-2v-6h-2v6H9V9H7V7zM5 5v2h2V5H5zm0 0H3V3h2v2zm14 0v2h-2V5h2zm0 0V3h2v2h-2z"/>`
+	humanHeightPath                = `<path fill="currentColor" d="M6 2h4v4H6V2zM3 7h10v9h-2v6H9v-6H7v6H5v-6H3V7zm18-4h-6v2h6V3zm-4 4h4v2h-4V7zm4 4h-6v2h6v-2zm-6 8h6v2h-6v-2zm6-4h-4v2h4v-2z"/>`
+	humanHeightAltPath             = `<path fill="currentColor" d="M4 2h4v4H4V2zM1 7h10v9H9v6H7v-6H5v6H3v-6H1V7zm18-5h-2v2h-2v2h-2v2h2V6h2v12h-2v-2h-2v2h2v2h2v2h2v-2h2v-2h2v-2h-2v2h-2V6h2v2h2V6h-2V4h-2V2z"/>`
+	humanRunPath                   = `<path fill="currentColor" d="M10 3H8v2H6v2h2V5h2v2h2v2h-2v2H8v2H6v2H4v-2H2v2h2v2h2v-2h4v2h2v2h-2v2h2v-2h2v-2h-2v-4h2v-2h2v2h2v2h2v-2h2v-2h-2v2h-2v-2h-2V9h2V5h-4v2h-2V5h-2V3z"/>`
+	imagePath                      = `<path fill="currentColor" d="M4 3H2v18h20V3H4zm16 2v14H4V5h16zm-6 4h-2v2h-2v2H8v2H6v2h2v-2h2v-2h2v-2h2v2h2v2h2v-2h-2v-2h-2V9zM8 7H6v2h2V7z"/>`
+	imageArrowRightPath            = `<path fill="currentColor" d="M19 1h-2v2h2v2h-6v2h6v2h-2v2h2V9h2V7h2V5h-2V3h-2V1zm-8 2H2v18h20v-8h-2v6H4V5h7V3zm1 8V9h2v2h-2zm-2 2v-2h2v2h-2zm-2 2v-2h2v2H8zm0 0v2H6v-2h2zm8-2h-2v-2h2v2zm0 0h2v2h-2v-2zM6 7h2v2H6V7z"/>`
+	imageBrokenPath                = `<path fill="currentColor" d="M22 3H2v18h20v-2h-2v-2h2v-2h-2v-2h2v-2h-2V9h2V7h-2V5h2V3zm-2 4v2h-2v2h2v2h-2v2h2v2h-2v2H4V5h14v2h2zm-6 2h-2v2h-2v2H8v2H6v2h2v-2h2v-2h2v-2h2v2h2v-2h-2V9zM6 7h2v2H6V7z"/>`
+	imageDeletePath                = `<path fill="currentColor" d="M14 3H2v18h20V11h-2v8H4V5h10V3zM6 7h2v2H6V7zm14-2h-2V3h-2v2h2v2h-2v2h2V7h2v2h2V7h-2V5zm0 0V3h2v2h-2zm-8 4h2v2h-2V9zm-2 4v-2h2v2h-2zm-2 2h2v-2H8v2zm0 0v2H6v-2h2zm8-2h-2v-2h2v2zm0 0h2v2h-2v-2z"/>`
+	imageFlashPath                 = `<path fill="currentColor" d="M18 0h2v4h4v2h-2v2h-2v2h-2V6h-4V4h2V2h2V0zM4 3h8v2H4v14h16v-7h2v9H2V3h2zm10 6h-2v2h-2v2H8v2H6v2h2v-2h2v-2h2v-2h2v2h2v2h2v-2h-2v-2h-2V9zM8 7H6v2h2V7z"/>`
+	imageFramePath                 = `<path fill="currentColor" d="M13 1h-2v2H9v2H7v2H2v16h20V7h-5V5h-2V3h-2V1zm2 6H9V5h2V3h2v2h2v2zM4 9h16v12H4V9zm10 6v-2h-2v2h-2v2H8v2h2v-2h2v-2h2zm2 2v-2h-2v2h2zm0 0v2h2v-2h-2zM6 13v-2h2v2H6z"/>`
+	imageGalleryPath               = `<path fill="currentColor" d="M2 2h20v16h-5v2h-2v-2H9v2H7v-2H2V2zm5 18v2H5v-2h2zm10 0v2h2v-2h-2zm3-16H4v12h16V4zm-8 4h2v2h-2V8zm-2 4v-2h2v2h-2zm0 0v2H8v-2h2zm6 0h-2v-2h2v2zm0 0h2v2h-2v-2zM8 6H6v2h2V6z"/>`
+	imageMultiplePath              = `<path fill="currentColor" d="M24 2H4v16h20V2zM6 16V4h16v12H6zM2 4H0v18h20v-2H2V4zm12 2h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm0 0v2H8v-2h2zm8-2h-2V8h2v2zm0 0h2v2h-2v-2zM8 6h2v2H8V6z"/>`
+	imageNewPath                   = `<path fill="currentColor" d="M6 0h12v2H6V0zM4 3H2v18h20V3H4zm16 2v14H4V5h16zm-6 4h-2v2h-2v2H8v2H6v2h2v-2h2v-2h2v-2h2v2h2v2h2v-2h-2v-2h-2V9zM8 7H6v2h2V7zm10 17v-2H6v2h12z"/>`
+	imagePlusPath                  = `<path fill="currentColor" d="M4 3h10v2H4v14h16v-8h2v10H2V3h2zm10 6h-2v2h-2v2H8v2H6v2h2v-2h2v-2h2v-2h2v2h2v2h2v-2h-2v-2h-2V9zM8 7H6v2h2V7zm10-4h2v2h2v2h-2v2h-2V7h-2V5h2V3z"/>`
+	inboxPath                      = `<path fill="currentColor" d="M3 2h18v20H3V2zm2 2v10h4v2h6v-2h4V4H5zm14 12h-2v2H7v-2H5v4h14v-4z"/>`
+	inboxAllPath                   = `<path fill="currentColor" d="M3 2h18v20H3V2zm2 2v4h4v2h6V8h4V4H5zm14 6h-2v2H7v-2H5v4h14v-4zm0 6h-2v2H7v-2H5v4h14v-4z"/>`
+	inboxFullPath                  = `<path fill="currentColor" d="M3 2h18v20H3V2zm2 2v10h4v2h6v-2h4V4H5zm14 12h-2v2H7v-2H5v4h14v-4zM7 6h10v2H7V6zm0 4h10v2H7v-2z"/>`
+	infoBoxPath                    = `<path fill="currentColor" d="M3 3h2v18H3V3zm16 0H5v2h14v14H5v2h16V3h-2zm-8 6h2V7h-2v2zm2 8h-2v-6h2v6z"/>`
+	invertPath                     = `<path fill="currentColor" d="M3 3h18v18H3V3zm16 4h-2v2h-2v2h-2v2h-2v2H9v2H7v2h12V7z"/>`
+	isoPath                        = `<path fill="currentColor" d="M8 3H6v3H3v2h3v3h2V8h3V6H8V3zm11 2h-2v2h-2v2h-2v2h-2v2H9v2H7v2H5v2h2v-2h2v-2h2v-2h2v-2h2V9h2V7h2V5zm-6 13v-2h8v2h-8z"/>`
+	kanbanPath                     = `<path fill="currentColor" d="M21 3H3v18h18V3zM5 19V5h14v14H5zM9 7H7v8h2V7zm2 0h2v4h-2V7zm6 0h-2v10h2V7z"/>`
+	keyboardPath                   = `<path fill="currentColor" d="M21 3H3v18h18V3zM5 19V5h14v14H5zM9 7H7v2h2V7zm8 8H7v2h10v-2zm-2-8h2v2h-2V7zm-2 0h-2v2h2V7zm-6 4h2v2H7v-2zm10 0h-2v2h2v-2zm-6 0h2v2h-2v-2z"/>`
+	labelPath                      = `<path fill="currentColor" d="M12 2H2v10h2v2h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v-2h2v-2h-2v-2h-2V8h-2V6h-2V4h-2V2zm0 2v2h2v2h2v2h2v2h2v2h-2v2h-2v2h-2v2h-2v-2h-2v-2H8v-2H6v-2H4V4h8zM6 6h2v2H6V6z"/>`
+	labelAltPath                   = `<path fill="currentColor" d="M16 5H2v14h14v-2h2v-2h2v-2h2v-2h-2V9h-2V7h-2V5zm0 2v2h2v2h2v2h-2v2h-2v2H4V7h12z"/>`
+	labelAltMultiplePath           = `<path fill="currentColor" d="M8 5H6v10h12v-2h2v-2h2V9h-2V7h-2V5H8zm10 2v2h2v2h-2v2H8V7h10zM4 9H2v10h12v-2H4V9z"/>`
+	labelSharpPath                 = `<path fill="currentColor" d="M16 5H2v4h2v2h2v2H4v2H2v4h14v-2h2v-2h2v-2h2v-2h-2V9h-2V7h-2V5zm0 2v2h2v2h2v2h-2v2h-2v2H4v-2h2v-2h2v-2H6V9H4V7h12z"/>`
+	layoutPath                     = `<path fill="currentColor" d="M2 5h20v14H2V5zm2 2v4h16V7H4zm16 6H10v4h10v-4zM8 17v-4H4v4h4z"/>`
+	layoutAlignBottomPath          = `<path fill="currentColor" d="M16 4H8v12h8V4zm-6 10V6h4v8h-4zm10 6v-2H4v2h16z"/>`
+	layoutAlignLeftPath            = `<path fill="currentColor" d="M20 16V8H8v8h12zm-10-6h8v4h-8v-4zM4 20h2V4H4v16z"/>`
+	layoutAlignRightPath           = `<path fill="currentColor" d="M4 8v8h12V8H4zm10 6H6v-4h8v4zm6-10h-2v16h2V4z"/>`
+	layoutAlignTopPath             = `<path fill="currentColor" d="M16 20H8V8h8v12zm-6-10v8h4v-8h-4zm10-6v2H4V4h16z"/>`
+	layoutColumnsPath              = `<path fill="currentColor" d="M2 5h20v14H2V5zm2 2v10h7V7H4zm9 0v10h7V7h-7z"/>`
+	layoutDistributeHorizontalPath = `<path fill="currentColor" d="M6 4H4v16h2V4zm14 0h-2v16h2V4zM10 7h6v10H8V7h2zm4 8V9h-4v6h4z"/>`
+	layoutDistributeVerticalPath   = `<path fill="currentColor" d="M20 6V4H4v2h16zm0 14v-2H4v2h16zM17 8v8h-2V8h2zm-8 6v-4h6V8H7v8h8v-2H9z"/>`
+	layoutFooterPath               = `<path fill="currentColor" d="M2 5h20v14H2V5zm2 2v6h16V7H4zm16 8H4v2h16v-2z"/>`
+	layoutHeaderPath               = `<path fill="currentColor" d="M2 19h20V5H2v14zm2-2v-6h16v6H4zm16-8H4V7h16v2z"/>`
+	layoutRowsPath                 = `<path fill="currentColor" d="M2 5h20v14H2V5zm2 2v4h16V7H4zm16 6H4v4h16v-4z"/>`
+	layoutSidebarLeftPath          = `<path fill="currentColor" d="M2 5h20v14H2V5zm2 2v10h2V7H4zm4 0v10h12V7H8z"/>`
+	layoutSidebarRightPath         = `<path fill="currentColor" d="M22 5H2v14h20V5zm-2 2v10h-2V7h2zm-4 0v10H4V7h12z"/>`
+	linkPath                       = `<path fill="currentColor" d="M4 6h7v2H4v8h7v2H2V6h2zm16 0h-7v2h7v8h-7v2h9V6h-2zm-3 5H7v2h10v-2z"/>`
+	listPath                       = `<path fill="currentColor" d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"/>`
+	listBoxPath                    = `<path fill="currentColor" d="M2 3h20v18H2V3zm18 16V5H4v14h16zM8 7H6v2h2V7zm2 0h8v2h-8V7zm-2 4H6v2h2v-2zm2 0h8v2h-8v-2zm-2 4H6v2h2v-2zm2 0h8v2h-8v-2z"/>`
+	loaderPath                     = `<path fill="currentColor" d="M13 2h-2v6h2V2zm0 14h-2v6h2v-6zm9-5v2h-6v-2h6zM8 13v-2H2v2h6zm7-6h2v2h-2V7zm4-2h-2v2h2V5zM9 7H7v2h2V7zM5 5h2v2H5V5zm10 12h2v2h2v-2h-2v-2h-2v2zm-8 0v-2h2v2H7v2H5v-2h2z"/>`
+	lockPath                       = `<path fill="currentColor" d="M15 2H9v2H7v4H4v14h16V8h-3V4h-2V2zm0 2v4H9V4h6zm-6 6h9v10H6V10h3zm4 3h-2v4h2v-4z"/>`
+	lockOpenPath                   = `<path fill="currentColor" d="M15 2H9v2H7v2h2V4h6v4H4v14h16V8h-3V4h-2V2zm0 8h3v10H6V10h9zm-2 3h-2v4h2v-4z"/>`
+	loginPath                      = `<path fill="currentColor" d="M5 3H3v4h2V5h14v14H5v-2H3v4h18V3H5zm12 8h-2V9h-2V7h-2v2h2v2H3v2h10v2h-2v2h2v-2h2v-2h2v-2z"/>`
+	logoutPath                     = `<path fill="currentColor" d="M5 3h16v4h-2V5H5v14h14v-2h2v4H3V3h2zm16 8h-2V9h-2V7h-2v2h2v2H7v2h10v2h-2v2h2v-2h2v-2h2v-2z"/>`
+	luggagePath                    = `<path fill="currentColor" d="M9 2h6v4h4v14h-2v2h-2v-2H9v2H7v-2H5V6h4V2zm2 4h2V4h-2v2zM7 18h10V8H7v10zm4-8v6H9v-6h2zm4 0v6h-2v-6h2z"/>`
+	mailPath                       = `<path fill="currentColor" d="M22 4H2v16h20V4zM4 18V6h16v12H4zM8 8H6v2h2v2h2v2h4v-2h2v-2h2V8h-2v2h-2v2h-4v-2H8V8z"/>`
+	mailArrowRightPath             = `<path fill="currentColor" d="M20 4H2v16h10v-2H4V6h16v6h2V4h-2zM6 8h2v2H6V8zm4 4H8v-2h2v2zm4 0v2h-4v-2h4zm2-2v2h-2v-2h2zm0 0V8h2v2h-2zm8 8h-2v-2h-2v-2h-2v2h2v2h-6v2h6v2h-2v2h2v-2h2v-2h2v-2z"/>`
+	mailCheckPath                  = `<path fill="currentColor" d="M4 4h18v10h-2V6H4v12h8v2H2V4h2zm4 4H6v2h2v2h2v2h4v-2h2v-2h2V8h-2v2h-2v2h-4v-2H8V8zm6 10h2v2h-2v-2zm4 2v2h-2v-2h2zm2-2h-2v2h2v-2zm0 0v-2h2v2h-2z"/>`
+	mailDeletePath                 = `<path fill="currentColor" d="M20 4H2v16h12v-2H4V6h16v8h2V4h-2zM6 8h2v2H6V8zm4 4H8v-2h2v2zm4 0v2h-4v-2h4zm2-2v2h-2v-2h2zm0 0V8h2v2h-2zm2 6h-2v2h2v2h-2v2h2v-2h2v2h2v-2h-2v-2h2v-2h-2v2h-2v-2z"/>`
+	mailFlashPath                  = `<path fill="currentColor" d="M4 4h18v8h-2V6H4v12h8v2H2V4h2zm4 4H6v2h2v2h2v2h4v-2h2v-2h2V8h-2v2h-2v2h-4v-2H8V8zm10 6h2v4h4v2h-2v2h-2v2h-2v-4h-4v-2h2v-2h2v-2z"/>`
+	mailMultiplePath               = `<path fill="currentColor" d="M24 2H4v16h20V2zM6 16V4h16v12H6zM2 7H0v15h19v-2H2V7zm8-1H8v2h2v2h2v2h4v-2h2V8h2V6h-2v2h-2v2h-4V8h-2V6z"/>`
+	mailOffPath                    = `<path fill="currentColor" d="M2 2h2v2H2V2zm4 4H4V4h2v2zm2 2H6V6h2v2zm2 2H8V8h2v2zm2 2h-2v-2h2v2zm2 0h-2v2h2v2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2h-2v-2zm2-2h-2v2h2v-2zm0 0V8h2v2h-2zm-6-6h12v12h-2V6H10V4zm4 14v2H2V8h2v10h10z"/>`
+	mailUnreadPath                 = `<path fill="currentColor" d="M22 2h-6v6h6V2zM4 4h10v2H4v12h16v-8h2v10H2V4h2zm4 4H6v2h2v2h2v2h4v-2h2v-2h-2v2h-4v-2H8V8z"/>`
+	mapPath                        = `<path fill="currentColor" d="M8 2h2v2h2v2h-2v10H8V6H6V4h2V2zM4 8V6h2v2H4zm2 10v2H4v2H2V8h2v10h2zm0 0h2v-2H6v2zm6 0h-2v-2h2v2zm2-10V6h-2v2h2zm2 0h-2v10h-2v2h2v2h2v-2h2v-2h2v-2h2V2h-2v2h-2v2h-2v2zm0 0h2V6h2v10h-2v2h-2V8z"/>`
+	membercardPath                 = `<path fill="currentColor" d="M2 3h20v14h-7v3h-2v-2h-2v2H9v-3H2V3zm2 2v4h16V5H4zm16 8H4v2h16v-2z"/>`
+	menuPath                       = `<path fill="currentColor" d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm16 5H4v2h16v-2z"/>`
+	messagePath                    = `<path fill="currentColor" d="M20 2H2v20h2V4h16v12H6v2H4v2h2v-2h16V2h-2z"/>`
+	messageArrowLeftPath           = `<path fill="currentColor" d="M4 2h18v12h-2V4H4v18H2V2h2zm2 14h4v2H6v2H4v-2h2v-2zm16 0h-6v-2h2v-2h-2v2h-2v2h-2v2h2v2h2v2h2v-2h-2v-2h6v-2z"/>`
+	messageArrowRightPath          = `<path fill="currentColor" d="M4 2h18v10h-2V4H4v18H2V2h2zm2 14h4v2H6v2H4v-2h2v-2zm16 0h-2v-2h-2v-2h-2v2h2v2h-6v2h6v2h-2v2h2v-2h2v-2h2v-2z"/>`
+	messageBookmarkPath            = `<path fill="currentColor" d="M4 2h18v16H6v2H4v-2h2v-2h14V4H4v18H2V2h2zm14 4h-6v8h2v-2h2v2h2V6z"/>`
+	messageClockPath               = `<path fill="currentColor" d="M20 2H2v20h2V4h16v4h2V2h-2zM8 16H6v2H4v2h2v-2h2v-2zm6-2h2v2h2v2h-4v-4zm6-4h-8v2h-2v8h2v2h8v-2h2v-8h-2v-2zm0 2v8h-8v-8h8z"/>`
+	messageDeletePath              = `<path fill="currentColor" d="M4 2h18v16H6v2H4v-2h2v-2h14V4H4v18H2V2h2zm9 7h-2V7H9v2h2v2H9v2h2v-2h2v2h2v-2h-2V9zm0 0V7h2v2h-2z"/>`
+	messageFlashPath               = `<path fill="currentColor" d="M20 2H2v20h2V4h16v10h2V2h-2zM10 16H6v2H4v2h2v-2h4v-2zm6-4h2v4h4v2h-2v2h-2v2h-2v-4h-4v-2h2v-2h2v-2z"/>`
+	messageImagePath               = `<path fill="currentColor" d="M4 2h18v16H6v2H4v-2h2v-2h14V4H4v18H2V2h2zm10 4h-2v2h-2v2H8v2H6v2h2v-2h2v-2h2V8h2v2h2v2h2v-2h-2V8h-2V6zM6 6h2v2H6V6z"/>`
+	messageMinusPath               = `<path fill="currentColor" d="M4 2h18v16H6v2H4v-2h2v-2h14V4H4v18H2V2h2zm12 7H8v2h8V9z"/>`
+	messagePlusPath                = `<path fill="currentColor" d="M20 2H2v20h2V4h16v12H6v2H4v2h2v-2h16V2h-2zm-7 7h3v2h-3v3h-2v-3H8V9h3V6h2v3z"/>`
+	messageProcessingPath          = `<path fill="currentColor" d="M4 2h18v16H6v2H4v-2h2v-2h14V4H4v18H2V2h2zm5 7H7v2h2V9zm2 0h2v2h-2V9zm6 0h-2v2h2V9z"/>`
+	messageReplyPath               = `<path fill="currentColor" d="M4 2h18v20h-2V4H4v12h14v2h2v2h-2v-2H2V2h2z"/>`
+	messageTextPath                = `<path fill="currentColor" d="M20 2H2v20h2V4h16v12H6v2H4v2h2v-2h16V2h-2zM6 7h12v2H6V7zm8 4H6v2h8v-2z"/>`
+	minusPath                      = `<path fill="currentColor" d="M4 11h16v2H4z"/>`
+	missedCallPath                 = `<path fill="currentColor" d="M20 6h-4v2h2v2h-2v2h-2v2h-2v2h-2v-2H8v-2H6v-2H4V8H2v2h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v-2h2v2h2V6h-2z"/>`
+	modemPath                      = `<path fill="currentColor" d="M19 2h-8v2H9v2h2V4h8v2h2V4h-2V2zm-8 6h2v2h-2V8zm6 0V6h-4v2h4zm0 0h2v2h-2V8zm-1 2h-2v2H2v10h20V12h-6v-2zm4 4v6H4v-6h16zm-2 2h-2v2h2v-2zm-6 0h2v2h-2v-2z"/>`
+	moneyPath                      = `<path fill="currentColor" d="M16 4H2v12h4v4h16V8h-4V4h-2zm0 2v2H6v6H4V6h12zm-8 4h12v8H8v-8zm8 2h-4v4h4v-4z"/>`
+	monitorPath                    = `<path fill="currentColor" d="M20 3H2v14h8v2H8v2h8v-2h-2v-2h8V3h-2zm-6 12H4V5h16v10h-6z"/>`
+	moodHappyPath                  = `<path fill="currentColor" d="M5 3h14v2H5V3zm0 16H3V5h2v14zm14 0v2H5v-2h14zm0 0h2V5h-2v14zM10 8H8v2h2V8zm4 0h2v2h-2V8zm-5 6v-2H7v2h2zm6 0v2H9v-2h6zm0 0h2v-2h-2v2z"/>`
+	moodNeutralPath                = `<path fill="currentColor" d="M5 3h14v2H5V3zm0 16H3V5h2v14zm14 0v2H5v-2h14zm0 0h2V5h-2v14zM10 8H8v2h2V8zm4 0h2v2h-2V8zm1 5H9v2h6v-2z"/>`
+	moodSadPath                    = `<path fill="currentColor" d="M5 3h14v2H5V3zm0 16H3V5h2v14zm14 0v2H5v-2h14zm0 0h2V5h-2v14zM10 8H8v2h2V8zm4 0h2v2h-2V8zm-5 8v-2h6v2h2v-2h-2v-2H9v2H7v2h2z"/>`
+	moonPath                       = `<path fill="currentColor" d="M6 2h8v2h-2v2h-2V4H6V2ZM4 6V4h2v2H4Zm0 10H2V6h2v10Zm2 2H4v-2h2v2Zm2 2H6v-2h2v2Zm10 0v2H8v-2h10Zm2-2v2h-2v-2h2Zm-2-4h2v4h2v-8h-2v2h-2v2Zm-6 0v2h6v-2h-6Zm-2-2h2v2h-2v-2Zm0 0V6H8v6h2Z"/>`
+	moonStarPath                   = `<path fill="currentColor" d="M6 2h8v2h-2v2h-2V4H6V2ZM4 6V4h2v2H4Zm0 10H2V6h2v10Zm2 2H4v-2h2v2Zm2 2H6v-2h2v2Zm10 0v2H8v-2h10Zm2-2v2h-2v-2h2Zm-2-4v-2h2v-2h2v8h-2v-4h-2Zm-6 0h6v2h-6v-2Zm-2-2h2v2h-2v-2Zm0 0V6H8v6h2Zm8-10h2v2h2v2h-2v2h-2V6h-2V4h2V2Z"/>`
+	moonStarsPath                  = `<path fill="currentColor" d="M20 0h2v2h2v2h-2v2h-2V4h-2V2h2V0ZM8 4h8v2h-2v2h-2V6H8V4ZM6 8V6h2v2H6Zm0 8H4V8h2v8Zm2 2H6v-2h2v2Zm8 0v2H8v-2h8Zm2-2v2h-2v-2h2Zm-2-4v-2h2V8h2v8h-2v-4h-2Zm-4 0h4v2h-4v-2Zm0 0V8h-2v4h2Zm-8 6H2v2H0v2h2v2h2v-2h2v-2H4v-2Z"/>`
+	moreHorizontalPath             = `<path fill="currentColor" d="M1 9h6v6H1V9zm2 2v2h2v-2H3zm6-2h6v6H9V9zm2 2v2h2v-2h-2zm6-2h6v6h-6V9zm2 2v2h2v-2h-2z"/>`
+	moreVerticalPath               = `<path fill="currentColor" d="M15 1v6H9V1h6zm-2 2h-2v2h2V3zm2 6v6H9V9h6zm-2 2h-2v2h2v-2zm2 6v6H9v-6h6zm-2 2h-2v2h2v-2z"/>`
+	mousePath                      = `<path fill="currentColor" d="M6 3h12v18H6V3zm2 2v4h3V5H8zm5 0v4h3V5h-3zm3 6H8v8h8v-8z"/>`
+	movePath                       = `<path fill="currentColor" d="M13 0h-2v2H9v2H7v2h2V4h2v7H4V9h2V7H4v2H2v2H0v2h2v2h2v2h2v-2H4v-2h7v7H9v-2H7v2h2v2h2v2h2v-2h2v-2h2v-2h-2v2h-2v-7h7v2h-2v2h2v-2h2v-2h2v-2h-2V9h-2V7h-2v2h2v2h-7V4h2v2h2V4h-2V2h-2V0z"/>`
+	moviePath                      = `<path fill="currentColor" d="M3 3h18v18H3V3zm2 2v2h2V5H5zm4 0v6h6V5H9zm8 0v2h2V5h-2zm2 4h-2v2h2V9zm0 4h-2v2h2v-2zm0 4h-2v2h2v-2zm-4 2v-6H9v6h6zm-8 0v-2H5v2h2zm-2-4h2v-2H5v2zm0-4h2V9H5v2z"/>`
+	musicPath                      = `<path fill="currentColor" d="M8 4h12v16h-8v-8h6V8h-8v12H2v-8h6V4zm0 10H4v4h4v-4zm10 0h-4v4h4v-4z"/>`
+	nextPath                       = `<path fill="currentColor" d="M6 4h2v2h2v2h2v2h2v4h-2v2h-2v2H8v2H6V4zm12 0h-2v16h2V4z"/>`
+	notePath                       = `<path fill="currentColor" d="M3 2h18v14h-2v2h-2v-2h-2v2h2v2h-2v2H3V2zm2 2v16h8v-6h6V4H5z"/>`
+	noteDeletePath                 = `<path fill="currentColor" d="M11 2h10v14h-2v2h-2v-2h-2v2h2v2h-2v2H3V10h2v10h8v-6h6V4h-8V2zM7 4H5V2H3v2h2v2H3v2h2V6h2v2h2V6H7V4zm0 0h2V2H7v2z"/>`
+	noteMultiplePath               = `<path fill="currentColor" d="M21 6H7v16h8v-2h2v-2h-2v-2h2v2h2v-2h2V6zM9 20V8h10v6h-6v6H9zm-6-2h2V4h12V2H3v16z"/>`
+	notePlusPath                   = `<path fill="currentColor" d="M7 1H5v3H2v2h3v3h2V6h3V4H7V1zm12 1h-7v2h7v10h-6v6H5v-9H3v11h12v-2h2v-2h2v-2h2V2h-2zm-2 16h-2v-2h2v2z"/>`
+	notesPath                      = `<path fill="currentColor" d="M5 2h16v20H3V2h2zm14 18V4H5v16h14zM7 6h10v2H7V6zm10 4H7v2h10v-2zM7 14h7v2H7v-2z"/>`
+	notesDeletePath                = `<path fill="currentColor" d="M19 2H3v20h10v-2H5V4h14v10h2V2h-2zm-2 4H7v2h10V6zM7 10h10v2H7v-2zm6 4H7v2h6v-2zm6 4h-2v-2h-2v2h2v2h-2v2h2v-2h2v2h2v-2h-2v-2zm0 0h2v-2h-2v2z"/>`
+	notesMultiplePath              = `<path fill="currentColor" d="M7 0h16v20H5V0h2zm14 18V2H7v16h14zM9 4h10v2H9V4zm10 4H9v2h10V8zM9 12h7v2H9v-2zm10 10H3V4H1v20h18v-2z"/>`
+	notesPlusPath                  = `<path fill="currentColor" d="M5 2h16v12h-2V4H5v16h8v2H3V2h2zm2 4h10v2H7V6zm10 4H7v2h10v-2zM7 14h7v2H7v-2zm13 5h3v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"/>`
+	notificationPath               = `<path fill="currentColor" d="M14 4V2h-4v2H5v2h14V4h-5zm5 12H5v-4H3v6h5v4h2v-4h4v2h-4v2h6v-4h5v-6h-2V6h-2v8h2v2zM5 6v8h2V6H5z"/>`
+	notificationOffPath            = `<path fill="currentColor" d="M14 2v2h5v2h-8V2h3zM5 16h9v2h2v4h-6v-2h4v-2h-4v4H8v-4H3v-6h2v-2h2v4H5v2zm16-2h-2v-2h-2V6h2v6h2v2zM5 2H3v2h2v2h2v2h2v2h2v2h2v2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2h-2v-2h-2V8H9V6H7V4H5V2z"/>`
+	openPath                       = `<path fill="currentColor" d="M5 3h6v2H5v14h14v-6h2v8H3V3h2zm8 0h8v8h-2V7h-2V5h-4V3zm0 8h-2v2H9v2h2v-2h2v-2zm4-4h-2v2h-2v2h2V9h2V7z"/>`
+	paintBucketPath                = `<path fill="currentColor" d="M8 3h8v2H8V3zm0 2H6v4H4v12h16V9h-2V5h-2v4H8V5zm8 6h2v8H6v-8h2v6h2v-4h2v2h2v-2h2v-2z"/>`
+	paperclipPath                  = `<path fill="currentColor" d="M5 5h16v10H7V9h10v2H9v2h10V7H5v10h14v2H3V5h2z"/>`
+	pausePath                      = `<path fill="currentColor" d="M10 4H5v16h5V4zm9 0h-5v16h5V4z"/>`
+	percentPath                    = `<path fill="currentColor" d="M20 4h-2v2h-2v2h-2v2h-2v2h-2v2H8v2H6v2H4v2h2v-2h2v-2h2v-2h2v-2h2v-2h2V8h2V6h2V4zm-4 10h4v6h-6v-6h2zm2 4v-2h-2v2h2zM6 4h4v6H4V4h2zm2 4V6H6v2h2z"/>`
+	pictureInPicturePath           = `<path fill="currentColor" d="M2 4h20v16H2V4zm2 2v12h16V6H4zm6 2h8v6h-8V8zm2 2v2h4v-2h-4z"/>`
+	pictureInPictureAltPath        = `<path fill="currentColor" d="M2 4h20v16H2V4zm2 2v12h16V6H4zm6 4h8v6h-8v-6zm2 2v2h4v-2h-4z"/>`
+	pinPath                        = `<path fill="currentColor" d="M7 2h10v2H7V2zM5 6V4h2v2H5zm0 8H3V6h2v8zm2 2H5v-2h2v2zm2 2H7v-2h2v2zm2 2H9v-2h2v2zm2 0v2h-2v-2h2zm2-2v2h-2v-2h2zm2-2v2h-2v-2h2zm2-2v2h-2v-2h2zm0-8h2v8h-2V6zm0 0V4h-2v2h2zm-5 2h-4v4h4V8z"/>`
+	pixelarticonsPath              = `<path fill="currentColor" d="M3 3v18h18V3H3zm16 2v14H5V5h14zM7 7h6v6H9v2H7V7zm8 6h-2v2h-2v2h2v-2h2v2h2v-2h-2v-2zm0 0h2v-2h-2v2zM9 9v2h2V9H9z"/>`
+	playPath                       = `<path fill="currentColor" d="M10 20H8V4h2v2h2v3h2v2h2v2h-2v2h-2v3h-2v2z"/>`
+	playlistPath                   = `<path fill="currentColor" d="M10 13h6V5h6v4h-4v10h-8v-6zm2 2v2h4v-2h-4zM2 17h6v2H2v-2zm6-4H2v2h6v-2zM2 9h12v2H2V9zm12-4H2v2h12V5z"/>`
+	plusPath                       = `<path fill="currentColor" d="M11 4h2v7h7v2h-7v7h-2v-7H4v-2h7V4z"/>`
+	powerPath                      = `<path fill="currentColor" d="M20 2h-2v4H6v2H4v8h2v2h2v4h8v-2h4v-2h-4v-2h4v-2h-4v-2H8v4H6V8h12V6h2V2zm-6 18h-4v-6h4v6z"/>`
+	prevPath                       = `<path fill="currentColor" d="M6 4h2v16H6V4zm12 0h-2v2h-2v3h-2v2h-2v2h2v3h2v2h2v2h2V4z"/>`
+	printPath                      = `<path fill="currentColor" d="M6 2h12v6h4v10h-4v4H6v-4H2V8h4V2zm2 6h8V4H8v4zm-2 8v-4h12v4h2v-6H4v6h2zm2-2v6h8v-6H8z"/>`
+	radioHandheldPath              = `<path fill="currentColor" d="M9 2v5h8v15H7V2h2zm0 7v4h6V9H9zm6 6H9v5h6v-5z"/>`
+	radioOnPath                    = `<path fill="currentColor" d="M17 3H7v2H5v2H3v10h2v2h2v2h10v-2h2v-2h2V7h-2V5h-2V3zm0 2v2h2v10h-2v2H7v-2H5V7h2V5h10zm-9 6h2v2h2v2h-2v-2H8v-2zm8-2h-2v2h-2v2h2v-2h2V9z"/>`
+	radioSignalPath                = `<path fill="currentColor" d="M19 2h2v2h-2V2Zm2 14V4h2v12h-2Zm0 0v2h-2v-2h2ZM1 4h2v12H1V4Zm2 12h2v2H3v-2ZM3 4h2V2H3v2Zm2 2h2v8H5V6Zm2 8h2v2H7v-2Zm0-8h2V4H7v2Zm10 0h2v8h-2V6Zm0 0h-2V4h2v2Zm0 8v2h-2v-2h2Zm-6-7h4v6h-2v9h-2v-9H9V7h2Zm0 4h2V9h-2v2Z"/>`
+	radioTowerPath                 = `<path fill="currentColor" d="M22 2h-2v2h2v12h-2v2h2v-2h2V4h-2V2ZM2 4H0v12h2v2h2v-2H2V4Zm0 0V2h2v2H2Zm4 2H4v8h2V6Zm0 0V4h2v2H6Zm4 0h4v2h-4V6Zm0 6H8V8h2v4Zm4 0h-4v2H8v4H6v4h2v-4h2v-4h4v4h2v4h2v-4h-2v-4h-2v-2Zm0 0h2V8h-2v4Zm6-6h-2V4h-2v2h2v8h2V6Z"/>`
+	recieptPath                    = `<path fill="currentColor" d="M3 2h2v2h2v2H5v14h14V6h-2V4h2V2h2v20H3V2zm12 2V2h2v2h-2zm-2 0h2v2h-2V4zm-2 0V2h2v2h-2zM9 4h2v2H9V4zm0 0V2H7v2h2zm8 4H7v2h10V8zM7 12h10v2H7v-2zm10 6v-2h-4v2h4z"/>`
+	recieptAltPath                 = `<path fill="currentColor" d="M5 2H3v20h2v-2h2v2h2v-2h2v2h2v-2h2v2h2v-2h2v2h2V2h-2v2h-2V2h-2v2h-2V2h-2v2H9V2H7v2H5V2zm2 2h2v2h2V4h2v2h2V4h2v2h2v12h-2v2h-2v-2h-2v2h-2v-2H9v2H7v-2H5V6h2V4zm0 4h10v2H7V8zm10 4H7v2h10v-2z"/>`
+	redoPath                       = `<path fill="currentColor" d="M16 4h-2v2h2v2H6v2H4v8h2v2h6v-2H6v-8h10v2h-2v2h2v-2h2v-2h2V8h-2V6h-2V4z"/>`
+	reloadPath                     = `<path fill="currentColor" d="M16 2h-2v2h2v2H4v2H2v5h2V8h12v2h-2v2h2v-2h2V8h2V6h-2V4h-2V2zM6 20h2v2h2v-2H8v-2h12v-2h2v-5h-2v5H8v-2h2v-2H8v2H6v2H4v2h2v2z"/>`
+	removeBoxPath                  = `<path fill="currentColor" d="M5 3H3v18h18V3H5zm14 2v14H5V5h14zm-3 6H8v2h8v-2z"/>`
+	removeBoxMultiplePath          = `<path fill="currentColor" d="M5 3H3v14h14V3H5zm10 2v10H5V5h10zm4 2v12H7v2h14V7h-2zm-6 2H7v2h6V9z"/>`
+	repeatPath                     = `<path fill="currentColor" d="M11 1H9v2h2v2H5v2H3v10h2v2h2v-2H5V7h6v2H9v2h2V9h2V7h2V5h-2V3h-2V1zm8 4h-2v2h2v10h-6v-2h2v-2h-2v2h-2v2H9v2h2v2h2v2h2v-2h-2v-2h6v-2h2V7h-2V5z"/>`
+	replyPath                      = `<path fill="currentColor" d="M12 19h-2v-2H8v-2H6v-2H4v-2h2V9h2V7h2V5h2v4h8v6h-8v4z"/>`
+	replyAllPath                   = `<path fill="currentColor" d="M13 19h2v-4h7V9h-7V5h-2v2h-2v2H9v2H7v2h2v2h2v2h2v2zM8 7H6v2H4v2H2v2h2v2h2v2h2v2h2v-2H8v-2H6v-2H4v-2h2V9h2V7zm0 0h2V5H8v2z"/>`
+	roundedCornerPath              = `<path fill="currentColor" d="M3 3h2v2H3V3zm0 4h2v2H3V7zm2 4H3v2h2v-2zm-2 4h2v2H3v-2zm2 4H3v2h2v-2zm2 0h2v2H7v-2zm6 0h-2v2h2v-2zm2 0h2v2h-2v-2zm6 0h-2v2h2v-2zm-2-4h2v2h-2v-2zM17 5h-2V3h-4v2h4v2h2v2h2v4h2V9h-2V7h-2V5zM7 3h2v2H7V3z"/>`
+	savePath                       = `<path fill="currentColor" d="M4 2h14v2H4v16h2v-6h12v6h2V6h2v16H2V2h2zm4 18h8v-4H8v4zM20 6h-2V4h2v2zM6 6h9v4H6V6z"/>`
+	scalePath                      = `<path fill="currentColor" d="M21 3h-8v2h4v2h2v4h2V3zm-4 4h-2v2h-2v2h2V9h2V7zm-8 8h2v-2H9v2H7v2h2v-2zm-4-2v4h2v2H5h6v2H3v-8h2z"/>`
+	scriptPath                     = `<path fill="currentColor" d="M6 3h14v2h2v6h-2v8h-2V5H6V3zm8 14v-2H6V5H4v10H2v4h2v2h14v-2h-2v-2h-2zm0 0v2H4v-2h10z"/>`
+	scriptTextPath                 = `<path fill="currentColor" d="M6 3h14v2h2v6h-2v8h-2V5H6V3zm8 14v-2H6V5H4v10H2v4h2v2h14v-2h-2v-2h-2zm0 0v2H4v-2h10zM8 7h8v2H8V7zm8 4H8v2h8v-2z"/>`
+	scrollHorizontalPath           = `<path fill="currentColor" d="M22 2v2H2V2h20zm0 18v2H2v-2h20zm-6-5v-2H8v2H6v-2H4v-2h2V9h2v2h8V9h2v2h2v2h-2v2h-2zm0 0v2h-2v-2h2zm0-6h-2V7h2v2zM8 9V7h2v2H8zm0 6h2v2H8v-2z"/>`
+	scrollVerticalPath             = `<path fill="currentColor" d="M2 2h2v20H2V2zm9 18h2v-2h2v-2h2v-2h-2v2h-2V8h2v2h2V8h-2V6h-2V4h-2v2H9v2H7v2h2V8h2v8H9v-2H7v2h2v2h2v2zM22 2h-2v20h2V2z"/>`
+	sdPath                         = `<path fill="currentColor" d="M18 2h2v20H4V6h2v14h12V4H8V2h10zM8 4H6v2h2V4zm6 2h2v4h-2V6zm-2 0h-2v4h2V6z"/>`
+	searchPath                     = `<path fill="currentColor" d="M6 2h8v2H6V2zM4 6V4h2v2H4zm0 8H2V6h2v8zm2 2H4v-2h2v2zm8 0v2H6v-2h8zm2-2h-2v2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2zm0-8h2v8h-2V6zm0 0V4h-2v2h2z"/>`
+	sectionPath                    = `<path fill="currentColor" d="M5 3H3v2h2V3zm4 0H7v2h2V3zM7 19h2v2H7v-2zM5 7H3v2h2V7zm14 0h2v2h-2V7zM5 11H3v2h2v-2zm14 0h2v2h-2v-2zM5 15H3v2h2v-2zm14 0h2v2h-2v-2zM5 19H3v2h2v-2zm6-16h2v2h-2V3zm2 16h-2v2h2v-2zm2-16h2v2h-2V3zm2 16h-2v2h2v-2zm2-16h2v2h-2V3zm2 16h-2v2h2v-2z"/>`
+	sectionCopyPath                = `<path fill="currentColor" d="M5 3H3v2h2V3zm2 4h2v2H7V7zm4 0h2v2h-2V7zm2 12h-2v2h2v-2zm2 0h2v2h-2v-2zm6 0h-2v2h2v-2zM7 11h2v2H7v-2zm14 0h-2v2h2v-2zm-2 4h2v2h-2v-2zM7 19h2v2H7v-2zM19 7h2v2h-2V7zM7 3h2v2H7V3zm2 12H7v2h2v-2zM3 7h2v2H3V7zm14 0h-2v2h2V7zM3 11h2v2H3v-2zm2 4H3v2h2v-2zm6-12h2v2h-2V3zm6 0h-2v2h2V3z"/>`
+	sectionMinusPath               = `<path fill="currentColor" d="M5 3H3v2h2V3zm4 0H7v2h2V3zM7 19h2v2H7v-2zm6 0h-2v2h2v-2zM3 7h2v2H3V7zm18 0h-2v2h2V7zm-2 4h2v2h-2v-2zM5 11H3v2h2v-2zm-2 4h2v2H3v-2zm2 4H3v2h2v-2zm6-16h2v2h-2V3zm6 0h-2v2h2V3zm2 0h2v2h-2V3zm2 14h-6v2h6v-2z"/>`
+	sectionPlusPath                = `<path fill="currentColor" d="M3 3h2v2H3V3zm4 0h2v2H7V3zm2 16H7v2h2v-2zm2 0h2v2h-2v-2zM5 7H3v2h2V7zm14 0h2v2h-2V7zm2 4h-2v2h2v-2zM3 11h2v2H3v-2zm2 4H3v2h2v-2zm12 0h2v2h2v2h-2v2h-2v-2h-2v-2h2v-2zM5 19H3v2h2v-2zm6-16h2v2h-2V3zm6 0h-2v2h2V3zm4 0h-2v2h2V3z"/>`
+	sectionXPath                   = `<path fill="currentColor" d="M5 3H3v2h2V3zm4 0H7v2h2V3zM7 19h2v2H7v-2zm6 0h-2v2h2v-2zM3 7h2v2H3V7zm18 0h-2v2h2V7zm-2 4h2v2h-2v-2zm2 8h-2v-2h2v-2h-2v2h-2v-2h-2v2h2v2h-2v2h2v-2h2v2h2v-2zM3 11h2v2H3v-2zm2 4H3v2h2v-2zm-2 4h2v2H3v-2zM13 3h-2v2h2V3zm2 0h2v2h-2V3zm6 0h-2v2h2V3z"/>`
+	serverPath                     = `<path fill="currentColor" d="M3 3h18v18H3V3zm2 2v6h14V5H5zm14 8H5v6h14v-6zM7 7h2v2H7V7zm2 8H7v2h2v-2z"/>`
+	sharpCornerPath                = `<path fill="currentColor" d="M3 3h2v2H3V3zm0 4h2v2H3V7zm2 4H3v2h2v-2zm-2 4h2v2H3v-2zm2 4H3v2h2v-2zm2 0h2v2H7v-2zm6 0h-2v2h2v-2zm2 0h2v2h-2v-2zm6 0h-2v2h2v-2zm-2-4h2v2h-2v-2zm2-2V3H11v2h8v8h2zM7 3h2v2H7V3z"/>`
+	shieldPath                     = `<path fill="currentColor" d="M22 2H2v12h2V4h16v10h2V2zM6 14H4v2h2v-2zm0 2h2v2h2v2H8v-2H6v-2zm4 4v2h4v-2h2v-2h-2v2h-4zm10-6h-2v2h-2v2h2v-2h2v-2z"/>`
+	shieldOffPath                  = `<path fill="currentColor" d="M8 2h14v12h-2V4H8V2zM2 8h2v6H2V8zm2 6h2v2H4v-2zm4 2H6v2h2v2h2v2h4v-2h-4v-2H8v-2zm10 0h-2v2h2v2h2v2h2v-2h-2v-2h-2v-2zM4 2H2v2h2v2h2v2h2v2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2V8H8V6H6V4H4V2z"/>`
+	shipPath                       = `<path fill="currentColor" d="M8 4v2h4v2H6v2h6V8h2v2h8v6h-2v-4H4v6h14v-2h2v2h4v2H0v-2h2v-8h2V6h2V4h2z"/>`
+	shoppingBagPath                = `<path fill="currentColor" d="M9 2h6v2H9V2zm6 4V4h2v2h4v16H3V6h4V4h2v2h6zm0 2H9v2H7V8H5v12h14V8h-2v2h-2V8z"/>`
+	shufflePath                    = `<path fill="currentColor" d="M18 5h-2v2h2v2h-6v2h-2v6H2v2h8v-2h2v-6h6v2h-2v2h2v-2h2v-2h2V9h-2V7h-2V5zM2 9h6v2H2V9zm20 10v-2h-8v2h8z"/>`
+	slidersPath                    = `<path fill="currentColor" d="M17 4h2v10h-2V4zm0 12h-2v2h2v2h2v-2h2v-2h-4zm-4-6h-2v10h2V10zm-8 2H3v2h2v6h2v-6h2v-2H5zm8-8h-2v2H9v2h6V6h-2V4zM5 4h2v6H5V4z"/>`
+	slidersTwoPath                 = `<path fill="none" stroke="currentColor" stroke-linecap="square" stroke-width="2" d="M3 8h4m0 0V6h4v2M7 8v2h4V8m0 0h10M3 16h10m0 0v-2h4v2m-4 0v2h4v-2m0 0h4"/>`
+	sortPath                       = `<path fill="currentColor" d="M8 20H6V8H4V6h2V4h2v2h2v2H8v12zm2-12v2h2V8h-2zM4 8v2H2V8h2zm14-4h-2v12h-2v-2h-2v2h2v2h2v2h2v-2h2v-2h2v-2h-2v2h-2V4z"/>`
+	sortAlpabeticPath              = `<path fill="currentColor" d="M11 2h2v2h-2V2zm0 2v2H9V4h2zm2 0h2v2h-2V4zM9 18v2h2v2h2v-2h2v-2h-2v2h-2v-2H9zM8 8H2v8h2v-2h2v2h2V8zm-2 4H4v-2h2v2zm6-1v-1h2v1h-2zm4-3h-6v8h6V8zm-4 6v-1h2v1h-2zm10-6h-4v8h4v-2h-2v-4h2V8z"/>`
+	sortNumericPath                = `<path fill="currentColor" d="M13 2h-2v2H9v2h2V4h2v2h2V4h-2V2zM2 8h4v8H4v-6H2V8zm6 0h6v5h-4v1h4v2H8v-5h4v-1H8V8zm12 0h-4v2h4v1h-4v2h4v1h-4v2h6V8h-2zm-9 10v2H9v-2h2zm2 2h-2v2h2v-2zm0 0v-2h2v2h-2z"/>`
+	speakerPath                    = `<path fill="currentColor" d="M4 2H3v20h18V2H4zm15 2v16H5V4h14zm-6 2h-2v2h2V6zm-5 4h8v6h-2v-4h-4v4H8v-6zm8 6H8v2h8v-2z"/>`
+	speedFastPath                  = `<path fill="currentColor" d="M15 5H9v2H5v2H3v2H1v6h2v2h2v-2H3v-6h2V9h4V7h6V5zm8 6h-2v6h-2v2h2v-2h2v-6zm-13 2h4v4h-4v-4zm6-2h-2v2h2v-2zm2-2v2h-2V9h2zm0 0V7h2v2h-2z"/>`
+	speedMediumPath                = `<path fill="currentColor" d="M13 5h-2v8h-1v4h4v-4h-1V5zM9 7H5v2H3v2H1v6h2v2h2v-2H3v-6h2V9h4V7zm12 4h2v6h-2v-6zm-2-2h2v2h-2V9zm0 0h-4V7h4v2zm2 8v2h-2v-2h2z"/>`
+	speedSlowPath                  = `<path fill="currentColor" d="M9 5h6v2H9V5zm10 4h-4V7h4v2zm2 2h-2V9h2v2zm0 6v-6h2v6h-2zm0 0v2h-2v-2h2zM1 11h2v6H1v-6zm2 6h2v2H3v-2zm11-4h-4v-2H8V9H6V7H4v2h2v2h2v2h2v4h4v-4z"/>`
+	spotlightPath                  = `<path fill="currentColor" d="M5 2h16v20H3V2h2zm14 18V4H5v16h14zM13 6H7v2h6V6zm-6 4h10v8H7v-8z"/>`
+	storePath                      = `<path fill="currentColor" d="M4 3h16v2H4V3zm0 4h18v8h-2v6h-2v-6h-4v6H4v-6H2V7h2zm8 12v-4H6v4h6zm0-6h8V9H4v4h8z"/>`
+	subscriptionsPath              = `<path fill="currentColor" d="M18 2H6v2h12V2zM4 6h16v2H4V6zm-2 4h20v12H2V10zm18 10v-8H4v8h16z"/>`
+	subtitlesPath                  = `<path fill="currentColor" d="M21 7h-8v10h8v-2h-6V9h6V7zM3 15V7h8v2H5v6h6v2H3v-2z"/>`
+	suitcasePath                   = `<path fill="currentColor" d="M8 3h8v4h6v14H2V7h6V3zm2 4h4V5h-4v2zM4 9v10h16V9H4zm4 2v6H6v-6h2zm10 0v6h-2v-6h2z"/>`
+	sunPath                        = `<path fill="currentColor" d="M13 3h-2v2h2V3zm4 2h2v2h-2V5zm-6 6h2v2h-2v-2zm-8 0h2v2H3v-2zm18 0h-2v2h2v-2zM5 5h2v2H5V5zm14 14h-2v-2h2v2zm-8 2h2v-2h-2v2zm-4-2H5v-2h2v2zM9 7h6v2H9V7zm0 8H7V9h2v6zm0 0v2h6v-2h2V9h-2v6H9z"/>`
+	sunAltPath                     = `<path fill="currentColor" d="M13 0h-2v4h2V0ZM0 11v2h4v-2H0Zm24 0v2h-4v-2h4ZM13 24h-2v-4h2v4ZM8 6h8v2H8V6ZM6 8h2v8H6V8Zm2 10v-2h8v2H8Zm10-2h-2V8h2v8Zm2-14h2v2h-2V2Zm0 2v2h-2V4h2Zm2 18h-2v-2h2v2Zm-2-2h-2v-2h2v2ZM4 2H2v2h2v2h2V4H4V2ZM2 22h2v-2h2v-2H4v2H2v2Z"/>`
+	switchPath                     = `<path fill="currentColor" d="M3 5V3h2v2H3zm4 2H5V5h2v2zm2 2H7V7h2v2zm2 2H9V9h2v2zm2 0h-2v2h2v2h2v2h2v2h-2v2h6v-6h-2v2h-2v-2h-2v-2h-2v-2zm2-2v2h-2V9h2zm2-2v2h-2V7h2zm0-2v2h2v2h2V3h-6v2h2zM5 19v-2h2v2H5zm0 0v2H3v-2h2zm2-2v-2h2v2H7z"/>`
+	syncPath                       = `<path fill="currentColor" d="M4 9V7h12V5h2v2h2v2h-2v2h-2V9H4zm12 2h-2v2h2v-2zm0-6h-2V3h2v2zm4 12v-2H8v-2h2v-2H8v2H6v2H4v2h2v2h2v2h2v-2H8v-2h12z"/>`
+	tabPath                        = `<path fill="currentColor" d="M2 3h20v18H2V3zm2 2v14h16V9h-8V5H4z"/>`
+	tablePath                      = `<path fill="currentColor" d="M2 3h20v18H2V3zm2 4v5h7V7H4zm9 0v5h7V7h-7zm7 7h-7v5h7v-5zm-9 5v-5H4v5h7z"/>`
+	teaPath                        = `<path fill="currentColor" d="M4 4h18v7h-4v5H4V4zm14 5h2V6h-2v3zm-2-3h-4v2h2v4H8V8h2V6H6v8h10V6zm3 12v2H3v-2h16z"/>`
+	teachPath                      = `<path fill="currentColor" d="M9 2H5v4h4V2zm7 7V7H2v9h2v6h2v-6h2v6h2V9h6zm-5-7h11v14H11v-2h9V4h-9V2z"/>`
+	textAddPath                    = `<path fill="currentColor" d="M19 4H3v2h16V4zm0 4H3v2h16V8zM3 12h8v2H3v-2zm8 4H3v2h8v-2zm7-1h3v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"/>`
+	textColumsPath                 = `<path fill="currentColor" d="M11 5H3v2h8V5zm10 0h-8v2h8V5zM3 9h8v2H3V9zm18 0h-8v2h8V9zM3 13h8v2H3v-2zm18 0h-8v2h8v-2zM3 17h8v2H3v-2zm18 0h-8v2h8v-2z"/>`
+	textSearchPath                 = `<path fill="currentColor" d="M20 4H4v2h16V4zm0 4H4v2h16V8zm-8 4H4v2h8v-2zm8 0h-6v6h6v2h2v-2h-2v-6zm-4 4v-2h2v2h-2zm-4 0H4v2h8v-2z"/>`
+	textWrapPath                   = `<path fill="currentColor" d="M19 5H3v2h16v6h-6v-2h2V9h-2v2h-2v2H9v2h2v2h2v2h2v-2h-2v-2h6v-2h2V7h-2V5zM7 13H3v2h4v-2zM3 9h6v2H3V9z"/>`
+	timelinePath                   = `<path fill="currentColor" d="M7 7h4v4H7V7zm-2 6v-2h2v2H5zm0 0v4H1v-4h4zm8 0h-2v-2h2v2zm4 0h-4v4h4v-4zm2-2v2h-2v-2h2zm0 0h4V7h-4v4z"/>`
+	toggleLeftPath                 = `<path fill="currentColor" d="M4 5h16v2H4V5zm0 12H2V7h2v10zm16 0v2H4v-2h16zm0 0h2V7h-2v10zM10 9H6v6h4V9z"/>`
+	toggleRightPath                = `<path fill="currentColor" d="M4 5h16v2H4V5zm0 12H2V7h2v10zm16 0v2H4v-2h16zm0 0h2V7h-2v10zm-2-8h-4v6h4V9z"/>`
+	tournamentPath                 = `<path fill="currentColor" d="M9 2H2v2h5v4H2v2h7V7h5v10H9v-3H2v2h5v4H2v2h7v-3h7v-6h6v-2h-6V5H9V2z"/>`
+	trackChangesPath               = `<path fill="currentColor" d="M11 2H2v20h20V4h-2v16H4V4h7v2H6v12h12V8h-2v8H8V8h3v2h-1v4h4v-4h-1V2h-2z"/>`
+	trashPath                      = `<path fill="currentColor" d="M16 2v4h6v2h-2v14H4V8H2V6h6V2h8zm-2 2h-4v2h4V4zm0 4H6v12h12V8h-4zm-5 2h2v8H9v-8zm6 0h-2v8h2v-8z"/>`
+	trashAltPath                   = `<path fill="currentColor" d="M16 2v4h6v2h-2v14H4V8H2V6h6V2h8zm-2 2h-4v2h4V4zm0 4H6v12h12V8h-4z"/>`
+	trendingPath                   = `<path fill="currentColor" d="M3 4h2v14h16v2H3V4zm6 10H7v2h2v-2zm2-2v2H9v-2h2zm2 0v-2h-2v2h2zm2 0h-2v2h2v-2zm2-2h-2v2h2v-2zm2-2v2h-2V8h2zm0 0V6h2v2h-2z"/>`
+	trendingDownPath               = `<path fill="currentColor" d="M2 8h2v2h2v2h2v2h2v-2h2v-2h2v2h2v2h2v2h-4v2h8v-8h-2v4h-2v-2h-2v-2h-2V8h-2v2h-2v2H8v-2H6V8H4V6H2v2z"/>`
+	trendingUpPath                 = `<path fill="currentColor" d="M14 6h8v8h-2v-4h-2V8h-4V6zm2 6v-2h2v2h-2zm-2 2v-2h2v2h-2zm-2 0h2v2h-2v-2zm-2-2h2v2h-2v-2zm-2 0v-2h2v2H8zm-2 2v-2h2v2H6zm-2 2v-2h2v2H4zm0 0v2H2v-2h2z"/>`
+	trophyPath                     = `<path fill="currentColor" d="M16 3H6v2H2v10h6V5h8v10h6V5h-4V3h-2zm4 4v6h-2V7h2zM6 13H4V7h2v6zm12 2H6v2h12v-2zm-7 2h2v2h3v2H8v-2h3v-2z"/>`
+	truckPath                      = `<path fill="currentColor" d="M2 4h14v4h4v2h-4v6h6v-4h2v6h-4v2h-4v-2H8v2H4v-2H0V4h2zm20 8h-2v-2h2v2zm-8-2V6H2v10h12v-6z"/>`
+	undoPath                       = `<path fill="currentColor" d="M8 4h2v2H8V4zm10 6V8H8V6H6v2H4v2h2v2h2v2h2v-2H8v-2h10zm0 8v-8h2v8h-2zm0 0v2h-6v-2h6z"/>`
+	ungroupPath                    = `<path fill="currentColor" d="M7 3H3v4h4V3zm0 14H3v4h4v-4zM17 3h4v4h-4V3zm4 14h-4v4h4v-4zM8 8h2v2H8V8zm4 2h-2v4H8v2h2v-2h4v2h2v-2h-2v-4h2V8h-2v2h-2z"/>`
+	unlinkPath                     = `<path fill="currentColor" d="M13 4h-2v16h2V4zM4 6h5v2H4v8h5v2H2V6h2zm11 0h7v12h-7v-2h5V8h-5V6z"/>`
+	uploadPath                     = `<path fill="currentColor" d="M11 5V3h2v2h2v2h2v2h-2V7h-2v10h-2V7H9v2H7V7h2V5h2zM3 15v6h18v-6h-2v4H5v-4H3z"/>`
+	userPath                       = `<path fill="currentColor" d="M15 2H9v2H7v6h2V4h6V2zm0 8H9v2h6v-2zm0-6h2v6h-2V4zM4 16h2v-2h12v2H6v4h12v-4h2v6H4v-6z"/>`
+	userMinusPath                  = `<path fill="currentColor" d="M12 2h6v2h-6v6h-2V4h2V2zm0 8h6v2h-6v-2zm8-6h-2v6h2V4zM9 16H7v6h16v-6h-2v4H9v-4h12v-2H9v2zm-2-6H1v2h6v-2z"/>`
+	userPlusPath                   = `<path fill="currentColor" d="M18 2h-6v2h-2v6h2V4h6V2zm0 8h-6v2h6v-2zm0-6h2v6h-2V4zM7 16h2v-2h12v2H9v4h12v-4h2v6H7v-6zM3 8h2v2h2v2H5v2H3v-2H1v-2h2V8z"/>`
+	userXPath                      = `<path fill="currentColor" d="M12 2h6v2h-6v6h-2V4h2V2zm0 8h6v2h-6v-2zm8-6h-2v6h2V4zM7 16v6h16v-6h-2v4H9v-4h12v-2H9v2H7zm-1-6H4V8H2v2h2v2H2v2h2v-2h2v2h2v-2H6v-2zm0 0h2V8H6v2z"/>`
+	usersPath                      = `<path fill="currentColor" d="M11 0H5v2H3v6h2v2h6V8H5V2h6V0zm0 2h2v6h-2V2zM0 14h2v4h12v2H0v-6zm2 0h12v-2H2v2zm14 0h-2v6h2v-6zM15 0h4v2h-4V0zm4 8h-4v2h4V8zm0-6h2v6h-2V2zm5 12h-2v4h-4v2h6v-6zm-6-2h4v2h-4v-2z"/>`
+	videoPath                      = `<path fill="currentColor" d="M2 5h14v4h2V7h2V5h2v14h-2v-2h-2v-2h-2v4H2V5zm2 12h10V7H4v10z"/>`
+	videoOffPath                   = `<path fill="currentColor" d="M4 5H2v14h14v-4h2v2h2v2h2V5h-2v2h-2v2h-2V5H4zm10 12H4V7h10v10zm-4-6H8V9H6v2h2v2H6v2h2v-2h2v2h2v-2h-2v-2zm0 0V9h2v2h-2z"/>`
+	viewColPath                    = `<path fill="currentColor" d="M2 5h20v14H2V5zm2 2v10h4V7H4zm6 0v10h4V7h-4zm6 0v10h4V7h-4z"/>`
+	viewListPath                   = `<path fill="currentColor" d="M2 5h20v14H2V5zm2 2v2h16V7H4zm16 4H4v2h16v-2zm0 4H4v2h16v-2z"/>`
+	viewportNarrowPath             = `<path fill="currentColor" d="M10 2H8v4h2V4h4v2h2V2h-6zM8 20v-2h2v2h4v-2h2v4H8v-2zm9-9h5v2h-5v2h-2v-2h-2v-2h2V9h2v2zm0-2V7h2v2h-2zm0 6h2v2h-2v-2zM2 11h5V9h2v2h2v2H9v2H7v-2H2v-2zm5 4v2H5v-2h2zm0-6V7H5v2h2z"/>`
+	viewportWidePath               = `<path fill="currentColor" d="M4 2H2v4h2V4h16v2h2V2H4zM2 20v-2h2v2h16v-2h2v4H2v-2zm16-9h-5v2h5v2h-2v2h2v-2h2v-2h2v-2h-2V9h-2V7h-2v2h2v2zm-7 0H6V9h2V7H6v2H4v2H2v2h2v2h2v2h2v-2H6v-2h5v-2z"/>`
+	visiblePath                    = `<path fill="currentColor" d="M8 6h8v2H8V6zm-4 4V8h4v2H4zm-2 2v-2h2v2H2zm0 2v-2H0v2h2zm2 2H2v-2h2v2zm4 2H4v-2h4v2zm8 0v2H8v-2h8zm4-2v2h-4v-2h4zm2-2v2h-2v-2h2zm0-2h2v2h-2v-2zm-2-2h2v2h-2v-2zm0 0V8h-4v2h4zm-10 1h4v4h-4v-4z"/>`
+	volumePath                     = `<path fill="currentColor" d="M15 2h2v20h-2v-2h-2v-2h2V6h-2V4h2V2zm-4 6V6h2v2h-2zm-2 2h2V8H7v8h4v2h2v-2h-2v-2H9v-4z"/>`
+	volumeMinusPath                = `<path fill="currentColor" d="M12 2h-2v2H8v2H6v2H2v8h4v2h2v2h2v2h2V2zM8 18v-2H6v-2H4v-4h2V8h2V6h2v12H8zm14-7h-8v2h8v-2z"/>`
+	volumeOnePath                  = `<path fill="currentColor" d="M15 2h-2v2h-2v2H9v2H5v8h4v2h2v2h2v2h2V2zm-4 16v-2H9v-2H7v-4h2V8h2V6h2v12h-2zm6-8h2v4h-2v-4z"/>`
+	volumePlusPath                 = `<path fill="currentColor" d="M10 2h2v20h-2v-2H8v-2h2V6H8V4h2V2zM6 8V6h2v2H6zm0 8H2V8h4v2H4v4h2v2zm0 0v2h2v-2H6zm13-5h3v2h-3v3h-2v-3h-3v-2h3V8h2v3z"/>`
+	volumeThreePath                = `<path fill="currentColor" d="M11 2H9v2H7v2H5v2H1v8h4v2h2v2h2v2h2V2zM7 18v-2H5v-2H3v-4h2V8h2V6h2v12H7zm6-8h2v4h-2v-4zm8-6h-2V2h-6v2h6v2h2v12h-2v2h-6v2h6v-2h2v-2h2V6h-2V4zm-2 4h-2V6h-4v2h4v8h-4v2h4v-2h2V8z"/>`
+	volumeTwoPath                  = `<path fill="currentColor" d="M11 2h2v20h-2v-2H9v-2h2V6H9V4h2V2zM7 8V6h2v2H7zm0 8H3V8h4v2H5v4h2v2zm0 0v2h2v-2H7zm10-6h-2v4h2v-4zm2-2h2v8h-2V8zm0 8v2h-4v-2h4zm0-10v2h-4V6h4z"/>`
+	volumeVibratePath              = `<path fill="currentColor" d="M14 2h-2v2h-2v2H8v2H4v8h4v2h2v2h2v2h2V2zm-4 16v-2H8v-2H6v-4h2V8h2V6h2v12h-2zm8-15h-2v2h2v2h-2v2h2v2h-2v2h2v2h-2v2h2v2h-2v2h2v-2h2v-2h-2v-2h2v-2h-2v-2h2V9h-2V7h2V5h-2V3z"/>`
+	volumeXPath                    = `<path fill="currentColor" d="M13 2h-2v2H9v2H7v2H3v8h4v2h2v2h2v2h2V2zM9 18v-2H7v-2H5v-4h2V8h2V6h2v12H9zm10-6.777h-2v-2h-2v2h2v2h-2v2h2v-2h2v2h2v-2h-2v-2zm0 0h2v-2h-2v2z"/>`
+	walletPath                     = `<path fill="currentColor" d="M18 3H2v18h18v-4h2V7h-2V3h-2zm0 14v2H4V5h14v2h-8v10h8zm2-2h-8V9h8v6zm-4-4h-2v2h2v-2z"/>`
+	warningBoxPath                 = `<path fill="currentColor" d="M3 3h16v2H5v14h14v2H3V3zm18 0h-2v18h2V3zM11 15h2v2h-2v-2zm2-8h-2v6h2V7z"/>`
+	windPath                       = `<path fill="currentColor" d="M12 3H8v2h4v2H2v2h12V3h-2zm10 8V7h-6v2h4v2H2v2h20v-2zM2 17v-2h14v6h-6v-2h4v-2H2z"/>`
+	zapPath                        = `<path fill="currentColor" d="M12 1h2v8h8v4h-2v-2h-8V5h-2V3h2V1zM8 7V5h2v2H8zM6 9V7h2v2H6zm-2 2V9h2v2H4zm10 8v2h-2v2h-2v-8H2v-4h2v2h8v6h2zm2-2v2h-2v-2h2zm2-2v2h-2v-2h2zm0 0h2v-2h-2v2z"/>`
+	zoomInPath                     = `<path fill="currentColor" d="M14 2H6v2H4v2H2v8h2v2h2v2h8v-2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2h2V6h-2V4h-2V2zm0 2v2h2v8h-2v2H6v-2H4V6h2V4h8zM9 6h2v3h3v2h-3v3H9v-3H6V9h3V6z"/>`
+	zoomOutPath                    = `<path fill="currentColor" d="M14 2H6v2H4v2H2v8h2v2h2v2h8v-2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2h2V6h-2V4h-2V2zm0 2v2h2v8h-2v2H6v-2H4V6h2V4h8zm0 5v2H6V9h8z"/>`
+)
+
+var (
+	hAttr   = g.Attr("height", "1em")
+	viewbox = g.Attr("viewbox", "0 0 24 24")
+)
 
 func IconFromName(name string) g.Node {
 	switch name {
@@ -975,4801 +1462,1921 @@ func IconFromName(name string) g.Node {
 }
 
 func AbTesting(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h6v2H5v2h4v2H5v2h4v2H3V3zm6 8h2V9H9v2zm0-4h2V5H9v2zm4 4h8v10h-2v-4h-4v4h-2V11zm2 4h4v-2h-4v2zm0-12h6v6h-2V5h-4V3zM3 15h2v4h4v2H3v-6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(abTestingPath), g.Group(children))
 }
 
 func Ac(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 2h-2v4H9V4H7v2h2v2h2v3H8V9H6V7H4v2h2v2H2v2h4v2H4v2h2v-2h2v-2h3v3H9v2H7v2h2v-2h2v4h2v-4h2v2h2v-2h-2v-2h-2v-3h3v2h2v2h2v-2h-2v-2h4v-2h-4V9h2V7h-2v2h-2v2h-3V8h2V6h2V4h-2v2h-2V2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(acPath), g.Group(children))
 }
 
 func AddBox(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h18v18H3V3zm16 16V5H5v14h14zm-6-8h4v2h-4v4h-2v-4H7v-2h4V7h2v4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(addBoxPath), g.Group(children))
 }
 
 func AddBoxMultiple(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h14v14H3V3zm12 12V5H5v10h10zm-8 6v-2h12V7h2v14H7zm4-12h2v2h-2v2H9v-2H7V9h2V7h2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(addBoxMultiplePath), g.Group(children))
 }
 
 func AddCol(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 2h10v20H2v-2h8v-4H2v-2h8v-4H2V8h8V4H2V2zm17 9h3v2h-3v3h-2v-3h-3v-2h3V8h2v3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(addColPath), g.Group(children))
 }
 
 func AddGrid(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h8v8H3V3zm6 6V5H5v4h4zm9 4h-2v3h-3v2h3v3h2v-3h3v-2h-3v-3zM15 3h6v8h-8V3h2zm4 6V5h-4v4h4zM5 13h6v8H3v-8h2zm4 6v-4H5v4h4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(addGridPath), g.Group(children))
 }
 
 func AddRow(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 10V2H2v10h20V2h-2v8h-4V2h-2v8h-4V2H8v8H4zm9 9v3h-2v-3H8v-2h3v-3h2v3h3v2h-3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(addRowPath), g.Group(children))
 }
 
 func Alert(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 1h-2v2H9v2H7v2H5v2H3v2H1v2h2v2h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v-2h2v-2h2v-2h-2V9h-2V7h-2V5h-2V3h-2V1zm0 2v2h2v2h2v2h2v2h2v2h-2v2h-2v2h-2v2h-2v2h-2v-2H9v-2H7v-2H5v-2H3v-2h2V9h2V7h2V5h2V3h2zm0 4h-2v6h2V7zm0 8h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(alertPath), g.Group(children))
 }
 
 func AlignCenter(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 5H4v2h16V5zm-4 4H8v2h8V9zM4 13h16v2H4v-2zm12 4H8v2h8v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(alignCenterPath), g.Group(children))
 }
 
 func AlignJustify(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 5H4v2h16V5zm0 4H4v2h16V9zM4 13h16v2H4v-2zm16 4H4v2h16v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(alignJustifyPath), g.Group(children))
 }
 
 func AlignLeft(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 5H4v2h16V5zm-8 4H4v2h8V9zm8 4v2H4v-2h16zm-8 4H4v2h8v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(alignLeftPath), g.Group(children))
 }
 
 func AlignRight(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 5h16v2H4V5zm8 4h8v2h-8V9zm-8 4v2h16v-2H4zm8 4h8v2h-8v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(alignRightPath), g.Group(children))
 }
 
 func Analytics(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h18v18H3V3zm16 2H5v14h14V5zM7 12h2v5H7v-5zm10-5h-2v10h2V7zm-6 3h2v2h-2v-2zm2 4h-2v3h2v-3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(analyticsPath), g.Group(children))
 }
 
 func Anchor(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M14 3h-4v2H8v4h2v2h1v8H6v-4h2v-2H4v6h2v2h12v-2h2v-6h-4v2h2v4h-5v-8h1V9h2V5h-2V3zm0 2v4h-4V5h4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(anchorPath), g.Group(children))
 }
 
 func Android(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 5h2v2H2V5zm4 4H4V7h2v2zm2 0H6v2H4v2H2v6h20v-6h-2v-2h-2V9h2V7h2V5h-2v2h-2v2h-2V7H8v2zm0 0h8v2h2v2h2v4H4v-4h2v-2h2V9zm2 4H8v2h2v-2zm4 0h2v2h-2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(androidPath), g.Group(children))
 }
 
 func Animation(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 2H2v12h2V4h10V2H4zm2 4h12v2H8v10H6V6zm4 4h12v12H10V10zm10 10v-8h-8v8h8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(animationPath), g.Group(children))
 }
 
 func Archive(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M22 4H2v6h2v10h16V10h2V4zM6 10h12v8H6v-8zm14-4v2H4V6h16zm-5 6H9v2h6v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(archivePath), g.Group(children))
 }
 
 func ArrowBarDown(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 4h2v8h2v2h-2v2h-2v-2H9v-2h2V4zm-2 8H7v-2h2v2zm6 0v-2h2v2h-2zM4 18h16v2H4v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(arrowBarDownPath), g.Group(children))
 }
 
 func ArrowBarLeft(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 4v16H4V4h2zm14 7v2h-8v2h-2v-2H8v-2h2V9h2v2h8zm-8-2V7h2v2h-2zm0 6h2v2h-2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(arrowBarLeftPath), g.Group(children))
 }
 
 func ArrowBarRight(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M18 4v16h2V4h-2zM4 11v2h8v2h-2v2h2v-2h2v-2h2v-2h-2V9h-2V7h-2v2h2v2H4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(arrowBarRightPath), g.Group(children))
 }
 
 func ArrowBarUp(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 6h16V4H4v2zm7 14h2v-8h2v2h2v-2h-2v-2h-2V8h-2v2H9v2H7v2h2v-2h2v8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(arrowBarUpPath), g.Group(children))
 }
 
 func ArrowDown(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 4h2v12h2v2h-2v2h-2v-2H9v-2h2V4zM7 14v2h2v-2H7zm0 0v-2H5v2h2zm10 0v2h-2v-2h2zm0 0v-2h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(arrowDownPath), g.Group(children))
 }
 
 func ArrowDownBox(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h18v18H3V3zm16 16V5H5v14h14zM11 7h2v6h2v2h-2v2h-2v-2H9v-2h2V7zm-2 4v2H7v-2h2zm8 0h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(arrowDownBoxPath), g.Group(children))
 }
 
 func ArrowLeft(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 11v2H8v2H6v-2H4v-2h2V9h2v2h12zM10 7H8v2h2V7zm0 0h2V5h-2v2zm0 10H8v-2h2v2zm0 0h2v2h-2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(arrowLeftPath), g.Group(children))
 }
 
 func ArrowLeftBox(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M21 3v18H3V3h18zM5 19h14V5H5v14zm12-8v2h-6v2H9v-2H7v-2h2V9h2v2h6zm-4-2h-2V7h2v2zm0 8v-2h-2v2h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(arrowLeftBoxPath), g.Group(children))
 }
 
 func ArrowRight(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 11v2h12v2h2v-2h2v-2h-2V9h-2v2H4zm10-4h2v2h-2V7zm0 0h-2V5h2v2zm0 10h2v-2h-2v2zm0 0h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(arrowRightPath), g.Group(children))
 }
 
 func ArrowRightBox(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 21V3h18v18H3zM19 5H5v14h14V5zM7 13v-2h6V9h2v2h2v2h-2v2h-2v-2H7zm4 2h2v2h-2v-2zm0-8v2h2V7h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(arrowRightBoxPath), g.Group(children))
 }
 
 func ArrowUp(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 20h2V8h2V6h-2V4h-2v2H9v2h2v12zM7 10V8h2v2H7zm0 0v2H5v-2h2zm10 0V8h-2v2h2zm0 0v2h2v-2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(arrowUpPath), g.Group(children))
 }
 
 func ArrowUpBox(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 21h18V3H3v18zM19 5v14H5V5h14zm-8 12h2v-6h2V9h-2V7h-2v2H9v2h2v6zm-2-4v-2H7v2h2zm8 0h-2v-2h2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(arrowUpBoxPath), g.Group(children))
 }
 
 func ArrowsHorizontal(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M15 9V7h2v2h-2zm2 6v-2h-4v-2h4V9h2v2h2v2h-2v2h-2zm0 0v2h-2v-2h2zm-6-4v2H7v2H5v-2H3v-2h2V9h2v2h4zm-4 4h2v2H7v-2zm2-8v2H7V7h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(arrowsHorizontalPath), g.Group(children))
 }
 
 func ArrowsVertical(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 11h2V7h2v2h2V7h-2V5h-2V3h-2v2H9v2H7v2h2V7h2v4zm0 2h2v4h2v2h-2v2h-2v-2H9v-2h2v-4zm-2 4v-2H7v2h2zm6 0v-2h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(arrowsVerticalPath), g.Group(children))
 }
 
 func ArtText(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 7h10v10H2V7zm8 8V9H4v6h6zm12-8h-8v2h8V7zm-8 4h8v2h-8v-2zm8 4h-8v2h8v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(artTextPath), g.Group(children))
 }
 
 func Article(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3H3v18h18V3H5zm14 2v14H5V5h14zm-2 2H7v2h10V7zM7 11h10v2H7v-2zm7 4H7v2h7v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(articlePath), g.Group(children))
 }
 
 func ArticleMultiple(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 1H1v18h18V1H3zm14 2v14H3V3h14zm4 18H5v2h18V5h-2v16zM15 5H5v2h10V5zM5 9h10v2H5V9zm7 4H5v2h7v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(articleMultiplePath), g.Group(children))
 }
 
 func AspectRatio(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 4h20v16H2V4zm2 14h16V6H4v12zM8 8h2v2H8v2H6V8h2zm8 8h-2v-2h2v-2h2v4h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(aspectRatioPath), g.Group(children))
 }
 
 func At(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 4h16v12H8V8h8v6h2V6H6v12h14v2H4V4zm10 10v-4h-4v4h4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(atPath), g.Group(children))
 }
 
 func Attachment(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M7 5v14H5V3h14v18H9V7h6v10h-2V9h-2v10h6V5H7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(attachmentPath), g.Group(children))
 }
 
 func AudioDevice(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 4h4v2H4v8h4v2H2V4h2zm6 0h10v2h-8v12h8v2H10V4zm12 0h-2v16h2V4zm-7 4h2v2h-2V8zm3 4h-4v4h4v-4zM8 18H4v2h4v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(audioDevicePath), g.Group(children))
 }
 
 func Avatar(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h18v18H3V3zm16 16V5H5v14h14zM14 7h-4v4h4V7zm1 6H9v2H7v2h2v-2h6v2h2v-2h-2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(avatarPath), g.Group(children))
 }
 
 func Backburger(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 7h10v2H11V7zm-8 4h2V9h2v2h14v2H7v2H5v-2H3v-2zm4 4v2h2v-2H7zm0-6V7h2v2H7zm14 6H11v2h10v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(backburgerPath), g.Group(children))
 }
 
 func Battery(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 5H2v14h18v-4h2V9h-2V5H4zm14 2v10H4V7h14z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(batteryPath), g.Group(children))
 }
 
 func BatteryCharging(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 5H2v14h6v-2H4V7h4V5H4zm10 0h6v4h2v6h-2v4h-6v-2h4V7h-4V5zm-4 2h2v4h4v2h-2v2h-2v2h-2v-4H6v-2h2V9h2V7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(batteryChargingPath), g.Group(children))
 }
 
 func BatteryFull(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M18 5H2v14h18v-4h2V9h-2V5h-2zm0 2v10H4V7h14zM8 9H6v6h2V9zm2 0h2v6h-2V9zm6 0h-2v6h2V9z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(batteryFullPath), g.Group(children))
 }
 
 func BatteryOne(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 5H2v14h18v-4h2V9h-2V5H4zm14 2v10H4V7h14zM8 9H6v6h2V9z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(batteryOnePath), g.Group(children))
 }
 
 func BatteryTwo(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 5H2v14h18v-4h2V9h-2V5H4zm14 2v10H4V7h14zM6 9h2v6H6V9zm6 0h-2v6h2V9z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(batteryTwoPath), g.Group(children))
 }
 
 func Bed(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M0 4h2v12h10V8h10v2h-8v6h8v-6h2v10h-2v-2H2v2H0V4zm3 5h2v4H3V9zm6 4v2H5v-2h4zm0-4h2v4H9V9zm0 0H5V7h4v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(bedPath), g.Group(children))
 }
 
 func Bitcoin(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 3h2v2h2v2H9v4h8v2H9v4h8v2h-2v2h-2v-2h-2v2H9v-2H5v-2h2v-4H5v-2h2V7H5V5h4V3h2v2h2V3zm4 14v-4h2v4h-2zm0-6V7h2v4h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(bitcoinPath), g.Group(children))
 }
 
 func Bluetooth(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M15 3h-2v2h2v2h2v2h-2v2h2V9h2V7h-2V5h-2V3zm-2 0h-2v6H9V7H7V5H5v2h2v2h2v2h2v2H9v2H7v2H5v2h2v-2h2v-2h2v6h2V3zm2 8h-2v2h2v2h2v2h-2v2h-2v2h2v-2h2v-2h2v-2h-2v-2h-2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(bluetoothPath), g.Group(children))
 }
 
 func Book(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 2h12v20H4V2h4zm4 8h-2v2H8V4H6v16h12V4h-4v8h-2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(bookPath), g.Group(children))
 }
 
 func BookOpen(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h8v2H3v12h8V5h2v12h8V5h-8V3h10v16H13v2h-2v-2H1V3h2zm16 7h-4v2h4v-2zm-4-3h4v2h-4V7zm2 6h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(bookOpenPath), g.Group(children))
 }
 
 func Bookmark(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M18 2H6v2h12v16h-2v-2h-2v-2h-4v2H8v2H6V2H4v20h4v-2h2v-2h4v2h2v2h4V2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(bookmarkPath), g.Group(children))
 }
 
 func Bookmarks(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M21 18V2H7v2h12v14h2zM5 6H3v16h4v-2h2v-2h2v2h2v2h4V6H5zm8 14v-2h-2v-2H9v2H7v2H5V8h10v12h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(bookmarksPath), g.Group(children))
 }
 
 func Briefcase(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 3h8v4h6v14H2V7h6V3zm2 4h4V5h-4v2zM4 9v10h16V9H4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(briefcasePath), g.Group(children))
 }
 
 func BriefcaseAccount(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 3H8v4H2v14h20V7h-6V3zm-2 4h-4V5h4v2zM4 19V9h16v10H4zm6-8h4v3h-4v-3zm-2 4h8v2H8v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(briefcaseAccountPath), g.Group(children))
 }
 
 func BriefcaseCheck(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 3H8v4H2v14h20V7h-6V3zm-2 4h-4V5h4v2zM4 19V9h16v10H4zm10-8h2v2h-2v-2zm-2 4v-2h2v2h-2zm-2 0h2v2h-2v-2zm0 0H8v-2h2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(briefcaseCheckPath), g.Group(children))
 }
 
 func BriefcaseDelete(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 3H8v4H2v14h12v-2H4V9h16v4h2V7h-6V3zm-2 4h-4V5h4v2zm4 8h-2v2h2v2h-2v2h2v-2h2v2h2v-2h-2v-2h2v-2h-2v2h-2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(briefcaseDeletePath), g.Group(children))
 }
 
 func BriefcaseDownload(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 3h8v4h6v14h-5v-2h3V9H4v10h3v2H2V7h6V3zm6 2h-4v2h4V5zm-3 6h2v6h2v2h-2v2h-2v-2H9v-2h2v-6zm-2 6H7v-2h2v2zm6 0v-2h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(briefcaseDownloadPath), g.Group(children))
 }
 
 func BriefcaseMinus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 3h8v4h6v6h-2V9H4v10h10v2H2V7h6V3zm6 2h-4v2h4V5zm2 12h6v2h-6v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(briefcaseMinusPath), g.Group(children))
 }
 
 func BriefcasePlus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 3h8v4h6v4h-2V9H4v10h8v2H2V7h6V3zm2 4h4V5h-4v2zm7 14h2v-3h3v-2h-3v-3h-2v3h-3v2h3v3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(briefcasePlusPath), g.Group(children))
 }
 
 func BriefcaseSearch(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 3H8v4H2v14h10v-2H4V9h16v2h2V7h-6V3zm-2 4h-4V5h4v2zm6 6h-6v6h6v2h2v-2h-2v-6zm-4 4v-2h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(briefcaseSearchPath), g.Group(children))
 }
 
 func BriefcaseSearchOne(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 3H8v4H2v14h7v-2H4V9h18V7h-6V3zm-2 4h-4V5h4v2zm0 4h8v2h-8v-2zm0 10h-2v-8h2v8zm8 0v2h-8v-2h8zm0 0h2v-8h-2v8zm-6-6h2v2h2v2h-4v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(briefcaseSearchOnePath), g.Group(children))
 }
 
 func BriefcaseUpload(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 3h8v4h6v14h-5v-2h3V9H4v10h3v2H2V7h6V3zm6 2h-4v2h4V5zm-3 16h2v-6h2v2h2v-2h-2v-2h-2v-2h-2v2H9v2H7v2h2v-2h2v6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(briefcaseUploadPath), g.Group(children))
 }
 
 func Bug(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 2h2v4h4V2h2v4h2v3h2v2h-2v2h4v2h-4v2h2v2h-2v3H6v-3H4v-2h2v-2H2v-2h4v-2H4V9h2V6h2V2Zm8 6H8v3h8V8Zm-5 5H8v7h3v-7Zm2 7h3v-7h-3v7ZM4 9H2V7h2v2Zm0 10v2H2v-2h2Zm16 0h2v2h-2v-2Zm0-10V7h2v2h-2Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(bugPath), g.Group(children))
 }
 
 func Building(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 2h18v20H3V2zm12 16v2h4V4H5v16h4v-2h6zM7 6h2v2H7V6zm6 0h-2v2h2V6zm2 0h2v2h-2V6zm-6 4H7v2h2v-2zm2 0h2v2h-2v-2zm6 0h-2v2h2v-2zM7 14h2v2H7v-2zm6 0h-2v2h2v-2zm4 0h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(buildingPath), g.Group(children))
 }
 
 func BuildingCommunity(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 2h2v20H2v-8h2v6h4v-4h2v4h4v-6h2v6h4V4H10v2H8V2h12zm-8 10h2v2h-2v-2zm-2-2h2v2h-2v-2zm-2 0V8h2v2H8zm-2 2v-2h2v2H6zm0 0H4v2h2v-2zm10-6h2v2h-2V6zm-2 0h-2v2h2V6zm2 4h2v2h-2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(buildingCommunityPath), g.Group(children))
 }
 
 func BuildingSkyscraper(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M10 2h4v5h2v2h-2v11h4v-9h2v9h2v2H2v-2h2V8h2v12h6V4h-2V2zM8 6V4h2v2H8zm0 0H6v2h2V6zm10 5h-2V9h2v2zm-8-1H8v2h2v-2zm-2 4h2v2H8v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(buildingSkyscraperPath), g.Group(children))
 }
 
 func Buildings(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 2h14v4h6v16H2V2zm18 6h-4v2h2v2h-2v2h2v2h-2v2h2v2h2V8zm-6-4H4v16h2v-2h6v2h2V4zM6 6h2v2H6V6zm6 0h-2v2h2V6zm-6 4h2v2H6v-2zm6 0h-2v2h2v-2zm-6 4h2v2H6v-2zm6 0h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(buildingsPath), g.Group(children))
 }
 
 func Bulletlist(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 11V5h6v6H2zm4-2V7H4v2h2zm16-4H10v2h12V5zm0 4H10v2h12V9zm-12 4h12v2H10v-2zm12 4H10v2h12v-2zM2 13v6h6v-6H2zm4 2v2H4v-2h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(bulletlistPath), g.Group(children))
 }
 
 func Bullseye(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M18 2H6v2H4v2H2v12h2v2h2v2h12v-2h2v-2h2V6h-2V4h-2V2zm0 2v2h2v12h-2v2H6v-2H4V6h2V4h12zm-8 6h4v4h-4v-4zM8 6h8v2H8V6zm0 10H6V8h2v8zm8 0v2H8v-2h8zm0 0h2V8h-2v8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(bullseyePath), g.Group(children))
 }
 
 func BullseyeArrow(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 2h10v2H6V2zM4 6V4h2v2H4zm0 12H2V6h2v12zm2 2H4v-2h2v2zm12 0H6v2h12v-2zm2-2v2h-2v-2h2zm0 0h2V8h-2v10zM12 6H8v2H6v8h2v2h8v-2h2v-4h-2v4H8V8h4V6zm2 8v-4h2V8h2V6h4V4h-2V2h-2v4h-2v2h-2v2h-4v4h4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(bullseyeArrowPath), g.Group(children))
 }
 
 func Bus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 2h14v2H5V2zm0 2v6h14V4h2v16h-2v2h-4v-2H9v2H5v-2H3V4h2zm0 14h14v-6H5v6zm2-4h2v2H7v-2zm10 0h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(busPath), g.Group(children))
 }
 
 func Cake(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 2h2v2H6V2zm2 3H6v3H2v9h6v-2h2v2h4v-2h2v2h6V8h-4V5h-2v3h-3V5h-2v3H8V5zm12 10h-4v-3h-2v3h-4v-3H8v3H4v-5h16v5zM2 20h20v2H2v-2zM13 2h-2v2h2V2zm3 0h2v2h-2V2zM2 17h2v3H2zm18 0h2v3h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cakePath), g.Group(children))
 }
 
 func Calculator(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 2H3v20h18V2H5zm14 18H5V4h14v16zM17 6H7v4h10V6zM7 12h2v2H7v-2zm6 0h-2v2h2v-2zm2 0h2v2h-2v-2zm-6 4H7v2h2v-2zm2 0h2v2h-2v-2zm6 0h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calculatorPath), g.Group(children))
 }
 
 func Calendar(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M15 2h2v2h4v18H3V4h4V2h2v2h6V2zM5 8h14V6H5v2zm0 2v10h14V10H5z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarPath), g.Group(children))
 }
 
 func CalendarAlert(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M7 5V4H5v2H3v14h14V6h-2V4h-2v2H7V5zm-2 5V8h10v2H5zm0 2h10v6H5v-6zm16-3V8h-2v6h2V9zm0 6h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarAlertPath), g.Group(children))
 }
 
 func CalendarArrowLeft(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v8h2v-2h14v10h-8v2h10V4h-4V2zm2 6H5V6h14v2zm-6 8H7v-2h2v-2H7v2H5v2H3v2h2v2h2v2h2v-2H7v-2h6v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarArrowLeftPath), g.Group(children))
 }
 
 func CalendarArrowRight(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h10v-2H5V10h14v2h2V4h-4V2zM7 6h12v2H5V6h2zm14 10h-2v-2h-2v-2h-2v2h2v2h-6v2h6v2h-2v2h2v-2h2v-2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarArrowRightPath), g.Group(children))
 }
 
 func CalendarCheck(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M15 2h2v2h4v18H3V4h4V2h2v2h6V2zm4 6V6H5v2h14zm0 2H5v10h14V10zm-3 2v2h-2v-2h2zm-4 4v-2h2v2h-2zm-2 0h2v2h-2v-2zm0 0H8v-2h2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarCheckPath), g.Group(children))
 }
 
 func CalendarExport(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h4v-2H5V10h14v10h-2v2h4V4h-4V2zM7 6h12v2H5V6h2zm6 6h-2v6H9v-2H7v2h2v2h2v2h2v-2h2v-2h2v-2h-2v2h-2v-6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarExportPath), g.Group(children))
 }
 
 func CalendarGrid(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h18v18H3V3zm2 2v2h14V5H5zm14 4h-6v2h6V9zm0 4h-6v2h6v-2zm0 4h-6v2h6v-2zm-8 2v-2H5v2h6zm-6-4h6v-2H5v2zm0-4h6V9H5v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarGridPath), g.Group(children))
 }
 
 func CalendarImport(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h4v-2H5V10h14v10h-2v2h4V4h-4V2zM7 6h12v2H5V6h2zm6 16h-2v-6H9v-2h2v-2h2v2h2v2h-2v6zm2-6v2h2v-2h-2zm-6 0v2H7v-2h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarImportPath), g.Group(children))
 }
 
 func CalendarMinus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h18V4h-4V2zM7 6h12v2H5V6h2zM5 20V10h14v10H5zm10-6H9v2h6v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarMinusPath), g.Group(children))
 }
 
 func CalendarMonth(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M15 2h2v2h4v18H3V4h4V2h2v2h6V2zM9 6H5v2h14V6H9zm-4 4v10h14V10H5zm2 2h2v2H7v-2zm6 0h-2v2h2v-2zm2 0h2v2h-2v-2zm-6 4H7v2h2v-2zm2 0h2v2h-2v-2zm6 0h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarMonthPath), g.Group(children))
 }
 
 func CalendarMultiple(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 2h2v2h4v14H5V4h4V2h2v2h6V2zm-6 4H7v2h14V6H11zm-4 4v6h14v-6H7zM3 20h16v2H1V8h2v12z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarMultiplePath), g.Group(children))
 }
 
 func CalendarMultipleCheck(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 2h2v2h4v10h-2v-4H7v6h6v2H5V4h4V2h2v2h6V2zm-6 4H7v2h14V6H11zm2 14v2H1V8h2v12h10zm2-2h2v2h-2v-2zm4 2v2h-2v-2h2zm2-2h-2v2h2v-2zm0 0v-2h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarMultipleCheckPath), g.Group(children))
 }
 
 func CalendarPlus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M15 2h2v2h4v18H3V4h4V2h2v2h6V2zM9 6H5v2h14V6H9zm-4 4v10h14V10H5zm6 2h2v2h2v2h-2v2h-2v-2H9v-2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarPlusPath), g.Group(children))
 }
 
 func CalendarRange(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h18V4h-4V2zM7 6h12v2H5V6h2zM5 20V10h14v10H5zm4-8H7v2h2v-2zm2 0h2v2h-2v-2zm6 0h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarRangePath), g.Group(children))
 }
 
 func CalendarRemove(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h18V4h-4V2zM7 6h12v2H5V6h2zM5 20V10h14v10H5zm6-4H9v2h2v-2zm0-2v-2H9v2h2zm2 0h-2v2h2v2h2v-2h-2v-2zm0 0v-2h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarRemovePath), g.Group(children))
 }
 
 func CalendarSearch(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M15 2h2v2h4v8h-2v-2H5v10h6v2H3V4h4V2h2v2h6V2zM9 6H5v2h14V6H9zm8 6v2h-4v-2h4zm-4 6h-2v-4h2v4zm4 0h-4v2h6v2h2v-2h-2v-6h-2v4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarSearchPath), g.Group(children))
 }
 
 func CalendarSortAscending(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M10 5H8v2H4V5H2v2H0v12h12V7h-2V5zM2 9h8v2H2V9zm0 8v-4h8v4H2zM20 7h-2v8h-2v-2h-2v2h2v2h2v2h2v-2h2v-2h2v-2h-2v2h-2V7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarSortAscendingPath), g.Group(children))
 }
 
 func CalendarSortDescending(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M10 5H8v2H4V5H2v2H0v12h12V7h-2V5zM2 9h8v2H2V9zm0 8v-4h8v4H2zm18 2h-2v-8h-2V9h2V7h2v2h2v2h-2v8zm2-8v2h2v-2h-2zm-6 0v2h-2v-2h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarSortDescendingPath), g.Group(children))
 }
 
 func CalendarText(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M15 2h2v2h4v18H3V4h4V2h2v2h6V2zM9 6H5v2h14V6H9zm-4 4v10h14V10H5zm2 2h8v2H7v-2zm4 6v-2H7v2h4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarTextPath), g.Group(children))
 }
 
 func CalendarToday(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h18V4h-4V2zM7 6h12v2H5V6h2zM5 20V10h14v10H5zm6-4v-4H7v4h4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarTodayPath), g.Group(children))
 }
 
 func CalendarTomorrow(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h18V4h-4V2zM7 6h12v2H5V6h2zM5 20V10h14v10H5zm12-2v-4h-4v4h4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarTomorrowPath), g.Group(children))
 }
 
 func CalendarWeek(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h18V4h-4V2zM7 6h12v2H5V6h2zM5 20V10h14v10H5zm12-8H7v2h10v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarWeekPath), g.Group(children))
 }
 
 func CalendarWeekBegin(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h18V4h-4V2zM7 6h12v2H5V6h2zM5 20V10h14v10H5zm4-8H7v6h2v-6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarWeekBeginPath), g.Group(children))
 }
 
 func CalendarWeekend(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 2h-2v2H9V2H7v2H3v18h18V4h-4V2zM7 6h12v2H5V6h2zM5 20V10h14v10H5zm12-8h-2v6h2v-6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(calendarWeekendPath), g.Group(children))
 }
 
 func Camera(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M9 3H7v2H2v16h20V5h-5V3H9zm8 4h3v12H4V7h5V5h6v2h2zm-7 2h4v2h-4V9zm4 6h-4v2h4v-2h2v-4h-2v4zm-6-4h2v4H8v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cameraPath), g.Group(children))
 }
 
 func CameraAdd(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 2H3v3H0v2h3v3h2V7h3V5H5V2zm12 1h-7v2h5v2h5v12H5v-7H3v9h19V5h-5V3zm-7 6h4v2h2v4h-2v2h-4v-2h4v-4h-4V9zm-2 2h2v4H8v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cameraAddPath), g.Group(children))
 }
 
 func CameraAlt(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 4H2v16h20V4H4zm16 2v12H4V6h16zM8 8H6v2h2V8zm4 0h4v2h-4V8zm-2 2h2v4h-2v-4zm6 4h2v-4h-2v4zm0 0h-4v2h4v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cameraAltPath), g.Group(children))
 }
 
 func CameraFace(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M7 3h10v2h5v16H2V7h2v12h16V7h-5V5H9v2H2V5h5V3zm7 12h-4v2h4v-2zm-4-2v2H8v-2h2zm0-2V9H8v2h2zm6 2v2h-2v-2h2zm0-2V9h-2v2h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cameraFacePath), g.Group(children))
 }
 
 func Car(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 4H7v2H5v2H3v12h4v-2h10v2h4V8h-2V6h-2V4zm0 2v2h2v2H5V8h2V6h10zm2 10H5v-4h14v4zm-2-3h-2v2h2v-2zM7 13h2v2H7v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(carPath), g.Group(children))
 }
 
 func Card(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 4h20v16H2V4zm18 14V6H4v12h16z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cardPath), g.Group(children))
 }
 
 func CardId(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 4h20v16H2V4zm2 2v4h16V6H4zm16 6H10v2h10v-2zm0 4h-4v2h4v-2zm-6 2v-2H4v2h10zM4 14h4v-2H4v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cardIdPath), g.Group(children))
 }
 
 func CardPlus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M22 4H2v16h10v-2H4V6h16v4h2V4zm-3 13h3v-2h-3v-3h-2v3h-3v2h3v3h2v-3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cardPlusPath), g.Group(children))
 }
 
 func CardStack(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 4h18v12H2V4h2zm16 10V6H4v8h16zm2 4H2v2h20v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cardStackPath), g.Group(children))
 }
 
 func CardText(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 4H2v16h20V4H4zm0 2h16v12H4V6zm2 2h12v2H6V8zm0 4h10v2H6v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cardTextPath), g.Group(children))
 }
 
 func Cart(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 2h4v4h16v11H4V4H2V2zm4 13h14V8H6v7zm0 4h3v3H6v-3zm14 0h-3v3h3v-3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cartPath), g.Group(children))
 }
 
 func Cast(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 3h18v18h-8v-2h6V5H4v4H2V3h2zm0 16H2v2h2v-2zm-2-4h4v2H2v-2zm8-4H2v2h8v8h2V11h-2zm-4 4h2v6H6v-6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(castPath), g.Group(children))
 }
 
 func CellularSignalOff(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 2H2v2h2v2H2v2h2V6h2v2h2V6H6V4h2V2H6v2H4V2Zm12 2v16h6V4h-6Zm2 2h2v12h-2V6Zm-9 4v10h6V10H9Zm2 8v-6h2v6h-2Zm-3-4v6H2v-6h6Zm-2 4v-2H4v2h2Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cellularSignalOffPath), g.Group(children))
 }
 
 func CellularSignalOne(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 4v16h6V4h-6Zm2 2h2v12h-2V6Zm-9 4v10h6V10H9Zm2 8v-6h2v6h-2Zm-3-4H2v6h6v-6Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cellularSignalOnePath), g.Group(children))
 }
 
 func CellularSignalThree(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 4h6v16h-6V4ZM2 14h6v6H2v-6Zm13-4H9v10h6V10Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cellularSignalThreePath), g.Group(children))
 }
 
 func CellularSignalTwo(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 4v16h6V4h-6Zm4 2v12h-2V6h2ZM2 14h6v6H2v-6Zm13-4H9v10h6V10Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cellularSignalTwoPath), g.Group(children))
 }
 
 func CellularSignalZero(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M22 4v16h-6V4h6Zm-2 2h-2v12h2V6Zm-5 4v10H9V10h6Zm-2 8v-6h-2v6h2Zm-5-4v6H2v-6h6Zm-2 4v-2H4v2h2Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cellularSignalZeroPath), g.Group(children))
 }
 
 func Chart(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3H3v18h18V3H5zm14 2v14H5V5h14zM9 11H7v6h2v-6zm2-4h2v10h-2V7zm6 6h-2v4h2v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(chartPath), g.Group(children))
 }
 
 func ChartAdd(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h10v2H5v14h14v-8h2v10H3V3zm6 8H7v6h2v-6zm2-4h2v10h-2V7zm6 6h-2v4h2v-4zm0-10h2v2h2v2h-2v2h-2V7h-2V5h2V3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(chartAddPath), g.Group(children))
 }
 
 func ChartBar(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 5h2v14h-2V5zm-2 4H9v10h2V9zm-4 4H5v6h2v-6zm12 0h-2v6h2v-6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(chartBarPath), g.Group(children))
 }
 
 func ChartDelete(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 3H3v18h18V11h-2v8H5V5h8V3zm-6 8h2v6H7v-6zm6-4h-2v10h2V7zm2 6h2v4h-2v-4zm2-6h-2v2h2V7zm0-2V3h-2v2h2zm2 0h-2v2h2v2h2V7h-2V5zm0 0V3h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(chartDeletePath), g.Group(children))
 }
 
 func ChartMinus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 3H3v18h18V11h-2v8H5V5h8V3zm-6 8h2v6H7v-6zm6-4h-2v10h2V7zm2 6h2v4h-2v-4zm6-8h-6v2h6V5z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(chartMinusPath), g.Group(children))
 }
 
 func ChartMultiple(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 2H1v16h18V2H3zm0 2h14v12H3V4zm18 2v14H5v2h18V6h-2zM7 8H5v6h2V8zm2-2h2v8H9V6zm6 4h-2v4h2v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(chartMultiplePath), g.Group(children))
 }
 
 func Chat(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 2H2v20h2V4h16v12H6v2H4v2h2v-2h16V2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(chatPath), g.Group(children))
 }
 
 func Check(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M18 6h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm-2 2h2v-2h-2v2zm-2 2h2v-2h-2v2zm-2 0v2h2v-2H8zm-2-2h2v2H6v-2zm0 0H4v-2h2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(checkPath), g.Group(children))
 }
 
 func CheckDouble(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M15 6h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm-2 2v-2h2v2H9zm-2 2v-2h2v2H7zm-2 0h2v2H5v-2zm-2-2h2v2H3v-2zm0 0H1v-2h2v2zm8 2h2v2h-2v-2zm4-2v2h-2v-2h2zm2-2v2h-2v-2h2zm2-2v2h-2v-2h2zm2-2h-2v2h2V8zm0 0h2V6h-2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(checkDoublePath), g.Group(children))
 }
 
 func Checkbox(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3H3v18h18V3H5zm0 2h14v14H5V5zm4 7H7v2h2v2h2v-2h2v-2h2v-2h2V8h-2v2h-2v2h-2v2H9v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(checkboxPath), g.Group(children))
 }
 
 func CheckboxOn(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h18v18H3V3zm16 16V5H5v14h14z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(checkboxOnPath), g.Group(children))
 }
 
 func Checklist(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M19 4h2v2h-2V4zm-2 4V6h2v2h-2zm-2 0h2v2h-2V8zm0 0h-2V6h2v2zM3 6h8v2H3V6zm8 10H3v2h8v-2zm7 2v-2h2v-2h-2v2h-2v-2h-2v2h2v2h-2v2h2v-2h2zm0 0v2h2v-2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(checklistPath), g.Group(children))
 }
 
 func Chess(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 2h20v20H2V2zm2 2v4h4v4H4v4h4v4h4v-4h4v4h4v-4h-4v-4h4V8h-4V4h-4v4H8V4H4zm8 8H8v4h4v-4zm0-4v4h4V8h-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(chessPath), g.Group(children))
 }
 
 func ChevronDown(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M7 8H5v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2V8h-2v2h-2v2h-2v2h-2v-2H9v-2H7V8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(chevronDownPath), g.Group(children))
 }
 
 func ChevronLeft(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 5v2h-2V5h2zm-4 4V7h2v2h-2zm-2 2V9h2v2h-2zm0 2H8v-2h2v2zm2 2v-2h-2v2h2zm0 0h2v2h-2v-2zm4 4v-2h-2v2h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(chevronLeftPath), g.Group(children))
 }
 
 func ChevronRight(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 5v2h2V5H8zm4 4V7h-2v2h2zm2 2V9h-2v2h2zm0 2h2v-2h-2v2zm-2 2v-2h2v2h-2zm0 0h-2v2h2v-2zm-4 4v-2h2v2H8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(chevronRightPath), g.Group(children))
 }
 
 func ChevronUp(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M7 16H5v-2h2v-2h2v-2h2V8h2v2h2v2h2v2h2v2h-2v-2h-2v-2h-2v-2h-2v2H9v2H7v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(chevronUpPath), g.Group(children))
 }
 
 func ChevronsHorizontal(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 9V7h2v2H8zm-2 2V9h2v2H6zm0 2H4v-2h2v2zm2 2v-2H6v2h2zm0 0h2v2H8v-2zm8-6V7h-2v2h2zm2 2V9h-2v2h2zm0 2v-2h2v2h-2zm-2 2v-2h2v2h-2zm0 0v2h-2v-2h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(chevronsHorizontalPath), g.Group(children))
 }
 
 func ChevronsVertical(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 4h2v2h-2V4zM9 8V6h2v2H9zm0 0v2H7V8h2zm6 0h-2V6h2v2zm0 0h2v2h-2V8zm-6 8H7v-2h2v2zm2 2H9v-2h2v2zm2 0v2h-2v-2h2zm2-2h-2v2h2v-2zm0 0v-2h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(chevronsVerticalPath), g.Group(children))
 }
 
 func Circle(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 3H7v2H5v2H3v10h2v2h2v2h10v-2h2v-2h2V7h-2V5h-2V3zm0 2v2h2v10h-2v2H7v-2H5V7h2V5h10z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(circlePath), g.Group(children))
 }
 
 func Clipboard(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M10 2h6v2h4v18H4V4h4V2h2zm6 4v2H8V6H6v14h12V6h-2zm-2 0V4h-4v2h4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(clipboardPath), g.Group(children))
 }
 
 func Clock(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M19 3H5v2H3v14h2v2h14v-2h2V5h-2V3zm0 2v14H5V5h14zm-8 2h2v6h4v2h-6V7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(clockPath), g.Group(children))
 }
 
 func Close(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 5h2v2H5V5zm4 4H7V7h2v2zm2 2H9V9h2v2zm2 0h-2v2H9v2H7v2H5v2h2v-2h2v-2h2v-2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2zm2-2v2h-2V9h2zm2-2v2h-2V7h2zm0 0V5h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(closePath), g.Group(children))
 }
 
 func CloseBox(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3H3v18h18V3H5zm14 2v14H5V5h14zm-8 4H9V7H7v2h2v2h2v2H9v2H7v2h2v-2h2v-2h2v2h2v2h2v-2h-2v-2h-2v-2h2V9h2V7h-2v2h-2v2h-2V9z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(closeBoxPath), g.Group(children))
 }
 
 func Cloud(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 4h-6v2H8v2H4v2H2v2H0v6h2v2h20v-2h2v-6h-2v-2h-2V8h-2V6h-2V4zm2 8h4v6H2v-6h2v-2h4v2h2v-2H8V8h2V6h6v2h2v4zm0 0v2h-2v-2h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cloudPath), g.Group(children))
 }
 
 func CloudDone(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 4h-6v2H8v2H4v2H2v2H0v6h2v2h20v-2h2v-6h-2v-2h-2V8h-2V6h-2V4zm0 2v2h2v4h4v6H2v-6h2v-2h4V8h2V6h6zm-6 6H8v2h2v2h2v-2h2v-2h2v-2h-2v2h-2v2h-2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cloudDonePath), g.Group(children))
 }
 
 func CloudDownload(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M10 4h6v2h-6V4zM8 8V6h2v2H8zm-4 2V8h4v2H4zm-2 2v-2h2v2H2zm0 6H0v-6h2v6zm0 0h5v2H2v-2zM18 8h-2V6h2v2zm4 4h-4V8h2v2h2v2zm0 6v-6h2v6h-2zm0 0v2h-5v-2h5zm-11 2h2v-2h2v-2h2v-2h-4V9h-2v5H7v2h2v2h2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cloudDownloadPath), g.Group(children))
 }
 
 func CloudMoon(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M18 2h-8v2H8v2H6v4h2V6h2V4h4v2h-2v4h2v2h4v-2h2v4h-2v2h2v-2h2V6h-2v2h-2v2h-4V6h2V4h2V2ZM8 14v-2h4v2H8Zm0 2v-2H4v2H2v4h2v2h10v-2h2v-4h-2v-2h-2v2h2v4H4v-4h4Zm0 0h2v2H8v-2Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cloudMoonPath), g.Group(children))
 }
 
 func CloudSun(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 0h2v4h-2V0Zm1 12H8v2H4v2H2v4h2v2h10v-2h2v-4h-2v-2h-2v-2Zm0 2v2h2v4H4v-4h4v2h2v-2H8v-2h4ZM8 6h6v2H8V6Zm0 2v2H6V8h2Zm8 2h-2V8h2v2Zm0 0h2v2h-2v-2Zm4-8h2v2h-2V2Zm0 2v2h-2V4h2ZM2 2h2v2H2V2Zm2 2h2v2H4V4Zm20 7h-4v2h4v-2Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cloudSunPath), g.Group(children))
 }
 
 func CloudUpload(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M10 4h6v2h-6V4zM8 8V6h2v2H8zm-4 2V8h4v2H4zm-2 2v-2h2v2H2zm0 6H0v-6h2v6zm0 0h7v2H2v-2zM18 8h-2V6h2v2zm4 4h-4V8h2v2h2v2zm0 6v-6h2v6h-2zm0 0v2h-7v-2h7zM11 9h2v2h2v2h2v2h-4v5h-2v-5H7v-2h2v-2h2V9z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cloudUploadPath), g.Group(children))
 }
 
 func Cocktail(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M19 3H3v4h2v2h2v2h2v2h2v6H7v2h10v-2h-4v-6h2v-2h2V9h2V7h2V3h-2zm0 4H5V5h14v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cocktailPath), g.Group(children))
 }
 
 func Code(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 5h2v2H8V5zM6 7h2v2H6V7zM4 9h2v2H4V9zm-2 2h2v2H2v-2zm2 2h2v2H4v-2zm2 2h2v2H6v-2zm2 2h2v2H8v-2zm8-12h-2v2h2V5zm2 2h-2v2h2V7zm2 2h-2v2h2V9zm2 2h-2v2h2v-2zm-2 2h-2v2h2v-2zm-2 2h-2v2h2v-2zm-2 2h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(codePath), g.Group(children))
 }
 
 func Coffee(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 4h18v7h-4v5H4V4zm14 5h2V6h-2v3zm-2-3H6v8h10V6zm3 14H3v-2h16v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(coffeePath), g.Group(children))
 }
 
 func CoffeeAlt(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M7 3H5v4h2V3zm4 0H9v4h2V3zm2 0h2v4h-2V3zm8 6H3v12h14v-5h4V9zm-2 5h-2v-3h2v3zM5 11h10v8H5v-8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(coffeeAltPath), g.Group(children))
 }
 
 func Coin(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 2h12v2H6V2zM4 6V4h2v2H4zm0 12V6H2v12h2zm2 2v-2H4v2h2zm12 0v2H6v-2h12zm2-2v2h-2v-2h2zm0-12h2v12h-2V6zm0 0V4h-2v2h2zm-9-1h2v2h3v2h-6v2h6v6h-3v2h-2v-2H8v-2h6v-2H8V7h3V5z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(coinPath), g.Group(children))
 }
 
 func Collapse(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 3h-2v2h-2v2h-2V5H9V3H7v2h2v2h2v2h2V7h2V5h2V3zM4 13h16v-2H4v2zm9 4h-2v-2h2v2zm2 2h-2v-2h2v2zm0 0h2v2h-2v-2zm-6 0h2v-2H9v2zm0 0H7v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(collapsePath), g.Group(children))
 }
 
 func ColorsSwatch(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M14 2h8v20H12V2h2zm6 2h-6v16h6V4zM10 20H4v-6h6v-2H6v-2H4V8h2V6h2V4h2V2H8v2H6v2H4v2H2v2h2v2H2v10h8v-2zm8-4h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(colorsSwatchPath), g.Group(children))
 }
 
 func Command(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 2H2v8h2V2zm16 0h2v8h-2V2zm-6 6h-4V2H4v2h4v4H4v2h4v4H4v2h4v4H4v2h6v-6h4v6h2v-6h4v-2h-4v-4h4V8h-4V2h-2v6zm-4 6v-4h4v4h-4zM20 2h-4v2h4V2zM2 14h2v8H2v-8zm14 6h4v2h-4v-2zm6-6h-2v8h2v-8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(commandPath), g.Group(children))
 }
 
 func Comment(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M22 2H2v14h2V4h16v12h-8v2h-2v2H8v-4H2v2h4v4h4v-2h2v-2h10V2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(commentPath), g.Group(children))
 }
 
 func Contact(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 3H0v18h24V3H2zm20 2v14H2V5h20zM10 7H6v4h4V7zm-6 6h8v4H4v-4zm16-6h-6v2h6V7zm-6 4h6v2h-6v-2zm6 4h-6v2h6v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(contactPath), g.Group(children))
 }
 
 func ContactDelete(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M22 3H0v18h16v-2H2V5h20v10h2V3h-2zM6 7h4v4H6V7zm0 8H4v2h2v-2zm4 0H6v-2h4v2zm0 0v2h2v-2h-2zm4-8h6v2h-6V7zm6 4h-6v2h6v-2zm-6 4h2v2h-2v-2zm8 4h-2v-2h-2v2h2v2h-2v2h2v-2h2v2h2v-2h-2v-2zm0 0h2v-2h-2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(contactDeletePath), g.Group(children))
 }
 
 func ContactMultiple(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 3h20v14H4V3zm18 12V5H6v10h16zm-2 4H2V7H0v14h20v-2zM9 7h2v2H9V7zm3 4H8v2h4v-2zm2-4h6v2h-6V7zm6 4h-6v2h6v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(contactMultiplePath), g.Group(children))
 }
 
 func ContactPlus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 3h22v11h-2V5H2v14h12v2H0V3h2zm8 4H6v4h4V7zm-6 6h8v4H4v-4zm16-6h-6v2h6V7zm-6 4h6v2h-6v-2zm3 4h-3v2h3v-2zm4 6v3h-2v-3h-3v-2h3v-3h2v3h3v2h-3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(contactPlusPath), g.Group(children))
 }
 
 func Copy(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 2h11v2H6v13H4V2zm4 4h12v16H8V6zm2 2v12h8V8h-8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(copyPath), g.Group(children))
 }
 
 func CornerDownLeft(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M18 16H8v2H6v-2H4v-2h2v-2h2v2h10V4h2v12h-2zM8 12v-2h2v2H8zm0 6v2h2v-2H8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cornerDownLeftPath), g.Group(children))
 }
 
 func CornerDownRight(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 16h10v2h2v-2h2v-2h-2v-2h-2v2H6V4H4v12h2zm10-4v-2h-2v2h2zm0 6v2h-2v-2h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cornerDownRightPath), g.Group(children))
 }
 
 func CornerLeftDown(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 6v10H6v2h2v2h2v-2h2v-2h-2V6h10V4H8v2zm4 10h2v-2h-2v2zm-6 0H4v-2h2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cornerLeftDownPath), g.Group(children))
 }
 
 func CornerLeftUp(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 18V8H6V6h2V4h2v2h2v2h-2v10h10v2H8v-2zm4-10h2v2h-2V8zM6 8H4v2h2V8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cornerLeftUpPath), g.Group(children))
 }
 
 func CornerRightDown(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 6v10h2v2h-2v2h-2v-2h-2v-2h2V6H4V4h12v2zm-4 10h-2v-2h2v2zm6 0h2v-2h-2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cornerRightDownPath), g.Group(children))
 }
 
 func CornerRightUp(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 18V8h2V6h-2V4h-2v2h-2v2h2v10H4v2h12v-2zM12 8h-2v2h2V8zm6 0h2v2h-2V8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cornerRightUpPath), g.Group(children))
 }
 
 func CornerUpLeft(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M18 8H8V6H6v2H4v2h2v2h2v-2h10v10h2V8h-2zM8 12v2h2v-2H8zm0-6V4h2v2H8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cornerUpLeftPath), g.Group(children))
 }
 
 func CornerUpRight(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 8h10V6h2v2h2v2h-2v2h-2v-2H6v10H4V8h2zm10 4v2h-2v-2h2zm0-6V4h-2v2h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cornerUpRightPath), g.Group(children))
 }
 
 func CreditCard(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 4h16v2H4v2h16v4H4v6h16v2H2V4h2zm18 0h-2v16h2V4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(creditCardPath), g.Group(children))
 }
 
 func CreditCardDelete(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 4H2v16h12v-2H4v-6h16V8H4V6h16V4zm0 0h2v8h-2V4zm2 14h-2v-2h2v-2h-2v2h-2v-2h-2v2h2v2h-2v2h2v-2h2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(creditCardDeletePath), g.Group(children))
 }
 
 func CreditCardMinus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 4H2v16h12v-2H4v-6h16V8H4V6h16V4zm0 0h2v8h-2V4zm2 12h-6v2h6v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(creditCardMinusPath), g.Group(children))
 }
 
 func CreditCardMultiple(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M1 3h16v2H3v2h14v4H3v4h14v2H1V3zm18 0h-2v14h2V3zM5 19h16v2H5v-2zM23 7h-2v14h2V7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(creditCardMultiplePath), g.Group(children))
 }
 
 func CreditCardPlus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 4h18v2H4v2h16v4H4v6h10v2H2V4zm20 0h-2v8h2V4zm-4 10h2v2h2v2h-2v2h-2v-2h-2v-2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(creditCardPlusPath), g.Group(children))
 }
 
 func CreditCardSettings(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 4H2v16h18v-2H4v-6h16V8H4V6h16V4zm0 0h2v16h-2V4zm-7 18h-2v2h2v-2zm2 0h2v2h-2v-2zm-6 0H7v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(creditCardSettingsPath), g.Group(children))
 }
 
 func CreditCardWireless(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 2H8v2H6v2h2V4h8v2h2V4h-2V2zM8 8h2v2H8V8zm6 0V6h-4v2h4zm0 0h2v2h-2V8zM4 11h16v12H4V11zm14 10v-3H6v3h12zm0-6v-2H6v2h12z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(creditCardWirelessPath), g.Group(children))
 }
 
 func Crop(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 2H6v4H2v2h14v14h2v-4h4v-2h-4V6H8V2zm0 8H6v8h8v-2H8v-6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cropPath), g.Group(children))
 }
 
 func Cut(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 2h2v2H2V2zm4 4H4V4h2v2zm2 2H6V6h2v2zm2 2V8H8v2h2zm4 0h-4v4H2v8h8v-8h4v8h8v-8h-8v-4zm2-2v2h-2V8h2zm2-2v2h-2V6h2zm2-2h-2v2h2V4zm0 0V2h2v2h-2zM4 20v-4h4v4H4zm12 0v-4h4v4h-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(cutPath), g.Group(children))
 }
 
 func Dashbaord(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h8v10H3V3zm2 2v6h4V5H5zm8-2h8v6h-8V3zm2 2v2h4V5h-4zm-2 6h8v10h-8V11zm2 2v6h4v-6h-4zM3 15h8v6H3v-6zm2 2v2h4v-2H5z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(dashbaordPath), g.Group(children))
 }
 
 func Debug(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<g fill="currentColor"><path d="M6 2h2v2H6V2Zm4 9h4v2h-4v-2Zm4 4h-4v2h4v-2Z"/><path d="M16 4h-2v2h-4V4H8v2H6v3H4V7H2v2h2v2h2v2H2v2h4v2H4v2H2v2h2v-2h2v3h12v-3h2v2h2v-2h-2v-2h-2v-2h4v-2h-4v-2h2V9h2V7h-2v2h-2V6h-2V4ZM8 20V8h8v12H8Zm8-16V2h2v2h-2Z"/></g>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(debugPath), g.Group(children))
 }
 
 func DebugCheck(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 2H6v2h2v2H6v3H4V7H2v2h2v2h2v2H2v2h4v2H4v2H2v2h2v-2h2v3h6v-2H8V8h8v6h2v-3h2V9h2V7h-2v2h-2V6h-2V4h2V2h-2v2h-2v2h-4V4H8V2Zm6 9h-4v2h4v-2Zm-4 4h2v2h-2v-2Zm4 3h2v2h-2v-2Zm4 2v2h-2v-2h2Zm2-2h-2v2h2v-2Zm0 0v-2h2v2h-2Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(debugCheckPath), g.Group(children))
 }
 
 func DebugOff(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 2h2v2h-2V2Zm4 7h-2V6h-2V4h-2v2h-2v2h4v5h2v2h4v-2h-4v-2h2V9Zm0 0V7h2v2h-2ZM8 20v-9H6V9H4V7H2v2h2v2h2v2H2v2h4v2H4v2H2v2h2v-2h2v3h10v-2H8Zm2-5h2v2h-2v-2ZM2 2h2v2H2V2Zm4 4H4V4h2v2Zm2 2H6V6h2v2Zm2 2H8V8h2v2Zm0 0v2h2v2h2v2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2h-2v-2h-2v-2h-2Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(debugOffPath), g.Group(children))
 }
 
 func DebugPause(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 2H6v2h2v2H6v3H4V7H2v2h2v2h2v2H2v2h4v2H4v2H2v2h2v-2h2v3h8v-2H8V8h8v6h2v-3h2V9h2V7h-2v2h-2V6h-2V4h2V2h-2v2h-2v2h-4V4H8V2Zm6 9h-4v2h4v-2Zm-4 4h4v2h-4v-2Zm6 1h2v6h-2v-6Zm6 0h-2v6h2v-6Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(debugPausePath), g.Group(children))
 }
 
 func DebugPlay(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 2h2v2H6V2Zm10 2h-2v2h-4V4H8v2H6v3H4V7H2v2h2v2h2v2H2v2h4v2H4v2H2v2h2v-2h2v3h8v-2H8V8h8v3h4V9h2V7h-2v2h-2V6h-2V4Zm0 0V2h2v2h-2Zm-6 7h4v2h-4v-2Zm4 4h-4v2h4v-2Zm4-2h-2v10h2v-2h2v-2h2v-2h-2v-2h-2v-2Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(debugPlayPath), g.Group(children))
 }
 
 func DebugStop(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 2h2v2H6V2Zm10 2h-2v2h-4V4H8v2H6v3H4V7H2v2h2v2h2v2H2v2h4v2H4v2H2v2h2v-2h2v3h8v-2H8V8h8v6h2v-3h2V9h2V7h-2v2h-2V6h-2V4Zm0 0V2h2v2h-2Zm-6 7h4v2h-4v-2Zm4 4h-4v2h4v-2Zm8 1h-6v6h6v-6Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(debugStopPath), g.Group(children))
 }
 
 func Delete(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M21 5H7v2H5v2H3v2H1v2h2v2h2v2h2v2h16V5h-2zM7 17v-2H5v-2H3v-2h2V9h2V7h14v10H7zm8-6h-2V9h-2v2h2v2h-2v2h2v-2h2v2h2v-2h-2v-2zm0 0V9h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(deletePath), g.Group(children))
 }
 
 func Deskphone(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h18v18H3V3zm2 2v6h8V5H5zm10 0v14h4V5h-4zm-2 14v-2h-3v2h3zm-5 0v-2H5v2h3zm-3-4h3v-2H5v2zm5-2v2h3v-2h-3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(deskphonePath), g.Group(children))
 }
 
 func DeviceLaptop(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 4H4v12h16V4H6zm12 2v8H6V6h12zm4 12H2v2h20v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(deviceLaptopPath), g.Group(children))
 }
 
 func DevicePhone(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 3h12v18H6V3zm10 16V5h-2v2h-4V5H8v14h8zm-5-4h2v2h-2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(devicePhonePath), g.Group(children))
 }
 
 func DeviceTablet(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 2H4v20h16V2H6zm12 2v16H6V4h12zm-5 12h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(deviceTabletPath), g.Group(children))
 }
 
 func DeviceTv(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 20h20V6h-7V4h-2v2h-2V4H9v2H2v14zM9 4V2H7v2h2zm6 0h2V2h-2v2zm5 4v10H4V8h16z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(deviceTvPath), g.Group(children))
 }
 
 func DeviceTvSmart(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 4h18v14h-6v2H8v-2H2V4h2zm16 12V6H4v10h16z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(deviceTvSmartPath), g.Group(children))
 }
 
 func DeviceVibrate(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 3H6v18h12V3H8zm8 2v14H8V5h8zm-3 10h-2v2h2v-2zm7-8h2v2h-2V7zm2 4V9h2v2h-2zm0 2h-2v-2h2v2zm0 2v-2h2v2h-2zm0 0v2h-2v-2h2zM2 17h2v-2H2v-2h2v-2H2V9h2V7H2v2H0v2h2v2H0v2h2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(deviceVibratePath), g.Group(children))
 }
 
 func DeviceWatch(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 2h8v4h5v12h-5v4H8v-4H3V6h5V2zM5 16h14V8H5v8zm6-6h2v2h2v2h-4v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(deviceWatchPath), g.Group(children))
 }
 
 func Devices(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 2h16v6h4v14H12v-6H2V2zm14 6V4H4v10h8V8h4zm-6-2H6v2h4V6zm10 14V10h-6v10h6zm-4-4h2v2h-2v-2zM6 10h4v2H6v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(devicesPath), g.Group(children))
 }
 
 func Dice(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3H3v18h18V3H5zm14 2v14H5V5h14zM9 7H7v2h2V7zm6 0h2v2h-2V7zm-6 8H7v2h2v-2zm6 0h2v2h-2v-2zm-2-4h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(dicePath), g.Group(children))
 }
 
 func Dollar(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 2h2v4h6v2H7v3H5V6h6V2zM5 18h6v4h2v-4h6v-2H5v2zm14-7H5v2h12v3h2v-5z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(dollarPath), g.Group(children))
 }
 
 func Downasaur(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 4h14v2h2v6h-8v2h6v2h-4v2h-2v2H2V8h2V6h2V4zm2 6h2V8H8v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(downasaurPath), g.Group(children))
 }
 
 func Download(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 17V3h-2v10H9v-2H7v2h2v2h2v2h2zm8 2v-4h-2v4H5v-4H3v6h18v-2zm-8-6v2h2v-2h2v-2h-2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(downloadPath), g.Group(children))
 }
 
 func Draft(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M14 2h-4v2H8v2H6v2H4v2H2v12h20V10h-2V8h-2V6h-2V4h-2V2zm0 2v2h2v2h2v4h-2v2h-2v2h-4v-2H8v-2H6V8h2V6h2V4h4zm-8 8v2h2v2h2v2h4v-2h2v-2h2v-2h2v8H4v-8h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(draftPath), g.Group(children))
 }
 
 func DragAndDrop(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3H3v2h2V3zm14 4h2v6h-2V9H9v10h4v2H7V7h12zM7 3h2v2H7V3zM5 7H3v2h2V7zm-2 4h2v2H3v-2zm2 4H3v2h2v-2zm6-12h2v2h-2V3zm6 0h-2v2h2V3zm-2 14v-2h6v2h-2v2h-2v2h-2v-4zm4 2v2h2v-2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(dragAndDropPath), g.Group(children))
 }
 
 func Drop(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 2h-2v2H9v4H7v4H5v6h2v2h2v2h6v-2h2v-2h2v-6h-2V8h-2V4h-2V2zm0 2v4h2v4h2v6h-2v2H9v-2H7v-6h2V8h2V4h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(dropPath), g.Group(children))
 }
 
 func DropArea(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3H3v2h2V3zm2 0h2v2H7V3zm6 0h-2v2h2V3zm2 0h2v2h-2V3zm4 0h2v2h-2V3zM3 7h2v2H3V7zm2 4H3v2h2v-2zm-2 4h2v2H3v-2zm2 4H3v2h2v-2zm2 0h2v2H7v-2zm6 0h-2v2h2v-2zm6-8h2v2h-2v-2zm2-4h-2v2h2V7zm-6 10v-2h6v2h-2v2h-2v2h-2v-4zm4 2v2h2v-2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(dropAreaPath), g.Group(children))
 }
 
 func DropFull(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 2h2v2h2v4h2v4h2v6h-2v2h-2v2H9v-2H7v-2H5v-6h2V8h2V4h2V2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(dropFullPath), g.Group(children))
 }
 
 func DropHalf(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 2h-2v2H9v4H7v4H5v6h2v2h2v2h6v-2h2v-2h2v-6h-2V8h-2V4h-2V2zm0 2v4h2v4h2v3H7v-3h2V8h2V4h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(dropHalfPath), g.Group(children))
 }
 
 func Duplicate(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3h12v4h4v14H7v-4H3V3h2zm10 4V5H5v10h2V7h8zM9 17v2h10V9H9v8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(duplicatePath), g.Group(children))
 }
 
 func DuplicateAlt(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 1H3v14h10v2h-2v2h2v-2h2v-2h2v-2h-2v-2h-2V9h-2v2h2v2H5V3h12V1H5zm4 4H7v6h2V7h10v14H9v-4H7v6h14V5H9z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(duplicateAltPath), g.Group(children))
 }
 
 func Edit(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M18 2h-2v2h-2v2h-2v2h-2v2H8v2H6v2H4v2H2v6h6v-2h2v-2h2v-2h2v-2h2v-2h2v-2h2V8h2V6h-2V4h-2V2zm0 8h-2v2h-2v2h-2v2h-2v2H8v-2H6v-2h2v-2h2v-2h2V8h2V6h2v2h2v2zM6 16H4v4h4v-2H6v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(editPath), g.Group(children))
 }
 
 func EditBox(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M18 2h-2v2h2V2zM4 4h6v2H4v14h14v-6h2v8H2V4h2zm4 8H6v6h6v-2h2v-2h-2v2H8v-4zm4-2h-2v2H8v-2h2V8h2V6h2v2h-2v2zm2-6h2v2h-2V4zm4 0h2v2h2v2h-2v2h-2v2h-2v-2h2V8h2V6h-2V4zm-4 8h2v2h-2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(editBoxPath), g.Group(children))
 }
 
 func Euro(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M9 4h10v2H9v3h7v2H9v2h7v2H9v3h10v2H7v-5H5v-2h2v-2H5V9h2V4h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(euroPath), g.Group(children))
 }
 
 func Expand(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 5h2v2h2v2h2V7h-2V5h-2V3h-2v2zM9 7V5h2v2H9zm0 0v2H7V7h2zm-5 6h16v-2H4v2zm9 6h-2v-2H9v-2H7v2h2v2h2v2h2v-2zm2-2h-2v2h2v-2zm0 0h2v-2h-2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(expandPath), g.Group(children))
 }
 
 func ExternalLink(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M21 11V3h-8v2h4v2h-2v2h-2v2h-2v2H9v2h2v-2h2v-2h2V9h2V7h2v4h2zM11 5H3v16h16v-8h-2v6H5V7h6V5z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(externalLinkPath), g.Group(children))
 }
 
 func Eye(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 6h8v2H8V6zm-4 4V8h4v2H4zm-2 2v-2h2v2H2zm0 2v-2H0v2h2zm2 2H2v-2h2v2zm4 2H4v-2h4v2zm8 0v2H8v-2h8zm4-2v2h-4v-2h4zm2-2v2h-2v-2h2zm0-2h2v2h-2v-2zm-2-2h2v2h-2v-2zm0 0V8h-4v2h4zm-10 1h4v4h-4v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(eyePath), g.Group(children))
 }
 
 func EyeClosed(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M0 7h2v2H0V7zm4 4H2V9h2v2zm4 2v-2H4v2H2v2h2v-2h4zm8 0H8v2H6v2h2v-2h8v2h2v-2h-2v-2zm4-2h-4v2h4v2h2v-2h-2v-2zm2-2v2h-2V9h2zm0 0V7h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(eyeClosedPath), g.Group(children))
 }
 
 func File(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 22h18V8h-2V6h-2v2h-2V6h2V4h-2V2H3v20zm2-2V4h8v6h6v10H5z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(filePath), g.Group(children))
 }
 
 func FileAlt(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M21 22H3V2h12v2h2v2h2v2h2v14zM17 6h-2v2h2V6zM5 4v16h14V10h-6V4H5zm8 12H7v2h6v-2zm-6-4h10v2H7v-2zm4-4H7v2h4V8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(fileAltPath), g.Group(children))
 }
 
 func FileDelete(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 22h10V8h-2V6h-2v2h-2V6h2V4h-2V2H3v12h2V4h8v6h6v10h-8v2zm-4-2H5v2H3v-2h2v-2H3v-2h2v2h2v-2h2v2H7v2zm0 0h2v2H7v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(fileDeletePath), g.Group(children))
 }
 
 func FileFlash(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M19 22h-6v-2h6V10h-6V4H5v8H3V2h12v2h2v2h2v2h2v14h-2zM17 6h-2v2h2V6zM7 12h2v4h4v2h-2v2H9v2H7v-4H3v-2h2v-2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(fileFlashPath), g.Group(children))
 }
 
 func FileMinus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 22h8V8h-2V6h-2v2h-2V6h2V4h-2V2H3v13h2V4h8v6h6v10h-6v2zm-2-3H3v-2h8v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(fileMinusPath), g.Group(children))
 }
 
 func FileMultiple(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M21 18H7V2h8v2h2v2h-2v2h2V6h2v2h2v10zM9 4v12h10v-6h-6V4H9zM3 6h2v14h12v2H3V6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(fileMultiplePath), g.Group(children))
 }
 
 func FileOff(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 2H3v2h2v2h2v2h2v2h2v2h2v2h2v2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2h-2v-2h-2v-2h6v4h2V8h-2V6h-2V4h-2V2H9v2h4v6h-2V8H9V6H7V4H5V2zm12 4v2h-2V6h2zM3 8h2v12h12v2H3V8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(fileOffPath), g.Group(children))
 }
 
 func FilePlus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M19 22h-7v-2h7V10h-6V4H5v8H3V2h12v2h2v2h2v2h2v14h-2zM17 6h-2v2h2V6zM8 19h3v-2H8v-3H6v3H3v2h3v3h2v-3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(filePlusPath), g.Group(children))
 }
 
 func Fill(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M9 2h2v2H9V2zm4 4V4h-2v2H9v2H7v2H5v2H3v2h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v6h2V12h-2v-2h-2V8h-2V6h-2zm0 0v2h2v2h2v2h2v2h-2v2h-2v2h-2v2h-2v-2H9v-2H7v-2H5v-2h2v-2h2V8h2V6h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(fillPath), g.Group(children))
 }
 
 func FillHalf(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M9 2h2v2H9V2zm4 4V4h-2v2H9v2H7v2H5v2H3v2h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v6h2V12h-2v-2h-2V8h-2V6h-2zm0 0v2h2v2h2v2h2v2H5v-2h2v-2h2V8h2V6h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(fillHalfPath), g.Group(children))
 }
 
 func FiveG(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M10 7H3v6h5v2H3v2h7v-6H5V9h5V7zm11 0h-9v10h9v-6h-4v2h2v2h-5V9h7V7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(fiveGPath), g.Group(children))
 }
 
 func Flag(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 2h10v2h8v14H11v-2H5v6H3V2zm2 12h8v2h6V6h-8V4H5v10z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(flagPath), g.Group(children))
 }
 
 func Flatten(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 2h2v8h2v2h-2v2h-2v-2H9v-2h2V2zm-2 8H7V8h2v2zm6 0V8h2v2h-2zm5 6H4v2h16v-2zm-4 4H8v2h8v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(flattenPath), g.Group(children))
 }
 
 func FlipToBack(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M9 3H7v2h2V3zm0 12H7v2h2v-2zm2-12h2v2h-2V3zm2 12h-2v2h2v-2zm2-12h2v2h-2V3zm2 12h-2v2h2v-2zm2-12h2v2h-2V3zm2 4h-2v2h2V7zM7 7h2v2H7V7zm14 4h-2v2h2v-2zM7 11h2v2H7v-2zm14 4h-2v2h2v-2zM3 7h2v12h12v2H3V7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(flipToBackPath), g.Group(children))
 }
 
 func FlipToFront(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M21 3H7v14h14V3zm-2 12H9V5h10v10zM5 7H3v2h2V7zm-2 4h2v2H3v-2zm2 4H3v2h2v-2zm-2 4h2v2H3v-2zm6 0H7v2h2v-2zm2 0h2v2h-2v-2zm6 0h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(flipToFrontPath), g.Group(children))
 }
 
 func FloatCenter(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M10 4h6v8H8V4h2zm4 6V6h-4v4h4zM2 6h4v2H2V6zm20 0h-4v2h4V6zm0 4h-4v2h4v-2zM6 10H2v2h4v-2zm-4 4h20v2H2v-2zm20 4H2v2h20v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(floatCenterPath), g.Group(children))
 }
 
 func FloatLeft(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 4h6v8H2V4h2zm4 6V6H4v4h4zm14-4H12v2h10V6zm0 4H12v2h10v-2zm0 4v2H2v-2h20zm0 6v-2H2v2h20z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(floatLeftPath), g.Group(children))
 }
 
 func FloatRight(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 4h6v8h-8V4h2zm4 6V6h-4v4h4zm-8-4H2v2h10V6zm0 4H2v2h10v-2zm10 4v2H2v-2h20zm0 6v-2H2v2h20z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(floatRightPath), g.Group(children))
 }
 
 func Folder(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 4h8v2h10v14H2V4h2zm16 4H10V6H4v12h16V8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(folderPath), g.Group(children))
 }
 
 func FolderMinus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M12 4H2v16h20V6H12V4zm-2 4h10v10H4V6h6v2zm8 6v-2h-6v2h6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(folderMinusPath), g.Group(children))
 }
 
 func FolderPlus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 4h8v2h10v14H2V4h2zm16 4H10V6H4v12h16V8zm-6 2h2v2h2v2h-2v2h-2v-2h-2v-2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(folderPlusPath), g.Group(children))
 }
 
 func FolderX(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M12 4H2v16h20V6H12V4zm-2 4h10v10H4V6h6v2zm6 4h-2v-2h-2v2h2v2h-2v2h2v-2h2v2h2v-2h-2v-2zm0 0h2v-2h-2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(folderXPath), g.Group(children))
 }
 
 func Forward(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M14 5h-2v4H6v2H4v6h2v-2h6v4h2v-2h2v-2h2v-2h2v-2h-2V9h-2V7h-2V5z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(forwardPath), g.Group(children))
 }
 
 func Forwardburger(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 7H3v2h10V7zm8 4h-2V9h-2V7h-2v2h2v2H3v2h14v2h-2v2h2v-2h2v-2h2v-2zM3 15h10v2H3v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(forwardburgerPath), g.Group(children))
 }
 
 func FourG(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 7H3v6h5v4h2V7H8v4H5V7zm16 0h-9v10h9v-6h-4v2h2v2h-5V9h7V7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(fourGPath), g.Group(children))
 }
 
 func FourK(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 7h2v4h4V7h2v10H9v-4H3V7zm10 0h2v4h2v2h-2v4h-2V7zm6 8h-2v-2h2v2zm0 0h2v2h-2v-2zm0-6h-2v2h2V9zm0 0V7h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(fourKPath), g.Group(children))
 }
 
 func FourKBox(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 4H1v16h22V4H3zm18 2v12H3V6h18zM7 8H5v5h4v3h2V8H9v3H7V8zm8 0h-2v8h2v-3h2v3h2v-3h-2v-2h2V8h-2v3h-2V8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(fourKBoxPath), g.Group(children))
 }
 
 func Frame(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 3h20v18H2V3zm18 16V7H4v12h16z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(framePath), g.Group(children))
 }
 
 func FrameAdd(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 3h20v18H2V3zm18 16V7H4v12h16zm-7-7h3v2h-3v3h-2v-3H8v-2h3V9h2v3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(frameAddPath), g.Group(children))
 }
 
 func FrameCheck(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 3h20v18H2V3zm18 16V7H4v12h16zm-4-9h-2v2h-2v2h-2v-2H8v2h2v2h2v-2h2v-2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(frameCheckPath), g.Group(children))
 }
 
 func FrameDelete(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 3h20v18H2V3zm18 16V7H4v12h16zM9 10h2v2H9v-2zm4 2h-2v2H9v2h2v-2h2v2h2v-2h-2v-2zm0 0v-2h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(frameDeletePath), g.Group(children))
 }
 
 func FrameMinus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 3h20v18H2V3zm18 16V7H4v12h16zM8 12h8v2H8v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(frameMinusPath), g.Group(children))
 }
 
 func Gamepad(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 5h20v14H2V5zm18 12V7H4v10h16zM8 9h2v2h2v2h-2v2H8v-2H6v-2h2V9zm6 0h2v2h-2V9zm4 4h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(gamepadPath), g.Group(children))
 }
 
 func Gif(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 7h6v2H3v6h4v-2H5v-2h4v6H1V7h2zm14 0h6v2h-6v2h4v2h-4v4h-2V7h2zm-4 0h-2v10h2V7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(gifPath), g.Group(children))
 }
 
 func Gift(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-width="2" d="M19 12v8h-7m7-8h2V8h-3m1 4H5m13-4V4h-6m6 4H6m0 0V4h6M6 8H3v4h2m0 0v8h7m0 0V4"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(giftPath), g.Group(children))
 }
 
 func GitBranch(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 2h2v12h3v3h7v-7h-3V2h8v8h-3v9h-9v3H2v-8h3V2zm15 6V4h-4v4h4zM8 19v-3H4v4h4v-1z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(gitBranchPath), g.Group(children))
 }
 
 func GitCommit(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M7 7h10v4h5v2h-5v4H7v-4H2v-2h5V7zm2 2v6h6V9H9z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(gitCommitPath), g.Group(children))
 }
 
 func GitMerge(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M10 2H2v8h3v12h2V10h3v2h2v2h2v8h8v-8h-8v-2h-2v-2h-2V2zM4 8V4h4v4H4zm12 12v-4h4v4h-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(gitMergePath), g.Group(children))
 }
 
 func GitPullRequest(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 2h8v8H7v12H5V10H2V2zm2 2v4h4V4H4zm8 1h7.09v9H22v8h-8v-8h3.09V7H12V5zm4 11v4h4v-4h-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(gitPullRequestPath), g.Group(children))
 }
 
 func Gps(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 2v4h5v5h4v2h-4v5h-5v4h-2v-4H6v-5H2v-2h4V6h5V2h2zM8 8v8h8V8H8zm2 2h4v4h-4v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(gpsPath), g.Group(children))
 }
 
 func Grid(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 2h20v20H2V2zm2 2v4h4V4H4zm6 0v4h4V4h-4zm6 0v4h4V4h-4zm4 6h-4v4h4v-4zm0 6h-4v4h4v-4zm-6 4v-4h-4v4h4zm-6 0v-4H4v4h4zm-4-6h4v-4H4v4zm6-4v4h4v-4h-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(gridPath), g.Group(children))
 }
 
 func Group(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h18v18H3V3zm2 2v14h14V5H5zm2 2h4v4H7V7zm6 0h4v4h-4V7zm-6 6h4v4H7v-4zm6 0h4v4h-4v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(groupPath), g.Group(children))
 }
 
 func Hd(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 7h2v4h4V7h2v10H9v-4H5v4H3V7zm10 8V7h6v2h-4v6h4v2h-6v-2zm6 0V9h2v6h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(hdPath), g.Group(children))
 }
 
 func Headphone(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M19 4H5v2H3v14h7v-8H5V6h14v6h-5v8h7V6h-2V4zm-3 10h3v4h-3v-4zm-8 0v4H5v-4h3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(headphonePath), g.Group(children))
 }
 
 func Headset(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M19 2H5v2H3v14h7v-8H5V4h14v6h-5v8h3v2h-6v2h8v-4h2V4h-2V2zm-3 10h3v4h-3v-4zm-8 0v4H5v-4h3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(headsetPath), g.Group(children))
 }
 
 func Heart(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M9 2H5v2H3v2H1v6h2v2h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v-2h2v-2h2V6h-2V4h-2V2h-4v2h-2v2h-2V4H9V2zm0 2v2h2v2h2V6h2V4h4v2h2v6h-2v2h-2v2h-2v2h-2v2h-2v-2H9v-2H7v-2H5v-2H3V6h2V4h4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(heartPath), g.Group(children))
 }
 
 func Hidden(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 6h8v2H8V6zm-4 4V8h4v2H4zm-2 2v-2h2v2H2zm0 2v-2H0v2h2zm2 2H2v-2h2v2zm4 2H4v-2h4v2zm8 0v2H8v-2h8zm4-2v2h-4v-2h4zm2-2v2h-2v-2h2zm0-2h2v2h-2v-2zm-2-2h2v2h-2v-2zm0 0V8h-4v2h4zM9 10h2v2H9v-2zm4 2h-2v2H9v2h2v-2h2v2h2v-2h-2v-2zm0 0v-2h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(hiddenPath), g.Group(children))
 }
 
 func Home(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M14 2h-4v2H8v2H6v2H4v2H2v2h2v10h7v-6h2v6h7V12h2v-2h-2V8h-2V6h-2V4h-2V2zm0 2v2h2v2h2v2h2v2h-2v8h-3v-6H9v6H6v-8H4v-2h2V8h2V6h2V4h4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(homePath), g.Group(children))
 }
 
 func Hourglass(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M18 2H6v6h2v2h2v4H8v2H6v6h12v-6h-2v-2h-2v-4h2V8h2V2zm-2 6h-2v2h-4V8H8V4h8v4zm-2 6v2h2v4H8v-4h2v-2h4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(hourglassPath), g.Group(children))
 }
 
 func Hq(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 7h2v4h4V7h2v10H9v-4H5v4H3V7zm10 2h2v6h-2V9zm6 6h-4v2h8v-2h-2V9h-2V7h-4v2h4v6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(hqPath), g.Group(children))
 }
 
 func Human(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M10 2h4v4h-4V2zM3 7h18v2h-6v13h-2v-6h-2v6H9V9H3V7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(humanPath), g.Group(children))
 }
 
 func HumanHandsdown(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M10 2h4v4h-4V2zM7 7h10v2h-2v13h-2v-6h-2v6H9V9H7V7zm-2 4h2V9H5v2zm0 0v2H3v-2h2zm14 0h-2V9h2v2zm0 0h2v2h-2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(humanHandsdownPath), g.Group(children))
 }
 
 func HumanHandsup(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M10 2h4v4h-4V2zM7 7h10v2h-2v13h-2v-6h-2v6H9V9H7V7zM5 5v2h2V5H5zm0 0H3V3h2v2zm14 0v2h-2V5h2zm0 0V3h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(humanHandsupPath), g.Group(children))
 }
 
 func HumanHeight(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 2h4v4H6V2zM3 7h10v9h-2v6H9v-6H7v6H5v-6H3V7zm18-4h-6v2h6V3zm-4 4h4v2h-4V7zm4 4h-6v2h6v-2zm-6 8h6v2h-6v-2zm6-4h-4v2h4v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(humanHeightPath), g.Group(children))
 }
 
 func HumanHeightAlt(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 2h4v4H4V2zM1 7h10v9H9v6H7v-6H5v6H3v-6H1V7zm18-5h-2v2h-2v2h-2v2h2V6h2v12h-2v-2h-2v2h2v2h2v2h2v-2h2v-2h2v-2h-2v2h-2V6h2v2h2V6h-2V4h-2V2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(humanHeightAltPath), g.Group(children))
 }
 
 func HumanRun(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M10 3H8v2H6v2h2V5h2v2h2v2h-2v2H8v2H6v2H4v-2H2v2h2v2h2v-2h4v2h2v2h-2v2h2v-2h2v-2h-2v-4h2v-2h2v2h2v2h2v-2h2v-2h-2v2h-2v-2h-2V9h2V5h-4v2h-2V5h-2V3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(humanRunPath), g.Group(children))
 }
 
 func Image(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 3H2v18h20V3H4zm16 2v14H4V5h16zm-6 4h-2v2h-2v2H8v2H6v2h2v-2h2v-2h2v-2h2v2h2v2h2v-2h-2v-2h-2V9zM8 7H6v2h2V7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(imagePath), g.Group(children))
 }
 
 func ImageArrowRight(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M19 1h-2v2h2v2h-6v2h6v2h-2v2h2V9h2V7h2V5h-2V3h-2V1zm-8 2H2v18h20v-8h-2v6H4V5h7V3zm1 8V9h2v2h-2zm-2 2v-2h2v2h-2zm-2 2v-2h2v2H8zm0 0v2H6v-2h2zm8-2h-2v-2h2v2zm0 0h2v2h-2v-2zM6 7h2v2H6V7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(imageArrowRightPath), g.Group(children))
 }
 
 func ImageBroken(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M22 3H2v18h20v-2h-2v-2h2v-2h-2v-2h2v-2h-2V9h2V7h-2V5h2V3zm-2 4v2h-2v2h2v2h-2v2h2v2h-2v2H4V5h14v2h2zm-6 2h-2v2h-2v2H8v2H6v2h2v-2h2v-2h2v-2h2v2h2v-2h-2V9zM6 7h2v2H6V7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(imageBrokenPath), g.Group(children))
 }
 
 func ImageDelete(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M14 3H2v18h20V11h-2v8H4V5h10V3zM6 7h2v2H6V7zm14-2h-2V3h-2v2h2v2h-2v2h2V7h2v2h2V7h-2V5zm0 0V3h2v2h-2zm-8 4h2v2h-2V9zm-2 4v-2h2v2h-2zm-2 2h2v-2H8v2zm0 0v2H6v-2h2zm8-2h-2v-2h2v2zm0 0h2v2h-2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(imageDeletePath), g.Group(children))
 }
 
 func ImageFlash(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M18 0h2v4h4v2h-2v2h-2v2h-2V6h-4V4h2V2h2V0zM4 3h8v2H4v14h16v-7h2v9H2V3h2zm10 6h-2v2h-2v2H8v2H6v2h2v-2h2v-2h2v-2h2v2h2v2h2v-2h-2v-2h-2V9zM8 7H6v2h2V7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(imageFlashPath), g.Group(children))
 }
 
 func ImageFrame(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 1h-2v2H9v2H7v2H2v16h20V7h-5V5h-2V3h-2V1zm2 6H9V5h2V3h2v2h2v2zM4 9h16v12H4V9zm10 6v-2h-2v2h-2v2H8v2h2v-2h2v-2h2zm2 2v-2h-2v2h2zm0 0v2h2v-2h-2zM6 13v-2h2v2H6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(imageFramePath), g.Group(children))
 }
 
 func ImageGallery(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 2h20v16h-5v2h-2v-2H9v2H7v-2H2V2zm5 18v2H5v-2h2zm10 0v2h2v-2h-2zm3-16H4v12h16V4zm-8 4h2v2h-2V8zm-2 4v-2h2v2h-2zm0 0v2H8v-2h2zm6 0h-2v-2h2v2zm0 0h2v2h-2v-2zM8 6H6v2h2V6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(imageGalleryPath), g.Group(children))
 }
 
 func ImageMultiple(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M24 2H4v16h20V2zM6 16V4h16v12H6zM2 4H0v18h20v-2H2V4zm12 2h2v2h-2V6zm-2 4V8h2v2h-2zm-2 2v-2h2v2h-2zm0 0v2H8v-2h2zm8-2h-2V8h2v2zm0 0h2v2h-2v-2zM8 6h2v2H8V6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(imageMultiplePath), g.Group(children))
 }
 
 func ImageNew(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 0h12v2H6V0zM4 3H2v18h20V3H4zm16 2v14H4V5h16zm-6 4h-2v2h-2v2H8v2H6v2h2v-2h2v-2h2v-2h2v2h2v2h2v-2h-2v-2h-2V9zM8 7H6v2h2V7zm10 17v-2H6v2h12z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(imageNewPath), g.Group(children))
 }
 
 func ImagePlus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 3h10v2H4v14h16v-8h2v10H2V3h2zm10 6h-2v2h-2v2H8v2H6v2h2v-2h2v-2h2v-2h2v2h2v2h2v-2h-2v-2h-2V9zM8 7H6v2h2V7zm10-4h2v2h2v2h-2v2h-2V7h-2V5h2V3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(imagePlusPath), g.Group(children))
 }
 
 func Inbox(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 2h18v20H3V2zm2 2v10h4v2h6v-2h4V4H5zm14 12h-2v2H7v-2H5v4h14v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(inboxPath), g.Group(children))
 }
 
 func InboxAll(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 2h18v20H3V2zm2 2v4h4v2h6V8h4V4H5zm14 6h-2v2H7v-2H5v4h14v-4zm0 6h-2v2H7v-2H5v4h14v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(inboxAllPath), g.Group(children))
 }
 
 func InboxFull(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 2h18v20H3V2zm2 2v10h4v2h6v-2h4V4H5zm14 12h-2v2H7v-2H5v4h14v-4zM7 6h10v2H7V6zm0 4h10v2H7v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(inboxFullPath), g.Group(children))
 }
 
 func InfoBox(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h2v18H3V3zm16 0H5v2h14v14H5v2h16V3h-2zm-8 6h2V7h-2v2zm2 8h-2v-6h2v6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(infoBoxPath), g.Group(children))
 }
 
 func Invert(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h18v18H3V3zm16 4h-2v2h-2v2h-2v2h-2v2H9v2H7v2h12V7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(invertPath), g.Group(children))
 }
 
 func Iso(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 3H6v3H3v2h3v3h2V8h3V6H8V3zm11 2h-2v2h-2v2h-2v2h-2v2H9v2H7v2H5v2h2v-2h2v-2h2v-2h2v-2h2V9h2V7h2V5zm-6 13v-2h8v2h-8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(isoPath), g.Group(children))
 }
 
 func Kanban(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M21 3H3v18h18V3zM5 19V5h14v14H5zM9 7H7v8h2V7zm2 0h2v4h-2V7zm6 0h-2v10h2V7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(kanbanPath), g.Group(children))
 }
 
 func Keyboard(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M21 3H3v18h18V3zM5 19V5h14v14H5zM9 7H7v2h2V7zm8 8H7v2h10v-2zm-2-8h2v2h-2V7zm-2 0h-2v2h2V7zm-6 4h2v2H7v-2zm10 0h-2v2h2v-2zm-6 0h2v2h-2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(keyboardPath), g.Group(children))
 }
 
 func Label(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M12 2H2v10h2v2h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v-2h2v-2h-2v-2h-2V8h-2V6h-2V4h-2V2zm0 2v2h2v2h2v2h2v2h2v2h-2v2h-2v2h-2v2h-2v-2h-2v-2H8v-2H6v-2H4V4h8zM6 6h2v2H6V6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(labelPath), g.Group(children))
 }
 
 func LabelAlt(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 5H2v14h14v-2h2v-2h2v-2h2v-2h-2V9h-2V7h-2V5zm0 2v2h2v2h2v2h-2v2h-2v2H4V7h12z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(labelAltPath), g.Group(children))
 }
 
 func LabelAltMultiple(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 5H6v10h12v-2h2v-2h2V9h-2V7h-2V5H8zm10 2v2h2v2h-2v2H8V7h10zM4 9H2v10h12v-2H4V9z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(labelAltMultiplePath), g.Group(children))
 }
 
 func LabelSharp(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 5H2v4h2v2h2v2H4v2H2v4h14v-2h2v-2h2v-2h2v-2h-2V9h-2V7h-2V5zm0 2v2h2v2h2v2h-2v2h-2v2H4v-2h2v-2h2v-2H6V9H4V7h12z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(labelSharpPath), g.Group(children))
 }
 
 func Layout(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 5h20v14H2V5zm2 2v4h16V7H4zm16 6H10v4h10v-4zM8 17v-4H4v4h4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(layoutPath), g.Group(children))
 }
 
 func LayoutAlignBottom(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 4H8v12h8V4zm-6 10V6h4v8h-4zm10 6v-2H4v2h16z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(layoutAlignBottomPath), g.Group(children))
 }
 
 func LayoutAlignLeft(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 16V8H8v8h12zm-10-6h8v4h-8v-4zM4 20h2V4H4v16z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(layoutAlignLeftPath), g.Group(children))
 }
 
 func LayoutAlignRight(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 8v8h12V8H4zm10 6H6v-4h8v4zm6-10h-2v16h2V4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(layoutAlignRightPath), g.Group(children))
 }
 
 func LayoutAlignTop(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 20H8V8h8v12zm-6-10v8h4v-8h-4zm10-6v2H4V4h16z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(layoutAlignTopPath), g.Group(children))
 }
 
 func LayoutColumns(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 5h20v14H2V5zm2 2v10h7V7H4zm9 0v10h7V7h-7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(layoutColumnsPath), g.Group(children))
 }
 
 func LayoutDistributeHorizontal(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 4H4v16h2V4zm14 0h-2v16h2V4zM10 7h6v10H8V7h2zm4 8V9h-4v6h4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(layoutDistributeHorizontalPath), g.Group(children))
 }
 
 func LayoutDistributeVertical(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 6V4H4v2h16zm0 14v-2H4v2h16zM17 8v8h-2V8h2zm-8 6v-4h6V8H7v8h8v-2H9z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(layoutDistributeVerticalPath), g.Group(children))
 }
 
 func LayoutFooter(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 5h20v14H2V5zm2 2v6h16V7H4zm16 8H4v2h16v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(layoutFooterPath), g.Group(children))
 }
 
 func LayoutHeader(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 19h20V5H2v14zm2-2v-6h16v6H4zm16-8H4V7h16v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(layoutHeaderPath), g.Group(children))
 }
 
 func LayoutRows(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 5h20v14H2V5zm2 2v4h16V7H4zm16 6H4v4h16v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(layoutRowsPath), g.Group(children))
 }
 
 func LayoutSidebarLeft(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 5h20v14H2V5zm2 2v10h2V7H4zm4 0v10h12V7H8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(layoutSidebarLeftPath), g.Group(children))
 }
 
 func LayoutSidebarRight(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M22 5H2v14h20V5zm-2 2v10h-2V7h2zm-4 0v10H4V7h12z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(layoutSidebarRightPath), g.Group(children))
 }
 
 func Link(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 6h7v2H4v8h7v2H2V6h2zm16 0h-7v2h7v8h-7v2h9V6h-2zm-3 5H7v2h10v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(linkPath), g.Group(children))
 }
 
 func List(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(listPath), g.Group(children))
 }
 
 func ListBox(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 3h20v18H2V3zm18 16V5H4v14h16zM8 7H6v2h2V7zm2 0h8v2h-8V7zm-2 4H6v2h2v-2zm2 0h8v2h-8v-2zm-2 4H6v2h2v-2zm2 0h8v2h-8v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(listBoxPath), g.Group(children))
 }
 
 func Loader(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 2h-2v6h2V2zm0 14h-2v6h2v-6zm9-5v2h-6v-2h6zM8 13v-2H2v2h6zm7-6h2v2h-2V7zm4-2h-2v2h2V5zM9 7H7v2h2V7zM5 5h2v2H5V5zm10 12h2v2h2v-2h-2v-2h-2v2zm-8 0v-2h2v2H7v2H5v-2h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(loaderPath), g.Group(children))
 }
 
 func Lock(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M15 2H9v2H7v4H4v14h16V8h-3V4h-2V2zm0 2v4H9V4h6zm-6 6h9v10H6V10h3zm4 3h-2v4h2v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(lockPath), g.Group(children))
 }
 
 func LockOpen(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M15 2H9v2H7v2h2V4h6v4H4v14h16V8h-3V4h-2V2zm0 8h3v10H6V10h9zm-2 3h-2v4h2v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(lockOpenPath), g.Group(children))
 }
 
 func Login(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3H3v4h2V5h14v14H5v-2H3v4h18V3H5zm12 8h-2V9h-2V7h-2v2h2v2H3v2h10v2h-2v2h2v-2h2v-2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(loginPath), g.Group(children))
 }
 
 func Logout(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3h16v4h-2V5H5v14h14v-2h2v4H3V3h2zm16 8h-2V9h-2V7h-2v2h2v2H7v2h10v2h-2v2h2v-2h2v-2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(logoutPath), g.Group(children))
 }
 
 func Luggage(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M9 2h6v4h4v14h-2v2h-2v-2H9v2H7v-2H5V6h4V2zm2 4h2V4h-2v2zM7 18h10V8H7v10zm4-8v6H9v-6h2zm4 0v6h-2v-6h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(luggagePath), g.Group(children))
 }
 
 func Mail(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M22 4H2v16h20V4zM4 18V6h16v12H4zM8 8H6v2h2v2h2v2h4v-2h2v-2h2V8h-2v2h-2v2h-4v-2H8V8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(mailPath), g.Group(children))
 }
 
 func MailArrowRight(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 4H2v16h10v-2H4V6h16v6h2V4h-2zM6 8h2v2H6V8zm4 4H8v-2h2v2zm4 0v2h-4v-2h4zm2-2v2h-2v-2h2zm0 0V8h2v2h-2zm8 8h-2v-2h-2v-2h-2v2h2v2h-6v2h6v2h-2v2h2v-2h2v-2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(mailArrowRightPath), g.Group(children))
 }
 
 func MailCheck(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 4h18v10h-2V6H4v12h8v2H2V4h2zm4 4H6v2h2v2h2v2h4v-2h2v-2h2V8h-2v2h-2v2h-4v-2H8V8zm6 10h2v2h-2v-2zm4 2v2h-2v-2h2zm2-2h-2v2h2v-2zm0 0v-2h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(mailCheckPath), g.Group(children))
 }
 
 func MailDelete(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 4H2v16h12v-2H4V6h16v8h2V4h-2zM6 8h2v2H6V8zm4 4H8v-2h2v2zm4 0v2h-4v-2h4zm2-2v2h-2v-2h2zm0 0V8h2v2h-2zm2 6h-2v2h2v2h-2v2h2v-2h2v2h2v-2h-2v-2h2v-2h-2v2h-2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(mailDeletePath), g.Group(children))
 }
 
 func MailFlash(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 4h18v8h-2V6H4v12h8v2H2V4h2zm4 4H6v2h2v2h2v2h4v-2h2v-2h2V8h-2v2h-2v2h-4v-2H8V8zm10 6h2v4h4v2h-2v2h-2v2h-2v-4h-4v-2h2v-2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(mailFlashPath), g.Group(children))
 }
 
 func MailMultiple(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M24 2H4v16h20V2zM6 16V4h16v12H6zM2 7H0v15h19v-2H2V7zm8-1H8v2h2v2h2v2h4v-2h2V8h2V6h-2v2h-2v2h-4V8h-2V6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(mailMultiplePath), g.Group(children))
 }
 
 func MailOff(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 2h2v2H2V2zm4 4H4V4h2v2zm2 2H6V6h2v2zm2 2H8V8h2v2zm2 2h-2v-2h2v2zm2 0h-2v2h2v2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2h-2v-2zm2-2h-2v2h2v-2zm0 0V8h2v2h-2zm-6-6h12v12h-2V6H10V4zm4 14v2H2V8h2v10h10z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(mailOffPath), g.Group(children))
 }
 
 func MailUnread(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M22 2h-6v6h6V2zM4 4h10v2H4v12h16v-8h2v10H2V4h2zm4 4H6v2h2v2h2v2h4v-2h2v-2h-2v2h-4v-2H8V8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(mailUnreadPath), g.Group(children))
 }
 
 func Map(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 2h2v2h2v2h-2v10H8V6H6V4h2V2zM4 8V6h2v2H4zm2 10v2H4v2H2V8h2v10h2zm0 0h2v-2H6v2zm6 0h-2v-2h2v2zm2-10V6h-2v2h2zm2 0h-2v10h-2v2h2v2h2v-2h2v-2h2v-2h2V2h-2v2h-2v2h-2v2zm0 0h2V6h2v10h-2v2h-2V8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(mapPath), g.Group(children))
 }
 
 func Membercard(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 3h20v14h-7v3h-2v-2h-2v2H9v-3H2V3zm2 2v4h16V5H4zm16 8H4v2h16v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(membercardPath), g.Group(children))
 }
 
 func Menu(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm16 5H4v2h16v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(menuPath), g.Group(children))
 }
 
 func Message(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 2H2v20h2V4h16v12H6v2H4v2h2v-2h16V2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(messagePath), g.Group(children))
 }
 
 func MessageArrowLeft(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 2h18v12h-2V4H4v18H2V2h2zm2 14h4v2H6v2H4v-2h2v-2zm16 0h-6v-2h2v-2h-2v2h-2v2h-2v2h2v2h2v2h2v-2h-2v-2h6v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(messageArrowLeftPath), g.Group(children))
 }
 
 func MessageArrowRight(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 2h18v10h-2V4H4v18H2V2h2zm2 14h4v2H6v2H4v-2h2v-2zm16 0h-2v-2h-2v-2h-2v2h2v2h-6v2h6v2h-2v2h2v-2h2v-2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(messageArrowRightPath), g.Group(children))
 }
 
 func MessageBookmark(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 2h18v16H6v2H4v-2h2v-2h14V4H4v18H2V2h2zm14 4h-6v8h2v-2h2v2h2V6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(messageBookmarkPath), g.Group(children))
 }
 
 func MessageClock(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 2H2v20h2V4h16v4h2V2h-2zM8 16H6v2H4v2h2v-2h2v-2zm6-2h2v2h2v2h-4v-4zm6-4h-8v2h-2v8h2v2h8v-2h2v-8h-2v-2zm0 2v8h-8v-8h8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(messageClockPath), g.Group(children))
 }
 
 func MessageDelete(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 2h18v16H6v2H4v-2h2v-2h14V4H4v18H2V2h2zm9 7h-2V7H9v2h2v2H9v2h2v-2h2v2h2v-2h-2V9zm0 0V7h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(messageDeletePath), g.Group(children))
 }
 
 func MessageFlash(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 2H2v20h2V4h16v10h2V2h-2zM10 16H6v2H4v2h2v-2h4v-2zm6-4h2v4h4v2h-2v2h-2v2h-2v-4h-4v-2h2v-2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(messageFlashPath), g.Group(children))
 }
 
 func MessageImage(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 2h18v16H6v2H4v-2h2v-2h14V4H4v18H2V2h2zm10 4h-2v2h-2v2H8v2H6v2h2v-2h2v-2h2V8h2v2h2v2h2v-2h-2V8h-2V6zM6 6h2v2H6V6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(messageImagePath), g.Group(children))
 }
 
 func MessageMinus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 2h18v16H6v2H4v-2h2v-2h14V4H4v18H2V2h2zm12 7H8v2h8V9z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(messageMinusPath), g.Group(children))
 }
 
 func MessagePlus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 2H2v20h2V4h16v12H6v2H4v2h2v-2h16V2h-2zm-7 7h3v2h-3v3h-2v-3H8V9h3V6h2v3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(messagePlusPath), g.Group(children))
 }
 
 func MessageProcessing(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 2h18v16H6v2H4v-2h2v-2h14V4H4v18H2V2h2zm5 7H7v2h2V9zm2 0h2v2h-2V9zm6 0h-2v2h2V9z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(messageProcessingPath), g.Group(children))
 }
 
 func MessageReply(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 2h18v20h-2V4H4v12h14v2h2v2h-2v-2H2V2h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(messageReplyPath), g.Group(children))
 }
 
 func MessageText(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 2H2v20h2V4h16v12H6v2H4v2h2v-2h16V2h-2zM6 7h12v2H6V7zm8 4H6v2h8v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(messageTextPath), g.Group(children))
 }
 
 func Minus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 11h16v2H4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(minusPath), g.Group(children))
 }
 
 func MissedCall(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 6h-4v2h2v2h-2v2h-2v2h-2v2h-2v-2H8v-2H6v-2H4V8H2v2h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v-2h2v2h2V6h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(missedCallPath), g.Group(children))
 }
 
 func Modem(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M19 2h-8v2H9v2h2V4h8v2h2V4h-2V2zm-8 6h2v2h-2V8zm6 0V6h-4v2h4zm0 0h2v2h-2V8zm-1 2h-2v2H2v10h20V12h-6v-2zm4 4v6H4v-6h16zm-2 2h-2v2h2v-2zm-6 0h2v2h-2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(modemPath), g.Group(children))
 }
 
 func Money(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 4H2v12h4v4h16V8h-4V4h-2zm0 2v2H6v6H4V6h12zm-8 4h12v8H8v-8zm8 2h-4v4h4v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(moneyPath), g.Group(children))
 }
 
 func Monitor(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 3H2v14h8v2H8v2h8v-2h-2v-2h8V3h-2zm-6 12H4V5h16v10h-6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(monitorPath), g.Group(children))
 }
 
 func MoodHappy(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3h14v2H5V3zm0 16H3V5h2v14zm14 0v2H5v-2h14zm0 0h2V5h-2v14zM10 8H8v2h2V8zm4 0h2v2h-2V8zm-5 6v-2H7v2h2zm6 0v2H9v-2h6zm0 0h2v-2h-2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(moodHappyPath), g.Group(children))
 }
 
 func MoodNeutral(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3h14v2H5V3zm0 16H3V5h2v14zm14 0v2H5v-2h14zm0 0h2V5h-2v14zM10 8H8v2h2V8zm4 0h2v2h-2V8zm1 5H9v2h6v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(moodNeutralPath), g.Group(children))
 }
 
 func MoodSad(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3h14v2H5V3zm0 16H3V5h2v14zm14 0v2H5v-2h14zm0 0h2V5h-2v14zM10 8H8v2h2V8zm4 0h2v2h-2V8zm-5 8v-2h6v2h2v-2h-2v-2H9v2H7v2h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(moodSadPath), g.Group(children))
 }
 
 func Moon(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 2h8v2h-2v2h-2V4H6V2ZM4 6V4h2v2H4Zm0 10H2V6h2v10Zm2 2H4v-2h2v2Zm2 2H6v-2h2v2Zm10 0v2H8v-2h10Zm2-2v2h-2v-2h2Zm-2-4h2v4h2v-8h-2v2h-2v2Zm-6 0v2h6v-2h-6Zm-2-2h2v2h-2v-2Zm0 0V6H8v6h2Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(moonPath), g.Group(children))
 }
 
 func MoonStar(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 2h8v2h-2v2h-2V4H6V2ZM4 6V4h2v2H4Zm0 10H2V6h2v10Zm2 2H4v-2h2v2Zm2 2H6v-2h2v2Zm10 0v2H8v-2h10Zm2-2v2h-2v-2h2Zm-2-4v-2h2v-2h2v8h-2v-4h-2Zm-6 0h6v2h-6v-2Zm-2-2h2v2h-2v-2Zm0 0V6H8v6h2Zm8-10h2v2h2v2h-2v2h-2V6h-2V4h2V2Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(moonStarPath), g.Group(children))
 }
 
 func MoonStars(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 0h2v2h2v2h-2v2h-2V4h-2V2h2V0ZM8 4h8v2h-2v2h-2V6H8V4ZM6 8V6h2v2H6Zm0 8H4V8h2v8Zm2 2H6v-2h2v2Zm8 0v2H8v-2h8Zm2-2v2h-2v-2h2Zm-2-4v-2h2V8h2v8h-2v-4h-2Zm-4 0h4v2h-4v-2Zm0 0V8h-2v4h2Zm-8 6H2v2H0v2h2v2h2v-2h2v-2H4v-2Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(moonStarsPath), g.Group(children))
 }
 
 func MoreHorizontal(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M1 9h6v6H1V9zm2 2v2h2v-2H3zm6-2h6v6H9V9zm2 2v2h2v-2h-2zm6-2h6v6h-6V9zm2 2v2h2v-2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(moreHorizontalPath), g.Group(children))
 }
 
 func MoreVertical(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M15 1v6H9V1h6zm-2 2h-2v2h2V3zm2 6v6H9V9h6zm-2 2h-2v2h2v-2zm2 6v6H9v-6h6zm-2 2h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(moreVerticalPath), g.Group(children))
 }
 
 func Mouse(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 3h12v18H6V3zm2 2v4h3V5H8zm5 0v4h3V5h-3zm3 6H8v8h8v-8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(mousePath), g.Group(children))
 }
 
 func Move(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 0h-2v2H9v2H7v2h2V4h2v7H4V9h2V7H4v2H2v2H0v2h2v2h2v2h2v-2H4v-2h7v7H9v-2H7v2h2v2h2v2h2v-2h2v-2h2v-2h-2v2h-2v-7h7v2h-2v2h2v-2h2v-2h2v-2h-2V9h-2V7h-2v2h2v2h-7V4h2v2h2V4h-2V2h-2V0z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(movePath), g.Group(children))
 }
 
 func Movie(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h18v18H3V3zm2 2v2h2V5H5zm4 0v6h6V5H9zm8 0v2h2V5h-2zm2 4h-2v2h2V9zm0 4h-2v2h2v-2zm0 4h-2v2h2v-2zm-4 2v-6H9v6h6zm-8 0v-2H5v2h2zm-2-4h2v-2H5v2zm0-4h2V9H5v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(moviePath), g.Group(children))
 }
 
 func Music(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 4h12v16h-8v-8h6V8h-8v12H2v-8h6V4zm0 10H4v4h4v-4zm10 0h-4v4h4v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(musicPath), g.Group(children))
 }
 
 func Next(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 4h2v2h2v2h2v2h2v4h-2v2h-2v2H8v2H6V4zm12 0h-2v16h2V4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(nextPath), g.Group(children))
 }
 
 func Note(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 2h18v14h-2v2h-2v-2h-2v2h2v2h-2v2H3V2zm2 2v16h8v-6h6V4H5z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(notePath), g.Group(children))
 }
 
 func NoteDelete(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 2h10v14h-2v2h-2v-2h-2v2h2v2h-2v2H3V10h2v10h8v-6h6V4h-8V2zM7 4H5V2H3v2h2v2H3v2h2V6h2v2h2V6H7V4zm0 0h2V2H7v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(noteDeletePath), g.Group(children))
 }
 
 func NoteMultiple(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M21 6H7v16h8v-2h2v-2h-2v-2h2v2h2v-2h2V6zM9 20V8h10v6h-6v6H9zm-6-2h2V4h12V2H3v16z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(noteMultiplePath), g.Group(children))
 }
 
 func NotePlus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M7 1H5v3H2v2h3v3h2V6h3V4H7V1zm12 1h-7v2h7v10h-6v6H5v-9H3v11h12v-2h2v-2h2v-2h2V2h-2zm-2 16h-2v-2h2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(notePlusPath), g.Group(children))
 }
 
 func Notes(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 2h16v20H3V2h2zm14 18V4H5v16h14zM7 6h10v2H7V6zm10 4H7v2h10v-2zM7 14h7v2H7v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(notesPath), g.Group(children))
 }
 
 func NotesDelete(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M19 2H3v20h10v-2H5V4h14v10h2V2h-2zm-2 4H7v2h10V6zM7 10h10v2H7v-2zm6 4H7v2h6v-2zm6 4h-2v-2h-2v2h2v2h-2v2h2v-2h2v2h2v-2h-2v-2zm0 0h2v-2h-2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(notesDeletePath), g.Group(children))
 }
 
 func NotesMultiple(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M7 0h16v20H5V0h2zm14 18V2H7v16h14zM9 4h10v2H9V4zm10 4H9v2h10V8zM9 12h7v2H9v-2zm10 10H3V4H1v20h18v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(notesMultiplePath), g.Group(children))
 }
 
 func NotesPlus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 2h16v12h-2V4H5v16h8v2H3V2h2zm2 4h10v2H7V6zm10 4H7v2h10v-2zM7 14h7v2H7v-2zm13 5h3v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(notesPlusPath), g.Group(children))
 }
 
 func Notification(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M14 4V2h-4v2H5v2h14V4h-5zm5 12H5v-4H3v6h5v4h2v-4h4v2h-4v2h6v-4h5v-6h-2V6h-2v8h2v2zM5 6v8h2V6H5z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(notificationPath), g.Group(children))
 }
 
 func NotificationOff(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M14 2v2h5v2h-8V2h3zM5 16h9v2h2v4h-6v-2h4v-2h-4v4H8v-4H3v-6h2v-2h2v4H5v2zm16-2h-2v-2h-2V6h2v6h2v2zM5 2H3v2h2v2h2v2h2v2h2v2h2v2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2h-2v-2h-2V8H9V6H7V4H5V2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(notificationOffPath), g.Group(children))
 }
 
 func Open(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3h6v2H5v14h14v-6h2v8H3V3h2zm8 0h8v8h-2V7h-2V5h-4V3zm0 8h-2v2H9v2h2v-2h2v-2zm4-4h-2v2h-2v2h2V9h2V7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(openPath), g.Group(children))
 }
 
 func PaintBucket(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 3h8v2H8V3zm0 2H6v4H4v12h16V9h-2V5h-2v4H8V5zm8 6h2v8H6v-8h2v6h2v-4h2v2h2v-2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(paintBucketPath), g.Group(children))
 }
 
 func Paperclip(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 5h16v10H7V9h10v2H9v2h10V7H5v10h14v2H3V5h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(paperclipPath), g.Group(children))
 }
 
 func Pause(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M10 4H5v16h5V4zm9 0h-5v16h5V4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(pausePath), g.Group(children))
 }
 
 func Percent(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 4h-2v2h-2v2h-2v2h-2v2h-2v2H8v2H6v2H4v2h2v-2h2v-2h2v-2h2v-2h2v-2h2V8h2V6h2V4zm-4 10h4v6h-6v-6h2zm2 4v-2h-2v2h2zM6 4h4v6H4V4h2zm2 4V6H6v2h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(percentPath), g.Group(children))
 }
 
 func PictureInPicture(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 4h20v16H2V4zm2 2v12h16V6H4zm6 2h8v6h-8V8zm2 2v2h4v-2h-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(pictureInPicturePath), g.Group(children))
 }
 
 func PictureInPictureAlt(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 4h20v16H2V4zm2 2v12h16V6H4zm6 4h8v6h-8v-6zm2 2v2h4v-2h-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(pictureInPictureAltPath), g.Group(children))
 }
 
 func Pin(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M7 2h10v2H7V2zM5 6V4h2v2H5zm0 8H3V6h2v8zm2 2H5v-2h2v2zm2 2H7v-2h2v2zm2 2H9v-2h2v2zm2 0v2h-2v-2h2zm2-2v2h-2v-2h2zm2-2v2h-2v-2h2zm2-2v2h-2v-2h2zm0-8h2v8h-2V6zm0 0V4h-2v2h2zm-5 2h-4v4h4V8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(pinPath), g.Group(children))
 }
 
 func Pixelarticons(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3v18h18V3H3zm16 2v14H5V5h14zM7 7h6v6H9v2H7V7zm8 6h-2v2h-2v2h2v-2h2v2h2v-2h-2v-2zm0 0h2v-2h-2v2zM9 9v2h2V9H9z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(pixelarticonsPath), g.Group(children))
 }
 
 func Play(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M10 20H8V4h2v2h2v3h2v2h2v2h-2v2h-2v3h-2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(playPath), g.Group(children))
 }
 
 func Playlist(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M10 13h6V5h6v4h-4v10h-8v-6zm2 2v2h4v-2h-4zM2 17h6v2H2v-2zm6-4H2v2h6v-2zM2 9h12v2H2V9zm12-4H2v2h12V5z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(playlistPath), g.Group(children))
 }
 
 func Plus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 4h2v7h7v2h-7v7h-2v-7H4v-2h7V4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(plusPath), g.Group(children))
 }
 
 func Power(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 2h-2v4H6v2H4v8h2v2h2v4h8v-2h4v-2h-4v-2h4v-2h-4v-2H8v4H6V8h12V6h2V2zm-6 18h-4v-6h4v6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(powerPath), g.Group(children))
 }
 
 func Prev(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 4h2v16H6V4zm12 0h-2v2h-2v3h-2v2h-2v2h2v3h2v2h2v2h2V4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(prevPath), g.Group(children))
 }
 
 func Print(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 2h12v6h4v10h-4v4H6v-4H2V8h4V2zm2 6h8V4H8v4zm-2 8v-4h12v4h2v-6H4v6h2zm2-2v6h8v-6H8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(printPath), g.Group(children))
 }
 
 func RadioHandheld(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M9 2v5h8v15H7V2h2zm0 7v4h6V9H9zm6 6H9v5h6v-5z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(radioHandheldPath), g.Group(children))
 }
 
 func RadioOn(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 3H7v2H5v2H3v10h2v2h2v2h10v-2h2v-2h2V7h-2V5h-2V3zm0 2v2h2v10h-2v2H7v-2H5V7h2V5h10zm-9 6h2v2h2v2h-2v-2H8v-2zm8-2h-2v2h-2v2h2v-2h2V9z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(radioOnPath), g.Group(children))
 }
 
 func RadioSignal(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M19 2h2v2h-2V2Zm2 14V4h2v12h-2Zm0 0v2h-2v-2h2ZM1 4h2v12H1V4Zm2 12h2v2H3v-2ZM3 4h2V2H3v2Zm2 2h2v8H5V6Zm2 8h2v2H7v-2Zm0-8h2V4H7v2Zm10 0h2v8h-2V6Zm0 0h-2V4h2v2Zm0 8v2h-2v-2h2Zm-6-7h4v6h-2v9h-2v-9H9V7h2Zm0 4h2V9h-2v2Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(radioSignalPath), g.Group(children))
 }
 
 func RadioTower(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M22 2h-2v2h2v12h-2v2h2v-2h2V4h-2V2ZM2 4H0v12h2v2h2v-2H2V4Zm0 0V2h2v2H2Zm4 2H4v8h2V6Zm0 0V4h2v2H6Zm4 0h4v2h-4V6Zm0 6H8V8h2v4Zm4 0h-4v2H8v4H6v4h2v-4h2v-4h4v4h2v4h2v-4h-2v-4h-2v-2Zm0 0h2V8h-2v4Zm6-6h-2V4h-2v2h2v8h2V6Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(radioTowerPath), g.Group(children))
 }
 
 func Reciept(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 2h2v2h2v2H5v14h14V6h-2V4h2V2h2v20H3V2zm12 2V2h2v2h-2zm-2 0h2v2h-2V4zm-2 0V2h2v2h-2zM9 4h2v2H9V4zm0 0V2H7v2h2zm8 4H7v2h10V8zM7 12h10v2H7v-2zm10 6v-2h-4v2h4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(recieptPath), g.Group(children))
 }
 
 func RecieptAlt(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 2H3v20h2v-2h2v2h2v-2h2v2h2v-2h2v2h2v-2h2v2h2V2h-2v2h-2V2h-2v2h-2V2h-2v2H9V2H7v2H5V2zm2 2h2v2h2V4h2v2h2V4h2v2h2v12h-2v2h-2v-2h-2v2h-2v-2H9v2H7v-2H5V6h2V4zm0 4h10v2H7V8zm10 4H7v2h10v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(recieptAltPath), g.Group(children))
 }
 
 func Redo(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 4h-2v2h2v2H6v2H4v8h2v2h6v-2H6v-8h10v2h-2v2h2v-2h2v-2h2V8h-2V6h-2V4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(redoPath), g.Group(children))
 }
 
 func Reload(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 2h-2v2h2v2H4v2H2v5h2V8h12v2h-2v2h2v-2h2V8h2V6h-2V4h-2V2zM6 20h2v2h2v-2H8v-2h12v-2h2v-5h-2v5H8v-2h2v-2H8v2H6v2H4v2h2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(reloadPath), g.Group(children))
 }
 
 func RemoveBox(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3H3v18h18V3H5zm14 2v14H5V5h14zm-3 6H8v2h8v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(removeBoxPath), g.Group(children))
 }
 
 func RemoveBoxMultiple(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3H3v14h14V3H5zm10 2v10H5V5h10zm4 2v12H7v2h14V7h-2zm-6 2H7v2h6V9z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(removeBoxMultiplePath), g.Group(children))
 }
 
 func Repeat(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 1H9v2h2v2H5v2H3v10h2v2h2v-2H5V7h6v2H9v2h2V9h2V7h2V5h-2V3h-2V1zm8 4h-2v2h2v10h-6v-2h2v-2h-2v2h-2v2H9v2h2v2h2v2h2v-2h-2v-2h6v-2h2V7h-2V5z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(repeatPath), g.Group(children))
 }
 
 func Reply(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M12 19h-2v-2H8v-2H6v-2H4v-2h2V9h2V7h2V5h2v4h8v6h-8v4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(replyPath), g.Group(children))
 }
 
 func ReplyAll(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 19h2v-4h7V9h-7V5h-2v2h-2v2H9v2H7v2h2v2h2v2h2v2zM8 7H6v2H4v2H2v2h2v2h2v2h2v2h2v-2H8v-2H6v-2H4v-2h2V9h2V7zm0 0h2V5H8v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(replyAllPath), g.Group(children))
 }
 
 func RoundedCorner(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h2v2H3V3zm0 4h2v2H3V7zm2 4H3v2h2v-2zm-2 4h2v2H3v-2zm2 4H3v2h2v-2zm2 0h2v2H7v-2zm6 0h-2v2h2v-2zm2 0h2v2h-2v-2zm6 0h-2v2h2v-2zm-2-4h2v2h-2v-2zM17 5h-2V3h-4v2h4v2h2v2h2v4h2V9h-2V7h-2V5zM7 3h2v2H7V3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(roundedCornerPath), g.Group(children))
 }
 
 func Save(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 2h14v2H4v16h2v-6h12v6h2V6h2v16H2V2h2zm4 18h8v-4H8v4zM20 6h-2V4h2v2zM6 6h9v4H6V6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(savePath), g.Group(children))
 }
 
 func Scale(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M21 3h-8v2h4v2h2v4h2V3zm-4 4h-2v2h-2v2h2V9h2V7zm-8 8h2v-2H9v2H7v2h2v-2zm-4-2v4h2v2H5h6v2H3v-8h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(scalePath), g.Group(children))
 }
 
 func Script(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 3h14v2h2v6h-2v8h-2V5H6V3zm8 14v-2H6V5H4v10H2v4h2v2h14v-2h-2v-2h-2zm0 0v2H4v-2h10z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(scriptPath), g.Group(children))
 }
 
 func ScriptText(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 3h14v2h2v6h-2v8h-2V5H6V3zm8 14v-2H6V5H4v10H2v4h2v2h14v-2h-2v-2h-2zm0 0v2H4v-2h10zM8 7h8v2H8V7zm8 4H8v2h8v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(scriptTextPath), g.Group(children))
 }
 
 func ScrollHorizontal(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M22 2v2H2V2h20zm0 18v2H2v-2h20zm-6-5v-2H8v2H6v-2H4v-2h2V9h2v2h8V9h2v2h2v2h-2v2h-2zm0 0v2h-2v-2h2zm0-6h-2V7h2v2zM8 9V7h2v2H8zm0 6h2v2H8v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(scrollHorizontalPath), g.Group(children))
 }
 
 func ScrollVertical(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 2h2v20H2V2zm9 18h2v-2h2v-2h2v-2h-2v2h-2V8h2v2h2V8h-2V6h-2V4h-2v2H9v2H7v2h2V8h2v8H9v-2H7v2h2v2h2v2zM22 2h-2v20h2V2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(scrollVerticalPath), g.Group(children))
 }
 
 func Sd(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M18 2h2v20H4V6h2v14h12V4H8V2h10zM8 4H6v2h2V4zm6 2h2v4h-2V6zm-2 0h-2v4h2V6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(sdPath), g.Group(children))
 }
 
 func Search(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M6 2h8v2H6V2zM4 6V4h2v2H4zm0 8H2V6h2v8zm2 2H4v-2h2v2zm8 0v2H6v-2h8zm2-2h-2v2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2zm0-8h2v8h-2V6zm0 0V4h-2v2h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(searchPath), g.Group(children))
 }
 
 func Section(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3H3v2h2V3zm4 0H7v2h2V3zM7 19h2v2H7v-2zM5 7H3v2h2V7zm14 0h2v2h-2V7zM5 11H3v2h2v-2zm14 0h2v2h-2v-2zM5 15H3v2h2v-2zm14 0h2v2h-2v-2zM5 19H3v2h2v-2zm6-16h2v2h-2V3zm2 16h-2v2h2v-2zm2-16h2v2h-2V3zm2 16h-2v2h2v-2zm2-16h2v2h-2V3zm2 16h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(sectionPath), g.Group(children))
 }
 
 func SectionCopy(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3H3v2h2V3zm2 4h2v2H7V7zm4 0h2v2h-2V7zm2 12h-2v2h2v-2zm2 0h2v2h-2v-2zm6 0h-2v2h2v-2zM7 11h2v2H7v-2zm14 0h-2v2h2v-2zm-2 4h2v2h-2v-2zM7 19h2v2H7v-2zM19 7h2v2h-2V7zM7 3h2v2H7V3zm2 12H7v2h2v-2zM3 7h2v2H3V7zm14 0h-2v2h2V7zM3 11h2v2H3v-2zm2 4H3v2h2v-2zm6-12h2v2h-2V3zm6 0h-2v2h2V3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(sectionCopyPath), g.Group(children))
 }
 
 func SectionMinus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3H3v2h2V3zm4 0H7v2h2V3zM7 19h2v2H7v-2zm6 0h-2v2h2v-2zM3 7h2v2H3V7zm18 0h-2v2h2V7zm-2 4h2v2h-2v-2zM5 11H3v2h2v-2zm-2 4h2v2H3v-2zm2 4H3v2h2v-2zm6-16h2v2h-2V3zm6 0h-2v2h2V3zm2 0h2v2h-2V3zm2 14h-6v2h6v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(sectionMinusPath), g.Group(children))
 }
 
 func SectionPlus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h2v2H3V3zm4 0h2v2H7V3zm2 16H7v2h2v-2zm2 0h2v2h-2v-2zM5 7H3v2h2V7zm14 0h2v2h-2V7zm2 4h-2v2h2v-2zM3 11h2v2H3v-2zm2 4H3v2h2v-2zm12 0h2v2h2v2h-2v2h-2v-2h-2v-2h2v-2zM5 19H3v2h2v-2zm6-16h2v2h-2V3zm6 0h-2v2h2V3zm4 0h-2v2h2V3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(sectionPlusPath), g.Group(children))
 }
 
 func SectionX(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 3H3v2h2V3zm4 0H7v2h2V3zM7 19h2v2H7v-2zm6 0h-2v2h2v-2zM3 7h2v2H3V7zm18 0h-2v2h2V7zm-2 4h2v2h-2v-2zm2 8h-2v-2h2v-2h-2v2h-2v-2h-2v2h2v2h-2v2h2v-2h2v2h2v-2zM3 11h2v2H3v-2zm2 4H3v2h2v-2zm-2 4h2v2H3v-2zM13 3h-2v2h2V3zm2 0h2v2h-2V3zm6 0h-2v2h2V3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(sectionXPath), g.Group(children))
 }
 
 func Server(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h18v18H3V3zm2 2v6h14V5H5zm14 8H5v6h14v-6zM7 7h2v2H7V7zm2 8H7v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(serverPath), g.Group(children))
 }
 
 func SharpCorner(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h2v2H3V3zm0 4h2v2H3V7zm2 4H3v2h2v-2zm-2 4h2v2H3v-2zm2 4H3v2h2v-2zm2 0h2v2H7v-2zm6 0h-2v2h2v-2zm2 0h2v2h-2v-2zm6 0h-2v2h2v-2zm-2-4h2v2h-2v-2zm2-2V3H11v2h8v8h2zM7 3h2v2H7V3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(sharpCornerPath), g.Group(children))
 }
 
 func Shield(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M22 2H2v12h2V4h16v10h2V2zM6 14H4v2h2v-2zm0 2h2v2h2v2H8v-2H6v-2zm4 4v2h4v-2h2v-2h-2v2h-4zm10-6h-2v2h-2v2h2v-2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(shieldPath), g.Group(children))
 }
 
 func ShieldOff(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 2h14v12h-2V4H8V2zM2 8h2v6H2V8zm2 6h2v2H4v-2zm4 2H6v2h2v2h2v2h4v-2h-4v-2H8v-2zm10 0h-2v2h2v2h2v2h2v-2h-2v-2h-2v-2zM4 2H2v2h2v2h2v2h2v2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2V8H8V6H6V4H4V2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(shieldOffPath), g.Group(children))
 }
 
 func Ship(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 4v2h4v2H6v2h6V8h2v2h8v6h-2v-4H4v6h14v-2h2v2h4v2H0v-2h2v-8h2V6h2V4h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(shipPath), g.Group(children))
 }
 
 func ShoppingBag(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M9 2h6v2H9V2zm6 4V4h2v2h4v16H3V6h4V4h2v2h6zm0 2H9v2H7V8H5v12h14V8h-2v2h-2V8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(shoppingBagPath), g.Group(children))
 }
 
 func Shuffle(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M18 5h-2v2h2v2h-6v2h-2v6H2v2h8v-2h2v-6h6v2h-2v2h2v-2h2v-2h2V9h-2V7h-2V5zM2 9h6v2H2V9zm20 10v-2h-8v2h8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(shufflePath), g.Group(children))
 }
 
 func Sliders(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M17 4h2v10h-2V4zm0 12h-2v2h2v2h2v-2h2v-2h-4zm-4-6h-2v10h2V10zm-8 2H3v2h2v6h2v-6h2v-2H5zm8-8h-2v2H9v2h6V6h-2V4zM5 4h2v6H5V4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(slidersPath), g.Group(children))
 }
 
 func SlidersTwo(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="square" stroke-width="2" d="M3 8h4m0 0V6h4v2M7 8v2h4V8m0 0h10M3 16h10m0 0v-2h4v2m-4 0v2h4v-2m0 0h4"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(slidersTwoPath), g.Group(children))
 }
 
 func Sort(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 20H6V8H4V6h2V4h2v2h2v2H8v12zm2-12v2h2V8h-2zM4 8v2H2V8h2zm14-4h-2v12h-2v-2h-2v2h2v2h2v2h2v-2h2v-2h2v-2h-2v2h-2V4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(sortPath), g.Group(children))
 }
 
 func SortAlpabetic(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 2h2v2h-2V2zm0 2v2H9V4h2zm2 0h2v2h-2V4zM9 18v2h2v2h2v-2h2v-2h-2v2h-2v-2H9zM8 8H2v8h2v-2h2v2h2V8zm-2 4H4v-2h2v2zm6-1v-1h2v1h-2zm4-3h-6v8h6V8zm-4 6v-1h2v1h-2zm10-6h-4v8h4v-2h-2v-4h2V8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(sortAlpabeticPath), g.Group(children))
 }
 
 func SortNumeric(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 2h-2v2H9v2h2V4h2v2h2V4h-2V2zM2 8h4v8H4v-6H2V8zm6 0h6v5h-4v1h4v2H8v-5h4v-1H8V8zm12 0h-4v2h4v1h-4v2h4v1h-4v2h6V8h-2zm-9 10v2H9v-2h2zm2 2h-2v2h2v-2zm0 0v-2h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(sortNumericPath), g.Group(children))
 }
 
 func Speaker(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 2H3v20h18V2H4zm15 2v16H5V4h14zm-6 2h-2v2h2V6zm-5 4h8v6h-2v-4h-4v4H8v-6zm8 6H8v2h8v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(speakerPath), g.Group(children))
 }
 
 func SpeedFast(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M15 5H9v2H5v2H3v2H1v6h2v2h2v-2H3v-6h2V9h4V7h6V5zm8 6h-2v6h-2v2h2v-2h2v-6zm-13 2h4v4h-4v-4zm6-2h-2v2h2v-2zm2-2v2h-2V9h2zm0 0V7h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(speedFastPath), g.Group(children))
 }
 
 func SpeedMedium(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 5h-2v8h-1v4h4v-4h-1V5zM9 7H5v2H3v2H1v6h2v2h2v-2H3v-6h2V9h4V7zm12 4h2v6h-2v-6zm-2-2h2v2h-2V9zm0 0h-4V7h4v2zm2 8v2h-2v-2h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(speedMediumPath), g.Group(children))
 }
 
 func SpeedSlow(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M9 5h6v2H9V5zm10 4h-4V7h4v2zm2 2h-2V9h2v2zm0 6v-6h2v6h-2zm0 0v2h-2v-2h2zM1 11h2v6H1v-6zm2 6h2v2H3v-2zm11-4h-4v-2H8V9H6V7H4v2h2v2h2v2h2v4h4v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(speedSlowPath), g.Group(children))
 }
 
 func Spotlight(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M5 2h16v20H3V2h2zm14 18V4H5v16h14zM13 6H7v2h6V6zm-6 4h10v8H7v-8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(spotlightPath), g.Group(children))
 }
 
 func Store(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 3h16v2H4V3zm0 4h18v8h-2v6h-2v-6h-4v6H4v-6H2V7h2zm8 12v-4H6v4h6zm0-6h8V9H4v4h8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(storePath), g.Group(children))
 }
 
 func Subscriptions(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M18 2H6v2h12V2zM4 6h16v2H4V6zm-2 4h20v12H2V10zm18 10v-8H4v8h16z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(subscriptionsPath), g.Group(children))
 }
 
 func Subtitles(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M21 7h-8v10h8v-2h-6V9h6V7zM3 15V7h8v2H5v6h6v2H3v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(subtitlesPath), g.Group(children))
 }
 
 func Suitcase(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 3h8v4h6v14H2V7h6V3zm2 4h4V5h-4v2zM4 9v10h16V9H4zm4 2v6H6v-6h2zm10 0v6h-2v-6h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(suitcasePath), g.Group(children))
 }
 
 func Sun(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 3h-2v2h2V3zm4 2h2v2h-2V5zm-6 6h2v2h-2v-2zm-8 0h2v2H3v-2zm18 0h-2v2h2v-2zM5 5h2v2H5V5zm14 14h-2v-2h2v2zm-8 2h2v-2h-2v2zm-4-2H5v-2h2v2zM9 7h6v2H9V7zm0 8H7V9h2v6zm0 0v2h6v-2h2V9h-2v6H9z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(sunPath), g.Group(children))
 }
 
 func SunAlt(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 0h-2v4h2V0ZM0 11v2h4v-2H0Zm24 0v2h-4v-2h4ZM13 24h-2v-4h2v4ZM8 6h8v2H8V6ZM6 8h2v8H6V8Zm2 10v-2h8v2H8Zm10-2h-2V8h2v8Zm2-14h2v2h-2V2Zm0 2v2h-2V4h2Zm2 18h-2v-2h2v2Zm-2-2h-2v-2h2v2ZM4 2H2v2h2v2h2V4H4V2ZM2 22h2v-2h2v-2H4v2H2v2Z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(sunAltPath), g.Group(children))
 }
 
 func Switch(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 5V3h2v2H3zm4 2H5V5h2v2zm2 2H7V7h2v2zm2 2H9V9h2v2zm2 0h-2v2h2v2h2v2h2v2h-2v2h6v-6h-2v2h-2v-2h-2v-2h-2v-2zm2-2v2h-2V9h2zm2-2v2h-2V7h2zm0-2v2h2v2h2V3h-6v2h2zM5 19v-2h2v2H5zm0 0v2H3v-2h2zm2-2v-2h2v2H7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(switchPath), g.Group(children))
 }
 
 func Sync(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 9V7h12V5h2v2h2v2h-2v2h-2V9H4zm12 2h-2v2h2v-2zm0-6h-2V3h2v2zm4 12v-2H8v-2h2v-2H8v2H6v2H4v2h2v2h2v2h2v-2H8v-2h12z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(syncPath), g.Group(children))
 }
 
 func Tab(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 3h20v18H2V3zm2 2v14h16V9h-8V5H4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(tabPath), g.Group(children))
 }
 
 func Table(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 3h20v18H2V3zm2 4v5h7V7H4zm9 0v5h7V7h-7zm7 7h-7v5h7v-5zm-9 5v-5H4v5h7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(tablePath), g.Group(children))
 }
 
 func Tea(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 4h18v7h-4v5H4V4zm14 5h2V6h-2v3zm-2-3h-4v2h2v4H8V8h2V6H6v8h10V6zm3 12v2H3v-2h16z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(teaPath), g.Group(children))
 }
 
 func Teach(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M9 2H5v4h4V2zm7 7V7H2v9h2v6h2v-6h2v6h2V9h6zm-5-7h11v14H11v-2h9V4h-9V2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(teachPath), g.Group(children))
 }
 
 func TextAdd(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M19 4H3v2h16V4zm0 4H3v2h16V8zM3 12h8v2H3v-2zm8 4H3v2h8v-2zm7-1h3v2h-3v3h-2v-3h-3v-2h3v-3h2v3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(textAddPath), g.Group(children))
 }
 
 func TextColums(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 5H3v2h8V5zm10 0h-8v2h8V5zM3 9h8v2H3V9zm18 0h-8v2h8V9zM3 13h8v2H3v-2zm18 0h-8v2h8v-2zM3 17h8v2H3v-2zm18 0h-8v2h8v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(textColumsPath), g.Group(children))
 }
 
 func TextSearch(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M20 4H4v2h16V4zm0 4H4v2h16V8zm-8 4H4v2h8v-2zm8 0h-6v6h6v2h2v-2h-2v-6zm-4 4v-2h2v2h-2zm-4 0H4v2h8v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(textSearchPath), g.Group(children))
 }
 
 func TextWrap(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M19 5H3v2h16v6h-6v-2h2V9h-2v2h-2v2H9v2h2v2h2v2h2v-2h-2v-2h6v-2h2V7h-2V5zM7 13H3v2h4v-2zM3 9h6v2H3V9z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(textWrapPath), g.Group(children))
 }
 
 func Timeline(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M7 7h4v4H7V7zm-2 6v-2h2v2H5zm0 0v4H1v-4h4zm8 0h-2v-2h2v2zm4 0h-4v4h4v-4zm2-2v2h-2v-2h2zm0 0h4V7h-4v4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(timelinePath), g.Group(children))
 }
 
 func ToggleLeft(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 5h16v2H4V5zm0 12H2V7h2v10zm16 0v2H4v-2h16zm0 0h2V7h-2v10zM10 9H6v6h4V9z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(toggleLeftPath), g.Group(children))
 }
 
 func ToggleRight(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 5h16v2H4V5zm0 12H2V7h2v10zm16 0v2H4v-2h16zm0 0h2V7h-2v10zm-2-8h-4v6h4V9z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(toggleRightPath), g.Group(children))
 }
 
 func Tournament(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M9 2H2v2h5v4H2v2h7V7h5v10H9v-3H2v2h5v4H2v2h7v-3h7v-6h6v-2h-6V5H9V2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(tournamentPath), g.Group(children))
 }
 
 func TrackChanges(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 2H2v20h20V4h-2v16H4V4h7v2H6v12h12V8h-2v8H8V8h3v2h-1v4h4v-4h-1V2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(trackChangesPath), g.Group(children))
 }
 
 func Trash(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 2v4h6v2h-2v14H4V8H2V6h6V2h8zm-2 2h-4v2h4V4zm0 4H6v12h12V8h-4zm-5 2h2v8H9v-8zm6 0h-2v8h2v-8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(trashPath), g.Group(children))
 }
 
 func TrashAlt(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 2v4h6v2h-2v14H4V8H2V6h6V2h8zm-2 2h-4v2h4V4zm0 4H6v12h12V8h-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(trashAltPath), g.Group(children))
 }
 
 func Trending(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 4h2v14h16v2H3V4zm6 10H7v2h2v-2zm2-2v2H9v-2h2zm2 0v-2h-2v2h2zm2 0h-2v2h2v-2zm2-2h-2v2h2v-2zm2-2v2h-2V8h2zm0 0V6h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(trendingPath), g.Group(children))
 }
 
 func TrendingDown(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 8h2v2h2v2h2v2h2v-2h2v-2h2v2h2v2h2v2h-4v2h8v-8h-2v4h-2v-2h-2v-2h-2V8h-2v2h-2v2H8v-2H6V8H4V6H2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(trendingDownPath), g.Group(children))
 }
 
 func TrendingUp(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M14 6h8v8h-2v-4h-2V8h-4V6zm2 6v-2h2v2h-2zm-2 2v-2h2v2h-2zm-2 0h2v2h-2v-2zm-2-2h2v2h-2v-2zm-2 0v-2h2v2H8zm-2 2v-2h2v2H6zm-2 2v-2h2v2H4zm0 0v2H2v-2h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(trendingUpPath), g.Group(children))
 }
 
 func Trophy(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M16 3H6v2H2v10h6V5h8v10h6V5h-4V3h-2zm4 4v6h-2V7h2zM6 13H4V7h2v6zm12 2H6v2h12v-2zm-7 2h2v2h3v2H8v-2h3v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(trophyPath), g.Group(children))
 }
 
 func Truck(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 4h14v4h4v2h-4v6h6v-4h2v6h-4v2h-4v-2H8v2H4v-2H0V4h2zm20 8h-2v-2h2v2zm-8-2V6H2v10h12v-6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(truckPath), g.Group(children))
 }
 
 func Undo(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 4h2v2H8V4zm10 6V8H8V6H6v2H4v2h2v2h2v2h2v-2H8v-2h10zm0 8v-8h2v8h-2zm0 0v2h-6v-2h6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(undoPath), g.Group(children))
 }
 
 func Ungroup(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M7 3H3v4h4V3zm0 14H3v4h4v-4zM17 3h4v4h-4V3zm4 14h-4v4h4v-4zM8 8h2v2H8V8zm4 2h-2v4H8v2h2v-2h4v2h2v-2h-2v-4h2V8h-2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(ungroupPath), g.Group(children))
 }
 
 func Unlink(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 4h-2v16h2V4zM4 6h5v2H4v8h5v2H2V6h2zm11 0h7v12h-7v-2h5V8h-5V6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(unlinkPath), g.Group(children))
 }
 
 func Upload(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 5V3h2v2h2v2h2v2h-2V7h-2v10h-2V7H9v2H7V7h2V5h2zM3 15v6h18v-6h-2v4H5v-4H3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(uploadPath), g.Group(children))
 }
 
 func User(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M15 2H9v2H7v6h2V4h6V2zm0 8H9v2h6v-2zm0-6h2v6h-2V4zM4 16h2v-2h12v2H6v4h12v-4h2v6H4v-6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(userPath), g.Group(children))
 }
 
 func UserMinus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M12 2h6v2h-6v6h-2V4h2V2zm0 8h6v2h-6v-2zm8-6h-2v6h2V4zM9 16H7v6h16v-6h-2v4H9v-4h12v-2H9v2zm-2-6H1v2h6v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(userMinusPath), g.Group(children))
 }
 
 func UserPlus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M18 2h-6v2h-2v6h2V4h6V2zm0 8h-6v2h6v-2zm0-6h2v6h-2V4zM7 16h2v-2h12v2H9v4h12v-4h2v6H7v-6zM3 8h2v2h2v2H5v2H3v-2H1v-2h2V8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(userPlusPath), g.Group(children))
 }
 
 func UserX(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M12 2h6v2h-6v6h-2V4h2V2zm0 8h6v2h-6v-2zm8-6h-2v6h2V4zM7 16v6h16v-6h-2v4H9v-4h12v-2H9v2H7zm-1-6H4V8H2v2h2v2H2v2h2v-2h2v2h2v-2H6v-2zm0 0h2V8H6v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(userXPath), g.Group(children))
 }
 
 func Users(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 0H5v2H3v6h2v2h6V8H5V2h6V0zm0 2h2v6h-2V2zM0 14h2v4h12v2H0v-6zm2 0h12v-2H2v2zm14 0h-2v6h2v-6zM15 0h4v2h-4V0zm4 8h-4v2h4V8zm0-6h2v6h-2V2zm5 12h-2v4h-4v2h6v-6zm-6-2h4v2h-4v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(usersPath), g.Group(children))
 }
 
 func Video(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 5h14v4h2V7h2V5h2v14h-2v-2h-2v-2h-2v4H2V5zm2 12h10V7H4v10z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(videoPath), g.Group(children))
 }
 
 func VideoOff(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 5H2v14h14v-4h2v2h2v2h2V5h-2v2h-2v2h-2V5H4zm10 12H4V7h10v10zm-4-6H8V9H6v2h2v2H6v2h2v-2h2v2h2v-2h-2v-2zm0 0V9h2v2h-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(videoOffPath), g.Group(children))
 }
 
 func ViewCol(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 5h20v14H2V5zm2 2v10h4V7H4zm6 0v10h4V7h-4zm6 0v10h4V7h-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(viewColPath), g.Group(children))
 }
 
 func ViewList(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M2 5h20v14H2V5zm2 2v2h16V7H4zm16 4H4v2h16v-2zm0 4H4v2h16v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(viewListPath), g.Group(children))
 }
 
 func ViewportNarrow(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M10 2H8v4h2V4h4v2h2V2h-6zM8 20v-2h2v2h4v-2h2v4H8v-2zm9-9h5v2h-5v2h-2v-2h-2v-2h2V9h2v2zm0-2V7h2v2h-2zm0 6h2v2h-2v-2zM2 11h5V9h2v2h2v2H9v2H7v-2H2v-2zm5 4v2H5v-2h2zm0-6V7H5v2h2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(viewportNarrowPath), g.Group(children))
 }
 
 func ViewportWide(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M4 2H2v4h2V4h16v2h2V2H4zM2 20v-2h2v2h16v-2h2v4H2v-2zm16-9h-5v2h5v2h-2v2h2v-2h2v-2h2v-2h-2V9h-2V7h-2v2h2v2zm-7 0H6V9h2V7H6v2H4v2H2v2h2v2h2v2h2v-2H6v-2h5v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(viewportWidePath), g.Group(children))
 }
 
 func Visible(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M8 6h8v2H8V6zm-4 4V8h4v2H4zm-2 2v-2h2v2H2zm0 2v-2H0v2h2zm2 2H2v-2h2v2zm4 2H4v-2h4v2zm8 0v2H8v-2h8zm4-2v2h-4v-2h4zm2-2v2h-2v-2h2zm0-2h2v2h-2v-2zm-2-2h2v2h-2v-2zm0 0V8h-4v2h4zm-10 1h4v4h-4v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(visiblePath), g.Group(children))
 }
 
 func Volume(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M15 2h2v20h-2v-2h-2v-2h2V6h-2V4h2V2zm-4 6V6h2v2h-2zm-2 2h2V8H7v8h4v2h2v-2h-2v-2H9v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(volumePath), g.Group(children))
 }
 
 func VolumeMinus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M12 2h-2v2H8v2H6v2H2v8h4v2h2v2h2v2h2V2zM8 18v-2H6v-2H4v-4h2V8h2V6h2v12H8zm14-7h-8v2h8v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(volumeMinusPath), g.Group(children))
 }
 
 func VolumeOne(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M15 2h-2v2h-2v2H9v2H5v8h4v2h2v2h2v2h2V2zm-4 16v-2H9v-2H7v-4h2V8h2V6h2v12h-2zm6-8h2v4h-2v-4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(volumeOnePath), g.Group(children))
 }
 
 func VolumePlus(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M10 2h2v20h-2v-2H8v-2h2V6H8V4h2V2zM6 8V6h2v2H6zm0 8H2V8h4v2H4v4h2v2zm0 0v2h2v-2H6zm13-5h3v2h-3v3h-2v-3h-3v-2h3V8h2v3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(volumePlusPath), g.Group(children))
 }
 
 func VolumeThree(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 2H9v2H7v2H5v2H1v8h4v2h2v2h2v2h2V2zM7 18v-2H5v-2H3v-4h2V8h2V6h2v12H7zm6-8h2v4h-2v-4zm8-6h-2V2h-6v2h6v2h2v12h-2v2h-6v2h6v-2h2v-2h2V6h-2V4zm-2 4h-2V6h-4v2h4v8h-4v2h4v-2h2V8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(volumeThreePath), g.Group(children))
 }
 
 func VolumeTwo(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M11 2h2v20h-2v-2H9v-2h2V6H9V4h2V2zM7 8V6h2v2H7zm0 8H3V8h4v2H5v4h2v2zm0 0v2h2v-2H7zm10-6h-2v4h2v-4zm2-2h2v8h-2V8zm0 8v2h-4v-2h4zm0-10v2h-4V6h4z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(volumeTwoPath), g.Group(children))
 }
 
 func VolumeVibrate(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M14 2h-2v2h-2v2H8v2H4v8h4v2h2v2h2v2h2V2zm-4 16v-2H8v-2H6v-4h2V8h2V6h2v12h-2zm8-15h-2v2h2v2h-2v2h2v2h-2v2h2v2h-2v2h2v2h-2v2h2v-2h2v-2h-2v-2h2v-2h-2v-2h2V9h-2V7h2V5h-2V3z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(volumeVibratePath), g.Group(children))
 }
 
 func VolumeX(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M13 2h-2v2H9v2H7v2H3v8h4v2h2v2h2v2h2V2zM9 18v-2H7v-2H5v-4h2V8h2V6h2v12H9zm10-6.777h-2v-2h-2v2h2v2h-2v2h2v-2h2v2h2v-2h-2v-2zm0 0h2v-2h-2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(volumeXPath), g.Group(children))
 }
 
 func Wallet(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M18 3H2v18h18v-4h2V7h-2V3h-2zm0 14v2H4V5h14v2h-8v10h8zm2-2h-8V9h8v6zm-4-4h-2v2h2v-2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(walletPath), g.Group(children))
 }
 
 func WarningBox(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M3 3h16v2H5v14h14v2H3V3zm18 0h-2v18h2V3zM11 15h2v2h-2v-2zm2-8h-2v6h2V7z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(warningBoxPath), g.Group(children))
 }
 
 func Wind(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M12 3H8v2h4v2H2v2h12V3h-2zm10 8V7h-6v2h4v2H2v2h20v-2zM2 17v-2h14v6h-6v-2h4v-2H2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(windPath), g.Group(children))
 }
 
 func Zap(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M12 1h2v8h8v4h-2v-2h-8V5h-2V3h2V1zM8 7V5h2v2H8zM6 9V7h2v2H6zm-2 2V9h2v2H4zm10 8v2h-2v2h-2v-8H2v-4h2v2h8v6h2zm2-2v2h-2v-2h2zm2-2v2h-2v-2h2zm0 0h2v-2h-2v2z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(zapPath), g.Group(children))
 }
 
 func ZoomIn(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M14 2H6v2H4v2H2v8h2v2h2v2h8v-2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2h2V6h-2V4h-2V2zm0 2v2h2v8h-2v2H6v-2H4V6h2V4h8zM9 6h2v3h3v2h-3v3H9v-3H6V9h3V6z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(zoomInPath), g.Group(children))
 }
 
 func ZoomOut(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 24 24"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: 24px; height: 24px; display: block;"),
-		g.Raw(`<path fill="currentColor" d="M14 2H6v2H4v2H2v8h2v2h2v2h8v-2h2v2h2v2h2v2h2v-2h-2v-2h-2v-2h-2v-2h2V6h-2V4h-2V2zm0 2v2h2v8h-2v2H6v-2H4V6h2V4h8zm0 5v2H6V9h8z"/>`),
-		g.Group(children),
-	)
+	return s.SVG(viewbox, hAttr, g.Raw(zoomOutPath), g.Group(children))
 }

@@ -5,7 +5,17 @@ import (
 	s "github.com/maragudk/gomponents/svg"
 )
 
-const IconifyVersion = "{{.Version}}"
+const (
+  IconifyVersion = "{{.Version}}"
+  {{range .Icons -}}
+  {{.Name.Camel}}Path = `{{.Icon.SvgBody}}`
+  {{end}}
+)
+
+var (
+  hAttr = g.Attr("height", "1em")
+  viewbox = g.Attr("viewbox", "0 0 {{.ViewWidth}} {{.ViewHeight}}")
+)
 
 func IconFromName(name string) g.Node {
 	switch name {
@@ -17,15 +27,11 @@ func IconFromName(name string) g.Node {
 	}
 }
 
+
+
 {{range .Icons -}}
 func {{.Name.Pascal}}(children ...g.Node) g.Node {
-	return s.SVG(
-		g.Attr("viewbox", "0 0 {{$.ViewWidth}} {{$.ViewHeight}}"),
-		g.Attr("height", "none"),
-		g.Attr("style", "width: {{$.Height}}px; height: {{$.Height}}px; display: block;"),
-		g.Raw(`{{.Icon.SvgBody}}`),
-		g.Group(children),
-	)
+	return s.SVG( viewbox, hAttr, g.Raw({{.Name.Camel}}Path), g.Group(children))
 }
 
 {{end}}
