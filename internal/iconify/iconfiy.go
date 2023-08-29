@@ -58,7 +58,7 @@ func GenerateIconify(ctx context.Context, gentmpDir, output string) error {
 			eg.Go(func() error {
 				path := fmt.Sprintf("json/%s.json", collectionName)
 				if err := updateIconifyCache(ctx, tmpParentDir, path, &details); err != nil {
-					log.Printf("!!!! could not get iconify collection %s: %w", collectionName, err)
+					log.Printf("!!!! could not get iconify collection %s: %v", collectionName, err)
 				} else {
 					log.Printf("got icon collection %s", collectionName)
 				}
@@ -276,7 +276,7 @@ func updateIconifyCache(ctx context.Context, gentmpDir, iconifyJSONPath string, 
 	}
 	defer res.Body.Close()
 	if res.StatusCode != http.StatusOK {
-		return fmt.Errorf("could not get iconify %s: %w", fullURL, res.Status)
+		return fmt.Errorf("could not get iconify %s: %v", fullURL, res.Status)
 	}
 
 	buf := bytebufferpool.Get()
