@@ -6,7 +6,7 @@ import (
 )
 
 const (
-	IconifyVersion                                        = "0.2.12"
+	IconifyVersion                                        = "0.2.14"
 	accountPath                                           = `<g fill="none" stroke="currentColor" stroke-dasharray="28" stroke-dashoffset="28" stroke-linecap="round" stroke-width="2"><path d="M4 21V20C4 16.6863 6.68629 14 10 14H14C17.3137 14 20 16.6863 20 20V21"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="28;0"/></path><path d="M12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7C16 9.20914 14.2091 11 12 11Z"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.4s" values="28;0"/></path></g>`
 	accountAddPath                                        = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M3 21V20C3 17.7909 4.79086 16 7 16H11C13.2091 16 15 17.7909 15 20V21"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="20;0"/></path><path stroke-dasharray="20" stroke-dashoffset="20" d="M9 13C7.34315 13 6 11.6569 6 10C6 8.34315 7.34315 7 9 7C10.6569 7 12 8.34315 12 10C12 11.6569 10.6569 13 9 13Z"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.4s" values="20;0"/></path><path stroke-dasharray="8" stroke-dashoffset="8" d="M15 6H21"><animate fill="freeze" attributeName="stroke-dashoffset" begin="1s" dur="0.2s" values="8;0"/></path><path stroke-dasharray="8" stroke-dashoffset="8" d="M18 3V9"><animate fill="freeze" attributeName="stroke-dashoffset" begin="1.2s" dur="0.2s" values="8;0"/></path></g>`
 	accountAlertPath                                      = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M5 21V20C5 17.7909 6.79086 16 9 16H13C15.2091 16 17 17.7909 17 20V21"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="20;0"/></path><path stroke-dasharray="20" stroke-dashoffset="20" d="M11 13C9.34315 13 8 11.6569 8 10C8 8.34315 9.34315 7 11 7C12.6569 7 14 8.34315 14 10C14 11.6569 12.6569 13 11 13Z"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.4s" values="20;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M20 3V7"><animate fill="freeze" attributeName="stroke-dashoffset" begin="1s" dur="0.2s" values="6;0"/></path></g><circle cx="20" cy="11" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="1.2s" dur="0.4s" values="0;1"/></circle>`
@@ -16,6 +16,8 @@ const (
 	alertPath                                             = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle>`
 	alertCirclePath                                       = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="8" stroke-dashoffset="8" d="M12 7V13"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="8;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle>`
 	alertCircleTwotonePath                                = `<g stroke="currentColor" stroke-linecap="round" stroke-width="2"><path fill="currentColor" fill-opacity="0" stroke-dasharray="60" stroke-dashoffset="60" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/><animate fill="freeze" attributeName="fill-opacity" begin="1.2s" dur="0.15s" values="0;0.3"/></path><path fill="none" stroke-dasharray="8" stroke-dashoffset="8" d="M12 7V13"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="8;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle>`
+	alertSquarePath                                       = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="64" stroke-dashoffset="64" d="M12 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="64;128"/></path><path stroke-dasharray="8" stroke-dashoffset="8" d="M12 7V13"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="8;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle>`
+	alertSquareTwotonePath                                = `<g stroke="currentColor" stroke-linecap="round" stroke-width="2"><path fill="currentColor" fill-opacity="0" stroke-dasharray="64" stroke-dashoffset="64" d="M12 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="64;128"/><animate fill="freeze" attributeName="fill-opacity" begin="1.2s" dur="0.15s" values="0;0.3"/></path><path fill="none" stroke-dasharray="8" stroke-dashoffset="8" d="M12 7V13"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="8;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle>`
 	alertTwotonePath                                      = `<g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" fill-opacity="0" stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/><animate fill="freeze" attributeName="fill-opacity" begin="1.2s" dur="0.15s" values="0;0.3"/></path><path fill="none" stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle>`
 	alignCenterPath                                       = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="9" stroke-dashoffset="9" d="M12 5H19M12 5H5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="9;0"/></path><path stroke-dasharray="7" stroke-dashoffset="7" d="M12 10H17M12 10H7"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="7;0"/></path><path stroke-dasharray="11" stroke-dashoffset="11" d="M12 15H21M12 15H3"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.2s" values="11;0"/></path><path stroke-dasharray="9" stroke-dashoffset="9" d="M12 20H19M12 20H5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="9;0"/></path></g>`
 	alignJustifyPath                                      = `<g fill="none" stroke="currentColor" stroke-dasharray="8" stroke-dashoffset="8" stroke-linecap="round" stroke-width="2"><path d="M12 5H18M12 5H6"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="8;0"/></path><path d="M12 10H18M12 10H6"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="8;0"/></path><path d="M12 15H18M12 15H6"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.2s" values="8;0"/></path><path d="M12 20H18M12 20H6"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="8;0"/></path></g>`
@@ -26,6 +28,8 @@ const (
 	arrowLeftPath                                         = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M21 12H3.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="20;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M3 12L10 19M3 12L10 5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.3s" dur="0.2s" values="12;0"/></path></g>`
 	arrowLeftCirclePath                                   = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="9" stroke-dasharray="60" stroke-dashoffset="60"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></circle><path stroke-dasharray="12" stroke-dashoffset="12" d="M17 12H7.5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="12;0"/></path><path stroke-dasharray="8" stroke-dashoffset="8" d="M7 12L11 16M7 12L11 8"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s" dur="0.2s" values="8;0"/></path></g>`
 	arrowLeftCircleTwotonePath                            = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="9" fill="currentColor" fill-opacity="0" stroke-dasharray="60" stroke-dashoffset="60"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/><animate fill="freeze" attributeName="fill-opacity" begin="1s" dur="0.15s" values="0;0.3"/></circle><path stroke-dasharray="12" stroke-dashoffset="12" d="M17 12H7.5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="12;0"/></path><path stroke-dasharray="8" stroke-dashoffset="8" d="M7 12L11 16M7 12L11 8"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s" dur="0.2s" values="8;0"/></path></g>`
+	arrowLeftSquarePath                                   = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="64" stroke-dashoffset="64" d="M20 12v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="64;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M17 12H7.5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="12;0"/></path><path stroke-dasharray="8" stroke-dashoffset="8" d="M7 12L11 16M7 12L11 8"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s" dur="0.2s" values="8;0"/></path></g>`
+	arrowLeftSquareTwotonePath                            = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" fill-opacity="0" stroke-dasharray="64" stroke-dashoffset="64" d="M20 12v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="64;0"/><animate fill="freeze" attributeName="fill-opacity" begin="1s" dur="0.15s" values="0;0.3"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M17 12H7.5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="12;0"/></path><path stroke-dasharray="8" stroke-dashoffset="8" d="M7 12L11 16M7 12L11 8"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s" dur="0.2s" values="8;0"/></path></g>`
 	arrowLongDiagonalPath                                 = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="14" stroke-dashoffset="14" d="M12 12L3.5 20.5M12 12L20.5 3.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="14;0"/></path><path stroke-dasharray="8" stroke-dashoffset="8" d="M21 3H13M3 21V13M21 3V11M3 21H11"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.3s" dur="0.2s" values="8;0"/></path></g>`
 	arrowOpenLeftPath                                     = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="20" stroke-dashoffset="20" d="M21 3V21"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="20;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M17 12H3.5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.2s" values="15;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M3 12L10 19M3 12L10 5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="12;0"/></path></g>`
 	arrowSmallLeftPath                                    = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="14" stroke-dashoffset="14" d="M19 12H5.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="14;0"/></path><path stroke-dasharray="8" stroke-dashoffset="8" d="M5 12L10 17M5 12L10 7"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.3s" dur="0.2s" values="8;0"/></path></g>`
@@ -57,6 +61,8 @@ const (
 	chevronLeftPath                                       = `<path fill="none" stroke="currentColor" stroke-dasharray="10" stroke-dashoffset="10" stroke-linecap="round" stroke-width="2" d="M8 12L15 5M8 12L15 19"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="10;0"/></path>`
 	chevronLeftCirclePath                                 = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M10 12L13 9M10 12L13 15"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g>`
 	chevronLeftCircleTwotonePath                          = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path fill="currentColor" fill-opacity="0" stroke-dasharray="60" stroke-dashoffset="60" d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.15s" values="0;0.3"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M10 12L13 9M10 12L13 15"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g>`
+	chevronLeftSquarePath                                 = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="64" stroke-dashoffset="64" d="M4 12V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="64;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M10 12L13 9M10 12L13 15"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g>`
+	chevronLeftSquareTwotonePath                          = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path fill="currentColor" fill-opacity="0" stroke-dasharray="64" stroke-dashoffset="64" d="M4 12V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="64;0"/><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.15s" values="0;0.3"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M10 12L13 9M10 12L13 15"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g>`
 	chevronSmallDoubleLeftPath                            = `<g fill="none" stroke="currentColor" stroke-dasharray="8" stroke-dashoffset="8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 12L17 7M12 12L17 17"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="8;0"/></path><path d="M6 12L11 7M6 12L11 17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.3s" dur="0.3s" values="8;0"/></path></g>`
 	chevronSmallLeftPath                                  = `<path stroke="currentColor" stroke-dasharray="8" stroke-dashoffset="8" stroke-linecap="round" stroke-width="2" d="M9 12L14 7M9 12L14 17" fill="currentColor"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="8;0"/></path>`
 	chevronSmallTripleLeftPath                            = `<g fill="none" stroke="currentColor" stroke-dasharray="8" stroke-dashoffset="8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14 12L19 7M14 12L19 17"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="8;0"/></path><path d="M9 12L14 7M9 12L14 17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.3s" dur="0.3s" values="8;0"/></path><path d="M4 12L9 7M4 12L9 17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.3s" values="8;0"/></path></g>`
@@ -123,6 +129,11 @@ const (
 	confirmCircleTwotonePath                              = `<g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" fill-opacity="0" stroke-dasharray="60" stroke-dashoffset="60" d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.15s" values="0;0.3"/></path><path fill="none" stroke-dasharray="14" stroke-dashoffset="14" d="M8 12L11 15L16 10"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="14;0"/></path></g>`
 	confirmCircleTwotoneToCircleTransitionPath            = `<g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="9" fill="currentColor" fill-opacity=".3"><animate fill="freeze" attributeName="fill-opacity" begin="0.2s" dur="0.15s" values="0.3;0"/></circle><path fill="none" stroke-dasharray="14" d="M8 12L11 15L16 10"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="28;14"/></path></g>`
 	confirmCircleTwotoneToCircleTwotoneTransitionPath     = `<g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="9" fill="currentColor" fill-opacity=".3"/><path fill="none" stroke-dasharray="14" d="M8 12L11 15L16 10"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="28;14"/></path></g>`
+	confirmSquarePath                                     = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="64" stroke-dashoffset="64" d="M4 12V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="64;0"/></path><path stroke-dasharray="14" stroke-dashoffset="14" d="M8 12L11 15L16 10"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="14;0"/></path></g>`
+	confirmSquareToSquareTransitionPath                   = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20 19V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1Z"/><path stroke-dasharray="14" d="M8 12L11 15L16 10"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="28;14"/></path></g>`
+	confirmSquareTwotonePath                              = `<g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" fill-opacity="0" stroke-dasharray="64" stroke-dashoffset="64" d="M4 12V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="64;0"/><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.15s" values="0;0.3"/></path><path fill="none" stroke-dasharray="14" stroke-dashoffset="14" d="M8 12L11 15L16 10"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="14;0"/></path></g>`
+	confirmSquareTwotoneToSquareTransitionPath            = `<path fill="currentColor" fill-opacity=".3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 19V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1Z"><animate fill="freeze" attributeName="fill-opacity" begin="0.2s" dur="0.15s" values="0.3;0"/></path>`
+	confirmSquareTwotoneToSquareTwotoneTransitionPath     = `<g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" fill-opacity=".3" d="M20 19V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1Z"/><path fill="none" stroke-dasharray="14" d="M8 12L11 15L16 10"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="28;14"/></path></g>`
 	constructionPath                                      = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="2"><path stroke-dasharray="44" stroke-dashoffset="44" d="M21 21H3V19C3 18 4 17 5 17H19C20 17 21 18 21 19V21Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="44;0"/></path><path stroke-dasharray="18" stroke-dashoffset="18" d="M6 17L12 2M18 17L12 2"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.3s" values="18;0"/></path></g><path stroke-dasharray="8" stroke-dashoffset="8" d="M8 12L12.5 9.5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.9s" dur="0.2s" values="8;0"/></path><path stroke-dasharray="10" stroke-dashoffset="10" d="M6 16L13.5 12"><animate fill="freeze" attributeName="stroke-dashoffset" begin="1.1s" dur="0.2s" values="10;0"/></path><path stroke-dasharray="8" stroke-dashoffset="8" d="M9.5 17L14.5 14.5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="1.3s" dur="0.2s" values="8;0"/></path></g>`
 	constructionTwotonePath                               = `<path fill="currentColor" fill-opacity="0" d="M21 21H3V19C3 18 4 17 5 17H19C20 17 21 18 21 19V21Z"><animate fill="freeze" attributeName="fill-opacity" begin="1.5s" dur="0.15s" values="0;0.3"/></path><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><g stroke-width="2"><path stroke-dasharray="44" stroke-dashoffset="44" d="M21 21H3V19C3 18 4 17 5 17H19C20 17 21 18 21 19V21Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="44;0"/></path><path stroke-dasharray="18" stroke-dashoffset="18" d="M6 17L12 2M18 17L12 2"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.5s" dur="0.3s" values="18;0"/></path></g><path stroke-dasharray="8" stroke-dashoffset="8" d="M8 12L12.5 9.5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.9s" dur="0.2s" values="8;0"/></path><path stroke-dasharray="10" stroke-dashoffset="10" d="M6 16L13.5 12"><animate fill="freeze" attributeName="stroke-dashoffset" begin="1.1s" dur="0.2s" values="10;0"/></path><path stroke-dasharray="8" stroke-dashoffset="8" d="M9.5 17L14.5 14.5"><animate fill="freeze" attributeName="stroke-dashoffset" begin="1.3s" dur="0.2s" values="8;0"/></path></g>`
 	discordPath                                           = `<g fill="currentColor" fill-opacity="0"><circle cx="9" cy="12" r="1.5"><animate fill="freeze" attributeName="fill-opacity" begin="1.2s" dur="0.4s" values="0;1"/></circle><circle cx="15" cy="12" r="1.5"><animate fill="freeze" attributeName="fill-opacity" begin="1.4s" dur="0.4s" values="0;1"/></circle></g><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="30" stroke-dashoffset="30" d="M15.5 17.5L16.5 19.5C16.5 19.5 20.671 18.172 22 16C22 15 22.53 7.853 19 5.5C17.5 4.5 15 4 15 4L14 6H12M8.52799 17.5L7.52799 19.5C7.52799 19.5 3.35699 18.172 2.02799 16C2.02799 15 1.49799 7.853 5.02799 5.5C6.52799 4.5 9.02799 4 9.02799 4L10.028 6H12.028"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="30;60"/></path><path stroke-dasharray="16" stroke-dashoffset="16" d="M5.5 16C10.5 18.5 13.5 18.5 18.5 16"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.7s" dur="0.4s" values="16;0"/></path></g>`
@@ -242,6 +253,8 @@ const (
 	minusPath                                             = `<path stroke="currentColor" stroke-dasharray="18" stroke-dashoffset="18" stroke-linecap="round" stroke-width="2" d="M5 12H19" fill="currentColor"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="18;0"/></path>`
 	minusCirclePath                                       = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M7 12H17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="12;0"/></path></g>`
 	minusCircleTwotonePath                                = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path fill="currentColor" fill-opacity="0" stroke-dasharray="60" stroke-dashoffset="60" d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.15s" values="0;0.3"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M7 12H17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="12;0"/></path></g>`
+	minusSquarePath                                       = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="64" stroke-dashoffset="64" d="M4 12V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="64;0"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M7 12H17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="12;0"/></path></g>`
+	minusSquareTwotonePath                                = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path fill="currentColor" fill-opacity="0" stroke-dasharray="64" stroke-dashoffset="64" d="M4 12V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="64;0"/><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.15s" values="0;0.3"/></path><path stroke-dasharray="12" stroke-dashoffset="12" d="M7 12H17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="12;0"/></path></g>`
 	moonPath                                              = `<g fill="currentColor" fill-opacity="0"><path d="M15.22 6.03L17.75 4.09L14.56 4L13.5 1L12.44 4L9.25 4.09L11.78 6.03L10.87 9.09L13.5 7.28L16.13 9.09L15.22 6.03Z"><animate fill="freeze" attributeName="fill-opacity" begin="0.7s" dur="0.4s" values="0;1"/></path><path d="M19.61 12.25L21.25 11L19.19 10.95L18.5 9L17.81 10.95L15.75 11L17.39 12.25L16.8 14.23L18.5 13.06L20.2 14.23L19.61 12.25Z"><animate fill="freeze" attributeName="fill-opacity" begin="1.1s" dur="0.4s" values="0;1"/></path></g><path fill="none" stroke="currentColor" stroke-dasharray="56" stroke-dashoffset="56" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="56;0"/></path>`
 	moonAltLoopPath                                       = `<g fill="none" stroke="currentColor" stroke-dasharray="4" stroke-dashoffset="4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 4h1.5M13 4h-1.5M13 4v1.5M13 4v-1.5"><animate id="lineMdMoonAltLoop0" fill="freeze" attributeName="stroke-dashoffset" begin="0.7s;lineMdMoonAltLoop0.begin+6s" dur="0.4s" values="4;0"/><animate fill="freeze" attributeName="stroke-dashoffset" begin="lineMdMoonAltLoop0.begin+2s;lineMdMoonAltLoop0.begin+4s" dur="0.4s" values="4;0"/><animate fill="freeze" attributeName="stroke-dashoffset" begin="lineMdMoonAltLoop0.begin+1.2s;lineMdMoonAltLoop0.begin+3.2s;lineMdMoonAltLoop0.begin+5.2s" dur="0.4s" values="0;4"/><set attributeName="d" begin="lineMdMoonAltLoop0.begin+1.8s" to="M12 5h1.5M12 5h-1.5M12 5v1.5M12 5v-1.5"/><set attributeName="d" begin="lineMdMoonAltLoop0.begin+3.8s" to="M12 4h1.5M12 4h-1.5M12 4v1.5M12 4v-1.5"/><set attributeName="d" begin="lineMdMoonAltLoop0.begin+5.8s" to="M13 4h1.5M13 4h-1.5M13 4v1.5M13 4v-1.5"/></path><path d="M19 11h1.5M19 11h-1.5M19 11v1.5M19 11v-1.5"><animate id="lineMdMoonAltLoop1" fill="freeze" attributeName="stroke-dashoffset" begin="1.1s;lineMdMoonAltLoop1.begin+6s" dur="0.4s" values="4;0"/><animate fill="freeze" attributeName="stroke-dashoffset" begin="lineMdMoonAltLoop1.begin+2s;lineMdMoonAltLoop1.begin+4s" dur="0.4s" values="4;0"/><animate fill="freeze" attributeName="stroke-dashoffset" begin="lineMdMoonAltLoop1.begin+1.2s;lineMdMoonAltLoop1.begin+3.2s;lineMdMoonAltLoop1.begin+5.2s" dur="0.4s" values="0;4"/><set attributeName="d" begin="lineMdMoonAltLoop1.begin+1.8s" to="M17 11h1.5M17 11h-1.5M17 11v1.5M17 11v-1.5"/><set attributeName="d" begin="lineMdMoonAltLoop1.begin+3.8s" to="M18 12h1.5M18 12h-1.5M18 12v1.5M18 12v-1.5"/><set attributeName="d" begin="lineMdMoonAltLoop1.begin+5.8s" to="M19 11h1.5M19 11h-1.5M19 11v1.5M19 11v-1.5"/></path><path d="M19 4h1.5M19 4h-1.5M19 4v1.5M19 4v-1.5"><animate id="lineMdMoonAltLoop2" fill="freeze" attributeName="stroke-dashoffset" begin="2.9s;lineMdMoonAltLoop2.begin+6s" dur="0.4s" values="4;0"/><animate fill="freeze" attributeName="stroke-dashoffset" begin="lineMdMoonAltLoop2.begin+2s" dur="0.4s" values="4;0"/><animate fill="freeze" attributeName="stroke-dashoffset" begin="lineMdMoonAltLoop2.begin+1.2s;lineMdMoonAltLoop2.begin+3.2s" dur="0.4s" values="0;4"/><set attributeName="d" begin="lineMdMoonAltLoop2.begin+1.8s" to="M20 5h1.5M20 5h-1.5M20 5v1.5M20 5v-1.5"/><set attributeName="d" begin="lineMdMoonAltLoop2.begin+5.8s" to="M19 4h1.5M19 4h-1.5M19 4v1.5M19 4v-1.5"/></path></g><path fill="none" stroke="currentColor" stroke-dasharray="56" stroke-dashoffset="56" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="56;0"/></path>`
 	moonAltToSunnyOutlineLoopTransitionPath               = `<g fill="none" stroke="currentColor" stroke-dasharray="2" stroke-dashoffset="2" stroke-linecap="round" stroke-width="2"><path d="M0 0"><animate fill="freeze" attributeName="d" begin="0.6s" dur="0.2s" values="M12 19v1M19 12h1M12 5v-1M5 12h-1;M12 21v1M21 12h1M12 3v-1M3 12h-1"/><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="2;0"/></path><path d="M0 0"><animate fill="freeze" attributeName="d" begin="0.9s" dur="0.2s" values="M17 17l0.5 0.5M17 7l0.5 -0.5M7 7l-0.5 -0.5M7 17l-0.5 0.5;M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5"/><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.9s" dur="1.2s" values="2;0"/></path><animateTransform attributeName="transform" dur="30s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></g><mask id="lineMdMoonAltToSunnyOutlineLoopTransition0"><circle cx="12" cy="12" r="12" fill="#fff"/><circle cx="12" cy="12" r="8"><animate fill="freeze" attributeName="r" dur="0.4s" values="8;4"/></circle><circle cx="18" cy="6" r="12" fill="#fff"><animate fill="freeze" attributeName="cx" dur="0.4s" values="18;22"/><animate fill="freeze" attributeName="cy" dur="0.4s" values="6;2"/><animate fill="freeze" attributeName="r" dur="0.4s" values="12;3"/></circle><circle cx="18" cy="6" r="10"><animate fill="freeze" attributeName="cx" dur="0.4s" values="18;22"/><animate fill="freeze" attributeName="cy" dur="0.4s" values="6;2"/><animate fill="freeze" attributeName="r" dur="0.4s" values="10;1"/></circle></mask><circle cx="12" cy="12" r="10" fill="currentColor" mask="url(#lineMdMoonAltToSunnyOutlineLoopTransition0)"><animate fill="freeze" attributeName="r" dur="0.4s" values="10;6"/></circle>`
@@ -287,9 +300,13 @@ const (
 	plusPath                                              = `<g fill="none" stroke="currentColor" stroke-dasharray="18" stroke-dashoffset="18" stroke-linecap="round" stroke-width="2"><path d="M12 5V19"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.3s" values="18;0"/></path><path d="M5 12H19"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="18;0"/></path></g>`
 	plusCirclePath                                        = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><g stroke-dasharray="12" stroke-dashoffset="12"><path d="M12 7V17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s" dur="0.2s" values="12;0"/></path><path d="M7 12H17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="12;0"/></path></g><path stroke-dasharray="60" stroke-dashoffset="60" d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path></g>`
 	plusCircleTwotonePath                                 = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><g stroke-dasharray="12" stroke-dashoffset="12"><path d="M12 7V17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s" dur="0.2s" values="12;0"/></path><path d="M7 12H17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="12;0"/></path></g><path fill="currentColor" fill-opacity="0" stroke-dasharray="60" stroke-dashoffset="60" d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/><animate fill="freeze" attributeName="fill-opacity" begin="1s" dur="0.15s" values="0;0.3"/></path></g>`
+	plusSquarePath                                        = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><g stroke-dasharray="12" stroke-dashoffset="12"><path d="M12 7V17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s" dur="0.2s" values="12;0"/></path><path d="M7 12H17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="12;0"/></path></g><path stroke-dasharray="64" stroke-dashoffset="64" d="M4 12V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="64;0"/></path></g>`
+	plusSquareTwotonePath                                 = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><g stroke-dasharray="12" stroke-dashoffset="12"><path d="M12 7V17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s" dur="0.2s" values="12;0"/></path><path d="M7 12H17"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="12;0"/></path></g><path fill="currentColor" fill-opacity="0" stroke-dasharray="64" stroke-dashoffset="64" d="M4 12V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="64;0"/><animate fill="freeze" attributeName="fill-opacity" begin="1s" dur="0.15s" values="0;0.3"/></path></g>`
 	questionPath                                          = `<path fill="none" stroke="currentColor" stroke-dasharray="32" stroke-dashoffset="32" stroke-linecap="round" stroke-width="2" d="M7 8C7 5.23858 9.23857 3 12 3C14.7614 3 17 5.23858 17 8C17 9.6356 16.2147 11.0878 15.0005 12C14.1647 12.6279 12 14 12 17"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="32;0"/></path><circle cx="12" cy="21" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.5s" dur="0.2s" values="0;1"/></circle>`
 	questionCirclePath                                    = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="20" stroke-dashoffset="20" d="M8.99999 10C8.99999 8.34315 10.3431 7 12 7C13.6569 7 15 8.34315 15 10C15 10.9814 14.5288 11.8527 13.8003 12.4C13.0718 12.9473 12.5 13 12 14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.4s" values="20;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="1s" dur="0.2s" values="0;1"/></circle>`
 	questionCircleTwotonePath                             = `<g stroke="currentColor" stroke-linecap="round" stroke-width="2"><path fill="currentColor" fill-opacity="0" stroke-dasharray="60" stroke-dashoffset="60" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/><animate fill="freeze" attributeName="fill-opacity" begin="1.2s" dur="0.15s" values="0;0.3"/></path><path fill="none" stroke-dasharray="20" stroke-dashoffset="20" d="M8.99999 10C8.99999 8.34315 10.3431 7 12 7C13.6569 7 15 8.34315 15 10C15 10.9814 14.5288 11.8527 13.8003 12.4C13.0718 12.9473 12.5 13 12 14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.4s" values="20;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="1s" dur="0.2s" values="0;1"/></circle>`
+	questionSquarePath                                    = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="64" stroke-dashoffset="64" d="M12 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="64;128"/></path><path stroke-dasharray="20" stroke-dashoffset="20" d="M8.99999 10C8.99999 8.34315 10.3431 7 12 7C13.6569 7 15 8.34315 15 10C15 10.9814 14.5288 11.8527 13.8003 12.4C13.0718 12.9473 12.5 13 12 14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.4s" values="20;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="1s" dur="0.2s" values="0;1"/></circle>`
+	questionSquareTwotonePath                             = `<g stroke="currentColor" stroke-linecap="round" stroke-width="2"><path fill="currentColor" fill-opacity="0" stroke-dasharray="64" stroke-dashoffset="64" d="M12 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="64;128"/><animate fill="freeze" attributeName="fill-opacity" begin="1.2s" dur="0.15s" values="0;0.3"/></path><path fill="none" stroke-dasharray="20" stroke-dashoffset="20" d="M8.99999 10C8.99999 8.34315 10.3431 7 12 7C13.6569 7 15 8.34315 15 10C15 10.9814 14.5288 11.8527 13.8003 12.4C13.0718 12.9473 12.5 13 12 14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.4s" values="20;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="1s" dur="0.2s" values="0;1"/></circle>`
 	redditPath                                            = `<mask id="lineMdReddit0"><g fill="#fff" fill-opacity="0"><ellipse cx="12" cy="14.71" stroke="#fff" stroke-dasharray="48" stroke-dashoffset="48" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" rx="8" ry="5.29"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="48;0"/><animate fill="freeze" attributeName="fill-opacity" begin="0.6s" dur="0.4s" values="0;1"/></ellipse><circle cx="7.24" cy="11.97" r="2.24"><set attributeName="fill-opacity" begin="1s" to="1"/><animate fill="freeze" attributeName="cx" begin="1s" dur="0.2s" values="7.24;3.94"/></circle><circle cx="16.76" cy="11.97" r="2.24"><set attributeName="fill-opacity" begin="1s" to="1"/><animate fill="freeze" attributeName="cx" begin="1s" dur="0.2s" values="16.76;20.06"/></circle><circle cx="18.45" cy="4.23" r="1.61"><set attributeName="fill-opacity" begin="2.6s" to="1"/></circle></g><path fill="none" stroke="#fff" stroke-dasharray="12" stroke-dashoffset="12" stroke-linecap="round" stroke-linejoin="round" stroke-width=".8" d="M12 8.75L13.18 3.11L18.21 4.18"><animate fill="freeze" attributeName="stroke-dashoffset" begin="2.4s" dur="0.2s" values="12;0"/></path><g fill-opacity="0"><circle cx="8.45" cy="13.59" r="1.61"><animate fill="freeze" attributeName="fill-opacity" begin="1.2s" dur="0.4s" values="0;1"/></circle><circle cx="15.55" cy="13.59" r="1.61"><animate fill="freeze" attributeName="fill-opacity" begin="1.6s" dur="0.4s" values="0;1"/></circle></g><path fill="none" stroke="#000" stroke-dasharray="8" stroke-dashoffset="8" stroke-linecap="round" stroke-width=".8" d="M8.47 17.52C8.47 17.52 9.41 18.58 12 18.58C14.58 18.58 15.53 17.52 15.53 17.52"><animate fill="freeze" attributeName="stroke-dashoffset" begin="2s" dur="0.2s" values="8;0"/></path></mask><rect width="24" height="24" fill="currentColor" mask="url(#lineMdReddit0)"/>`
 	redditCirclePath                                      = `<mask id="lineMdRedditCircle0"><path fill="#fff" fill-opacity="0" stroke="#fff" stroke-dasharray="60" stroke-dashoffset="60" stroke-linecap="round" stroke-width="2" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/><animate fill="freeze" attributeName="fill-opacity" begin="0.6s" dur="0.5s" values="0;1"/></path><g fill-opacity="0"><ellipse cx="12" cy="13.77" rx="5.83" ry="4.06"><animate fill="freeze" attributeName="fill-opacity" begin="1.1s" dur="0.4s" values="0;1"/></ellipse><circle cx="8.99" cy="11.99" r="1.45"><set attributeName="fill-opacity" begin="1.5s" to="1"/><animate fill="freeze" attributeName="cx" begin="1.5s" dur="0.2s" values="8.99;6.79"/></circle><circle cx="15.01" cy="11.99" r="1.45"><set attributeName="fill-opacity" begin="1.5s" to="1"/><animate fill="freeze" attributeName="cx" begin="1.5s" dur="0.2s" values="15.01;17.21"/></circle><circle cx="16.18" cy="7.01" r="1.04"><set attributeName="fill-opacity" begin="3.1s" to="1"/></circle></g><path fill="none" stroke="#000" stroke-dasharray="8" stroke-dashoffset="8" stroke-linecap="round" stroke-linejoin="round" stroke-width=".54" d="M12 9.91L12.76 6.27L16 6.98"><animate fill="freeze" attributeName="stroke-dashoffset" begin="2.9s" dur="0.2s" values="8;0"/></path><g fill="#fff" fill-opacity="0"><circle cx="9.71" cy="13.04" r="1.04"><animate fill="freeze" attributeName="fill-opacity" begin="1.7s" dur="0.4s" values="0;1"/></circle><circle cx="14.29" cy="13.04" r="1.04"><animate fill="freeze" attributeName="fill-opacity" begin="2.1s" dur="0.4s" values="0;1"/></circle></g><path fill="none" stroke="#fff" stroke-dasharray="6" stroke-dashoffset="6" stroke-linecap="round" stroke-width=".54" d="M9.72 15.6C9.72 15.6 10.33 16.29 12 16.291C13.67 16.29 14.28 15.6 14.28 15.6"><animate fill="freeze" attributeName="stroke-dashoffset" begin="2.5s" dur="0.2s" values="6;0"/></path></mask><rect width="24" height="24" fill="currentColor" mask="url(#lineMdRedditCircle0)"/>`
 	redditCircleLoopPath                                  = `<mask id="lineMdRedditCircleLoop0"><path fill="#fff" fill-opacity="0" stroke="#fff" stroke-dasharray="60" stroke-dashoffset="60" stroke-linecap="round" stroke-width="2" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/><animate fill="freeze" attributeName="fill-opacity" begin="0.6s" dur="0.5s" values="0;1"/></path><g fill-opacity="0"><ellipse cx="12" cy="13.77" rx="5.83" ry="4.06"><animate fill="freeze" attributeName="fill-opacity" begin="1.1s" dur="0.4s" values="0;1"/></ellipse><circle cx="8.99" cy="11.99" r="1.45"><set attributeName="fill-opacity" begin="1.5s" to="1"/><animate fill="freeze" attributeName="cx" begin="1.5s" dur="0.2s" values="8.99;6.79"/></circle><circle cx="15.01" cy="11.99" r="1.45"><set attributeName="fill-opacity" begin="1.5s" to="1"/><animate fill="freeze" attributeName="cx" begin="1.5s" dur="0.2s" values="15.01;17.21"/></circle><circle cx="16.18" cy="7.01" r="1.04"><set attributeName="fill-opacity" begin="3.1s" to="1"/><animate attributeName="cx" begin="2.9s" dur="6s" repeatCount="indefinite" values="16.18;7.82;16.18"/></circle></g><path fill="none" stroke="#000" stroke-dasharray="8" stroke-dashoffset="8" stroke-linecap="round" stroke-linejoin="round" stroke-width=".54" d="M12 9.91L12.76 6.27L16 6.98"><animate fill="freeze" attributeName="stroke-dashoffset" begin="2.9s" dur="0.2s" values="8;0"/><animate attributeName="d" begin="2.9s" dur="6s" repeatCount="indefinite" values="M12 9.91L12.76 6.27L16 6.98;M12 9.91L12 5.2L12 6.98;M12 9.91L11.24 6.27L8 6.98;M12 9.91L12 5.2L12 6.98;M12 9.91L12.76 6.27L16 6.98"/></path><g fill="#fff" fill-opacity="0"><circle cx="9.71" cy="13.04" r="1.04"><animate fill="freeze" attributeName="fill-opacity" begin="1.7s" dur="0.4s" values="0;1"/></circle><circle cx="14.29" cy="13.04" r="1.04"><animate fill="freeze" attributeName="fill-opacity" begin="2.1s" dur="0.4s" values="0;1"/></circle></g><path fill="none" stroke="#fff" stroke-dasharray="6" stroke-dashoffset="6" stroke-linecap="round" stroke-width=".54" d="M9.72 15.6C9.72 15.6 10.33 16.29 12 16.291C13.67 16.29 14.28 15.6 14.28 15.6"><animate fill="freeze" attributeName="stroke-dashoffset" begin="2.5s" dur="0.2s" values="6;0"/></path></mask><rect width="24" height="24" fill="currentColor" mask="url(#lineMdRedditCircleLoop0)"/>`
@@ -301,6 +318,11 @@ const (
 	searchPath                                            = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="16" stroke-dashoffset="16" d="M10.5 13.5L3 21"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.2s" values="16;0"/></path><path stroke-dasharray="40" stroke-dashoffset="40" d="M10.7574 13.2426C8.41421 10.8995 8.41421 7.10051 10.7574 4.75736C13.1005 2.41421 16.8995 2.41421 19.2426 4.75736C21.5858 7.10051 21.5858 10.8995 19.2426 13.2426C16.8995 15.5858 13.1005 15.5858 10.7574 13.2426Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="40;0"/></path></g>`
 	searchFilledPath                                      = `<g stroke="currentColor" stroke-linecap="round" stroke-width="2"><path fill="none" stroke-dasharray="16" stroke-dashoffset="16" d="M10.5 13.5L3 21"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.2s" values="16;0"/></path><path fill="currentColor" fill-opacity="0" stroke-dasharray="40" stroke-dashoffset="40" d="M10.7574 13.2426C8.41421 10.8995 8.41421 7.10051 10.7574 4.75736C13.1005 2.41421 16.8995 2.41421 19.2426 4.75736C21.5858 7.10051 21.5858 10.8995 19.2426 13.2426C16.8995 15.5858 13.1005 15.5858 10.7574 13.2426Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="40;0"/><animate fill="freeze" attributeName="fill-opacity" begin="0.6s" dur="0.5s" values="0;1"/></path></g>`
 	searchTwotonePath                                     = `<g stroke="currentColor" stroke-linecap="round" stroke-width="2"><path fill="none" stroke-dasharray="16" stroke-dashoffset="16" d="M10.5 13.5L3 21"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.4s" dur="0.2s" values="16;0"/></path><path fill="currentColor" fill-opacity="0" stroke-dasharray="40" stroke-dashoffset="40" d="M10.7574 13.2426C8.41421 10.8995 8.41421 7.10051 10.7574 4.75736C13.1005 2.41421 16.8995 2.41421 19.2426 4.75736C21.5858 7.10051 21.5858 10.8995 19.2426 13.2426C16.8995 15.5858 13.1005 15.5858 10.7574 13.2426Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.4s" values="40;0"/><animate fill="freeze" attributeName="fill-opacity" begin="0.6s" dur="0.15s" values="0;0.3"/></path></g>`
+	squarePath                                            = `<path fill="none" stroke="currentColor" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-width="2" d="M4 12V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="64;0"/></path>`
+	squareToConfirmSquareTransitionPath                   = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20 19V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1Z"/><path stroke-dasharray="14" stroke-dashoffset="14" d="M8 12L11 15L16 10"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="14;0"/></path></g>`
+	squareToConfirmSquareTwotoneTransitionPath            = `<g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" fill-opacity="0" d="M20 19V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1Z"><animate fill="freeze" attributeName="fill-opacity" begin="0.2s" dur="0.15s" values="0;0.3"/></path><path fill="none" stroke-dasharray="14" stroke-dashoffset="14" d="M8 12L11 15L16 10"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="14;0"/></path></g>`
+	squareTwotonePath                                     = `<path fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-width="2" d="M4 12V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="64;0"/><animate fill="freeze" attributeName="fill-opacity" begin="0.5s" dur="0.15s" values="0;0.3"/></path>`
+	squareTwotoneToConfirmSquareTwotoneTransitionPath     = `<g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" fill-opacity=".3" d="M20 19V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1Z"/><path fill="none" stroke-dasharray="14" stroke-dashoffset="14" d="M8 12L11 15L16 10"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="14;0"/></path></g>`
 	starPath                                              = `<path fill="none" stroke="currentColor" stroke-dasharray="32" stroke-dashoffset="32" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3L9.65 8.76L3.44 9.22L8.2 13.24L6.71 19.28L12 16M12 3L14.35 8.76L20.56 9.22L15.8 13.24L17.29 19.28L12 16"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="32;0"/></path>`
 	starAltPath                                           = `<path fill="none" stroke="currentColor" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3L14.35 8.76L20.56 9.22L15.8 13.24L17.29 19.28L12 16L6.71 19.28L8.2 13.24L3.44 9.22L9.65 8.76Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0"/></path>`
 	starAltFilledPath                                     = `<path fill="currentColor" fill-opacity="0" stroke="currentColor" stroke-dasharray="64" stroke-dashoffset="64" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3L14.35 8.76L20.56 9.22L15.8 13.24L17.29 19.28L12 16L6.71 19.28L8.2 13.24L3.44 9.22L9.65 8.76Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="64;0"/><animate fill="freeze" attributeName="fill-opacity" begin="0.6s" dur="0.5s" values="0;1"/></path>`
@@ -370,6 +392,14 @@ const (
 	valignMiddleTwotonePath                               = `<g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke-dasharray="20" stroke-dashoffset="20" d="M2.5 15.5H21.5M2.5 8.5H21.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/></path><path fill="currentColor" fill-opacity="0" stroke-dasharray="50" stroke-dashoffset="50" stroke-width="2" d="M12.75 6H18V18H6V6H12.75Z"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.3s" dur="0.4s" values="50;0"/><animate fill="freeze" attributeName="fill-opacity" begin="0.7s" dur="0.15s" values="0;0.3"/></path></g>`
 	valignTopPath                                         = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path stroke-dasharray="20" stroke-dashoffset="20" d="M2.5 15.5H21.5M2.5 8.5H21.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/></path><path stroke-dasharray="50" stroke-dashoffset="50" stroke-width="2" d="M12.75 3H18V15H6V3H12.75Z"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.3s" dur="0.4s" values="50;0"/></path></g>`
 	valignTopTwotonePath                                  = `<g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke-dasharray="20" stroke-dashoffset="20" d="M2.5 15.5H21.5M2.5 8.5H21.5"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.2s" values="20;0"/></path><path fill="currentColor" fill-opacity="0" stroke-dasharray="50" stroke-dashoffset="50" stroke-width="2" d="M12.75 3H18V15H6V3H12.75Z"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.3s" dur="0.4s" values="50;0"/><animate fill="freeze" attributeName="fill-opacity" begin="0.7s" dur="0.15s" values="0;0.3"/></path></g>`
+	watchPath                                             = `<defs><clipPath id="lineMdWatch0"><rect width="24" height="12"/></clipPath><symbol id="lineMdWatch1"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z" clip-path="url(#lineMdWatch0)"><animate fill="freeze" attributeName="d" dur="0.5s" values="M23 16.5C23 11.5 18.0751 12 12 12C5.92487 12 1 11.5 1 16.5z;M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z"/></path></symbol><mask id="lineMdWatch2"><use href="#lineMdWatch1"/><use href="#lineMdWatch1" transform="rotate(180 12 12)"/><circle cx="12" cy="12" r="0" fill="#fff"><animate fill="freeze" attributeName="r" dur="0.2s" values="0;3"/></circle></mask></defs><rect width="24" height="24" fill="currentColor" mask="url(#lineMdWatch2)"/>`
+	watchLoopPath                                         = `<defs><clipPath id="lineMdWatchLoop0"><rect width="24" height="12"/></clipPath><symbol id="lineMdWatchLoop1"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z" clip-path="url(#lineMdWatchLoop0)"><animate attributeName="d" dur="6s" keyTimes="0;0.07;0.93;1" repeatCount="indefinite" values="M23 16.5C23 11.5 18.0751 12 12 12C5.92487 12 1 11.5 1 16.5z;M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z;M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z;M23 16.5C23 11.5 18.0751 12 12 12C5.92487 12 1 11.5 1 16.5z"/></path></symbol><mask id="lineMdWatchLoop2"><use href="#lineMdWatchLoop1"/><use href="#lineMdWatchLoop1" transform="rotate(180 12 12)"/><circle cx="12" cy="12" r="0" fill="#fff"><animate attributeName="r" dur="6s" keyTimes="0;0.03;0.97;1" repeatCount="indefinite" values="0;3;3;0"/></circle></mask></defs><rect width="24" height="24" fill="currentColor" mask="url(#lineMdWatchLoop2)"/>`
+	watchOffPath                                          = `<defs><clipPath id="lineMdWatchOff0"><rect width="24" height="12"/></clipPath><symbol id="lineMdWatchOff1"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z" clip-path="url(#lineMdWatchOff0)"><animate fill="freeze" attributeName="d" dur="0.5s" values="M23 16.5C23 11.5 18.0751 12 12 12C5.92487 12 1 11.5 1 16.5z;M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z"/></path></symbol><mask id="lineMdWatchOff2"><use href="#lineMdWatchOff1"/><use href="#lineMdWatchOff1" transform="rotate(180 12 12)"/><circle cx="12" cy="12" r="0" fill="#fff"><animate fill="freeze" attributeName="r" dur="0.2s" values="0;3"/></circle><g fill="none" stroke-dasharray="26" stroke-dashoffset="26" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="rotate(45 13 12)"><path stroke="#000" d="M0 11h24"/><path stroke="#fff" d="M1 13h22"/><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="26;0"/></g></mask></defs><rect width="24" height="24" fill="currentColor" mask="url(#lineMdWatchOff2)"/>`
+	watchOffLoopPath                                      = `<defs><clipPath id="lineMdWatchOffLoop0"><rect width="24" height="12"/></clipPath><symbol id="lineMdWatchOffLoop1"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z" clip-path="url(#lineMdWatchOffLoop0)"><animate attributeName="d" dur="6s" keyTimes="0;0.07;0.93;1" repeatCount="indefinite" values="M23 16.5C23 11.5 18.0751 12 12 12C5.92487 12 1 11.5 1 16.5z;M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z;M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z;M23 16.5C23 11.5 18.0751 12 12 12C5.92487 12 1 11.5 1 16.5z"/></path></symbol><mask id="lineMdWatchOffLoop2"><use href="#lineMdWatchOffLoop1"/><use href="#lineMdWatchOffLoop1" transform="rotate(180 12 12)"/><circle cx="12" cy="12" r="0" fill="#fff"><animate attributeName="r" dur="6s" keyTimes="0;0.03;0.97;1" repeatCount="indefinite" values="0;3;3;0"/></circle><g fill="none" stroke-dasharray="26" stroke-dashoffset="26" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="rotate(45 13 12)"><path stroke="#000" d="M0 11h24"/><path stroke="#fff" d="M0 13h22"><animate attributeName="d" dur="6s" repeatCount="indefinite" values="M0 13h22;M2 13h22;M0 13h22"/></path><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="26;0"/></g></mask></defs><rect width="24" height="24" fill="currentColor" mask="url(#lineMdWatchOffLoop2)"/>`
+	watchOffTwotonePath                                   = `<defs><clipPath id="lineMdWatchOffTwotone0"><rect width="24" height="12"/></clipPath><symbol id="lineMdWatchOffTwotone1"><path fill="#fff" fill-opacity="0" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z" clip-path="url(#lineMdWatchOffTwotone0)"><animate fill="freeze" attributeName="d" dur="0.5s" values="M23 16.5C23 11.5 18.0751 12 12 12C5.92487 12 1 11.5 1 16.5z;M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z"/><animate fill="freeze" attributeName="fill-opacity" begin="0.6s" dur="0.15s" values="0;0.3"/></path></symbol><mask id="lineMdWatchOffTwotone2"><use href="#lineMdWatchOffTwotone1"/><use href="#lineMdWatchOffTwotone1" transform="rotate(180 12 12)"/><circle cx="12" cy="12" r="0" fill="#fff"><animate fill="freeze" attributeName="r" dur="0.2s" values="0;3"/></circle><g fill="none" stroke-dasharray="26" stroke-dashoffset="26" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="rotate(45 13 12)"><path stroke="#000" d="M0 11h24"/><path stroke="#fff" d="M1 13h22"/><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s" dur="0.2s" values="26;0"/></g></mask></defs><rect width="24" height="24" fill="currentColor" mask="url(#lineMdWatchOffTwotone2)"/>`
+	watchOffTwotoneLoopPath                               = `<defs><clipPath id="lineMdWatchOffTwotoneLoop0"><rect width="24" height="12"/></clipPath><symbol id="lineMdWatchOffTwotoneLoop1"><path fill="#fff" fill-opacity="0" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z" clip-path="url(#lineMdWatchOffTwotoneLoop0)"><animate attributeName="d" dur="6s" keyTimes="0;0.07;0.93;1" repeatCount="indefinite" values="M23 16.5C23 11.5 18.0751 12 12 12C5.92487 12 1 11.5 1 16.5z;M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z;M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z;M23 16.5C23 11.5 18.0751 12 12 12C5.92487 12 1 11.5 1 16.5z"/><animate fill="freeze" attributeName="fill-opacity" begin="0.6s" dur="0.15s" values="0;0.3"/></path></symbol><mask id="lineMdWatchOffTwotoneLoop2"><use href="#lineMdWatchOffTwotoneLoop1"/><use href="#lineMdWatchOffTwotoneLoop1" transform="rotate(180 12 12)"/><circle cx="12" cy="12" r="0" fill="#fff"><animate attributeName="r" dur="6s" keyTimes="0;0.03;0.97;1" repeatCount="indefinite" values="0;3;3;0"/></circle><g fill="none" stroke-dasharray="26" stroke-dashoffset="26" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="rotate(45 13 12)"><path stroke="#000" d="M0 11h24"/><path stroke="#fff" d="M0 13h22"><animate attributeName="d" dur="6s" repeatCount="indefinite" values="M0 13h22;M2 13h22;M0 13h22"/></path><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.8s" dur="0.2s" values="26;0"/></g></mask></defs><rect width="24" height="24" fill="currentColor" mask="url(#lineMdWatchOffTwotoneLoop2)"/>`
+	watchTwotonePath                                      = `<defs><clipPath id="lineMdWatchTwotone0"><rect width="24" height="12"/></clipPath><symbol id="lineMdWatchTwotone1"><path fill="#fff" fill-opacity="0" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z" clip-path="url(#lineMdWatchTwotone0)"><animate fill="freeze" attributeName="d" dur="0.5s" values="M23 16.5C23 11.5 18.0751 12 12 12C5.92487 12 1 11.5 1 16.5z;M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z"/><animate fill="freeze" attributeName="fill-opacity" begin="0.6s" dur="0.15s" values="0;0.3"/></path></symbol><mask id="lineMdWatchTwotone2"><use href="#lineMdWatchTwotone1"/><use href="#lineMdWatchTwotone1" transform="rotate(180 12 12)"/><circle cx="12" cy="12" r="0" fill="#fff"><animate fill="freeze" attributeName="r" dur="0.2s" values="0;3"/></circle></mask></defs><rect width="24" height="24" fill="currentColor" mask="url(#lineMdWatchTwotone2)"/>`
+	watchTwotoneLoopPath                                  = `<defs><clipPath id="lineMdWatchTwotoneLoop0"><rect width="24" height="12"/></clipPath><symbol id="lineMdWatchTwotoneLoop1"><path fill="#fff" fill-opacity="0" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z" clip-path="url(#lineMdWatchTwotoneLoop0)"><animate attributeName="d" dur="6s" keyTimes="0;0.07;0.93;1" repeatCount="indefinite" values="M23 16.5C23 11.5 18.0751 12 12 12C5.92487 12 1 11.5 1 16.5z;M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z;M23 16.5C23 10.4249 18.0751 5.5 12 5.5C5.92487 5.5 1 10.4249 1 16.5z;M23 16.5C23 11.5 18.0751 12 12 12C5.92487 12 1 11.5 1 16.5z"/><animate fill="freeze" attributeName="fill-opacity" begin="0.6s" dur="0.15s" values="0;0.3"/></path></symbol><mask id="lineMdWatchTwotoneLoop2"><use href="#lineMdWatchTwotoneLoop1"/><use href="#lineMdWatchTwotoneLoop1" transform="rotate(180 12 12)"/><circle cx="12" cy="12" r="0" fill="#fff"><animate attributeName="r" dur="6s" keyTimes="0;0.03;0.97;1" repeatCount="indefinite" values="0;3;3;0"/></circle></mask></defs><rect width="24" height="24" fill="currentColor" mask="url(#lineMdWatchTwotoneLoop2)"/>`
 	weatherCloudyLoopPath                                 = `<mask id="lineMdWeatherCloudyLoop0"><g fill="#fff"><circle cx="12" cy="11" r="6"><animate attributeName="cx" dur="30s" repeatCount="indefinite" values="12;11;12;13;12"/></circle><rect width="10" height="7" x="8" y="12"/><rect width="16" height="10" x="1" y="9" rx="5"><animate attributeName="x" dur="19s" repeatCount="indefinite" values="1;0;1;2;1"/></rect><rect width="17" height="8" x="6" y="11" rx="4"><animate attributeName="x" dur="23s" repeatCount="indefinite" values="6;5;6;7;6"/></rect></g><circle cx="12" cy="11" r="4"><animate attributeName="cx" dur="30s" repeatCount="indefinite" values="12;11;12;13;12"/></circle><rect width="8" height="6" x="8" y="11"><animate attributeName="x" dur="30s" repeatCount="indefinite" values="8;7;8;9;8"/></rect><rect width="12" height="6" x="3" y="11" rx="3"><animate attributeName="x" dur="19s" repeatCount="indefinite" values="3;2;3;4;3"/></rect><rect width="13" height="4" x="8" y="13" rx="2"><animate attributeName="x" dur="23s" repeatCount="indefinite" values="8;7;8;9;8"/></rect></mask><rect width="24" height="24" fill="currentColor" mask="url(#lineMdWeatherCloudyLoop0)"/>`
 )
 
@@ -398,6 +428,10 @@ func IconFromName(name string) g.Node {
 		return AlertCircle()
 	case "alertCircleTwotone":
 		return AlertCircleTwotone()
+	case "alertSquare":
+		return AlertSquare()
+	case "alertSquareTwotone":
+		return AlertSquareTwotone()
 	case "alertTwotone":
 		return AlertTwotone()
 	case "alignCenter":
@@ -418,6 +452,10 @@ func IconFromName(name string) g.Node {
 		return ArrowLeftCircle()
 	case "arrowLeftCircleTwotone":
 		return ArrowLeftCircleTwotone()
+	case "arrowLeftSquare":
+		return ArrowLeftSquare()
+	case "arrowLeftSquareTwotone":
+		return ArrowLeftSquareTwotone()
 	case "arrowLongDiagonal":
 		return ArrowLongDiagonal()
 	case "arrowOpenLeft":
@@ -480,6 +518,10 @@ func IconFromName(name string) g.Node {
 		return ChevronLeftCircle()
 	case "chevronLeftCircleTwotone":
 		return ChevronLeftCircleTwotone()
+	case "chevronLeftSquare":
+		return ChevronLeftSquare()
+	case "chevronLeftSquareTwotone":
+		return ChevronLeftSquareTwotone()
 	case "chevronSmallDoubleLeft":
 		return ChevronSmallDoubleLeft()
 	case "chevronSmallLeft":
@@ -612,6 +654,16 @@ func IconFromName(name string) g.Node {
 		return ConfirmCircleTwotoneToCircleTransition()
 	case "confirmCircleTwotoneToCircleTwotoneTransition":
 		return ConfirmCircleTwotoneToCircleTwotoneTransition()
+	case "confirmSquare":
+		return ConfirmSquare()
+	case "confirmSquareToSquareTransition":
+		return ConfirmSquareToSquareTransition()
+	case "confirmSquareTwotone":
+		return ConfirmSquareTwotone()
+	case "confirmSquareTwotoneToSquareTransition":
+		return ConfirmSquareTwotoneToSquareTransition()
+	case "confirmSquareTwotoneToSquareTwotoneTransition":
+		return ConfirmSquareTwotoneToSquareTwotoneTransition()
 	case "construction":
 		return Construction()
 	case "constructionTwotone":
@@ -850,6 +902,10 @@ func IconFromName(name string) g.Node {
 		return MinusCircle()
 	case "minusCircleTwotone":
 		return MinusCircleTwotone()
+	case "minusSquare":
+		return MinusSquare()
+	case "minusSquareTwotone":
+		return MinusSquareTwotone()
 	case "moon":
 		return Moon()
 	case "moonAltLoop":
@@ -940,12 +996,20 @@ func IconFromName(name string) g.Node {
 		return PlusCircle()
 	case "plusCircleTwotone":
 		return PlusCircleTwotone()
+	case "plusSquare":
+		return PlusSquare()
+	case "plusSquareTwotone":
+		return PlusSquareTwotone()
 	case "question":
 		return Question()
 	case "questionCircle":
 		return QuestionCircle()
 	case "questionCircleTwotone":
 		return QuestionCircleTwotone()
+	case "questionSquare":
+		return QuestionSquare()
+	case "questionSquareTwotone":
+		return QuestionSquareTwotone()
 	case "reddit":
 		return Reddit()
 	case "redditCircle":
@@ -968,6 +1032,16 @@ func IconFromName(name string) g.Node {
 		return SearchFilled()
 	case "searchTwotone":
 		return SearchTwotone()
+	case "square":
+		return Square()
+	case "squareToConfirmSquareTransition":
+		return SquareToConfirmSquareTransition()
+	case "squareToConfirmSquareTwotoneTransition":
+		return SquareToConfirmSquareTwotoneTransition()
+	case "squareTwotone":
+		return SquareTwotone()
+	case "squareTwotoneToConfirmSquareTwotoneTransition":
+		return SquareTwotoneToConfirmSquareTwotoneTransition()
 	case "star":
 		return Star()
 	case "starAlt":
@@ -1106,6 +1180,22 @@ func IconFromName(name string) g.Node {
 		return ValignTop()
 	case "valignTopTwotone":
 		return ValignTopTwotone()
+	case "watch":
+		return Watch()
+	case "watchLoop":
+		return WatchLoop()
+	case "watchOff":
+		return WatchOff()
+	case "watchOffLoop":
+		return WatchOffLoop()
+	case "watchOffTwotone":
+		return WatchOffTwotone()
+	case "watchOffTwotoneLoop":
+		return WatchOffTwotoneLoop()
+	case "watchTwotone":
+		return WatchTwotone()
+	case "watchTwotoneLoop":
+		return WatchTwotoneLoop()
 	case "weatherCloudyLoop":
 		return WeatherCloudyLoop()
 	default:
@@ -1149,6 +1239,14 @@ func AlertCircleTwotone(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(alertCircleTwotonePath), g.Group(children))
 }
 
+func AlertSquare(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(alertSquarePath), g.Group(children))
+}
+
+func AlertSquareTwotone(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(alertSquareTwotonePath), g.Group(children))
+}
+
 func AlertTwotone(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(alertTwotonePath), g.Group(children))
 }
@@ -1187,6 +1285,14 @@ func ArrowLeftCircle(children ...g.Node) g.Node {
 
 func ArrowLeftCircleTwotone(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(arrowLeftCircleTwotonePath), g.Group(children))
+}
+
+func ArrowLeftSquare(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(arrowLeftSquarePath), g.Group(children))
+}
+
+func ArrowLeftSquareTwotone(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(arrowLeftSquareTwotonePath), g.Group(children))
 }
 
 func ArrowLongDiagonal(children ...g.Node) g.Node {
@@ -1311,6 +1417,14 @@ func ChevronLeftCircle(children ...g.Node) g.Node {
 
 func ChevronLeftCircleTwotone(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(chevronLeftCircleTwotonePath), g.Group(children))
+}
+
+func ChevronLeftSquare(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(chevronLeftSquarePath), g.Group(children))
+}
+
+func ChevronLeftSquareTwotone(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(chevronLeftSquareTwotonePath), g.Group(children))
 }
 
 func ChevronSmallDoubleLeft(children ...g.Node) g.Node {
@@ -1575,6 +1689,26 @@ func ConfirmCircleTwotoneToCircleTransition(children ...g.Node) g.Node {
 
 func ConfirmCircleTwotoneToCircleTwotoneTransition(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(confirmCircleTwotoneToCircleTwotoneTransitionPath), g.Group(children))
+}
+
+func ConfirmSquare(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(confirmSquarePath), g.Group(children))
+}
+
+func ConfirmSquareToSquareTransition(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(confirmSquareToSquareTransitionPath), g.Group(children))
+}
+
+func ConfirmSquareTwotone(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(confirmSquareTwotonePath), g.Group(children))
+}
+
+func ConfirmSquareTwotoneToSquareTransition(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(confirmSquareTwotoneToSquareTransitionPath), g.Group(children))
+}
+
+func ConfirmSquareTwotoneToSquareTwotoneTransition(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(confirmSquareTwotoneToSquareTwotoneTransitionPath), g.Group(children))
 }
 
 func Construction(children ...g.Node) g.Node {
@@ -2053,6 +2187,14 @@ func MinusCircleTwotone(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(minusCircleTwotonePath), g.Group(children))
 }
 
+func MinusSquare(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(minusSquarePath), g.Group(children))
+}
+
+func MinusSquareTwotone(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(minusSquareTwotonePath), g.Group(children))
+}
+
 func Moon(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(moonPath), g.Group(children))
 }
@@ -2233,6 +2375,14 @@ func PlusCircleTwotone(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(plusCircleTwotonePath), g.Group(children))
 }
 
+func PlusSquare(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(plusSquarePath), g.Group(children))
+}
+
+func PlusSquareTwotone(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(plusSquareTwotonePath), g.Group(children))
+}
+
 func Question(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(questionPath), g.Group(children))
 }
@@ -2243,6 +2393,14 @@ func QuestionCircle(children ...g.Node) g.Node {
 
 func QuestionCircleTwotone(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(questionCircleTwotonePath), g.Group(children))
+}
+
+func QuestionSquare(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(questionSquarePath), g.Group(children))
+}
+
+func QuestionSquareTwotone(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(questionSquareTwotonePath), g.Group(children))
 }
 
 func Reddit(children ...g.Node) g.Node {
@@ -2287,6 +2445,26 @@ func SearchFilled(children ...g.Node) g.Node {
 
 func SearchTwotone(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(searchTwotonePath), g.Group(children))
+}
+
+func Square(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(squarePath), g.Group(children))
+}
+
+func SquareToConfirmSquareTransition(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(squareToConfirmSquareTransitionPath), g.Group(children))
+}
+
+func SquareToConfirmSquareTwotoneTransition(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(squareToConfirmSquareTwotoneTransitionPath), g.Group(children))
+}
+
+func SquareTwotone(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(squareTwotonePath), g.Group(children))
+}
+
+func SquareTwotoneToConfirmSquareTwotoneTransition(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(squareTwotoneToConfirmSquareTwotoneTransitionPath), g.Group(children))
 }
 
 func Star(children ...g.Node) g.Node {
@@ -2563,6 +2741,38 @@ func ValignTop(children ...g.Node) g.Node {
 
 func ValignTopTwotone(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(valignTopTwotonePath), g.Group(children))
+}
+
+func Watch(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(watchPath), g.Group(children))
+}
+
+func WatchLoop(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(watchLoopPath), g.Group(children))
+}
+
+func WatchOff(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(watchOffPath), g.Group(children))
+}
+
+func WatchOffLoop(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(watchOffLoopPath), g.Group(children))
+}
+
+func WatchOffTwotone(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(watchOffTwotonePath), g.Group(children))
+}
+
+func WatchOffTwotoneLoop(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(watchOffTwotoneLoopPath), g.Group(children))
+}
+
+func WatchTwotone(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(watchTwotonePath), g.Group(children))
+}
+
+func WatchTwotoneLoop(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(watchTwotoneLoopPath), g.Group(children))
 }
 
 func WeatherCloudyLoop(children ...g.Node) g.Node {
