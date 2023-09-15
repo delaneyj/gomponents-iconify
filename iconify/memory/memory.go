@@ -16,6 +16,14 @@ const (
 	alertCircleFillPath                  = `<path fill="currentColor" d="M15 21H7v-1H5v-1H4v-1H3v-1H2v-2H1V7h1V5h1V4h1V3h1V2h2V1h8v1h2v1h1v1h1v1h1v2h1v8h-1v2h-1v1h-1v1h-1v1h-2Zm-3-9V6h-2v6Zm0 4v-2h-2v2Z"/>`
 	alertRhombusPath                     = `<path fill="currentColor" d="M12 12h-2V6h2Zm0 4h-2v-2h2Zm0 5h-2v-1H9v-1H8v-1H7v-1H6v-1H5v-1H4v-1H3v-1H2v-1H1v-2h1V9h1V8h1V7h1V6h1V5h1V4h1V3h1V2h1V1h2v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1Zm0-3v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-2h-1V9h-1V8h-1V7h-1V6h-1V5h-1V4h-2v1H9v1H8v1H7v1H6v1H5v1H4v2h1v1h1v1h1v1h1v1h1v1h1v1Z"/>`
 	alertRhombusFillPath                 = `<path fill="currentColor" d="M12 21h-2v-1H9v-1H8v-1H7v-1H6v-1H5v-1H4v-1H3v-1H2v-1H1v-2h1V9h1V8h1V7h1V6h1V5h1V4h1V3h1V2h1V1h2v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1Zm0-9V6h-2v6Zm0 4v-2h-2v2Z"/>`
+	alignHorizontalCenterPath            = `<path fill="currentColor" d="M12 20h-2v-4H6v-4h4v-2H4V6h6V2h2v4h6v4h-6v2h4v4h-4Z"/>`
+	alignHorizontalDistributePath        = `<path fill="currentColor" d="M14 16H8V6h6M4 20H2V2h2m16 18h-2V2h2Z"/>`
+	alignHorizontalLeftPath              = `<path fill="currentColor" d="M18 10H6V6h12m-4 10H6v-4h8M4 20H2V2h2Z"/>`
+	alignHorizontalRightPath             = `<path fill="currentColor" d="M16 10H4V6h12m0 10H8v-4h8m4 8h-2V2h2Z"/>`
+	alignVerticalBottomPath              = `<path fill="currentColor" d="M10 16H6V4h4m6 12h-4V8h4m4 12H2v-2h18Z"/>`
+	alignVerticalCenterPath              = `<path fill="currentColor" d="M10 18H6v-6H2v-2h4V4h4v6h2V6h4v4h4v2h-4v4h-4v-4h-2Z"/>`
+	alignVerticalDistributePath          = `<path fill="currentColor" d="M20 4H2V2h18m-4 12H6V8h10m4 12H2v-2h18Z"/>`
+	alignVerticalTopPath                 = `<path fill="currentColor" d="M20 4H2V2h18m-4 12h-4V6h4m-6 12H6V6h4Z"/>`
 	alphaAPath                           = `<path fill="currentColor" d="M15 1v1h2v1h1v1h1v1h1v2h1v8h-1v2h-1v1h-1v1h-1v1h-2v1H7v-1H5v-1H4v-1H3v-1H2v-2H1V7h1V5h1V4h1V3h1V2h2V1h8m-1 2H8v1H6v1H5v1H4v2H3v6h1v2h1v1h1v1h2v1h6v-1h2v-1h1v-1h1v-2h1V8h-1V6h-1V5h-1V4h-2V3m-1 3v1h1v9h-2v-4h-2v4H8V7h1V6h4m-1 2h-2v2h2V8Z"/>`
 	alphaAFillPath                       = `<path fill="currentColor" d="M10 8h2v2h-2V8m5-7v1h2v1h1v1h1v1h1v2h1v8h-1v2h-1v1h-1v1h-1v1h-2v1H7v-1H5v-1H4v-1H3v-1H2v-2H1V7h1V5h1V4h1V3h1V2h2V1h8m-2 5H9v1H8v9h2v-4h2v4h2V7h-1V6Z"/>`
 	alphaBPath                           = `<path fill="currentColor" d="M15 1v1h2v1h1v1h1v1h1v2h1v8h-1v2h-1v1h-1v1h-1v1h-2v1H7v-1H5v-1H4v-1H3v-1H2v-2H1V7h1V5h1V4h1V3h1V2h2V1h8m-1 2H8v1H6v1H5v1H4v2H3v6h1v2h1v1h1v1h2v1h6v-1h2v-1h1v-1h1v-2h1V8h-1V6h-1V5h-1V4h-2V3M8 6h5v1h1v3h-1v2h1v3h-1v1H8V6m2 2v2h2V8h-2m2 4h-2v2h2v-2Z"/>`
@@ -105,12 +113,14 @@ const (
 	axePath                              = `<path fill="currentColor" d="M11 3h2v1h1v1h1v1h2v1h2v1h1v1h1v2h-1v2h-1v1h-1v1h-2v1h-1v-1h-1v-1h-1v-2h-1v-1h-1v-1h-1V9H9V8H8V6h1V5h1V4h1m-1 6v1h1v2h-1v1H9v1H8v1H7v1H6v1H5v1H4v1H3v-1H2v-2h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1"/>`
 	bagPersonalPath                      = `<path fill="currentColor" d="M17 15H9v2H7v-2H5v4h12v-4m0-6h-1V8h-1V7H7v1H6v1H5v4h12V9m-4 2H9v-1h1V9h2v1h1v1M3 8h1V6h2V5h1V2h1V1h6v1h1v3h1v1h2v2h1v12h-1v1H4v-1H3V8m6-5v2h4V3H9Z"/>`
 	bagPersonalFillPath                  = `<path fill="currentColor" d="M3 8h1V6h2V5h1V2h1V1h6v1h1v3h1v1h2v2h1v12h-1v1H4v-1H3V8m6-5v2h4V3H9m8 11H5v1h2v2h1v-2h9v-1m-5-3h1V9h-1V8h-2v1H9v2h1v1h2v-1Z"/>`
+	bankPath                             = `<path fill="currentColor" d="M21 8H1V6h2V5h2V4h2V3h2V2h4v1h2v1h2v1h2v1h2ZM7 17H3V9h4Zm6 0H9V9h4Zm6 0h-4V9h4Zm2 3H1v-2h20Z"/>`
 	batteryFiftyPath                     = `<path fill="currentColor" d="M5 8h2v6H5V8m3 0h2v6H8V8m10-3v1h1v3h1v4h-1v3h-1v1H3v-1H2V6h1V5h15m-1 2H4v8h13V7Z"/>`
 	batteryOneHundredPath                = `<path fill="currentColor" d="M5 8h2v6H5V8m3 0h2v6H8V8m10-3v1h1v3h1v4h-1v3h-1v1H3v-1H2V6h1V5h15m-1 2H4v8h13V7m-6 1h2v6h-2V8m3 0h2v6h-2V8Z"/>`
 	batterySeventyFivePath               = `<path fill="currentColor" d="M5 8h2v6H5V8m3 0h2v6H8V8m10-3v1h1v3h1v4h-1v3h-1v1H3v-1H2V6h1V5h15m-1 2H4v8h13V7m-6 1h2v6h-2V8Z"/>`
 	batteryTwentyFivePath                = `<path fill="currentColor" d="M7 8v6H5V8h2m11-3v1h1v3h1v4h-1v3h-1v1H3v-1H2V6h1V5h15m-1 2H4v8h13V7Z"/>`
 	batteryZeroPath                      = `<path fill="currentColor" d="M3 5h15v1h1v3h1v4h-1v3h-1v1H3v-1H2V6h1V5m1 2v8h13V7H4Z"/>`
 	battleAxePath                        = `<path fill="currentColor" d="M15 1h-4v1h-1v1H9v1H8v4h4v1h-1v1h-1v1H9v1H8v1H7v1H6v1H5v1H4v1H3v1H2v1H1v1h1v1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v4h4v-1h1v-1h1v-1h1V7h-4V5h-2"/>`
+	bloodPath                            = `<path fill="currentColor" d="M5 16h1v-2H5Zm1 1h1v-1H6Zm8 4H8v-1H6v-1H5v-1H4v-2H3v-3h1v-1h1v-2h1V9h1V7h1V5h1V3h1V1h2v2h1v2h1v2h1v2h1v1h1v2h1v1h1v3h-1v2h-1v1h-1v1h-2Zm-5-3v-1H7v1Zm3 1v-1H9v1Z"/>`
 	bookPath                             = `<path fill="currentColor" d="M3 2h1V1h14v1h1v18h-1v1H4v-1H3V2m8 7h-1V8H9v1H8v1H7V3H5v16h12V3h-5v7h-1V9Z"/>`
 	bookmarkPath                         = `<path fill="currentColor" d="M5 2h12v1h1v17h-2v-1h-2v-1h-2v-1h-2v1H8v1H6v1H4V3h1V2m1 2v13h1v-1h2v-1h1v-1h2v1h1v1h2v1h1V4H6Z"/>`
 	borderBottomPath                     = `<path fill="currentColor" d="M20 12h-2v-2h2v2M4 12H2v-2h2v2m8-8h-2V2h2v2m4 0h-2V2h2v2m4 4h-2V6h2v2m0-4h-2V2h2v2m0 12h-2v-2h2v2M4 16H2v-2h2v2M8 4H6V2h2v2M4 4H2V2h2v2m0 4H2V6h2v2m16 12H2v-2h18v2Z"/>`
@@ -148,6 +158,11 @@ const (
 	boxLightDownRightPath                = `<path fill="currentColor" d="M12 0v12H0v-2h10V0h2Z"/>`
 	boxLightDownRightCirclePath          = `<path fill="currentColor" d="M15 9v4h-1v1h-1v1H9v-1H8v-1H7v-1H0v-2h7V9h1V8h1V7h1V0h2v7h1v1h1v1h1m-3 4v-1h1v-2h-1V9h-2v1H9v2h1v1h2Z"/>`
 	boxLightHorizontalPath               = `<path fill="currentColor" d="M0 10h22v2H0v-2Z"/>`
+	boxLightHorizontalCirclePath         = `<path fill="currentColor" d="M13 15H9v-1H8v-1H7v-1H0v-2h7V9h1V8h1V7h4v1h1v1h1v1h7v2h-7v1h-1v1h-1m-1-1v-1h1v-2h-1V9h-2v1H9v2h1v1Z"/>`
+	boxLightHorizontalMenuDownPath       = `<path fill="currentColor" d="M12 12h-2v-1H9v-1H8V9H7V8H6V7H5V5h12v2h-1v1h-1v1h-1v1h-1v1h-1m0 6h-2v-1H9v-1H8v-1H7v-1H6v-1H0v-2h7v1h1v1h1v1h1v1h2v-1h1v-1h1v-1h1v-1h7v2h-6v1h-1v1h-1v1h-1v1h-1m0-7V8h1V7H9v1h1v1Z"/>`
+	boxLightHorizontalMenuLeftPath       = `<path fill="currentColor" d="M5 12H0v-2h5m17 2h-6v-2h6m-11 3h1V9h-1v1h-1v2h1m3 5h-2v-1h-1v-1h-1v-1H9v-1H8v-1H7v-2h1V9h1V8h1V7h1V6h1V5h2Z"/>`
+	boxLightHorizontalMenuRightPath      = `<path fill="currentColor" d="M6 12H0v-2h6m16 2h-5v-2h5m-12 3h1v-1h1v-2h-1V9h-1m0 8H8V5h2v1h1v1h1v1h1v1h1v1h1v2h-1v1h-1v1h-1v1h-1v1h-1Z"/>`
+	boxLightHorizontalMenuUpPath         = `<path fill="currentColor" d="M22 12h-7v-1h-1v-1h-1V9h-1V8h-2v1H9v1H8v1H7v1H0v-2h6V9h1V8h1V7h1V6h1V5h2v1h1v1h1v1h1v1h1v1h6m-5 7H5v-2h1v-1h1v-1h1v-1h1v-1h1v-1h2v1h1v1h1v1h1v1h1v1h1m-4 0v-1h-1v-1h-2v1H9v1Z"/>`
 	boxLightRoundDownLeftPath            = `<path fill="currentColor" d="M22 12h-4v-1h-3v-1h-1V9h-1V8h-1V7h-1V4h-1V0h2v3h1v3h1v1h1v1h1v1h3v1h3v2Z"/>`
 	boxLightRoundDownRightPath           = `<path fill="currentColor" d="M12 0v4h-1v3h-1v1H9v1H8v1H7v1H4v1H0v-2h3V9h3V8h1V7h1V6h1V3h1V0h2Z"/>`
 	boxLightRoundUpLeftPath              = `<path fill="currentColor" d="M10 22v-4h1v-3h1v-1h1v-1h1v-1h1v-1h3v-1h4v2h-3v1h-3v1h-1v1h-1v1h-1v3h-1v3h-2Z"/>`
@@ -157,6 +172,11 @@ const (
 	boxLightUpRightPath                  = `<path fill="currentColor" d="M0 10h12v12h-2V12H0v-2Z"/>`
 	boxLightUpRightCirclePath            = `<path fill="currentColor" d="M9 7h4v1h1v1h1v4h-1v1h-1v1h-1v7h-2v-7H9v-1H8v-1H7v-1H0v-2h7V9h1V8h1V7m4 3h-1V9h-2v1H9v2h1v1h2v-1h1v-2Z"/>`
 	boxLightVerticalPath                 = `<path fill="currentColor" d="M12 0v22h-2V0h2Z"/>`
+	boxLightVerticalCirclePath           = `<path fill="currentColor" d="M12 22h-2v-7H9v-1H8v-1H7V9h1V8h1V7h1V0h2v7h1v1h1v1h1v4h-1v1h-1v1h-1m0-2v-1h1v-2h-1V9h-2v1H9v2h1v1Z"/>`
+	boxLightVerticalMenuDownPath         = `<path fill="currentColor" d="M12 6h-2V0h2m0 15h-2v-1H9v-1H8v-1H7v-1H6v-1H5V8h12v2h-1v1h-1v1h-1v1h-1v1h-1m0 8h-2v-5h2m0-5v-1h1v-1H9v1h1v1Z"/>`
+	boxLightVerticalMenuLeftPath         = `<path fill="currentColor" d="M14 13h1V9h-1v1h-1v2h1m3 5h-2v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-2h1V9h1V8h1V7h1V6h1V5h2m-5 17h-2v-6H9v-1H8v-1H7v-1H6v-1H5v-2h1V9h1V8h1V7h1V6h1V0h2v7h-1v1h-1v1H9v1H8v2h1v1h1v1h1v1h1Z"/>`
+	boxLightVerticalMenuRightPath        = `<path fill="currentColor" d="M7 13h1v-1h1v-2H8V9H7Zm0 4H5V5h2v1h1v1h1v1h1v1h1v1h1v2h-1v1h-1v1H9v1H8v1H7Zm5 5h-2v-7h1v-1h1v-1h1v-1h1v-2h-1V9h-1V8h-1V7h-1V0h2v6h1v1h1v1h1v1h1v1h1v2h-1v1h-1v1h-1v1h-1v1h-1Z"/>`
+	boxLightVerticalMenuUpPath           = `<path fill="currentColor" d="M12 5h-2V0h2m5 14H5v-2h1v-1h1v-1h1V9h1V8h1V7h2v1h1v1h1v1h1v1h1v1h1m-5 10h-2v-6h2m1-4v-1h-1v-1h-2v1H9v1Z"/>`
 	boxOuterLightAllPath                 = `<path fill="currentColor" d="M0 0h22v22H0V0m2 2v18h18V2H2Z"/>`
 	boxOuterLightDashedAllPath           = `<path fill="currentColor" d="M4 0v2H2v2H0V0h4M2 6v4H0V6h2m0 6v4H0v-4h2m0 6v2h2v2H0v-4h2M6 0h4v2H6V0m6 0h4v2h-4V0m6 0h4v4h-2V2h-2V0m0 22v-2h2v-2h2v4h-4m-2 0h-4v-2h4v2m-6 0H6v-2h4v2M20 6h2v4h-2V6m0 6h2v4h-2v-4Z"/>`
 	boxOuterLightDashedDownPath          = `<path fill="currentColor" d="M1 20h4v2H1v-2m6 0h3v2H7v-2m5 0h4v2h-4v-2m6 0h3v2h-3v-2Z"/>`
@@ -207,6 +227,10 @@ const (
 	checkboxBlankPath                    = `<path fill="currentColor" d="M3 4h1V3h14v1h1v14h-1v1H4v-1H3V4m2 13h12V5H5v12Z"/>`
 	checkboxCrossPath                    = `<path fill="currentColor" d="M13 12h1v1h1v2h-2v-1h-1v-1h-2v1H9v1H7v-2h1v-1h1v-2H8V9H7V7h2v1h1v1h2V8h1V7h2v2h-1v1h-1v2m5 7H4v-1H3V4h1V3h14v1h1v14h-1v1M5 5v12h12V5H5Z"/>`
 	checkboxMarkedPath                   = `<path fill="currentColor" d="M3 4h1V3h14v1h-1v1H5v12h12v-6h1v-1h1v8h-1v1H4v-1H3V4m3 5h2v1h1v1h1v1h2v-1h1v-1h1V9h1V8h1V7h1V6h1V5h1V4h2v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v-1H9v-1H8v-1H7v-1H6V9Z"/>`
+	checkerLargePath                     = `<path fill="currentColor" d="M22 22h-6v-6h-6v6H5v-6H0v-6h5V5H0V0h5v5h5V0h6v5h6v5h-6v6h6m-6-6V5h-6v5m0 6v-6H5v6Z"/>`
+	checkerMediumPath                    = `<path fill="currentColor" d="M22 22h-4v-3h-3v3h-4v-3H7v3H4v-3H0v-4h4v-4H0V8h4V4H0V0h4v4h3V0h4v4h4V0h3v4h4v4h-4v3h4v4h-4v4h4M11 8V4H7v4m11 0V4h-3v4m-8 3V8H4v3m11 0V8h-4v3m0 4v-4H7v4m11 0v-4h-3v4m-8 4v-4H4v4m11 0v-4h-4v4Z"/>`
+	checkerSmallPath                     = `<path fill="currentColor" d="M2 2h1V1H2Zm2 0h1V1H4Zm2 0h1V1H6Zm2 0h1V1H8Zm2 0h1V1h-1Zm2 0h1V1h-1Zm2 0h1V1h-1Zm2 0h1V1h-1Zm2 0h1V1h-1Zm2 0h1V1h-1ZM1 3h1V2H1Zm2 0h1V2H3Zm2 0h1V2H5Zm2 0h1V2H7Zm2 0h1V2H9Zm2 0h1V2h-1Zm2 0h1V2h-1Zm2 0h1V2h-1Zm2 0h1V2h-1Zm2 0h1V2h-1ZM2 4h1V3H2Zm2 0h1V3H4Zm2 0h1V3H6Zm2 0h1V3H8Zm2 0h1V3h-1Zm2 0h1V3h-1Zm2 0h1V3h-1Zm2 0h1V3h-1Zm2 0h1V3h-1Zm2 0h1V3h-1ZM1 5h1V4H1Zm2 0h1V4H3Zm2 0h1V4H5Zm2 0h1V4H7Zm2 0h1V4H9Zm2 0h1V4h-1Zm2 0h1V4h-1Zm2 0h1V4h-1Zm2 0h1V4h-1Zm2 0h1V4h-1ZM2 6h1V5H2Zm2 0h1V5H4Zm2 0h1V5H6Zm2 0h1V5H8Zm2 0h1V5h-1Zm2 0h1V5h-1Zm2 0h1V5h-1Zm2 0h1V5h-1Zm2 0h1V5h-1Zm2 0h1V5h-1ZM1 7h1V6H1Zm2 0h1V6H3Zm2 0h1V6H5Zm2 0h1V6H7Zm2 0h1V6H9Zm2 0h1V6h-1Zm2 0h1V6h-1Zm2 0h1V6h-1Zm2 0h1V6h-1Zm2 0h1V6h-1ZM2 8h1V7H2Zm2 0h1V7H4Zm2 0h1V7H6Zm2 0h1V7H8Zm2 0h1V7h-1Zm2 0h1V7h-1Zm2 0h1V7h-1Zm2 0h1V7h-1Zm2 0h1V7h-1Zm2 0h1V7h-1ZM1 9h1V8H1Zm2 0h1V8H3Zm2 0h1V8H5Zm2 0h1V8H7Zm2 0h1V8H9Zm2 0h1V8h-1Zm2 0h1V8h-1Zm2 0h1V8h-1Zm2 0h1V8h-1Zm2 0h1V8h-1ZM2 10h1V9H2Zm2 0h1V9H4Zm2 0h1V9H6Zm2 0h1V9H8Zm2 0h1V9h-1Zm2 0h1V9h-1Zm2 0h1V9h-1Zm2 0h1V9h-1Zm2 0h1V9h-1Zm2 0h1V9h-1ZM1 11h1v-1H1Zm2 0h1v-1H3Zm2 0h1v-1H5Zm2 0h1v-1H7Zm2 0h1v-1H9Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1ZM2 12h1v-1H2Zm2 0h1v-1H4Zm2 0h1v-1H6Zm2 0h1v-1H8Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1ZM1 13h1v-1H1Zm2 0h1v-1H3Zm2 0h1v-1H5Zm2 0h1v-1H7Zm2 0h1v-1H9Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1ZM2 14h1v-1H2Zm2 0h1v-1H4Zm2 0h1v-1H6Zm2 0h1v-1H8Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1ZM1 15h1v-1H1Zm2 0h1v-1H3Zm2 0h1v-1H5Zm2 0h1v-1H7Zm2 0h1v-1H9Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1ZM2 16h1v-1H2Zm2 0h1v-1H4Zm2 0h1v-1H6Zm2 0h1v-1H8Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1ZM1 17h1v-1H1Zm2 0h1v-1H3Zm2 0h1v-1H5Zm2 0h1v-1H7Zm2 0h1v-1H9Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1ZM2 18h1v-1H2Zm2 0h1v-1H4Zm2 0h1v-1H6Zm2 0h1v-1H8Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1ZM1 19h1v-1H1Zm2 0h1v-1H3Zm2 0h1v-1H5Zm2 0h1v-1H7Zm2 0h1v-1H9Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1ZM2 20h1v-1H2Zm2 0h1v-1H4Zm2 0h1v-1H6Zm2 0h1v-1H8Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1ZM1 21h1v-1H1Zm2 0h1v-1H3Zm2 0h1v-1H5Zm2 0h1v-1H7Zm2 0h1v-1H9Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm2 0h1v-1h-1Zm3 1h-1v-1h-1v1h-1v-1h-1v1h-1v-1h-1v1h-1v-1h-1v1h-1v-1h-1v1h-1v-1h-1v1H9v-1H8v1H7v-1H6v1H5v-1H4v1H3v-1H2v1H1v-1H0v-1h1v-1H0v-1h1v-1H0v-1h1v-1H0v-1h1v-1H0v-1h1v-1H0v-1h1V9H0V8h1V7H0V6h1V5H0V4h1V3H0V2h1V1H0V0h1v1h1V0h1v1h1V0h1v1h1V0h1v1h1V0h1v1h1V0h1v1h1V0h1v1h1V0h1v1h1V0h1v1h1V0h1v1h1V0h1v1h1v1h-1v1h1v1h-1v1h1v1h-1v1h1v1h-1v1h1v1h-1v1h1v1h-1v1h1v1h-1v1h1v1h-1v1h1v1h-1v1h1v1h-1v1h1Z"/>`
+	checkerboardPath                     = `<path fill="currentColor" d="M18 20H4v-1H3v-1H2V4h1V3h1V2h14v1h1v1h1v14h-1v1h-1M11 7V4H7v3m11 0V5h-1V4h-2v3m-8 4V7H4v4m11 0V7h-4v4m0 4v-4H7v4m11 0v-4h-3v4m-8 3v-3H4v2h1v1m10 0v-3h-4v3Z"/>`
 	chevronDownPath                      = `<path fill="currentColor" d="M16 10h1V9h1V7h-2v1h-1v1h-1v1h-1v1h-1v1h-2v-1H9v-1H8V9H7V8H6V7H4v2h1v1h1v1h1v1h1v1h1v1h1v1h2v-1h1v-1h1v-1h1v-1h1"/>`
 	chevronDownCirclePath                = `<path fill="currentColor" d="M16 9v2h-1v1h-1v1h-1v1h-1v1h-2v-1H9v-1H8v-1H7v-1H6V9h2v1h1v1h1v1h2v-1h1v-1h1V9h2m-1-8v1h2v1h1v1h1v1h1v2h1v8h-1v2h-1v1h-1v1h-1v1h-2v1H7v-1H5v-1H4v-1H3v-1H2v-2H1V7h1V5h1V4h1V3h1V2h2V1h8m-1 2H8v1H6v1H5v1H4v2H3v6h1v2h1v1h1v1h2v1h6v-1h2v-1h1v-1h1v-2h1V8h-1V6h-1V5h-1V4h-2V3Z"/>`
 	chevronLeftPath                      = `<path fill="currentColor" d="M12 16v1h1v1h2v-2h-1v-1h-1v-1h-1v-1h-1v-1h-1v-2h1V9h1V8h1V7h1V6h1V4h-2v1h-1v1h-1v1h-1v1H9v1H8v1H7v2h1v1h1v1h1v1h1v1"/>`
@@ -219,6 +243,11 @@ const (
 	clipboardPath                        = `<path fill="currentColor" d="M2 5h1V4h4V2h2V1h4v1h2v2h4v1h1v15h-1v1H3v-1H2V5m8-2v2h2V3h-2m8 3h-2v2H6V6H4v13h14V6Z"/>`
 	clockPath                            = `<path fill="currentColor" d="M10 5h2v6h1v1h1v1h1v2h-2v-1h-1v-1h-1v-1h-1V5m5-4v1h2v1h1v1h1v1h1v2h1v8h-1v2h-1v1h-1v1h-1v1h-2v1H7v-1H5v-1H4v-1H3v-1H2v-2H1V7h1V5h1V4h1V3h1V2h2V1h8m-1 2H8v1H6v1H5v1H4v2H3v6h1v2h1v1h1v1h2v1h6v-1h2v-1h1v-1h1v-2h1V8h-1V6h-1V5h-1V4h-2V3Z"/>`
 	coffeePath                           = `<path fill="currentColor" d="M1 20v-2h16v2H1M2 3h17v1h1v6h-1v1h-3v3h-1v1h-1v1H4v-1H3v-1H2V3m14 2v4h2V5h-2M4 5v8h1v1h8v-1h1V5H4Z"/>`
+	coinCopperPath                       = `<path fill="currentColor" d="M12 14h-2v-1H9v-1H8v-2h1V9h1V8h2v1h1v1h1v2h-1v1h-1Zm3 5H7v-1H6v-1H5v-1H4v-1H3V7h1V6h1V5h1V4h1V3h8v1h1v1h1v1h1v1h1v8h-1v1h-1v1h-1v1h-1Zm-3-7v-2h-2v2Zm2 5v-1h1v-1h1v-1h1V8h-1V7h-1V6h-1V5H8v1H7v1H6v1H5v6h1v1h1v1h1v1Z"/>`
+	coinElectrumPath                     = `<path fill="currentColor" d="M17 19H5v-1H4v-2H3v-2H2V8h1V6h1V4h1V3h12v1h1v2h1v2h1v6h-1v2h-1v2h-1Zm-5-3v-2h-2v2Zm4 1v-2h1v-3h1v-2h-1V7h-1V5H6v2H5v3H4v2h1v3h1v2h3v-1H8v-2h1v-1h1v-1h2v1h1v1h1v2h-1v1Z"/>`
+	coinGoldPath                         = `<path fill="currentColor" d="M19 19H3v-2h1v-2h1v-3h1v-2H5V7H4V5H3V3h16v2h-1v2h-1v3h-1v2h1v3h1v2h1Zm-3-2v-1h-1v-2h-1V8h1V6h1V5H6v1h1v2h1v6H7v2H6v1Z"/>`
+	coinPlatinumPath                     = `<path fill="currentColor" d="M14 21H8v-1H7v-1H6v-1H5v-1H4v-1H3v-1H2v-1H1V8h1V7h1V6h1V5h1V4h1V3h1V2h1V1h6v1h1v1h1v1h1v1h1v1h1v1h1v1h1v6h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1Zm-1-2v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1V9h-1V8h-1V7h-1V6h-1V5h-1V4h-1V3H9v1H8v1H7v1H6v1H5v1H4v1H3v4h1v1h1v1h1v1h1v1h1v1h1v1Z"/>`
+	coinSilverPath                       = `<path fill="currentColor" d="M13 11h1V9h-1V7h-1V5h-2v2H9v2H8v2h1v-1h1V9h2v1h1Zm6 8H3v-1H2v-2h1v-2h1v-2h1v-2h1V8h1V6h1V4h1V3h1V2h2v1h1v1h1v2h1v2h1v2h1v2h1v2h1v2h1v2h-1Zm-7-6v-2h-2v2Zm5 4v-2h-1v-2h-1v-2h-1v2h-1v1h-1v1h-2v-1H9v-1H8v-2H7v2H6v2H5v2Z"/>`
 	commentPath                          = `<path fill="currentColor" d="M2 2h18v1h1v14h-1v1h-8v1h-1v1h-1v1H6v-3H2v-1H1V3h1V2m1 2v12h5v3h1v-1h1v-1h1v-1h8V4H3Z"/>`
 	commentTextPath                      = `<path fill="currentColor" d="M2 2h18v1h1v14h-1v1h-8v1h-1v1h-1v1H6v-3H2v-1H1V3h1V2m1 2v12h5v3h1v-1h1v-1h1v-1h8V4H3m2 3h12v2H5V7m0 4h10v2H5v-2Z"/>`
 	compassPath                          = `<path fill="currentColor" d="M15 1v1h2v1h1v1h1v1h1v2h1v8h-1v2h-1v1h-1v1h-1v1h-2v1H7v-1H5v-1H4v-1H3v-1H2v-2H1V7h1V5h1V4h1V3h1V2h2V1h8m-1 2H8v1H6v1H5v1H4v2H3v6h1v2h1v1h1v1h2v1h6v-1h2v-1h1v-1h1v-2h1V8h-1V6h-1V5h-1V4h-2V3m-4 6V8h2V7h2V6h2v2h-1v2h-1v2h-1v1h-1v1h-2v1H8v1H6v-2h1v-2h1v-2h1V9h1m2 1h-2v2h2v-2Z"/>`
@@ -232,7 +261,9 @@ const (
 	compassWestArrowPath                 = `<path fill="currentColor" d="M4 6h2v6h1v1h1V8h2v5h1v-1h1V6h2v7h-1v2h-1v1h-2v-1H8v1H6v-1H5v-2H4m12-3v2h1v1h1v1h1v1h1v1h2v-2h-1v-1h-1v-1h-1v-2h1V9h1V8h1V6h-2v1h-1v1h-1v1h-1v1"/>`
 	creditCardPath                       = `<path fill="currentColor" d="M2 4h18v1h1v12h-1v1H2v-1H1V5h1V4m1 2v2h16V6H3m0 10h16v-5H3v5Z"/>`
 	crownPath                            = `<path fill="currentColor" d="M2 17h18v2H2v-2M4 6v1h1v1h1V7h1V6h1V5h1V4h1V3h2v1h1v1h1v1h1v1h1v1h1V7h1V6h1V5h1v11H2V5h1v1h1m3 8h11v-4h-3V9h-1V8h-1V7h-1V6h-2v1H9v1H8v1H7v1H4v4h3Z"/>`
+	cubePath                             = `<path fill="currentColor" d="M12 21h-2v-1H8v-1H6v-1H4v-1H2V5h2V4h2V3h2V2h2V1h2v1h2v1h2v1h2v1h2v12h-2v1h-2v1h-2v1h-2m0-10V9h2V8h2V7h2V6h-2V5h-2V4h-2V3h-2v1H8v1H6v1H4v1h2v1h2v1h2v1m0 8v-7H8v-1H6V9H4v7h2v1h2v1m6 0v-1h2v-1h2V9h-2v1h-2v1h-2v7Z"/>`
 	cubeUnfoldedPath                     = `<path fill="currentColor" d="M12 3v5h10v7h-5v5h-7v-5H0V8h5V3h7m-2 2H7v3h3V5m-3 5v3h3v-3H7m-2 0H2v3h3v-3m12 0v3h3v-3h-3m-2 5h-3v3h3v-3m-3-5v3h3v-3h-3Z"/>`
+	daggerPath                           = `<path fill="currentColor" d="M10 13h1v-1h1v-1h1v-1h1V9h1V8h1V7h1V5h-2v1h-1v1h-1v1h-1v1h-1v1h-1v1H9v1h1Zm-4 6H4v-1H3v-2h1v-1h1v-1h1v-1H5v-1H4v-2h1V9h2v1h1V9h1V8h1V7h1V6h1V5h1V4h1V3h5v5h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h1v2h-1v1h-2v-1H9v-1H8v1H7v1H6Z"/>`
 	databasePath                         = `<path fill="currentColor" d="M7 2h8v1h2v1h1v1h1v12h-1v1h-1v1h-2v1H7v-1H5v-1H4v-1H3V5h1V4h1V3h2V2m1 14v-1H6v-1H5v2h1v1h2v1h6v-1h2v-1h1v-2h-1v1h-2v1H8m0-5v-1H6V9H5v3h2v1h2v1h4v-1h2v-1h2V9h-1v1h-2v1H8m1-3v1h4V8h2V7h2V6h-1V5h-2V4H8v1H6v1H5v1h2v1h2Z"/>`
 	devicePath                           = `<path fill="currentColor" d="M2 1h18v1h.94v18H20v1H2v-1h-.94V2H2V1m1 2v16h16V3H3m1 1h14v8H4V4m1 10h3v3H5v-3m7 1h2v2h-2v-2m3-1h2v2h-2v-2Z"/>`
 	diamondPath                          = `<path fill="currentColor" d="M6 2h10v1h1v1h1v1h1v1h1v6h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v-1H9v-1H8v-1H7v-1H6v-1H5v-1H4v-1H3v-1H2V6h1V5h1V4h1V3h1V2m9 3V4h-1v2h1v1h2V6h-1V5h-1m-3 1V4h-2v2H9v1h4V6h-1M8 6V4H7v1H6v1H5v1h2V6h1m-4 5h1v1h1v1h1v1h1v-2H7V9H4v2m6 1v4h2v-4h1V9H9v3h1m4 0v2h1v-1h1v-1h1v-1h1V9h-3v3h-1Z"/>`
@@ -251,6 +282,19 @@ const (
 	floppyDiskPath                       = `<path fill="currentColor" d="M2 3h1V2h13v1h1v1h1v1h1v1h1v13h-1v1H3v-1H2V3m16 4h-1V6h-1V5h-1v4H6V4H4v14h2v-5h10v5h2V7m-7-3v3h2V4h-2m3 14v-3H8v3h6Z"/>`
 	folderPath                           = `<path fill="currentColor" d="M2 3h7v1h1v1h10v1h1v12h-1v1H2v-1H1V4h1V3m1 4v10h16V7H3Z"/>`
 	folderOpenPath                       = `<path fill="currentColor" d="M1 4h1V3h7v1h1v1h10v1h1v12h-1v1H2v-1H1V4m2 5h16V7H9V6H8V5H3v4m0 8h16v-6H3v6Z"/>`
+	formatAlignBottomPath                = `<path fill="currentColor" d="M12 11h-2v-1H9V9H8V8H7V7H6V6h4V2h2v4h4v1h-1v1h-1v1h-1v1h-1m6 5H4v-2h14m-4 5H4v-2h10Z"/>`
+	formatAlignCenterPath                = `<path fill="currentColor" d="M18 6H4V4h14m-3 5H7V7h8m3 5H4v-2h14m-3 5H7v-2h8m3 5H4v-2h14Z"/>`
+	formatAlignJustifyPath               = `<path fill="currentColor" d="M18 6H4V4h14m0 5H4V7h14m0 5H4v-2h14m0 5H4v-2h14m0 5H4v-2h14Z"/>`
+	formatAlignLeftPath                  = `<path fill="currentColor" d="M18 6H4V4h14m-4 5H4V7h10m4 5H4v-2h14m-4 5H4v-2h10m4 5H4v-2h14Z"/>`
+	formatAlignRightPath                 = `<path fill="currentColor" d="M18 6H4V4h14m0 5H8V7h10m0 5H4v-2h14m0 5H8v-2h10m0 5H4v-2h14Z"/>`
+	formatAlignTopPath                   = `<path fill="currentColor" d="M18 6H4V4h14m-4 5H4V7h10m-2 13h-2v-4H6v-1h1v-1h1v-1h1v-1h1v-1h2v1h1v1h1v1h1v1h1v1h-4Z"/>`
+	formatBoldPath                       = `<path fill="currentColor" d="M15 19H6v-2h1V5H6V3h7v1h1v1h1v1h1v4h-1v2h1v1h1v4h-1v1h-1m-3-8V9h1V7h-1V6h-2v4m3 6v-1h1v-1h-1v-1h-3v3Z"/>`
+	formatFloatLeftPath                  = `<path fill="currentColor" d="M18 6H4V4h14m-2 5h-6V7h6m-7 5H4V7h5m9 5h-8v-2h8m-2 5H4v-2h12m2 5H4v-2h14Z"/>`
+	formatFloatRightPath                 = `<path fill="currentColor" d="M18 6H4V4h14m-2 5h-6V7h6m-7 5H4V7h5m9 5h-8v-2h8m-2 5H4v-2h12m2 5H4v-2h14Z"/>`
+	formatHorizontalAlignCenterPath      = `<path fill="currentColor" d="M6 15H5v-3H2v-2h3V7h1v1h1v1h1v1h1v2H8v1H7v1H6m11 1h-1v-1h-1v-1h-1v-1h-1v-2h1V9h1V8h1V7h1v3h3v2h-3m-5 6h-2V4h2Z"/>`
+	formatItalicPath                     = `<path fill="currentColor" d="M12 19H4v-2h3v-1h1v-2h1v-2h1v-2h1V8h1V5h-2V3h8v2h-3v1h-1v2h-1v2h-1v2h-1v2h-1v3h2Z"/>`
+	formatLineSpacingPath                = `<path fill="currentColor" d="M20 7h-9V5h9m0 7h-9v-2h9m0 7h-9v-2h9M7 19H5v-1H4v-1H3v-1H2v-1h3V7H2V6h1V5h1V4h1V3h2v1h1v1h1v1h1v1H7v8h3v1H9v1H8v1H7Z"/>`
+	formatVerticalAlignCenterPath        = `<path fill="currentColor" d="M12 9h-2V8H9V7H8V6H7V5h3V2h2v3h3v1h-1v1h-1v1h-1m6 4H4v-2h14m-6 10h-2v-3H7v-1h1v-1h1v-1h1v-1h2v1h1v1h1v1h1v1h-3Z"/>`
 	gamepadCenterPath                    = `<path fill="currentColor" d="M14 1v1h1v5h5v1h1v6h-1v1h-5v5h-1v1H8v-1H7v-5H2v-1H1V8h1V7h5V2h1V1h6m-1 7H9v1H8v4h1v1h4v-1h1V9h-1V8Z"/>`
 	gamepadDownPath                      = `<path fill="currentColor" d="M14 1v1h1v5h5v1h1v6h-1v1h-5v5h-1v1H8v-1H7v-5H2v-1H1V8h1V7h5V2h1V1h6m-1 14H9v4h4v-4Z"/>`
 	gamepadDownLeftPath                  = `<path fill="currentColor" d="M14 1v1h1v5h5v1h1v6h-1v1h-5v5h-1v1H8v-1H7v-5H2v-1H1V8h1V7h5V2h1V1h6M7 9H3v4h4V9m2 6v4h4v-4H9Z"/>`
@@ -262,6 +306,7 @@ const (
 	gamepadUpLeftPath                    = `<path fill="currentColor" d="M14 1v1h1v5h5v1h1v6h-1v1h-5v5h-1v1H8v-1H7v-5H2v-1H1V8h1V7h5V2h1V1h6M7 9H3v4h4V9m2-6v4h4V3H9Z"/>`
 	gamepadUpRightPath                   = `<path fill="currentColor" d="M14 1v1h1v5h5v1h1v6h-1v1h-5v5h-1v1H8v-1H7v-5H2v-1H1V8h1V7h5V2h1V1h6m5 8h-4v4h4V9M9 3v4h4V3H9Z"/>`
 	heartPath                            = `<path fill="currentColor" d="M12 20h-2v-1H9v-1H8v-1H7v-1H6v-1H5v-1H4v-1H3v-1H2v-2H1V5h1V4h1V3h1V2h5v1h1v1h2V3h1V2h5v1h1v1h1v1h1v5h-1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1m-7-9v1h1v1h1v1h1v1h1v1h1v1h2v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1V9h1V6h-1V5h-1V4h-3v1h-1v1h-1v1h-2V6H9V5H8V4H5v1H4v1H3v3h1v2h1Z"/>`
+	heartBrokenPath                      = `<path fill="currentColor" d="M14 14h1v-1h1v-1h1v-1h1V9h1V6h-1V5h-1V4h-3v5h-1v2h1Zm-6 1h1v-2H8v-1H7V8h1V6h1V5H8V4H5v1H4v1H3v3h1v2h1v1h1v1h1v1h1Zm6 3h-1v-1h-1v-5h-1V8h1V3h1V2h5v1h1v1h1v1h1v5h-1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1Zm-2 2h-2v-1H9v-1H8v-1H7v-1H6v-1H5v-1H4v-1H3v-1H2v-2H1V5h1V4h1V3h1V2h5v1h1v1h1v3h-1v2H9v2h1v2h1v5h1Z"/>`
 	imagePath                            = `<path fill="currentColor" d="M1 4h1V3h18v1h1v14h-1v1H2v-1H1V4m2 10h1v-1h1v-1h1v-1h1v-1h1V9h2v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h2V5H3v9m11 3v-1h-1v-1h-1v-1h-1v-1h-1v-1H8v1H7v1H6v1H5v1H4v1h10m-1-9h1V7h2v1h1v2h-1v1h-2v-1h-1V8Z"/>`
 	labelPath                            = `<path fill="currentColor" d="M2 4h13v1h1v1h1v1h1v1h1v1h1v1h1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1H2v-1H1V5h1V4m14 9h1v-1h1v-2h-1V9h-1V8h-1V7h-1V6H3v10h11v-1h1v-1h1v-1Z"/>`
 	labelVariantPath                     = `<path fill="currentColor" d="M15 4v1h1v1h1v1h1v1h1v1h1v1h1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1H2v-2h1v-1h1v-1h1v-1h1v-1h1v-2H6V9H5V8H4V7H3V6H2V4h13m-1 12v-1h1v-1h1v-1h1v-1h1v-2h-1V9h-1V8h-1V7h-1V6H6v1h1v1h1v1h1v1h1v2H9v1H8v1H7v1H6v1h8Z"/>`
@@ -305,6 +350,7 @@ const (
 	notificationPath                     = `<path fill="currentColor" d="M12 20v1h-2v-1H8v-2h6v2h-2M2 15h1v-1h1V6h1V4h1V3h2V2h2V1h2v1h2v1h2v1h1v2h1v8h1v1h1v2H2v-2m4 0h10V7h-1V5h-2V4H9v1H7v2H6v8Z"/>`
 	octagonPath                          = `<path fill="currentColor" d="M2 6h1V5h1V4h1V3h1V2h1V1h8v1h1v1h1v1h1v1h1v1h1v1h1v8h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1H7v-1H6v-1H5v-1H4v-1H3v-1H2v-1H1V7h1V6m13 11h1v-1h1v-1h1v-1h1V8h-1V7h-1V6h-1V5h-1V4h-1V3H8v1H7v1H6v1H5v1H4v1H3v6h1v1h1v1h1v1h1v1h1v1h6v-1h1v-1Z"/>`
 	octagonAlertPath                     = `<path fill="currentColor" d="M2 6h1V5h1V4h1V3h1V2h1V1h8v1h1v1h1v1h1v1h1v1h1v1h1v8h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1H7v-1H6v-1H5v-1H4v-1H3v-1H2v-1H1V7h1V6m13 11h1v-1h1v-1h1v-1h1V8h-1V7h-1V6h-1V5h-1V4h-1V3H8v1H7v1H6v1H5v1H4v1H3v6h1v1h1v1h1v1h1v1h1v1h6v-1h1v-1M10 6h2v7h-2V6m0 8h2v2h-2v-2Z"/>`
+	paperclipPath                        = `<path fill="currentColor" d="M15 21H8v-1H7v-1H6V3h1V2h1V1h4v1h1v1h1v14h-1v1h-3v-1H9V5h2v11h1V4h-1V3H9v1H8v14h1v1h5v-1h1V5h2v14h-1v1h-1Z"/>`
 	pausePath                            = `<path fill="currentColor" d="M6 4h3v14H6V4m7 14V4h3v14h-3Z"/>`
 	pencilPath                           = `<path fill="currentColor" d="M16 2h1v1h1v1h1v1h1v1h-1v1h-1v1h-1V7h-1V6h-1V5h-1V4h1V3h1m-4 3h2v1h1v1h1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1H9v1H8v1H7v1H6v1H2v-4h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1V9h1V8h1V7h1"/>`
 	pickaxePath                          = `<path fill="currentColor" d="M8 2h3v1h2v1h2v1h2v2h1v2h1v2h1v3h-2v-2h-1v-1h-1v-1h-2V9h-1V8h-1V6h-1V5h-1V4H8m3 5h1v1h1v1h-1v1h-1v1h-1v1H9v1H8v1H7v1H6v1H5v1H4v1H3v1H2v-1H1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1"/>`
@@ -325,13 +371,16 @@ const (
 	skullPath                            = `<path fill="currentColor" d="M6 2h2V1h6v1h2v1h1v1h1v1h1v2h1v7h-1v2h-1v4h-1v1H5v-1H4v-4H3v-2H2V8h1V5h1V4h1V3h1V2m9 3V4h-2V3H9v1H7v1H6v1H5v3H4v4h1v2h1v4h2v-2h2v2h2v-2h2v2h2v-4h1v-2h1V8h-1V6h-1V5h-1M7 8h3v3H7V8m5 3V8h3v3h-3m-2 2h2v2h-2v-2Z"/>`
 	speakerPath                          = `<path fill="currentColor" d="M4 1h14v1h1v18h-1v1H4v-1H3V2h1V1m1 2v16h12V3H5m4 2h1V4h2v1h1v2h-1v1h-2V7H9V5m0 13v-1H8v-1H7v-4h1v-1h1v-1h4v1h1v1h1v4h-1v1h-1v1H9m1-5H9v2h1v1h2v-1h1v-2h-1v-1h-2v1Z"/>`
 	stopPath                             = `<path fill="currentColor" d="M16 5v1h1v10h-1v1H6v-1H5V6h1V5h10M7 7v8h8V7H7Z"/>`
-	swordPath                            = `<path fill="currentColor" d="M8 3v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v-1h2v2h-1v1h-1v1h1v1h1v1h1v2h-1v1h-2v-1h-1v-1h-1v-1h-1v1h-1v1h-2v-2h1v-1h-1v-1h-1v-1H9v-1H8v-1H7v-1H6v-1H5V9H4V8H3V7H2V2h5v1h1M7 5H6V4H4v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h2v-1h-1v-1h-1v-1h-1V9h-1V8H9V7H8V6H7V5Z"/>`
+	swordPath                            = `<path fill="currentColor" d="M5 20H3v-1H2v-2h1v-1h1v-1h1v-1H4v-1H3v-2h2v1h1v-1h1v-1h1V9h1V8h1V7h1V6h1V5h1V4h1V3h1V2h5v5h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h1v2H9v-1H8v-1H7v1H6v1H5m5-6v-1h1v-1h1v-1h1V9h1V8h1V7h1V6h1V5h1V4h-2v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1H9v1H8v1Z"/>`
 	tagPath                              = `<path fill="currentColor" d="M1 2h1V1h9v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v-1h-1v-1H9v-1H8v-1H7v-1H6v-1H5v-1H4v-1H3v-1H2v-1H1V2m2 8h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h2v-1h1v-1h1v-1h1v-1h1v-1h1v-2h-1v-1h-1V9h-1V8h-1V7h-1V6h-1V5h-1V4h-1V3H3v7m2-6h2v1h1v2H7v1H5V7H4V5h1V4Z"/>`
 	tagTextPath                          = `<path fill="currentColor" d="M1 2h1V1h9v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v2h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-2v-1h-1v-1H9v-1H8v-1H7v-1H6v-1H5v-1H4v-1H3v-1H2v-1H1V2m2 8h1v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h2v-1h1v-1h1v-1h1v-1h1v-1h1v-2h-1v-1h-1V9h-1V8h-1V7h-1V6h-1V5h-1V4h-1V3H3v7m11 1h1v2h-1v-1h-1v-1h-1v-1h-1V9h-1V7h1v1h1v1h1v1h1v1m-4 1h1v1h1v2h-1v-1h-1v-1H9v-1H8v-2h1v1h1v1M5 4h2v1h1v2H7v1H5V7H4V5h1V4Z"/>`
 	targetPath                           = `<path fill="currentColor" d="M12 13h-2v-1H9v-2h1V9h2v1h1v2h-1Zm2 4H8v-1H7v-1H6v-1H5V8h1V7h1V6h1V5h6v1h1v1h1v1h1v6h-1v1h-1v1h-1Zm1 4H7v-1H5v-1H4v-1H3v-1H2v-2H1V7h1V5h1V4h1V3h1V2h2V1h8v1h2v1h1v1h1v1h1v2h1v8h-1v2h-1v1h-1v1h-1v1h-2Zm-2-6v-1h1v-1h1V9h-1V8h-1V7H9v1H8v1H7v4h1v1h1v1Zm1 4v-1h2v-1h1v-1h1v-2h1V8h-1V6h-1V5h-1V4h-2V3H8v1H6v1H5v1H4v2H3v6h1v2h1v1h1v1h2v1Z"/>`
 	terminalPath                         = `<path fill="currentColor" d="M20 3v16h-1v1H3v-1H2V3h1V2h16v1h1m-2 3H4v12h14V6M9 9v1h1v1h1v2h-1v1H9v1H8v1H6v-2h1v-1h1v-2H7v-1H6V8h2v1h1m2 7v-2h5v2h-5Z"/>`
 	textBoxPath                          = `<path fill="currentColor" d="M4 2h14v1h1v1h1v14h-1v1h-1v1H4v-1H3v-1H2V4h1V3h1V2m13 3V4H5v1H4v12h1v1h12v-1h1V5h-1M6 8h10v2H6V8m0 4h7v2H6v-2Z"/>`
 	textImagePath                        = `<path fill="currentColor" d="M2 4h10v10H2V4m2 2v6h6V6H4m10-2h6v2h-6V4m0 4h6v2h-6V8m0 4h6v2h-6v-2M2 16h16v2H2v-2Z"/>`
+	tileCautionHeavyPath                 = `<path fill="currentColor" d="M2 10H0V6h1V5h2V4h2V3h2V2h2V1h2V0h9v1h-2v1h-2v1h-2v1h-2v1h-2v1H8v1H6v1H4v1H2m0 12H0v-4h1v-1h2v-1h2v-1h2v-1h2v-1h2v-1h2v-1h2V9h2V8h2V7h2V6h1v5h-2v1h-2v1h-2v1h-2v1h-2v1h-2v1H8v1H6v1H4v1H2m20 2h-9v-1h2v-1h2v-1h2v-1h2v-1h1Z"/>`
+	tileCautionThinPath                  = `<path fill="currentColor" d="M2 10H0V8h1V7h2V6h2V5h2V4h2V3h2V2h2V1h2V0h5v1h-2v1h-2v1h-2v1h-2v1h-2v1H8v1H6v1H4v1H2m0 12H0v-2h1v-1h2v-1h2v-1h2v-1h2v-1h2v-1h2v-1h2v-1h2v-1h2V9h2V8h1v3h-2v1h-2v1h-2v1h-2v1h-2v1h-2v1H8v1H6v1H4v1H2m20 2h-5v-1h2v-1h2v-1h1Z"/>`
+	tileDiamondHexPath                   = `<path fill="currentColor" d="M12 22h-2v-4H9v-1H8v-1H7v-1H6v-1H5v-1H4v-1H0v-2h4V9h1V8h1V7h1V6h1V5h1V4h1V0h2v4h1v1h1v1h1v1h1v1h1v1h1v1h4v2h-4v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1m0-2v-1h1v-1h1v-1h1v-1h1v-2h-1V9h-1V8h-1V7h-1V6h-2v1H9v1H8v1H7v1H6v2h1v1h1v1h1v1h1v1Z"/>`
 	toggleSwitchOffPath                  = `<path fill="currentColor" d="M5 8h4v1h1v4H9v1H5v-1H4V9h1V8m14-3v1h1v1h1v8h-1v1h-1v1H3v-1H2v-1H1V7h1V6h1V5h16m-1 2H4v1H3v6h1v1h14v-1h1V8h-1V7Z"/>`
 	toggleSwitchOnPath                   = `<path fill="currentColor" d="M3 5h16v1h1v1h1v8h-1v1h-1v1H3v-1H2v-1H1V7h1V6h1V5m10 3v1h-1v4h1v1h4v-1h1V9h-1V8h-4Z"/>`
 	toolboxPath                          = `<path fill="currentColor" d="M2 6h5V3h1V2h6v1h1v3h5v1h1v12h-1v1H2v-1H1V7h1V6m7 0h4V4H9v2m10 2H3v4h3v-2h3v2h4v-2h3v2h3V8M3 18h16v-4h-3v2h-3v-2H9v2H6v-2H3v4Z"/>`
@@ -355,7 +404,8 @@ const (
 	volumeMutePath                       = `<path fill="currentColor" d="M12 7h2v1h1v1h2V8h1V7h2v2h-1v1h-1v2h1v1h1v2h-2v-1h-1v-1h-2v1h-1v1h-2v-2h1v-1h1v-2h-1V9h-1V7M6 8V7h1V6h1V5h1V4h1V3h1v16h-1v-1H9v-1H8v-1H7v-1H6v-1H2V8h4m1 2H4v2h3v1h1v1h1V8H8v1H7v1Z"/>`
 	wallPath                             = `<path fill="currentColor" d="M19 20H4v-5H1V7h3V2h15v5h2v8h-2ZM12 7V4H6v3Zm5 0V4h-3v3Zm-9 6V9H3v4Zm11 0V9h-9v4Zm-8 5v-3H6v3Zm6 0v-3h-4v3Z"/>`
 	wallFillPath                         = `<path fill="currentColor" d="M5 3h6v4H5m8-4h5v4h-5m-8 8v4h6v-4m2 0h5v4h-5M8 9H3v4h5m2-4h10v4H10"/>`
-	waterPath                            = `<path fill="currentColor" d="M14 21H8v-1H6v-1H5v-1H4v-2H3v-3h1v-2h1V9h1V7h1V6h1V4h1V3h1V1h2v2h1v1h1v2h1v1h1v2h1v2h1v2h1v3h-1v2h-1v1h-1v1h-2Z"/>`
+	waterPath                            = `<path fill="currentColor" d="M14 21H8v-1H6v-1H5v-1H4v-2H3v-3h1v-2h1V9h1V7h1V6h1V4h1V3h1V1h2v2h1v1h1v2h1v1h1v2h1v2h1v2h1v3h-1v2h-1v1h-1v1h-2Zm-1-2v-1h2v-1h1v-2h1v-1h-1v-2h-1v-2h-1V8h-1V7h-1V5h-2v2H9v1H8v2H7v2H6v2H5v1h1v2h1v1h2v1Z"/>`
+	waterFillPath                        = `<path fill="currentColor" d="M14 21H8v-1H6v-1H5v-1H4v-2H3v-3h1v-2h1V9h1V7h1V6h1V4h1V3h1V1h2v2h1v1h1v2h1v1h1v2h1v2h1v2h1v3h-1v2h-1v1h-1v1h-2Z"/>`
 	wellPath                             = `<path fill="currentColor" d="M19 21H3v-5H1v-2h20v2h-2v5M5 16v3h12v-3H5M2 7V5h1V4h1V3h1V2h1V1h10v1h1v1h1v1h1v1h1v2h-2v6h-2V7h-4v2h2v4H8V9h2V7H6v6H4V7H2m5-4v1H6v1h10V4h-1V3H7Z"/>`
 )
 
@@ -384,6 +434,22 @@ func IconFromName(name string) g.Node {
 		return AlertRhombus()
 	case "alertRhombusFill":
 		return AlertRhombusFill()
+	case "alignHorizontalCenter":
+		return AlignHorizontalCenter()
+	case "alignHorizontalDistribute":
+		return AlignHorizontalDistribute()
+	case "alignHorizontalLeft":
+		return AlignHorizontalLeft()
+	case "alignHorizontalRight":
+		return AlignHorizontalRight()
+	case "alignVerticalBottom":
+		return AlignVerticalBottom()
+	case "alignVerticalCenter":
+		return AlignVerticalCenter()
+	case "alignVerticalDistribute":
+		return AlignVerticalDistribute()
+	case "alignVerticalTop":
+		return AlignVerticalTop()
 	case "alphaA":
 		return AlphaA()
 	case "alphaAFill":
@@ -562,6 +628,8 @@ func IconFromName(name string) g.Node {
 		return BagPersonal()
 	case "bagPersonalFill":
 		return BagPersonalFill()
+	case "bank":
+		return Bank()
 	case "batteryFifty":
 		return BatteryFifty()
 	case "batteryOneHundred":
@@ -574,6 +642,8 @@ func IconFromName(name string) g.Node {
 		return BatteryZero()
 	case "battleAxe":
 		return BattleAxe()
+	case "blood":
+		return Blood()
 	case "book":
 		return Book()
 	case "bookmark":
@@ -648,6 +718,16 @@ func IconFromName(name string) g.Node {
 		return BoxLightDownRightCircle()
 	case "boxLightHorizontal":
 		return BoxLightHorizontal()
+	case "boxLightHorizontalCircle":
+		return BoxLightHorizontalCircle()
+	case "boxLightHorizontalMenuDown":
+		return BoxLightHorizontalMenuDown()
+	case "boxLightHorizontalMenuLeft":
+		return BoxLightHorizontalMenuLeft()
+	case "boxLightHorizontalMenuRight":
+		return BoxLightHorizontalMenuRight()
+	case "boxLightHorizontalMenuUp":
+		return BoxLightHorizontalMenuUp()
 	case "boxLightRoundDownLeft":
 		return BoxLightRoundDownLeft()
 	case "boxLightRoundDownRight":
@@ -666,6 +746,16 @@ func IconFromName(name string) g.Node {
 		return BoxLightUpRightCircle()
 	case "boxLightVertical":
 		return BoxLightVertical()
+	case "boxLightVerticalCircle":
+		return BoxLightVerticalCircle()
+	case "boxLightVerticalMenuDown":
+		return BoxLightVerticalMenuDown()
+	case "boxLightVerticalMenuLeft":
+		return BoxLightVerticalMenuLeft()
+	case "boxLightVerticalMenuRight":
+		return BoxLightVerticalMenuRight()
+	case "boxLightVerticalMenuUp":
+		return BoxLightVerticalMenuUp()
 	case "boxOuterLightAll":
 		return BoxOuterLightAll()
 	case "boxOuterLightDashedAll":
@@ -766,6 +856,14 @@ func IconFromName(name string) g.Node {
 		return CheckboxCross()
 	case "checkboxMarked":
 		return CheckboxMarked()
+	case "checkerLarge":
+		return CheckerLarge()
+	case "checkerMedium":
+		return CheckerMedium()
+	case "checkerSmall":
+		return CheckerSmall()
+	case "checkerboard":
+		return Checkerboard()
 	case "chevronDown":
 		return ChevronDown()
 	case "chevronDownCircle":
@@ -790,6 +888,16 @@ func IconFromName(name string) g.Node {
 		return Clock()
 	case "coffee":
 		return Coffee()
+	case "coinCopper":
+		return CoinCopper()
+	case "coinElectrum":
+		return CoinElectrum()
+	case "coinGold":
+		return CoinGold()
+	case "coinPlatinum":
+		return CoinPlatinum()
+	case "coinSilver":
+		return CoinSilver()
 	case "comment":
 		return Comment()
 	case "commentText":
@@ -816,8 +924,12 @@ func IconFromName(name string) g.Node {
 		return CreditCard()
 	case "crown":
 		return Crown()
+	case "cube":
+		return Cube()
 	case "cubeUnfolded":
 		return CubeUnfolded()
+	case "dagger":
+		return Dagger()
 	case "database":
 		return Database()
 	case "device":
@@ -854,6 +966,32 @@ func IconFromName(name string) g.Node {
 		return Folder()
 	case "folderOpen":
 		return FolderOpen()
+	case "formatAlignBottom":
+		return FormatAlignBottom()
+	case "formatAlignCenter":
+		return FormatAlignCenter()
+	case "formatAlignJustify":
+		return FormatAlignJustify()
+	case "formatAlignLeft":
+		return FormatAlignLeft()
+	case "formatAlignRight":
+		return FormatAlignRight()
+	case "formatAlignTop":
+		return FormatAlignTop()
+	case "formatBold":
+		return FormatBold()
+	case "formatFloatLeft":
+		return FormatFloatLeft()
+	case "formatFloatRight":
+		return FormatFloatRight()
+	case "formatHorizontalAlignCenter":
+		return FormatHorizontalAlignCenter()
+	case "formatItalic":
+		return FormatItalic()
+	case "formatLineSpacing":
+		return FormatLineSpacing()
+	case "formatVerticalAlignCenter":
+		return FormatVerticalAlignCenter()
 	case "gamepadCenter":
 		return GamepadCenter()
 	case "gamepadDown":
@@ -876,6 +1014,8 @@ func IconFromName(name string) g.Node {
 		return GamepadUpRight()
 	case "heart":
 		return Heart()
+	case "heartBroken":
+		return HeartBroken()
 	case "image":
 		return Image()
 	case "label":
@@ -962,6 +1102,8 @@ func IconFromName(name string) g.Node {
 		return Octagon()
 	case "octagonAlert":
 		return OctagonAlert()
+	case "paperclip":
+		return Paperclip()
 	case "pause":
 		return Pause()
 	case "pencil":
@@ -1016,6 +1158,12 @@ func IconFromName(name string) g.Node {
 		return TextBox()
 	case "textImage":
 		return TextImage()
+	case "tileCautionHeavy":
+		return TileCautionHeavy()
+	case "tileCautionThin":
+		return TileCautionThin()
+	case "tileDiamondHex":
+		return TileDiamondHex()
 	case "toggleSwitchOff":
 		return ToggleSwitchOff()
 	case "toggleSwitchOn":
@@ -1064,6 +1212,8 @@ func IconFromName(name string) g.Node {
 		return WallFill()
 	case "water":
 		return Water()
+	case "waterFill":
+		return WaterFill()
 	case "well":
 		return Well()
 	default:
@@ -1105,6 +1255,38 @@ func AlertRhombus(children ...g.Node) g.Node {
 
 func AlertRhombusFill(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(alertRhombusFillPath), g.Group(children))
+}
+
+func AlignHorizontalCenter(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(alignHorizontalCenterPath), g.Group(children))
+}
+
+func AlignHorizontalDistribute(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(alignHorizontalDistributePath), g.Group(children))
+}
+
+func AlignHorizontalLeft(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(alignHorizontalLeftPath), g.Group(children))
+}
+
+func AlignHorizontalRight(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(alignHorizontalRightPath), g.Group(children))
+}
+
+func AlignVerticalBottom(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(alignVerticalBottomPath), g.Group(children))
+}
+
+func AlignVerticalCenter(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(alignVerticalCenterPath), g.Group(children))
+}
+
+func AlignVerticalDistribute(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(alignVerticalDistributePath), g.Group(children))
+}
+
+func AlignVerticalTop(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(alignVerticalTopPath), g.Group(children))
 }
 
 func AlphaA(children ...g.Node) g.Node {
@@ -1463,6 +1645,10 @@ func BagPersonalFill(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(bagPersonalFillPath), g.Group(children))
 }
 
+func Bank(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(bankPath), g.Group(children))
+}
+
 func BatteryFifty(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(batteryFiftyPath), g.Group(children))
 }
@@ -1485,6 +1671,10 @@ func BatteryZero(children ...g.Node) g.Node {
 
 func BattleAxe(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(battleAxePath), g.Group(children))
+}
+
+func Blood(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(bloodPath), g.Group(children))
 }
 
 func Book(children ...g.Node) g.Node {
@@ -1635,6 +1825,26 @@ func BoxLightHorizontal(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(boxLightHorizontalPath), g.Group(children))
 }
 
+func BoxLightHorizontalCircle(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(boxLightHorizontalCirclePath), g.Group(children))
+}
+
+func BoxLightHorizontalMenuDown(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(boxLightHorizontalMenuDownPath), g.Group(children))
+}
+
+func BoxLightHorizontalMenuLeft(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(boxLightHorizontalMenuLeftPath), g.Group(children))
+}
+
+func BoxLightHorizontalMenuRight(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(boxLightHorizontalMenuRightPath), g.Group(children))
+}
+
+func BoxLightHorizontalMenuUp(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(boxLightHorizontalMenuUpPath), g.Group(children))
+}
+
 func BoxLightRoundDownLeft(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(boxLightRoundDownLeftPath), g.Group(children))
 }
@@ -1669,6 +1879,26 @@ func BoxLightUpRightCircle(children ...g.Node) g.Node {
 
 func BoxLightVertical(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(boxLightVerticalPath), g.Group(children))
+}
+
+func BoxLightVerticalCircle(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(boxLightVerticalCirclePath), g.Group(children))
+}
+
+func BoxLightVerticalMenuDown(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(boxLightVerticalMenuDownPath), g.Group(children))
+}
+
+func BoxLightVerticalMenuLeft(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(boxLightVerticalMenuLeftPath), g.Group(children))
+}
+
+func BoxLightVerticalMenuRight(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(boxLightVerticalMenuRightPath), g.Group(children))
+}
+
+func BoxLightVerticalMenuUp(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(boxLightVerticalMenuUpPath), g.Group(children))
 }
 
 func BoxOuterLightAll(children ...g.Node) g.Node {
@@ -1871,6 +2101,22 @@ func CheckboxMarked(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(checkboxMarkedPath), g.Group(children))
 }
 
+func CheckerLarge(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(checkerLargePath), g.Group(children))
+}
+
+func CheckerMedium(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(checkerMediumPath), g.Group(children))
+}
+
+func CheckerSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(checkerSmallPath), g.Group(children))
+}
+
+func Checkerboard(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(checkerboardPath), g.Group(children))
+}
+
 func ChevronDown(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(chevronDownPath), g.Group(children))
 }
@@ -1917,6 +2163,26 @@ func Clock(children ...g.Node) g.Node {
 
 func Coffee(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(coffeePath), g.Group(children))
+}
+
+func CoinCopper(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(coinCopperPath), g.Group(children))
+}
+
+func CoinElectrum(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(coinElectrumPath), g.Group(children))
+}
+
+func CoinGold(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(coinGoldPath), g.Group(children))
+}
+
+func CoinPlatinum(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(coinPlatinumPath), g.Group(children))
+}
+
+func CoinSilver(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(coinSilverPath), g.Group(children))
 }
 
 func Comment(children ...g.Node) g.Node {
@@ -1971,8 +2237,16 @@ func Crown(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(crownPath), g.Group(children))
 }
 
+func Cube(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(cubePath), g.Group(children))
+}
+
 func CubeUnfolded(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(cubeUnfoldedPath), g.Group(children))
+}
+
+func Dagger(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(daggerPath), g.Group(children))
 }
 
 func Database(children ...g.Node) g.Node {
@@ -2047,6 +2321,58 @@ func FolderOpen(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(folderOpenPath), g.Group(children))
 }
 
+func FormatAlignBottom(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(formatAlignBottomPath), g.Group(children))
+}
+
+func FormatAlignCenter(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(formatAlignCenterPath), g.Group(children))
+}
+
+func FormatAlignJustify(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(formatAlignJustifyPath), g.Group(children))
+}
+
+func FormatAlignLeft(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(formatAlignLeftPath), g.Group(children))
+}
+
+func FormatAlignRight(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(formatAlignRightPath), g.Group(children))
+}
+
+func FormatAlignTop(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(formatAlignTopPath), g.Group(children))
+}
+
+func FormatBold(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(formatBoldPath), g.Group(children))
+}
+
+func FormatFloatLeft(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(formatFloatLeftPath), g.Group(children))
+}
+
+func FormatFloatRight(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(formatFloatRightPath), g.Group(children))
+}
+
+func FormatHorizontalAlignCenter(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(formatHorizontalAlignCenterPath), g.Group(children))
+}
+
+func FormatItalic(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(formatItalicPath), g.Group(children))
+}
+
+func FormatLineSpacing(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(formatLineSpacingPath), g.Group(children))
+}
+
+func FormatVerticalAlignCenter(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(formatVerticalAlignCenterPath), g.Group(children))
+}
+
 func GamepadCenter(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(gamepadCenterPath), g.Group(children))
 }
@@ -2089,6 +2415,10 @@ func GamepadUpRight(children ...g.Node) g.Node {
 
 func Heart(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(heartPath), g.Group(children))
+}
+
+func HeartBroken(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(heartBrokenPath), g.Group(children))
 }
 
 func Image(children ...g.Node) g.Node {
@@ -2263,6 +2593,10 @@ func OctagonAlert(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(octagonAlertPath), g.Group(children))
 }
 
+func Paperclip(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(paperclipPath), g.Group(children))
+}
+
 func Pause(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(pausePath), g.Group(children))
 }
@@ -2371,6 +2705,18 @@ func TextImage(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(textImagePath), g.Group(children))
 }
 
+func TileCautionHeavy(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(tileCautionHeavyPath), g.Group(children))
+}
+
+func TileCautionThin(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(tileCautionThinPath), g.Group(children))
+}
+
+func TileDiamondHex(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(tileDiamondHexPath), g.Group(children))
+}
+
 func ToggleSwitchOff(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(toggleSwitchOffPath), g.Group(children))
 }
@@ -2465,6 +2811,10 @@ func WallFill(children ...g.Node) g.Node {
 
 func Water(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(waterPath), g.Group(children))
+}
+
+func WaterFill(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(waterFillPath), g.Group(children))
 }
 
 func Well(children ...g.Node) g.Node {

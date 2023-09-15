@@ -293,6 +293,8 @@ const (
 	fileZipPath                             = `<path fill-rule="evenodd" d="M8.5 1H1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4.5L8.5 1zM11 14H1V2h3v1h1V2h3l3 3v9zM5 4V3h1v1H5zM4 4h1v1H4V4zm1 2V5h1v1H5zM4 6h1v1H4V6zm1 2V7h1v1H5zM4 9.28A2 2 0 0 0 3 11v1h4v-1a2 2 0 0 0-2-2V8H4v1.28zM6 10v1H4v-1h2z" fill="currentColor"/>`
 	fileZipSixteenPath                      = `<path fill="currentColor" d="M3.5 1.75v11.5c0 .09.048.173.126.217a.75.75 0 0 1-.752 1.298A1.748 1.748 0 0 1 2 13.25V1.75C2 .784 2.784 0 3.75 0h5.586c.464 0 .909.185 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 12.25 15h-.5a.75.75 0 0 1 0-1.5h.5a.25.25 0 0 0 .25-.25V4.664a.25.25 0 0 0-.073-.177L9.513 1.573a.25.25 0 0 0-.177-.073H7.25a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5h-3a.25.25 0 0 0-.25.25Zm3.75 8.75h.5c.966 0 1.75.784 1.75 1.75v3a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1-.75-.75v-3c0-.966.784-1.75 1.75-1.75ZM6 5.25a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 6 5.25Zm.75 2.25h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM8 6.75A.75.75 0 0 1 8.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 8 6.75ZM8.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM8 9.75A.75.75 0 0 1 8.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 8 9.75Zm-1 2.5v2.25h1v-2.25a.25.25 0 0 0-.25-.25h-.5a.25.25 0 0 0-.25.25Z"/>`
 	fileZipTwentyFourPath                   = `<path fill="currentColor" d="M5 2.5a.5.5 0 0 0-.5.5v18a.5.5 0 0 0 .5.5h1.75a.75.75 0 0 1 0 1.5H5a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h9.982a2 2 0 0 1 1.414.586l4.018 4.018A2 2 0 0 1 21 7.018V21a2 2 0 0 1-2 2h-2.75a.75.75 0 0 1 0-1.5H19a.5.5 0 0 0 .5-.5V7.018a.5.5 0 0 0-.146-.354l-4.018-4.018a.5.5 0 0 0-.354-.146H5Z"/><path fill="currentColor" d="M11.5 15.75a.75.75 0 0 1 .75-.75h1a.75.75 0 0 1 0 1.5h-1a.75.75 0 0 1-.75-.75Zm.75-3.75a.75.75 0 0 0 0 1.5h1a.75.75 0 0 0 0-1.5h-1Zm-.75-2.25a.75.75 0 0 1 .75-.75h1a.75.75 0 0 1 0 1.5h-1a.75.75 0 0 1-.75-.75ZM12.25 6a.75.75 0 0 0 0 1.5h1a.75.75 0 0 0 0-1.5h-1Zm-.75-2.25a.75.75 0 0 1 .75-.75h1a.75.75 0 0 1 0 1.5h-1a.75.75 0 0 1-.75-.75ZM9.75 13.5a.75.75 0 0 0 0 1.5h1a.75.75 0 0 0 0-1.5h-1ZM9 11.25a.75.75 0 0 1 .75-.75h1a.75.75 0 0 1 0 1.5h-1a.75.75 0 0 1-.75-.75Zm.75-3.75a.75.75 0 0 0 0 1.5h1a.75.75 0 0 0 0-1.5h-1ZM9 5.25a.75.75 0 0 1 .75-.75h1a.75.75 0 0 1 0 1.5h-1A.75.75 0 0 1 9 5.25ZM11 17h1a2 2 0 0 1 2 2v4.25a.75.75 0 0 1-.75.75h-3.5a.75.75 0 0 1-.75-.75V19a2 2 0 0 1 2-2Zm-.5 2v3.5h2V19a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5Z"/>`
+	filterRemoveSixteenPath                 = `<path fill="currentColor" d="M14.384 4.57a.752.752 0 0 0 1.061 0a.752.752 0 0 0 0-1.061l-.884-.884l.883-.884A.75.75 0 0 0 14.384.68l-.884.884l-.884-.884a.75.75 0 0 0-1.06 1.061l.883.884l-.883.884a.75.75 0 0 0 1.06 1.061l.884-.884l.884.884ZM.75 3a.75.75 0 0 0 0 1.5H9A.75.75 0 0 0 9 3H.75ZM3 7.75A.75.75 0 0 1 3.75 7h8.5a.75.75 0 0 1 0 1.5h-8.5A.75.75 0 0 1 3 7.75Zm3 4a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"/>`
+	filterRemoveTwentyFourPath              = `<path fill="currentColor" d="M21.587 9.273a.75.75 0 1 0 1.061-1.061l-1.591-1.591l1.591-1.591a.749.749 0 1 0-1.061-1.06l-1.591 1.591l-1.591-1.591a.749.749 0 1 0-1.06 1.06l1.591 1.591l-1.591 1.591a.75.75 0 0 0 1.06 1.061l1.591-1.591l1.591 1.591ZM1.75 6a.75.75 0 0 0 0 1.5H14.5a.75.75 0 0 0 0-1.5H1.75ZM5 11.75a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H5.75a.75.75 0 0 1-.75-.75Zm4 4.938a.75.75 0 0 1 .75-.75h2.5a.75.75 0 1 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"/>`
 	filterSixteenPath                       = `<path fill="currentColor" d="M.75 3h14.5a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1 0-1.5ZM3 7.75A.75.75 0 0 1 3.75 7h8.5a.75.75 0 0 1 0 1.5h-8.5A.75.75 0 0 1 3 7.75Zm3 4a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"/>`
 	filterTwentyFourPath                    = `<path fill="currentColor" d="M2.75 6a.75.75 0 0 0 0 1.5h18.5a.75.75 0 0 0 0-1.5H2.75ZM6 11.75a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H6.75a.75.75 0 0 1-.75-.75Zm4 4.938a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"/>`
 	fiscalHostSixteenPath                   = `<path fill="currentColor" d="M10 8a1 1 0 1 0 0-2a1 1 0 0 0 0 2Z"/><path fill="currentColor" d="M4 9.25h-.75a.75.75 0 0 1 0-1.5H4v-1.5h-.75a.75.75 0 0 1 0-1.5H4V3.5a1 1 0 0 1 1-1h7.5a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1ZM5.5 4v.793a.75.75 0 0 1 0 1.414v1.586a.75.75 0 0 1 0 1.414V10H12V4Z"/><path fill="currentColor" d="M12.75 14.25V14h-9.5v.25a.75.75 0 0 1-1.5 0V14A1.75 1.75 0 0 1 0 12.25V1.75C0 .784.784 0 1.75 0h12.5C15.217 0 16 .784 16 1.75v10.5A1.75 1.75 0 0 1 14.25 14v.25a.75.75 0 0 1-1.5 0ZM1.75 1.5a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25Z"/>`
@@ -1370,6 +1372,10 @@ func IconFromName(name string) g.Node {
 		return FileZipSixteen()
 	case "fileZipTwentyFour":
 		return FileZipTwentyFour()
+	case "filterRemoveSixteen":
+		return FilterRemoveSixteen()
+	case "filterRemoveTwentyFour":
+		return FilterRemoveTwentyFour()
 	case "filterSixteen":
 		return FilterSixteen()
 	case "filterTwentyFour":
@@ -3509,6 +3515,14 @@ func FileZipSixteen(children ...g.Node) g.Node {
 
 func FileZipTwentyFour(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(fileZipTwentyFourPath), g.Group(children))
+}
+
+func FilterRemoveSixteen(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(filterRemoveSixteenPath), g.Group(children))
+}
+
+func FilterRemoveTwentyFour(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(filterRemoveTwentyFourPath), g.Group(children))
 }
 
 func FilterSixteen(children ...g.Node) g.Node {

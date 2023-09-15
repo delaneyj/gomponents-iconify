@@ -6,7 +6,7 @@ import (
 )
 
 const (
-	IconifyVersion                       = "2.33.0"
+	IconifyVersion                       = "2.34.0"
 	aBPath                               = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 16v-5.5a2.5 2.5 0 0 1 5 0V16m0-4H3m9-6v12m4-2V8h3a2 2 0 0 1 0 4h-3m3 0a2 2 0 0 1 0 4h-3"/>`
 	aBOffPath                            = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 16v-5.5a2.5 2.5 0 0 1 5 0V16m0-4H3m9 0v6m0-12v2m4 0h3a2 2 0 1 1 0 4h-3m3 0a2 2 0 0 1 .83 3.82M16 12V8M3 3l18 18"/>`
 	aBTwoPath                            = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 21h3c.81 0 1.48-.67 1.48-1.48l.02-.02c0-.82-.69-1.5-1.5-1.5h-3v3zm0-6h2.5c.84-.01 1.5.66 1.5 1.5s-.66 1.5-1.5 1.5H16v-3zM4 9V5c0-1.036.895-2 2-2s2 .964 2 2v4m-5.01 2.98a9 9 0 0 0 9 9m9-9a9 9 0 0 0-9-9M8 7H4"/>`
@@ -1136,6 +1136,7 @@ const (
 	carPath                              = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 17a2 2 0 1 0 4 0a2 2 0 1 0-4 0m10 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/><path d="M5 17H3v-6l2-5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0H9m-6-6h15m-6 0V6"/></g>`
 	carCranePath                         = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 17a2 2 0 1 0 4 0a2 2 0 1 0-4 0m12 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/><path d="M7 18h8m4 0h2v-6a5 5 0 0 0-5-5h-1l1.5 5H21m-9 6V7h3M3 17v-5h9"/><path d="M4 12V6l18-3v2"/><path d="M8 12V8L4 6"/></g>`
 	carCrashPath                         = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 17a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/><path d="m7 6l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0H3m0-6h8m-6 0V6m2 0H3m11 2V6m5 6h2m-3.5 3.5L19 17m-1.5-8.5L19 7"/></g>`
+	carGaragePath                        = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 20a2 2 0 1 0 4 0a2 2 0 0 0-4 0m10 0a2 2 0 1 0 4 0a2 2 0 0 0-4 0"/><path d="M5 20H3v-6l2-5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0H9m-6-6h15m-6 0V9M3 6l9-4l9 4"/></g>`
 	carOffPath                           = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 17a2 2 0 1 0 4 0a2 2 0 1 0-4 0m10.584-1.412a2 2 0 0 0 2.828 2.83"/><path d="M5 17H3v-6l2-5h1m4 0h4l4 5h1a2 2 0 0 1 2 2v4m-6 0H9m-6-6h8m4 0h3m-6-3V6M3 3l18 18"/></g>`
 	carTurbinePath                       = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 13a4 4 0 1 0 8 0a4 4 0 1 0-8 0"/><path d="M18.86 11c.088.66.14 1.512.14 2a8 8 0 1 1-8-8h6"/><path d="M11 9c2.489.108 4.489.108 6 0m0-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm-6 9l-3.5-1.5M11 13l2.5 3m-5 0l2.5-3m0 0l3.5-1.5M11 9v4"/></g>`
 	caravanPath                          = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 18a2 2 0 1 0 4 0a2 2 0 0 0-4 0"/><path d="M11 18h7a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H8.5A5.5 5.5 0 0 0 3 12.5V16a2 2 0 0 0 2 2h2M8 7l7-3l1 3"/><path d="M13 11.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5zm7 4.5h2"/></g>`
@@ -1475,6 +1476,7 @@ const (
 	cloudLockPath                        = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M19 18a3.5 3.5 0 0 0 0-7h-1c.397-1.768-.285-3.593-1.788-4.787c-1.503-1.193-3.6-1.575-5.5-1S7.397 7.232 7 9c-2.199-.088-4.155 1.326-4.666 3.373c-.512 2.047.564 4.154 2.566 5.027"/><path d="M8 16a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm2-1v-2a2 2 0 1 1 4 0v2"/></g>`
 	cloudLockOpenPath                    = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M19 18a3.5 3.5 0 0 0 0-7h-1c.397-1.768-.285-3.593-1.788-4.787c-1.503-1.193-3.6-1.575-5.5-1S7.397 7.232 7 9c-2.199-.088-4.155 1.326-4.666 3.373c-.512 2.047.564 4.154 2.566 5.027"/><path d="M8 16a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm2-1v-2a2 2 0 0 1 3.736-1"/></g>`
 	cloudMinusPath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18.004H6.657C4.085 18 2 15.993 2 13.517c0-2.475 2.085-4.482 4.657-4.482c.393-1.762 1.794-3.2 3.675-3.773c1.88-.572 3.956-.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 .186-.015.37-.042.548M16 19h6"/>`
+	cloudNetworkPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 20h7m4 0h7m-11 0a2 2 0 1 0 4 0a2 2 0 0 0-4 0m2-4v2m-4-1.996H6.657C4.085 16 2 13.993 2 11.517c0-2.475 2.085-4.482 4.657-4.482c.393-1.762 1.794-3.2 3.675-3.773c1.88-.572 3.956-.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 1.927-1.551 3.487-3.465 3.487H16"/>`
 	cloudOffPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.58 5.548c.24-.11.492-.207.752-.286c1.88-.572 3.956-.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.913 0 3.464 1.56 3.464 3.486c0 .957-.383 1.824-1.003 2.454M18 18.004H6.657C4.085 18 2 15.993 2 13.517c0-2.475 2.085-4.482 4.657-4.482c.13-.582.37-1.128.7-1.62M3 3l18 18"/>`
 	cloudPausePath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 18.004H6.657C4.085 18 2 15.993 2 13.517c0-2.475 2.085-4.482 4.657-4.482c.393-1.762 1.794-3.2 3.675-3.773c1.88-.572 3.956-.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99c1.406 0 2.617.843 3.16 2.055M17 17v5m4-5v5"/>`
 	cloudPinPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18.004H6.657C4.085 18 2 15.993 2 13.517c0-2.475 2.085-4.482 4.657-4.482c.393-1.762 1.794-3.2 3.675-3.773c1.88-.572 3.956-.193 5.444 1c1.488 1.19 2.162 3.007 1.77 4.769h.99m2.585 9.09a3 3 0 1 0-4.242 0c.418.419 1.125 1.045 2.121 1.879c1.051-.89 1.759-1.516 2.121-1.879zM19 18v.01"/>`
@@ -2992,6 +2994,7 @@ const (
 	mapPinsPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.828 9.828a4 4 0 1 0-5.656 0L8 12.657l2.828-2.829zM8 7v.01m10.828 10.818a4 4 0 1 0-5.656 0L16 20.657l2.828-2.829zM16 15v.01"/>`
 	mapPlusPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18.5L9 17l-6 3V7l6-3l6 3l6-3v8.5M9 4v13m6-10v8m1 4h6m-3-3v6"/>`
 	mapQuestionPath                      = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m15 20l-6-3l-6 3V7l6-3l6 3l6-3v7.5M9 4v13m6-10v5.5m4 9.5v.01"/><path d="M19 19a2.003 2.003 0 0 0 .914-3.782a1.98 1.98 0 0 0-2.414.483"/></g>`
+	mapRoutePath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 7l6-3l6 3l6-3v13l-6 3l-6-3l-6 3V7m6 5v.01M6 13v.01M17 15l-4-4m0 4l4-4"/>`
 	mapSearchPath                        = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m11 18l-2-1l-6 3V7l6-3l6 3l6-3v7.5M9 4v13m6-10v5m0 6a3 3 0 1 0 6 0a3 3 0 1 0-6 0m5.2 2.2L22 22"/>`
 	mapSharePath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m13 19l-4-2l-6 3V7l6-3l6 3l6-3v9M9 4v13m6-10v6.5m1 8.5l5-5m0 4.5V17h-4.5"/>`
 	mapSouthPath                         = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0"/><path d="M10 14.25c0 .414.336.75.75.75H13a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1h-2a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1h2.25a.75.75 0 0 1 .75.75"/></g>`
@@ -3055,6 +3058,7 @@ const (
 	medicalCrossOffPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17.928 17.733l-.574-.331L14 15.464V20a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-4.536l-3.928 2.268a1 1 0 0 1-1.366-.366l-1-1.732a1 1 0 0 1 .366-1.366L7.999 12L4.072 9.732a1 1 0 0 1-.366-1.366l1-1.732a1 1 0 0 1 1.366-.366l.333.192M10 6V4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4.535l3.928-2.267a1 1 0 0 1 1.366.366l1 1.732a1 1 0 0 1-.366 1.366L16.001 12l3.927 2.269a1 1 0 0 1 .366 1.366l-.24.416M3 3l18 18"/>`
 	medicineSyrupPath                    = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 21h8a1 1 0 0 0 1-1V10a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3v10a1 1 0 0 0 1 1zm2-7h4m-2-2v4m-2-9V4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3"/>`
 	meeplePath                           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20H4a1 1 0 0 1-1-1c0-2 3.378-4.907 4-6c-1 0-4-.5-4-2c0-2 4-3.5 6-4c0-1.5.5-4 3-4s3 2.5 3 4c2 .5 6 2 6 4c0 1.5-3 2-4 2c.622 1.093 4 4 4 6a1 1 0 0 1-1 1h-5c-1 0-2-4-3-4s-2 4-3 4z"/>`
+	melonPath                            = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 10c0 5.523-4.477 10-10 10a9.967 9.967 0 0 1-6.984-2.842l4.343-4.153a4 4 0 0 0 5.76-5.51l4.342-4.153A9.963 9.963 0 0 1 20 10z"/>`
 	menorahPath                          = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 4v16M8 4v2a4 4 0 1 0 8 0V4"/><path d="M4 4v2a8 8 0 1 0 16 0V4M10 20h4"/></g>`
 	menuPath                             = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/>`
 	menuDeepPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M7 12h13m-10 6h10"/>`
@@ -3287,8 +3291,8 @@ const (
 	navigationXPath                      = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.622 13.02L12 3L4.03 20.275c-.07.2-.017.424.135.572c.15.148.374.193.57.116L12 18.5l1.563.53M22 22l-5-5m0 5l5-5"/>`
 	needlePath                           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21c-.667-.667 3.262-6.236 11.785-16.709a3.5 3.5 0 1 1 5.078 4.791C9.288 17.694 3.667 21.667 3 21zM17.5 6.5l-1 1"/>`
 	needleThreadPath                     = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 21c-.667-.667 3.262-6.236 11.785-16.709a3.5 3.5 0 1 1 5.078 4.791C9.288 17.694 3.667 21.667 3 21zM17.5 6.5l-1 1"/><path d="M17 7c-2.333-2.667-3.5-4-5-4s-2 1-2 2c0 4 8.161 8.406 6 11c-1.056 1.268-3.363 1.285-5.75.808m-4.511-1.383C4.346 14.86 2 13.5 2 12m17.5-2.5L21 11"/></g>`
-	networkPath                          = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6 9a6 6 0 1 0 12 0A6 6 0 1 0 6 9"/><path d="M12 3c1.333.333 2 2.333 2 6s-.667 5.667-2 6m0-12c-1.333.333-2 2.333-2 6s.667 5.667 2 6M6 9h12M3 19h7m4 0h7m-11 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0m2-4v2"/></g>`
-	networkOffPath                       = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6.537 6.516a6 6 0 0 0 7.932 7.954m2.246-1.76A6 6 0 0 0 8.3 4.277"/><path d="M12 3c1.333.333 2 2.333 2 6c0 .348 0 .681-.018 1m-.545 3.43c-.332.89-.811 1.414-1.437 1.57m0-12c-.938.234-1.547 1.295-1.825 3.182m-.156 3.837c.117 3.02.777 4.68 1.981 4.981M6 9h3m4 0h5M3 19h7m4 0h5m-9 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0m2-4v2M3 3l18 18"/></g>`
+	networkPath                          = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6 9a6 6 0 1 0 12 0A6 6 0 0 0 6 9"/><path d="M12 3c1.333.333 2 2.333 2 6s-.667 5.667-2 6m0-12c-1.333.333-2 2.333-2 6s.667 5.667 2 6M6 9h12M3 20h7m4 0h7m-11 0a2 2 0 1 0 4 0a2 2 0 0 0-4 0m2-5v3"/></g>`
+	networkOffPath                       = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6.528 6.536a6 6 0 0 0 7.942 7.933m2.247-1.76A6 6 0 0 0 8.29 4.284"/><path d="M12 3c1.333.333 2 2.333 2 6c0 .337-.006.66-.017.968m-.55 3.473c-.333.884-.81 1.403-1.433 1.559m0-12c-.936.234-1.544 1.29-1.822 3.167m-.16 3.838C10.134 13.034 10.794 14.7 12 15M6 9h3m4 0h5M3 20h7m4 0h7m-11 0a2 2 0 1 0 4 0a2 2 0 0 0-4 0m2-5v3M3 3l18 18"/></g>`
 	newSectionPath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-3-3v6M4 6V5a1 1 0 0 1 1-1h1m5 0h2m5 0h1a1 1 0 0 1 1 1v1m0 5v2m0 5v1a1 1 0 0 1-1 1h-1m-5 0h-2m-5 0H5a1 1 0 0 1-1-1v-1m0-5v-2m0-5"/>`
 	newsPath                             = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1-4 0V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a3 3 0 0 0 3 3h11M8 8h4m-4 4h4m-4 4h4"/>`
 	newsOffPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 6h3a1 1 0 0 1 1 1v9m-.606 3.435A2 2 0 0 1 16 18v-2m0-4V5a1 1 0 0 0-1-1H8m-3.735.321A1 1 0 0 0 4 5v12a3 3 0 0 0 3 3h11M8 12h4m-4 4h4M3 3l18 18"/>`
@@ -3365,6 +3369,9 @@ const (
 	parkingPath                          = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 16V8h4a2 2 0 0 1 0 4H9"/></g>`
 	parkingOffPath                       = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 4h10a2 2 0 0 1 2 2v10m-.582 3.41A1.99 1.99 0 0 1 18 20H6a2 2 0 0 1-2-2V6c0-.554.225-1.056.59-1.418"/><path d="M9 16V9m3-1h1a2 2 0 0 1 1.817 2.836M12 12H9M3 3l18 18"/></g>`
 	passwordPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v4m-2-1l4-2m-4 0l4 2m-9-3v4m-2-1l4-2m-4 0l4 2m12-3v4m-2-1l4-2m-4 0l4 2"/>`
+	passwordFingerprintPath              = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M17 8c.788 1 1 2 1 3v1m-9-1c0-1.578 1.343-3 3-3s3 1.422 3 3v2m-3-2v2"/><path d="M6 12v-1.397c-.006-1.999 1.136-3.849 2.993-4.85A6.385 6.385 0 0 1 15 5.748M12 17v4m-2-1l4-2m-4 0l4 2m-9-3v4m-2-1l4-2m-4 0l4 2m12-3v4m-2-1l4-2m-4 0l4 2"/></g>`
+	passwordMobilePhonePath              = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 17v4m-2-1l4-2m-4 0l4 2m-9-3v4m-2-1l4-2m-4 0l4 2m12-3v4m-2-1l4-2m-4 0l4 2M7 14V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8m-6-9h2m-1 12v.01"/>`
+	passwordUserPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 17v4m-2-1l4-2m-4 0l4 2m-9-3v4m-2-1l4-2m-4 0l4 2m12-3v4m-2-1l4-2m-4 0l4 2M9 6a3 3 0 1 0 6 0a3 3 0 0 0-6 0m-2 8a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2"/>`
 	pausePath                            = `<g class="icon-tabler" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="6" height="16" rx="2"/><rect x="14" y="4" width="6" height="16" rx="2"/></g>`
 	pawPath                              = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.7 13.5c-1.1-2-1.441-2.5-2.7-2.5c-1.259 0-1.736.755-2.836 2.747c-.942 1.703-2.846 1.845-3.321 3.291c-.097.265-.145.677-.143.962c0 1.176.787 2 1.8 2c1.259 0 3-1 4.5-1s3.241 1 4.5 1c1.013 0 1.8-.823 1.8-2c0-.285-.049-.697-.146-.962c-.475-1.451-2.512-1.835-3.454-3.538zm5.488-5.418A1.039 1.039 0 0 0 19.782 8h-.015c-.735.012-1.56.75-1.993 1.866c-.519 1.335-.28 2.7.538 3.052c.129.055.267.082.406.082c.739 0 1.575-.742 2.011-1.866c.516-1.335.273-2.7-.54-3.052zM9.474 9c.055 0 .109 0 .163-.011c.944-.128 1.533-1.346 1.32-2.722C10.754 4.97 9.91 4 9.025 4c-.055 0-.109 0-.163.011c-.944.128-1.533 1.346-1.32 2.722C7.746 8.026 8.59 9 9.475 9zm6.982-2.267c.214-1.376-.375-2.594-1.32-2.722A1.164 1.164 0 0 0 14.974 4c-.885 0-1.728.97-1.93 2.267c-.214 1.376.375 2.594 1.32 2.722c.054.007.108.011.162.011c.885 0 1.73-.974 1.93-2.267zM5.69 12.918c.816-.352 1.054-1.719.536-3.052C5.79 8.742 4.955 8 4.217 8c-.14 0-.277.027-.407.082c-.816.352-1.054 1.719-.536 3.052C3.71 12.258 4.545 13 5.283 13c.14 0 .277-.027.407-.082z"/>`
 	pawFilledPath                        = `<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M0 0h24v24H0z"/><path fill="currentColor" d="M12 10c-1.32 0-1.983.421-2.931 1.924l-.244.398l-.395.688a50.89 50.89 0 0 0-.141.254c-.24.434-.571.753-1.139 1.142l-.55.365c-.94.627-1.432 1.118-1.707 1.955c-.124.338-.196.853-.193 1.28C4.7 19.693 5.898 21 7.5 21l.242-.006c.119-.006.234-.017.354-.034l.248-.043l.132-.028l.291-.073l.162-.045l.57-.17l.763-.243l.455-.136c.53-.15.94-.222 1.283-.222c.344 0 .753.073 1.283.222l.455.136l.764.242l.569.171l.312.084c.097.024.187.045.273.062l.248.043c.12.017.235.028.354.034L16.5 21c1.602 0 2.8-1.307 2.8-3c0-.427-.073-.939-.207-1.306c-.236-.724-.677-1.223-1.48-1.83l-.257-.19l-.528-.38c-.642-.47-1.003-.826-1.253-1.278l-.27-.485l-.252-.432C14.042 10.403 13.435 10 12 10zm7.78-3h-.03c-1.219.02-2.35 1.066-2.908 2.504c-.69 1.775-.348 3.72 1.075 4.333c.256.109.527.163.801.163c1.231 0 2.38-1.053 2.943-2.504c.686-1.774.34-3.72-1.076-4.332A2.05 2.05 0 0 0 19.781 7zM9.025 3c-.112 0-.185.002-.27.015l-.093.016C7.13 3.237 6.265 5.02 6.554 6.886C6.826 8.611 8.016 10 9.474 10l.187-.005a1.26 1.26 0 0 0 .084-.01l.092-.016c1.533-.206 2.397-1.989 2.108-3.855C11.675 4.387 10.485 3 9.025 3z"/><path fill="currentColor" d="M14.972 3c-1.459 0-2.647 1.388-2.916 3.113c-.29 1.867.574 3.65 2.174 3.867c.103.013.2.02.296.02c1.39 0 2.543-1.265 2.877-2.883l.041-.23c.29-1.867-.574-3.65-2.174-3.867a2.154 2.154 0 0 0-.298-.02zM4.217 7c-.274 0-.544.054-.797.161c-1.426.615-1.767 2.562-1.078 4.335C2.905 12.947 4.052 14 5.283 14c.274 0 .544-.054.797-.161c1.426-.615 1.767-2.562 1.078-4.335C6.595 8.053 5.448 7 4.217 7z"/></g>`
@@ -3400,8 +3407,19 @@ const (
 	pennantTwoFilledPath                 = `<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M0 0h24v24H0z"/><path fill="currentColor" d="M14 2a1 1 0 0 1 .993.883L15 3v17h1a1 1 0 0 1 .117 1.993L16 22h-4a1 1 0 0 1-.117-1.993L12 20h1v-7.351L4.594 8.914c-.752-.335-.79-1.365-.113-1.77l.113-.058L13 3.35V3a1 1 0 0 1 1-1z"/></g>`
 	pentagonPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m13.163 2.168l8.021 5.828c.694.504.984 1.397.719 2.212l-3.064 9.43a1.978 1.978 0 0 1-1.881 1.367H7.042a1.978 1.978 0 0 1-1.881-1.367l-3.064-9.43a1.978 1.978 0 0 1 .719-2.212l8.021-5.828a1.978 1.978 0 0 1 2.326 0z"/>`
 	pentagonFilledPath                   = `<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M0 0h24v24H0z"/><path fill="currentColor" d="m10.205 2.6l-6.96 5.238A3 3 0 0 0 2.2 11.176l2.896 8.765A3 3 0 0 0 7.946 22h8.12a3 3 0 0 0 2.841-2.037l2.973-8.764a3 3 0 0 0-1.05-3.37l-7.033-5.237l-.091-.061l-.018-.01l-.106-.07a3 3 0 0 0-3.377.148z"/></g>`
+	pentagonNumberEightPath              = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m13.163 2.168l8.021 5.828c.694.504.984 1.397.719 2.212l-3.064 9.43a1.978 1.978 0 0 1-1.881 1.367H7.042a1.978 1.978 0 0 1-1.881-1.367l-3.064-9.43a1.978 1.978 0 0 1 .719-2.212l8.021-5.828a1.978 1.978 0 0 1 2.326 0z"/><path d="M12 12h-1a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/></g>`
+	pentagonNumberFivePath               = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m13.163 2.168l8.021 5.828c.694.504.984 1.397.719 2.212l-3.064 9.43a1.978 1.978 0 0 1-1.881 1.367H7.042a1.978 1.978 0 0 1-1.881-1.367l-3.064-9.43a1.978 1.978 0 0 1 .719-2.212l8.021-5.828a1.978 1.978 0 0 1 2.326 0z"/><path d="M10 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-3V8h4"/></g>`
+	pentagonNumberFourPath               = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m13.163 2.168l8.021 5.828c.694.504.984 1.397.719 2.212l-3.064 9.43a1.978 1.978 0 0 1-1.881 1.367H7.042a1.978 1.978 0 0 1-1.881-1.367l-3.064-9.43a1.978 1.978 0 0 1 .719-2.212l8.021-5.828a1.978 1.978 0 0 1 2.326 0z"/><path d="M10 8v3a1 1 0 0 0 1 1h3m0-4v8"/></g>`
+	pentagonNumberNinePath               = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m13.163 2.168l8.021 5.828c.694.504.984 1.397.719 2.212l-3.064 9.43a1.978 1.978 0 0 1-1.881 1.367H7.042a1.978 1.978 0 0 1-1.881-1.367l-3.064-9.43a1.978 1.978 0 0 1 .719-2.212l8.021-5.828a1.978 1.978 0 0 1 2.326 0z"/><path d="M10 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3"/></g>`
+	pentagonNumberOnePath                = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m13.163 2.168l8.021 5.828c.694.504.984 1.397.719 2.212l-3.064 9.43a1.978 1.978 0 0 1-1.881 1.367H7.042a1.978 1.978 0 0 1-1.881-1.367l-3.064-9.43a1.978 1.978 0 0 1 .719-2.212l8.021-5.828a1.978 1.978 0 0 1 2.326 0z"/><path d="m10 10l2-2v8"/></g>`
+	pentagonNumberSevenPath              = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m13.163 2.168l8.021 5.828c.694.504.984 1.397.719 2.212l-3.064 9.43a1.978 1.978 0 0 1-1.881 1.367H7.042a1.978 1.978 0 0 1-1.881-1.367l-3.064-9.43a1.978 1.978 0 0 1 .719-2.212l8.021-5.828a1.978 1.978 0 0 1 2.326 0z"/><path d="M10 8h4l-2 8"/></g>`
+	pentagonNumberSixPath                = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m13.163 2.168l8.021 5.828c.694.504.984 1.397.719 2.212l-3.064 9.43a1.978 1.978 0 0 1-1.881 1.367H7.042a1.978 1.978 0 0 1-1.881-1.367l-3.064-9.43a1.978 1.978 0 0 1 .719-2.212l8.021-5.828a1.978 1.978 0 0 1 2.326 0z"/><path d="M14 9a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-3"/></g>`
+	pentagonNumberThreePath              = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m13.163 2.168l8.021 5.828c.694.504.984 1.397.719 2.212l-3.064 9.43a1.978 1.978 0 0 1-1.881 1.367H7.042a1.978 1.978 0 0 1-1.881-1.367l-3.064-9.43a1.978 1.978 0 0 1 .719-2.212l8.021-5.828a1.978 1.978 0 0 1 2.326 0z"/><path d="M10 8h2.5A1.5 1.5 0 0 1 14 9.5v1a1.5 1.5 0 0 1-1.5 1.5H11h1.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5H10"/></g>`
+	pentagonNumberTwoPath                = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m13.163 2.168l8.021 5.828c.694.504.984 1.397.719 2.212l-3.064 9.43a1.978 1.978 0 0 1-1.881 1.367H7.042a1.978 1.978 0 0 1-1.881-1.367l-3.064-9.43a1.978 1.978 0 0 1 .719-2.212l8.021-5.828a1.978 1.978 0 0 1 2.326 0z"/><path d="M10 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3"/></g>`
+	pentagonNumberZeroPath               = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m13.163 2.168l8.021 5.828c.694.504.984 1.397.719 2.212l-3.064 9.43a1.978 1.978 0 0 1-1.881 1.367H7.042a1.978 1.978 0 0 1-1.881-1.367l-3.064-9.43a1.978 1.978 0 0 1 .719-2.212l8.021-5.828a1.978 1.978 0 0 1 2.326 0z"/><path d="M10 10v4a2 2 0 1 0 4 0v-4a2 2 0 1 0-4 0z"/></g>`
 	pentagonOffPath                      = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8.133 4.133l2.704-1.965a1.978 1.978 0 0 1 2.326 0l8.021 5.828c.694.504.984 1.397.719 2.212l-1.887 5.808m-.981 3.02l-.196.602a1.978 1.978 0 0 1-1.881 1.367H7.042a1.978 1.978 0 0 1-1.881-1.367l-3.064-9.43a1.978 1.978 0 0 1 .719-2.212L5.81 5.82M3 3l18 18"/>`
 	pentagonPlusPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.5 21.005H7.042a1.978 1.978 0 0 1-1.881-1.367l-3.064-9.43a1.978 1.978 0 0 1 .719-2.212l8.021-5.828a1.978 1.978 0 0 1 2.326 0l8.021 5.828c.694.504.984 1.397.719 2.212l-.78 2.401M16 19h6m-3-3v6"/>`
+	pentagonXPath                        = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m13.163 2.168l8.021 5.828c.694.504.984 1.397.719 2.212l-3.064 9.43a1.978 1.978 0 0 1-1.881 1.367H7.042a1.978 1.978 0 0 1-1.881-1.367l-3.064-9.43a1.978 1.978 0 0 1 .719-2.212l8.021-5.828a1.978 1.978 0 0 1 2.326 0zM14 14l-4-4m0 4l4-4"/>`
 	pentagramPath                        = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5.636 5.636a9 9 0 1 1 12.728 12.728A9 9 0 0 1 5.636 5.636z"/><path d="m15.236 11l5.264 4H14l-2 6l-2-6H3.5l5.276-4L6.72 4.72L12 8.5l5.28-3.78z"/></g>`
 	pepperPath                           = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M13 11c0 2.21-2.239 4-5 4s-5-1.79-5-4a8 8 0 1 0 16 0a3 3 0 0 0-6 0"/><path d="M16 8c0-2 2-4 4-4"/></g>`
 	pepperOffPath                        = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12.59 12.59C11.82 14.008 10.055 15 8 15c-2.761 0-5-1.79-5-4a8 8 0 0 0 13.643 5.67m1.64-2.357A7.97 7.97 0 0 0 19 11a3 3 0 0 0-5.545-1.59"/><path d="M16 8c0-2 2-4 4-4M3 3l18 18"/></g>`
@@ -6941,6 +6959,8 @@ func IconFromName(name string) g.Node {
 		return CarCrane()
 	case "carCrash":
 		return CarCrash()
+	case "carGarage":
+		return CarGarage()
 	case "carOff":
 		return CarOff()
 	case "carTurbine":
@@ -7619,6 +7639,8 @@ func IconFromName(name string) g.Node {
 		return CloudLockOpen()
 	case "cloudMinus":
 		return CloudMinus()
+	case "cloudNetwork":
+		return CloudNetwork()
 	case "cloudOff":
 		return CloudOff()
 	case "cloudPause":
@@ -10653,6 +10675,8 @@ func IconFromName(name string) g.Node {
 		return MapPlus()
 	case "mapQuestion":
 		return MapQuestion()
+	case "mapRoute":
+		return MapRoute()
 	case "mapSearch":
 		return MapSearch()
 	case "mapShare":
@@ -10779,6 +10803,8 @@ func IconFromName(name string) g.Node {
 		return MedicineSyrup()
 	case "meeple":
 		return Meeple()
+	case "melon":
+		return Melon()
 	case "menorah":
 		return Menorah()
 	case "menu":
@@ -11399,6 +11425,12 @@ func IconFromName(name string) g.Node {
 		return ParkingOff()
 	case "password":
 		return Password()
+	case "passwordFingerprint":
+		return PasswordFingerprint()
+	case "passwordMobilePhone":
+		return PasswordMobilePhone()
+	case "passwordUser":
+		return PasswordUser()
 	case "pause":
 		return Pause()
 	case "paw":
@@ -11469,10 +11501,32 @@ func IconFromName(name string) g.Node {
 		return Pentagon()
 	case "pentagonFilled":
 		return PentagonFilled()
+	case "pentagonNumberEight":
+		return PentagonNumberEight()
+	case "pentagonNumberFive":
+		return PentagonNumberFive()
+	case "pentagonNumberFour":
+		return PentagonNumberFour()
+	case "pentagonNumberNine":
+		return PentagonNumberNine()
+	case "pentagonNumberOne":
+		return PentagonNumberOne()
+	case "pentagonNumberSeven":
+		return PentagonNumberSeven()
+	case "pentagonNumberSix":
+		return PentagonNumberSix()
+	case "pentagonNumberThree":
+		return PentagonNumberThree()
+	case "pentagonNumberTwo":
+		return PentagonNumberTwo()
+	case "pentagonNumberZero":
+		return PentagonNumberZero()
 	case "pentagonOff":
 		return PentagonOff()
 	case "pentagonPlus":
 		return PentagonPlus()
+	case "pentagonX":
+		return PentagonX()
 	case "pentagram":
 		return Pentagram()
 	case "pepper":
@@ -18538,6 +18592,10 @@ func CarCrash(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(carCrashPath), g.Group(children))
 }
 
+func CarGarage(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(carGaragePath), g.Group(children))
+}
+
 func CarOff(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(carOffPath), g.Group(children))
 }
@@ -19892,6 +19950,10 @@ func CloudLockOpen(children ...g.Node) g.Node {
 
 func CloudMinus(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(cloudMinusPath), g.Group(children))
+}
+
+func CloudNetwork(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(cloudNetworkPath), g.Group(children))
 }
 
 func CloudOff(children ...g.Node) g.Node {
@@ -25962,6 +26024,10 @@ func MapQuestion(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(mapQuestionPath), g.Group(children))
 }
 
+func MapRoute(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(mapRoutePath), g.Group(children))
+}
+
 func MapSearch(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(mapSearchPath), g.Group(children))
 }
@@ -26212,6 +26278,10 @@ func MedicineSyrup(children ...g.Node) g.Node {
 
 func Meeple(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(meeplePath), g.Group(children))
+}
+
+func Melon(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(melonPath), g.Group(children))
 }
 
 func Menorah(children ...g.Node) g.Node {
@@ -27454,6 +27524,18 @@ func Password(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(passwordPath), g.Group(children))
 }
 
+func PasswordFingerprint(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(passwordFingerprintPath), g.Group(children))
+}
+
+func PasswordMobilePhone(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(passwordMobilePhonePath), g.Group(children))
+}
+
+func PasswordUser(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(passwordUserPath), g.Group(children))
+}
+
 func Pause(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(pausePath), g.Group(children))
 }
@@ -27594,12 +27676,56 @@ func PentagonFilled(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(pentagonFilledPath), g.Group(children))
 }
 
+func PentagonNumberEight(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(pentagonNumberEightPath), g.Group(children))
+}
+
+func PentagonNumberFive(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(pentagonNumberFivePath), g.Group(children))
+}
+
+func PentagonNumberFour(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(pentagonNumberFourPath), g.Group(children))
+}
+
+func PentagonNumberNine(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(pentagonNumberNinePath), g.Group(children))
+}
+
+func PentagonNumberOne(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(pentagonNumberOnePath), g.Group(children))
+}
+
+func PentagonNumberSeven(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(pentagonNumberSevenPath), g.Group(children))
+}
+
+func PentagonNumberSix(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(pentagonNumberSixPath), g.Group(children))
+}
+
+func PentagonNumberThree(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(pentagonNumberThreePath), g.Group(children))
+}
+
+func PentagonNumberTwo(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(pentagonNumberTwoPath), g.Group(children))
+}
+
+func PentagonNumberZero(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(pentagonNumberZeroPath), g.Group(children))
+}
+
 func PentagonOff(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(pentagonOffPath), g.Group(children))
 }
 
 func PentagonPlus(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(pentagonPlusPath), g.Group(children))
+}
+
+func PentagonX(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(pentagonXPath), g.Group(children))
 }
 
 func Pentagram(children ...g.Node) g.Node {
