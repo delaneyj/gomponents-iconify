@@ -2,6 +2,10 @@
 
 <img alt="mascot" src="assets/mascot.png" width="384px" />
 
+## Warning
+
+This generates a LOT of code, first time you use a new iconset it will take a while to compile.  Subsequent compiles will be much faster but be warned.
+
 [![Go Reference](https://pkg.go.dev/badge/github.com/delaneyj/gomponents-iconify.svg)](https://pkg.go.dev/github.com/delaneyj/gomponents-iconify)
 
 # gomponents-iconify
