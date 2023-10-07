@@ -32,6 +32,7 @@ const (
 	auQldPath                 = `<mask id="circleFlagsAuQld0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsAuQld0)"><path fill="#0052b4" d="M256 0h256v512H0V256Z"/><path fill="#eee" d="M0 0v32l32 32L0 96v160h32l32-32l32 32h32v-83l83 83h45l-8-16l8-15v-14l-83-83h83V96l-32-32l32-32V0H96L64 32L32 0Z"/><path fill="#d80027" d="M32 0v32H0v64h32v160h64V96h160V32H96V0Zm96 128l128 128v-31l-97-97z"/><circle cx="382" cy="256" r="74" fill="#eee"/><path fill="#338af3" d="M405 322.1L382 312l-23 10.2l23-66.1zm0-132.2L382 200l-23-10.2l23 66.1zM315.9 279l10.2-23l-10.2-23l66.1 23zm132.2 0L438 256l10.2-23l-66.1 23z"/><path fill="#ffda44" d="M377 228v5h-5v10h5v9.4a15.2 15.2 0 0 0-20.7 22.2v9.4H408v-9.4a15.2 15.2 0 0 0-20.7-22.2V243h5v-10h-5v-5z"/></g>`
 	auSaPath                  = `<mask id="circleFlagsAuSa0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsAuSa0)"><path fill="#0052b4" d="M256 0h256v512H0V256Z"/><path fill="#eee" d="M0 0v32l32 32L0 96v160h32l32-32l32 32h32v-83l83 83h45l-8-16l8-15v-14l-83-83h83V96l-32-32l32-32V0H96L64 32L32 0Z"/><path fill="#d80027" d="M32 0v32H0v64h32v160h64V96h160V32H96V0Zm96 128l128 128v-31l-97-97z"/><circle cx="382" cy="256" r="74" fill="#ff9811"/><path fill="#333" d="M382 228a14 14 0 0 0-14 14h-42a14 14 0 0 0 14 14a14 14 0 0 0 14 14a14 14 0 0 0 14 14h28a14 14 0 0 0 14-14a14 14 0 0 0 14-14a14 14 0 0 0 14-14h-42a14 14 0 0 0-14-14z"/></g>`
 	auTasPath                 = `<mask id="circleFlagsAuTas0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsAuTas0)"><path fill="#0052b4" d="M256 0h256v512H0V256Z"/><path fill="#eee" d="M0 0v32l32 32L0 96v160h32l32-32l32 32h32v-83l83 83h45l-8-16l8-15v-14l-83-83h83V96l-32-32l32-32V0H96L64 32L32 0Z"/><path fill="#d80027" d="M32 0v32H0v64h32v160h64V96h160V32H96V0Zm96 128l128 128v-31l-97-97z"/><circle cx="382" cy="256" r="74" fill="#eee"/><path fill="#d80027" d="M363 221a14 14 0 0 0-14 14v10h-5v-6c0-6-5-11-11-11a3 3 0 0 0-3 3v25c0 1 1 3 3 3h16a13 13 0 0 0 13 12v6h-5c-7 0-12 5-12 11l3 3h25c2 0 3-2 3-3v-17h34v5h-5c-6 0-11 5-11 11c0 2 1 3 3 3h24c2 0 3-1 3-3v-33c5 0 10-4 10-9c0-6-5-10-10-10h-32a3 3 0 0 1-3-3c0-2 1-3 3-3h32v-7h-32a10 10 0 0 0 0 19h32c2 0 3 2 3 4c0 1-1 3-3 3h-35c-7 0-13-6-13-13a14 14 0 0 0-13-14z"/></g>`
+	auTorresStraitIslandsPath = `<mask id="circleFlagsAuTorresStraitIslands0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsAuTorresStraitIslands0)"><path fill="#0052b4" d="m0 128l256-32l256 32v256l-256 32L0 384Z"/><path fill="#333" d="m0 96l256-32l256 32v32H0Z"/><path fill="#6da544" d="M0 0h512v96H0Z"/><path fill="#333" d="m0 416l256 32l256-32v-32H0Z"/><path fill="#6da544" d="M0 512h512v-96H0Z"/><path fill="#eee" d="M245 144c-106 32-101 112-67 186l-40 38l73-27v-98c24-35 66-35 90 0v98l73 27l-40-38c34-74 39-154-67-186l-11 46l-11-46zm11 83l-9 27h-28l23 17l-9 28l23-17l23 17l-9-28l24-17h-29l-9-27z"/></g>`
 	auVicPath                 = `<mask id="circleFlagsAuVic0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsAuVic0)"><path fill="#0052b4" d="M256 0h256v512H0V256Z"/><path fill="#eee" d="M0 0v32l32 32L0 96v160h32l32-32l32 32h32v-83l83 83h45l-8-16l8-15v-14l-83-83h83V96l-32-32l32-32V0H96L64 32L32 0Z"/><path fill="#d80027" d="M32 0v32H0v64h32v160h64V96h160V32H96V0Zm96 128l128 128v-31l-97-97z"/><path fill="#eee" d="m313 267l7 15l15-4l-7 15l13 10l-16 3v16l-13-10l-12 10v-16l-16-3l13-10l-7-15l16 4zm66-61l7 15l15-4l-7 15l13 10l-16 4v16l-13-10l-12 10v-16l-16-4l13-10l-7-15l16 4zm1 146l40-29h-50l40 29l-15-48Zm-1 29l5 15l14-7l-7 15l15 5l-15 5l7 15l-14-7l-5 15l-6-15l-14 7l7-15l-15-5l15-5l-7-15l14 7zm57-114l-8 14h-16l8 14l-8 14h16l8 13l8-13h16l-8-14l8-14h-16z"/><path fill="#ffda44" d="M370 93v8h-8v17h8v15a25 25 0 0 0-34 37v15h85v-15a25 25 0 0 0-34-37v-15h8v-17h-8v-8z"/></g>`
 	auWaPath                  = `<mask id="circleFlagsAuWa0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsAuWa0)"><path fill="#0052b4" d="M256 0h256v512H0V256Z"/><path fill="#eee" d="M0 0v32l32 32L0 96v160h32l32-32l32 32h32v-83l83 83h45l-8-16l8-15v-14l-83-83h83V96l-32-32l32-32V0H96L64 32L32 0Z"/><path fill="#d80027" d="M32 0v32H0v64h32v160h64V96h160V32H96V0Zm96 128l128 128v-31l-97-97z"/><circle cx="382" cy="256" r="74" fill="#ffda44"/><path fill="#333" d="M397 299.8c-51.4 7.8-53.2-24-53.2-24c-2-22.9 21.4-29.6 28.4-42.3c7-12.6-9.3-14.5-8.3-6.4c1 8.2-3.8 9.6-4 10.2c-.3.7-7.3 7.6-8.3 6.3c-1-1.3 2.9-6.3 2.9-6.3s-3-1.7-4.2-5.6c-3.2-8.8 13-30.7 29.9-15.9c16.8 14.8-5.6 32-11.4 40.4c-5.8 8.3-5.6 14.6-2 15.7c3.7 1.2 6.5-2.5 8-8.1c1.5-5.3 10.8-22.7 30.5-16.9c14.7 4.4 12.9 10.5 24.7 7.3c4.1 39.6-33 45.6-33 45.6z"/></g>`
 	awPath                    = `<mask id="circleFlagsAw0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsAw0)"><path fill="#ffda44" d="m0 322.8l253.6-18.4L512 322.8v33.4l-258 15.3L0 356.2zm0 66.8l257.2-13.8L512 389.6V423l-253 16.9L0 423z"/><path fill="#338af3" d="M0 0h512v322.8H0zm0 356.2h512v33.4H0zM0 423h512v89H0z"/><path fill="#eee" d="m117.3 161.5l-50-22.1l50-22l22-50.1l22.2 50l50 22l-50 22.2l-22.1 50z"/><path fill="#d80027" d="m139.4 94.9l13.6 30.9l31 13.6l-31 13.6l-13.6 31l-13.6-31l-31-13.6l31-13.6z"/></g>`
@@ -70,6 +71,8 @@ const (
 	cgPath                    = `<mask id="circleFlagsCg0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsCg0)"><path fill="#ffda44" d="M384 0h128v128L352 352L128 512H0V384l160-224Z"/><path fill="#6da544" d="M0 384L384 0H0Z"/><path fill="#d80027" d="M512 128L128 512h384z"/></g>`
 	chPath                    = `<mask id="circleFlagsCh0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsCh0)"><path fill="#d80027" d="M0 0h512v512H0z"/><path fill="#eee" d="M389.6 211.5h-89v-89h-89.1v89h-89v89h89v89h89v-89h89z"/></g>`
 	chGrPath                  = `<mask id="circleFlagsChGr0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsChGr0)"><path fill="#eee" d="M128 0h128l256 256v256H0V256Z"/><path fill="#338af3" d="M256 0h64l32 32l32-32h64l64 64v64l-32 32l32 32v64h-64l-32-32l-32 32h-64l-64-64v-64l32-32l-32-32Z"/><path fill="#333" d="M0 0h128v256H0z"/><path fill="#ffda44" d="M320 0v64h-64v64h128V0h-64zm64 128v128h64v-64h64v-64H384zm-128 64h64v64h-64zM448 0h64v64h-64z"/><path fill="#333" d="M291 291c-32 0-68 8-82 19c-5 4-7 10-7 16c0 10 7 18 17 20l-25 7a99 99 0 0 0-77-44a9 9 0 0 0-3 18c33 12 45 13 57 37c-21-7-35 24-48 37c-3 1-4 4-4 7c0 5 4 9 9 9l6-2c13-10 26-33 44-28c57 16 66 13 105 7c-31 9-30 21-8 36c-11 17-25 17-41 22c-4 1-7 5-7 9c0 5 4 9 9 9l5-1c19-9 40-18 60-33c-1-8-13-17 8-24c9 8 14 19 41 16c4 7 10 12 7 28l-12 3c-5 0-8 4-8 9s4 9 9 9c3 0 6-2 7-4l18-14c2-15-2-29-8-42c-14-2-17-15-23-29c12 6 22 12 32-3c-14-5-28-13-39-4c-39-24-55-19-80-24c9-8 11-20 8-37c26-7 69-23 96 26c3-41-30-54-66-55z"/></g>`
+	checkeredPath             = `<mask id="circleFlagsCheckered0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsCheckered0)"><path fill="#eee" d="M0 0h512v512H0z"/><path fill="#333" d="M384 0h128v128H0v128h512v128H0v128h128V0h128v512h128z"/></g>`
+	chequeredPath             = `<mask id="circleFlagsChequered0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsChequered0)"><path fill="#eee" d="M0 0h512v512H0z"/><path fill="#333" d="M384 0h128v128H0v128h512v128H0v128h128V0h128v512h128z"/></g>`
 	ciPath                    = `<mask id="circleFlagsCi0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsCi0)"><path fill="#eee" d="M167 0h178l31 253.2L345 512H167l-33.4-257.4z"/><path fill="#ff9811" d="M0 0h167v512H0z"/><path fill="#6da544" d="M345 0h167v512H345z"/></g>`
 	ckPath                    = `<mask id="circleFlagsCk0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsCk0)"><path fill="#0052b4" d="M256 0h256v512H0V256Z"/><path fill="#eee" d="M0 0v32l32 32L0 96v160h32l32-32l32 32h32v-83l83 83h45l-8-16l8-15v-14l-83-83h83V96l-32-32l32-32V0H96L64 32L32 0Z"/><path fill="#d80027" d="M32 0v32H0v64h32v160h64V96h160V32H96V0Zm96 128l128 128v-31l-97-97z"/><path fill="#eee" d="m345 256l4.8 14.6H365l-12.4 9l4.7 14.6l-12.4-9l-12.4 9l4.8-14.6l-12.4-9h15.3zm-63 26l13.7 7l10.9-10.8l-2.4 15.1l13.6 7l-15.1 2.4l-2.4 15.1l-7-13.6l-15.1 2.4l10.8-10.9zm-26 63l14.6-4.7V325l9 12.4l14.6-4.8l-9 12.4l9 12.4l-14.6-4.7l-9 12.4v-15.3zm26 63l7-13.6l-10.8-10.9l15.1 2.4l7-13.6l2.4 15l15.1 2.5l-13.6 7l2.4 15l-10.9-10.8zm63 26l-4.7-14.5H325l12.4-9l-4.8-14.6l12.4 9l12.4-9l-4.7 14.6l12.4 9h-15.3zm63-26l-13.6-7l-10.9 10.9l2.4-15.2l-13.6-7l15-2.3l2.5-15.1l7 13.6l15-2.4l-10.8 10.9zm26-63l-14.5 4.8V365l-9-12.4l-14.6 4.7l9-12.4l-9-12.4l14.6 4.8l9-12.4v15.3zm-26-63l-7 13.7l10.9 10.9l-15.2-2.4l-7 13.6l-2.3-15.1l-15.1-2.4l13.6-7l-2.4-15.1l10.9 10.8z"/></g>`
 	clPath                    = `<mask id="circleFlagsCl0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsCl0)"><path fill="#d80027" d="m0 256l254.5-51.3L512 256v256H0z"/><path fill="#0052b4" d="M0 0h256l52.7 132.8L256 256H0z"/><path fill="#eee" d="M256 0h256v256H256zM152.4 89l16.6 51h53.6l-43.4 31.6l16.6 51l-43.4-31.5l-43.4 31.5l16.6-51L82.2 140h53.6z"/></g>`
@@ -117,7 +120,16 @@ const (
 	esPvPath                  = `<mask id="circleFlagsEsPv0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsEsPv0)"><path fill="#d80027" d="M0 47.2L47.2 0h175.4L256 27.3L289.4 0H465l47 47.3v175.3l-24.2 35.2l24.2 31.6v175.4L464.8 512H289.4l-32-26.4l-34.8 26.4H47.2L0 464.8V289.4L25 257L0 222.6z"/><path fill="#496e2d" d="M0 0v47.2L208.8 256L0 464.8V512h47.2L256 303.2L464.8 512H512v-47.2L303.2 256L512 47.3V0h-47L256 208.8L47.2 0H0z"/><path fill="#eee" d="M222.6 0v222.6H0v66.8h222.6V512h66.8V289.4H512v-66.8H289.4V0h-66.8z"/></g>`
 	esVariantPath             = `<mask id="circleFlagsEsVariant0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsEsVariant0)"><path fill="#d80027" d="M0 0h512v128l-39.8 130.3L512 384v128H0V384l37.8-124L0 128z"/><path fill="#ffda44" d="M0 128h512v256H0z"/></g>`
 	etPath                    = `<mask id="circleFlagsEt0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsEt0)"><path fill="#d80027" d="m0 345l255.7-31L512 345v167H0z"/><path fill="#ffda44" d="m0 167l258-40.7L512 167v178H0z"/><path fill="#6da544" d="M0 0h512v167H0z"/><circle cx="256" cy="256" r="122.4" fill="#0052b4"/><g fill="#ffda44"><path d="m256 161.2l22 68h71.7l-58 42l22.3 68.3l-58-42.3l-58 42.2l22.2-68.1l-58-42H234z"/><path d="m344.1 273l-70-22.9l43.2-59.6l-18-13L256 237l-43.3-59.7l-18 13.1l43.3 59.7l-70.1 22.7l6.9 21.2l70-22.8V345h22.3v-73.7l70.1 22.8z"/></g></g>`
+	etAfPath                  = `<mask id="circleFlagsEtAf0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsEtAf0)"><path fill="#eee" d="m0 160l256-32l256 32v192l-256 32L0 352Z"/><path fill="#0052b4" d="M0 0h512v160H0Z"/><path fill="#496e2d" d="M0 352h512v160H0Z"/><path fill="#d80027" d="M0 0v512l256-256L0 0z"/><path fill="#ff9811" d="m345 229l-12 11l40 40l-40 40l11 11l40-40l40 40l11-11l-40-40l40-40l-11-11l-40 40z"/><path fill="#d80027" d="m384 181l21 62l-54-38h66l-53 39z"/></g>`
+	etAmPath                  = `<mask id="circleFlagsEtAm0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsEtAm0)"><path fill="#ffda44" d="M0 0h192l160 64L512 0v512H320l-160-64L0 512Z"/><path fill="#d80027" d="M0 512L192 0h320L320 512Z"/><path fill="#ffda44" d="m176 378l208-150H128l208 150l-80-244Z"/></g>`
+	etBePath                  = `<mask id="circleFlagsEtBe0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsEtBe0)"><path fill="#ffda44" d="m0 160l256-32l256 32v192l-256 32L0 352Z"/><path fill="#333" d="M0 0h512v160H0Z"/><path fill="#496e2d" d="M0 352h512v160H0Z"/><path fill="#d80027" d="M0 0v512l256-256Z"/></g>`
+	etGaPath                  = `<mask id="circleFlagsEtGa0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsEtGa0)"><path fill="#d80027" d="M0 0h512v128l-256 64L0 128Z"/><path fill="#eee" d="M0 128h512v128l-256 64L0 256Z"/><path fill="#496e2d" d="M0 256h512v128l-256 64L0 384Z"/><path fill="#333" d="M0 384h512v128H0Zm221-139l91-65H200l91 65l-35-106z"/></g>`
+	etHaPath                  = `<mask id="circleFlagsEtHa0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsEtHa0)"><path fill="#eee" d="M0 0h512v64l-32 48l32 48v192l-32 48l32 48v64H0v-64l32-48l-32-48V160l32-48L0 64Z"/><path fill="#d80027" d="M0 64h512v96H0z"/><path fill="#6da544" d="M0 352h512v96H0z"/><circle cx="256" cy="256" r="72" fill="#338af3"/></g>`
 	etOrPath                  = `<mask id="circleFlagsEtOr0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsEtOr0)"><path fill="#eee" d="m0 160l256-32l256 32v192l-256 32L0 352Z"/><path fill="#d80027" d="M0 0h512v160H0Z"/><path fill="#333" d="M0 352h512v160H0Z"/><path fill="#6da544" d="M233 294c0 25-26 42-26 42h98s-26-17-26-42z"/><path fill="#496e2d" d="M256 176c-9 0-17 4-23 10a32 32 0 0 0-48 24a32 32 0 0 0 2 59a32 32 0 0 0 46 25c6 6 14 10 23 10s17-4 23-10c4 3 9 4 14 4c17 0 31-13 32-29a32 32 0 0 0 2-59a32 32 0 0 0-48-24c-6-6-14-10-23-10z"/></g>`
+	etSiPath                  = `<mask id="circleFlagsEtSi0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsEtSi0)"><path fill="#496e2d" d="M0 0h512v149H0Z"/><path fill="#eee" d="M0 149h512v32H0z"/><path fill="#d80027" d="M0 363h512v149H0Z"/><path fill="#eee" d="M0 331h512v32H0z"/><path fill="#0052b4" d="M0 181h512v150H0Z"/><path fill="#eee" d="m312 317l104-75H288l104 75l-40-122zm-203-32l49-36H98l49 36l-19-58zm64 32l49-36h-60l49 36l-19-58Zm0-64l49-36h-60l49 36l-19-58Z"/></g>`
+	etSnPath                  = `<mask id="circleFlagsEtSn0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsEtSn0)"><path fill="#eee" d="m0 160l256-32l256 32v192l-256 32L0 352Z"/><path fill="#0052b4" d="M0 0h512v160H0Z"/><path fill="#d80027" d="M0 352h512v160H0Z"/><path fill="#ff9811" d="m256 188l-72 88v48h144v-48l-72-88z"/></g>`
+	etSoPath                  = `<mask id="circleFlagsEtSo0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsEtSo0)"><path fill="#eee" d="m0 160l256-32l256 32v192l-256 32L0 352Z"/><path fill="#496e2d" d="M0 0h512v160H0Z"/><path fill="#d80027" d="M0 352h512v160H0Z"/><path fill="#338af3" d="M0 0v512l256-256Z"/><path fill="#eee" d="M132 168v176L28 202l168 54l-168 54Z"/></g>`
+	etSwPath                  = `<mask id="circleFlagsEtSw0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsEtSw0)"><path fill="#6da544" d="M0 0h512v512H0Z"/><path fill="#0052b4" d="M0 0v80l64 176L0 432v80l256-256Z"/><path fill="#eee" d="M0 80v80l64 96l-64 96v80l176-176Z"/><path fill="#ffda44" d="m344 317l104-75H320l104 75l-40-122z"/><path fill="#d80027" d="M0 160v192l96-96l-96-96z"/></g>`
 	etTiPath                  = `<mask id="circleFlagsEtTi0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsEtTi0)"><path fill="#d80027" d="M0 0h512v512H0l64-256Z"/><path fill="#ffda44" d="M0 0v512l256-256Zm404 168v176L300 202l168 54l-168 54Z"/></g>`
 	euPath                    = `<mask id="circleFlagsEu0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsEu0)"><path fill="#0052b4" d="M0 0h512v512H0z"/><path fill="#ffda44" d="m256 100.2l8.3 25.5H291l-21.7 15.7l8.3 25.6l-21.7-15.8l-21.7 15.8l8.3-25.6l-21.7-15.7h26.8zm-110.2 45.6l24 12.2l18.9-19l-4.2 26.5l23.9 12.2l-26.5 4.2l-4.2 26.5l-12.2-24l-26.5 4.3l19-19zM100.2 256l25.5-8.3V221l15.7 21.7l25.6-8.3l-15.8 21.7l15.8 21.7l-25.6-8.3l-15.7 21.7v-26.8zm45.6 110.2l12.2-24l-19-18.9l26.5 4.2l12.2-23.9l4.2 26.5l26.5 4.2l-24 12.2l4.3 26.5l-19-19zM256 411.8l-8.3-25.5H221l21.7-15.7l-8.3-25.6l21.7 15.8l21.7-15.8l-8.3 25.6l21.7 15.7h-26.8zm110.2-45.6l-24-12.2l-18.9 19l4.2-26.5l-23.9-12.2l26.5-4.2l4.2-26.5l12.2 24l26.5-4.3l-19 19zM411.8 256l-25.5 8.3V291l-15.7-21.7l-25.6 8.3l15.8-21.7l-15.8-21.7l25.6 8.3l15.7-21.7v26.8zm-45.6-110.2l-12.2 24l19 18.9l-26.5-4.2l-12.2 23.9l-4.2-26.5l-26.5-4.2l24-12.2l-4.3-26.5l19 19z"/></g>`
 	europeanUnionPath         = `<mask id="circleFlagsEuropeanUnion0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsEuropeanUnion0)"><path fill="#0052b4" d="M0 0h512v512H0z"/><path fill="#ffda44" d="m256 100.2l8.3 25.5H291l-21.7 15.7l8.3 25.6l-21.7-15.8l-21.7 15.8l8.3-25.6l-21.7-15.7h26.8zm-110.2 45.6l24 12.2l18.9-19l-4.2 26.5l23.9 12.2l-26.5 4.2l-4.2 26.5l-12.2-24l-26.5 4.3l19-19zM100.2 256l25.5-8.3V221l15.7 21.7l25.6-8.3l-15.8 21.7l15.8 21.7l-25.6-8.3l-15.7 21.7v-26.8zm45.6 110.2l12.2-24l-19-18.9l26.5 4.2l12.2-23.9l4.2 26.5l26.5 4.2l-24 12.2l4.3 26.5l-19-19zM256 411.8l-8.3-25.5H221l21.7-15.7l-8.3-25.6l21.7 15.8l21.7-15.8l-8.3 25.6l21.7 15.7h-26.8zm110.2-45.6l-24-12.2l-18.9 19l4.2-26.5l-23.9-12.2l26.5-4.2l4.2-26.5l12.2 24l26.5-4.3l-19 19zM411.8 256l-25.5 8.3V291l-15.7-21.7l-25.6 8.3l15.8-21.7l-15.8-21.7l25.6 8.3l15.7-21.7v26.8zm-45.6-110.2l-12.2 24l19 18.9l-26.5-4.2l-12.2 23.9l-4.2-26.5l-26.5-4.2l24-12.2l-4.3-26.5l19 19z"/></g>`
@@ -234,6 +246,9 @@ const (
 	laPath                    = `<mask id="circleFlagsLa0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsLa0)"><path fill="#d80027" d="M0 0h512v144.8l-45.8 113L512 367.4V512H0V367.4l46.3-111.1L0 144.8z"/><path fill="#0052b4" d="M0 144.8h512v222.6H0z"/><circle cx="256" cy="256.1" r="89" fill="#eee"/></g>`
 	lbPath                    = `<mask id="circleFlagsLb0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsLb0)"><path fill="#d80027" d="M0 0h512v144.8l-45.8 113L512 367.4V512H0V367.4l46.3-111.1L0 144.8z"/><path fill="#eee" d="M0 144.8h512v222.6H0z"/><path fill="#6da544" d="M322.8 300.5L256 178.1l-66.8 122.4h50.1V334h33.4v-33.4z"/></g>`
 	lcPath                    = `<mask id="circleFlagsLc0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsLc0)"><path fill="#338af3" d="M0 0h512v512H0z"/><path fill="#eee" d="M161.4 345h189.2L256 122.4z"/><path fill="#333" d="M194.3 322.8L256 182.4l61.7 140.4z"/><path fill="#ffda44" d="M161.4 345h189.2L256 256z"/></g>`
+	lgbtPath                  = `<mask id="circleFlagsLgbt0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsLgbt0)"><path fill="#9c27b0" d="m0 425l256-32l256 32v87H0Z"/><path fill="#0052b4" d="m0 340l256-32l256 32v85H0Z"/><path fill="#6da544" d="m0 255l256-32l256 32v85H0Z"/><path fill="#ffda44" d="m0 170l256-32l256 32v85H0Z"/><path fill="#ff9811" d="m0 85l256-32l256 32v85H0Z"/><path fill="#d80027" d="M0 0h512v85H0z"/></g>`
+	lgbtProgressPath          = `<mask id="circleFlagsLgbtProgress0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsLgbtProgress0)"><path fill="#9c27b0" d="m0 425l256-32l256 32v87H0Z"/><path fill="#0052b4" d="m0 340l256-32l256 32v85H0Z"/><path fill="#6da544" d="m0 255l256-32l256 32v85H0Z"/><path fill="#ffda44" d="m0 170l256-32l256 32v85H0Z"/><path fill="#ff9811" d="m0 85l256-32l256 32v85H0Z"/><path fill="#d80027" d="M0 0h512v85H0Z"/><path fill="#333" d="M160 0H80l192 256L80 512h80l256-256Z"/><path fill="#85693d" d="M80 0H0l192 256L0 512h80l256-256Z"/><path fill="#338af3" d="M0 0v80l112 176L0 432v80l256-256Z"/><path fill="#f5a9b8" d="M0 80v80l32 96l-32 96v80l176-176Z"/><path fill="#eee" d="M0 160v192l96-96Z"/></g>`
+	lgbtTransgenderPath       = `<mask id="circleFlagsLgbtTransgender0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsLgbtTransgender0)"><path fill="#338af3" d="m0 410l256-32l256 32v102H0Z"/><path fill="#f5a9b8" d="m0 308l256-32l256 32v102H0Z"/><path fill="#eee" d="m0 204l256-32l256 32v104H0Z"/><path fill="#f5a9b8" d="m0 102l256-32l256 32v102H0Z"/><path fill="#338af3" d="M0 0h512v102H0z"/></g>`
 	liPath                    = `<mask id="circleFlagsLi0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsLi0)"><path fill="#d80027" d="m0 256l255.2-39.6L512 256v256H0z"/><path fill="#0052b4" d="M0 0h512v256H0z"/><path fill="#ffda44" d="M189.2 178a33.4 33.4 0 0 0-55.6-24.8v-19.6h11.1v-22.3h-11.1v-11.1h-22.3v11.1h-11.1v22.3h11.1v19.6A33.4 33.4 0 0 0 66.8 203v19.6H178V203c6.8-6.1 11.1-15 11.1-25z"/></g>`
 	lkPath                    = `<mask id="circleFlagsLk0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsLk0)"><path fill="#ff9811" d="M81.4 27.2h135.2v456.5H81.4z"/><path fill="#6da544" d="m0 44.5l100.2-22v463L0 467.5z"/><path fill="#a2001d" d="m218.6 26.5l293.4 18v93.2l-18.6 106.2l18.6 97.4v126.2l-293.4 18z"/><path fill="#ffda44" d="M0 0v44.5h200.3v423H0V512h512v-44.5H233.7v-423H512V0z"/><path fill="#ffda44" d="M300.5 94.6c-18.4 0-33.4 15-33.4 33.4v144.6a33 33 0 0 0 11.2 25v53h22.2v-27.8h100.2v44.5h-22.3v22.3H423V345l20.4-22.2h48.2a72.9 72.9 0 0 0 20.4 18.5V137.7a66 66 0 0 0-22.5 13.1a67.8 67.8 0 0 0-13.2 82.9c-21.3-.1-41 .2-53.3 0V167c0-11.2-16.7-22.3-16.7-22.3s-16.7 11.1-16.7 22.3h-66.8v66.7h33.4v33.4c0 7.1 1.4 14.1 4.1 20.7L345 300.6h-44.5v-206z"/></g>`
 	lrPath                    = `<mask id="circleFlagsLr0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsLr0)"><path fill="#eee" d="M0 232.7L256 0h256l-19.2 24L512 46.4v46.7l-19.6 22.6l19.6 23.9v46.5L493.8 209l18.2 23.7v46.6L493 304l19 21.8v46.6l-18 23.5l18 23v46.6l-253.3 21L0 465.5v-46.6l18.8-21.6L0 372.4v-46.6l19.6-21.9L0 279.3z"/><path fill="#d80027" d="m256 0l-22 46.5h278V0zm-17.1 93.2v46.5H512V93.2zm-4.9 93l22 46.5h256v-46.5zM0 279.3v46.5h512v-46.5zm0 93.1v46.5h512v-46.5zm0 93.1V512h512v-46.5z"/><path fill="#0052b4" d="M0 0h256v232.7H0z"/><path fill="#eee" d="m152.4 66.8l16.6 51h53.6l-43.4 31.5l16.6 51l-43.4-31.5l-43.4 31.5l16.6-51l-43.4-31.5h53.6z"/></g>`
@@ -384,21 +399,29 @@ const (
 	usAkPath                  = `<mask id="circleFlagsUsAk0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsAk0)"><path fill="#0052b4" d="M0 0h512v512H0z"/><path fill="#ffda44" d="m336.8 199.7l104-75.1h-128l104 75.1l-40-122.1zM57 231.7l52-37.4H45l52 37.4l-20-60.9zm85.5 31.7l52-37.4h-64l52 37.4l-20-60.9zM185 309l52-37.4h-64l52 37.4l-20-60.9zm43 47.6l52-37.4h-64l52 37.4l-20-60.9zm-5.6 67.1l52-37.4h-64l52 37.4l-20-60.9zM356 402.2l52-37.4h-64l52 37.4l-20-60.9zm-37.4 53.2l52-37.4h-64l52 37.4l-20-60.9z"/></g>`
 	usAlPath                  = `<mask id="circleFlagsUsAl0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsAl0)"><path fill="#eee" d="M0 68L68 0h376l68 68v376l-68 68H68L0 444Z"/><path fill="#d80027" d="M0 0v68l188 188L0 444v68h68l188-188l188 188h68v-68L324 256L512 68V0h-68L256 188L68 0Z"/></g>`
 	usArPath                  = `<mask id="circleFlagsUsAr0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsAr0)"><path fill="#d80027" d="M0 0h512v512H0z"/><path fill="#0052b4" d="M256 70L5 256l251 186l251-186Z"/><path fill="#eee" d="M256 130L85 256l171 126l171-126Zm-13.4-5.7l34.7-25h-42.7l34.7 25L256 83.7ZM46.5 277.4l27.2-33.1l-41.4 11.1l40.1 15L49 234.6Zm419 0l-27.2-33.1l41.4 11.1l-40.1 15l23.4-35.8zm-145.7-104l27.2-33.1l-41.4 11.1l40.1 15l-23.4-35.8zm70.3 52l27.2-33.1l-41.4 11.1l40.1 15l-23.4-35.8zm-197.9-52L165 140.3l41.4 11.1l-40.1 15l23.4-35.8zm-70.3 52l-27.2-33.1l41.4 11.1l-40.1 15l23.4-35.8zm-13 104l27.2-33.1l-41.5 11.1l40.2 15l-23.4-35.8zm70.3 52l27.2-33.1l-41.4 11.1l40.1 15l-23.4-35.8zm63.5 46.9l34.7-24.9h-42.7l34.7 24.9l-13.3-40.6zm160.4-98.9l-27.2-33.1l41.5 11.1l-40.2 15l23.4-35.8zm-70.3 52l-27.2-33.1l41.4 11.1l-40.1 15l23.4-35.8z"/><path fill="#0052b4" d="m242.7 204.7l34.7-25h-42.7l34.7 25l-13.3-40.7zm-39.2 103l34.7-25h-42.7l34.7 25l-13.3-40.7zm78.2 0l34.7-25h-42.7l34.7 25l-13.3-40.7zm-39.1-4.4l34.7 25h-42.7l34.7-25L256 344ZM160 223h192v32H160z"/></g>`
+	usAsPath                  = `<mask id="circleFlagsUsAs0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsAs0)"><path fill="#eee" d="M512 20.4V490L23.8 255.8z"/><path fill="#a2001d" d="M445.2 246.5h-30.5c8-9.6 7.5-23.7-1.5-32.7a24.2 24.2 0 0 0 0-34.2l-.5.5a25 25 0 0 0 .5-34.8l-137 137a23.9 23.9 0 0 0 34 0l2.6-2.5l65.6-6v28.3h22.3v-30.2l33.4-3z"/><path fill="#ffda44" d="M278.3 311.7L256 300.5l22.3-11.1H423v22.3z"/><path fill="#0052b4" d="M0 0v512h512L28.7 256.2L512 0z"/><path fill="#d80027" d="M512 0L0 256l512 256v-22L43.8 256L512 20.4z"/></g>`
 	usAzPath                  = `<mask id="circleFlagsUsAz0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsAz0)"><path fill="#d80027" d="M71 0L0 34v91l16 35l-16 36v60l256 64l256-64v-60l-16-36l16-35V34L441 0h-85l-32 16l-32-16h-72l-32 16l-32-16Z"/><path fill="#0052b4" d="M0 256h512v256H0Z"/><path fill="#ffda44" d="m292 0l-36 256L356 0h-64zm-36 256L512 34V0h-71L256 256zm0 0l256-60v-71L256 256zm0 0L0 125v71l256 60zm0 0L71 0H0v35l256 221zm0 0L220 0h-64l100 256z"/><path fill="#ff9811" d="m256 128l83 256l-217-159h268L173 384Z"/></g>`
+	usBetsyRossPath           = `<mask id="circleFlagsUsBetsyRoss0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsBetsyRoss0)"><path fill="#d80027" d="M312 0h200v512H0V273Z"/><path fill="#eee" d="M280 41v39h232V41Zm0 78v39h232v-39zm0 78v39h232v-39ZM0 275v39h512v-39H312l-156-64Zm0 78v39h512v-39zm0 78v39h512v-39z"/><path fill="#0052b4" d="M0 0h312v275H0Z"/><path fill="#eee" d="m260 176l2 17l-15 6l16 4l1 16l9-14l16 3l-11-12l8-14l-15 7zm-144 0l-11 12l-15-6l8 14l-11 12l17-3l8 14l1-16l16-4l-15-6zm173-47l-10 13l-15-5l9 13l-9 13l15-5l10 13v-16l15-5l-15-5zm-201 0v16l-16 5l16 5v16l9-13l16 5l-10-13l10-13l-16 5zm177-48l-2 16l-16 4l15 6l-2 17l11-12l15 6l-8-14l11-12l-16 3zm-153 0l-8 14l-17-3l11 12l-8 14l15-6l11 12l-2-17l15-6l-16-4zm134-32l-12 11l-14-8l7 15l-13 11l17-2l6 15l4-16l16-1l-14-8zm-116 0l3 16l-14 9l16 1l4 16l7-15l16 2l-12-11l6-15l-14 8zm58-15l-5 15h-16l13 10l-5 15l13-9l13 9l-5-15l13-10h-16zm58 217l-12-11l-14 8l7-15l-13-11l17 2l6-15l4 16l16 1l-14 8zm-116 0l3-16l-14-9l16-1l4-16l7 15l16-2l-12 11l6 15l-14-8zm58 15l-5-15h-16l13-10l-5-15l13 9l13-9l-5 15l13 10h-16z"/></g>`
 	usCaPath                  = `<mask id="circleFlagsUsCa0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsCa0)"><path fill="#eee" d="M0 0h512v416l-256 32L0 416Z"/><path fill="#6da544" d="m396 280l-67-8l-34 3l-24-2l-54-2l-93 13l-8 12h299z"/><path fill="#584528" d="m389 273l-10-33l-9-44l-23-23l-32-13l-50 3l-41-8l-50 24l-29 9l-9 20l-7 15l11 19l10 2l16-1l6-7l28-8l-12 31l-11 14l-19 9l13 3l15 1l19-12l26-24l11 3l14 13l-16 12l16 1l10-3l9-16l-4-19l11 1l10 3l1 23l-14 8l1 6h26l34-30l15 12l12 4l-6 8l1 5h17l10-7zM84 340h178v32H84z"/><path fill="#d80027" d="M0 416h512v96H0Z"/><path fill="#584528" d="M288 340h140v32H288z"/><path fill="#d80027" d="m71 182l69-50H55l69 50l-26-81z"/></g>`
 	usCoPath                  = `<mask id="circleFlagsUsCo0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsCo0)"><path fill="#0052b4" d="M0 0h512v167l-64 89l64 89v167H0V345l64-89l-64-89Z"/><path fill="#eee" d="M0 167h512v178H0z"/><path fill="#d80027" d="M344.3 299.8A128 128 0 0 1 201.8 382A128 128 0 0 1 96 256a128 128 0 0 1 105.8-126a128 128 0 0 1 142.5 82.2L224 256z"/><circle cx="224" cy="256" r="64" fill="#ffda44"/></g>`
+	usConfederateBattlePath   = `<mask id="circleFlagsUsConfederateBattle0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsConfederateBattle0)"><path fill="#d80027" d="M0 68L68 0h376l68 68v376l-68 68H68L0 444Z"/><path fill="#eee" d="M0 50v18l188 188L0 444v18l50 50h18l188-188l188 188h18l50-50v-18L324 256L512 68V50L462 0h-18L256 188L68 0H50Z"/><path fill="#0052b4" d="M0 0v50l206 206L0 462v50h50l206-206l206 206h50v-50L306 256L512 50V0h-50L256 206L50 0H0z"/><path fill="#eee" d="m307 274l19 57l-49-35h60l-48 35zm-51-51l19 57l-49-35h60l-48 35zm103 103l19 57l-49-35h60l-48 35zm51 51l19 57l-49-35h60l-48 35zM153 120l19 57l-49-35h60l-48 35zm-51-51l19 57l-49-35h60l-48 35zm103 103l19 57l-49-35h60l-48 35zm0 102l-18 57l48-35h-60l49 35zm-52 52l-18 57l48-35h-60l49 35zm-51 51l-18 57l48-35H72l49 35zm257-257l-18 57l48-35h-60l49 35zm51-51l-18 57l48-35h-60l49 35zM307 172l-18 57l48-35h-60l49 35z"/></g>`
 	usDcPath                  = `<mask id="circleFlagsUsDc0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsDc0)"><path fill="#eee" d="M0 0h512v186l-64 48l64 48v57l-64 48l64 48v77H0v-77l64-48l-64-48v-57l64-48l-64-48Z"/><path fill="#d80027" d="M0 186h512v96H0zm0 153h512v96H0zm224-181l83-60H205l83 60l-32-98Zm118 0l83-60H323l83 60l-32-98Zm-236 0l83-60H87l83 60l-32-98Z"/></g>`
 	usFlPath                  = `<mask id="circleFlagsUsFl0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsFl0)"><path fill="#eee" d="M0 68L68 0h376l68 68v376l-68 68H68L0 444Z"/><path fill="#d80027" d="M0 0v68l188 188L0 444v68h68l188-188l188 188h68v-68L324 256L512 68V0h-68L256 188L68 0Z"/><circle cx="256" cy="256" r="96" fill="#ff9811"/><circle cx="256" cy="256" r="64" fill="#6da544"/></g>`
 	usGaPath                  = `<mask id="circleFlagsUsGa0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsGa0)"><path fill="#d80027" d="M512 0v171l-64 85l64 85v171H0V341L341 0Z"/><path fill="#eee" d="M341 171h171v170H341l-64-85z"/><path fill="#0052b4" d="M0 0h341v341H0Z"/><path fill="#ffda44" d="M184 133a40 40 0 0 0-40 40v60h80v-60a40 40 0 0 0-40-40z"/><path fill="#eee" d="m167 105l52-37h-64l52 37l-20-61zm101 62l37 52v-64l-37 52l61-20zm-62 101l-52 37h64l-52-37l20 61zm-101-61l-37-52v64l37-52l-61 20zm125-92l63 10l-45-45l10 63l29-57zm28 115l-10 63l45-45l-63 10l57 29zm-115 28l-63-10l45 45l-10-63l-29 57Zm-28-115l10-63l-45 45l63-10l-57-29Z"/></g>`
+	usGuPath                  = `<mask id="circleFlagsUsGu0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsGu0)"><path fill="#d80027" d="M0 0h512v44.6l-41.2 207.2L512 467.6V512H0v-44.4l38-219l-38-204z"/><path fill="#0052b4" d="M0 44.6h512v423H0z"/><path fill="#d80027" d="M241.5 417.7c-3.5-3-85.7-74.5-85.7-161.6c0-87 82.2-158.6 85.7-161.6L256 82.1l14.5 12.4c3.5 3 85.7 74.4 85.7 161.6c0 87.2-82.2 158.6-85.7 161.6L256 430.1z"/><path fill="#338af3" d="M334 256.1c0-78-78-144.7-78-144.7s-78 66.8-78 144.7a150 150 0 0 0 17.5 66.8h121a150 150 0 0 0 17.4-66.8z"/><path fill="#0052b4" d="M334 256.1a150 150 0 0 1-17.5 66.8L256 334l-60.5-11a150 150 0 0 1-17.4-66.9h155.8z"/><path fill="#ffda44" d="M256 400.8s37.5-32.2 60.5-78h-121c23 45.8 60.5 78 60.5 78z"/><path fill="#6da544" d="M206 211.6h100l-50 50z"/><path fill="#a2001d" d="M239.3 245h33.4v100.1h-33.4z"/></g>`
 	usHiPath                  = `<mask id="circleFlagsUsHi0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsHi0)"><path fill="#eee" d="M0 256V96l32-32L0 32V0h32l32 32L96 0h416v64l-32 64l32 64v64l-32 64l32 64v64l-256 32L0 448v-64l32-64z"/><path fill="#0052b4" d="m173 128l83 83v-19h256v-64L384 96l-128 32Zm-45 45v83h83zM0 320v64h512v-64l-256-32Z"/><path fill="#d80027" d="M32 0v32H0v64h32v160H0v64h512v-64H96V96h160v32h256V64H256V32H96V0H32zm224 256v-31l-97-97h-31l128 128zM0 448v64h512v-64H0z"/></g>`
 	usInPath                  = `<mask id="circleFlagsUsIn0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsIn0)"><path fill="#0052b4" d="M0 0h512v512H0z"/><path fill="#ffda44" d="M224 361h64l-52 37.5l20-61l20 61zm-79.2-32.8h64l-52 37.5l20-61l20 61zM112 249h64l-52 37.5l20-61l20 61zm144 145l-12 8.6V451l12 21l12-21v-48.4zm6.7-207.7c-14.3 5.2-18.9 17.4-17.5 30.5a20.7 20.7 0 0 1-6.3-11.5a26 26 0 0 0-6 15.9a27.8 27.8 0 0 0 8.3 19.8H216v16h16l12 31h-12v16h12v44.4l12-36.6l12 36.6V304h12v-16h-12l12-31h16v-16h-23.3c7.6-8.5 8.6-23.3 1.9-34c-.3 6.4-3.5 11.2-5.6 14.8c-.9-11.8-11.2-18.8-6.3-35.5ZM224 63.5h64L236 101l20-61l20 61zm92.1 29.9h64l-52 37.5l20-61l20 61zm63.5 63.5h64l-52 37.5l20-61l20 61zm29.9 92.1h64l-52 37.5l20-61l20 61zm-29.9 92.1h64l-52 37.5l20-61l20 61zm-63.5 63.5h64l-52 37.5l20-61l20 61zm-184.2 0h64l-52 37.5l20-61l20 61zm-63.5-63.5h64l-52 37.5l20-61l20 61zM38.5 249h64l-52 37.5l20-61l20 61zm29.9-92.1h64l-52 37.5l20-61l20 61zm63.5-63.5h64l-52 37.5l20-61l20 61zM224 137h64l-52 37.5l20-61l20 61zm112 112h64l-52 37.5l20-61l20 61zm-32.8 79.2h64l-52 37.5l20-61l20 61z"/></g>`
 	usMoPath                  = `<mask id="circleFlagsUsMo0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsMo0)"><path fill="#eee" d="m0 170l256-64l256 64v172l-256 64L0 342Z"/><path fill="#d80027" d="M0 0h512v170H0Z"/><path fill="#0052b4" d="M0 342h512v170H0Z"/><circle cx="256" cy="256" r="160" fill="#0052b4"/><circle cx="256" cy="256" r="104" fill="#eee"/><path fill="#eee" d="m240 148.4l41.6-30h-51.2l41.6 30l-16-48.8zM363.6 240l30 41.6v-51.2l-30 41.6l48.8-16zM272 363.6l-41.6 30h51.2l-41.6-30l16 48.8zM148.4 272l-30-41.6v51.2l30-41.6l-48.8 16zm147.5-117.2l51.1-5.2l-44.4-25.6l21.1 46.8l10.5-50.3zm61.3 141.1l5.2 51.1l25.6-44.4l-46.8 21.1l50.2 10.5zm-141.1 61.3l-51.1 5.2l44.4 25.6l-21.1-46.8l-10.5 50.2zm-61.3-141.1l-5.2-51.1l-25.6 44.4l46.8-21.1l-50.2-10.5Zm186.4-27.8l46.8 21.1l-25.6-44.4l-5.2 51.1l34.3-38.3zm-17.5 152.9L302.6 388l44.4-25.6l-51.1-5.2l38.3 34.2zm-152.9-17.5L124 302.6l25.6 44.4l5.2-51.1l-34.3 38.3zm17.5-152.9l21.1-46.8l-44.4 25.6l51.1 5.2l-38.3-34.2z"/><path fill="#338af3" d="M256 168a88 88 0 0 0-74.9 42H331a88 88 0 0 0-75-42z"/><circle cx="256" cy="280" r="56" fill="#ff9811"/><path fill="#eee" d="M288 280a32 32 0 0 1-32 32l-16-32l16-32a32 32 0 0 1 32 32z"/><path fill="#0052b4" d="M256 248a32 32 0 0 0-32 32l16 16l16-16z"/><path fill="#d80027" d="M256 312a32 32 0 0 1-32-32h32z"/></g>`
+	usMpPath                  = `<mask id="circleFlagsUsMp0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsMp0)"><path fill="#338af3" d="M0 0h512v512H0z"/><path fill="#eee" d="M248 417.2a16.7 16.7 0 0 1-15-11a16.7 16.7 0 0 1-29.7-7.6a16.7 16.7 0 0 1-27.6-13.5a16.7 16.7 0 0 1-24.3-18.9a16.7 16.7 0 0 1-17.8-5a16.7 16.7 0 0 1-2.3-18.3a16.7 16.7 0 0 1-15-26.8a16.7 16.7 0 0 1-9.2-29.4a16.7 16.7 0 0 1-3.1-30.5a16.7 16.7 0 0 1 3-30.6a16.7 16.7 0 0 1 9.2-29.4a16.7 16.7 0 0 1 15-26.9a16.7 16.7 0 0 1 2.2-18.3c4.5-5.2 11.5-7 17.7-5a16.7 16.7 0 0 1 6-17.5a16.7 16.7 0 0 1 18.3-1.4a16.7 16.7 0 0 1 27.6-13.6a16.7 16.7 0 0 1 29.7-7.7a16.7 16.7 0 0 1 30.7-1.6a16.7 16.7 0 0 1 30.4 4.6a16.7 16.7 0 0 1 28.9 10.6a16.7 16.7 0 0 1 26.1 16.2c6-2.6 13.2-1.5 18.2 3.2a16.7 16.7 0 0 1 4.1 18a16.7 16.7 0 0 1 17.7 25.1a16.7 16.7 0 0 1 15.4 10.1a16.7 16.7 0 0 1-3.2 18.2a16.7 16.7 0 0 1 6.2 30c6 2.6 10.2 8.5 10.2 15.4v.4c0 6.9-4.2 12.8-10.2 15.4a16.7 16.7 0 0 1-6.1 30a16.7 16.7 0 0 1-12.2 28.3a16.7 16.7 0 0 1-.4 18.5a16.7 16.7 0 0 1-17.1 6.8a16.7 16.7 0 0 1-4.2 18c-5 4.7-12.2 5.7-18.1 3.2a16.7 16.7 0 0 1-26 16.3a16.7 16.7 0 0 1-28.8 10.7a16.7 16.7 0 0 1-30.5 4.6a16.7 16.7 0 0 1-15.9 9.4z"/><circle cx="256" cy="256" r="111.3" fill="#338af3"/><path fill="#acabb1" d="M280.4 218.2c5.4-4 9-10.5 9-17.9v-11c0-12.4-10-22.3-22.3-22.3H245c-12.3 0-22.3 10-22.3 22.2v11.1c0 7.4 3.6 13.9 9 18L211.5 423s11.1 11 44.5 11s44.5-11 44.5-11z"/><path fill="#eee" d="m256 167l19.3 59.5H338l-50.6 36.8l19.3 59.5L256 286l-50.6 36.8l19.3-59.5l-50.6-36.8h62.6z"/></g>`
 	usMsPath                  = `<mask id="circleFlagsUsMs0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsMs0)"><path fill="#d80027" d="M0 0h104l152 64L408 0h104v512H408l-152-64l-152 64H0Z"/><path fill="#ff9811" d="M104 0h24l128 64L384 0h24v512h-24l-128-64l-128 64h-24z"/><path fill="#0052b4" d="M128 0h256v512H128Z"/><path fill="#eee" d="m198 155l3 16l-14 9l16 1l4 16l7-15l16 2l-12-11l6-15l-14 8l-12-11zm116 0l-12 11l-14-8l7 15l-13 11l17-2l6 15l4-16l16-1l-14-8l3-17zm-134 32l-8 14l-17-3l11 12l-8 14l15-6l11 12l-2-17l15-6l-16-4l-1-16zm153 0l-2 16l-16 4l15 6l-2 17l11-12l15 6l-8-14l11-12l-16 3l-8-14zm-77 21a16 16 0 0 0-16 16a16 16 0 0 0 2 8a16 16 0 0 0-6-6a16 16 0 0 0-8-2a16 16 0 0 0-14 8a16 16 0 0 0 6 22a16 16 0 0 0 8 2a16 16 0 0 0-8 2a16 16 0 0 0-6 22a16 16 0 0 0 22 6a16 16 0 0 0 6-6a16 16 0 0 0-2 8a16 16 0 0 0 16 16a16 16 0 0 0 16-16a16 16 0 0 0-2-8a16 16 0 0 0 6 6a16 16 0 0 0 22-6a16 16 0 0 0-6-22a16 16 0 0 0-8-2a16 16 0 0 0 8-2a16 16 0 0 0 6-22a16 16 0 0 0-13-8a16 16 0 0 0-9 2a16 16 0 0 0-6 6a16 16 0 0 0 2-8a16 16 0 0 0-16-16zm-100 27v16l-16 5l16 5v16l9-13l16 5l-10-13l10-13l-16 5l-9-13zm201 0l-10 13l-15-5l9 13l-9 13l15-5l10 13v-16l15-5l-15-5v-16zm-173 47l-11 12l-15-6l8 14l-11 12l17-3l8 14l1-16l16-4l-15-6l2-17zm144 0l2 17l-15 6l16 4l1 16l9-14l16 3l-11-12l8-14l-15 7l-11-13zm-130 40l-11 12a104 104 0 0 0 138 0l-11-12a88 88 0 0 1-116 0z"/><path fill="#ff9811" d="m256 140l-5 15h-16l13 10l-5 15l13-9l13 9l-5-15l13-10h-16l-5-15zm0 100a16 16 0 0 0-16 16a16 16 0 0 0 16 16a16 16 0 0 0 16-16a16 16 0 0 0-16-16z"/></g>`
 	usNcPath                  = `<mask id="circleFlagsUsNc0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsNc0)"><path fill="#0052b4" d="M0 0h232l64 256l-64 256H0Z"/><path fill="#d80027" d="M232 0h280v256l-140 64l-140-64Z"/><path fill="#eee" d="M232 256h280v256H232Z"/><path fill="#0052b4" d="M0 0h232v512H0z"/><path fill="#eee" d="m91 294l65-47H76l65 47l-25-76z"/><path fill="#ffda44" d="M24 224h40v64H24zm144 0h40v64h-40zM64 92v16H24v32h40v-16h104v16h40v-32h-40V92H64zm0 328v-16H24v-32h40v16h104v-16h40v32h-40v16z"/></g>`
 	usNmPath                  = `<mask id="circleFlagsUsNm0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsNm0)"><path fill="#ffda44" d="M0 0h512v512H0Z"/><path fill="#d80027" d="M256 56c-7 0-12 5-12 12v128h-24v-92a12 12 0 0 0-24 0v92h-92a12 12 0 0 0 0 24h92v24H68a12 12 0 0 0 0 24h128v24h-92a12 12 0 0 0 0 24h92v92c0 7 5 12 12 12s12-5 12-12v-92h24v128c0 7 5 12 12 12s12-5 12-12V316h24v92c0 7 5 12 12 12s12-5 12-12v-92h92c7 0 12-5 12-12s-5-12-12-12h-92v-24h128c7 0 12-5 12-12s-5-12-12-12H316v-24h92c7 0 12-5 12-12s-5-12-12-12h-92v-92a12 12 0 0 0-24 0v92h-24V68c0-7-5-12-12-12z"/><circle cx="256" cy="256" r="88" fill="#d80027"/><circle cx="256" cy="256" r="64" fill="#ffda44"/></g>`
+	usPrPath                  = `<mask id="circleFlagsUsPr0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsPr0)"><path fill="#eee" d="m27 63.3l485 39.1v102.4L477.3 259l34.7 48.2v102.4L27.4 446.9z"/><path fill="#d80027" d="m0 0l51.2 102.4H512V0zm0 512h512V409.6H51.2zm180-204.8h332V204.8H180z"/><path fill="#0052b4" d="M0 0v512l256-256z"/><path fill="#eee" d="m103.6 189.2l16.6 51h53.6l-43.4 31.6l16.6 51l-43.4-31.5l-43.4 31.5l16.6-51l-43.4-31.6H87z"/></g>`
 	usRiPath                  = `<mask id="circleFlagsUsRi0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsRi0)"><path fill="#eee" d="M0 0h512v512H0z"/><path fill="#0052b4" d="M204 296v16h-40v32h40v-16h104v16h40v-32h-40v-16z"/><path fill="#ffda44" d="m236 107l52-38h-64l52 38l-20-61zm170 129l37 52v-64l-37 52l61-20zM276 406l-52 37h64l-52-37l20 61zM107 276l-38-52v64l38-52l-61 20zm206-159l64-7l-55-32l26 59l13-63zm83 196l6 64l32-55l-59 26l63 13zm-197 83l-64 6l55 32l-26-59l-13 63zm-82-197l-7-64l-32 55l59-26l-63-13Zm259-35l58 26l-32-55l-7 64l43-48zm-28 212l-26 58l55-32l-64-7l48 43zm-211-28l-59-26l32 55l6-64l-42 48zm27-211l26-59l-55 32l64 6l-48-42zm92-3a24 24 0 0 0-24 24a24 24 0 0 0 16 23v17h-16v16h16v39c-20-2-30-15-33-18l11-11h-32v32l10-10a68 68 0 0 0 104 0l10 10v-32h-32l11 11c-3 3-13 16-33 18v-39h16v-16h-16v-17a24 24 0 0 0 16-23a24 24 0 0 0-24-24zm0 16a8 8 0 0 1 8 8a8 8 0 0 1-8 8a8 8 0 0 1-8-8a8 8 0 0 1 8-8z"/></g>`
 	usTnPath                  = `<mask id="circleFlagsUsTn0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsTn0)"><path fill="#0052b4" d="M448 0h64v512h-64l-16-256Z"/><path fill="#eee" d="M416 0h32v512h-32l-16-256Z"/><path fill="#d80027" d="M0 0h416v512H0z"/><circle cx="208" cy="256" r="160" fill="#eee"/><circle cx="208" cy="256" r="128" fill="#0052b4"/><path fill="#eee" d="m145 284l60 83V265l-60 83l98-32zm15-128l-22 100l76-68l-102 11l89 51zm147 49l-42 93l-21-100l75 69l-102-11z"/></g>`
 	usTxPath                  = `<mask id="circleFlagsUsTx0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsTx0)"><path fill="#0052b4" d="M0 0h167l64 256l-64 256H0Z"/><path fill="#eee" d="m43.5 317l104-75h-128l104 75l-40-122zM167 0h345v256l-173 64l-172-64Z"/><path fill="#d80027" d="M167 256h345v256H167z"/></g>`
+	usUmPath                  = `<mask id="circleFlagsUsUm0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsUm0)"><path fill="#eee" d="M256 0h256v64l-32 32l32 32v64l-32 32l32 32v64l-32 32l32 32v64l-256 32L0 448v-64l32-32l-32-32v-64z"/><path fill="#d80027" d="M224 64h288v64H224Zm0 128h288v64H256ZM0 320h512v64H0Zm0 128h512v64H0Z"/><path fill="#0052b4" d="M0 0h256v256H0Z"/><path fill="#eee" d="m187 243l57-41h-70l57 41l-22-67zm-81 0l57-41H93l57 41l-22-67zm-81 0l57-41H12l57 41l-22-67zm162-81l57-41h-70l57 41l-22-67zm-81 0l57-41H93l57 41l-22-67zm-81 0l57-41H12l57 41l-22-67Zm162-82l57-41h-70l57 41l-22-67Zm-81 0l57-41H93l57 41l-22-67zm-81 0l57-41H12l57 41l-22-67Z"/></g>`
+	usViPath                  = `<mask id="circleFlagsUsVi0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUsVi0)"><path fill="#eee" d="M0 0h512v512H0z"/><g fill="#ffda44"><path d="M299.5 178.8a43.5 43.5 0 1 0-87 0H117a44 44 0 0 0 44.2 42.9h-1.4a42.8 42.8 0 0 0 42.8 42.8l53.5 42l53.5-42a42.8 42.8 0 0 0 42.8-42.8H351a44 44 0 0 0 44.2-42.9h-95.6z"/><path d="m236.9 302.3l-27 60.9a122 122 0 0 0 46.1 9a122 122 0 0 0 46-9l-26.9-60.9H237z"/></g><path fill="#eee" d="m255.3 214l-55 21.5v39.7a49.1 49.1 0 0 0 22.3 40l11.3-2.3l11 14.3a98.2 98.2 0 0 0 11.1 3.6s4.6-1.1 11.1-3.6l9.4-14.1l13 2.1a49.2 49.2 0 0 0 22.2-40.1v-39.6z"/><path fill="#338af3" d="M62 257.8L92.3 342l29.8-84.2h22.7l-43.4 111.3H83L39.3 257.8h22.8zm349.8 111.3V257.8h21.7v111.3z"/><path fill="#d80027" d="M222.6 224.4v90.8a96 96 0 0 0 22.3 12V224.3zm66.8 0v90.8a98 98 0 0 1-22.3 12V224.3z"/><path fill="#0052b4" d="M200.3 200.2h111.4v35.3H200.3z"/></g>`
 	uyPath                    = `<mask id="circleFlagsUy0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUy0)"><path fill="#338af3" d="M0 256L256 0h256v55.7l-20.7 34.5l20.7 32.2v66.8l-21.2 32.7L512 256v66.8l-24 31.7l24 35.1v66.7l-259.1 28.3L0 456.3v-66.7l27.1-33.3L0 322.8z"/><path fill="#eee" d="M256 256h256v-66.8H236.9zm-19.1-133.6H512V55.7H236.9zM512 512v-55.7H0V512zM0 389.6h512v-66.8H0z"/><path fill="#eee" d="M0 0h256v256H0z"/><path fill="#ffda44" d="m222.6 149.8l-31.3 14.7l16.7 30.3l-34-6.5l-4.3 34.3l-23.6-25.2l-23.7 25.2l-4.3-34.3l-33.9 6.5l16.6-30.3l-31.2-14.7l31.2-14.7l-16.6-30.3l34 6.5l4.2-34.3l23.7 25.3L169.7 77l4.3 34.3l34-6.5l-16.7 30.3z"/></g>`
 	uzPath                    = `<mask id="circleFlagsUz0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsUz0)"><path fill="#d80027" d="m0 178l254.2-22L512 178v22.3l-40.2 54.1l40.2 57.3V334l-254 23.4L0 334v-22.3l36.7-59.4l-36.7-52z"/><path fill="#338af3" d="M0 0h512v178H0z"/><path fill="#eee" d="M0 200.3h512v111.4H0z"/><path fill="#6da544" d="M0 334h512v178H0z"/><path fill="#eee" d="M117.2 105.7a50 50 0 0 1 39.3-48.9a50.2 50.2 0 0 0-10.7-1.1a50 50 0 1 0 10.7 99c-22.5-5-39.3-25-39.3-49zm69 22.8l3.3 10.4h11l-9 6.5l3.5 10.4l-9-6.4l-8.7 6.4l3.4-10.4l-9-6.5h11zm35 0l3.4 10.4h11l-9 6.5l3.4 10.4l-8.8-6.4l-9 6.4l3.5-10.4l-9-6.5h11zm35 0l3.4 10.4h11l-9 6.5l3.5 10.4l-9-6.4l-8.8 6.4l3.4-10.4l-9-6.5h11zm35 0l3.4 10.4h11l-9 6.5l3.5 10.4l-9-6.4l-8.8 6.4l3.4-10.4l-9-6.5h11zm35 0l3.4 10.4h11l-9 6.5l3.5 10.4l-9-6.4l-8.8 6.4l3.4-10.4l-8.8-6.5h11zm-105-36.4l3.4 10.4h11l-9 6.5l3.4 10.4l-8.8-6.5l-9 6.5l3.5-10.4l-9-6.5h11zm35 0l3.4 10.4h11l-9 6.5l3.5 10.4l-9-6.5l-8.8 6.5l3.4-10.4l-9-6.5h11zm35 0l3.4 10.4h11l-9 6.5l3.5 10.4l-9-6.5l-8.8 6.5l3.4-10.4l-9-6.5h11zm35 0l3.4 10.4h11l-9 6.5l3.5 10.4l-9-6.5l-8.8 6.5l3.4-10.4l-8.8-6.5h11zm-70-36.4l3.4 10.4h11l-9 6.4l3.6 10.5l-9-6.5l-8.8 6.5l3.4-10.5l-9-6.4h11zm35 0l3.4 10.4h11l-9 6.4l3.6 10.5l-9-6.5l-8.8 6.5l3.4-10.5l-9-6.4h11zm35 0l3.4 10.4h11l-9 6.4l3.6 10.5l-9-6.5l-8.8 6.5l3.4-10.5l-8.8-6.4h11z"/></g>`
 	vaPath                    = `<mask id="circleFlagsVa0"><circle cx="256" cy="256" r="256" fill="#fff"/></mask><g mask="url(#circleFlagsVa0)"><path fill="#ffda44" d="M0 0h256l51.7 254.7L256 512H0z"/><path fill="#eee" d="M256 0h256v512H256z"/><path fill="#acabb1" d="m354 222.8l48.1 63.6A33.4 33.4 0 1 0 420 273l-75-99.2l-17.7 13.4l-26.7 20.2l26.9 35.5l26.6-20.1zm69.3 73.1a11.1 11.1 0 1 1 13.4 17.8a11.1 11.1 0 0 1-13.4-17.8z"/><path fill="#ffda44" d="m436.6 242.9l26.8-35.5l-26.6-20.2l-17.8-13.4l-75 99.2a33.4 33.4 0 1 0 17.8 13.4l48-63.6l26.8 20zm-93.8 68.6a11.1 11.1 0 1 1-17.8-13.4a11.1 11.1 0 0 1 17.8 13.4z"/></g>`
@@ -481,6 +504,8 @@ func IconFromName(name string) g.Node {
 		return AuSa()
 	case "auTas":
 		return AuTas()
+	case "auTorresStraitIslands":
+		return AuTorresStraitIslands()
 	case "auVic":
 		return AuVic()
 	case "auWa":
@@ -557,6 +582,10 @@ func IconFromName(name string) g.Node {
 		return Ch()
 	case "chGr":
 		return ChGr()
+	case "checkered":
+		return Checkered()
+	case "chequered":
+		return Chequered()
 	case "ci":
 		return Ci()
 	case "ck":
@@ -651,8 +680,26 @@ func IconFromName(name string) g.Node {
 		return EsVariant()
 	case "et":
 		return Et()
+	case "etAf":
+		return EtAf()
+	case "etAm":
+		return EtAm()
+	case "etBe":
+		return EtBe()
+	case "etGa":
+		return EtGa()
+	case "etHa":
+		return EtHa()
 	case "etOr":
 		return EtOr()
+	case "etSi":
+		return EtSi()
+	case "etSn":
+		return EtSn()
+	case "etSo":
+		return EtSo()
+	case "etSw":
+		return EtSw()
 	case "etTi":
 		return EtTi()
 	case "eu":
@@ -885,6 +932,12 @@ func IconFromName(name string) g.Node {
 		return Lb()
 	case "lc":
 		return Lc()
+	case "lgbt":
+		return Lgbt()
+	case "lgbtProgress":
+		return LgbtProgress()
+	case "lgbtTransgender":
+		return LgbtTransgender()
 	case "li":
 		return Li()
 	case "lk":
@@ -1185,36 +1238,52 @@ func IconFromName(name string) g.Node {
 		return UsAl()
 	case "usAr":
 		return UsAr()
+	case "usAs":
+		return UsAs()
 	case "usAz":
 		return UsAz()
+	case "usBetsyRoss":
+		return UsBetsyRoss()
 	case "usCa":
 		return UsCa()
 	case "usCo":
 		return UsCo()
+	case "usConfederateBattle":
+		return UsConfederateBattle()
 	case "usDc":
 		return UsDc()
 	case "usFl":
 		return UsFl()
 	case "usGa":
 		return UsGa()
+	case "usGu":
+		return UsGu()
 	case "usHi":
 		return UsHi()
 	case "usIn":
 		return UsIn()
 	case "usMo":
 		return UsMo()
+	case "usMp":
+		return UsMp()
 	case "usMs":
 		return UsMs()
 	case "usNc":
 		return UsNc()
 	case "usNm":
 		return UsNm()
+	case "usPr":
+		return UsPr()
 	case "usRi":
 		return UsRi()
 	case "usTn":
 		return UsTn()
 	case "usTx":
 		return UsTx()
+	case "usUm":
+		return UsUm()
+	case "usVi":
+		return UsVi()
 	case "uy":
 		return Uy()
 	case "uz":
@@ -1364,6 +1433,10 @@ func AuSa(children ...g.Node) g.Node {
 
 func AuTas(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(auTasPath), g.Group(children))
+}
+
+func AuTorresStraitIslands(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(auTorresStraitIslandsPath), g.Group(children))
 }
 
 func AuVic(children ...g.Node) g.Node {
@@ -1516,6 +1589,14 @@ func Ch(children ...g.Node) g.Node {
 
 func ChGr(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(chGrPath), g.Group(children))
+}
+
+func Checkered(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(checkeredPath), g.Group(children))
+}
+
+func Chequered(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(chequeredPath), g.Group(children))
 }
 
 func Ci(children ...g.Node) g.Node {
@@ -1706,8 +1787,44 @@ func Et(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(etPath), g.Group(children))
 }
 
+func EtAf(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(etAfPath), g.Group(children))
+}
+
+func EtAm(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(etAmPath), g.Group(children))
+}
+
+func EtBe(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(etBePath), g.Group(children))
+}
+
+func EtGa(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(etGaPath), g.Group(children))
+}
+
+func EtHa(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(etHaPath), g.Group(children))
+}
+
 func EtOr(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(etOrPath), g.Group(children))
+}
+
+func EtSi(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(etSiPath), g.Group(children))
+}
+
+func EtSn(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(etSnPath), g.Group(children))
+}
+
+func EtSo(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(etSoPath), g.Group(children))
+}
+
+func EtSw(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(etSwPath), g.Group(children))
 }
 
 func EtTi(children ...g.Node) g.Node {
@@ -2172,6 +2289,18 @@ func Lb(children ...g.Node) g.Node {
 
 func Lc(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(lcPath), g.Group(children))
+}
+
+func Lgbt(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(lgbtPath), g.Group(children))
+}
+
+func LgbtProgress(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(lgbtProgressPath), g.Group(children))
+}
+
+func LgbtTransgender(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(lgbtTransgenderPath), g.Group(children))
 }
 
 func Li(children ...g.Node) g.Node {
@@ -2774,8 +2903,16 @@ func UsAr(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(usArPath), g.Group(children))
 }
 
+func UsAs(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(usAsPath), g.Group(children))
+}
+
 func UsAz(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(usAzPath), g.Group(children))
+}
+
+func UsBetsyRoss(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(usBetsyRossPath), g.Group(children))
 }
 
 func UsCa(children ...g.Node) g.Node {
@@ -2784,6 +2921,10 @@ func UsCa(children ...g.Node) g.Node {
 
 func UsCo(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(usCoPath), g.Group(children))
+}
+
+func UsConfederateBattle(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(usConfederateBattlePath), g.Group(children))
 }
 
 func UsDc(children ...g.Node) g.Node {
@@ -2798,6 +2939,10 @@ func UsGa(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(usGaPath), g.Group(children))
 }
 
+func UsGu(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(usGuPath), g.Group(children))
+}
+
 func UsHi(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(usHiPath), g.Group(children))
 }
@@ -2808,6 +2953,10 @@ func UsIn(children ...g.Node) g.Node {
 
 func UsMo(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(usMoPath), g.Group(children))
+}
+
+func UsMp(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(usMpPath), g.Group(children))
 }
 
 func UsMs(children ...g.Node) g.Node {
@@ -2822,6 +2971,10 @@ func UsNm(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(usNmPath), g.Group(children))
 }
 
+func UsPr(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(usPrPath), g.Group(children))
+}
+
 func UsRi(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(usRiPath), g.Group(children))
 }
@@ -2832,6 +2985,14 @@ func UsTn(children ...g.Node) g.Node {
 
 func UsTx(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(usTxPath), g.Group(children))
+}
+
+func UsUm(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(usUmPath), g.Group(children))
+}
+
+func UsVi(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(usViPath), g.Group(children))
 }
 
 func Uy(children ...g.Node) g.Node {

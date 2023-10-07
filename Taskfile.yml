@@ -7,7 +7,7 @@ interval: "500ms"
 tasks:
   bump:
     vars:
-      VERSION: "0.0.20230926"
+      VERSION: "0.0.20231006"
     cmds:
       - git tag v{{.VERSION}}
       - git push origin v{{.VERSION}}

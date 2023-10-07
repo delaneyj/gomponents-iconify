@@ -6,7 +6,7 @@ import (
 )
 
 const (
-	IconifyVersion           = "1.10.0"
+	IconifyVersion           = "1.11.0"
 	activityPath             = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h4l3-9l4 18l3-9h4"/>`
 	adjustmentsPath          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v10m0 6v-.5M17.5 4v5m0 11v-5.56M6.5 4v2m0 14v-8.44M6.5 6a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm5.5 8a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Zm5.5-5a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3Z"/>`
 	aidPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 8H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-2M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M8 8h8m-4 4v2m0 0v2m0-2h-2m2 0h2"/>`
@@ -37,6 +37,8 @@ const (
 	arrowUpPath              = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20V4m0 0l6 6m-6-6l-6 6"/>`
 	arrowsPath               = `<g fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v6m0 4v6"/><path stroke-linecap="round" stroke-linejoin="round" d="M9.5 6.5L12 4l2.5 2.5m-5 11L12 20l2.5-2.5m-8-8L4 12l2.5 2.5m11-5L20 12l-2.5 2.5M5.5 12h13"/></g>`
 	arrowsHorizontalPath     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9l-3 3m0 0l3 3m-3-3h16m-3 3l3-3m0 0l-3-3"/>`
+	arrowsRightLeftPath      = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7.5 13.5l-3 3m0 0l3 3m-3-3h16m-3-6l3-3m0 0l-3-3m3 3h-16"/>`
+	arrowsUpDownPath         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 7L8 4m0 0L5 7m3-3v16m6-3l3 3m0 0l3-3m-3 3V4"/>`
 	arrowsVerticalPath       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 17l3 3m0 0l3-3m-3 3V4m3 3l-3-3m0 0L9 7"/>`
 	asteriskSimplePath       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 4l.005 7.993m0 0l7.603-2.465m-7.603 2.465l4.697 6.48m-4.697-6.48l-4.707 6.48m4.707-6.48L4.392 9.528"/>`
 	atSymbolPath             = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 20.064A9 9 0 1 1 21 12v1.5a2.5 2.5 0 0 1-5 0V8m0 4a4 4 0 1 1-8 0a4 4 0 0 1 8 0Z"/>`
@@ -72,6 +74,8 @@ const (
 	cameraVideoOffPath       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 5l14 14M9 7h6a1 1 0 0 1 1 1v5.5a1 1 0 0 0 .4.8L20 17V7l-4 3m-1 7H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1"/>`
 	carPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 11h2a2 2 0 0 1 2 2v2a1 1 0 0 1-1 1h-1.5M17 11h-6.5m6.5 0l-2.417-4.029A2 2 0 0 0 12.868 6H10.5m0 0v5m0-5H7.64a2 2 0 0 0-1.962 1.608L5 11m5.5 0H5m.5 5H4a1 1 0 0 1-1-1v-2a2 2 0 0 1 2-2v0m.5 5a2 2 0 1 0 4 0m-4 0a2 2 0 1 1 4 0m0 0h5m0 0a2 2 0 1 0 4 0m-4 0a2 2 0 1 1 4 0"/>`
 	cartPath                 = `<g fill="none"><circle cx="7.5" cy="18.5" r="1.5" fill="currentColor"/><circle cx="16.5" cy="18.5" r="1.5" fill="currentColor"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h2l.6 3m0 0L7 15h10l2-7H5.6z"/></g>`
+	certificatePath          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v4l3-2l3 2v-4M13.957 4.275l-.323-.444a2.022 2.022 0 0 0-3.268 0l-.323.444L9.5 4.19A2.021 2.021 0 0 0 7.19 6.5l.085.543l-.444.323a2.021 2.021 0 0 0 0 3.268l.444.323l-.085.542A2.021 2.021 0 0 0 9.5 13.81l.543-.085l.323.444a2.022 2.022 0 0 0 3.268 0l.323-.444l.542.085a2.021 2.021 0 0 0 2.311-2.31l-.085-.543l.444-.323a2.022 2.022 0 0 0 0-3.268l-.444-.323l.085-.542A2.021 2.021 0 0 0 14.5 4.19l-.543.085Z"/>`
+	certificateOffPath       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 4l16 16M6.831 7.366a2.021 2.021 0 0 0 0 3.268l.444.323l-.085.542A2.021 2.021 0 0 0 9.5 13.81l.543-.085l.323.444a2.022 2.022 0 0 0 3.268 0M9 17v4l3-2l3 2v-2.5M8 4.55c.412-.3.94-.448 1.5-.36l.543.085l.323-.444a2.022 2.022 0 0 1 3.268 0l.323.444l.542-.085A2.021 2.021 0 0 1 16.81 6.5l-.085.543l.444.323a2.022 2.022 0 0 1 0 3.268l-.444.323l.085.542c.088.56-.06 1.089-.36 1.501"/>`
 	chartPath                = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M17 5v15m-5-9v9m-5-6v6"/>`
 	chatPath                 = `<g fill="currentColor"><path d="m4 19l-.93-.37a1 1 0 0 0 1.125 1.35L4 19zm4.706-.936l.474-.881l-.317-.17l-.352.07l.195.98zm-3.082-3.147l.93.37l.163-.414l-.196-.399l-.897.443zM19 12c0 3.246-2.853 6-6.53 6v2c4.641 0 8.53-3.514 8.53-8h-2zM5.941 12c0-3.246 2.854-6 6.53-6V4C7.83 4 3.94 7.514 3.94 12h2zm6.53-6C16.147 6 19 8.754 19 12h2c0-4.486-3.889-8-8.53-8v2zm0 12c-1.205 0-2.328-.3-3.291-.817l-.948 1.761A8.934 8.934 0 0 0 12.471 20v-2zm-8.276 1.98l4.706-.936l-.39-1.961l-4.706.936l.39 1.962zm2.326-5.506A5.564 5.564 0 0 1 5.94 12h-2c0 1.2.282 2.338.786 3.36l1.794-.886zm-1.826.073L3.07 18.631l1.858.738l1.624-4.083l-1.858-.739z"/><circle cx="9" cy="12" r="1"/><circle cx="12.5" cy="12" r="1"/><circle cx="16" cy="12" r="1"/></g>`
 	chatsPath                = `<g fill="none"><path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M9.882 15C13.261 15 16 12.538 16 9.5S13.261 4 9.882 4C6.504 4 3.765 6.462 3.765 9.5c0 .818.198 1.594.554 2.292L3 15l3.824-.736A6.62 6.62 0 0 0 9.882 15Z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.804 18.124a6.593 6.593 0 0 0 3.314.876a6.623 6.623 0 0 0 3.059-.736L21 19l-1.32-3.208a5.02 5.02 0 0 0 .555-2.292c0-1.245-.46-2.393-1.235-3.315c-.749-.89-1.792-1.569-3-1.92"/><circle r="1" fill="currentColor" transform="matrix(-1 0 0 1 13 9.5)"/><circle r="1" fill="currentColor" transform="matrix(-1 0 0 1 10 9.5)"/><circle r="1" fill="currentColor" transform="matrix(-1 0 0 1 7 9.5)"/></g>`
@@ -89,7 +93,7 @@ const (
 	codePath                 = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-linejoin="round" d="m7 8l-4 4l4 4"/><path d="m10.5 18l3-12"/><path stroke-linejoin="round" d="m17 8l4 4l-4 4"/></g>`
 	coffeePath               = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 12H4v4a4 4 0 0 0 4 4h5a4 4 0 0 0 4-4v-4zm0 0h2a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-2m-4-8s1-1 .5-2l-1-2C12 4 13 3 13 3M8.64 9s1-1 .5-2l-1-2c-.5-1 .5-2 .5-2"/>`
 	cogPath                  = `<g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"><path d="M15 12a3 3 0 1 1-6 0a3 3 0 0 1 6 0Z"/><path d="M10.47 4.32c.602-1.306 2.458-1.306 3.06 0l.218.473a1.684 1.684 0 0 0 2.112.875l.49-.18c1.348-.498 2.66.814 2.162 2.163l-.18.489a1.684 1.684 0 0 0 .875 2.112l.474.218c1.305.602 1.305 2.458 0 3.06l-.474.218a1.684 1.684 0 0 0-.875 2.112l.18.49c.498 1.348-.814 2.66-2.163 2.162l-.489-.18a1.684 1.684 0 0 0-2.112.875l-.218.473c-.602 1.306-2.458 1.306-3.06 0l-.218-.473a1.684 1.684 0 0 0-2.112-.875l-.49.18c-1.348.498-2.66-.814-2.163-2.163l.181-.489a1.684 1.684 0 0 0-.875-2.112l-.474-.218c-1.305-.602-1.305-2.458 0-3.06l.474-.218a1.684 1.684 0 0 0 .875-2.112l-.18-.49c-.498-1.348.814-2.66 2.163-2.163l.489.181a1.684 1.684 0 0 0 2.112-.875l.218-.474Z"/></g>`
-	coinsPath                = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.5 9.09a5.502 5.502 0 0 1-1 10.91a5.5 5.5 0 0 1-4.9-3M7.5 8l1-.5v4m5.5-2a5.5 5.5 0 1 1-11 0a5.5 5.5 0 0 1 11 0Z"/>`
+	coinsPath                = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7.5 8l1-.5v4m9-2.125A5.502 5.502 0 0 1 15.5 20c-1.796 0-3.39-.86-4.395-2.192M14 9.5a5.5 5.5 0 1 1-11 0a5.5 5.5 0 0 1 11 0Z"/>`
 	columnsOneTwoThirdsPath  = `<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M9 4v16m-5 0h16a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1z"/>`
 	columnsThreeThirdsPath   = `<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M9 4v16m6-16v16M4 20h16a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1z"/>`
 	columnsTwoHalfsPath      = `<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M12 4v16m-8 0h16a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1z"/>`
@@ -318,6 +322,10 @@ func IconFromName(name string) g.Node {
 		return Arrows()
 	case "arrowsHorizontal":
 		return ArrowsHorizontal()
+	case "arrowsRightLeft":
+		return ArrowsRightLeft()
+	case "arrowsUpDown":
+		return ArrowsUpDown()
 	case "arrowsVertical":
 		return ArrowsVertical()
 	case "asteriskSimple":
@@ -388,6 +396,10 @@ func IconFromName(name string) g.Node {
 		return Car()
 	case "cart":
 		return Cart()
+	case "certificate":
+		return Certificate()
+	case "certificateOff":
+		return CertificateOff()
 	case "chart":
 		return Chart()
 	case "chat":
@@ -867,6 +879,14 @@ func ArrowsHorizontal(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(arrowsHorizontalPath), g.Group(children))
 }
 
+func ArrowsRightLeft(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(arrowsRightLeftPath), g.Group(children))
+}
+
+func ArrowsUpDown(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(arrowsUpDownPath), g.Group(children))
+}
+
 func ArrowsVertical(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(arrowsVerticalPath), g.Group(children))
 }
@@ -1005,6 +1025,14 @@ func Car(children ...g.Node) g.Node {
 
 func Cart(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(cartPath), g.Group(children))
+}
+
+func Certificate(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(certificatePath), g.Group(children))
+}
+
+func CertificateOff(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(certificateOffPath), g.Group(children))
 }
 
 func Chart(children ...g.Node) g.Node {

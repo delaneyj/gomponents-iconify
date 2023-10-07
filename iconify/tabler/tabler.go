@@ -6,7 +6,7 @@ import (
 )
 
 const (
-	IconifyVersion                       = "2.35.0"
+	IconifyVersion                       = "2.38.0"
 	aBPath                               = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 16v-5.5a2.5 2.5 0 0 1 5 0V16m0-4H3m9-6v12m4-2V8h3a2 2 0 0 1 0 4h-3m3 0a2 2 0 0 1 0 4h-3"/>`
 	aBOffPath                            = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 16v-5.5a2.5 2.5 0 0 1 5 0V16m0-4H3m9 0v6m0-12v2m4 0h3a2 2 0 1 1 0 4h-3m3 0a2 2 0 0 1 .83 3.82M16 12V8M3 3l18 18"/>`
 	aBTwoPath                            = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 21h3c.81 0 1.48-.67 1.48-1.48l.02-.02c0-.82-.69-1.5-1.5-1.5h-3v3zm0-6h2.5c.84-.01 1.5.66 1.5 1.5s-.66 1.5-1.5 1.5H16v-3zM4 9V5c0-1.036.895-2 2-2s2 .964 2 2v4m-5.01 2.98a9 9 0 0 0 9 9m9-9a9 9 0 0 0-9-9M8 7H4"/>`
@@ -61,6 +61,7 @@ const (
 	airConditioningDisabledPath          = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 10a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M7 16v-3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3"/></g>`
 	airTrafficControlPath                = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M11 3h2m-1 0v3M5.998 6h12.004a2 2 0 0 1 1.916 2.575l-1.8 6A2 2 0 0 1 16.202 16H7.798a2 2 0 0 1-1.916-1.425l-1.8-6A2 2 0 0 1 5.998 6z"/><path d="M8.5 6L10 16v5m5.5-15L14 16v5"/></g>`
 	alarmPath                            = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 13a7 7 0 1 0 14 0a7 7 0 1 0-14 0"/><path d="M12 10v3h2M7 4L4.25 6M17 4l2.75 2"/></g>`
+	alarmAveragePath                     = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 13a7 7 0 1 0 14 0a7 7 0 0 0-14 0m2-9L4.25 6M17 4l2.75 2"/><path d="M8 13h1l2 3l2-6l2 3h1"/></g>`
 	alarmFilledPath                      = `<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M0 0h24v24H0z"/><path fill="currentColor" d="M16 6.072a8 8 0 1 1-11.995 7.213L4 13l.005-.285A8 8 0 0 1 16 6.072zM12 9a1 1 0 0 0-1 1v3l.007.117A1 1 0 0 0 12 14h2l.117-.007A1 1 0 0 0 15 13l-.007-.117A1 1 0 0 0 14 12h-1v-2l-.007-.117A1 1 0 0 0 12 9z"/><path fill="currentColor" d="M6.412 3.191A1 1 0 0 1 7.685 4.73l-.097.08l-2.75 2a1 1 0 0 1-1.273-1.54l.097-.08l2.75-2zm9.779.221a1 1 0 0 1 1.291-.288l.106.067l2.75 2a1 1 0 0 1-1.07 1.685l-.106-.067l-2.75-2a1 1 0 0 1-.22-1.397z"/></g>`
 	alarmMinusPath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13a7 7 0 1 0 14 0a7 7 0 1 0-14 0m2-9L4.25 6M17 4l2.75 2M10 13h4"/>`
 	alarmMinusFilledPath                 = `<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M0 0h24v24H0z"/><path fill="currentColor" d="M16 6.072a8 8 0 1 1-11.995 7.213L4 13l.005-.285A8 8 0 0 1 16 6.072zM14 12h-4l-.117.007A1 1 0 0 0 10 14h4l.117-.007A1 1 0 0 0 14 12z"/><path fill="currentColor" d="M6.412 3.191A1 1 0 0 1 7.685 4.73l-.097.08l-2.75 2a1 1 0 0 1-1.273-1.54l.097-.08l2.75-2zm9.779.221a1 1 0 0 1 1.291-.288l.106.067l2.75 2a1 1 0 0 1-1.07 1.685l-.106-.067l-2.75-2a1 1 0 0 1-.22-1.397z"/></g>`
@@ -259,6 +260,8 @@ const (
 	arrowLoopRightPath                   = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 21V8a4 4 0 1 0-4 4h13"/><path d="m17 16l4-4l-4-4"/></g>`
 	arrowLoopRightTwoPath                = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 21v-6m0-6V8a4 4 0 1 0-4 4h13"/><path d="m17 16l4-4l-4-4"/></g>`
 	arrowMergePath                       = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m8 7l4-4l4 4"/><path d="M12 3v5.394A6.737 6.737 0 0 1 9 14a6.737 6.737 0 0 0-3 5.606V21"/><path d="M12 3v5.394A6.737 6.737 0 0 0 15 14a6.737 6.737 0 0 1 3 5.606V21"/></g>`
+	arrowMergeAltLeftPath                = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m8 7l4-4l4 4m2 14v.01m0-3v.01m-1-3v.01m-3-2v.01"/><path d="M12 3v5.394A6.737 6.737 0 0 1 9 14a6.737 6.737 0 0 0-3 5.606V21"/></g>`
+	arrowMergeAltRightPath               = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m16 7l-4-4l-4 4M6 21v.01m0-3v.01m1-3v.01m3-2v.01"/><path d="M12 3v5.394A6.737 6.737 0 0 0 15 14a6.737 6.737 0 0 1 3 5.606V21"/></g>`
 	arrowMergeBothPath                   = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16 8l-4-4l-4 4m4 12V4m6 14c-4-1.333-6-4.667-6-10M6 18c4-1.333 6-4.667 6-10"/>`
 	arrowMergeLeftPath                   = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 8l4-4l4 4m-4 12V4M6 18c4-1.333 6-4.667 6-10"/>`
 	arrowMergeRightPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16 8l-4-4l-4 4m4 12V4m6 14c-4-1.333-6-4.667-6-10"/>`
@@ -482,9 +485,10 @@ const (
 	batteryTwoFilledPath                 = `<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M0 0h24v24H0z"/><path fill="currentColor" d="M17 6a3 3 0 0 1 2.995 2.824L20 9v.086l.052.019a1.5 1.5 0 0 1 .941 1.25L21 10.5v3a1.5 1.5 0 0 1-.948 1.395l-.052.018V15a3 3 0 0 1-2.824 2.995L17 18H6a3 3 0 0 1-2.995-2.824L3 15V9a3 3 0 0 1 2.824-2.995L6 6h11zM7 9a1 1 0 0 0-1 1v4l.007.117A1 1 0 0 0 8 14v-4l-.007-.117A1 1 0 0 0 7 9zm3 0a1 1 0 0 0-1 1v4l.007.117A1 1 0 0 0 11 14v-4l-.007-.117A1 1 0 0 0 10 9z"/></g>`
 	beachPath                            = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M17.553 16.75a7.5 7.5 0 0 0-10.606 0M18 3.804A6 6 0 0 0 9.804 6l10.392 6A6 6 0 0 0 18 3.804z"/><path d="M16.732 10C18.39 7.13 18.957 4.356 18 3.804C17.043 3.252 14.925 5.13 13.268 8M15 9l-3 5.196M3 19.25A2.4 2.4 0 0 1 4 19a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2-1a2.4 2.4 0 0 1 2-1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2-1a2.4 2.4 0 0 1 2-1a2.4 2.4 0 0 1 1 .25"/></g>`
 	beachOffPath                         = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15.071 15.102a7.502 7.502 0 0 0-8.124 1.648M10.27 6.269L20.196 12a6 6 0 0 0-10.32-6.123"/><path d="M16.732 10C18.39 7.13 18.957 4.356 18 3.804C17.043 3.252 14.925 5.13 13.268 8M15 9l-.739 1.279m-1.467 2.541L12 14.196M3 19.25A2.4 2.4 0 0 1 4 19a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2-1a2.4 2.4 0 0 1 2-1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2-1a2.4 2.4 0 0 1 1.135-.858M3 3l18 18"/></g>`
-	bedPath                              = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v11m0-4h18m0 4v-8a2 2 0 0 0-2-2h-8v6m-5-4a1 1 0 1 0 2 0a1 1 0 1 0-2 0"/>`
+	bedPath                              = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 9a2 2 0 1 0 4 0a2 2 0 1 0-4 0m17 8v-3H2m0-6v9m10-3h10v-2a3 3 0 0 0-3-3h-7v5z"/>`
 	bedFilledPath                        = `<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M0 0h24v24H0z"/><path fill="currentColor" d="M3 6a1 1 0 0 1 .993.883L4 7v6h6V8a1 1 0 0 1 .883-.993L11 7h8a3 3 0 0 1 2.995 2.824L22 10v8a1 1 0 0 1-1.993.117L20 18v-3H4v3a1 1 0 0 1-1.993.117L2 18V7a1 1 0 0 1 1-1z"/><path fill="currentColor" d="M7 8a2 2 0 1 1-1.995 2.15L5 10l.005-.15A2 2 0 0 1 7 8z"/></g>`
-	bedOffPath                           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v11m0-4h11m4 0h3m0 4v-8a2 2 0 0 0-2-2h-7m-1 3v3m-5-4a1 1 0 1 0 2 0a1 1 0 1 0-2 0M3 3l18 18"/>`
+	bedFlatPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 11a2 2 0 1 0 4 0a2 2 0 1 0-4 0m7 2h11v-2a3 3 0 0 0-3-3h-8v5zm-7 3h18"/>`
+	bedOffPath                           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7a2 2 0 1 0 2 2m13 8v-3h-4m-4 0H2m0-6v9m10-5v2h2m4 0h4v-2a3 3 0 0 0-3-3h-6M3 3l18 18"/>`
 	beerPath                             = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 21h6a1 1 0 0 0 1-1v-3.625c0-1.397.29-2.775.845-4.025l.31-.7C17.711 10.4 18 9.397 18 8V4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v4c0 1.397.29 2.4.845 3.65l.31.7A9.931 9.931 0 0 1 8 16.375V20a1 1 0 0 0 1 1zM6 8h12"/>`
 	beerFilledPath                       = `<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M0 0h24v24H0z"/><path fill="currentColor" d="M17 2a2 2 0 0 1 1.995 1.85L19 4v4c0 1.335-.229 2.386-.774 3.692l-.157.363l-.31.701a8.902 8.902 0 0 0-.751 3.242l-.008.377V20a2 2 0 0 1-1.85 1.995L15 22H9a2 2 0 0 1-1.995-1.85L7 20v-3.625c0-1.132-.21-2.25-.617-3.28l-.142-.34l-.31-.699c-.604-1.358-.883-2.41-.925-3.698L5 8V4a2 2 0 0 1 1.85-1.995L7 2h10zm0 2H7v3h10V4z"/></g>`
 	beerOffPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7v1.111c0 1.242.29 2.467.845 3.578l.31.622A8 8 0 0 1 9 15.889V20h6v-4.111a8 8 0 0 1 .045-.85m.953-3.035l.157-.315A8 8 0 0 0 17 8.111V4H8M7 8h1m4 0h5M3 3l18 18"/>`
@@ -536,6 +540,7 @@ const (
 	bleachChlorinePath                   = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 19h14a2 2 0 0 0 1.84-2.75L13.74 4a2 2 0 0 0-3.5 0l-7.1 12.25A2 2 0 0 0 4.89 19"/><path d="M11 12h-1a2 2 0 1 0 0 4h1m3-4v4h2"/></g>`
 	bleachNoChlorinePath                 = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 19h14a2 2 0 0 0 1.84-2.75L13.74 4a2 2 0 0 0-3.5 0l-7.1 12.25A2 2 0 0 0 4.89 19m1.686 0l7.907-13.733m-2.764 13.747l5.346-9.284"/>`
 	bleachOffPath                        = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 19h14m1.986-1.977a2 2 0 0 0-.146-.773L13.74 4a2 2 0 0 0-3.5 0l-.815 1.405M7.937 7.973L3.14 16.25A2 2 0 0 0 4.89 19M3 3l18 18"/>`
+	blenderPath                          = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M9 10H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h10.802a1 1 0 0 1 .984 1.179L16 15M8 4l2 11m1 0h4a3 3 0 0 1 3 3v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2a3 3 0 0 1 3-3z"/><path d="M12 4V3h2v1m-1 14v.01"/></g>`
 	blockquotePath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15h15m0 4H6m9-8h6m0-4h-6M9 9h1a1 1 0 1 1-1 1V7.5a2 2 0 0 1 2-2M3 9h1a1 1 0 1 1-1 1V7.5a2 2 0 0 1 2-2"/>`
 	bluetoothPath                        = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 8l10 8l-5 4V4l5 4l-10 8"/>`
 	bluetoothConnectedPath               = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 8l10 8l-5 4V4l5 4l-10 8m-3-4h1m13 0h1"/>`
@@ -544,6 +549,7 @@ const (
 	blurPath                             = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9.01 9.01 0 0 0 2.32-.302a9 9 0 0 0 1.74-16.733A9 9 0 1 0 12 21zm0-18v17m0-8h9m-9-3h8m-8-3h6m-6 12h6m-6-3h8"/>`
 	blurOffPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v5m0 4v8M5.641 5.631A9 9 0 1 0 18.36 18.369m1.68-2.318A9 9 0 0 0 7.966 3.953M16 12h5m-8-3h7m-8-3h6m-6 12h6m-6-3h3m4 0h1M3 3l18 18"/>`
 	bmpPath                              = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 16V8h2a2 2 0 1 1 0 4h-2M6 14a2 2 0 0 1-2 2H2V8h2a2 2 0 1 1 0 4H2h2a2 2 0 0 1 2 2zm3 2V8l3 6l3-6v8"/>`
+	bodyScanPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V6a2 2 0 0 1 2-2h2M4 16v2a2 2 0 0 0 2 2h2m8-16h2a2 2 0 0 1 2 2v2m-4 12h2a2 2 0 0 0 2-2v-2m-9-8a1 1 0 1 0 2 0a1 1 0 1 0-2 0m-1 9v-1a2 2 0 1 1 4 0v1m-6-7c.666.666 1.334 1 2 1h4c.666 0 1.334-.334 2-1m-4 1v3"/>`
 	boldPath                             = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 5h6a3.5 3.5 0 0 1 0 7H7zm6 7h1a3.5 3.5 0 0 1 0 7H7v-7"/>`
 	boldOffPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5h4a3.5 3.5 0 0 1 2.222 6.204M12 12H7V7m10.107 10.112A3.5 3.5 0 0 1 14 19H7v-7M3 3l18 18"/>`
 	boltPath                             = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 3v7h6l-8 11v-7H5l8-11"/>`
@@ -637,6 +643,8 @@ const (
 	bracesPath                           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4a2 2 0 0 0-2 2v3a2 3 0 0 1-2 3a2 3 0 0 1 2 3v3a2 2 0 0 0 2 2M17 4a2 2 0 0 1 2 2v3a2 3 0 0 0 2 3a2 3 0 0 0-2 3v3a2 2 0 0 1-2 2"/>`
 	bracesOffPath                        = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.176 5.177C5.063 5.428 5 5.707 5 6v3c0 1.657-.895 3-2 3c1.105 0 2 1.343 2 3v3a2 2 0 0 0 2 2M17 4a2 2 0 0 1 2 2v3c0 1.657.895 3 2 3c-1.105 0-2 1.343-2 3m-.176 3.821A2 2 0 0 1 17 20M3 3l18 18"/>`
 	bracketsPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 4H5v16h3m8-16h3v16h-3"/>`
+	bracketsAnglePath                    = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 4l-5 8l5 8m8-16l5 8l-5 8"/>`
+	bracketsAngleOffPath                 = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 4h.01M6.453 6.474L3 12l5 8m8-16l5 8l-1.917 3.067m-1.548 2.477L16 20M3 3l18 18"/>`
 	bracketsContainPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4H3v16h4M17 4h4v16h-4m-9-4h.01M12 16h.01M16 16h.01"/>`
 	bracketsContainEndPath               = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 4h4v16h-4m-9-4h.01M9 16h.01M13 16h.01"/>`
 	bracketsContainStartPath             = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 4H5v16h4m9-4h-.01M14 16h-.01M10 16h-.01"/>`
@@ -665,6 +673,7 @@ const (
 	brandApplePodcastPath                = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18.364 18.364a9 9 0 1 0-12.728 0"/><path d="M11.766 22h.468a2 2 0 0 0 1.985-1.752l.5-4A2 2 0 0 0 12.734 14h-1.468a2 2 0 0 0-1.985 2.248l.5 4A2 2 0 0 0 11.766 22zM10 9a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/></g>`
 	brandAppstorePath                    = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0m5 4l1.106-1.99m1.4-2.522L13 7m-6 7h5m2.9 0H17m-1 2l-2.51-4.518m-1.487-2.677l-1-1.805"/>`
 	brandAsanaPath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7a3 3 0 1 0 6 0a3 3 0 1 0-6 0m5 9a3 3 0 1 0 6 0a3 3 0 1 0-6 0M4 16a3 3 0 1 0 6 0a3 3 0 1 0-6 0"/>`
+	brandAuthZeroPath                    = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 14.5L6.5 18l2-6L4 8h6l2-5l2 5h6l-4.5 4l2 6z"/><path d="M20.507 8.872L18.497 3H5.503L3.494 8.872c-1.242 3.593-.135 7.094 3.249 9.407L12 22l5.257-3.721c3.385-2.313 4.49-5.814 3.25-9.407z"/></g>`
 	brandAwsPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 18.5a15.198 15.198 0 0 1-7.37 1.44A14.62 14.62 0 0 1 3 17m16.5 4c.907-1.411 1.451-3.323 1.5-5c-1.197-.773-2.577-.935-4-1M3 11V6.5a1.5 1.5 0 0 1 3 0V11M3 9h3m3-4l1.2 6L12 7l1.8 4L15 5m3 5.25c0 .414.336.75.75.75H20a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-1a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.25a.75.75 0 0 1 .75.75"/>`
 	brandAzurePath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 7.5L2 17h4l6-15zM22 20L15 5l-3 7l4 5l-8 3z"/>`
 	brandBackbonePath                    = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m5 20l14-8L5 4z"/><path d="M19 20L5 12l14-8z"/></g>`
@@ -1055,6 +1064,7 @@ const (
 	bulbFilledPath                       = `<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M0 0h24v24H0z"/><path fill="currentColor" d="M4 11a1 1 0 0 1 .117 1.993L4 13H3a1 1 0 0 1-.117-1.993L3 11h1zm8-9a1 1 0 0 1 .993.883L13 3v1a1 1 0 0 1-1.993.117L11 4V3a1 1 0 0 1 1-1zm9 9a1 1 0 0 1 .117 1.993L21 13h-1a1 1 0 0 1-.117-1.993L20 11h1zM4.893 4.893a1 1 0 0 1 1.32-.083l.094.083l.7.7a1 1 0 0 1-1.32 1.497l-.094-.083l-.7-.7a1 1 0 0 1 0-1.414zm12.8 0a1 1 0 0 1 1.497 1.32l-.083.094l-.7.7a1 1 0 0 1-1.497-1.32l.083-.094l.7-.7zM14 18a1 1 0 0 1 1 1a3 3 0 0 1-6 0a1 1 0 0 1 .883-.993L10 18h4zM12 6a6 6 0 0 1 3.6 10.8a1 1 0 0 1-.471.192L15 17H9a1 1 0 0 1-.6-.2A6 6 0 0 1 12 6z"/></g>`
 	bulbOffPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h1m8-9v1m8 8h1M5.6 5.6l.7.7m12.1-.7l-.7.7m-6.611.783a5 5 0 0 1 5.826 5.84m-1.378 2.611A5.012 5.012 0 0 1 15 16a3.5 3.5 0 0 0-1 3a2 2 0 1 1-4 0a3.5 3.5 0 0 0-1-3a5 5 0 0 1-.528-7.544M9.7 17h4.6M3 3l18 18"/>`
 	bulldozerPath                        = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M2 17a2 2 0 1 0 4 0a2 2 0 0 0-4 0m10 0a2 2 0 1 0 4 0a2 2 0 0 0-4 0m7-4v4a2 2 0 0 0 2 2h1m-8 0H4m0-4h10"/><path d="M9 11V6h2a3 3 0 0 1 3 3v6"/><path d="M5 15v-3a1 1 0 0 1 1-1h8m5 6h-3"/></g>`
+	burgerPath                           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 15h16a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4zm8-11c3.783 0 6.953 2.133 7.786 5H4.214C5.047 6.133 8.217 4 12 4zm-7 8h14"/>`
 	busPath                              = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 17a2 2 0 1 0 4 0a2 2 0 1 0-4 0m12 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/><path d="M4 17H2V6a1 1 0 0 1 1-1h14a5 7 0 0 1 5 7v5h-2m-4 0H8"/><path d="m16 5l1.5 7H22M2 10h15M7 5v5m5-5v5"/></g>`
 	busOffPath                           = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 17a2 2 0 1 0 4 0a2 2 0 1 0-4 0m12.18-.828a2 2 0 0 0 2.652 2.648"/><path d="M4 17H2V6a1 1 0 0 1 1-1h2m4 0h8c2.761 0 5 3.134 5 7v5h-1m-5 0H8"/><path d="m16 5l1.5 7H22M2 10h8m4 0h3M7 7v3m5-5v3M3 3l18 18"/></g>`
 	busStopPath                          = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1zm13 13a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/><path d="M10 5h7c2.761 0 5 3.134 5 7v5h-2m-4 0H8"/><path d="m16 5l1.5 7H22M9.5 10H17m-5-5v5M5 9v11"/></g>`
@@ -1751,8 +1761,8 @@ const (
 	deviceDesktopUpPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 16H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v7.5M19 22v-6m3 3l-3-3l-3 3m-9 1h5m-3-4v4"/>`
 	deviceDesktopXPath                   = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v8M7 20h6.5M9 16v4m13 2l-5-5m0 5l5-5"/>`
 	deviceFloppyPath                     = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6 4h10l4 4v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2"/><path d="M10 14a2 2 0 1 0 4 0a2 2 0 1 0-4 0m4-10v4H8V4"/></g>`
-	deviceGamePadPath                    = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 12L7 9H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2l3-3zm4 0l3-3h2a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-2l-3-3zm-2 2l-3 3v2a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-2l-3-3zm0-4L9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2l-3 3z"/>`
 	deviceGamepadPath                    = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2zm4 4h4m-2-2v4m7-3v.01M18 13v.01"/>`
+	deviceGamepadThreePath               = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 12L7 9H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h2l3-3zm4 0l3-3h2a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-2l-3-3zm-2 2l-3 3v2a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-2l-3-3zm0-4L9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2l-3 3z"/>`
 	deviceGamepadTwoPath                 = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 5h3.5a5 5 0 0 1 0 10H10l-4.015 4.227a2.3 2.3 0 0 1-3.923-2.035l1.634-8.173A5 5 0 0 1 8.6 5H12z"/><path d="m14 15l4.07 4.284a2.3 2.3 0 0 0 3.925-2.023l-1.6-8.232M8 9v2m-1-1h2m5 0h2"/></g>`
 	deviceHeartMonitorPath               = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M4 9h6l1-2l2 4l1-2h6M4 14h16m-6 3v.01m3-.01v.01"/></g>`
 	deviceHeartMonitorFilledPath         = `<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M0 0h24v24H0z"/><path fill="currentColor" d="M18 3a3 3 0 0 1 2.995 2.824L21 6v12a3 3 0 0 1-2.824 2.995L18 21H6a3 3 0 0 1-2.995-2.824L3 18V6a3 3 0 0 1 2.824-2.995L6 3h12zm-4 13a1 1 0 0 0-.993.883L13 17l.007.127a1 1 0 0 0 1.986 0L15 17.01l-.007-.127A1 1 0 0 0 14 16zm3 0a1 1 0 0 0-.993.883L16 17l.007.127a1 1 0 0 0 1.986 0L18 17.01l-.007-.127A1 1 0 0 0 17 16zm-6-6.764l-.106.211a1 1 0 0 1-.77.545L10 10l-5-.001V13h14V9.999L14.618 10l-.724 1.447a1 1 0 0 1-1.725.11l-.063-.11L11 9.236zM18 5H6a1 1 0 0 0-.993.883L5 6v1.999L9.381 8l.725-1.447a1 1 0 0 1 1.725-.11l.063.11L13 8.763l.106-.21a1 1 0 0 1 .77-.545L14 8l5-.001V6a1 1 0 0 0-.883-.993L18 5z"/></g>`
@@ -2238,6 +2248,7 @@ const (
 	filtersPath                          = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 8a5 5 0 1 0 10 0A5 5 0 1 0 7 8"/><path d="M8 11a5 5 0 1 0 3.998 1.997"/><path d="M12.002 19.003A5 5 0 1 0 16 11"/></g>`
 	fingerprintPath                      = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18.9 7a8 8 0 0 1 1.1 5v1a6 6 0 0 0 .8 3M8 11a4 4 0 0 1 8 0v1a10 10 0 0 0 2 6"/><path d="M12 11v2a14 14 0 0 0 2.5 8M8 15a18 18 0 0 0 1.8 6m-4.9-2a22 22 0 0 1-.9-7v-1a8 8 0 0 1 12-6.95"/></g>`
 	fingerprintOffPath                   = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.9 7a8 8 0 0 1 1.1 5v1a6 6 0 0 0 .8 3M8 11c0-.848.264-1.634.713-2.28m2.4-1.621A4 4 0 0 1 16 11v1m-4 0v1a14 14 0 0 0 2.5 8M8 15a18 18 0 0 0 1.8 6m-4.9-2a22 22 0 0 1-.9-7v-1a8 8 0 0 1 1.854-5.143M8.03 4.032A8 8 0 0 1 16 4.05M3 3l18 18"/>`
+	fingerprintScanPath                  = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M9 11a3 3 0 0 1 6 0c0 1.657.612 3.082 1 4"/><path d="M12 11v1.75c-.001 1.11.661 2.206 1 3.25m-4-1.75c.068.58.358 1.186.5 1.75M4 8V6a2 2 0 0 1 2-2h2M4 16v2a2 2 0 0 0 2 2h2m8-16h2a2 2 0 0 1 2 2v2m-4 12h2a2 2 0 0 0 2-2v-2"/></g>`
 	fireExtinguisherPath                 = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7a4 4 0 0 1 4 4v9a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-9a4 4 0 0 1 4-4zm-3 9h6m-3-9V4m4 1l-4-1l4-1m-4 1H9a3 3 0 0 0-3 3"/>`
 	fireHydrantPath                      = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 21h14m-2 0v-5h1a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-1V8A5 5 0 0 0 7 8v4H6a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h1v5"/><path d="M10 14a2 2 0 1 0 4 0a2 2 0 1 0-4 0M6 8h12"/></g>`
 	fireHydrantOffPath                   = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 21h14m-2 0v-4m2-2v-2a1 1 0 0 0-1-1h-1V8a5 5 0 0 0-8.533-3.538M7.08 7.1A5.03 5.03 0 0 0 7 8v4H6a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h1v5m5-9a2 2 0 1 0 2 2M6 8h2m4 0h6M3 3l18 18"/>`
@@ -2352,6 +2363,7 @@ const (
 	functionPath                         = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 6.667A2.667 2.667 0 0 1 6.667 4h10.666A2.667 2.667 0 0 1 20 6.667v10.666A2.667 2.667 0 0 1 17.333 20H6.667A2.667 2.667 0 0 1 4 17.333z"/><path d="M9 15.5v.25c0 .69.56 1.25 1.25 1.25a1.38 1.38 0 0 0 1.374-1.244l.752-7.512A1.381 1.381 0 0 1 13.75 7c.69 0 1.25.56 1.25 1.25v.25M9 12h6"/></g>`
 	functionFilledPath                   = `<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M0 0h24v24H0z"/><path fill="currentColor" d="M17.333 3A3.667 3.667 0 0 1 21 6.667v10.666A3.667 3.667 0 0 1 17.333 21H6.667A3.667 3.667 0 0 1 3 17.333V6.667A3.667 3.667 0 0 1 6.667 3zM13.75 6a2.38 2.38 0 0 0-2.37 2.145L11.095 11H9l-.117.007A1 1 0 0 0 9 13h1.894l-.265 2.656l-.014.071a.38.38 0 0 1-.365.273a.25.25 0 0 1-.25-.25v-.25l-.007-.117A1 1 0 0 0 8 15.5v.25l.005.154A2.25 2.25 0 0 0 10.25 18a2.38 2.38 0 0 0 2.37-2.145L12.904 13H15l.117-.007A1 1 0 0 0 15 11h-1.895l.266-2.656l.014-.071A.381.381 0 0 1 13.75 8a.25.25 0 0 1 .25.25v.25l.007.117A1 1 0 0 0 16 8.5v-.25l-.005-.154A2.25 2.25 0 0 0 13.75 6z"/></g>`
 	functionOffPath                      = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M9 15.5v.25c0 .69.56 1.25 1.25 1.25a1.38 1.38 0 0 0 1.374-1.244L12 12m.363-3.63l.013-.126A1.38 1.38 0 0 1 13.75 7c.69 0 1.25.56 1.25 1.25v.25"/><path d="M8 4h10a2 2 0 0 1 2 2v10m-.586 3.414A2 2 0 0 1 18 20H6a2 2 0 0 1-2-2V6c0-.547.22-1.043.576-1.405M9 12h3M3 3l18 18"/></g>`
+	galaxyPath                           = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 3c-1.333 1-2 2.5-2 4.5c0 3 2 4.5 2 4.5s2 1.5 2 4.5c0 2-.667 3.5-2 4.5"/><path d="M19.794 16.5c-.2-1.655-1.165-2.982-2.897-3.982C14.3 11.018 12 12 12 12s-2.299.982-4.897-.518c-1.732-1-2.698-2.327-2.897-3.982"/><path d="M19.794 7.5c-1.532-.655-3.165-.482-4.897.518C12.3 9.518 12 12 12 12s-.299 2.482-2.897 3.982c-1.732 1-3.365 1.173-4.897.518"/></g>`
 	gardenCartPath                       = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 17.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0-5 0M6 8v11a1 1 0 0 0 1.806.591L11.5 14.5v.055"/><path d="M6 8h15l-3.5 7l-7.1-.747a4 4 0 0 1-3.296-2.493L4.251 4.63A1 1 0 0 0 3.323 4H2"/></g>`
 	gardenCartOffPath                    = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15.733 15.732a2.5 2.5 0 1 0 3.544 3.527M6 8v11a1 1 0 0 0 1.806.591L11.5 14.5v.055"/><path d="M6 8h2m4 0h9l-3 6.01m-3.319.693l-4.276-.45a4 4 0 0 1-3.296-2.493L4.256 4.63A1 1 0 0 0 3.328 4H2.005M3 3l18 18"/></g>`
 	gasStationPath                       = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14 11h1a2 2 0 0 1 2 2v3a1.5 1.5 0 0 0 3 0V9l-3-3M4 20V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v14M3 20h12"/><path d="M18 7v1a1 1 0 0 0 1 1h1M4 11h10"/></g>`
@@ -2419,7 +2431,11 @@ const (
 	gravePath                            = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 21v-2a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v2H5zm5-5v-5H6V7h4V3h4v4h4v4h-4v5"/>`
 	graveTwoPath                         = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 16.17V7a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v9.171M12 7v5m-2-3h4"/><path d="M5 21v-2a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v2H5z"/></g>`
 	gridDotsPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 1 0 2 0a1 1 0 1 0-2 0m7 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0m7 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0M4 12a1 1 0 1 0 2 0a1 1 0 1 0-2 0m7 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0m7 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0M4 19a1 1 0 1 0 2 0a1 1 0 1 0-2 0m7 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0m7 0a1 1 0 1 0 2 0a1 1 0 1 0-2 0"/>`
+	gridFourXFourPath                    = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6h18M3 12h18M3 18h18M6 3v18m6-18v18m6-18v18"/>`
+	gridGoldenratioPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18M10 3v18m4-18v18"/>`
 	gridPatternPath                      = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm6 2v8m4-8v8m-6-6h8m-8 4h8"/>`
+	gridScanPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 8v8m4-8v8m-6-6h8m-8 4h8M4 8V6a2 2 0 0 1 2-2h2M4 16v2a2 2 0 0 0 2 2h2m8-16h2a2 2 0 0 1 2 2v2m-4 12h2a2 2 0 0 0 2-2v-2"/>`
+	gridThreeXThreePath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8h18M3 16h18M8 3v18m8-18v18"/>`
 	grillPath                            = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 8H5a6 6 0 0 0 6 6h2a6 6 0 0 0 6-5.775V8zm-2 12a2 2 0 1 1 0-4a2 2 0 0 1 0 4zm-2-6l1 2m-7-2l-3 6m9-2H7m8-13V4m-3 1V4M9 5V4"/>`
 	grillForkPath                        = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 5l11.5 11.5m2.847.075l1.08 1.079a1.96 1.96 0 0 1-2.773 2.772l-1.08-1.079a1.96 1.96 0 0 1 2.773-2.772zM3 7l3.05 3.15a2.9 2.9 0 0 0 4.1-4.1L7 3"/>`
 	grillOffPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 8H5a6 6 0 0 0 6 6h2c.315 0 .624-.024.926-.071m2.786-1.214a5.99 5.99 0 0 0 2.284-4.49V8h-7m6.831 10.815a2 2 0 1 1-2.663-2.633M9 14l-3 6m9-2H7m8-13V4m-3 1V4M9 5V4M3 3l18 18"/>`
@@ -2619,6 +2635,7 @@ const (
 	homeXPath                            = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M19 13.4V12h2l-9-9l-9 9h2v7a2 2 0 0 0 2 2h5.5"/><path d="M9 21v-6a2 2 0 0 1 2-2h2c.402 0 .777.119 1.091.323M21.5 21.5l-5-5m0 5l5-5"/></g>`
 	horsePath                            = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l-.85 8.507A1.357 1.357 0 0 0 7.5 20h.146a2 2 0 0 0 1.857-1.257l.994-2.486A2 2 0 0 1 12.354 15h1.292a2 2 0 0 1 1.857 1.257l.994 2.486A2 2 0 0 0 18.354 20h.146a1.37 1.37 0 0 0 1.364-1.494L19 9h-8c0-3-3-5-6-5l-3 6l2 2l3-2zm15 4v-2a3 3 0 0 0-3-3"/>`
 	horseToyPath                         = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3.5 17.5c5.667 4.667 11.333 4.667 17 0"/><path d="M19 18.5L17 10l1-2l2 1l1.5-1.5L19 3c-5.052.218-5.99 3.133-7 6H6a3 3 0 0 0-3 3m2 6.5L7 9"/><path d="m8 20l2-5h4l2 5"/></g>`
+	horseshoePath                        = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 17c.5-1.242 2-2 2-5s-1-9-9-9s-9 6-9 9s1.495 3.749 2 5l-2 1l2 3l2.406-1.147c1.25-.714 1.778-2.08 1.203-3.363C7.531 14.083 7 8 12 8s4.469 6.083 3.39 8.49c-.574 1.284-.045 2.649 1.204 3.363L19 21l2-3l-2-1z"/>`
 	hotelServicePath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.5 10A1.5 1.5 0 0 1 7 8.5a5.5 5.5 0 0 1 11 0V19a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-2c0-1.38.71-2.444 1.88-3.175l4.424-2.765C14.359 10.4 15 9.744 15 8.5a2.5 2.5 0 1 0-5 0A1.5 1.5 0 0 1 8.5 10z"/>`
 	hourglassPath                        = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6.5 7h11m-11 10h11M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1z"/><path d="M6 4v2a6 6 0 1 0 12 0V4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/></g>`
 	hourglassEmptyPath                   = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6 20v-2a6 6 0 1 1 12 0v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1z"/><path d="M6 4v2a6 6 0 1 0 12 0V4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/></g>`
@@ -2798,36 +2815,62 @@ const (
 	lemonPath                            = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M17.536 3.393c3.905 3.906 3.905 10.237 0 14.143c-3.906 3.905-10.237 3.905-14.143 0L17.536 3.393"/><path d="M5.868 15.06a6.5 6.5 0 0 0 9.193-9.192m-4.597 4.596l4.597 4.597m-4.597-4.597v6.364m0-6.364h6.364"/></g>`
 	lemonTwoPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 4a2 2 0 0 1 1.185 3.611c1.55 2.94.873 6.917-1.892 9.682c-2.765 2.765-6.743 3.442-9.682 1.892a2 2 0 1 1-2.796-2.796c-1.55-2.94-.873-6.917 1.892-9.682c2.765-2.765 6.743-3.442 9.682-1.892A2 2 0 0 1 18 4z"/>`
 	letterAPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20V8a4 4 0 0 1 4-4h2a4 4 0 0 1 4 4v12M7 13h10"/>`
+	letterASmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 16v-6a2 2 0 1 1 4 0v6m-4-3h4"/>`
 	letterBPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20V4h6a4 4 0 0 1 0 8a4 4 0 0 1 0 8H7m0-8h6"/>`
+	letterBSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 16h2a2 2 0 1 0 0-4h-2h2a2 2 0 1 0 0-4h-2v8z"/>`
 	letterCPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9a5 5 0 0 0-5-5h-2a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h2a5 5 0 0 0 5-5"/>`
+	letterCSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10a2 2 0 1 0-4 0v4a2 2 0 1 0 4 0"/>`
 	letterCasePath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 15.5a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0M3 19V8.5a3.5 3.5 0 0 1 7 0V19m-7-6h7m11-1v7"/>`
 	letterCaseLowerPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15.5a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0m7-3.5v7m4-3.5a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0m7-3.5v7"/>`
 	letterCaseTogglePath                 = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15.5a3.5 3.5 0 1 0 7 0a3.5 3.5 0 1 0-7 0M14 19V8.5a3.5 3.5 0 0 1 7 0V19m-7-6h7m-11-1v7"/>`
 	letterCaseUpperPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19V8.5a3.5 3.5 0 0 1 7 0V19m-7-6h7m4 6V8.5a3.5 3.5 0 0 1 7 0V19m-7-6h7"/>`
 	letterDPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4h6a5 5 0 0 1 5 5v6a5 5 0 0 1-5 5H7V4"/>`
+	letterDSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 8v8h2a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-2z"/>`
 	letterEPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 4H7v16h10M7 12h8"/>`
+	letterESmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 8h-4v8h4m-4-4h2.5"/>`
 	letterFPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 4H7v16m0-8h8"/>`
+	letterFSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 12h3m1-4h-4v8"/>`
 	letterGPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9a5 5 0 0 0-5-5h-2a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h2a5 5 0 0 0 5-5v-2h-4"/>`
+	letterGSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 8h-2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h2v-4h-1"/>`
 	letterHPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 4v16M7 12h10M7 4v16"/>`
+	letterHSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 16V8m4 0v8m-4-4h4"/>`
 	letterIPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16"/>`
+	letterISmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v8"/>`
 	letterJPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 4v12a4 4 0 0 1-4 4h-2a4 4 0 0 1-4-4"/>`
+	letterJSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 8h4v6a2 2 0 1 1-4 0"/>`
 	letterKPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16m0-8h2l8-8m-8 8l8 8"/>`
+	letterKSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.5 8v8m4-8l-3 4l3 4m-4-4h1"/>`
 	letterLPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16h10"/>`
+	letterLSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 8v8h4"/>`
 	letterMPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 20V4l6 14l6-14v16"/>`
+	letterMSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 16V8l3 5l3-5v8"/>`
 	letterNPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20V4l10 16V4"/>`
+	letterNSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 16V8l4 8V8"/>`
 	letterOPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9a5 5 0 0 0-5-5h-2a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h2a5 5 0 0 0 5-5V9"/>`
+	letterOSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8a2 2 0 0 1 2 2v4a2 2 0 1 1-4 0v-4a2 2 0 0 1 2-2z"/>`
 	letterPPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20V4h5.5a4 4 0 0 1 0 9H7"/>`
+	letterPSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 12h2a2 2 0 1 0 0-4h-2v8"/>`
 	letterQPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9a5 5 0 0 0-5-5h-2a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h2a5 5 0 0 0 5-5V9m-5 6l5 5"/>`
+	letterQSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8a2 2 0 0 1 2 2v4a2 2 0 1 1-4 0v-4a2 2 0 0 1 2-2zm1 7l1 1"/>`
 	letterRPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20V4h5.5a4 4 0 0 1 0 9H7m5 0l5 7"/>`
+	letterRSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 12h2a2 2 0 1 0 0-4h-2v8m4 0l-3-4"/>`
 	letterSPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8a4 4 0 0 0-4-4h-2a4 4 0 0 0 0 8h2a4 4 0 0 1 0 8h-2a4 4 0 0 1-4-4"/>`
+	letterSSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-2a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1"/>`
 	letterSpacingPath                    = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12V6.5a2.5 2.5 0 0 1 5 0V12m0-4H5m8-4l3 8l3-8M5 18h14m-2 2l2-2l-2-2M7 16l-2 2l2 2"/>`
 	letterTPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 4h12m-6 0v16"/>`
+	letterTSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 8h4m-2 0v8"/>`
 	letterUPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 4v11a5 5 0 0 0 5 5h2a5 5 0 0 0 5-5V4"/>`
+	letterUSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 8v6a2 2 0 1 0 4 0V8"/>`
 	letterVPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 4l6 16l6-16"/>`
+	letterVSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10 8l2 8l2-8"/>`
 	letterWPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 4l4 16l4-14l4 14l4-16"/>`
+	letterWSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 8l1 8l2-5l2 5l1-8"/>`
 	letterXPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 4l10 16m0-16L7 20"/>`
+	letterXSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10 8l4 8m-4 0l4-8"/>`
 	letterYPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 4l5 9l5-9m-5 9v7"/>`
+	letterYSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10 8l2 5l2-5m-2 8v-3"/>`
 	letterZPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4h10L7 20h10"/>`
+	letterZSmallPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 8h4l-4 8h4"/>`
 	lettersCasePath                      = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="18" cy="16" r="3"/><path d="M21 13v6M3 19V9a4 4 0 0 1 4-4a4 4 0 0 1 4 4v10m-8-6h8"/></g>`
 	licensePath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 21H6a3 3 0 0 1-3-3v-1h10v2a2 2 0 0 0 4 0V5a2 2 0 1 1 2 2h-2m2-4H8a3 3 0 0 0-3 3v11M9 7h4m-4 4h4"/>`
 	licenseOffPath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 21H6a3 3 0 0 1-3-3v-1h10v2a2 2 0 1 0 4 0v-2m0-4V5a2 2 0 1 1 2 2h-2m2-4H8a3 3 0 0 0-.864.126M5.122 5.151A3 3 0 0 0 5 6v11m6-10h2m-4 4h2M3 3l18 18"/>`
@@ -2838,6 +2881,7 @@ const (
 	lineDashedPath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h2m10 0h2m-8 0h2"/>`
 	lineDottedPath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12v.01M8 12v.01m4-.01v.01m4-.01v.01m4-.01v.01"/>`
 	lineHeightPath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 8l3-3l3 3m-6 8l3 3l3-3M6 5v14m7-13h7m-7 6h7m-7 6h7"/>`
+	lineScanPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V6a2 2 0 0 1 2-2h2M4 16v2a2 2 0 0 0 2 2h2m8-16h2a2 2 0 0 1 2 2v2m-4 12h2a2 2 0 0 0 2-2v-2M7 12h10"/>`
 	linkPath                             = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 15l6-6m-4-3l.463-.536a5 5 0 0 1 7.071 7.072L18 13m-5 5l-.397.534a5.068 5.068 0 0 1-7.127 0a4.972 4.972 0 0 1 0-7.071L6 11"/>`
 	linkOffPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 15l3-3m2-2l1-1m-4-3l.463-.536a5 5 0 0 1 7.071 7.072L18 13M3 3l18 18m-8-3l-.397.534a5.068 5.068 0 0 1-7.127 0a4.972 4.972 0 0 1 0-7.071L6 11"/>`
 	listPath                             = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 6h11M9 12h11M9 18h11M5 6v.01M5 12v.01M5 18v.01"/>`
@@ -2929,6 +2973,7 @@ const (
 	macroOffPath                         = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6 15a6 6 0 0 0 11.47 2.467"/><path d="M15.53 15.53A6 6 0 0 0 12 21"/><path d="M12 21a6 6 0 0 0-6-6m6 6V11m-1.134-.13a5.007 5.007 0 0 1-3.734-3.723M7 3l3 2l2-2l2 2l3-2v3a5 5 0 0 1-2.604 4.389M3 3l18 18"/></g>`
 	magnetPath                           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 13V5a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v8a2 2 0 0 0 6 0V5a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v8a8 8 0 0 1-16 0m0-5h5m6 0h4"/>`
 	magnetOffPath                        = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 3a2 2 0 0 1 2 2m0 4v4a3 3 0 0 0 5.552 1.578M15 11V5a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v8a7.99 7.99 0 0 1-.424 2.577m-1.463 2.584A8 8 0 0 1 4 13V5c0-.297.065-.58.181-.833M4 8h4m7 0h4M3 3l18 18"/>`
+	magneticPath                         = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 3v18m6-14c-.633-1.255-1.538-2-2.5-2c-1.933 0-3.5 3.134-3.5 7s1.567 7 3.5 7s3.5-3.134 3.5-7v-1M6 7c.633-1.255 1.538-2 2.5-2c1.933 0 3.5 3.134 3.5 7s-1.567 7-3.5 7S5 15.866 5 12v-1"/><path d="m3 13l2-2l2 2m10 0l2-2l2 2"/></g>`
 	mailPath                             = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/><path d="m3 7l9 6l9-6"/></g>`
 	mailAiPath                           = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M10 19H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4M3 7l8 5.345M15 11l6-4"/><path d="M14 21v-4a2 2 0 1 1 4 0v4m-4-2h4m3-4v6"/></g>`
 	mailBoltPath                         = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M13 19H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5.5"/><path d="m3 7l9 6l9-6m-2 9l-2 3h4l-2 3"/></g>`
@@ -3282,11 +3327,12 @@ const (
 	navigationDiscountPath               = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.43 12.603L12 3L4.03 20.275c-.07.2-.017.424.135.572c.15.148.374.193.57.116L12 18.5l1.272.431M16 21l5-5m0 5v.01M16 16v.01"/>`
 	navigationDollarPath                 = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.945 11.551L12 3L4.03 20.275c-.07.2-.017.424.135.572c.15.148.374.193.57.116L12 18.5l1.594.54M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3H17m2 0v1m0-8v1"/>`
 	navigationDownPath                   = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.528 12.815L12 3L4.03 20.275c-.07.2-.017.424.135.572c.15.148.374.193.57.116L12 18.5m7-2.5v6m3-3l-3 3l-3-3"/>`
+	navigationEastPath                   = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 3h-4v6h4m-4-3h2.5M16 21l-4-8l-4 8l4-2z"/>`
 	navigationExclamationPath            = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.535 12.832L12 3L4.03 20.275c-.07.2-.017.424.135.572c.15.148.374.193.57.116L12 18.5c1.38.468 2.416.82 3.107 1.053M19 16v3m0 3v.01"/>`
 	navigationFilledPath                 = `<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M0 0h24v24H0z"/><path fill="currentColor" d="M11.092 2.581a1 1 0 0 1 1.754-.116l.062.116l8.005 17.365c.198.566.05 1.196-.378 1.615a1.53 1.53 0 0 1-1.459.393l-7.077-2.398L5.1 21.894a1.535 1.535 0 0 1-1.52-.231l-.112-.1c-.398-.386-.556-.954-.393-1.556l.047-.15l7.97-17.276z"/></g>`
 	navigationHeartPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.721 11.067L12 3L4.03 20.275c-.07.2-.017.424.135.572c.15.148.374.193.57.116l5.614-1.903M18 22l3.35-3.284a2.143 2.143 0 0 0 .005-3.071a2.242 2.242 0 0 0-3.129-.006l-.224.22l-.223-.22a2.242 2.242 0 0 0-3.128-.006a2.143 2.143 0 0 0-.006 3.071L18 22z"/>`
 	navigationMinusPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 15c-1.232-2.67-3.065-6.67-5.5-12L4.03 20.275c-.07.2-.017.424.135.572c.15.148.374.193.57.116L12 18.5m4 .5h6"/>`
-	navigationNorthPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.54 19.977a.34.34 0 0 0 .357-.07a.33.33 0 0 0 .084-.35L12 9L7.018 19.557a.33.33 0 0 0 .084.35a.34.34 0 0 0 .357.07L12 18.5l4.54 1.477zM12 3v2"/>`
+	navigationNorthPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16 21l-4-8l-4 8l4-2zM10 9V3l4 6V3"/>`
 	navigationOffPath                    = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.28 12.28C15.33 10.216 13.903 7.123 12 3c-.7 1.515-1.223 2.652-1.573 3.41m-1.27 2.75c-.882 1.913-2.59 5.618-5.127 11.115c-.07.2-.017.424.135.572c.15.148.374.193.57.116L12 18.5l7.265 2.463c.196.077.42.032.57-.116a.548.548 0 0 0 .134-.572l-.26-.563M3 3l18 18"/>`
 	navigationPausePath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.666 13.114L12 3L4.03 20.275c-.07.2-.017.424.135.572c.15.148.374.193.57.116L12 18.5l1.056.358M17 17v5m4-5v5"/>`
 	navigationPinPath                    = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.002 11.676L12 3L4.03 20.275c-.07.2-.017.424.135.572c.15.148.374.193.57.116L12 18.5m9.121 1.621a3 3 0 1 0-4.242 0c.418.419 1.125 1.045 2.121 1.879c1.051-.89 1.759-1.516 2.121-1.879zM19 18v.01"/>`
@@ -3294,8 +3340,11 @@ const (
 	navigationQuestionPath               = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.081 11.847L12 3L4.03 20.275c-.07.2-.017.424.135.572c.15.148.374.193.57.116L12 18.5c1.35.458 2.362.8 3.037 1.03M19 22v.01M19 19a2.003 2.003 0 0 0 .914-3.782a1.98 1.98 0 0 0-2.414.483"/>`
 	navigationSearchPath                 = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.876 11.403L12 3L4.03 20.275c-.07.2-.017.424.135.572c.15.148.374.193.57.116l6.29-2.132M15 18a3 3 0 1 0 6 0a3 3 0 1 0-6 0m5.2 2.2L22 22"/>`
 	navigationSharePath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.633 13.043L12 3L4.03 20.275c-.07.2-.017.424.135.572c.15.148.374.193.57.116L12 18.5l.955.324M16 22l5-5m0 4.5V17h-4.5"/>`
+	navigationSouthPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 8.25c0 .414.336.75.75.75H13a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.25a.75.75 0 0 1 .75.75M16 21l-4-8l-4 8l4-2z"/>`
 	navigationStarPath                   = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.574 10.747L12 3L4.03 20.275c-.07.2-.017.424.135.572c.15.148.374.193.57.116l5.454-1.85m7.611 1.704l-2.172 1.138a.392.392 0 0 1-.568-.41l.415-2.411l-1.757-1.707a.389.389 0 0 1 .217-.665l2.428-.352l1.086-2.193a.392.392 0 0 1 .702 0l1.086 2.193l2.428.352a.39.39 0 0 1 .217.665l-1.757 1.707l.414 2.41a.39.39 0 0 1-.567.411L17.8 20.817z"/>`
+	navigationTopPath                    = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.54 19.977a.34.34 0 0 0 .357-.07a.33.33 0 0 0 .084-.35L12 9L7.018 19.557a.33.33 0 0 0 .084.35a.34.34 0 0 0 .357.07L12 18.5l4.54 1.477zM12 3v2"/>`
 	navigationUpPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.54 12.843L12 3L4.03 20.275c-.07.2-.017.424.135.572c.15.148.374.193.57.116L12 18.5m7 3.5v-6m3 3l-3-3l-3 3"/>`
+	navigationWestPath                   = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 3l1 6l2-3.75L14 9l1-6m1 18l-4-8l-4 8l4-2z"/>`
 	navigationXPath                      = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.622 13.02L12 3L4.03 20.275c-.07.2-.017.424.135.572c.15.148.374.193.57.116L12 18.5l1.563.53M22 22l-5-5m0 5l5-5"/>`
 	needlePath                           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21c-.667-.667 3.262-6.236 11.785-16.709a3.5 3.5 0 1 1 5.078 4.791C9.288 17.694 3.667 21.667 3 21zM17.5 6.5l-1 1"/>`
 	needleThreadPath                     = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 21c-.667-.667 3.262-6.236 11.785-16.709a3.5 3.5 0 1 1 5.078 4.791C9.288 17.694 3.667 21.667 3 21zM17.5 6.5l-1 1"/><path d="M17 7c-2.333-2.667-3.5-4-5-4s-2 1-2 2c0 4 8.161 8.406 6 11c-1.056 1.268-3.363 1.285-5.75.808m-4.511-1.383C4.346 14.86 2 13.5 2 12m17.5-2.5L21 11"/></g>`
@@ -3320,15 +3369,45 @@ const (
 	notificationOffPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6.154 6.187A2 2 0 0 0 5 8v9a2 2 0 0 0 2 2h9a2 2 0 0 0 1.811-1.151M14 7a3 3 0 1 0 6 0a3 3 0 1 0-6 0M3 3l18 18"/>`
 	numberPath                           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 17V7l7 10V7m4 10h5m-5-7a2.5 3 0 1 0 5 0a2.5 3 0 1 0-5 0"/>`
 	numberEightPath                      = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 8a4 4 0 1 0 8 0a4 4 0 1 0-8 0"/><path d="M8 16a4 4 0 1 0 8 0a4 4 0 1 0-8 0"/></g>`
+	numberEightSmallPath                 = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12h-1a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/>`
+	numberEighteenSmallPath              = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l2-2v8m6-4h-1a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/>`
+	numberElevenSmallPath                = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 10l2-2v8m4-6l2-2v8"/>`
+	numberFifteenSmallPath               = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l2-2v8m4-1a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-3V8h4"/>`
 	numberFivePath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 20h4a4 4 0 1 0 0-8H8V4h8"/>`
+	numberFiveSmallPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-3V8h4"/>`
 	numberFourPath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 20V5L7 16h10"/>`
+	numberFourSmallPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 8v3a1 1 0 0 0 1 1h3m0-4v8"/>`
+	numberFourteenSmallPath              = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l2-2v8m4-8v3a1 1 0 0 0 1 1h3m0-4v8"/>`
 	numberNinePath                       = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 8a4 4 0 1 0-8 0v1a4 4 0 1 0 8 0"/><path d="M8 16a4 4 0 1 0 8 0V8"/></g>`
+	numberNineSmallPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3"/>`
+	numberNineteenSmallPath              = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l2-2v8m4-1a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3"/>`
 	numberOnePath                        = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 20V4L8 9"/>`
+	numberOneSmallPath                   = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10 10l2-2v8"/>`
 	numberSevenPath                      = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 4h8l-4 16"/>`
+	numberSevenSmallPath                 = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 8h4l-2 8"/>`
+	numberSeventeenSmallPath             = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l2-2v8m4-8h4l-2 8"/>`
 	numberSixPath                        = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 16a4 4 0 1 0 8 0v-1a4 4 0 1 0-8 0"/><path d="M16 8a4 4 0 1 0-8 0v8"/></g>`
+	numberSixSmallPath                   = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 9a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-3"/>`
+	numberSixteenSmallPath               = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l2-2v8m8-7a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-3"/>`
+	numberTenSmallPath                   = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l2-2v8m4-6v4a2 2 0 1 0 4 0v-4a2 2 0 1 0-4 0z"/>`
+	numberThirteenSmallPath              = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l2-2v8m4-8h2.5A1.5 1.5 0 0 1 17 9.5v1a1.5 1.5 0 0 1-1.5 1.5H14h1.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5H13"/>`
 	numberThreePath                      = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12a4 4 0 1 0-4-4m0 8a4 4 0 1 0 4-4"/>`
+	numberThreeSmallPath                 = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 8h2.5A1.5 1.5 0 0 1 14 9.5v1a1.5 1.5 0 0 1-1.5 1.5H11h1.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5H10"/>`
+	numberTwelveSmallPath                = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 10l2-2v8m4-8h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3"/>`
+	numberTwentyEightSmallPath           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12h-1a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1M6 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3"/>`
+	numberTwentyFiveSmallPath            = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-3V8h4M6 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3"/>`
+	numberTwentyFourSmallPath            = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 8v3a1 1 0 0 0 1 1h3m0-4v8M6 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3"/>`
+	numberTwentyNineSmallPath            = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3M6 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3"/>`
+	numberTwentyOneSmallPath             = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 10l2-2v8M7 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3"/>`
+	numberTwentySevenSmallPath           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 8h4l-2 8M6 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3"/>`
+	numberTwentySixSmallPath             = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-3M6 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3"/>`
+	numberTwentySmallPath                = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10v4a2 2 0 1 0 4 0v-4a2 2 0 1 0-4 0zM6 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3"/>`
+	numberTwentyThreeSmallPath           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 8h2.5A1.5 1.5 0 0 1 17 9.5v1a1.5 1.5 0 0 1-1.5 1.5H14h1.5a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5H13M6 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3"/>`
+	numberTwentyTwoSmallPath             = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3M6 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3"/>`
 	numberTwoPath                        = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 8a4 4 0 1 1 8 0c0 1.098-.564 2.025-1.159 2.815L8 20h8"/>`
+	numberTwoSmallPath                   = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3"/>`
 	numberZeroPath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 16V8m-4 12a4 4 0 0 0 4-4V8a4 4 0 1 0-8 0v8a4 4 0 0 0 4 4z"/>`
+	numberZeroSmallPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 10v4a2 2 0 1 0 4 0v-4a2 2 0 1 0-4 0z"/>`
 	numbersPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10V3L6 5m0 11a2 2 0 1 1 4 0c0 .591-.601 1.46-1 2l-3 3h4m5-7a2 2 0 1 0 2-2a2 2 0 1 0-2-2m-8.5 0h3"/>`
 	nursePath                            = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6c2.941 0 5.685.847 8 2.31L18 18H6L4 8.309A14.93 14.93 0 0 1 12 6zm-2 6h4m-2-2v4"/>`
 	nutPath                              = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M19 6.84a2.007 2.007 0 0 1 1 1.754v6.555c0 .728-.394 1.4-1.03 1.753l-6 3.844a1.995 1.995 0 0 1-1.94 0l-6-3.844A2.006 2.006 0 0 1 4 15.15V8.593c0-.728.394-1.399 1.03-1.753l6-3.582a2.049 2.049 0 0 1 2 0l6 3.582H19z"/><path d="M9 12a3 3 0 1 0 6 0a3 3 0 1 0-6 0"/></g>`
@@ -3474,6 +3553,7 @@ const (
 	photoPinPath                         = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 8h.01M12.5 21H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v5.5"/><path d="m3 16l5-5c.928-.893 2.072-.893 3 0l2.5 2.5m7.621 6.621a3 3 0 1 0-4.242 0c.418.419 1.125 1.045 2.121 1.879c1.051-.89 1.759-1.516 2.121-1.879zM19 18v.01"/></g>`
 	photoPlusPath                        = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 8h.01M12.5 21H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v6.5"/><path d="m3 16l5-5c.928-.893 2.072-.893 3 0l4 4"/><path d="m14 14l1-1c.67-.644 1.45-.824 2.182-.54M16 19h6m-3-3v6"/></g>`
 	photoQuestionPath                    = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 8h.01M15 21H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v5.5"/><path d="m3 16l5-5c.928-.893 2.072-.893 3 0l3 3m5 8v.01M19 19a2.003 2.003 0 0 0 .914-3.782a1.98 1.98 0 0 0-2.414.483"/></g>`
+	photoScanPath                        = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 8h.01M6 13l2.644-2.644a1.21 1.21 0 0 1 1.712 0L14 14"/><path d="m13 13l1.644-1.644a1.21 1.21 0 0 1 1.712 0L18 13M4 8V6a2 2 0 0 1 2-2h2M4 16v2a2 2 0 0 0 2 2h2m8-16h2a2 2 0 0 1 2 2v2m-4 12h2a2 2 0 0 0 2-2v-2"/></g>`
 	photoSearchPath                      = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 8h.01M11.5 21H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v5.5"/><path d="M15 18a3 3 0 1 0 6 0a3 3 0 1 0-6 0m5.2 2.2L22 22M3 16l5-5c.928-.893 2.072-.893 3 0l2 2"/></g>`
 	photoSensorPath                      = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 5h2a2 2 0 0 1 2 2v2m0 6v2a2 2 0 0 1-2 2h-2M7 19H5a2 2 0 0 1-2-2v-2m0-6V7a2 2 0 0 1 2-2h2m0 5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1z"/>`
 	photoSensorThreePath                 = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 4h1a2 2 0 0 1 2 2v1m0 10v1a2 2 0 0 1-2 2h-1M7 20H6a2 2 0 0 1-2-2v-1M4 7V6a2 2 0 0 1 2-2h1m2 8a3 3 0 1 0 6 0a3 3 0 1 0-6 0m3 6v2m-8-8h2m6-8v2m8 6h-2"/>`
@@ -3727,8 +3807,9 @@ const (
 	roadPath                             = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 19L8 5m8 0l4 14M12 8V6m0 7v-2m0 7v-2"/>`
 	roadOffPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 19L7.332 7.339M16 5l2.806 9.823M12 8V6m0 7v-1m0 6v-2M3 3l18 18"/>`
 	roadSignPath                         = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m13.446 2.6l7.955 7.954a2.045 2.045 0 0 1 0 2.892l-7.955 7.955a2.045 2.045 0 0 1-2.892 0l-7.955-7.955a2.045 2.045 0 0 1 0-2.892l7.955-7.955a2.045 2.045 0 0 1 2.892 0z"/><path d="M9 14v-2c0-.59.414-1 1-1h5"/><path d="m13 9l2 2l-2 2"/></g>`
-	robotPath                            = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 7h10a2 2 0 0 1 2 2v1l1 1v3l-1 1v3a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3l-1-1v-3l1-1V9a2 2 0 0 1 2-2zm3 9h4"/><circle cx="8.5" cy="11.5" r=".5" fill="currentColor"/><circle cx="15.5" cy="11.5" r=".5" fill="currentColor"/><path d="M9 7L8 3m7 4l1-4"/></g>`
-	robotOffPath                         = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M11 7h6a2 2 0 0 1 2 2v1l1 1v3l-1 1m-.171 3.811A2 2 0 0 1 17 20H7a2 2 0 0 1-2-2v-3l-1-1v-3l1-1V9a2 2 0 0 1 2-2m3 9h4"/><path d="M7.5 11.5a1 1 0 1 0 2 0a1 1 0 1 0-2 0m8.354.353A.498.498 0 0 0 15.5 11a.498.498 0 0 0-.356.149M8.336 4.343L8 3m7 4l1-4M3 3l18 18"/></g>`
+	robotPath                            = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2zm6-4v2m-3 8v9m6-9v9M5 16l4-2m6 0l4 2M9 18h6M10 8v.01M14 8v.01"/>`
+	robotFacePath                        = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M6 5h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="M9 16c1 .667 2 1 3 1s2-.333 3-1M9 7L8 3m7 4l1-4m-7 9v-1m6 1v-1"/></g>`
+	robotOffPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 4h8a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2m-4 0H8a2 2 0 0 1-2-2V6m6-4v2m-3 8v9m6-6v6M5 16l4-2m0 4h6M14 8v.01M3 3l18 18"/>`
 	rocketPath                           = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3-5a9 9 0 0 0 6-8a3 3 0 0 0-3-3a9 9 0 0 0-8 6a6 6 0 0 0-5 3"/><path d="M7 14a6 6 0 0 0-3 6a6 6 0 0 0 6-3m4-8a1 1 0 1 0 2 0a1 1 0 1 0-2 0"/></g>`
 	rocketOffPath                        = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M9.29 9.275A9.03 9.03 0 0 0 9 10a6 6 0 0 0-5 3a8 8 0 0 1 7 7a6 6 0 0 0 3-5c.241-.085.478-.18.708-.283m2.428-1.61A9 9 0 0 0 20 7a3 3 0 0 0-3-3a9 9 0 0 0-6.107 2.864"/><path d="M7 14a6 6 0 0 0-3 6a6 6 0 0 0 6-3m4-8a1 1 0 1 0 2 0a1 1 0 1 0-2 0M3 3l18 18"/></g>`
 	rollerSkatingPath                    = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5.905 5h3.418a1 1 0 0 1 .928.629l1.143 2.856a3 3 0 0 0 2.207 1.83l4.717.926A2.084 2.084 0 0 1 20 13.286V14a1 1 0 0 1-1 1H5.105a1 1 0 0 1-1-1.1l.8-8a1 1 0 0 1 1-.9z"/><path d="M6 17a2 2 0 1 0 4 0a2 2 0 1 0-4 0m8 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/></g>`
@@ -3753,9 +3834,16 @@ const (
 	rotateRectanglePath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10.09 4.01l.496-.495a2 2 0 0 1 2.828 0l7.071 7.07a2 2 0 0 1 0 2.83l-7.07 7.07a2 2 0 0 1-2.83 0l-7.07-7.07a2 2 0 0 1 0-2.83L7.05 7.05H3.062m3.988 3.988V7.05"/>`
 	rotateThreeHundredSixtyPath          = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 16h4v4"/><path d="M19.458 11.042c.86-2.366.722-4.58-.6-5.9c-2.272-2.274-7.185-1.045-10.973 2.743c-3.788 3.788-5.017 8.701-2.744 10.974c2.227 2.226 6.987 1.093 10.74-2.515"/></g>`
 	rotateTwoPath                        = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 4.55a8 8 0 0 0-6 14.9M9 15v5H4M18.37 7.16v.01M13 19.94v.01m3.84-1.58v.01m2.53-3.28v.01m.57-4.11v.01"/>`
-	routePath                            = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0-4 0M16 5a2 2 0 1 0 4 0a2 2 0 1 0-4 0m-4 14h4.5a3.5 3.5 0 0 0 0-7h-8a3.5 3.5 0 0 1 0-7H12"/>`
+	routePath                            = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19a2 2 0 1 0 4 0a2 2 0 0 0-4 0M19 7a2 2 0 1 0 0-4a2 2 0 0 0 0 4zm-8 12h5.5a3.5 3.5 0 0 0 0-7h-8a3.5 3.5 0 0 1 0-7H13"/>`
+	routeAltLeftPath                     = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 3H3v5m13-5h5v5"/><path d="m3 3l7.536 7.536A5 5 0 0 1 12 14.07V21m6-14.99V6m-2 2.02v-.01M14 10v.01"/></g>`
+	routeAltRightPath                    = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 3h5v5M8 3H3v5"/><path d="m21 3l-7.536 7.536A5 5 0 0 0 12 14.07V21M6 6.01V6m2 2.02v-.01M10 10v.01"/></g>`
 	routeOffPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 19a2 2 0 1 0 4 0a2 2 0 1 0-4 0M16 5a2 2 0 1 0 4 0a2 2 0 1 0-4 0m-4 14h4.5c.71 0 1.372-.212 1.924-.576m1.545-2.459A3.5 3.5 0 0 0 16.5 12h-.499m-4 0H8.5a3.5 3.5 0 0 1-2.477-5.972M8.5 5H12M3 3l18 18"/>`
-	routeTwoPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 17l4 4m0-4l-4 4M17 3l4 4m0-4l-4 4m-3-2a2 2 0 0 0-2 2v10a2 2 0 0 1-2 2"/>`
+	routeScanPath                        = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 8V6a2 2 0 0 1 2-2h2M4 16v2a2 2 0 0 0 2 2h2m8-16h2a2 2 0 0 1 2 2v2m-4 12h2a2 2 0 0 0 2-2v-2M7 12V9h3m4 0h3v3"/><path d="m7 9l4.414 4.414A2 2 0 0 1 12 14.828V17m5-8l-4.414 4.414A2 2 0 0 0 12 14.828V17"/></g>`
+	routeSquarePath                      = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 17h4v4H3zM17 3h4v4h-4zm-6 16h5.5a3.5 3.5 0 0 0 0-7h-8a3.5 3.5 0 0 1 0-7H13"/>`
+	routeSquareTwoPath                   = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5a2 2 0 0 0-2 2v10a2 2 0 0 1-2 2m-7-2h4v4H3zM17 3h4v4h-4z"/>`
+	routeTwoPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19a2 2 0 1 0 4 0a2 2 0 0 0-4 0M19 7a2 2 0 1 0 0-4a2 2 0 0 0 0 4zm-5-2a2 2 0 0 0-2 2v10a2 2 0 0 1-2 2"/>`
+	routeXPath                           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 17l4 4m0-4l-4 4M17 3l4 4m0-4l-4 4m-6 12h5.5a3.5 3.5 0 0 0 0-7h-8a3.5 3.5 0 0 1 0-7H13"/>`
+	routeXTwoPath                        = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 17l4 4m0-4l-4 4M17 3l4 4m0-4l-4 4m-3-2a2 2 0 0 0-2 2v10a2 2 0 0 1-2 2"/>`
 	routerPath                           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm14 2v.01M13 17v.01M15 13v-2m-3.25-2.25a4 4 0 0 1 6.5 0M8.5 6.5a8 8 0 0 1 13 0"/>`
 	routerOffPath                        = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 13h2a2 2 0 0 1 2 2v2m-.588 3.417c-.362.36-.861.583-1.412.583H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h8m4 4v.01M13 17v.01m-.774-8.81a4 4 0 0 1 6.024.55M9.445 5.407A8 8 0 0 1 21.5 6.5M3 3l18 18"/>`
 	rowInsertBottomPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6v4a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1zm-8 9v4m2-2h-4"/>`
@@ -3771,6 +3859,7 @@ const (
 	rulerTwoPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 3l4 4L7 21l-4-4zm-1 4l-1.5-1.5M13 10l-1.5-1.5M10 13l-1.5-1.5M7 16l-1.5-1.5"/>`
 	rulerTwoOffPath                      = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.03 7.97L17 3l4 4l-5 5m-2 2l-7 7l-4-4l7-7m6-3l-1.5-1.5M10 13l-1.5-1.5M7 16l-1.5-1.5M3 3l18 18"/>`
 	runPath                              = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 4a1 1 0 1 0 2 0a1 1 0 1 0-2 0M4 17l5 1l.75-1.5M15 21v-4l-4-3l1-6"/><path d="M7 12V9l5-1l3 3l3 1"/></g>`
+	rvTruckPath                          = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 17a2 2 0 1 0 4 0a2 2 0 1 0-4 0m10 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0m-6 0h6"/><path d="M19 17h1a1 1 0 0 0 1-1v-4.528a2 2 0 0 0-.211-.894l-.96-1.92A3 3 0 0 0 17.146 7H6a3 3 0 0 0-3 3v6a1 1 0 0 0 1 1h1m-2-5h18m-6 0V7M6 5.5A1.5 1.5 0 0 1 7.5 4h7A1.5 1.5 0 0 1 16 5.5v0A1.5 1.5 0 0 1 14.5 7h-7A1.5 1.5 0 0 1 6 5.5z"/></g>`
 	sTurnDownPath                        = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 5a2 2 0 1 1-4 0a2 2 0 0 1 4 0z"/><path d="M5 7v9.5a3.5 3.5 0 0 0 7 0v-9a3.5 3.5 0 0 1 7 0V21"/><path d="m16 18l3 3l3-3"/></g>`
 	sTurnLeftPath                        = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M19 7a2 2 0 1 1 0-4a2 2 0 0 1 0 4z"/><path d="M17 5H7.5a3.5 3.5 0 0 0 0 7h9a3.5 3.5 0 0 1 0 7H3"/><path d="m6 16l-3 3l3 3"/></g>`
 	sTurnRightPath                       = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 5a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/><path d="M7 5h9.5a3.5 3.5 0 0 1 0 7h-9a3.5 3.5 0 0 0 0 7H21"/><path d="m18 16l3 3l-3 3"/></g>`
@@ -3983,6 +4072,7 @@ const (
 	sockPath                             = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M13 3v6l4.798 5.142a4 4 0 0 1-5.441 5.86l-6.736-6.41A2 2 0 0 1 5 12.141V3h8z"/><path d="M7.895 15.768C8.603 15.047 9 14.091 9 13a4 4 0 0 0-4-4"/></g>`
 	sofaPath                             = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 11a2 2 0 0 1 2 2v1h12v-1a2 2 0 1 1 4 0v5a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-5a2 2 0 0 1 2-2z"/><path d="M4 11V8a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v3m-8-6v9"/></g>`
 	sofaOffPath                          = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 14v-1a2 2 0 1 1 4 0v5m-3 1H3a1 1 0 0 1-1-1v-5a2 2 0 1 1 4 0v1h8"/><path d="M4 11V8c0-1.082.573-2.03 1.432-2.558M9 5h8a3 3 0 0 1 3 3v3m-8-6v3m0 4v2M3 3l18 18"/></g>`
+	solarElectricityPath                 = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6.28v11.44a1 1 0 0 0 1.243.97l6-1.5a1 1 0 0 0 .757-.97V7.78a1 1 0 0 0-.757-.97l-6-1.5A1 1 0 0 0 4 6.28zM8 6v12m4-6H4m16-5l-3 5h4l-3 5"/>`
 	solarPanelPath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.28 14h15.44a1 1 0 0 0 .97-1.243l-1.5-6A1 1 0 0 0 18.22 6H5.78a1 1 0 0 0-.97.757l-1.5 6A1 1 0 0 0 4.28 14zM4 10h16M10 6l-1 8m5-8l1 8m-3 0v4m-5 0h10"/>`
 	solarPanelTwoPath                    = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 2a4 4 0 1 0 8 0M4 3h1m14 0h1m-8 6v1m5.2-2.8l.707.707M6.8 7.2l-.7.7M4.28 21h15.44a1 1 0 0 0 .97-1.243l-1.5-6a1 1 0 0 0-.97-.757H5.78a1 1 0 0 0-.97.757l-1.5 6A1 1 0 0 0 4.28 21zM4 17h16m-10-4l-1 8m5-8l1 8"/>`
 	sortAZPath                           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8h4l-4 8h4M4 16v-6a2 2 0 1 1 4 0v6m-4-3h4m3-1h2"/>`
@@ -4260,6 +4350,7 @@ const (
 	sumPath                              = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 16v2a1 1 0 0 1-1 1H6l6-7l-6-7h11a1 1 0 0 1 1 1v2"/>`
 	sumOffPath                           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 18a1 1 0 0 1-1 1H6l6-7M9 5h8a1 1 0 0 1 1 1v2M3 3l18 18"/>`
 	sunPath                              = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0-8 0m-5 0h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m12.1-.7l-.7.7m0 11.4l.7.7m-12.1-.7l-.7.7"/>`
+	sunElectricityPath                   = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12a4 4 0 0 0 4 4m0-8a4 4 0 0 0-4 4m-5 0h1m8-9v1m0 16v1M5.6 5.6l.7.7m0 11.4l-.7.7M20 7l-3 5h4l-3 5"/>`
 	sunFilledPath                        = `<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M0 0h24v24H0z"/><path fill="currentColor" d="M12 19a1 1 0 0 1 .993.883L13 20v1a1 1 0 0 1-1.993.117L11 21v-1a1 1 0 0 1 1-1zm6.313-2.09l.094.083l.7.7a1 1 0 0 1-1.32 1.497l-.094-.083l-.7-.7a1 1 0 0 1 1.218-1.567l.102.07zm-11.306.083a1 1 0 0 1 .083 1.32l-.083.094l-.7.7a1 1 0 0 1-1.497-1.32l.083-.094l.7-.7a1 1 0 0 1 1.414 0zM4 11a1 1 0 0 1 .117 1.993L4 13H3a1 1 0 0 1-.117-1.993L3 11h1zm17 0a1 1 0 0 1 .117 1.993L21 13h-1a1 1 0 0 1-.117-1.993L20 11h1zM6.213 4.81l.094.083l.7.7a1 1 0 0 1-1.32 1.497l-.094-.083l-.7-.7A1 1 0 0 1 6.11 4.74l.102.07zm12.894.083a1 1 0 0 1 .083 1.32l-.083.094l-.7.7a1 1 0 0 1-1.497-1.32l.083-.094l.7-.7a1 1 0 0 1 1.414 0zM12 2a1 1 0 0 1 .993.883L13 3v1a1 1 0 0 1-1.993.117L11 4V3a1 1 0 0 1 1-1zm0 5a5 5 0 1 1-4.995 5.217L7 12l.005-.217A5 5 0 0 1 12 7z"/></g>`
 	sunHighPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 1 0-5.656-5.656a4 4 0 0 0 5.656 5.656zm-8.485 2.829l-1.414 1.414M6.343 6.343L4.929 4.929m12.728 1.414l1.414-1.414m-1.414 12.728l1.414 1.414M4 12H2m10-8V2m8 10h2m-10 8v2"/>`
 	sunLowPath                           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0-8 0m-4 0h.01M12 4v.01M20 12h.01M12 20v.01M6.31 6.31L6.3 6.3m11.41.01l-.01-.01m0 11.4l.01.01M6.3 17.7l.01.01"/>`
@@ -4341,6 +4432,7 @@ const (
 	textPlusPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 10H5m0-4h14m-5 8H5m0 4h6m7-3v6m-3-3h6"/>`
 	textRecognitionPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V6a2 2 0 0 1 2-2h2M4 16v2a2 2 0 0 0 2 2h2m8-16h2a2 2 0 0 1 2 2v2m-4 12h2a2 2 0 0 0 2-2v-2m-8 0V9M9 9h6"/>`
 	textResizePath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 1 0 4 0a2 2 0 1 0-4 0m14 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0M3 19a2 2 0 1 0 4 0a2 2 0 1 0-4 0m14 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0M5 7v10M7 5h10M7 19h10m2-12v10m-9-7h4m-2 4v-4"/>`
+	textScanTwoPath                      = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V6a2 2 0 0 1 2-2h2M4 16v2a2 2 0 0 0 2 2h2m8-16h2a2 2 0 0 1 2 2v2m-4 12h2a2 2 0 0 0 2-2v-2M8 12h8M8 9h6m-6 6h4"/>`
 	textSizePath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7V5h13v2m-6-2v14m2 0H8m7-6v-1h6v1m-3-1v7m-1 0h2"/>`
 	textSpellcheckPath                   = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15V7.5a3.5 3.5 0 0 1 7 0V15m-7-5h7m-2 8l3 3l7-7"/>`
 	textWrapPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 18h5m-5-6h13a3 3 0 0 1 0 6h-4l2-2m0 4l-2-2"/>`
@@ -4484,6 +4576,7 @@ const (
 	umbrellaFilledPath                   = `<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M0 0h24v24H0z"/><path fill="currentColor" d="M12 3a9 9 0 0 1 9 9a1 1 0 0 1-.883.993L20 13h-7v5a1 1 0 0 0 1.993.117L15 18a1 1 0 0 1 2 0a3 3 0 0 1-5.995.176L11 18v-5H4a1 1 0 0 1-.993-.883L3 12a9 9 0 0 1 9-9z"/></g>`
 	umbrellaOffPath                      = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12H4c0-2.209.895-4.208 2.342-5.656m2.382-1.645A8 8 0 0 1 20 12h-4m-4 0v6a2 2 0 1 0 4 0M3 3l18 18"/>`
 	underlinePath                        = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 5v5a5 5 0 0 0 10 0V5M5 19h14"/>`
+	universePath                         = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7.027 11.477a5 5 0 1 0 5.496-4.45a4.951 4.951 0 0 0-3.088.681"/><path d="M5.636 5.636a9 9 0 1 0 3.555-2.188"/><path d="M17 5a1 1 0 1 0 2 0a1 1 0 1 0-2 0m-6 7a1 1 0 1 0 2 0a1 1 0 1 0-2 0m-3 4a1 1 0 1 0 2 0a1 1 0 1 0-2 0"/></g>`
 	unlinkPath                           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 22v-2m-8-5l6-6m-4-3l.463-.536a5 5 0 0 1 7.071 7.072L18 13m-5 5l-.397.534a5.068 5.068 0 0 1-7.127 0a4.972 4.972 0 0 1 0-7.071L6 11m14 6h2M2 7h2m3-5v2"/>`
 	uploadPath                           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2M7 9l5-5l5 5m-5-5v12"/>`
 	urgentPath                           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16v-4a4 4 0 0 1 8 0v4M3 12h1m8-9v1m8 8h1M5.6 5.6l.7.7m12.1-.7l-.7.7M6 17a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1z"/>`
@@ -4508,6 +4601,7 @@ const (
 	userPinPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0-8 0M6 21v-2a4 4 0 0 1 4-4h2.5m8.621 5.121a3 3 0 1 0-4.242 0c.418.419 1.125 1.045 2.121 1.879c1.051-.89 1.759-1.516 2.121-1.879zM19 18v.01"/>`
 	userPlusPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0-8 0m8 12h6m-3-3v6M6 21v-2a4 4 0 0 1 4-4h4"/>`
 	userQuestionPath                     = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0-8 0M6 21v-2a4 4 0 0 1 4-4h3.5m5.5 7v.01M19 19a2.003 2.003 0 0 0 .914-3.782a1.98 1.98 0 0 0-2.414.483"/>`
+	userScanPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9a2 2 0 1 0 4 0a2 2 0 0 0-4 0M4 8V6a2 2 0 0 1 2-2h2M4 16v2a2 2 0 0 0 2 2h2m8-16h2a2 2 0 0 1 2 2v2m-4 12h2a2 2 0 0 0 2-2v-2M8 16a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2"/>`
 	userSearchPath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0-8 0M6 21v-2a4 4 0 0 1 4-4h1.5m3.5 3a3 3 0 1 0 6 0a3 3 0 1 0-6 0m5.2 2.2L22 22"/>`
 	userSharePath                        = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0-8 0M6 21v-2a4 4 0 0 1 4-4h3m3 7l5-5m0 4.5V17h-4.5"/>`
 	userShieldPath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 21v-2a4 4 0 0 1 4-4h2m10 1c0 4-2.5 6-3.5 6S15 20 15 16c1 0 2.5-.5 3.5-1.5c1 1 2.5 1.5 3.5 1.5zM8 7a4 4 0 1 0 8 0a4 4 0 0 0-8 0"/>`
@@ -4611,6 +4705,7 @@ const (
 	waveSawToolPath                      = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h5l4 8V4l4 8h5"/>`
 	waveSinePath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12h-2c-.894 0-1.662-.857-1.761-2c-.296-3.45-.749-6-2.749-6s-2.5 3.582-2.5 8s-.5 8-2.5 8s-2.452-2.547-2.749-6c-.1-1.147-.867-2-1.763-2h-2"/>`
 	waveSquarePath                       = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h5v8h4V4h4v8h5"/>`
+	wavesElectricityPath                 = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12c.576-.643 1.512-1.017 2.5-1c.988-.017 1.924.357 2.5 1c.576.643 1.512 1.017 2.5 1c.988.017 1.924-.357 2.5-1M3 16c.576-.643 1.512-1.017 2.5-1c.988-.017 1.924.357 2.5 1c.576.643 1.512 1.017 2.5 1c.988.017 1.924-.357 2.5-1M3 8c.576-.643 1.512-1.017 2.5-1c.988-.017 1.924.357 2.5 1c.576.643 1.512 1.017 2.5 1c.988.017 1.924-.357 2.5-1m7-1l-3 5h4l-3 5"/>`
 	webhookPath                          = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4.876 13.61A4 4 0 1 0 11 17h6"/><path d="M15.066 20.502A4 4 0 1 0 17 13c-.706 0-1.424.179-2 .5L12 8"/><path d="M16 8a4 4 0 1 0-8 0c0 1.506.77 2.818 2 3.5L7 17"/></g>`
 	webhookOffPath                       = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4.876 13.61A4 4 0 1 0 11 17h6m-1.934 3.502a4 4 0 0 0 4.763-.675M21 17a4 4 0 0 0-4-4"/><path d="M16 8a4 4 0 0 0-6.824-2.833M8 8c0 1.506.77 2.818 2 3.5L7 17M3 3l18 18"/></g>`
 	weightPath                           = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M9 6a3 3 0 1 0 6 0a3 3 0 1 0-6 0"/><path d="M6.835 9h10.33a1 1 0 0 1 .984.821l1.637 9A1 1 0 0 1 18.802 20H5.198a1 1 0 0 1-.984-1.179l1.637-9A1 1 0 0 1 6.835 9z"/></g>`
@@ -4624,6 +4719,7 @@ const (
 	wifiTwoPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01m-2.838-2.828a4 4 0 0 1 5.656 0m-8.485-2.829a8 8 0 0 1 11.314 0"/>`
 	wifiZeroPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01"/>`
 	windPath                             = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h8.5a2.5 2.5 0 1 0-2.34-3.24M3 12h15.5a2.5 2.5 0 1 1-2.34 3.24M4 16h5.5a2.5 2.5 0 1 1-2.34 3.24"/>`
+	windElectricityPath                  = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 7l-3 5h4l-3 5M3 16h4a2 2 0 1 1 0 4m-4-8h8a2 2 0 1 0 0-4M3 8h3a2 2 0 1 0 0-4"/>`
 	windOffPath                          = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h3m4 0h1.5a2.5 2.5 0 1 0-2.34-3.24M3 12h9m4 0h2.5a2.5 2.5 0 0 1 1.801 4.282M4 16h5.5a2.5 2.5 0 1 1-2.34 3.24M3 3l18 18"/>`
 	windmillPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12c2.76 0 5-2.01 5-4.5S14.76 3 12 3v9zm0 0c0 2.76 2.01 5 4.5 5s4.5-2.24 4.5-5h-9zm0 0c-2.76 0-5 2.01-5 4.5S9.24 21 12 21v-9zm0 0c0-2.76-2.01-5-4.5-5S3 9.24 3 12h9z"/>`
 	windmillFilledPath                   = `<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M0 0h24v24H0z"/><path fill="currentColor" d="M12 2c3.292 0 6 2.435 6 5.5c0 1.337-.515 2.554-1.369 3.5H21a1 1 0 0 1 1 1c0 3.292-2.435 6-5.5 6c-1.336 0-2.553-.515-3.5-1.368V21a1 1 0 0 1-1 1c-3.292 0-6-2.435-6-5.5c0-1.336.515-2.553 1.368-3.5H3a1 1 0 0 1-1-1c0-3.292 2.435-6 5.5-6c1.337 0 2.554.515 3.5 1.369V3a1 1 0 0 1 1-1z"/></g>`
@@ -4711,6 +4807,7 @@ const (
 	zoomQuestionPath                     = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0-14 0m18 11l-6-6m-5-2v.01"/><path d="M10 10a1.5 1.5 0 1 0-1.14-2.474"/></g>`
 	zoomReplacePath                      = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m21 21l-6-6M3.291 8a7 7 0 0 1 5.077-4.806a7.021 7.021 0 0 1 8.242 4.403"/><path d="M17 4v4h-4m3.705 4a7 7 0 0 1-5.074 4.798a7.021 7.021 0 0 1-8.241-4.403"/><path d="M3 16v-4h4"/></g>`
 	zoomResetPath                        = `<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m21 21l-6-6M3.268 12.043A7.017 7.017 0 0 0 9.902 17a7.012 7.012 0 0 0 7.043-6.131a7 7 0 0 0-5.314-7.672A7.021 7.021 0 0 0 3.39 7.6"/><path d="M3 4v4h4"/></g>`
+	zoomScanPath                         = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V6a2 2 0 0 1 2-2h2M4 16v2a2 2 0 0 0 2 2h2m8-16h2a2 2 0 0 1 2 2v2m-4 12h2a2 2 0 0 0 2-2v-2M8 11a3 3 0 1 0 6 0a3 3 0 0 0-6 0m8 5l-2.5-2.5"/>`
 	zzzPath                              = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h6l-6 8h6m4-16h6l-6 8h6"/>`
 	zzzOffPath                           = `<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h6l-6 8h6m4-16h6l-5.146 6.862M16 12h4M3 3l18 18"/>`
 )
@@ -4830,6 +4927,8 @@ func IconFromName(name string) g.Node {
 		return AirTrafficControl()
 	case "alarm":
 		return Alarm()
+	case "alarmAverage":
+		return AlarmAverage()
 	case "alarmFilled":
 		return AlarmFilled()
 	case "alarmMinus":
@@ -5226,6 +5325,10 @@ func IconFromName(name string) g.Node {
 		return ArrowLoopRightTwo()
 	case "arrowMerge":
 		return ArrowMerge()
+	case "arrowMergeAltLeft":
+		return ArrowMergeAltLeft()
+	case "arrowMergeAltRight":
+		return ArrowMergeAltRight()
 	case "arrowMergeBoth":
 		return ArrowMergeBoth()
 	case "arrowMergeLeft":
@@ -5676,6 +5779,8 @@ func IconFromName(name string) g.Node {
 		return Bed()
 	case "bedFilled":
 		return BedFilled()
+	case "bedFlat":
+		return BedFlat()
 	case "bedOff":
 		return BedOff()
 	case "beer":
@@ -5780,6 +5885,8 @@ func IconFromName(name string) g.Node {
 		return BleachNoChlorine()
 	case "bleachOff":
 		return BleachOff()
+	case "blender":
+		return Blender()
 	case "blockquote":
 		return Blockquote()
 	case "bluetooth":
@@ -5796,6 +5903,8 @@ func IconFromName(name string) g.Node {
 		return BlurOff()
 	case "bmp":
 		return Bmp()
+	case "bodyScan":
+		return BodyScan()
 	case "bold":
 		return Bold()
 	case "boldOff":
@@ -5982,6 +6091,10 @@ func IconFromName(name string) g.Node {
 		return BracesOff()
 	case "brackets":
 		return Brackets()
+	case "bracketsAngle":
+		return BracketsAngle()
+	case "bracketsAngleOff":
+		return BracketsAngleOff()
 	case "bracketsContain":
 		return BracketsContain()
 	case "bracketsContainEnd":
@@ -6038,6 +6151,8 @@ func IconFromName(name string) g.Node {
 		return BrandAppstore()
 	case "brandAsana":
 		return BrandAsana()
+	case "brandAuthZero":
+		return BrandAuthZero()
 	case "brandAws":
 		return BrandAws()
 	case "brandAzure":
@@ -6818,6 +6933,8 @@ func IconFromName(name string) g.Node {
 		return BulbOff()
 	case "bulldozer":
 		return Bulldozer()
+	case "burger":
+		return Burger()
 	case "bus":
 		return Bus()
 	case "busOff":
@@ -8210,10 +8327,10 @@ func IconFromName(name string) g.Node {
 		return DeviceDesktopX()
 	case "deviceFloppy":
 		return DeviceFloppy()
-	case "deviceGamePad":
-		return DeviceGamePad()
 	case "deviceGamepad":
 		return DeviceGamepad()
+	case "deviceGamepadThree":
+		return DeviceGamepadThree()
 	case "deviceGamepadTwo":
 		return DeviceGamepadTwo()
 	case "deviceHeartMonitor":
@@ -9184,6 +9301,8 @@ func IconFromName(name string) g.Node {
 		return Fingerprint()
 	case "fingerprintOff":
 		return FingerprintOff()
+	case "fingerprintScan":
+		return FingerprintScan()
 	case "fireExtinguisher":
 		return FireExtinguisher()
 	case "fireHydrant":
@@ -9412,6 +9531,8 @@ func IconFromName(name string) g.Node {
 		return FunctionFilled()
 	case "functionOff":
 		return FunctionOff()
+	case "galaxy":
+		return Galaxy()
 	case "gardenCart":
 		return GardenCart()
 	case "gardenCartOff":
@@ -9546,8 +9667,16 @@ func IconFromName(name string) g.Node {
 		return GraveTwo()
 	case "gridDots":
 		return GridDots()
+	case "gridFourXFour":
+		return GridFourXFour()
+	case "gridGoldenratio":
+		return GridGoldenratio()
 	case "gridPattern":
 		return GridPattern()
+	case "gridScan":
+		return GridScan()
+	case "gridThreeXThree":
+		return GridThreeXThree()
 	case "grill":
 		return Grill()
 	case "grillFork":
@@ -9946,6 +10075,8 @@ func IconFromName(name string) g.Node {
 		return Horse()
 	case "horseToy":
 		return HorseToy()
+	case "horseshoe":
+		return Horseshoe()
 	case "hotelService":
 		return HotelService()
 	case "hourglass":
@@ -10304,10 +10435,16 @@ func IconFromName(name string) g.Node {
 		return LemonTwo()
 	case "letterA":
 		return LetterA()
+	case "letterASmall":
+		return LetterASmall()
 	case "letterB":
 		return LetterB()
+	case "letterBSmall":
+		return LetterBSmall()
 	case "letterC":
 		return LetterC()
+	case "letterCSmall":
+		return LetterCSmall()
 	case "letterCase":
 		return LetterCase()
 	case "letterCaseLower":
@@ -10318,52 +10455,98 @@ func IconFromName(name string) g.Node {
 		return LetterCaseUpper()
 	case "letterD":
 		return LetterD()
+	case "letterDSmall":
+		return LetterDSmall()
 	case "letterE":
 		return LetterE()
+	case "letterESmall":
+		return LetterESmall()
 	case "letterF":
 		return LetterF()
+	case "letterFSmall":
+		return LetterFSmall()
 	case "letterG":
 		return LetterG()
+	case "letterGSmall":
+		return LetterGSmall()
 	case "letterH":
 		return LetterH()
+	case "letterHSmall":
+		return LetterHSmall()
 	case "letterI":
 		return LetterI()
+	case "letterISmall":
+		return LetterISmall()
 	case "letterJ":
 		return LetterJ()
+	case "letterJSmall":
+		return LetterJSmall()
 	case "letterK":
 		return LetterK()
+	case "letterKSmall":
+		return LetterKSmall()
 	case "letterL":
 		return LetterL()
+	case "letterLSmall":
+		return LetterLSmall()
 	case "letterM":
 		return LetterM()
+	case "letterMSmall":
+		return LetterMSmall()
 	case "letterN":
 		return LetterN()
+	case "letterNSmall":
+		return LetterNSmall()
 	case "letterO":
 		return LetterO()
+	case "letterOSmall":
+		return LetterOSmall()
 	case "letterP":
 		return LetterP()
+	case "letterPSmall":
+		return LetterPSmall()
 	case "letterQ":
 		return LetterQ()
+	case "letterQSmall":
+		return LetterQSmall()
 	case "letterR":
 		return LetterR()
+	case "letterRSmall":
+		return LetterRSmall()
 	case "letterS":
 		return LetterS()
+	case "letterSSmall":
+		return LetterSSmall()
 	case "letterSpacing":
 		return LetterSpacing()
 	case "letterT":
 		return LetterT()
+	case "letterTSmall":
+		return LetterTSmall()
 	case "letterU":
 		return LetterU()
+	case "letterUSmall":
+		return LetterUSmall()
 	case "letterV":
 		return LetterV()
+	case "letterVSmall":
+		return LetterVSmall()
 	case "letterW":
 		return LetterW()
+	case "letterWSmall":
+		return LetterWSmall()
 	case "letterX":
 		return LetterX()
+	case "letterXSmall":
+		return LetterXSmall()
 	case "letterY":
 		return LetterY()
+	case "letterYSmall":
+		return LetterYSmall()
 	case "letterZ":
 		return LetterZ()
+	case "letterZSmall":
+		return LetterZSmall()
 	case "lettersCase":
 		return LettersCase()
 	case "license":
@@ -10384,6 +10567,8 @@ func IconFromName(name string) g.Node {
 		return LineDotted()
 	case "lineHeight":
 		return LineHeight()
+	case "lineScan":
+		return LineScan()
 	case "link":
 		return Link()
 	case "linkOff":
@@ -10566,6 +10751,8 @@ func IconFromName(name string) g.Node {
 		return Magnet()
 	case "magnetOff":
 		return MagnetOff()
+	case "magnetic":
+		return Magnetic()
 	case "mail":
 		return Mail()
 	case "mailAi":
@@ -11272,6 +11459,8 @@ func IconFromName(name string) g.Node {
 		return NavigationDollar()
 	case "navigationDown":
 		return NavigationDown()
+	case "navigationEast":
+		return NavigationEast()
 	case "navigationExclamation":
 		return NavigationExclamation()
 	case "navigationFilled":
@@ -11296,10 +11485,16 @@ func IconFromName(name string) g.Node {
 		return NavigationSearch()
 	case "navigationShare":
 		return NavigationShare()
+	case "navigationSouth":
+		return NavigationSouth()
 	case "navigationStar":
 		return NavigationStar()
+	case "navigationTop":
+		return NavigationTop()
 	case "navigationUp":
 		return NavigationUp()
+	case "navigationWest":
+		return NavigationWest()
 	case "navigationX":
 		return NavigationX()
 	case "needle":
@@ -11348,24 +11543,84 @@ func IconFromName(name string) g.Node {
 		return Number()
 	case "numberEight":
 		return NumberEight()
+	case "numberEightSmall":
+		return NumberEightSmall()
+	case "numberEighteenSmall":
+		return NumberEighteenSmall()
+	case "numberElevenSmall":
+		return NumberElevenSmall()
+	case "numberFifteenSmall":
+		return NumberFifteenSmall()
 	case "numberFive":
 		return NumberFive()
+	case "numberFiveSmall":
+		return NumberFiveSmall()
 	case "numberFour":
 		return NumberFour()
+	case "numberFourSmall":
+		return NumberFourSmall()
+	case "numberFourteenSmall":
+		return NumberFourteenSmall()
 	case "numberNine":
 		return NumberNine()
+	case "numberNineSmall":
+		return NumberNineSmall()
+	case "numberNineteenSmall":
+		return NumberNineteenSmall()
 	case "numberOne":
 		return NumberOne()
+	case "numberOneSmall":
+		return NumberOneSmall()
 	case "numberSeven":
 		return NumberSeven()
+	case "numberSevenSmall":
+		return NumberSevenSmall()
+	case "numberSeventeenSmall":
+		return NumberSeventeenSmall()
 	case "numberSix":
 		return NumberSix()
+	case "numberSixSmall":
+		return NumberSixSmall()
+	case "numberSixteenSmall":
+		return NumberSixteenSmall()
+	case "numberTenSmall":
+		return NumberTenSmall()
+	case "numberThirteenSmall":
+		return NumberThirteenSmall()
 	case "numberThree":
 		return NumberThree()
+	case "numberThreeSmall":
+		return NumberThreeSmall()
+	case "numberTwelveSmall":
+		return NumberTwelveSmall()
+	case "numberTwentyEightSmall":
+		return NumberTwentyEightSmall()
+	case "numberTwentyFiveSmall":
+		return NumberTwentyFiveSmall()
+	case "numberTwentyFourSmall":
+		return NumberTwentyFourSmall()
+	case "numberTwentyNineSmall":
+		return NumberTwentyNineSmall()
+	case "numberTwentyOneSmall":
+		return NumberTwentyOneSmall()
+	case "numberTwentySevenSmall":
+		return NumberTwentySevenSmall()
+	case "numberTwentySixSmall":
+		return NumberTwentySixSmall()
+	case "numberTwentySmall":
+		return NumberTwentySmall()
+	case "numberTwentyThreeSmall":
+		return NumberTwentyThreeSmall()
+	case "numberTwentyTwoSmall":
+		return NumberTwentyTwoSmall()
 	case "numberTwo":
 		return NumberTwo()
+	case "numberTwoSmall":
+		return NumberTwoSmall()
 	case "numberZero":
 		return NumberZero()
+	case "numberZeroSmall":
+		return NumberZeroSmall()
 	case "numbers":
 		return Numbers()
 	case "nurse":
@@ -11656,6 +11911,8 @@ func IconFromName(name string) g.Node {
 		return PhotoPlus()
 	case "photoQuestion":
 		return PhotoQuestion()
+	case "photoScan":
+		return PhotoScan()
 	case "photoSearch":
 		return PhotoSearch()
 	case "photoSensor":
@@ -12164,6 +12421,8 @@ func IconFromName(name string) g.Node {
 		return RoadSign()
 	case "robot":
 		return Robot()
+	case "robotFace":
+		return RobotFace()
 	case "robotOff":
 		return RobotOff()
 	case "rocket":
@@ -12216,10 +12475,24 @@ func IconFromName(name string) g.Node {
 		return RotateTwo()
 	case "route":
 		return Route()
+	case "routeAltLeft":
+		return RouteAltLeft()
+	case "routeAltRight":
+		return RouteAltRight()
 	case "routeOff":
 		return RouteOff()
+	case "routeScan":
+		return RouteScan()
+	case "routeSquare":
+		return RouteSquare()
+	case "routeSquareTwo":
+		return RouteSquareTwo()
 	case "routeTwo":
 		return RouteTwo()
+	case "routeX":
+		return RouteX()
+	case "routeXTwo":
+		return RouteXTwo()
 	case "router":
 		return Router()
 	case "routerOff":
@@ -12250,6 +12523,8 @@ func IconFromName(name string) g.Node {
 		return RulerTwoOff()
 	case "run":
 		return Run()
+	case "rvTruck":
+		return RvTruck()
 	case "sTurnDown":
 		return STurnDown()
 	case "sTurnLeft":
@@ -12674,6 +12949,8 @@ func IconFromName(name string) g.Node {
 		return Sofa()
 	case "sofaOff":
 		return SofaOff()
+	case "solarElectricity":
+		return SolarElectricity()
 	case "solarPanel":
 		return SolarPanel()
 	case "solarPanelTwo":
@@ -13228,6 +13505,8 @@ func IconFromName(name string) g.Node {
 		return SumOff()
 	case "sun":
 		return Sun()
+	case "sunElectricity":
+		return SunElectricity()
 	case "sunFilled":
 		return SunFilled()
 	case "sunHigh":
@@ -13390,6 +13669,8 @@ func IconFromName(name string) g.Node {
 		return TextRecognition()
 	case "textResize":
 		return TextResize()
+	case "textScanTwo":
+		return TextScanTwo()
 	case "textSize":
 		return TextSize()
 	case "textSpellcheck":
@@ -13676,6 +13957,8 @@ func IconFromName(name string) g.Node {
 		return UmbrellaOff()
 	case "underline":
 		return Underline()
+	case "universe":
+		return Universe()
 	case "unlink":
 		return Unlink()
 	case "upload":
@@ -13724,6 +14007,8 @@ func IconFromName(name string) g.Node {
 		return UserPlus()
 	case "userQuestion":
 		return UserQuestion()
+	case "userScan":
+		return UserScan()
 	case "userSearch":
 		return UserSearch()
 	case "userShare":
@@ -13930,6 +14215,8 @@ func IconFromName(name string) g.Node {
 		return WaveSine()
 	case "waveSquare":
 		return WaveSquare()
+	case "wavesElectricity":
+		return WavesElectricity()
 	case "webhook":
 		return Webhook()
 	case "webhookOff":
@@ -13956,6 +14243,8 @@ func IconFromName(name string) g.Node {
 		return WifiZero()
 	case "wind":
 		return Wind()
+	case "windElectricity":
+		return WindElectricity()
 	case "windOff":
 		return WindOff()
 	case "windmill":
@@ -14130,6 +14419,8 @@ func IconFromName(name string) g.Node {
 		return ZoomReplace()
 	case "zoomReset":
 		return ZoomReset()
+	case "zoomScan":
+		return ZoomScan()
 	case "zzz":
 		return Zzz()
 	case "zzzOff":
@@ -14353,6 +14644,10 @@ func AirTrafficControl(children ...g.Node) g.Node {
 
 func Alarm(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(alarmPath), g.Group(children))
+}
+
+func AlarmAverage(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(alarmAveragePath), g.Group(children))
 }
 
 func AlarmFilled(children ...g.Node) g.Node {
@@ -15145,6 +15440,14 @@ func ArrowLoopRightTwo(children ...g.Node) g.Node {
 
 func ArrowMerge(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(arrowMergePath), g.Group(children))
+}
+
+func ArrowMergeAltLeft(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(arrowMergeAltLeftPath), g.Group(children))
+}
+
+func ArrowMergeAltRight(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(arrowMergeAltRightPath), g.Group(children))
 }
 
 func ArrowMergeBoth(children ...g.Node) g.Node {
@@ -16047,6 +16350,10 @@ func BedFilled(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(bedFilledPath), g.Group(children))
 }
 
+func BedFlat(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(bedFlatPath), g.Group(children))
+}
+
 func BedOff(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(bedOffPath), g.Group(children))
 }
@@ -16255,6 +16562,10 @@ func BleachOff(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(bleachOffPath), g.Group(children))
 }
 
+func Blender(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(blenderPath), g.Group(children))
+}
+
 func Blockquote(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(blockquotePath), g.Group(children))
 }
@@ -16285,6 +16596,10 @@ func BlurOff(children ...g.Node) g.Node {
 
 func Bmp(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(bmpPath), g.Group(children))
+}
+
+func BodyScan(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(bodyScanPath), g.Group(children))
 }
 
 func Bold(children ...g.Node) g.Node {
@@ -16659,6 +16974,14 @@ func Brackets(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(bracketsPath), g.Group(children))
 }
 
+func BracketsAngle(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(bracketsAnglePath), g.Group(children))
+}
+
+func BracketsAngleOff(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(bracketsAngleOffPath), g.Group(children))
+}
+
 func BracketsContain(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(bracketsContainPath), g.Group(children))
 }
@@ -16769,6 +17092,10 @@ func BrandAppstore(children ...g.Node) g.Node {
 
 func BrandAsana(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(brandAsanaPath), g.Group(children))
+}
+
+func BrandAuthZero(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(brandAuthZeroPath), g.Group(children))
 }
 
 func BrandAws(children ...g.Node) g.Node {
@@ -18329,6 +18656,10 @@ func BulbOff(children ...g.Node) g.Node {
 
 func Bulldozer(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(bulldozerPath), g.Group(children))
+}
+
+func Burger(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(burgerPath), g.Group(children))
 }
 
 func Bus(children ...g.Node) g.Node {
@@ -21115,12 +21446,12 @@ func DeviceFloppy(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(deviceFloppyPath), g.Group(children))
 }
 
-func DeviceGamePad(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(deviceGamePadPath), g.Group(children))
-}
-
 func DeviceGamepad(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(deviceGamepadPath), g.Group(children))
+}
+
+func DeviceGamepadThree(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(deviceGamepadThreePath), g.Group(children))
 }
 
 func DeviceGamepadTwo(children ...g.Node) g.Node {
@@ -23063,6 +23394,10 @@ func FingerprintOff(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(fingerprintOffPath), g.Group(children))
 }
 
+func FingerprintScan(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(fingerprintScanPath), g.Group(children))
+}
+
 func FireExtinguisher(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(fireExtinguisherPath), g.Group(children))
 }
@@ -23519,6 +23854,10 @@ func FunctionOff(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(functionOffPath), g.Group(children))
 }
 
+func Galaxy(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(galaxyPath), g.Group(children))
+}
+
 func GardenCart(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(gardenCartPath), g.Group(children))
 }
@@ -23787,8 +24126,24 @@ func GridDots(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(gridDotsPath), g.Group(children))
 }
 
+func GridFourXFour(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(gridFourXFourPath), g.Group(children))
+}
+
+func GridGoldenratio(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(gridGoldenratioPath), g.Group(children))
+}
+
 func GridPattern(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(gridPatternPath), g.Group(children))
+}
+
+func GridScan(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(gridScanPath), g.Group(children))
+}
+
+func GridThreeXThree(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(gridThreeXThreePath), g.Group(children))
 }
 
 func Grill(children ...g.Node) g.Node {
@@ -24587,6 +24942,10 @@ func HorseToy(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(horseToyPath), g.Group(children))
 }
 
+func Horseshoe(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(horseshoePath), g.Group(children))
+}
+
 func HotelService(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(hotelServicePath), g.Group(children))
 }
@@ -25303,12 +25662,24 @@ func LetterA(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterAPath), g.Group(children))
 }
 
+func LetterASmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterASmallPath), g.Group(children))
+}
+
 func LetterB(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterBPath), g.Group(children))
 }
 
+func LetterBSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterBSmallPath), g.Group(children))
+}
+
 func LetterC(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterCPath), g.Group(children))
+}
+
+func LetterCSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterCSmallPath), g.Group(children))
 }
 
 func LetterCase(children ...g.Node) g.Node {
@@ -25331,64 +25702,128 @@ func LetterD(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterDPath), g.Group(children))
 }
 
+func LetterDSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterDSmallPath), g.Group(children))
+}
+
 func LetterE(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterEPath), g.Group(children))
+}
+
+func LetterESmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterESmallPath), g.Group(children))
 }
 
 func LetterF(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterFPath), g.Group(children))
 }
 
+func LetterFSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterFSmallPath), g.Group(children))
+}
+
 func LetterG(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterGPath), g.Group(children))
+}
+
+func LetterGSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterGSmallPath), g.Group(children))
 }
 
 func LetterH(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterHPath), g.Group(children))
 }
 
+func LetterHSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterHSmallPath), g.Group(children))
+}
+
 func LetterI(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterIPath), g.Group(children))
+}
+
+func LetterISmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterISmallPath), g.Group(children))
 }
 
 func LetterJ(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterJPath), g.Group(children))
 }
 
+func LetterJSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterJSmallPath), g.Group(children))
+}
+
 func LetterK(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterKPath), g.Group(children))
+}
+
+func LetterKSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterKSmallPath), g.Group(children))
 }
 
 func LetterL(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterLPath), g.Group(children))
 }
 
+func LetterLSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterLSmallPath), g.Group(children))
+}
+
 func LetterM(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterMPath), g.Group(children))
+}
+
+func LetterMSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterMSmallPath), g.Group(children))
 }
 
 func LetterN(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterNPath), g.Group(children))
 }
 
+func LetterNSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterNSmallPath), g.Group(children))
+}
+
 func LetterO(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterOPath), g.Group(children))
+}
+
+func LetterOSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterOSmallPath), g.Group(children))
 }
 
 func LetterP(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterPPath), g.Group(children))
 }
 
+func LetterPSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterPSmallPath), g.Group(children))
+}
+
 func LetterQ(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterQPath), g.Group(children))
+}
+
+func LetterQSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterQSmallPath), g.Group(children))
 }
 
 func LetterR(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterRPath), g.Group(children))
 }
 
+func LetterRSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterRSmallPath), g.Group(children))
+}
+
 func LetterS(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterSPath), g.Group(children))
+}
+
+func LetterSSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterSSmallPath), g.Group(children))
 }
 
 func LetterSpacing(children ...g.Node) g.Node {
@@ -25399,28 +25834,56 @@ func LetterT(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterTPath), g.Group(children))
 }
 
+func LetterTSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterTSmallPath), g.Group(children))
+}
+
 func LetterU(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterUPath), g.Group(children))
+}
+
+func LetterUSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterUSmallPath), g.Group(children))
 }
 
 func LetterV(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterVPath), g.Group(children))
 }
 
+func LetterVSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterVSmallPath), g.Group(children))
+}
+
 func LetterW(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterWPath), g.Group(children))
+}
+
+func LetterWSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterWSmallPath), g.Group(children))
 }
 
 func LetterX(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterXPath), g.Group(children))
 }
 
+func LetterXSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterXSmallPath), g.Group(children))
+}
+
 func LetterY(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterYPath), g.Group(children))
 }
 
+func LetterYSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterYSmallPath), g.Group(children))
+}
+
 func LetterZ(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(letterZPath), g.Group(children))
+}
+
+func LetterZSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(letterZSmallPath), g.Group(children))
 }
 
 func LettersCase(children ...g.Node) g.Node {
@@ -25461,6 +25924,10 @@ func LineDotted(children ...g.Node) g.Node {
 
 func LineHeight(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(lineHeightPath), g.Group(children))
+}
+
+func LineScan(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(lineScanPath), g.Group(children))
 }
 
 func Link(children ...g.Node) g.Node {
@@ -25825,6 +26292,10 @@ func Magnet(children ...g.Node) g.Node {
 
 func MagnetOff(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(magnetOffPath), g.Group(children))
+}
+
+func Magnetic(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(magneticPath), g.Group(children))
 }
 
 func Mail(children ...g.Node) g.Node {
@@ -27239,6 +27710,10 @@ func NavigationDown(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(navigationDownPath), g.Group(children))
 }
 
+func NavigationEast(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(navigationEastPath), g.Group(children))
+}
+
 func NavigationExclamation(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(navigationExclamationPath), g.Group(children))
 }
@@ -27287,12 +27762,24 @@ func NavigationShare(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(navigationSharePath), g.Group(children))
 }
 
+func NavigationSouth(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(navigationSouthPath), g.Group(children))
+}
+
 func NavigationStar(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(navigationStarPath), g.Group(children))
 }
 
+func NavigationTop(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(navigationTopPath), g.Group(children))
+}
+
 func NavigationUp(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(navigationUpPath), g.Group(children))
+}
+
+func NavigationWest(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(navigationWestPath), g.Group(children))
 }
 
 func NavigationX(children ...g.Node) g.Node {
@@ -27391,40 +27878,160 @@ func NumberEight(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(numberEightPath), g.Group(children))
 }
 
+func NumberEightSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberEightSmallPath), g.Group(children))
+}
+
+func NumberEighteenSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberEighteenSmallPath), g.Group(children))
+}
+
+func NumberElevenSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberElevenSmallPath), g.Group(children))
+}
+
+func NumberFifteenSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberFifteenSmallPath), g.Group(children))
+}
+
 func NumberFive(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(numberFivePath), g.Group(children))
+}
+
+func NumberFiveSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberFiveSmallPath), g.Group(children))
 }
 
 func NumberFour(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(numberFourPath), g.Group(children))
 }
 
+func NumberFourSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberFourSmallPath), g.Group(children))
+}
+
+func NumberFourteenSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberFourteenSmallPath), g.Group(children))
+}
+
 func NumberNine(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(numberNinePath), g.Group(children))
+}
+
+func NumberNineSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberNineSmallPath), g.Group(children))
+}
+
+func NumberNineteenSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberNineteenSmallPath), g.Group(children))
 }
 
 func NumberOne(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(numberOnePath), g.Group(children))
 }
 
+func NumberOneSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberOneSmallPath), g.Group(children))
+}
+
 func NumberSeven(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(numberSevenPath), g.Group(children))
+}
+
+func NumberSevenSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberSevenSmallPath), g.Group(children))
+}
+
+func NumberSeventeenSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberSeventeenSmallPath), g.Group(children))
 }
 
 func NumberSix(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(numberSixPath), g.Group(children))
 }
 
+func NumberSixSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberSixSmallPath), g.Group(children))
+}
+
+func NumberSixteenSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberSixteenSmallPath), g.Group(children))
+}
+
+func NumberTenSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberTenSmallPath), g.Group(children))
+}
+
+func NumberThirteenSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberThirteenSmallPath), g.Group(children))
+}
+
 func NumberThree(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(numberThreePath), g.Group(children))
+}
+
+func NumberThreeSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberThreeSmallPath), g.Group(children))
+}
+
+func NumberTwelveSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberTwelveSmallPath), g.Group(children))
+}
+
+func NumberTwentyEightSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberTwentyEightSmallPath), g.Group(children))
+}
+
+func NumberTwentyFiveSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberTwentyFiveSmallPath), g.Group(children))
+}
+
+func NumberTwentyFourSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberTwentyFourSmallPath), g.Group(children))
+}
+
+func NumberTwentyNineSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberTwentyNineSmallPath), g.Group(children))
+}
+
+func NumberTwentyOneSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberTwentyOneSmallPath), g.Group(children))
+}
+
+func NumberTwentySevenSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberTwentySevenSmallPath), g.Group(children))
+}
+
+func NumberTwentySixSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberTwentySixSmallPath), g.Group(children))
+}
+
+func NumberTwentySmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberTwentySmallPath), g.Group(children))
+}
+
+func NumberTwentyThreeSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberTwentyThreeSmallPath), g.Group(children))
+}
+
+func NumberTwentyTwoSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberTwentyTwoSmallPath), g.Group(children))
 }
 
 func NumberTwo(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(numberTwoPath), g.Group(children))
 }
 
+func NumberTwoSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberTwoSmallPath), g.Group(children))
+}
+
 func NumberZero(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(numberZeroPath), g.Group(children))
+}
+
+func NumberZeroSmall(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(numberZeroSmallPath), g.Group(children))
 }
 
 func Numbers(children ...g.Node) g.Node {
@@ -28005,6 +28612,10 @@ func PhotoPlus(children ...g.Node) g.Node {
 
 func PhotoQuestion(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(photoQuestionPath), g.Group(children))
+}
+
+func PhotoScan(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(photoScanPath), g.Group(children))
 }
 
 func PhotoSearch(children ...g.Node) g.Node {
@@ -29023,6 +29634,10 @@ func Robot(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(robotPath), g.Group(children))
 }
 
+func RobotFace(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(robotFacePath), g.Group(children))
+}
+
 func RobotOff(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(robotOffPath), g.Group(children))
 }
@@ -29127,12 +29742,40 @@ func Route(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(routePath), g.Group(children))
 }
 
+func RouteAltLeft(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(routeAltLeftPath), g.Group(children))
+}
+
+func RouteAltRight(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(routeAltRightPath), g.Group(children))
+}
+
 func RouteOff(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(routeOffPath), g.Group(children))
 }
 
+func RouteScan(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(routeScanPath), g.Group(children))
+}
+
+func RouteSquare(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(routeSquarePath), g.Group(children))
+}
+
+func RouteSquareTwo(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(routeSquareTwoPath), g.Group(children))
+}
+
 func RouteTwo(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(routeTwoPath), g.Group(children))
+}
+
+func RouteX(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(routeXPath), g.Group(children))
+}
+
+func RouteXTwo(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(routeXTwoPath), g.Group(children))
 }
 
 func Router(children ...g.Node) g.Node {
@@ -29193,6 +29836,10 @@ func RulerTwoOff(children ...g.Node) g.Node {
 
 func Run(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(runPath), g.Group(children))
+}
+
+func RvTruck(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(rvTruckPath), g.Group(children))
 }
 
 func STurnDown(children ...g.Node) g.Node {
@@ -30041,6 +30688,10 @@ func Sofa(children ...g.Node) g.Node {
 
 func SofaOff(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(sofaOffPath), g.Group(children))
+}
+
+func SolarElectricity(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(solarElectricityPath), g.Group(children))
 }
 
 func SolarPanel(children ...g.Node) g.Node {
@@ -31151,6 +31802,10 @@ func Sun(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(sunPath), g.Group(children))
 }
 
+func SunElectricity(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(sunElectricityPath), g.Group(children))
+}
+
 func SunFilled(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(sunFilledPath), g.Group(children))
 }
@@ -31473,6 +32128,10 @@ func TextRecognition(children ...g.Node) g.Node {
 
 func TextResize(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(textResizePath), g.Group(children))
+}
+
+func TextScanTwo(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(textScanTwoPath), g.Group(children))
 }
 
 func TextSize(children ...g.Node) g.Node {
@@ -32047,6 +32706,10 @@ func Underline(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(underlinePath), g.Group(children))
 }
 
+func Universe(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(universePath), g.Group(children))
+}
+
 func Unlink(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(unlinkPath), g.Group(children))
 }
@@ -32141,6 +32804,10 @@ func UserPlus(children ...g.Node) g.Node {
 
 func UserQuestion(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(userQuestionPath), g.Group(children))
+}
+
+func UserScan(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(userScanPath), g.Group(children))
 }
 
 func UserSearch(children ...g.Node) g.Node {
@@ -32555,6 +33222,10 @@ func WaveSquare(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(waveSquarePath), g.Group(children))
 }
 
+func WavesElectricity(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(wavesElectricityPath), g.Group(children))
+}
+
 func Webhook(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(webhookPath), g.Group(children))
 }
@@ -32605,6 +33276,10 @@ func WifiZero(children ...g.Node) g.Node {
 
 func Wind(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(windPath), g.Group(children))
+}
+
+func WindElectricity(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(windElectricityPath), g.Group(children))
 }
 
 func WindOff(children ...g.Node) g.Node {
@@ -32953,6 +33628,10 @@ func ZoomReplace(children ...g.Node) g.Node {
 
 func ZoomReset(children ...g.Node) g.Node {
 	return s.SVG(viewbox, hAttr, g.Raw(zoomResetPath), g.Group(children))
+}
+
+func ZoomScan(children ...g.Node) g.Node {
+	return s.SVG(viewbox, hAttr, g.Raw(zoomScanPath), g.Group(children))
 }
 
 func Zzz(children ...g.Node) g.Node {
