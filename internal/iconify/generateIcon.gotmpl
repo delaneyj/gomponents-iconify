@@ -5,33 +5,20 @@ import (
 	s "github.com/maragudk/gomponents/svg"
 )
 
-const (
-  IconifyVersion = "{{.Version}}"
-  {{range .Icons -}}
-  {{.Name.Camel}}Path = `{{.Icon.SvgBody}}`
-  {{end}}
-)
+const IconifyVersion = "{{.Version}}"
 
 var (
   hAttr = g.Attr("height", "1em")
   viewbox = g.Attr("viewbox", "0 0 {{.ViewWidth}} {{.ViewHeight}}")
 )
 
-func IconFromName(name string) g.Node {
-	switch name {
-	{{range .Icons -}}
-	case "{{.Name.Camel}}": return {{.Name.Pascal}}()
-	{{end -}}
-	default:
-		panic("Unknown icon name: " + name)
-	}
-}
-
-
 
 {{range .Icons -}}
 func {{.Name.Pascal}}(children ...g.Node) g.Node {
-	return s.SVG( viewbox, hAttr, g.Raw({{.Name.Camel}}Path), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`{{.Icon.SvgBody}}`), g.Group(children),
+	)
 }
 
 {{end}}

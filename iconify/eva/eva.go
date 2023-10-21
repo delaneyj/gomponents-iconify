@@ -5,3448 +5,3439 @@ import (
 	s "github.com/maragudk/gomponents/svg"
 )
 
-const (
-	IconifyVersion                    = "1.1.3"
-	activityFillPath                  = `<g id="evaActivityFill0"><g id="evaActivityFill1"><path id="evaActivityFill2" fill="currentColor" d="M14.33 20h-.21a2 2 0 0 1-1.76-1.58L9.68 6l-2.76 6.4A1 1 0 0 1 6 13H3a1 1 0 0 1 0-2h2.34l2.51-5.79a2 2 0 0 1 3.79.38L14.32 18l2.76-6.38A1 1 0 0 1 18 11h3a1 1 0 0 1 0 2h-2.34l-2.51 5.79A2 2 0 0 1 14.33 20Z"/></g></g>`
-	activityOutlinePath               = `<g id="evaActivityOutline0"><g id="evaActivityOutline1"><path id="evaActivityOutline2" fill="currentColor" d="M14.33 20h-.21a2 2 0 0 1-1.76-1.58L9.68 6l-2.76 6.4A1 1 0 0 1 6 13H3a1 1 0 0 1 0-2h2.34l2.51-5.79a2 2 0 0 1 3.79.38L14.32 18l2.76-6.38A1 1 0 0 1 18 11h3a1 1 0 0 1 0 2h-2.34l-2.51 5.79A2 2 0 0 1 14.33 20Z"/></g></g>`
-	alertCircleFillPath               = `<g id="evaAlertCircleFill0"><g id="evaAlertCircleFill1"><path id="evaAlertCircleFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 15a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm1-4a1 1 0 0 1-2 0V8a1 1 0 0 1 2 0Z"/></g></g>`
-	alertCircleOutlinePath            = `<g id="evaAlertCircleOutline0"><g id="evaAlertCircleOutline1"><g id="evaAlertCircleOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><circle cx="12" cy="16" r="1"/><path d="M12 7a1 1 0 0 0-1 1v5a1 1 0 0 0 2 0V8a1 1 0 0 0-1-1Z"/></g></g></g>`
-	alertTriangleFillPath             = `<g id="evaAlertTriangleFill0"><g id="evaAlertTriangleFill1"><path id="evaAlertTriangleFill2" fill="currentColor" d="M22.56 16.3L14.89 3.58a3.43 3.43 0 0 0-5.78 0L1.44 16.3a3 3 0 0 0-.05 3A3.37 3.37 0 0 0 4.33 21h15.34a3.37 3.37 0 0 0 2.94-1.66a3 3 0 0 0-.05-3.04ZM12 17a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm1-4a1 1 0 0 1-2 0V9a1 1 0 0 1 2 0Z"/></g></g>`
-	alertTriangleOutlinePath          = `<g id="evaAlertTriangleOutline0"><g id="evaAlertTriangleOutline1"><g id="evaAlertTriangleOutline2" fill="currentColor"><path d="M22.56 16.3L14.89 3.58a3.43 3.43 0 0 0-5.78 0L1.44 16.3a3 3 0 0 0-.05 3A3.37 3.37 0 0 0 4.33 21h15.34a3.37 3.37 0 0 0 2.94-1.66a3 3 0 0 0-.05-3.04Zm-1.7 2.05a1.31 1.31 0 0 1-1.19.65H4.33a1.31 1.31 0 0 1-1.19-.65a1 1 0 0 1 0-1l7.68-12.73a1.48 1.48 0 0 1 2.36 0l7.67 12.72a1 1 0 0 1 .01 1.01Z"/><circle cx="12" cy="16" r="1"/><path d="M12 8a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1Z"/></g></g></g>`
-	archiveFillPath                   = `<g id="evaArchiveFill0"><g id="evaArchiveFill1"><path id="evaArchiveFill2" fill="currentColor" d="M18 3H6a3 3 0 0 0-2 5.22V18a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8.22A3 3 0 0 0 18 3Zm-3 10.13a.87.87 0 0 1-.87.87H9.87a.87.87 0 0 1-.87-.87v-.26a.87.87 0 0 1 .87-.87h4.26a.87.87 0 0 1 .87.87ZM18 7H6a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2Z"/></g></g>`
-	archiveOutlinePath                = `<g id="evaArchiveOutline0"><g id="evaArchiveOutline1"><g id="evaArchiveOutline2" fill="currentColor"><path d="M21 6a3 3 0 0 0-3-3H6a3 3 0 0 0-2 5.22V18a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8.22A3 3 0 0 0 21 6ZM6 5h12a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2Zm12 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h12Z"/><rect width="6" height="2" x="9" y="12" rx=".87" ry=".87"/></g></g></g>`
-	arrowBackFillPath                 = `<g id="evaArrowBackFill0"><g id="evaArrowBackFill1"><path id="evaArrowBackFill2" fill="currentColor" d="M19 11H7.14l3.63-4.36a1 1 0 1 0-1.54-1.28l-5 6a1.19 1.19 0 0 0-.09.15c0 .05 0 .08-.07.13A1 1 0 0 0 4 12a1 1 0 0 0 .07.36c0 .05 0 .08.07.13a1.19 1.19 0 0 0 .09.15l5 6A1 1 0 0 0 10 19a1 1 0 0 0 .64-.23a1 1 0 0 0 .13-1.41L7.14 13H19a1 1 0 0 0 0-2Z"/></g></g>`
-	arrowBackOutlinePath              = `<g id="evaArrowBackOutline0"><g id="evaArrowBackOutline1"><path id="evaArrowBackOutline2" fill="currentColor" d="M19 11H7.14l3.63-4.36a1 1 0 1 0-1.54-1.28l-5 6a1.19 1.19 0 0 0-.09.15c0 .05 0 .08-.07.13A1 1 0 0 0 4 12a1 1 0 0 0 .07.36c0 .05 0 .08.07.13a1.19 1.19 0 0 0 .09.15l5 6A1 1 0 0 0 10 19a1 1 0 0 0 .64-.23a1 1 0 0 0 .13-1.41L7.14 13H19a1 1 0 0 0 0-2Z"/></g></g>`
-	arrowCircleDownFillPath           = `<g id="evaArrowCircleDownFill0"><g id="evaArrowCircleDownFill1"><path id="evaArrowCircleDownFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm3.69 11.86l-3 2.86a.49.49 0 0 1-.15.1a.54.54 0 0 1-.16.1a.94.94 0 0 1-.76 0a1 1 0 0 1-.33-.21l-3-3a1 1 0 0 1 1.42-1.42l1.29 1.3V8a1 1 0 0 1 2 0v5.66l1.31-1.25a1 1 0 0 1 1.38 1.45Z"/></g></g>`
-	arrowCircleDownOutlinePath        = `<g id="evaArrowCircleDownOutline0"><g id="evaArrowCircleDownOutline1"><g id="evaArrowCircleDownOutline2" fill="currentColor"><path d="M14.31 12.41L13 13.66V8a1 1 0 0 0-2 0v5.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3a1 1 0 0 0 .33.21a.94.94 0 0 0 .76 0a.54.54 0 0 0 .16-.1a.49.49 0 0 0 .15-.1l3-2.86a1 1 0 0 0-1.38-1.45Z"/><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/></g></g></g>`
-	arrowCircleLeftFillPath           = `<g id="evaArrowCircleLeftFill0"><g id="evaArrowCircleLeftFill1"><path id="evaArrowCircleLeftFill2" fill="currentColor" d="M22 12a10 10 0 1 0-10 10a10 10 0 0 0 10-10Zm-11.86 3.69l-2.86-3a.49.49 0 0 1-.1-.15a.54.54 0 0 1-.1-.16a.94.94 0 0 1 0-.76a1 1 0 0 1 .21-.33l3-3a1 1 0 0 1 1.42 1.42L10.41 11H16a1 1 0 0 1 0 2h-5.66l1.25 1.31a1 1 0 0 1-1.45 1.38Z"/></g></g>`
-	arrowCircleLeftOutlinePath        = `<g id="evaArrowCircleLeftOutline0"><g id="evaArrowCircleLeftOutline1"><g id="evaArrowCircleLeftOutline2" fill="currentColor"><path d="M16 11h-5.66l1.25-1.31a1 1 0 0 0-1.45-1.38l-2.86 3a1 1 0 0 0-.09.13a.72.72 0 0 0-.11.19a.88.88 0 0 0-.06.28S7 12 7 12a1 1 0 0 0 .08.38a1 1 0 0 0 .21.32l3 3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L10.41 13H16a1 1 0 0 0 0-2Z"/><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/></g></g></g>`
-	arrowCircleRightFillPath          = `<g id="evaArrowCircleRightFill0"><g id="evaArrowCircleRightFill1"><path id="evaArrowCircleRightFill2" fill="currentColor" d="M2 12A10 10 0 1 0 12 2A10 10 0 0 0 2 12Zm11.86-3.69l2.86 3a.49.49 0 0 1 .1.15a.54.54 0 0 1 .1.16a.94.94 0 0 1 0 .76a1 1 0 0 1-.21.33l-3 3a1 1 0 0 1-1.42-1.42l1.3-1.29H8a1 1 0 0 1 0-2h5.66l-1.25-1.31a1 1 0 0 1 1.45-1.38Z"/></g></g>`
-	arrowCircleRightOutlinePath       = `<g id="evaArrowCircleRightOutline0"><g id="evaArrowCircleRightOutline1"><g id="evaArrowCircleRightOutline2" fill="currentColor"><path d="M17 12v-.09a.88.88 0 0 0-.06-.28a.72.72 0 0 0-.11-.19a1 1 0 0 0-.09-.13l-2.86-3a1 1 0 0 0-1.45 1.38L13.66 11H8a1 1 0 0 0 0 2h5.59l-1.3 1.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l3-3a1 1 0 0 0 .21-.32A1 1 0 0 0 17 12Z"/><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/></g></g></g>`
-	arrowCircleUpFillPath             = `<g id="evaArrowCircleUpFill0"><g id="evaArrowCircleUpFill1"><path id="evaArrowCircleUpFill2" fill="currentColor" d="M12 22A10 10 0 1 0 2 12a10 10 0 0 0 10 10ZM8.31 10.14l3-2.86a.49.49 0 0 1 .15-.1a.54.54 0 0 1 .16-.1a.94.94 0 0 1 .76 0a1 1 0 0 1 .33.21l3 3a1 1 0 0 1-1.42 1.42L13 10.41V16a1 1 0 0 1-2 0v-5.66l-1.31 1.25a1 1 0 0 1-1.38-1.45Z"/></g></g>`
-	arrowCircleUpOutlinePath          = `<g id="evaArrowCircleUpOutline0"><g id="evaArrowCircleUpOutline1"><g id="evaArrowCircleUpOutline2" fill="currentColor"><path d="M12.71 7.29a1 1 0 0 0-.32-.21A1 1 0 0 0 12 7h-.1a.82.82 0 0 0-.27.06a.72.72 0 0 0-.19.11a1 1 0 0 0-.13.09l-3 2.86a1 1 0 0 0 1.38 1.45L11 10.34V16a1 1 0 0 0 2 0v-5.59l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/></g></g></g>`
-	arrowDownFillPath                 = `<g id="evaArrowDownFill0"><g id="evaArrowDownFill1"><path id="evaArrowDownFill2" fill="currentColor" d="M12 17a1.72 1.72 0 0 1-1.33-.64l-4.21-5.1a2.1 2.1 0 0 1-.26-2.21A1.76 1.76 0 0 1 7.79 8h8.42a1.76 1.76 0 0 1 1.59 1.05a2.1 2.1 0 0 1-.26 2.21l-4.21 5.1A1.72 1.72 0 0 1 12 17Z"/></g></g>`
-	arrowDownOutlinePath              = `<g id="evaArrowDownOutline0"><g id="evaArrowDownOutline1"><path id="evaArrowDownOutline2" fill="currentColor" d="M12 17a1.72 1.72 0 0 1-1.33-.64l-4.21-5.1a2.1 2.1 0 0 1-.26-2.21A1.76 1.76 0 0 1 7.79 8h8.42a1.76 1.76 0 0 1 1.59 1.05a2.1 2.1 0 0 1-.26 2.21l-4.21 5.1A1.72 1.72 0 0 1 12 17Zm-3.91-7L12 14.82L16 10Z"/></g></g>`
-	arrowDownwardFillPath             = `<g id="evaArrowDownwardFill0"><g id="evaArrowDownwardFill1"><path id="evaArrowDownwardFill2" fill="currentColor" d="M18.77 13.36a1 1 0 0 0-1.41-.13L13 16.86V5a1 1 0 0 0-2 0v11.86l-4.36-3.63a1 1 0 1 0-1.28 1.54l6 5l.15.09l.13.07a1 1 0 0 0 .72 0l.13-.07l.15-.09l6-5a1 1 0 0 0 .13-1.41Z"/></g></g>`
-	arrowDownwardOutlinePath          = `<g id="evaArrowDownwardOutline0"><g id="evaArrowDownwardOutline1"><path id="evaArrowDownwardOutline2" fill="currentColor" d="M18.77 13.36a1 1 0 0 0-1.41-.13L13 16.86V5a1 1 0 0 0-2 0v11.86l-4.36-3.63a1 1 0 1 0-1.28 1.54l6 5l.15.09l.13.07a1 1 0 0 0 .72 0l.13-.07l.15-.09l6-5a1 1 0 0 0 .13-1.41Z"/></g></g>`
-	arrowForwardFillPath              = `<g id="evaArrowForwardFill0"><g id="evaArrowForwardFill1"><path id="evaArrowForwardFill2" fill="currentColor" d="M5 13h11.86l-3.63 4.36a1 1 0 0 0 1.54 1.28l5-6a1.19 1.19 0 0 0 .09-.15c0-.05.05-.08.07-.13A1 1 0 0 0 20 12a1 1 0 0 0-.07-.36c0-.05-.05-.08-.07-.13a1.19 1.19 0 0 0-.09-.15l-5-6A1 1 0 0 0 14 5a1 1 0 0 0-.64.23a1 1 0 0 0-.13 1.41L16.86 11H5a1 1 0 0 0 0 2Z"/></g></g>`
-	arrowForwardOutlinePath           = `<g id="evaArrowForwardOutline0"><g id="evaArrowForwardOutline1"><path id="evaArrowForwardOutline2" fill="currentColor" d="M5 13h11.86l-3.63 4.36a1 1 0 0 0 1.54 1.28l5-6a1.19 1.19 0 0 0 .09-.15c0-.05.05-.08.07-.13A1 1 0 0 0 20 12a1 1 0 0 0-.07-.36c0-.05-.05-.08-.07-.13a1.19 1.19 0 0 0-.09-.15l-5-6A1 1 0 0 0 14 5a1 1 0 0 0-.64.23a1 1 0 0 0-.13 1.41L16.86 11H5a1 1 0 0 0 0 2Z"/></g></g>`
-	arrowIosBackFillPath              = `<g id="evaArrowIosBackFill0"><g id="evaArrowIosBackFill1"><path id="evaArrowIosBackFill2" fill="currentColor" d="M13.83 19a1 1 0 0 1-.78-.37l-4.83-6a1 1 0 0 1 0-1.27l5-6a1 1 0 0 1 1.54 1.28L10.29 12l4.32 5.36a1 1 0 0 1-.78 1.64Z"/></g></g>`
-	arrowIosBackOutlinePath           = `<g id="evaArrowIosBackOutline0"><g id="evaArrowIosBackOutline1"><path id="evaArrowIosBackOutline2" fill="currentColor" d="M13.83 19a1 1 0 0 1-.78-.37l-4.83-6a1 1 0 0 1 0-1.27l5-6a1 1 0 0 1 1.54 1.28L10.29 12l4.32 5.36a1 1 0 0 1-.78 1.64Z"/></g></g>`
-	arrowIosDownwardFillPath          = `<g id="evaArrowIosDownwardFill0"><g id="evaArrowIosDownwardFill1"><path id="evaArrowIosDownwardFill2" fill="currentColor" d="M12 16a1 1 0 0 1-.64-.23l-6-5a1 1 0 1 1 1.28-1.54L12 13.71l5.36-4.32a1 1 0 0 1 1.41.15a1 1 0 0 1-.14 1.46l-6 4.83A1 1 0 0 1 12 16Z"/></g></g>`
-	arrowIosDownwardOutlinePath       = `<g id="evaArrowIosDownwardOutline0"><g id="evaArrowIosDownwardOutline1"><path id="evaArrowIosDownwardOutline2" fill="currentColor" d="M12 16a1 1 0 0 1-.64-.23l-6-5a1 1 0 1 1 1.28-1.54L12 13.71l5.36-4.32a1 1 0 0 1 1.41.15a1 1 0 0 1-.14 1.46l-6 4.83A1 1 0 0 1 12 16Z"/></g></g>`
-	arrowIosForwardFillPath           = `<g id="evaArrowIosForwardFill0"><g id="evaArrowIosForwardFill1"><path id="evaArrowIosForwardFill2" fill="currentColor" d="M10 19a1 1 0 0 1-.64-.23a1 1 0 0 1-.13-1.41L13.71 12L9.39 6.63a1 1 0 0 1 .15-1.41a1 1 0 0 1 1.46.15l4.83 6a1 1 0 0 1 0 1.27l-5 6A1 1 0 0 1 10 19Z"/></g></g>`
-	arrowIosForwardOutlinePath        = `<g id="evaArrowIosForwardOutline0"><g id="evaArrowIosForwardOutline1"><path id="evaArrowIosForwardOutline2" fill="currentColor" d="M10 19a1 1 0 0 1-.64-.23a1 1 0 0 1-.13-1.41L13.71 12L9.39 6.63a1 1 0 0 1 .15-1.41a1 1 0 0 1 1.46.15l4.83 6a1 1 0 0 1 0 1.27l-5 6A1 1 0 0 1 10 19Z"/></g></g>`
-	arrowIosUpwardFillPath            = `<g id="evaArrowIosUpwardFill0"><g id="evaArrowIosUpwardFill1"><path id="evaArrowIosUpwardFill2" fill="currentColor" d="M18 15a1 1 0 0 1-.64-.23L12 10.29l-5.37 4.32a1 1 0 0 1-1.41-.15a1 1 0 0 1 .15-1.41l6-4.83a1 1 0 0 1 1.27 0l6 5a1 1 0 0 1 .13 1.41A1 1 0 0 1 18 15Z"/></g></g>`
-	arrowIosUpwardOutlinePath         = `<g id="evaArrowIosUpwardOutline0"><g id="evaArrowIosUpwardOutline1"><path id="evaArrowIosUpwardOutline2" fill="currentColor" d="M18 15a1 1 0 0 1-.64-.23L12 10.29l-5.37 4.32a1 1 0 0 1-1.41-.15a1 1 0 0 1 .15-1.41l6-4.83a1 1 0 0 1 1.27 0l6 5a1 1 0 0 1 .13 1.41A1 1 0 0 1 18 15Z"/></g></g>`
-	arrowLeftFillPath                 = `<g id="evaArrowLeftFill0"><g id="evaArrowLeftFill1"><path id="evaArrowLeftFill2" fill="currentColor" d="M13.54 18a2.06 2.06 0 0 1-1.3-.46l-5.1-4.21a1.7 1.7 0 0 1 0-2.66l5.1-4.21a2.1 2.1 0 0 1 2.21-.26a1.76 1.76 0 0 1 1.05 1.59v8.42a1.76 1.76 0 0 1-1.05 1.59a2.23 2.23 0 0 1-.91.2Z"/></g></g>`
-	arrowLeftOutlinePath              = `<g id="evaArrowLeftOutline0"><g id="evaArrowLeftOutline1"><path id="evaArrowLeftOutline2" fill="currentColor" d="M13.54 18a2.06 2.06 0 0 1-1.3-.46l-5.1-4.21a1.7 1.7 0 0 1 0-2.66l5.1-4.21a2.1 2.1 0 0 1 2.21-.26a1.76 1.76 0 0 1 1.05 1.59v8.42a1.76 1.76 0 0 1-1.05 1.59a2.23 2.23 0 0 1-.91.2Zm-4.86-6l4.82 4V8.09Z"/></g></g>`
-	arrowRightFillPath                = `<g id="evaArrowRightFill0"><g id="evaArrowRightFill1"><path id="evaArrowRightFill2" fill="currentColor" d="M10.46 18a2.23 2.23 0 0 1-.91-.2a1.76 1.76 0 0 1-1.05-1.59V7.79A1.76 1.76 0 0 1 9.55 6.2a2.1 2.1 0 0 1 2.21.26l5.1 4.21a1.7 1.7 0 0 1 0 2.66l-5.1 4.21a2.06 2.06 0 0 1-1.3.46Z"/></g></g>`
-	arrowRightOutlinePath             = `<g id="evaArrowRightOutline0"><g id="evaArrowRightOutline1"><path id="evaArrowRightOutline2" fill="currentColor" d="M10.46 18a2.23 2.23 0 0 1-.91-.2a1.76 1.76 0 0 1-1.05-1.59V7.79A1.76 1.76 0 0 1 9.55 6.2a2.1 2.1 0 0 1 2.21.26l5.1 4.21a1.7 1.7 0 0 1 0 2.66l-5.1 4.21a2.06 2.06 0 0 1-1.3.46Zm0-10v7.9l4.86-3.9Z"/></g></g>`
-	arrowUpFillPath                   = `<g id="evaArrowUpFill0"><g id="evaArrowUpFill1"><path id="evaArrowUpFill2" fill="currentColor" d="M16.21 16H7.79a1.76 1.76 0 0 1-1.59-1a2.1 2.1 0 0 1 .26-2.21l4.21-5.1a1.76 1.76 0 0 1 2.66 0l4.21 5.1A2.1 2.1 0 0 1 17.8 15a1.76 1.76 0 0 1-1.59 1Z"/></g></g>`
-	arrowUpOutlinePath                = `<g id="evaArrowUpOutline0"><g id="evaArrowUpOutline1"><path id="evaArrowUpOutline2" fill="currentColor" d="M16.21 16H7.79a1.76 1.76 0 0 1-1.59-1a2.1 2.1 0 0 1 .26-2.21l4.21-5.1a1.76 1.76 0 0 1 2.66 0l4.21 5.1A2.1 2.1 0 0 1 17.8 15a1.76 1.76 0 0 1-1.59 1ZM8 14h7.9L12 9.18Z"/></g></g>`
-	arrowUpwardFillPath               = `<g id="evaArrowUpwardFill0"><g id="evaArrowUpwardFill1"><path id="evaArrowUpwardFill2" fill="currentColor" d="M5.23 10.64a1 1 0 0 0 1.41.13L11 7.14V19a1 1 0 0 0 2 0V7.14l4.36 3.63a1 1 0 1 0 1.28-1.54l-6-5l-.15-.09l-.13-.07a1 1 0 0 0-.72 0l-.13.07l-.15.09l-6 5a1 1 0 0 0-.13 1.41Z"/></g></g>`
-	arrowUpwardOutlinePath            = `<g id="evaArrowUpwardOutline0"><g id="evaArrowUpwardOutline1"><path id="evaArrowUpwardOutline2" fill="currentColor" d="M5.23 10.64a1 1 0 0 0 1.41.13L11 7.14V19a1 1 0 0 0 2 0V7.14l4.36 3.63a1 1 0 1 0 1.28-1.54l-6-5l-.15-.09l-.13-.07a1 1 0 0 0-.72 0l-.13.07l-.15.09l-6 5a1 1 0 0 0-.13 1.41Z"/></g></g>`
-	arrowheadDownFillPath             = `<g id="evaArrowheadDownFill0"><g id="evaArrowheadDownFill1"><g id="evaArrowheadDownFill2" fill="currentColor"><path d="M17.37 12.39L12 16.71l-5.36-4.48a1 1 0 1 0-1.28 1.54l6 5a1 1 0 0 0 1.27 0l6-4.83a1 1 0 0 0 .15-1.41a1 1 0 0 0-1.41-.14Z"/><path d="M11.36 11.77a1 1 0 0 0 1.27 0l6-4.83a1 1 0 0 0 .15-1.41a1 1 0 0 0-1.41-.15L12 9.71L6.64 5.23a1 1 0 0 0-1.28 1.54Z"/></g></g></g>`
-	arrowheadDownOutlinePath          = `<g id="evaArrowheadDownOutline0"><g id="evaArrowheadDownOutline1"><g id="evaArrowheadDownOutline2" fill="currentColor"><path d="M17.37 12.39L12 16.71l-5.36-4.48a1 1 0 1 0-1.28 1.54l6 5a1 1 0 0 0 1.27 0l6-4.83a1 1 0 0 0 .15-1.41a1 1 0 0 0-1.41-.14Z"/><path d="M11.36 11.77a1 1 0 0 0 1.27 0l6-4.83a1 1 0 0 0 .15-1.41a1 1 0 0 0-1.41-.15L12 9.71L6.64 5.23a1 1 0 0 0-1.28 1.54Z"/></g></g></g>`
-	arrowheadLeftFillPath             = `<g id="evaArrowheadLeftFill0"><g id="evaArrowheadLeftFill1"><g id="evaArrowheadLeftFill2" fill="currentColor"><path d="M11.64 5.23a1 1 0 0 0-1.41.13l-5 6a1 1 0 0 0 0 1.27l4.83 6a1 1 0 0 0 .78.37a1 1 0 0 0 .78-1.63L7.29 12l4.48-5.37a1 1 0 0 0-.13-1.4Z"/><path d="m14.29 12l4.48-5.37a1 1 0 0 0-1.54-1.28l-5 6a1 1 0 0 0 0 1.27l4.83 6a1 1 0 0 0 .78.37a1 1 0 0 0 .78-1.63Z"/></g></g></g>`
-	arrowheadLeftOutlinePath          = `<g id="evaArrowheadLeftOutline0"><g id="evaArrowheadLeftOutline1"><g id="evaArrowheadLeftOutline2" fill="currentColor"><path d="M11.64 5.23a1 1 0 0 0-1.41.13l-5 6a1 1 0 0 0 0 1.27l4.83 6a1 1 0 0 0 .78.37a1 1 0 0 0 .78-1.63L7.29 12l4.48-5.37a1 1 0 0 0-.13-1.4Z"/><path d="m14.29 12l4.48-5.37a1 1 0 0 0-1.54-1.28l-5 6a1 1 0 0 0 0 1.27l4.83 6a1 1 0 0 0 .78.37a1 1 0 0 0 .78-1.63Z"/></g></g></g>`
-	arrowheadRightFillPath            = `<g id="evaArrowheadRightFill0"><g id="evaArrowheadRightFill1"><g id="evaArrowheadRightFill2" fill="currentColor"><path d="m18.78 11.37l-4.78-6a1 1 0 0 0-1.41-.15a1 1 0 0 0-.15 1.41L16.71 12l-4.48 5.37a1 1 0 0 0 .13 1.41A1 1 0 0 0 13 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 .01-1.27Z"/><path d="M7 5.37a1 1 0 0 0-1.61 1.26L9.71 12l-4.48 5.36a1 1 0 0 0 .13 1.41A1 1 0 0 0 6 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 0-1.27Z"/></g></g></g>`
-	arrowheadRightOutlinePath         = `<g id="evaArrowheadRightOutline0"><g id="evaArrowheadRightOutline1"><g id="evaArrowheadRightOutline2" fill="currentColor"><path d="m18.78 11.37l-4.78-6a1 1 0 0 0-1.41-.15a1 1 0 0 0-.15 1.41L16.71 12l-4.48 5.37a1 1 0 0 0 .13 1.41A1 1 0 0 0 13 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 .01-1.27Z"/><path d="M7 5.37a1 1 0 0 0-1.61 1.26L9.71 12l-4.48 5.36a1 1 0 0 0 .13 1.41A1 1 0 0 0 6 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 0-1.27Z"/></g></g></g>`
-	arrowheadUpFillPath               = `<g id="evaArrowheadUpFill0"><g id="evaArrowheadUpFill1"><g id="evaArrowheadUpFill2" fill="currentColor"><path d="M6.63 11.61L12 7.29l5.37 4.48A1 1 0 0 0 18 12a1 1 0 0 0 .77-.36a1 1 0 0 0-.13-1.41l-6-5a1 1 0 0 0-1.27 0l-6 4.83a1 1 0 0 0-.15 1.41a1 1 0 0 0 1.41.14Z"/><path d="M12.64 12.23a1 1 0 0 0-1.27 0l-6 4.83a1 1 0 0 0-.15 1.41a1 1 0 0 0 1.41.15L12 14.29l5.37 4.48A1 1 0 0 0 18 19a1 1 0 0 0 .77-.36a1 1 0 0 0-.13-1.41Z"/></g></g></g>`
-	arrowheadUpOutlinePath            = `<g id="evaArrowheadUpOutline0"><g id="evaArrowheadUpOutline1"><g id="evaArrowheadUpOutline2" fill="currentColor"><path d="M6.63 11.61L12 7.29l5.37 4.48A1 1 0 0 0 18 12a1 1 0 0 0 .77-.36a1 1 0 0 0-.13-1.41l-6-5a1 1 0 0 0-1.27 0l-6 4.83a1 1 0 0 0-.15 1.41a1 1 0 0 0 1.41.14Z"/><path d="M12.64 12.23a1 1 0 0 0-1.27 0l-6 4.83a1 1 0 0 0-.15 1.41a1 1 0 0 0 1.41.15L12 14.29l5.37 4.48A1 1 0 0 0 18 19a1 1 0 0 0 .77-.36a1 1 0 0 0-.13-1.41Z"/></g></g></g>`
-	atFillPath                        = `<g id="evaAtFill0"><g id="evaAtFill1"><path id="evaAtFill2" fill="currentColor" d="M13 2a10 10 0 0 0-5 19.1a10.15 10.15 0 0 0 4 .9a10 10 0 0 0 6.08-2.06a1 1 0 0 0 .19-1.4a1 1 0 0 0-1.41-.19A8 8 0 1 1 12.77 4A8.17 8.17 0 0 1 20 12.22v.68a1.71 1.71 0 0 1-1.78 1.7a1.82 1.82 0 0 1-1.62-1.88V8.4a1 1 0 0 0-1-1a1 1 0 0 0-1 .87a5 5 0 0 0-3.44-1.36A5.09 5.09 0 1 0 15.31 15a3.6 3.6 0 0 0 5.55.61A3.67 3.67 0 0 0 22 12.9v-.68A10.2 10.2 0 0 0 13 2Zm-1.82 13.09A3.09 3.09 0 1 1 14.27 12a3.1 3.1 0 0 1-3.09 3.09Z"/></g></g>`
-	atOutlinePath                     = `<g id="evaAtOutline0"><g id="evaAtOutline1"><path id="evaAtOutline2" fill="currentColor" d="M13 2a10 10 0 0 0-5 19.1a10.15 10.15 0 0 0 4 .9a10 10 0 0 0 6.08-2.06a1 1 0 0 0 .19-1.4a1 1 0 0 0-1.41-.19A8 8 0 1 1 12.77 4A8.17 8.17 0 0 1 20 12.22v.68a1.71 1.71 0 0 1-1.78 1.7a1.82 1.82 0 0 1-1.62-1.88V8.4a1 1 0 0 0-1-1a1 1 0 0 0-1 .87a5 5 0 0 0-3.44-1.36A5.09 5.09 0 1 0 15.31 15a3.6 3.6 0 0 0 5.55.61A3.67 3.67 0 0 0 22 12.9v-.68A10.2 10.2 0 0 0 13 2Zm-1.82 13.09A3.09 3.09 0 1 1 14.27 12a3.1 3.1 0 0 1-3.09 3.09Z"/></g></g>`
-	attachFillPath                    = `<g id="evaAttachFill0"><g id="evaAttachFill1"><path id="evaAttachFill2" fill="currentColor" d="M9.29 21a6.23 6.23 0 0 1-4.43-1.88a6 6 0 0 1-.22-8.49L12 3.2A4.11 4.11 0 0 1 15 2a4.48 4.48 0 0 1 3.19 1.35a4.36 4.36 0 0 1 .15 6.13l-7.4 7.43a2.54 2.54 0 0 1-1.81.75a2.72 2.72 0 0 1-1.95-.82a2.68 2.68 0 0 1-.08-3.77l6.83-6.86a1 1 0 0 1 1.37 1.41l-6.83 6.86a.68.68 0 0 0 .08.95a.78.78 0 0 0 .53.23a.56.56 0 0 0 .4-.16l7.39-7.43a2.36 2.36 0 0 0-.15-3.31a2.38 2.38 0 0 0-3.27-.15L6.06 12a4 4 0 0 0 .22 5.67a4.22 4.22 0 0 0 3 1.29a3.67 3.67 0 0 0 2.61-1.06l7.39-7.43a1 1 0 1 1 1.42 1.41l-7.39 7.43A5.65 5.65 0 0 1 9.29 21Z"/></g></g>`
-	attachOutlinePath                 = `<g id="evaAttachOutline0"><g id="evaAttachOutline1"><path id="evaAttachOutline2" fill="currentColor" d="M9.29 21a6.23 6.23 0 0 1-4.43-1.88a6 6 0 0 1-.22-8.49L12 3.2A4.11 4.11 0 0 1 15 2a4.48 4.48 0 0 1 3.19 1.35a4.36 4.36 0 0 1 .15 6.13l-7.4 7.43a2.54 2.54 0 0 1-1.81.75a2.72 2.72 0 0 1-1.95-.82a2.68 2.68 0 0 1-.08-3.77l6.83-6.86a1 1 0 0 1 1.37 1.41l-6.83 6.86a.68.68 0 0 0 .08.95a.78.78 0 0 0 .53.23a.56.56 0 0 0 .4-.16l7.39-7.43a2.36 2.36 0 0 0-.15-3.31a2.38 2.38 0 0 0-3.27-.15L6.06 12a4 4 0 0 0 .22 5.67a4.22 4.22 0 0 0 3 1.29a3.67 3.67 0 0 0 2.61-1.06l7.39-7.43a1 1 0 1 1 1.42 1.41l-7.39 7.43A5.65 5.65 0 0 1 9.29 21Z"/></g></g>`
-	attachTwoFillPath                 = `<g id="evaAttach2Fill0"><g id="evaAttach2Fill1"><path id="evaAttach2Fill2" fill="currentColor" d="M12 22a5.86 5.86 0 0 1-6-5.7V6.13A4.24 4.24 0 0 1 10.33 2a4.24 4.24 0 0 1 4.34 4.13v10.18a2.67 2.67 0 0 1-5.33 0V6.92a1 1 0 0 1 1-1a1 1 0 0 1 1 1v9.39a.67.67 0 0 0 1.33 0V6.13A2.25 2.25 0 0 0 10.33 4A2.25 2.25 0 0 0 8 6.13V16.3a3.86 3.86 0 0 0 4 3.7a3.86 3.86 0 0 0 4-3.7V6.13a1 1 0 1 1 2 0V16.3a5.86 5.86 0 0 1-6 5.7Z"/></g></g>`
-	attachTwoOutlinePath              = `<g id="evaAttach2Outline0"><g id="evaAttach2Outline1"><path id="evaAttach2Outline2" fill="currentColor" d="M12 22a5.86 5.86 0 0 1-6-5.7V6.13A4.24 4.24 0 0 1 10.33 2a4.24 4.24 0 0 1 4.34 4.13v10.18a2.67 2.67 0 0 1-5.33 0V6.92a1 1 0 0 1 1-1a1 1 0 0 1 1 1v9.39a.67.67 0 0 0 1.33 0V6.13A2.25 2.25 0 0 0 10.33 4A2.25 2.25 0 0 0 8 6.13V16.3a3.86 3.86 0 0 0 4 3.7a3.86 3.86 0 0 0 4-3.7V6.13a1 1 0 1 1 2 0V16.3a5.86 5.86 0 0 1-6 5.7Z"/></g></g>`
-	awardFillPath                     = `<g id="evaAwardFill0"><g id="evaAwardFill1"><path id="evaAwardFill2" fill="currentColor" d="m19 20.75l-2.31-9A5.94 5.94 0 0 0 18 8A6 6 0 0 0 6 8a5.94 5.94 0 0 0 1.34 3.77L5 20.75a1 1 0 0 0 1.48 1.11l5.33-3.13l5.68 3.14A.91.91 0 0 0 18 22a1 1 0 0 0 1-1.25ZM12 4a4 4 0 1 1-4 4a4 4 0 0 1 4-4Z"/></g></g>`
-	awardOutlinePath                  = `<g id="evaAwardOutline0"><g id="evaAwardOutline1"><path id="evaAwardOutline2" fill="currentColor" d="m19 20.75l-2.31-9A5.94 5.94 0 0 0 18 8A6 6 0 0 0 6 8a5.94 5.94 0 0 0 1.34 3.77L5 20.75a1 1 0 0 0 1.48 1.11l5.33-3.13l5.68 3.14A.91.91 0 0 0 18 22a1 1 0 0 0 1-1.25ZM12 4a4 4 0 1 1-4 4a4 4 0 0 1 4-4Zm.31 12.71a1 1 0 0 0-1 0l-3.75 2.2L9 13.21a5.94 5.94 0 0 0 5.92 0L16.45 19Z"/></g></g>`
-	backspaceFillPath                 = `<g id="evaBackspaceFill0"><g id="evaBackspaceFill1"><path id="evaBackspaceFill2" fill="currentColor" d="M20.14 4h-9.77a3 3 0 0 0-2 .78l-.1.11l-6 7.48a1 1 0 0 0 .11 1.37l6 5.48a3 3 0 0 0 2 .78h9.77A1.84 1.84 0 0 0 22 18.18V5.82A1.84 1.84 0 0 0 20.14 4Zm-3.43 9.29a1 1 0 0 1 0 1.42a1 1 0 0 1-1.42 0L14 13.41l-1.29 1.3a1 1 0 0 1-1.42 0a1 1 0 0 1 0-1.42l1.3-1.29l-1.3-1.29a1 1 0 0 1 1.42-1.42l1.29 1.3l1.29-1.3a1 1 0 0 1 1.42 1.42L15.41 12Z"/></g></g>`
-	backspaceOutlinePath              = `<g id="evaBackspaceOutline0"><g id="evaBackspaceOutline1"><g id="evaBackspaceOutline2" fill="currentColor"><path d="M20.14 4h-9.77a3 3 0 0 0-2 .78l-.1.11l-6 7.48a1 1 0 0 0 .11 1.37l6 5.48a3 3 0 0 0 2 .78h9.77A1.84 1.84 0 0 0 22 18.18V5.82A1.84 1.84 0 0 0 20.14 4ZM20 18h-9.63a1 1 0 0 1-.67-.26l-5.33-4.85l5.38-6.67a1 1 0 0 1 .62-.22H20Z"/><path d="M11.29 14.71a1 1 0 0 0 1.42 0l1.29-1.3l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L15.41 12l1.3-1.29a1 1 0 0 0-1.42-1.42L14 10.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l1.3 1.29l-1.3 1.29a1 1 0 0 0 0 1.42Z"/></g></g></g>`
-	barChartFillPath                  = `<g id="evaBarChartFill0"><g id="evaBarChartFill1"><path id="evaBarChartFill2" fill="currentColor" d="M12 4a1 1 0 0 0-1 1v15a1 1 0 0 0 2 0V5a1 1 0 0 0-1-1Zm7 8a1 1 0 0 0-1 1v7a1 1 0 0 0 2 0v-7a1 1 0 0 0-1-1ZM5 8a1 1 0 0 0-1 1v11a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1Z"/></g></g>`
-	barChartOutlinePath               = `<g id="evaBarChartOutline0"><g id="evaBarChartOutline1"><path id="evaBarChartOutline2" fill="currentColor" d="M12 4a1 1 0 0 0-1 1v15a1 1 0 0 0 2 0V5a1 1 0 0 0-1-1Zm7 8a1 1 0 0 0-1 1v7a1 1 0 0 0 2 0v-7a1 1 0 0 0-1-1ZM5 8a1 1 0 0 0-1 1v11a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1Z"/></g></g>`
-	barChartTwoFillPath               = `<g id="evaBarChart2Fill0"><g id="evaBarChart2Fill1"><path id="evaBarChart2Fill2" fill="currentColor" d="M12 8a1 1 0 0 0-1 1v11a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1Zm7-4a1 1 0 0 0-1 1v15a1 1 0 0 0 2 0V5a1 1 0 0 0-1-1ZM5 12a1 1 0 0 0-1 1v7a1 1 0 0 0 2 0v-7a1 1 0 0 0-1-1Z"/></g></g>`
-	barChartTwoOutlinePath            = `<g id="evaBarChart2Outline0"><g id="evaBarChart2Outline1"><path id="evaBarChart2Outline2" fill="currentColor" d="M12 8a1 1 0 0 0-1 1v11a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1Zm7-4a1 1 0 0 0-1 1v15a1 1 0 0 0 2 0V5a1 1 0 0 0-1-1ZM5 12a1 1 0 0 0-1 1v7a1 1 0 0 0 2 0v-7a1 1 0 0 0-1-1Z"/></g></g>`
-	batteryFillPath                   = `<g id="evaBatteryFill0"><g id="evaBatteryFill1"><path id="evaBatteryFill2" fill="currentColor" d="M15.83 6H4.17A2.31 2.31 0 0 0 2 8.43v7.14A2.31 2.31 0 0 0 4.17 18h11.66A2.31 2.31 0 0 0 18 15.57V8.43A2.31 2.31 0 0 0 15.83 6ZM21 9a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-1-1Z"/></g></g>`
-	batteryOutlinePath                = `<g id="evaBatteryOutline0"><g id="evaBatteryOutline1"><path id="evaBatteryOutline2" fill="currentColor" d="M15.83 6H4.17A2.31 2.31 0 0 0 2 8.43v7.14A2.31 2.31 0 0 0 4.17 18h11.66A2.31 2.31 0 0 0 18 15.57V8.43A2.31 2.31 0 0 0 15.83 6Zm.17 9.57a.52.52 0 0 1-.17.43H4.18a.5.5 0 0 1-.18-.43V8.43A.53.53 0 0 1 4.17 8h11.65a.5.5 0 0 1 .18.43ZM21 9a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-1-1Z"/></g></g>`
-	behanceFillPath                   = `<g id="evaBehanceFill0"><g id="evaBehanceFill1"><g id="evaBehanceFill2" fill="currentColor"><path d="M14.76 11.19a1 1 0 0 0-1 1.09h2.06a1 1 0 0 0-1.06-1.09ZM9.49 12.3H8.26v1.94h1c1 0 1.44-.33 1.44-1s-.46-.94-1.21-.94Zm.87-1.78c0-.53-.35-.85-.95-.85H8.26v1.74h.85c.89 0 1.25-.32 1.25-.89Z"/><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2ZM9.7 15.2H7V8.7h2.7c1.17 0 1.94.61 1.94 1.6a1.4 1.4 0 0 1-1.12 1.43A1.52 1.52 0 0 1 12 13.37c0 1.16-1 1.83-2.3 1.83Zm3.55-6h3v.5h-3ZM17 13.05h-3.3v.14a1.07 1.07 0 0 0 1.09 1.19a.9.9 0 0 0 1-.63H17a2 2 0 0 1-2.17 1.55a2.15 2.15 0 0 1-2.36-2.3v-.44a2.11 2.11 0 0 1 2.28-2.25A2.12 2.12 0 0 1 17 12.58Z"/></g></g></g>`
-	behanceOutlinePath                = `<g id="evaBehanceOutline0"><g id="evaBehanceOutline1"><g id="evaBehanceOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M10.52 11.78a1.4 1.4 0 0 0 1.12-1.43c0-1-.77-1.6-1.94-1.6H7v6.5h2.7c1.3-.05 2.3-.72 2.3-1.88a1.52 1.52 0 0 0-1.48-1.59ZM8.26 9.67h1.15c.6 0 .95.32.95.85s-.38.89-1.25.89h-.85Zm1 4.57h-1V12.3h1.23c.75 0 1.17.38 1.17 1s-.42.94-1.44.94Zm5.49-3.94a2.11 2.11 0 0 0-2.28 2.25V13a2.15 2.15 0 0 0 2.34 2.31A2 2 0 0 0 17 13.75h-1.21a.9.9 0 0 1-1 .63a1.07 1.07 0 0 1-1.09-1.19v-.14H17v-.47a2.12 2.12 0 0 0-2.25-2.28Zm1 2h-2.02a1 1 0 0 1 1-1.09a1 1 0 0 1 1 1.09Zm-2.5-3.1h3v.5h-3z"/></g></g></g>`
-	bellFillPath                      = `<g id="evaBellFill0"><g id="evaBellFill1"><path id="evaBellFill2" fill="currentColor" d="m20.52 15.21l-1.8-1.81V8.94a6.86 6.86 0 0 0-5.82-6.88a6.74 6.74 0 0 0-7.62 6.67v4.67l-1.8 1.81A1.64 1.64 0 0 0 4.64 18H8v.34A3.84 3.84 0 0 0 12 22a3.84 3.84 0 0 0 4-3.66V18h3.36a1.64 1.64 0 0 0 1.16-2.79ZM14 18.34A1.88 1.88 0 0 1 12 20a1.88 1.88 0 0 1-2-1.66V18h4Z"/></g></g>`
-	bellOffFillPath                   = `<g id="evaBellOffFill0"><g id="evaBellOffFill1"><path id="evaBellOffFill2" fill="currentColor" d="m15.88 18.71l-.59-.59L14 16.78l-.07-.07L6.58 9.4L5.31 8.14a5.68 5.68 0 0 0 0 .59v4.67l-1.8 1.81A1.64 1.64 0 0 0 4.64 18H8v.34A3.84 3.84 0 0 0 12 22a3.88 3.88 0 0 0 4-3.22ZM14 18.34A1.88 1.88 0 0 1 12 20a1.88 1.88 0 0 1-2-1.66V18h4ZM7.13 4.3l1.46 1.46l9.53 9.53l2 2l.31.3a1.58 1.58 0 0 0 .45-.6a1.62 1.62 0 0 0-.35-1.78l-1.8-1.81V8.94a6.86 6.86 0 0 0-5.83-6.88a6.71 6.71 0 0 0-5.32 1.61a6.88 6.88 0 0 0-.58.54Zm13.58 14.99L19.41 18l-2-2l-9.52-9.53L6.42 5L4.71 3.29a1 1 0 0 0-1.42 1.42L5.53 7l1.75 1.7l7.31 7.3l.07.07L16 17.41l.59.59l2.7 2.71a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g>`
-	bellOffOutlinePath                = `<g id="evaBellOffOutline0"><g id="evaBellOffOutline1"><path id="evaBellOffOutline2" fill="currentColor" d="M8.9 5.17A4.67 4.67 0 0 1 12.64 4a4.86 4.86 0 0 1 4.08 4.9v4.5a1.92 1.92 0 0 0 .1.59l3.6 3.6a1.58 1.58 0 0 0 .45-.6a1.62 1.62 0 0 0-.35-1.78l-1.8-1.81V8.94a6.86 6.86 0 0 0-5.82-6.88a6.71 6.71 0 0 0-5.32 1.61a6.88 6.88 0 0 0-.58.54l1.47 1.43a4.79 4.79 0 0 1 .43-.47ZM14 16.86l-.83-.86H5.51l1.18-1.18a2 2 0 0 0 .59-1.42v-3.29l-2-2a5.68 5.68 0 0 0 0 .59v4.7l-1.8 1.81A1.63 1.63 0 0 0 4.64 18H8v.34A3.84 3.84 0 0 0 12 22a3.88 3.88 0 0 0 4-3.22l-.83-.78ZM12 20a1.88 1.88 0 0 1-2-1.66V18h4v.34A1.88 1.88 0 0 1 12 20Zm8.71-.71L19.41 18l-2-2l-9.52-9.53L6.42 5L4.71 3.29a1 1 0 0 0-1.42 1.42L5.53 7l1.75 1.7l7.31 7.3l.07.07L16 17.41l.59.59l2.7 2.71a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g>`
-	bellOutlinePath                   = `<g id="evaBellOutline0"><g id="evaBellOutline1"><path id="evaBellOutline2" fill="currentColor" d="m20.52 15.21l-1.8-1.81V8.94a6.86 6.86 0 0 0-5.82-6.88a6.74 6.74 0 0 0-7.62 6.67v4.67l-1.8 1.81A1.64 1.64 0 0 0 4.64 18H8v.34A3.84 3.84 0 0 0 12 22a3.84 3.84 0 0 0 4-3.66V18h3.36a1.64 1.64 0 0 0 1.16-2.79ZM14 18.34A1.88 1.88 0 0 1 12 20a1.88 1.88 0 0 1-2-1.66V18h4ZM5.51 16l1.18-1.18a2 2 0 0 0 .59-1.42V8.73A4.73 4.73 0 0 1 8.9 5.17A4.67 4.67 0 0 1 12.64 4a4.86 4.86 0 0 1 4.08 4.9v4.5a2 2 0 0 0 .58 1.42L18.49 16Z"/></g></g>`
-	bluetoothFillPath                 = `<g id="evaBluetoothFill0"><g id="evaBluetoothFill1"><path id="evaBluetoothFill2" fill="currentColor" d="m13.63 12l4-3.79a1.14 1.14 0 0 0-.13-1.77l-4.67-3.23a1.17 1.17 0 0 0-1.21-.08a1.15 1.15 0 0 0-.62 1v6.2l-3.19-4a1 1 0 0 0-1.56 1.3L9.72 12l-3.5 4.43a1 1 0 0 0 .16 1.4A1 1 0 0 0 7 18a1 1 0 0 0 .78-.38L11 13.56v6.29A1.16 1.16 0 0 0 12.16 21a1.16 1.16 0 0 0 .67-.21l4.64-3.18a1.17 1.17 0 0 0 .49-.85a1.15 1.15 0 0 0-.34-.91ZM13 5.76l2.5 1.73L13 9.85Zm0 12.49v-4.07l2.47 2.38Z"/></g></g>`
-	bluetoothOutlinePath              = `<g id="evaBluetoothOutline0"><g id="evaBluetoothOutline1"><path id="evaBluetoothOutline2" fill="currentColor" d="m13.63 12l4-3.79a1.14 1.14 0 0 0-.13-1.77l-4.67-3.23a1.17 1.17 0 0 0-1.21-.08a1.15 1.15 0 0 0-.62 1v6.2l-3.19-4a1 1 0 0 0-1.56 1.3L9.72 12l-3.5 4.43a1 1 0 0 0 .16 1.4A1 1 0 0 0 7 18a1 1 0 0 0 .78-.38L11 13.56v6.29A1.16 1.16 0 0 0 12.16 21a1.16 1.16 0 0 0 .67-.21l4.64-3.18a1.17 1.17 0 0 0 .49-.85a1.15 1.15 0 0 0-.34-.91ZM13 5.76l2.5 1.73L13 9.85Zm0 12.49v-4.07l2.47 2.38Z"/></g></g>`
-	bookFillPath                      = `<g id="evaBookFill0"><g id="evaBookFill1"><path id="evaBookFill2" fill="currentColor" d="M19 3H7a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1ZM7 19a1 1 0 0 1 0-2h11v2Z"/></g></g>`
-	bookOpenFillPath                  = `<g id="evaBookOpenFill0"><g id="evaBookOpenFill1"><path id="evaBookOpenFill2" fill="currentColor" d="M21 4.34a1.24 1.24 0 0 0-1.08-.23L13 5.89v14.27l7.56-1.94A1.25 1.25 0 0 0 21.5 17V5.32a1.25 1.25 0 0 0-.5-.98ZM11 5.89L4.06 4.11A1.27 1.27 0 0 0 3 4.34a1.25 1.25 0 0 0-.48 1V17a1.25 1.25 0 0 0 .94 1.21L11 20.16Z"/></g></g>`
-	bookOpenOutlinePath               = `<g id="evaBookOpenOutline0"><g id="evaBookOpenOutline1"><path id="evaBookOpenOutline2" fill="currentColor" d="M20.62 4.22a1 1 0 0 0-.84-.2L12 5.77L4.22 4A1 1 0 0 0 3 5v12.2a1 1 0 0 0 .78 1l8 1.8h.44l8-1.8a1 1 0 0 0 .78-1V5a1 1 0 0 0-.38-.78ZM5 6.25l6 1.35v10.15L5 16.4ZM19 16.4l-6 1.35V7.6l6-1.35Z"/></g></g>`
-	bookOutlinePath                   = `<g id="evaBookOutline0"><g id="evaBookOutline1"><path id="evaBookOutline2" fill="currentColor" d="M19 3H7a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1ZM7 5h11v10H7a3 3 0 0 0-1 .18V6a1 1 0 0 1 1-1Zm0 14a1 1 0 0 1 0-2h11v2Z"/></g></g>`
-	bookmarkFillPath                  = `<g id="evaBookmarkFill0"><g id="evaBookmarkFill1"><path id="evaBookmarkFill2" fill="currentColor" d="M6 21a1 1 0 0 1-.49-.13A1 1 0 0 1 5 20V5.33A2.28 2.28 0 0 1 7.2 3h9.6A2.28 2.28 0 0 1 19 5.33V20a1 1 0 0 1-.5.86a1 1 0 0 1-1 0l-5.67-3.21l-5.33 3.2A1 1 0 0 1 6 21Z"/></g></g>`
-	bookmarkOutlinePath               = `<g id="evaBookmarkOutline0"><g id="evaBookmarkOutline1"><path id="evaBookmarkOutline2" fill="currentColor" d="M6.09 21.06a1 1 0 0 1-1-1L4.94 5.4a2.26 2.26 0 0 1 2.18-2.35L16.71 3a2.27 2.27 0 0 1 2.23 2.31l.14 14.66a1 1 0 0 1-.49.87a1 1 0 0 1-1 0l-5.7-3.16l-5.29 3.23a1.2 1.2 0 0 1-.51.15Zm5.76-5.55a1.11 1.11 0 0 1 .5.12l4.71 2.61l-.12-12.95c0-.2-.13-.34-.21-.33l-9.6.09c-.08 0-.19.13-.19.33l.12 12.9l4.28-2.63a1.06 1.06 0 0 1 .51-.14Z"/></g></g>`
-	briefcaseFillPath                 = `<g id="evaBriefcaseFill0"><g id="evaBriefcaseFill1"><path id="evaBriefcaseFill2" fill="currentColor" d="M7 21h10V7h-1V5.5A2.5 2.5 0 0 0 13.5 3h-3A2.5 2.5 0 0 0 8 5.5V7H7Zm3-15.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V7h-4ZM19 7v14a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3ZM5 7a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3Z"/></g></g>`
-	briefcaseOutlinePath              = `<g id="evaBriefcaseOutline0"><g id="evaBriefcaseOutline1"><path id="evaBriefcaseOutline2" fill="currentColor" d="M19 7h-3V5.5A2.5 2.5 0 0 0 13.5 3h-3A2.5 2.5 0 0 0 8 5.5V7H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3Zm-4 2v10H9V9Zm-5-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V7h-4ZM4 18v-8a1 1 0 0 1 1-1h2v10H5a1 1 0 0 1-1-1Zm16 0a1 1 0 0 1-1 1h-2V9h2a1 1 0 0 1 1 1Z"/></g></g>`
-	browserFillPath                   = `<g id="evaBrowserFill0"><g id="evaBrowserFill1"><path id="evaBrowserFill2" fill="currentColor" d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm-6 3a1 1 0 1 1-1 1a1 1 0 0 1 1-1ZM8 6a1 1 0 1 1-1 1a1 1 0 0 1 1-1Zm11 12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-7h14Z"/></g></g>`
-	browserOutlinePath                = `<g id="evaBrowserOutline0"><g id="evaBrowserOutline1"><g id="evaBrowserOutline2" fill="currentColor"><path d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-7h14ZM5 9V6a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3Z"/><circle cx="8" cy="7.03" r="1"/><circle cx="12" cy="7.03" r="1"/></g></g></g>`
-	brushFillPath                     = `<g id="evaBrushFill0"><g id="evaBrushFill1"><path id="evaBrushFill2" fill="currentColor" d="M7.12 12.55a4 4 0 0 0-3.07 3.86v3.11a.47.47 0 0 0 .48.48l3.24-.06a3.78 3.78 0 0 0 3.44-2.2a3.65 3.65 0 0 0-4.09-5.19Zm12.14-8.09a2.14 2.14 0 0 0-2.88.21L10 11.08a.47.47 0 0 0 0 .66L12.25 14a.47.47 0 0 0 .66 0l6.49-6.47a2.06 2.06 0 0 0 .6-1.47a2 2 0 0 0-.74-1.6Z"/></g></g>`
-	brushOutlinePath                  = `<g id="evaBrushOutline0"><g id="evaBrushOutline1"><path id="evaBrushOutline2" fill="currentColor" d="M20 6.83a2.76 2.76 0 0 0-.82-2a2.89 2.89 0 0 0-4 0l-6.6 6.6h-.22a4.42 4.42 0 0 0-4.3 4.31L4 19a1 1 0 0 0 .29.73A1.05 1.05 0 0 0 5 20l3.26-.06a4.42 4.42 0 0 0 4.31-4.3v-.23l6.61-6.6A2.74 2.74 0 0 0 20 6.83ZM8.25 17.94L6 18v-2.23a2.4 2.4 0 0 1 2.4-2.36a2.15 2.15 0 0 1 2.15 2.19a2.4 2.4 0 0 1-2.3 2.34Zm9.52-10.55l-5.87 5.87a4.55 4.55 0 0 0-.52-.64a3.94 3.94 0 0 0-.64-.52l5.87-5.86a.84.84 0 0 1 1.16 0a.81.81 0 0 1 .23.59a.79.79 0 0 1-.23.56Z"/></g></g>`
-	bulbFillPath                      = `<g id="evaBulbFill0"><g id="evaBulbFill1"><path id="evaBulbFill2" fill="currentColor" d="M12 7a5 5 0 0 0-3 9v4a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-4a5 5 0 0 0-3-9Zm0-1a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1Zm9 5h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2ZM5 11H3a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2Zm2.66-4.58L6.22 5a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28a1 1 0 0 0 .72-.31a1 1 0 0 0-.06-1.41Zm11.53-1.37a1 1 0 0 0-1.41 0l-1.44 1.37a1 1 0 0 0 0 1.41a1 1 0 0 0 .72.31a1 1 0 0 0 .69-.28l1.44-1.39a1 1 0 0 0 0-1.42Z"/></g></g>`
-	bulbOutlinePath                   = `<g id="evaBulbOutline0"><g id="evaBulbOutline1"><path id="evaBulbOutline2" fill="currentColor" d="M12 7a5 5 0 0 0-3 9v4a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-4a5 5 0 0 0-3-9Zm1.5 7.59a1 1 0 0 0-.5.87V20h-2v-4.54a1 1 0 0 0-.5-.87A3 3 0 0 1 9 12a3 3 0 0 1 6 0a3 3 0 0 1-1.5 2.59ZM12 6a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1Zm9 5h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2ZM5 11H3a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2Zm2.66-4.58L6.22 5a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28a1 1 0 0 0 .72-.31a1 1 0 0 0-.06-1.41Zm11.53-1.37a1 1 0 0 0-1.41 0l-1.44 1.37a1 1 0 0 0 0 1.41a1 1 0 0 0 .72.31a1 1 0 0 0 .69-.28l1.44-1.39a1 1 0 0 0 0-1.42Z"/></g></g>`
-	calendarFillPath                  = `<g id="evaCalendarFill0"><g id="evaCalendarFill1"><path id="evaCalendarFill2" fill="currentColor" d="M18 4h-1V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3ZM8 17a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm8 0h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2Zm3-6H5V7a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h1a1 1 0 0 1 1 1Z"/></g></g>`
-	calendarOutlinePath               = `<g id="evaCalendarOutline0"><g id="evaCalendarOutline1"><g id="evaCalendarOutline2" fill="currentColor"><path d="M18 4h-1V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3ZM6 6h1v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h1a1 1 0 0 1 1 1v4H5V7a1 1 0 0 1 1-1Zm12 14H6a1 1 0 0 1-1-1v-6h14v6a1 1 0 0 1-1 1Z"/><circle cx="8" cy="16" r="1"/><path d="M16 15h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Z"/></g></g></g>`
-	cameraFillPath                    = `<g id="evaCameraFill0"><g id="evaCameraFill1"><g id="evaCameraFill2" fill="currentColor"><circle cx="12" cy="14" r="1.5"/><path d="M19 7h-3V5.5A2.5 2.5 0 0 0 13.5 3h-3A2.5 2.5 0 0 0 8 5.5V7H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3Zm-9-1.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V7h-4Zm2 12a3.5 3.5 0 1 1 3.5-3.5a3.5 3.5 0 0 1-3.5 3.5Z"/></g></g></g>`
-	cameraOutlinePath                 = `<g id="evaCameraOutline0"><g id="evaCameraOutline1"><g id="evaCameraOutline2" fill="currentColor"><path d="M19 7h-3V5.5A2.5 2.5 0 0 0 13.5 3h-3A2.5 2.5 0 0 0 8 5.5V7H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3Zm-9-1.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V7h-4ZM20 18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z"/><path d="M12 10.5a3.5 3.5 0 1 0 3.5 3.5a3.5 3.5 0 0 0-3.5-3.5Zm0 5a1.5 1.5 0 1 1 1.5-1.5a1.5 1.5 0 0 1-1.5 1.5Z"/></g></g></g>`
-	carFillPath                       = `<g id="evaCarFill0"><g id="evaCarFill1"><path id="evaCarFill2" fill="currentColor" d="M21.6 11.22L17 7.52V5a1.91 1.91 0 0 0-1.81-2H3.79A1.91 1.91 0 0 0 2 5v10a2 2 0 0 0 1.2 1.88a3 3 0 1 0 5.6.12h6.36a3 3 0 1 0 5.64 0h.2a1 1 0 0 0 1-1v-4a1 1 0 0 0-.4-.78ZM20 12.48V15h-3v-4.92ZM7 18a1 1 0 1 1-1-1a1 1 0 0 1 1 1Zm12 0a1 1 0 1 1-1-1a1 1 0 0 1 1 1Z"/></g></g>`
-	carOutlinePath                    = `<g id="evaCarOutline0"><g id="evaCarOutline1"><path id="evaCarOutline2" fill="currentColor" d="M21.6 11.22L17 7.52V5a1.91 1.91 0 0 0-1.81-2H3.79A1.91 1.91 0 0 0 2 5v10a2 2 0 0 0 1.2 1.88a3 3 0 1 0 5.6.12h6.36a3 3 0 1 0 5.64 0h.2a1 1 0 0 0 1-1v-4a1 1 0 0 0-.4-.78ZM20 12.48V15h-3v-4.92ZM7 18a1 1 0 1 1-1-1a1 1 0 0 1 1 1Zm5-3H4V5h11v10Zm7 3a1 1 0 1 1-1-1a1 1 0 0 1 1 1Z"/></g></g>`
-	castFillPath                      = `<g id="evaCastFill0"><g id="evaCastFill1"><g id="evaCastFill2" fill="currentColor"><path d="M18.4 3H5.6A2.7 2.7 0 0 0 3 5.78V7a1 1 0 0 0 2 0V5.78A.72.72 0 0 1 5.6 5h12.8a.72.72 0 0 1 .6.78v12.44a.72.72 0 0 1-.6.78H17a1 1 0 0 0 0 2h1.4a2.7 2.7 0 0 0 2.6-2.78V5.78A2.7 2.7 0 0 0 18.4 3ZM3.86 14A1 1 0 0 0 3 15.17a1 1 0 0 0 1.14.83a2.49 2.49 0 0 1 2.12.72a2.52 2.52 0 0 1 .51 2.84a1 1 0 0 0 .48 1.33a1.06 1.06 0 0 0 .42.09a1 1 0 0 0 .91-.58A4.52 4.52 0 0 0 3.86 14Z"/><path d="M3.86 10.08a1 1 0 0 0 .28 2a6 6 0 0 1 5.09 1.71a6 6 0 0 1 1.53 5.95a1 1 0 0 0 .68 1.26a.9.9 0 0 0 .28 0a1 1 0 0 0 1-.72a8 8 0 0 0-8.82-10.2Z"/><circle cx="4" cy="19" r="1"/></g></g></g>`
-	castOutlinePath                   = `<g id="evaCastOutline0"><g id="evaCastOutline1"><g id="evaCastOutline2" fill="currentColor"><path d="M18.4 3H5.6A2.7 2.7 0 0 0 3 5.78V7a1 1 0 0 0 2 0V5.78A.72.72 0 0 1 5.6 5h12.8a.72.72 0 0 1 .6.78v12.44a.72.72 0 0 1-.6.78H17a1 1 0 0 0 0 2h1.4a2.7 2.7 0 0 0 2.6-2.78V5.78A2.7 2.7 0 0 0 18.4 3ZM3.86 14A1 1 0 0 0 3 15.17a1 1 0 0 0 1.14.83a2.49 2.49 0 0 1 2.12.72a2.52 2.52 0 0 1 .51 2.84a1 1 0 0 0 .48 1.33a1.06 1.06 0 0 0 .42.09a1 1 0 0 0 .91-.58A4.52 4.52 0 0 0 3.86 14Z"/><path d="M3.86 10.08a1 1 0 0 0 .28 2a6 6 0 0 1 5.09 1.71a6 6 0 0 1 1.53 5.95a1 1 0 0 0 .68 1.26a.9.9 0 0 0 .28 0a1 1 0 0 0 1-.72a8 8 0 0 0-8.82-10.2Z"/><circle cx="4" cy="19" r="1"/></g></g></g>`
-	chargingFillPath                  = `<g id="evaChargingFill0"><g id="evaChargingFill1"><g id="evaChargingFill2" fill="currentColor"><path d="M11.28 13H7a1 1 0 0 1-.86-.5a1 1 0 0 1 0-1L9.28 6H4.17A2.31 2.31 0 0 0 2 8.43v7.14A2.31 2.31 0 0 0 4.17 18h4.25Z"/><path d="M15.83 6h-4.25l-2.86 5H13a1 1 0 0 1 .86.5a1 1 0 0 1 0 1L10.72 18h5.11A2.31 2.31 0 0 0 18 15.57V8.43A2.31 2.31 0 0 0 15.83 6ZM21 9a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-1-1Z"/></g></g></g>`
-	chargingOutlinePath               = `<g id="evaChargingOutline0"><g id="evaChargingOutline1"><g id="evaChargingOutline2" fill="currentColor"><path d="M21 9a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-1-1Zm-5.17-3h-3.1l-1.14 2h4.23a.5.5 0 0 1 .18.43v7.14a.52.52 0 0 1-.17.43H13l-1.15 2h4A2.31 2.31 0 0 0 18 15.57V8.43A2.31 2.31 0 0 0 15.83 6ZM4 15.57V8.43A.53.53 0 0 1 4.17 8H7l1.13-2h-4A2.31 2.31 0 0 0 2 8.43v7.14A2.31 2.31 0 0 0 4.17 18h3.1l1.14-2H4.18a.5.5 0 0 1-.18-.43Z"/><path d="M9 20a1 1 0 0 1-.87-1.5l3.15-5.5H7a1 1 0 0 1-.86-.5a1 1 0 0 1 0-1l4-7a1 1 0 0 1 1.74 1L8.72 11H13a1 1 0 0 1 .86.5a1 1 0 0 1 0 1l-4 7A1 1 0 0 1 9 20Z"/></g></g></g>`
-	checkmarkCircleFillPath           = `<g id="evaCheckmarkCircleFill0"><g id="evaCheckmarkCircleFill1"><g id="evaCheckmarkCircleFill2" fill="currentColor"><path d="M9.71 11.29a1 1 0 0 0-1.42 1.42l3 3A1 1 0 0 0 12 16a1 1 0 0 0 .72-.34l7-8a1 1 0 0 0-1.5-1.32L12 13.54Z"/><path d="M21 11a1 1 0 0 0-1 1a8 8 0 0 1-8 8A8 8 0 0 1 6.33 6.36A7.93 7.93 0 0 1 12 4a8.79 8.79 0 0 1 1.9.22a1 1 0 1 0 .47-1.94A10.54 10.54 0 0 0 12 2a10 10 0 0 0-7 17.09A9.93 9.93 0 0 0 12 22a10 10 0 0 0 10-10a1 1 0 0 0-1-1Z"/></g></g></g>`
-	checkmarkCircleOutlinePath        = `<g id="evaCheckmarkCircleOutline0"><g id="evaCheckmarkCircleOutline1"><g id="evaCheckmarkCircleOutline2" fill="currentColor"><path d="M9.71 11.29a1 1 0 0 0-1.42 1.42l3 3A1 1 0 0 0 12 16a1 1 0 0 0 .72-.34l7-8a1 1 0 0 0-1.5-1.32L12 13.54Z"/><path d="M21 11a1 1 0 0 0-1 1a8 8 0 0 1-8 8A8 8 0 0 1 6.33 6.36A7.93 7.93 0 0 1 12 4a8.79 8.79 0 0 1 1.9.22a1 1 0 1 0 .47-1.94A10.54 10.54 0 0 0 12 2a10 10 0 0 0-7 17.09A9.93 9.93 0 0 0 12 22a10 10 0 0 0 10-10a1 1 0 0 0-1-1Z"/></g></g></g>`
-	checkmarkCircleTwoFillPath        = `<g id="evaCheckmarkCircle2Fill0"><g id="evaCheckmarkCircle2Fill1"><path id="evaCheckmarkCircle2Fill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39a1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08l3.78-5a1 1 0 1 1 1.6 1.22Z"/></g></g>`
-	checkmarkCircleTwoOutlinePath     = `<g id="evaCheckmarkCircle2Outline0"><g id="evaCheckmarkCircle2Outline1"><g id="evaCheckmarkCircle2Outline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="m14.7 8.39l-3.78 5l-1.63-2.11a1 1 0 0 0-1.58 1.23l2.43 3.11a1 1 0 0 0 .79.38a1 1 0 0 0 .79-.39l4.57-6a1 1 0 1 0-1.6-1.22Z"/></g></g></g>`
-	checkmarkFillPath                 = `<g id="evaCheckmarkFill0"><g id="evaCheckmarkFill1"><path id="evaCheckmarkFill2" fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"/></g></g>`
-	checkmarkOutlinePath              = `<g id="evaCheckmarkOutline0"><g id="evaCheckmarkOutline1"><path id="evaCheckmarkOutline2" fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"/></g></g>`
-	checkmarkSquareFillPath           = `<g id="evaCheckmarkSquareFill0"><g id="evaCheckmarkSquareFill1"><g id="evaCheckmarkSquareFill2" fill="currentColor"><path d="M20 11.83a1 1 0 0 0-1 1v5.57a.6.6 0 0 1-.6.6H5.6a.6.6 0 0 1-.6-.6V5.6a.6.6 0 0 1 .6-.6h9.57a1 1 0 1 0 0-2H5.6A2.61 2.61 0 0 0 3 5.6v12.8A2.61 2.61 0 0 0 5.6 21h12.8a2.61 2.61 0 0 0 2.6-2.6v-5.57a1 1 0 0 0-1-1Z"/><path d="M10.72 11a1 1 0 0 0-1.44 1.38l2.22 2.33a1 1 0 0 0 .72.31a1 1 0 0 0 .72-.3l6.78-7a1 1 0 1 0-1.44-1.4l-6.05 6.26Z"/></g></g></g>`
-	checkmarkSquareOutlinePath        = `<g id="evaCheckmarkSquareOutline0"><g id="evaCheckmarkSquareOutline1"><g id="evaCheckmarkSquareOutline2" fill="currentColor"><path d="M20 11.83a1 1 0 0 0-1 1v5.57a.6.6 0 0 1-.6.6H5.6a.6.6 0 0 1-.6-.6V5.6a.6.6 0 0 1 .6-.6h9.57a1 1 0 1 0 0-2H5.6A2.61 2.61 0 0 0 3 5.6v12.8A2.61 2.61 0 0 0 5.6 21h12.8a2.61 2.61 0 0 0 2.6-2.6v-5.57a1 1 0 0 0-1-1Z"/><path d="M10.72 11a1 1 0 0 0-1.44 1.38l2.22 2.33a1 1 0 0 0 .72.31a1 1 0 0 0 .72-.3l6.78-7a1 1 0 1 0-1.44-1.4l-6.05 6.26Z"/></g></g></g>`
-	checkmarkSquareTwoFillPath        = `<g id="evaCheckmarkSquare2Fill0"><g id="evaCheckmarkSquare2Fill1"><path id="evaCheckmarkSquare2Fill2" fill="currentColor" d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm-1.7 6.61l-4.57 6a1 1 0 0 1-.79.39a1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08l3.78-5a1 1 0 1 1 1.6 1.22Z"/></g></g>`
-	checkmarkSquareTwoOutlinePath     = `<g id="evaCheckmarkSquare2Outline0"><g id="evaCheckmarkSquare2Outline1"><g id="evaCheckmarkSquare2Outline2" fill="currentColor"><path d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1Z"/><path d="m14.7 8.39l-3.78 5l-1.63-2.11a1 1 0 0 0-1.58 1.23l2.43 3.11a1 1 0 0 0 .79.38a1 1 0 0 0 .79-.39l4.57-6a1 1 0 1 0-1.6-1.22Z"/></g></g></g>`
-	chevronDownFillPath               = `<g id="evaChevronDownFill0"><g id="evaChevronDownFill1"><path id="evaChevronDownFill2" fill="currentColor" d="M12 15.5a1 1 0 0 1-.71-.29l-4-4a1 1 0 1 1 1.42-1.42L12 13.1l3.3-3.18a1 1 0 1 1 1.38 1.44l-4 3.86a1 1 0 0 1-.68.28Z"/></g></g>`
-	chevronDownOutlinePath            = `<g id="evaChevronDownOutline0"><g id="evaChevronDownOutline1"><path id="evaChevronDownOutline2" fill="currentColor" d="M12 15.5a1 1 0 0 1-.71-.29l-4-4a1 1 0 1 1 1.42-1.42L12 13.1l3.3-3.18a1 1 0 1 1 1.38 1.44l-4 3.86a1 1 0 0 1-.68.28Z"/></g></g>`
-	chevronLeftFillPath               = `<g id="evaChevronLeftFill0"><g id="evaChevronLeftFill1"><path id="evaChevronLeftFill2" fill="currentColor" d="M13.36 17a1 1 0 0 1-.72-.31l-3.86-4a1 1 0 0 1 0-1.4l4-4a1 1 0 1 1 1.42 1.42L10.9 12l3.18 3.3a1 1 0 0 1 0 1.41a1 1 0 0 1-.72.29Z"/></g></g>`
-	chevronLeftOutlinePath            = `<g id="evaChevronLeftOutline0"><g id="evaChevronLeftOutline1"><path id="evaChevronLeftOutline2" fill="currentColor" d="M13.36 17a1 1 0 0 1-.72-.31l-3.86-4a1 1 0 0 1 0-1.4l4-4a1 1 0 1 1 1.42 1.42L10.9 12l3.18 3.3a1 1 0 0 1 0 1.41a1 1 0 0 1-.72.29Z"/></g></g>`
-	chevronRightFillPath              = `<g id="evaChevronRightFill0"><g id="evaChevronRightFill1"><path id="evaChevronRightFill2" fill="currentColor" d="M10.5 17a1 1 0 0 1-.71-.29a1 1 0 0 1 0-1.42L13.1 12L9.92 8.69a1 1 0 0 1 0-1.41a1 1 0 0 1 1.42 0l3.86 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-.7.32Z"/></g></g>`
-	chevronRightOutlinePath           = `<g id="evaChevronRightOutline0"><g id="evaChevronRightOutline1"><path id="evaChevronRightOutline2" fill="currentColor" d="M10.5 17a1 1 0 0 1-.71-.29a1 1 0 0 1 0-1.42L13.1 12L9.92 8.69a1 1 0 0 1 0-1.41a1 1 0 0 1 1.42 0l3.86 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-.7.32Z"/></g></g>`
-	chevronUpFillPath                 = `<g id="evaChevronUpFill0"><g id="evaChevronUpFill1"><path id="evaChevronUpFill2" fill="currentColor" d="M16 14.5a1 1 0 0 1-.71-.29L12 10.9l-3.3 3.18a1 1 0 0 1-1.41 0a1 1 0 0 1 0-1.42l4-3.86a1 1 0 0 1 1.4 0l4 4a1 1 0 0 1 0 1.42a1 1 0 0 1-.69.28Z"/></g></g>`
-	chevronUpOutlinePath              = `<g id="evaChevronUpOutline0"><g id="evaChevronUpOutline1"><path id="evaChevronUpOutline2" fill="currentColor" d="M16 14.5a1 1 0 0 1-.71-.29L12 10.9l-3.3 3.18a1 1 0 0 1-1.41 0a1 1 0 0 1 0-1.42l4-3.86a1 1 0 0 1 1.4 0l4 4a1 1 0 0 1 0 1.42a1 1 0 0 1-.69.28Z"/></g></g>`
-	clipboardFillPath                 = `<g id="evaClipboardFill0"><g id="evaClipboardFill1"><g id="evaClipboardFill2" fill="currentColor"><path d="M18 4v3a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Z"/><rect width="10" height="6" x="7" y="2" rx="1" ry="1"/></g></g></g>`
-	clipboardOutlinePath              = `<g id="evaClipboardOutline0"><g id="evaClipboardOutline1"><path id="evaClipboardOutline2" fill="currentColor" d="M18 5V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v1a3 3 0 0 0-3 3v11a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3ZM8 4h8v4H8V4Zm11 15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7a1 1 0 0 1 1 1Z"/></g></g>`
-	clockFillPath                     = `<g id="evaClockFill0"><g id="evaClockFill1"><path id="evaClockFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm4 11h-4a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v3h3a1 1 0 0 1 0 2Z"/></g></g>`
-	clockOutlinePath                  = `<g id="evaClockOutline0"><g id="evaClockOutline1"><g id="evaClockOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M16 11h-3V8a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1h4a1 1 0 0 0 0-2Z"/></g></g></g>`
-	closeCircleFillPath               = `<g id="evaCloseCircleFill0"><g id="evaCloseCircleFill1"><path id="evaCloseCircleFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm2.71 11.29a1 1 0 0 1 0 1.42a1 1 0 0 1-1.42 0L12 13.41l-1.29 1.3a1 1 0 0 1-1.42 0a1 1 0 0 1 0-1.42l1.3-1.29l-1.3-1.29a1 1 0 0 1 1.42-1.42l1.29 1.3l1.29-1.3a1 1 0 0 1 1.42 1.42L13.41 12Z"/></g></g>`
-	closeCircleOutlinePath            = `<g id="evaCloseCircleOutline0"><g id="evaCloseCircleOutline1"><g id="evaCloseCircleOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M14.71 9.29a1 1 0 0 0-1.42 0L12 10.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l1.3 1.29l-1.3 1.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l1.29-1.3l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L13.41 12l1.3-1.29a1 1 0 0 0 0-1.42Z"/></g></g></g>`
-	closeFillPath                     = `<g id="evaCloseFill0"><g id="evaCloseFill1"><path id="evaCloseFill2" fill="currentColor" d="m13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29l-4.3 4.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4.29-4.3l4.29 4.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g>`
-	closeOutlinePath                  = `<g id="evaCloseOutline0"><g id="evaCloseOutline1"><path id="evaCloseOutline2" fill="currentColor" d="m13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29l-4.3 4.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4.29-4.3l4.29 4.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g>`
-	closeSquareFillPath               = `<g id="evaCloseSquareFill0"><g id="evaCloseSquareFill1"><path id="evaCloseSquareFill2" fill="currentColor" d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm-3.29 10.29a1 1 0 0 1 0 1.42a1 1 0 0 1-1.42 0L12 13.41l-1.29 1.3a1 1 0 0 1-1.42 0a1 1 0 0 1 0-1.42l1.3-1.29l-1.3-1.29a1 1 0 0 1 1.42-1.42l1.29 1.3l1.29-1.3a1 1 0 0 1 1.42 1.42L13.41 12Z"/></g></g>`
-	closeSquareOutlinePath            = `<g id="evaCloseSquareOutline0"><g id="evaCloseSquareOutline1"><g id="evaCloseSquareOutline2" fill="currentColor"><path d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1Z"/><path d="M14.71 9.29a1 1 0 0 0-1.42 0L12 10.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l1.3 1.29l-1.3 1.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l1.29-1.3l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L13.41 12l1.3-1.29a1 1 0 0 0 0-1.42Z"/></g></g></g>`
-	cloudDownloadFillPath             = `<defs><path id="evaCloudDownloadFill0" d="M21.9 11c0-.11-.06-.22-.09-.33a4.17 4.17 0 0 0-.18-.57c-.05-.12-.12-.24-.18-.37s-.15-.3-.24-.44S21 9.08 21 9s-.2-.25-.31-.37s-.21-.2-.32-.3L20 8l-.36-.24a3.68 3.68 0 0 0-.44-.23l-.39-.18a4.13 4.13 0 0 0-.5-.15a3 3 0 0 0-.41-.09h-.18A6 6 0 0 0 6.33 7h-.18a3 3 0 0 0-.41.09a4.13 4.13 0 0 0-.5.15l-.39.18a3.68 3.68 0 0 0-.44.23L4.05 8l-.37.31c-.11.1-.22.19-.32.3s-.21.25-.31.37s-.18.23-.26.36s-.16.29-.24.44s-.13.25-.18.37a4.17 4.17 0 0 0-.18.57c0 .11-.07.22-.09.33A5.23 5.23 0 0 0 2 12a5.5 5.5 0 0 0 .09.91c0 .1.05.19.07.29a5.58 5.58 0 0 0 .18.58l.12.29a5 5 0 0 0 .3.56l.14.22a.56.56 0 0 0 .05.08L3 15a5 5 0 0 0 4 2a2 2 0 0 1 .59-1.41A2 2 0 0 1 9 15a1.92 1.92 0 0 1 1 .27V12a2 2 0 0 1 4 0v3.37a2 2 0 0 1 1-.27a2.05 2.05 0 0 1 1.44.61A2 2 0 0 1 17 17a5 5 0 0 0 4-2l.05-.05a.56.56 0 0 0 .05-.08l.14-.22a5 5 0 0 0 .3-.56l.12-.29a5.58 5.58 0 0 0 .18-.58c0-.1.05-.19.07-.29A5.5 5.5 0 0 0 22 12a5.23 5.23 0 0 0-.1-1Z"/><path id="evaCloudDownloadFill1" d="M14.31 16.38L13 17.64V12a1 1 0 0 0-2 0v5.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3A1 1 0 0 0 12 21a1 1 0 0 0 .69-.28l3-2.9a1 1 0 1 0-1.38-1.44Z"/></defs><g id="evaCloudDownloadFill2"><g id="evaCloudDownloadFill3"><g id="evaCloudDownloadFill4" fill="currentColor"><use href="#evaCloudDownloadFill0"/><use href="#evaCloudDownloadFill1"/><use href="#evaCloudDownloadFill0"/><use href="#evaCloudDownloadFill1"/></g></g></g>`
-	cloudDownloadOutlinePath          = `<g id="evaCloudDownloadOutline0"><g id="evaCloudDownloadOutline1"><g id="evaCloudDownloadOutline2" fill="currentColor"><path d="M14.31 16.38L13 17.64V12a1 1 0 0 0-2 0v5.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3A1 1 0 0 0 12 21a1 1 0 0 0 .69-.28l3-2.9a1 1 0 1 0-1.38-1.44Z"/><path d="M17.67 7A6 6 0 0 0 6.33 7a5 5 0 0 0-3.08 8.27A1 1 0 1 0 4.75 14A3 3 0 0 1 7 9h.1a1 1 0 0 0 1-.8a4 4 0 0 1 7.84 0a1 1 0 0 0 1 .8H17a3 3 0 0 1 2.25 5a1 1 0 0 0 .09 1.42a1 1 0 0 0 .66.25a1 1 0 0 0 .75-.34A5 5 0 0 0 17.67 7Z"/></g></g></g>`
-	cloudUploadFillPath               = `<g id="evaCloudUploadFill0"><g id="evaCloudUploadFill1"><g id="evaCloudUploadFill2" fill="currentColor"><path d="M21.9 12c0-.11-.06-.22-.09-.33a4.17 4.17 0 0 0-.18-.57c-.05-.12-.12-.24-.18-.37s-.15-.3-.24-.44S21 10.08 21 10s-.2-.25-.31-.37s-.21-.2-.32-.3L20 9l-.36-.24a3.68 3.68 0 0 0-.44-.23l-.39-.18a4.13 4.13 0 0 0-.5-.15a3 3 0 0 0-.41-.09L17.67 8A6 6 0 0 0 6.33 8l-.18.05a3 3 0 0 0-.41.09a4.13 4.13 0 0 0-.5.15l-.39.18a3.68 3.68 0 0 0-.44.23l-.36.3l-.37.31c-.11.1-.22.19-.32.3s-.21.25-.31.37s-.18.23-.26.36s-.16.29-.24.44s-.13.25-.18.37a4.17 4.17 0 0 0-.18.57c0 .11-.07.22-.09.33A5.23 5.23 0 0 0 2 13a5.5 5.5 0 0 0 .09.91c0 .1.05.19.07.29a5.58 5.58 0 0 0 .18.58l.12.29a5 5 0 0 0 .3.56l.14.22a.56.56 0 0 0 .05.08L3 16a5 5 0 0 0 4 2h3v-1.37a2 2 0 0 1-1 .27a2.05 2.05 0 0 1-1.44-.61a2 2 0 0 1 .05-2.83l3-2.9A2 2 0 0 1 12 10a2 2 0 0 1 1.41.59l3 3a2 2 0 0 1 0 2.82A2 2 0 0 1 15 17a1.92 1.92 0 0 1-1-.27V18h3a5 5 0 0 0 4-2l.05-.05a.56.56 0 0 0 .05-.08l.14-.22a5 5 0 0 0 .3-.56l.12-.29a5.58 5.58 0 0 0 .18-.58c0-.1.05-.19.07-.29A5.5 5.5 0 0 0 22 13a5.23 5.23 0 0 0-.1-1Z"/><path d="M12.71 11.29a1 1 0 0 0-1.4 0l-3 2.9a1 1 0 1 0 1.38 1.44L11 14.36V20a1 1 0 0 0 2 0v-5.59l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g></g>`
-	cloudUploadOutlinePath            = `<g id="evaCloudUploadOutline0"><g id="evaCloudUploadOutline1"><g id="evaCloudUploadOutline2" fill="currentColor"><path d="M12.71 11.29a1 1 0 0 0-1.4 0l-3 2.9a1 1 0 1 0 1.38 1.44L11 14.36V20a1 1 0 0 0 2 0v-5.59l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/><path d="M17.67 7A6 6 0 0 0 6.33 7a5 5 0 0 0-3.08 8.27A1 1 0 1 0 4.75 14A3 3 0 0 1 7 9h.1a1 1 0 0 0 1-.8a4 4 0 0 1 7.84 0a1 1 0 0 0 1 .8H17a3 3 0 0 1 2.25 5a1 1 0 0 0 .09 1.42a1 1 0 0 0 .66.25a1 1 0 0 0 .75-.34A5 5 0 0 0 17.67 7Z"/></g></g></g>`
-	codeDownloadFillPath              = `<g id="evaCodeDownloadFill0"><g id="evaCodeDownloadFill1"><g id="evaCodeDownloadFill2" fill="currentColor"><path d="m4.29 12l4.48-5.36a1 1 0 1 0-1.54-1.28l-5 6a1 1 0 0 0 0 1.27l4.83 6a1 1 0 0 0 .78.37a1 1 0 0 0 .78-1.63Zm17.49-.63l-4.78-6a1 1 0 0 0-1.56 1.26L19.71 12l-4.48 5.37a1 1 0 0 0 .13 1.41A1 1 0 0 0 16 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 .01-1.27Z"/><path d="M15.72 11.41a1 1 0 0 0-1.41 0L13 12.64V8a1 1 0 0 0-2 0v4.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3A1 1 0 0 0 12 16a1 1 0 0 0 .69-.28l3-2.9a1 1 0 0 0 .03-1.41Z"/></g></g></g>`
-	codeDownloadOutlinePath           = `<g id="evaCodeDownloadOutline0"><g id="evaCodeDownloadOutline1"><g id="evaCodeDownloadOutline2" fill="currentColor"><path d="m4.29 12l4.48-5.36a1 1 0 1 0-1.54-1.28l-5 6a1 1 0 0 0 0 1.27l4.83 6a1 1 0 0 0 .78.37a1 1 0 0 0 .78-1.63Zm17.49-.63l-4.78-6a1 1 0 0 0-1.56 1.26L19.71 12l-4.48 5.37a1 1 0 0 0 .13 1.41A1 1 0 0 0 16 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 .01-1.27Z"/><path d="M15.72 11.41a1 1 0 0 0-1.41 0L13 12.64V8a1 1 0 0 0-2 0v4.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3A1 1 0 0 0 12 16a1 1 0 0 0 .69-.28l3-2.9a1 1 0 0 0 .03-1.41Z"/></g></g></g>`
-	codeFillPath                      = `<g id="evaCodeFill0"><g id="evaCodeFill1"><path id="evaCodeFill2" fill="currentColor" d="M8.64 5.23a1 1 0 0 0-1.41.13l-5 6a1 1 0 0 0 0 1.27l4.83 6a1 1 0 0 0 .78.37a1 1 0 0 0 .78-1.63L4.29 12l4.48-5.36a1 1 0 0 0-.13-1.41Zm13.14 6.14l-4.78-6a1 1 0 0 0-1.41-.15a1 1 0 0 0-.15 1.41L19.71 12l-4.48 5.37a1 1 0 0 0 .13 1.41A1 1 0 0 0 16 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 .01-1.27Z"/></g></g>`
-	codeOutlinePath                   = `<g id="evaCodeOutline0"><g id="evaCodeOutline1"><path id="evaCodeOutline2" fill="currentColor" d="M8.64 5.23a1 1 0 0 0-1.41.13l-5 6a1 1 0 0 0 0 1.27l4.83 6a1 1 0 0 0 .78.37a1 1 0 0 0 .78-1.63L4.29 12l4.48-5.36a1 1 0 0 0-.13-1.41Zm13.14 6.14l-4.78-6a1 1 0 0 0-1.41-.15a1 1 0 0 0-.15 1.41L19.71 12l-4.48 5.37a1 1 0 0 0 .13 1.41A1 1 0 0 0 16 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 .01-1.27Z"/></g></g>`
-	collapseFillPath                  = `<g id="evaCollapseFill0"><g id="evaCollapseFill1"><path id="evaCollapseFill2" fill="currentColor" d="M19 9h-2.58l3.29-3.29a1 1 0 1 0-1.42-1.42L15 7.57V5a1 1 0 0 0-1-1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 0-2Zm-9 4H5a1 1 0 0 0 0 2h2.57l-3.28 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L9 16.42V19a1 1 0 0 0 1 1a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1Z"/></g></g>`
-	collapseOutlinePath               = `<g id="evaCollapseOutline0"><g id="evaCollapseOutline1"><path id="evaCollapseOutline2" fill="currentColor" d="M19 9h-2.58l3.29-3.29a1 1 0 1 0-1.42-1.42L15 7.57V5a1 1 0 0 0-1-1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 0-2Zm-9 4H5a1 1 0 0 0 0 2h2.57l-3.28 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L9 16.42V19a1 1 0 0 0 1 1a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1Z"/></g></g>`
-	colorPaletteFillPath              = `<g id="evaColorPaletteFill0"><g id="evaColorPaletteFill1"><path id="evaColorPaletteFill2" fill="currentColor" d="M19.54 5.08A10.61 10.61 0 0 0 11.91 2a10 10 0 0 0-.05 20a2.58 2.58 0 0 0 2.53-1.89a2.52 2.52 0 0 0-.57-2.28a.5.5 0 0 1 .37-.83h1.65A6.15 6.15 0 0 0 22 11.33a8.48 8.48 0 0 0-2.46-6.25Zm-12.7 9.66a1.5 1.5 0 1 1 .4-2.08a1.49 1.49 0 0 1-.4 2.08ZM8.3 9.25a1.5 1.5 0 1 1-.55-2a1.5 1.5 0 0 1 .55 2ZM11 7a1.5 1.5 0 1 1 1.5-1.5A1.5 1.5 0 0 1 11 7Zm5.75.8a1.5 1.5 0 1 1 .55-2a1.5 1.5 0 0 1-.55 2Z"/></g></g>`
-	colorPaletteOutlinePath           = `<g id="evaColorPaletteOutline0"><g id="evaColorPaletteOutline1"><g id="evaColorPaletteOutline2" fill="currentColor"><path d="M19.54 5.08A10.61 10.61 0 0 0 11.91 2a10 10 0 0 0-.05 20a2.58 2.58 0 0 0 2.53-1.89a2.52 2.52 0 0 0-.57-2.28a.5.5 0 0 1 .37-.83h1.65A6.15 6.15 0 0 0 22 11.33a8.48 8.48 0 0 0-2.46-6.25ZM15.88 15h-1.65a2.49 2.49 0 0 0-1.87 4.15a.49.49 0 0 1 .12.49c-.05.21-.28.34-.59.36a8 8 0 0 1-7.82-9.11A8.1 8.1 0 0 1 11.92 4H12a8.47 8.47 0 0 1 6.1 2.48a6.5 6.5 0 0 1 1.9 4.77A4.17 4.17 0 0 1 15.88 15Z"/><circle cx="12" cy="6.5" r="1.5"/><path d="M15.25 7.2a1.5 1.5 0 1 0 2.05.55a1.5 1.5 0 0 0-2.05-.55Zm-6.5 0a1.5 1.5 0 1 0 .55 2.05a1.5 1.5 0 0 0-.55-2.05Zm-2.59 4.06a1.5 1.5 0 1 0 2.08.4a1.49 1.49 0 0 0-2.08-.4Z"/></g></g></g>`
-	colorPickerFillPath               = `<g id="evaColorPickerFill0"><g id="evaColorPickerFill1"><path id="evaColorPickerFill2" fill="currentColor" d="M19.4 7.34L16.66 4.6A1.92 1.92 0 0 0 14 4.53l-2 2l-1.29-1.24a1 1 0 0 0-1.42 1.42L10.53 8L5 13.53a2 2 0 0 0-.57 1.21L4 18.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 20h.09l4.17-.38a2 2 0 0 0 1.21-.57l5.58-5.58l1.24 1.24a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42l-1.24-1.24l2-2a1.92 1.92 0 0 0-.07-2.71Zm-13 7.6L12 9.36l2.69 2.7l-2.79 2.79"/></g></g>`
-	colorPickerOutlinePath            = `<g id="evaColorPickerOutline0"><g id="evaColorPickerOutline1"><path id="evaColorPickerOutline2" fill="currentColor" d="M19.4 7.34L16.66 4.6A1.92 1.92 0 0 0 14 4.53l-2 2l-1.29-1.24a1 1 0 0 0-1.42 1.42L10.53 8L5 13.53a2 2 0 0 0-.57 1.21L4 18.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 20h.09l4.17-.38a2 2 0 0 0 1.21-.57l5.58-5.58l1.24 1.24a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42l-1.24-1.24l2-2a1.92 1.92 0 0 0-.07-2.71ZM9.08 17.62l-3 .28l.27-3L12 9.36l2.69 2.7Zm7-7L13.36 8l1.91-2L18 8.73Z"/></g></g>`
-	compassFillPath                   = `<g id="evaCompassFill0"><g id="evaCompassFill1"><g id="evaCompassFill2" fill="currentColor"><path d="m10.8 13.21l1.69-.68l.71-1.74l-1.69.68l-.71 1.74z"/><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm3.93 7.42l-1.75 4.26a1 1 0 0 1-.55.55l-4.21 1.7A1 1 0 0 1 9 16a1 1 0 0 1-.71-.31h-.05a1 1 0 0 1-.18-1l1.75-4.26a1 1 0 0 1 .55-.55l4.21-1.7a1 1 0 0 1 1.1.25a1 1 0 0 1 .26.99Z"/></g></g></g>`
-	compassOutlinePath                = `<g id="evaCompassOutline0"><g id="evaCompassOutline1"><g id="evaCompassOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M15.68 8.32a1 1 0 0 0-1.1-.25l-4.21 1.7a1 1 0 0 0-.55.55l-1.75 4.26a1 1 0 0 0 .18 1h.05A1 1 0 0 0 9 16a1 1 0 0 0 .38-.07l4.21-1.7a1 1 0 0 0 .55-.55l1.75-4.26a1 1 0 0 0-.21-1.1Zm-4.88 4.89l.71-1.74l1.69-.68l-.71 1.74Z"/></g></g></g>`
-	copyFillPath                      = `<g id="evaCopyFill0"><g id="evaCopyFill1"><path id="evaCopyFill2" fill="currentColor" d="M18 9h-3V5.67A2.68 2.68 0 0 0 12.33 3H5.67A2.68 2.68 0 0 0 3 5.67v6.66A2.68 2.68 0 0 0 5.67 15H9v3a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3Zm-9 3v1H5.67a.67.67 0 0 1-.67-.67V5.67A.67.67 0 0 1 5.67 5h6.66a.67.67 0 0 1 .67.67V9h-1a3 3 0 0 0-3 3Z"/></g></g>`
-	copyOutlinePath                   = `<g id="evaCopyOutline0"><g id="evaCopyOutline1"><g id="evaCopyOutline2" fill="currentColor"><path d="M18 21h-6a3 3 0 0 1-3-3v-6a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3Zm-6-10a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1Z"/><path d="M9.73 15H5.67A2.68 2.68 0 0 1 3 12.33V5.67A2.68 2.68 0 0 1 5.67 3h6.66A2.68 2.68 0 0 1 15 5.67V9.4h-2V5.67a.67.67 0 0 0-.67-.67H5.67a.67.67 0 0 0-.67.67v6.66a.67.67 0 0 0 .67.67h4.06Z"/></g></g></g>`
-	cornerDownLeftFillPath            = `<g id="evaCornerDownLeftFill0"><g id="evaCornerDownLeftFill1"><path id="evaCornerDownLeftFill2" fill="currentColor" d="M20 6a1 1 0 0 0-1-1a1 1 0 0 0-1 1v5a1 1 0 0 1-.29.71A1 1 0 0 1 17 12H8.08l2.69-3.39a1 1 0 0 0-1.52-1.17l-4 5a1 1 0 0 0 0 1.25l4 5a1 1 0 0 0 .78.37a1 1 0 0 0 .62-.22a1 1 0 0 0 .15-1.41l-2.66-3.36h8.92a3 3 0 0 0 3-3Z"/></g></g>`
-	cornerDownLeftOutlinePath         = `<g id="evaCornerDownLeftOutline0"><g id="evaCornerDownLeftOutline1"><path id="evaCornerDownLeftOutline2" fill="currentColor" d="M20 6a1 1 0 0 0-1-1a1 1 0 0 0-1 1v5a1 1 0 0 1-.29.71A1 1 0 0 1 17 12H8.08l2.69-3.39a1 1 0 0 0-1.52-1.17l-4 5a1 1 0 0 0 0 1.25l4 5a1 1 0 0 0 .78.37a1 1 0 0 0 .62-.22a1 1 0 0 0 .15-1.41l-2.66-3.36h8.92a3 3 0 0 0 3-3Z"/></g></g>`
-	cornerDownRightFillPath           = `<g id="evaCornerDownRightFill0"><g id="evaCornerDownRightFill1"><path id="evaCornerDownRightFill2" fill="currentColor" d="m19.78 12.38l-4-5a1 1 0 0 0-1.56 1.24l2.7 3.38H8a1 1 0 0 1-1-1V6a1 1 0 0 0-2 0v5a3 3 0 0 0 3 3h8.92l-2.7 3.38a1 1 0 0 0 .16 1.4A1 1 0 0 0 15 19a1 1 0 0 0 .78-.38l4-5a1 1 0 0 0 0-1.24Z"/></g></g>`
-	cornerDownRightOutlinePath        = `<g id="evaCornerDownRightOutline0"><g id="evaCornerDownRightOutline1"><path id="evaCornerDownRightOutline2" fill="currentColor" d="m19.78 12.38l-4-5a1 1 0 0 0-1.56 1.24l2.7 3.38H8a1 1 0 0 1-1-1V6a1 1 0 0 0-2 0v5a3 3 0 0 0 3 3h8.92l-2.7 3.38a1 1 0 0 0 .16 1.4A1 1 0 0 0 15 19a1 1 0 0 0 .78-.38l4-5a1 1 0 0 0 0-1.24Z"/></g></g>`
-	cornerLeftDownFillPath            = `<g id="evaCornerLeftDownFill0"><g id="evaCornerLeftDownFill1"><path id="evaCornerLeftDownFill2" fill="currentColor" d="M18 5h-5a3 3 0 0 0-3 3v8.92l-3.38-2.7a1 1 0 0 0-1.24 1.56l5 4a1 1 0 0 0 1.24 0l5-4a1 1 0 1 0-1.24-1.56L12 16.92V8a1 1 0 0 1 1-1h5a1 1 0 0 0 0-2Z"/></g></g>`
-	cornerLeftDownOutlinePath         = `<g id="evaCornerLeftDownOutline0"><g id="evaCornerLeftDownOutline1"><path id="evaCornerLeftDownOutline2" fill="currentColor" d="M18 5h-5a3 3 0 0 0-3 3v8.92l-3.38-2.7a1 1 0 0 0-1.24 1.56l5 4a1 1 0 0 0 1.24 0l5-4a1 1 0 1 0-1.24-1.56L12 16.92V8a1 1 0 0 1 1-1h5a1 1 0 0 0 0-2Z"/></g></g>`
-	cornerLeftUpFillPath              = `<g id="evaCornerLeftUpFill0"><g id="evaCornerLeftUpFill1"><path id="evaCornerLeftUpFill2" fill="currentColor" d="M18 17h-5a1 1 0 0 1-1-1V7.08l3.38 2.7A1 1 0 0 0 16 10a1 1 0 0 0 .78-.38a1 1 0 0 0-.16-1.4l-5-4a1 1 0 0 0-1.24 0l-5 4a1 1 0 0 0 1.24 1.56L10 7.08V16a3 3 0 0 0 3 3h5a1 1 0 0 0 0-2Z"/></g></g>`
-	cornerLeftUpOutlinePath           = `<g id="evaCornerLeftUpOutline0"><g id="evaCornerLeftUpOutline1"><path id="evaCornerLeftUpOutline2" fill="currentColor" d="M18 17h-5a1 1 0 0 1-1-1V7.08l3.38 2.7A1 1 0 0 0 16 10a1 1 0 0 0 .78-.38a1 1 0 0 0-.16-1.4l-5-4a1 1 0 0 0-1.24 0l-5 4a1 1 0 0 0 1.24 1.56L10 7.08V16a3 3 0 0 0 3 3h5a1 1 0 0 0 0-2Z"/></g></g>`
-	cornerRightDownFillPath           = `<g id="evaCornerRightDownFill0"><g id="evaCornerRightDownFill1"><path id="evaCornerRightDownFill2" fill="currentColor" d="M18.78 14.38a1 1 0 0 0-1.4-.16L14 16.92V8a3 3 0 0 0-3-3H6a1 1 0 0 0 0 2h5a1 1 0 0 1 1 1v8.92l-3.38-2.7a1 1 0 0 0-1.24 1.56l5 4a1 1 0 0 0 1.24 0l5-4a1 1 0 0 0 .16-1.4Z"/></g></g>`
-	cornerRightDownOutlinePath        = `<g id="evaCornerRightDownOutline0"><g id="evaCornerRightDownOutline1"><path id="evaCornerRightDownOutline2" fill="currentColor" d="M18.78 14.38a1 1 0 0 0-1.4-.16L14 16.92V8a3 3 0 0 0-3-3H6a1 1 0 0 0 0 2h5a1 1 0 0 1 1 1v8.92l-3.38-2.7a1 1 0 0 0-1.24 1.56l5 4a1 1 0 0 0 1.24 0l5-4a1 1 0 0 0 .16-1.4Z"/></g></g>`
-	cornerRightUpFillPath             = `<g id="evaCornerRightUpFill0"><g id="evaCornerRightUpFill1"><path id="evaCornerRightUpFill2" fill="currentColor" d="m18.62 8.22l-5-4a1 1 0 0 0-1.24 0l-5 4a1 1 0 0 0 1.24 1.56L12 7.08V16a1 1 0 0 1-1 1H6a1 1 0 0 0 0 2h5a3 3 0 0 0 3-3V7.08l3.38 2.7A1 1 0 0 0 18 10a1 1 0 0 0 .78-.38a1 1 0 0 0-.16-1.4Z"/></g></g>`
-	cornerRightUpOutlinePath          = `<g id="evaCornerRightUpOutline0"><g id="evaCornerRightUpOutline1"><path id="evaCornerRightUpOutline2" fill="currentColor" d="m18.62 8.22l-5-4a1 1 0 0 0-1.24 0l-5 4a1 1 0 0 0 1.24 1.56L12 7.08V16a1 1 0 0 1-1 1H6a1 1 0 0 0 0 2h5a3 3 0 0 0 3-3V7.08l3.38 2.7A1 1 0 0 0 18 10a1 1 0 0 0 .78-.38a1 1 0 0 0-.16-1.4Z"/></g></g>`
-	cornerUpLeftFillPath              = `<g id="evaCornerUpLeftFill0"><g id="evaCornerUpLeftFill1"><path id="evaCornerUpLeftFill2" fill="currentColor" d="M16 10H7.08l2.7-3.38a1 1 0 1 0-1.56-1.24l-4 5a1 1 0 0 0 0 1.24l4 5A1 1 0 0 0 9 17a1 1 0 0 0 .62-.22a1 1 0 0 0 .16-1.4L7.08 12H16a1 1 0 0 1 1 1v5a1 1 0 0 0 2 0v-5a3 3 0 0 0-3-3Z"/></g></g>`
-	cornerUpLeftOutlinePath           = `<g id="evaCornerUpLeftOutline0"><g id="evaCornerUpLeftOutline1"><path id="evaCornerUpLeftOutline2" fill="currentColor" d="M16 10H7.08l2.7-3.38a1 1 0 1 0-1.56-1.24l-4 5a1 1 0 0 0 0 1.24l4 5A1 1 0 0 0 9 17a1 1 0 0 0 .62-.22a1 1 0 0 0 .16-1.4L7.08 12H16a1 1 0 0 1 1 1v5a1 1 0 0 0 2 0v-5a3 3 0 0 0-3-3Z"/></g></g>`
-	cornerUpRightFillPath             = `<g id="evaCornerUpRightFill0"><g id="evaCornerUpRightFill1"><path id="evaCornerUpRightFill2" fill="currentColor" d="m19.78 10.38l-4-5a1 1 0 0 0-1.56 1.24l2.7 3.38H8a3 3 0 0 0-3 3v5a1 1 0 0 0 2 0v-5a1 1 0 0 1 1-1h8.92l-2.7 3.38a1 1 0 0 0 .16 1.4A1 1 0 0 0 15 17a1 1 0 0 0 .78-.38l4-5a1 1 0 0 0 0-1.24Z"/></g></g>`
-	cornerUpRightOutlinePath          = `<g id="evaCornerUpRightOutline0"><g id="evaCornerUpRightOutline1"><path id="evaCornerUpRightOutline2" fill="currentColor" d="m19.78 10.38l-4-5a1 1 0 0 0-1.56 1.24l2.7 3.38H8a3 3 0 0 0-3 3v5a1 1 0 0 0 2 0v-5a1 1 0 0 1 1-1h8.92l-2.7 3.38a1 1 0 0 0 .16 1.4A1 1 0 0 0 15 17a1 1 0 0 0 .78-.38l4-5a1 1 0 0 0 0-1.24Z"/></g></g>`
-	creditCardFillPath                = `<g id="evaCreditCardFill0"><g id="evaCreditCardFill1"><path id="evaCreditCardFill2" fill="currentColor" d="M19 5H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3Zm-8 10H7a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2Zm6 0h-2a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Zm3-6H4V8a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z"/></g></g>`
-	creditCardOutlinePath             = `<g id="evaCreditCardOutline0"><g id="evaCreditCardOutline1"><g id="evaCreditCardOutline2" fill="currentColor"><path d="M19 5H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3ZM4 8a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v1H4Zm16 8a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-5h16Z"/><path d="M7 15h4a1 1 0 0 0 0-2H7a1 1 0 0 0 0 2Zm8 0h2a1 1 0 0 0 0-2h-2a1 1 0 0 0 0 2Z"/></g></g></g>`
-	cropFillPath                      = `<g id="evaCropFill0"><g id="evaCropFill1"><path id="evaCropFill2" fill="currentColor" d="M21 16h-3V8.56A2.56 2.56 0 0 0 15.44 6H8V3a1 1 0 0 0-2 0v3H3a1 1 0 0 0 0 2h3v7.44A2.56 2.56 0 0 0 8.56 18H16v3a1 1 0 0 0 2 0v-3h3a1 1 0 0 0 0-2ZM8.56 16a.56.56 0 0 1-.56-.56V8h7.44a.56.56 0 0 1 .56.56V16Z"/></g></g>`
-	cropOutlinePath                   = `<g id="evaCropOutline0"><g id="evaCropOutline1"><path id="evaCropOutline2" fill="currentColor" d="M21 16h-3V8.56A2.56 2.56 0 0 0 15.44 6H8V3a1 1 0 0 0-2 0v3H3a1 1 0 0 0 0 2h3v7.44A2.56 2.56 0 0 0 8.56 18H16v3a1 1 0 0 0 2 0v-3h3a1 1 0 0 0 0-2ZM8.56 16a.56.56 0 0 1-.56-.56V8h7.44a.56.56 0 0 1 .56.56V16Z"/></g></g>`
-	cubeFillPath                      = `<g id="evaCubeFill0"><g id="evaCubeFill1"><path id="evaCubeFill2" fill="currentColor" d="M11.25 11.83L3 8.36v7.73a1.69 1.69 0 0 0 1 1.52L11.19 21h.06ZM12 10.5l8.51-3.57a1.62 1.62 0 0 0-.51-.38l-7.2-3.37a1.87 1.87 0 0 0-1.6 0L4 6.55a1.62 1.62 0 0 0-.51.38Zm.75 1.33V21h.05l7.2-3.39a1.69 1.69 0 0 0 1-1.51V8.36Z"/></g></g>`
-	cubeOutlinePath                   = `<g id="evaCubeOutline0"><g id="evaCubeOutline1"><path id="evaCubeOutline2" fill="currentColor" d="M20.66 7.26c0-.07-.1-.14-.15-.21l-.09-.1a2.5 2.5 0 0 0-.86-.68l-6.4-3a2.7 2.7 0 0 0-2.26 0l-6.4 3a2.6 2.6 0 0 0-.86.68L3.52 7a1 1 0 0 0-.15.2A2.39 2.39 0 0 0 3 8.46v7.06a2.49 2.49 0 0 0 1.46 2.26l6.4 3a2.7 2.7 0 0 0 2.27 0l6.4-3A2.49 2.49 0 0 0 21 15.54V8.46a2.39 2.39 0 0 0-.34-1.2Zm-8.95-2.2a.73.73 0 0 1 .58 0l5.33 2.48L12 10.15L6.38 7.54ZM5.3 16a.47.47 0 0 1-.3-.43V9.1l6 2.79v6.72Zm13.39 0L13 18.61v-6.72l6-2.79v6.44a.48.48 0 0 1-.31.46Z"/></g></g>`
-	diagonalArrowLeftDownFillPath     = `<g id="evaDiagonalArrowLeftDownFill0"><g id="evaDiagonalArrowLeftDownFill1"><path id="evaDiagonalArrowLeftDownFill2" fill="currentColor" d="M17.71 6.29a1 1 0 0 0-1.42 0L8 14.59V9a1 1 0 0 0-2 0v8a1 1 0 0 0 1 1h8a1 1 0 0 0 0-2H9.41l8.3-8.29a1 1 0 0 0 0-1.42Z"/></g></g>`
-	diagonalArrowLeftDownOutlinePath  = `<g id="evaDiagonalArrowLeftDownOutline0"><g id="evaDiagonalArrowLeftDownOutline1"><path id="evaDiagonalArrowLeftDownOutline2" fill="currentColor" d="M17.71 6.29a1 1 0 0 0-1.42 0L8 14.59V9a1 1 0 0 0-2 0v8a1 1 0 0 0 1 1h8a1 1 0 0 0 0-2H9.41l8.3-8.29a1 1 0 0 0 0-1.42Z"/></g></g>`
-	diagonalArrowLeftUpFillPath       = `<g id="evaDiagonalArrowLeftUpFill0"><g id="evaDiagonalArrowLeftUpFill1"><path id="evaDiagonalArrowLeftUpFill2" fill="currentColor" d="M17.71 16.29L9.42 8H15a1 1 0 0 0 0-2H7.05a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1H7a1 1 0 0 0 1-1V9.45l8.26 8.26a1 1 0 0 0 1.42 0a1 1 0 0 0 .03-1.42Z"/></g></g>`
-	diagonalArrowLeftUpOutlinePath    = `<g id="evaDiagonalArrowLeftUpOutline0"><g id="evaDiagonalArrowLeftUpOutline1"><path id="evaDiagonalArrowLeftUpOutline2" fill="currentColor" d="M17.71 16.29L9.42 8H15a1 1 0 0 0 0-2H7.05a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1H7a1 1 0 0 0 1-1V9.45l8.26 8.26a1 1 0 0 0 1.42 0a1 1 0 0 0 .03-1.42Z"/></g></g>`
-	diagonalArrowRightDownFillPath    = `<g id="evaDiagonalArrowRightDownFill0"><g id="evaDiagonalArrowRightDownFill1"><path id="evaDiagonalArrowRightDownFill2" fill="currentColor" d="M17 8a1 1 0 0 0-1 1v5.59l-8.29-8.3a1 1 0 0 0-1.42 1.42l8.3 8.29H9a1 1 0 0 0 0 2h8a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1Z"/></g></g>`
-	diagonalArrowRightDownOutlinePath = `<g id="evaDiagonalArrowRightDownOutline0"><g id="evaDiagonalArrowRightDownOutline1"><path id="evaDiagonalArrowRightDownOutline2" fill="currentColor" d="M17 8a1 1 0 0 0-1 1v5.59l-8.29-8.3a1 1 0 0 0-1.42 1.42l8.3 8.29H9a1 1 0 0 0 0 2h8a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1Z"/></g></g>`
-	diagonalArrowRightUpFillPath      = `<g id="evaDiagonalArrowRightUpFill0"><g id="evaDiagonalArrowRightUpFill1"><path id="evaDiagonalArrowRightUpFill2" fill="currentColor" d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1a1 1 0 0 0 1-1Z"/></g></g>`
-	diagonalArrowRightUpOutlinePath   = `<g id="evaDiagonalArrowRightUpOutline0"><g id="evaDiagonalArrowRightUpOutline1"><path id="evaDiagonalArrowRightUpOutline2" fill="currentColor" d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1a1 1 0 0 0 1-1Z"/></g></g>`
-	doneAllFillPath                   = `<g id="evaDoneAllFill0"><g id="evaDoneAllFill1"><g id="evaDoneAllFill2" fill="currentColor"><path d="M16.62 6.21a1 1 0 0 0-1.41.17l-7 9l-3.43-4.18a1 1 0 1 0-1.56 1.25l4.17 5.18a1 1 0 0 0 .78.37a1 1 0 0 0 .83-.38l7.83-10a1 1 0 0 0-.21-1.41Zm5 0a1 1 0 0 0-1.41.17l-7 9l-.61-.75l-1.26 1.62l1.1 1.37a1 1 0 0 0 .78.37a1 1 0 0 0 .78-.38l7.83-10a1 1 0 0 0-.21-1.4Z"/><path d="M8.71 13.06L10 11.44l-.2-.24a1 1 0 0 0-1.43-.2a1 1 0 0 0-.15 1.41Z"/></g></g></g>`
-	doneAllOutlinePath                = `<g id="evaDoneAllOutline0"><g id="evaDoneAllOutline1"><g id="evaDoneAllOutline2" fill="currentColor"><path d="M16.62 6.21a1 1 0 0 0-1.41.17l-7 9l-3.43-4.18a1 1 0 1 0-1.56 1.25l4.17 5.18a1 1 0 0 0 .78.37a1 1 0 0 0 .83-.38l7.83-10a1 1 0 0 0-.21-1.41Zm5 0a1 1 0 0 0-1.41.17l-7 9l-.61-.75l-1.26 1.62l1.1 1.37a1 1 0 0 0 .78.37a1 1 0 0 0 .78-.38l7.83-10a1 1 0 0 0-.21-1.4Z"/><path d="M8.71 13.06L10 11.44l-.2-.24a1 1 0 0 0-1.43-.2a1 1 0 0 0-.15 1.41Z"/></g></g></g>`
-	downloadFillPath                  = `<g id="evaDownloadFill0"><g id="evaDownloadFill1"><g id="evaDownloadFill2" fill="currentColor"><rect width="16" height="2" x="4" y="18" rx="1" ry="1"/><rect width="4" height="2" x="3" y="17" rx="1" ry="1" transform="rotate(-90 5 18)"/><rect width="4" height="2" x="17" y="17" rx="1" ry="1" transform="rotate(-90 19 18)"/><path d="M12 15a1 1 0 0 1-.58-.18l-4-2.82a1 1 0 0 1-.24-1.39a1 1 0 0 1 1.4-.24L12 12.76l3.4-2.56a1 1 0 0 1 1.2 1.6l-4 3a1 1 0 0 1-.6.2Z"/><path d="M12 13a1 1 0 0 1-1-1V4a1 1 0 0 1 2 0v8a1 1 0 0 1-1 1Z"/></g></g></g>`
-	downloadOutlinePath               = `<g id="evaDownloadOutline0"><g id="evaDownloadOutline1"><g id="evaDownloadOutline2" fill="currentColor"><rect width="16" height="2" x="4" y="18" rx="1" ry="1"/><rect width="4" height="2" x="3" y="17" rx="1" ry="1" transform="rotate(-90 5 18)"/><rect width="4" height="2" x="17" y="17" rx="1" ry="1" transform="rotate(-90 19 18)"/><path d="M12 15a1 1 0 0 1-.58-.18l-4-2.82a1 1 0 0 1-.24-1.39a1 1 0 0 1 1.4-.24L12 12.76l3.4-2.56a1 1 0 0 1 1.2 1.6l-4 3a1 1 0 0 1-.6.2Z"/><path d="M12 13a1 1 0 0 1-1-1V4a1 1 0 0 1 2 0v8a1 1 0 0 1-1 1Z"/></g></g></g>`
-	dropletFillPath                   = `<g id="evaDropletFill0"><g id="evaDropletFill1"><path id="evaDropletFill2" fill="currentColor" d="M12 21.1a7.4 7.4 0 0 1-5.28-2.28a7.73 7.73 0 0 1 .1-10.77l4.64-4.65a.94.94 0 0 1 .71-.3a1 1 0 0 1 .71.31l4.56 4.72a7.73 7.73 0 0 1-.09 10.77A7.33 7.33 0 0 1 12 21.1Z"/></g></g>`
-	dropletOffFillPath                = `<g id="evaDropletOffFill0"><g id="evaDropletOffFill1"><path id="evaDropletOffFill2" fill="currentColor" d="M19 16.14A7.73 7.73 0 0 0 17.34 8l-4.56-4.69a1 1 0 0 0-.71-.31a1 1 0 0 0-.72.3L8.74 5.92ZM6 8.82a7.73 7.73 0 0 0 .64 9.9A7.44 7.44 0 0 0 11.92 21a7.34 7.34 0 0 0 4.64-1.6Zm14.71 10.47l-16-16a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g>`
-	dropletOffOutlinePath             = `<g id="evaDropletOffOutline0"><g id="evaDropletOffOutline1"><path id="evaDropletOffOutline2" fill="currentColor" d="M12 19a5.4 5.4 0 0 1-3.88-1.64a5.73 5.73 0 0 1-.69-7.11L6 8.82a7.74 7.74 0 0 0 .7 9.94A7.37 7.37 0 0 0 12 21a7.36 7.36 0 0 0 4.58-1.59L15.15 18A5.43 5.43 0 0 1 12 19Zm0-13.57l3.88 4a5.71 5.71 0 0 1 1.49 5.15L19 16.15A7.72 7.72 0 0 0 17.31 8l-4.6-4.7A1 1 0 0 0 12 3a1 1 0 0 0-.72.3L8.73 5.9l1.42 1.42Zm8.71 13.86l-16-16a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g>`
-	dropletOutlinePath                = `<g id="evaDropletOutline0"><g id="evaDropletOutline1"><path id="evaDropletOutline2" fill="currentColor" d="M12 21.1a7.4 7.4 0 0 1-5.28-2.28a7.73 7.73 0 0 1 .1-10.77l4.64-4.65a.94.94 0 0 1 .71-.3a1 1 0 0 1 .71.31l4.56 4.72a7.73 7.73 0 0 1-.09 10.77A7.33 7.33 0 0 1 12 21.1Zm.13-15.57L8.24 9.45a5.74 5.74 0 0 0-.07 8A5.43 5.43 0 0 0 12 19.1a5.42 5.42 0 0 0 3.9-1.61a5.72 5.72 0 0 0 .06-8Z"/></g></g>`
-	editFillPath                      = `<g id="evaEditFill0"><g id="evaEditFill1"><path id="evaEditFill2" fill="currentColor" d="M19.4 7.34L16.66 4.6A2 2 0 0 0 14 4.53l-9 9a2 2 0 0 0-.57 1.21L4 18.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 20h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71ZM16 10.68L13.32 8l1.95-2L18 8.73Z"/></g></g>`
-	editOutlinePath                   = `<g id="evaEditOutline0"><g id="evaEditOutline1"><path id="evaEditOutline2" fill="currentColor" d="M19.4 7.34L16.66 4.6A2 2 0 0 0 14 4.53l-9 9a2 2 0 0 0-.57 1.21L4 18.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 20h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71ZM9.08 17.62l-3 .28l.27-3L12 9.32l2.7 2.7ZM16 10.68L13.32 8l1.95-2L18 8.73Z"/></g></g>`
-	editTwoFillPath                   = `<g id="evaEdit2Fill0"><g id="evaEdit2Fill1"><path id="evaEdit2Fill2" fill="currentColor" d="M19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2ZM5 18h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71L16.66 2.6A2 2 0 0 0 14 2.53l-9 9a2 2 0 0 0-.57 1.21L4 16.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 18ZM15.27 4L18 6.73l-2 1.95L13.32 6Z"/></g></g>`
-	editTwoOutlinePath                = `<g id="evaEdit2Outline0"><g id="evaEdit2Outline1"><path id="evaEdit2Outline2" fill="currentColor" d="M19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2ZM5 18h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71L16.66 2.6A2 2 0 0 0 14 2.53l-9 9a2 2 0 0 0-.57 1.21L4 16.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 18ZM15.27 4L18 6.73l-2 1.95L13.32 6Zm-8.9 8.91L12 7.32l2.7 2.7l-5.6 5.6l-3 .28Z"/></g></g>`
-	emailFillPath                     = `<g id="evaEmailFill0"><g id="evaEmailFill1"><path id="evaEmailFill2" fill="currentColor" d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm0 2l-6.5 4.47a1 1 0 0 1-1 0L5 6Z"/></g></g>`
-	emailOutlinePath                  = `<g id="evaEmailOutline0"><g id="evaEmailOutline1"><path id="evaEmailOutline2" fill="currentColor" d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-.67 2L12 10.75L5.67 6ZM19 18H5a1 1 0 0 1-1-1V7.25l7.4 5.55a1 1 0 0 0 .6.2a1 1 0 0 0 .6-.2L20 7.25V17a1 1 0 0 1-1 1Z"/></g></g>`
-	expandFillPath                    = `<g id="evaExpandFill0"><g id="evaExpandFill1"><path id="evaExpandFill2" fill="currentColor" d="M20 5a1 1 0 0 0-1-1h-5a1 1 0 0 0 0 2h2.57l-3.28 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L18 7.42V10a1 1 0 0 0 1 1a1 1 0 0 0 1-1Zm-9.29 8.29a1 1 0 0 0-1.42 0L6 16.57V14a1 1 0 0 0-1-1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 0-2H7.42l3.29-3.29a1 1 0 0 0 0-1.42Z"/></g></g>`
-	expandOutlinePath                 = `<g id="evaExpandOutline0"><g id="evaExpandOutline1"><path id="evaExpandOutline2" fill="currentColor" d="M20 5a1 1 0 0 0-1-1h-5a1 1 0 0 0 0 2h2.57l-3.28 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L18 7.42V10a1 1 0 0 0 1 1a1 1 0 0 0 1-1Zm-9.29 8.29a1 1 0 0 0-1.42 0L6 16.57V14a1 1 0 0 0-1-1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 0-2H7.42l3.29-3.29a1 1 0 0 0 0-1.42Z"/></g></g>`
-	externalLinkFillPath              = `<g id="evaExternalLinkFill0"><g id="evaExternalLinkFill1"><g id="evaExternalLinkFill2" fill="currentColor"><path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1Z"/><path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2Z"/></g></g></g>`
-	externalLinkOutlinePath           = `<g id="evaExternalLinkOutline0"><g id="evaExternalLinkOutline1"><g id="evaExternalLinkOutline2" fill="currentColor"><path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1Z"/><path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2Z"/></g></g></g>`
-	eyeFillPath                       = `<g id="evaEyeFill0"><g id="evaEyeFill1"><g id="evaEyeFill2" fill="currentColor"><circle cx="12" cy="12" r="1.5"/><path d="M21.87 11.5c-.64-1.11-4.16-6.68-10.14-6.5c-5.53.14-8.73 5-9.6 6.5a1 1 0 0 0 0 1c.63 1.09 4 6.5 9.89 6.5h.25c5.53-.14 8.74-5 9.6-6.5a1 1 0 0 0 0-1Zm-9.87 4a3.5 3.5 0 1 1 3.5-3.5a3.5 3.5 0 0 1-3.5 3.5Z"/></g></g></g>`
-	eyeOffFillPath                    = `<g id="evaEyeOffFill0"><g id="evaEyeOffFill1"><g id="evaEyeOffFill2" fill="currentColor"><circle cx="12" cy="12" r="1.5"/><path d="M15.29 18.12L14 16.78l-.07-.07l-1.27-1.27a4.07 4.07 0 0 1-.61.06A3.5 3.5 0 0 1 8.5 12a4.07 4.07 0 0 1 .06-.61l-2-2L5 7.87a15.89 15.89 0 0 0-2.87 3.63a1 1 0 0 0 0 1c.63 1.09 4 6.5 9.89 6.5h.25a9.48 9.48 0 0 0 3.23-.67ZM8.59 5.76l2.8 2.8A4.07 4.07 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a4.07 4.07 0 0 1-.06.61l2.68 2.68l.84.84a15.89 15.89 0 0 0 2.91-3.63a1 1 0 0 0 0-1c-.64-1.11-4.16-6.68-10.14-6.5a9.48 9.48 0 0 0-3.23.67Zm12.12 13.53L19.41 18l-2-2l-9.52-9.53L6.42 5L4.71 3.29a1 1 0 0 0-1.42 1.42L5.53 7l1.75 1.7l7.31 7.3l.07.07L16 17.41l.59.59l2.7 2.71a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g></g>`
-	eyeOffOutlinePath                 = `<g id="evaEyeOffOutline0"><g id="evaEyeOffOutline1"><g id="evaEyeOffOutline2" fill="currentColor"><path d="M4.71 3.29a1 1 0 0 0-1.42 1.42l5.63 5.63a3.5 3.5 0 0 0 4.74 4.74l5.63 5.63a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM12 13.5a1.5 1.5 0 0 1-1.5-1.5s0-.05 0-.07l1.56 1.56Z"/><path d="M12.22 17c-4.3.1-7.12-3.59-8-5a13.7 13.7 0 0 1 2.24-2.72L5 7.87a15.89 15.89 0 0 0-2.87 3.63a1 1 0 0 0 0 1c.63 1.09 4 6.5 9.89 6.5h.25a9.48 9.48 0 0 0 3.23-.67l-1.58-1.58a7.74 7.74 0 0 1-1.7.25Zm9.65-5.5c-.64-1.11-4.17-6.68-10.14-6.5a9.48 9.48 0 0 0-3.23.67l1.58 1.58a7.74 7.74 0 0 1 1.7-.25c4.29-.11 7.11 3.59 8 5a13.7 13.7 0 0 1-2.29 2.72L19 16.13a15.89 15.89 0 0 0 2.91-3.63a1 1 0 0 0-.04-1Z"/></g></g></g>`
-	eyeOffTwoFillPath                 = `<g id="evaEyeOff2Fill0"><g id="evaEyeOff2Fill1"><path id="evaEyeOff2Fill2" fill="currentColor" d="M17.81 13.39A8.93 8.93 0 0 0 21 7.62a1 1 0 1 0-2-.24a7.07 7.07 0 0 1-14 0a1 1 0 1 0-2 .24a8.93 8.93 0 0 0 3.18 5.77l-2.3 2.32a1 1 0 0 0 1.41 1.41l2.61-2.6a9.06 9.06 0 0 0 3.1.92V19a1 1 0 0 0 2 0v-3.56a9.06 9.06 0 0 0 3.1-.92l2.61 2.6a1 1 0 0 0 1.41-1.41Z"/></g></g>`
-	eyeOffTwoOutlinePath              = `<g id="evaEyeOff2Outline0"><g id="evaEyeOff2Outline1"><path id="evaEyeOff2Outline2" fill="currentColor" d="M17.81 13.39A8.93 8.93 0 0 0 21 7.62a1 1 0 1 0-2-.24a7.07 7.07 0 0 1-14 0a1 1 0 1 0-2 .24a8.93 8.93 0 0 0 3.18 5.77l-2.3 2.32a1 1 0 0 0 1.41 1.41l2.61-2.6a9.06 9.06 0 0 0 3.1.92V19a1 1 0 0 0 2 0v-3.56a9.06 9.06 0 0 0 3.1-.92l2.61 2.6a1 1 0 0 0 1.41-1.41Z"/></g></g>`
-	eyeOutlinePath                    = `<g id="evaEyeOutline0"><g id="evaEyeOutline1"><g id="evaEyeOutline2" fill="currentColor"><path d="M21.87 11.5c-.64-1.11-4.16-6.68-10.14-6.5c-5.53.14-8.73 5-9.6 6.5a1 1 0 0 0 0 1c.63 1.09 4 6.5 9.89 6.5h.25c5.53-.14 8.74-5 9.6-6.5a1 1 0 0 0 0-1ZM12.22 17c-4.31.1-7.12-3.59-8-5c1-1.61 3.61-4.9 7.61-5c4.29-.11 7.11 3.59 8 5c-1.03 1.61-3.61 4.9-7.61 5Z"/><path d="M12 8.5a3.5 3.5 0 1 0 3.5 3.5A3.5 3.5 0 0 0 12 8.5Zm0 5a1.5 1.5 0 1 1 1.5-1.5a1.5 1.5 0 0 1-1.5 1.5Z"/></g></g></g>`
-	facebookFillPath                  = `<g id="evaFacebookFill0"><g id="evaFacebookFill1"><path id="evaFacebookFill2" fill="currentColor" d="M17 3.5a.5.5 0 0 0-.5-.5H14a4.77 4.77 0 0 0-5 4.5v2.7H6.5a.5.5 0 0 0-.5.5v2.6a.5.5 0 0 0 .5.5H9v6.7a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-6.7h2.62a.5.5 0 0 0 .49-.37l.72-2.6a.5.5 0 0 0-.48-.63H13V7.5a1 1 0 0 1 1-.9h2.5a.5.5 0 0 0 .5-.5Z"/></g></g>`
-	facebookOutlinePath               = `<g id="evaFacebookOutline0"><g id="evaFacebookOutline1"><path id="evaFacebookOutline2" fill="currentColor" d="M13 22H9a1 1 0 0 1-1-1v-6.2H6a1 1 0 0 1-1-1v-3.6a1 1 0 0 1 1-1h2V7.5A5.77 5.77 0 0 1 14 2h3a1 1 0 0 1 1 1v3.6a1 1 0 0 1-1 1h-3v1.6h3a1 1 0 0 1 .8.39a1 1 0 0 1 .16.88l-1 3.6a1 1 0 0 1-1 .73H14V21a1 1 0 0 1-1 1Zm-3-2h2v-6.2a1 1 0 0 1 1-1h2.24l.44-1.6H13a1 1 0 0 1-1-1V7.5a2 2 0 0 1 2-1.9h2V4h-2a3.78 3.78 0 0 0-4 3.5v2.7a1 1 0 0 1-1 1H7v1.6h2a1 1 0 0 1 1 1Z"/></g></g>`
-	fileAddFillPath                   = `<g id="evaFileAddFill0"><g id="evaFileAddFill1"><path id="evaFileAddFill2" fill="currentColor" d="m19.74 7.33l-4.44-5a1 1 0 0 0-.74-.33h-8A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V8a1 1 0 0 0-.26-.67ZM14 15h-1v1a1 1 0 0 1-2 0v-1h-1a1 1 0 0 1 0-2h1v-1a1 1 0 0 1 2 0v1h1a1 1 0 0 1 0 2Zm.71-7a.79.79 0 0 1-.71-.85V4l3.74 4Z"/></g></g>`
-	fileAddOutlinePath                = `<g id="evaFileAddOutline0"><g id="evaFileAddOutline1"><g id="evaFileAddOutline2" fill="currentColor"><path d="m19.74 8.33l-5.44-6a1 1 0 0 0-.74-.33h-7A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V9a1 1 0 0 0-.26-.67ZM14 5l2.74 3h-2a.79.79 0 0 1-.74-.85Zm3.44 15H6.56a.53.53 0 0 1-.56-.5v-15a.53.53 0 0 1 .56-.5H12v3.15A2.79 2.79 0 0 0 14.71 10H18v9.5a.53.53 0 0 1-.56.5Z"/><path d="M14 13h-1v-1a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0v-1h1a1 1 0 0 0 0-2Z"/></g></g></g>`
-	fileFillPath                      = `<g id="evaFileFill0"><g id="evaFileFill1"><path id="evaFileFill2" fill="currentColor" d="m19.74 7.33l-4.44-5a1 1 0 0 0-.74-.33h-8A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V8a1 1 0 0 0-.26-.67ZM14 4l3.74 4h-3a.79.79 0 0 1-.74-.85Z"/></g></g>`
-	fileOutlinePath                   = `<g id="evaFileOutline0"><g id="evaFileOutline1"><path id="evaFileOutline2" fill="currentColor" d="m19.74 8.33l-5.44-6a1 1 0 0 0-.74-.33h-7A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V9a1 1 0 0 0-.26-.67ZM17.65 9h-3.94a.79.79 0 0 1-.71-.85V4h.11Zm-.21 11H6.56a.53.53 0 0 1-.56-.5v-15a.53.53 0 0 1 .56-.5H11v4.15A2.79 2.79 0 0 0 13.71 11H18v8.5a.53.53 0 0 1-.56.5Z"/></g></g>`
-	fileRemoveFillPath                = `<g id="evaFileRemoveFill0"><g id="evaFileRemoveFill1"><path id="evaFileRemoveFill2" fill="currentColor" d="m19.74 7.33l-4.44-5a1 1 0 0 0-.74-.33h-8A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V8a1 1 0 0 0-.26-.67ZM14 15h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2Zm.71-7a.79.79 0 0 1-.71-.85V4l3.74 4Z"/></g></g>`
-	fileRemoveOutlinePath             = `<g id="evaFileRemoveOutline0"><g id="evaFileRemoveOutline1"><g id="evaFileRemoveOutline2" fill="currentColor"><path d="m19.74 8.33l-5.44-6a1 1 0 0 0-.74-.33h-7A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V9a1 1 0 0 0-.26-.67ZM14 5l2.74 3h-2a.79.79 0 0 1-.74-.85Zm3.44 15H6.56a.53.53 0 0 1-.56-.5v-15a.53.53 0 0 1 .56-.5H12v3.15A2.79 2.79 0 0 0 14.71 10H18v9.5a.53.53 0 0 1-.56.5Z"/><path d="M14 13h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Z"/></g></g></g>`
-	fileTextFillPath                  = `<g id="evaFileTextFill0"><g id="evaFileTextFill1"><path id="evaFileTextFill2" fill="currentColor" d="m19.74 7.33l-4.44-5a1 1 0 0 0-.74-.33h-8A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V8a1 1 0 0 0-.26-.67ZM9 12h3a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2Zm6 6H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2Zm-.29-10a.79.79 0 0 1-.71-.85V4l3.74 4Z"/></g></g>`
-	fileTextOutlinePath               = `<g id="evaFileTextOutline0"><g id="evaFileTextOutline1"><g id="evaFileTextOutline2" fill="currentColor"><path d="M15 16H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2Zm-6-2h3a1 1 0 0 0 0-2H9a1 1 0 0 0 0 2Z"/><path d="m19.74 8.33l-5.44-6a1 1 0 0 0-.74-.33h-7A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V9a1 1 0 0 0-.26-.67ZM14 5l2.74 3h-2a.79.79 0 0 1-.74-.85Zm3.44 15H6.56a.53.53 0 0 1-.56-.5v-15a.53.53 0 0 1 .56-.5H12v3.15A2.79 2.79 0 0 0 14.71 10H18v9.5a.53.53 0 0 1-.56.5Z"/></g></g></g>`
-	filmFillPath                      = `<g id="evaFilmFill0"><g id="evaFilmFill1"><path id="evaFilmFill2" fill="currentColor" d="M18.26 3H5.74A2.74 2.74 0 0 0 3 5.74v12.52A2.74 2.74 0 0 0 5.74 21h12.52A2.74 2.74 0 0 0 21 18.26V5.74A2.74 2.74 0 0 0 18.26 3ZM7 11H5V9h2Zm-2 2h2v2H5Zm14-2h-2V9h2Zm-2 2h2v2h-2Zm2-7.26V7h-2V5h1.26a.74.74 0 0 1 .74.74ZM5.74 5H7v2H5V5.74A.74.74 0 0 1 5.74 5ZM5 18.26V17h2v2H5.74a.74.74 0 0 1-.74-.74Zm14 0a.74.74 0 0 1-.74.74H17v-2h2Z"/></g></g>`
-	filmOutlinePath                   = `<g id="evaFilmOutline0"><g id="evaFilmOutline1"><path id="evaFilmOutline2" fill="currentColor" d="M18.26 3H5.74A2.74 2.74 0 0 0 3 5.74v12.52A2.74 2.74 0 0 0 5.74 21h12.52A2.74 2.74 0 0 0 21 18.26V5.74A2.74 2.74 0 0 0 18.26 3ZM7 11H5V9h2Zm-2 2h2v2H5Zm4-8h6v14H9Zm10 6h-2V9h2Zm-2 2h2v2h-2Zm2-7.26V7h-2V5h1.26a.74.74 0 0 1 .74.74ZM5.74 5H7v2H5V5.74A.74.74 0 0 1 5.74 5ZM5 18.26V17h2v2H5.74a.74.74 0 0 1-.74-.74Zm14 0a.74.74 0 0 1-.74.74H17v-2h2Z"/></g></g>`
-	flagFillPath                      = `<g id="evaFlagFill0"><g id="evaFlagFill1"><path id="evaFlagFill2" fill="currentColor" d="M19.27 4.68a1.79 1.79 0 0 0-1.6-.25a7.53 7.53 0 0 1-2.17.28a8.54 8.54 0 0 1-3.13-.78A10.15 10.15 0 0 0 8.5 3c-2.89 0-4 1-4.2 1.14a1 1 0 0 0-.3.72V20a1 1 0 0 0 2 0v-4.3a6.28 6.28 0 0 1 2.5-.41a8.54 8.54 0 0 1 3.13.78a10.15 10.15 0 0 0 3.87.93a7.66 7.66 0 0 0 3.5-.7a1.74 1.74 0 0 0 1-1.55V6.11a1.77 1.77 0 0 0-.73-1.43Z"/></g></g>`
-	flagOutlinePath                   = `<g id="evaFlagOutline0"><g id="evaFlagOutline1"><path id="evaFlagOutline2" fill="currentColor" d="M19.27 4.68a1.79 1.79 0 0 0-1.6-.25a7.53 7.53 0 0 1-2.17.28a8.54 8.54 0 0 1-3.13-.78A10.15 10.15 0 0 0 8.5 3c-2.89 0-4 1-4.2 1.14a1 1 0 0 0-.3.72V20a1 1 0 0 0 2 0v-4.3a6.28 6.28 0 0 1 2.5-.41a8.54 8.54 0 0 1 3.13.78a10.15 10.15 0 0 0 3.87.93a7.66 7.66 0 0 0 3.5-.7a1.74 1.74 0 0 0 1-1.55V6.11a1.77 1.77 0 0 0-.73-1.43ZM18 14.59a6.32 6.32 0 0 1-2.5.41a8.36 8.36 0 0 1-3.13-.79a10.34 10.34 0 0 0-3.87-.92a9.51 9.51 0 0 0-2.5.29V5.42A6.13 6.13 0 0 1 8.5 5a8.36 8.36 0 0 1 3.13.79a10.34 10.34 0 0 0 3.87.92a9.41 9.41 0 0 0 2.5-.3Z"/></g></g>`
-	flashFillPath                     = `<g id="evaFlashFill0"><g id="evaFlashFill1"><path id="evaFlashFill2" fill="currentColor" d="M11.11 23a1 1 0 0 1-.34-.06a1 1 0 0 1-.65-1.05l.77-7.09H5a1 1 0 0 1-.83-1.56l7.89-11.8a1 1 0 0 1 1.17-.38a1 1 0 0 1 .65 1l-.77 7.14H19a1 1 0 0 1 .83 1.56l-7.89 11.8a1 1 0 0 1-.83.44Z"/></g></g>`
-	flashOffFillPath                  = `<g id="evaFlashOffFill0"><g id="evaFlashOffFill1"><path id="evaFlashOffFill2" fill="currentColor" d="m17.33 14.5l2.5-3.74A1 1 0 0 0 19 9.2h-5.89l.77-7.09a1 1 0 0 0-.65-1a1 1 0 0 0-1.17.38L8.94 6.11Zm-10.66-5l-2.5 3.74A1 1 0 0 0 5 14.8h5.89l-.77 7.09a1 1 0 0 0 .65 1.05a1 1 0 0 0 .34.06a1 1 0 0 0 .83-.44l3.12-4.67Zm14.04 9.79l-16-16a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g>`
-	flashOffOutlinePath               = `<g id="evaFlashOffOutline0"><g id="evaFlashOffOutline1"><path id="evaFlashOffOutline2" fill="currentColor" d="m20.71 19.29l-16-16a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Zm-8.17-1.23l.27-2.42L10 12.8H6.87l1.24-1.86L6.67 9.5l-2.5 3.74A1 1 0 0 0 5 14.8h5.89l-.77 7.09a1 1 0 0 0 .65 1.05a1 1 0 0 0 .34.06a1 1 0 0 0 .83-.44l3.12-4.67l-1.44-1.44ZM11.46 5.94l-.27 2.42L14 11.2h3.1l-1.24 1.86l1.44 1.44l2.5-3.74A1 1 0 0 0 19 9.2h-5.89l.77-7.09a1 1 0 0 0-.65-1a1 1 0 0 0-1.17.38L8.94 6.11l1.44 1.44Z"/></g></g>`
-	flashOutlinePath                  = `<g id="evaFlashOutline0"><g id="evaFlashOutline1"><path id="evaFlashOutline2" fill="currentColor" d="M11.11 23a1 1 0 0 1-.34-.06a1 1 0 0 1-.65-1.05l.77-7.09H5a1 1 0 0 1-.83-1.56l7.89-11.8a1 1 0 0 1 1.17-.38a1 1 0 0 1 .65 1l-.77 7.14H19a1 1 0 0 1 .83 1.56l-7.89 11.8a1 1 0 0 1-.83.44ZM6.87 12.8H12a1 1 0 0 1 .74.33a1 1 0 0 1 .25.78l-.45 4.15l4.59-6.86H12a1 1 0 0 1-1-1.11l.45-4.15Z"/></g></g>`
-	flipFillPath                      = `<g id="evaFlipFill0"><g id="evaFlipFill1"><path id="evaFlipFill2" fill="currentColor" d="M5 6.09v12l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3a1 1 0 0 0 1.42 0l3-3a1 1 0 0 0 0-1.42a1 1 0 0 0-1.42 0L7 18.09v-12A1.56 1.56 0 0 1 8.53 4.5H11a1 1 0 0 0 0-2H8.53A3.56 3.56 0 0 0 5 6.09Zm9.29-.3a1 1 0 0 0 1.42 1.42L17 5.91v12a1.56 1.56 0 0 1-1.53 1.59H13a1 1 0 0 0 0 2h2.47A3.56 3.56 0 0 0 19 17.91v-12l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42l-3-3a1 1 0 0 0-1.42 0Z"/></g></g>`
-	flipOutlinePath                   = `<g id="evaFlipOutline0"><g id="evaFlipOutline1"><path id="evaFlipOutline2" fill="currentColor" d="M5 6.09v12l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3a1 1 0 0 0 1.42 0l3-3a1 1 0 0 0 0-1.42a1 1 0 0 0-1.42 0L7 18.09v-12A1.56 1.56 0 0 1 8.53 4.5H11a1 1 0 0 0 0-2H8.53A3.56 3.56 0 0 0 5 6.09Zm9.29-.3a1 1 0 0 0 1.42 1.42L17 5.91v12a1.56 1.56 0 0 1-1.53 1.59H13a1 1 0 0 0 0 2h2.47A3.56 3.56 0 0 0 19 17.91v-12l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42l-3-3a1 1 0 0 0-1.42 0Z"/></g></g>`
-	flipTwoFillPath                   = `<g id="evaFlip2Fill0"><g id="evaFlip2Fill1"><path id="evaFlip2Fill2" fill="currentColor" d="M6.09 19h12l-1.3 1.29a1 1 0 0 0 1.42 1.42l3-3a1 1 0 0 0 0-1.42l-3-3a1 1 0 0 0-1.42 0a1 1 0 0 0 0 1.42l1.3 1.29h-12a1.56 1.56 0 0 1-1.59-1.53V13a1 1 0 0 0-2 0v2.47A3.56 3.56 0 0 0 6.09 19Zm-.3-9.29a1 1 0 1 0 1.42-1.42L5.91 7h12a1.56 1.56 0 0 1 1.59 1.53V11a1 1 0 0 0 2 0V8.53A3.56 3.56 0 0 0 17.91 5h-12l1.3-1.29a1 1 0 0 0 0-1.42a1 1 0 0 0-1.42 0l-3 3a1 1 0 0 0 0 1.42Z"/></g></g>`
-	flipTwoOutlinePath                = `<g id="evaFlip2Outline0"><g id="evaFlip2Outline1"><path id="evaFlip2Outline2" fill="currentColor" d="M6.09 19h12l-1.3 1.29a1 1 0 0 0 1.42 1.42l3-3a1 1 0 0 0 0-1.42l-3-3a1 1 0 0 0-1.42 0a1 1 0 0 0 0 1.42l1.3 1.29h-12a1.56 1.56 0 0 1-1.59-1.53V13a1 1 0 0 0-2 0v2.47A3.56 3.56 0 0 0 6.09 19Zm-.3-9.29a1 1 0 1 0 1.42-1.42L5.91 7h12a1.56 1.56 0 0 1 1.59 1.53V11a1 1 0 0 0 2 0V8.53A3.56 3.56 0 0 0 17.91 5h-12l1.3-1.29a1 1 0 0 0 0-1.42a1 1 0 0 0-1.42 0l-3 3a1 1 0 0 0 0 1.42Z"/></g></g>`
-	folderAddFillPath                 = `<g id="evaFolderAddFill0"><g id="evaFolderAddFill1"><path id="evaFolderAddFill2" fill="currentColor" d="M19.5 7.05h-7L9.87 3.87a1 1 0 0 0-.77-.37H4.5A2.47 2.47 0 0 0 2 5.93v12.14a2.47 2.47 0 0 0 2.5 2.43h15a2.47 2.47 0 0 0 2.5-2.43V9.48a2.47 2.47 0 0 0-2.5-2.43ZM14 15h-1v1a1 1 0 0 1-2 0v-1h-1a1 1 0 0 1 0-2h1v-1a1 1 0 0 1 2 0v1h1a1 1 0 0 1 0 2Z"/></g></g>`
-	folderAddOutlinePath              = `<g id="evaFolderAddOutline0"><g id="evaFolderAddOutline1"><g id="evaFolderAddOutline2" fill="currentColor"><path d="M14 13h-1v-1a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0v-1h1a1 1 0 0 0 0-2Z"/><path d="M19.5 7.05h-7L9.87 3.87a1 1 0 0 0-.77-.37H4.5A2.47 2.47 0 0 0 2 5.93v12.14a2.47 2.47 0 0 0 2.5 2.43h15a2.47 2.47 0 0 0 2.5-2.43V9.48a2.47 2.47 0 0 0-2.5-2.43Zm.5 11a.46.46 0 0 1-.5.43h-15a.46.46 0 0 1-.5-.43V5.93a.46.46 0 0 1 .5-.43h4.13l2.6 3.18a1 1 0 0 0 .77.37h7.5a.46.46 0 0 1 .5.43Z"/></g></g></g>`
-	folderFillPath                    = `<g id="evaFolderFill0"><g id="evaFolderFill1"><path id="evaFolderFill2" fill="currentColor" d="M19.5 20.5h-15A2.47 2.47 0 0 1 2 18.07V5.93A2.47 2.47 0 0 1 4.5 3.5h4.6a1 1 0 0 1 .77.37l2.6 3.18h7A2.47 2.47 0 0 1 22 9.48v8.59a2.47 2.47 0 0 1-2.5 2.43Z"/></g></g>`
-	folderOutlinePath                 = `<g id="evaFolderOutline0"><g id="evaFolderOutline1"><path id="evaFolderOutline2" fill="currentColor" d="M19.5 20.5h-15A2.47 2.47 0 0 1 2 18.07V5.93A2.47 2.47 0 0 1 4.5 3.5h4.6a1 1 0 0 1 .77.37l2.6 3.18h7A2.47 2.47 0 0 1 22 9.48v8.59a2.47 2.47 0 0 1-2.5 2.43ZM4 13.76v4.31a.46.46 0 0 0 .5.43h15a.46.46 0 0 0 .5-.43V9.48a.46.46 0 0 0-.5-.43H12a1 1 0 0 1-.77-.37L8.63 5.5H4.5a.46.46 0 0 0-.5.43Z"/></g></g>`
-	folderRemoveFillPath              = `<g id="evaFolderRemoveFill0"><g id="evaFolderRemoveFill1"><path id="evaFolderRemoveFill2" fill="currentColor" d="M19.5 7.05h-7L9.87 3.87a1 1 0 0 0-.77-.37H4.5A2.47 2.47 0 0 0 2 5.93v12.14a2.47 2.47 0 0 0 2.5 2.43h15a2.47 2.47 0 0 0 2.5-2.43V9.48a2.47 2.47 0 0 0-2.5-2.43ZM14 15h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2Z"/></g></g>`
-	folderRemoveOutlinePath           = `<g id="evaFolderRemoveOutline0"><g id="evaFolderRemoveOutline1"><g id="evaFolderRemoveOutline2" fill="currentColor"><path d="M14 13h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Z"/><path d="M19.5 7.05h-7L9.87 3.87a1 1 0 0 0-.77-.37H4.5A2.47 2.47 0 0 0 2 5.93v12.14a2.47 2.47 0 0 0 2.5 2.43h15a2.47 2.47 0 0 0 2.5-2.43V9.48a2.47 2.47 0 0 0-2.5-2.43Zm.5 11a.46.46 0 0 1-.5.43h-15a.46.46 0 0 1-.5-.43V5.93a.46.46 0 0 1 .5-.43h4.13l2.6 3.18a1 1 0 0 0 .77.37h7.5a.46.46 0 0 1 .5.43Z"/></g></g></g>`
-	funnelFillPath                    = `<g id="evaFunnelFill0"><g id="evaFunnelFill1"><path id="evaFunnelFill2" fill="currentColor" d="M13.9 22a1 1 0 0 1-.6-.2l-4-3.05a1 1 0 0 1-.39-.8v-3.27l-4.8-9.22A1 1 0 0 1 5 4h14a1 1 0 0 1 .86.49a1 1 0 0 1 0 1l-5 9.21V21a1 1 0 0 1-.55.9a1 1 0 0 1-.41.1Z"/></g></g>`
-	funnelOutlinePath                 = `<g id="evaFunnelOutline0"><g id="evaFunnelOutline1"><path id="evaFunnelOutline2" fill="currentColor" d="M13.9 22a1 1 0 0 1-.6-.2l-4-3.05a1 1 0 0 1-.39-.8v-3.27l-4.8-9.22A1 1 0 0 1 5 4h14a1 1 0 0 1 .86.49a1 1 0 0 1 0 1l-5 9.21V21a1 1 0 0 1-.55.9a1 1 0 0 1-.41.1Zm-3-4.54l2 1.53v-4.55A1 1 0 0 1 13 14l4.3-8H6.64l4.13 8a1 1 0 0 1 .11.46Z"/></g></g>`
-	giftFillPath                      = `<g id="evaGiftFill0"><g id="evaGiftFill1"><path id="evaGiftFill2" fill="currentColor" d="M4.64 15.27v4.82a.92.92 0 0 0 .92.91h5.62v-5.73ZM12.82 21h5.62a.92.92 0 0 0 .92-.91v-4.82h-6.54ZM20.1 7.09h-1.84a2.82 2.82 0 0 0 .29-1.23A2.87 2.87 0 0 0 15.68 3A4.21 4.21 0 0 0 12 5.57A4.21 4.21 0 0 0 8.32 3a2.87 2.87 0 0 0-2.87 2.86a2.82 2.82 0 0 0 .29 1.23H3.9c-.5 0-.9.59-.9 1.31v3.93c0 .72.4 1.31.9 1.31h7.28V7.09h1.64v6.55h7.28c.5 0 .9-.59.9-1.31V8.4c0-.72-.4-1.31-.9-1.31Zm-11.78 0a1.23 1.23 0 1 1 0-2.45c1.4 0 2.19 1.44 2.58 2.45Zm7.36 0H13.1c.39-1 1.18-2.45 2.58-2.45a1.23 1.23 0 1 1 0 2.45Z"/></g></g>`
-	giftOutlinePath                   = `<g id="evaGiftOutline0"><g id="evaGiftOutline1"><path id="evaGiftOutline2" fill="currentColor" d="M19.2 7h-.39A3 3 0 0 0 19 6a3.08 3.08 0 0 0-3.14-3A4.46 4.46 0 0 0 12 5.4A4.46 4.46 0 0 0 8.14 3A3.08 3.08 0 0 0 5 6a3 3 0 0 0 .19 1H4.8A2 2 0 0 0 3 9.2v3.6A2.08 2.08 0 0 0 4.5 15v4.37A1.75 1.75 0 0 0 6.31 21h11.38a1.75 1.75 0 0 0 1.81-1.67V15a2.08 2.08 0 0 0 1.5-2.2V9.2A2 2 0 0 0 19.2 7ZM19 9.2v3.6a.56.56 0 0 1 0 .2h-6V9h6a.56.56 0 0 1 0 .2ZM15.86 5A1.08 1.08 0 0 1 17 6a1.08 1.08 0 0 1-1.14 1H13.4a2.93 2.93 0 0 1 2.46-2ZM7 6a1.08 1.08 0 0 1 1.14-1a2.93 2.93 0 0 1 2.45 2H8.14A1.08 1.08 0 0 1 7 6ZM5 9.2A.56.56 0 0 1 5 9h6v4H5a.56.56 0 0 1 0-.2ZM6.5 15H11v4H6.5Zm6.5 4v-4h4.5v4Z"/></g></g>`
-	githubFillPath                    = `<g id="evaGithubFill0"><g id="evaGithubFill1"><g id="evaGithubFill2"><g id="evaGithubFill3"><g id="evaGithubFill4"><g id="evaGithubFill5"><path id="evaGithubFill6" fill="currentColor" d="M12 1A10.89 10.89 0 0 0 1 11.77A10.79 10.79 0 0 0 8.52 22c.55.1.75-.23.75-.52v-1.83c-3.06.65-3.71-1.44-3.71-1.44a2.86 2.86 0 0 0-1.22-1.58c-1-.66.08-.65.08-.65a2.31 2.31 0 0 1 1.68 1.11a2.37 2.37 0 0 0 3.2.89a2.33 2.33 0 0 1 .7-1.44c-2.44-.27-5-1.19-5-5.32a4.15 4.15 0 0 1 1.11-2.91a3.78 3.78 0 0 1 .11-2.84s.93-.29 3 1.1a10.68 10.68 0 0 1 5.5 0c2.1-1.39 3-1.1 3-1.1a3.78 3.78 0 0 1 .11 2.84A4.15 4.15 0 0 1 19 11.2c0 4.14-2.58 5.05-5 5.32a2.5 2.5 0 0 1 .75 2v2.95c0 .35.2.63.75.52A10.8 10.8 0 0 0 23 11.77A10.89 10.89 0 0 0 12 1"/></g></g></g></g></g></g>`
-	githubOutlinePath                 = `<g id="evaGithubOutline0"><path id="evaGithubOutline1" fill="currentColor" d="M16.24 22a1 1 0 0 1-1-1v-2.6a2.15 2.15 0 0 0-.54-1.66a1 1 0 0 1 .61-1.67C17.75 14.78 20 14 20 9.77a4 4 0 0 0-.67-2.22a2.75 2.75 0 0 1-.41-2.06a3.71 3.71 0 0 0 0-1.41a7.65 7.65 0 0 0-2.09 1.09a1 1 0 0 1-.84.15a10.15 10.15 0 0 0-5.52 0a1 1 0 0 1-.84-.15a7.4 7.4 0 0 0-2.11-1.09a3.52 3.52 0 0 0 0 1.41a2.84 2.84 0 0 1-.43 2.08a4.07 4.07 0 0 0-.67 2.23c0 3.89 1.88 4.93 4.7 5.29a1 1 0 0 1 .82.66a1 1 0 0 1-.21 1a2.06 2.06 0 0 0-.55 1.56V21a1 1 0 0 1-2 0v-.57a6 6 0 0 1-5.27-2.09a3.9 3.9 0 0 0-1.16-.88a1 1 0 1 1 .5-1.94a4.93 4.93 0 0 1 2 1.36c1 1 2 1.88 3.9 1.52a3.89 3.89 0 0 1 .23-1.58c-2.06-.52-5-2-5-7a6 6 0 0 1 1-3.33a.85.85 0 0 0 .13-.62a5.69 5.69 0 0 1 .33-3.21a1 1 0 0 1 .63-.57c.34-.1 1.56-.3 3.87 1.2a12.16 12.16 0 0 1 5.69 0c2.31-1.5 3.53-1.31 3.86-1.2a1 1 0 0 1 .63.57a5.71 5.71 0 0 1 .33 3.22a.75.75 0 0 0 .11.57a6 6 0 0 1 1 3.34c0 5.07-2.92 6.54-5 7a4.28 4.28 0 0 1 .22 1.67V21a1 1 0 0 1-.94 1Z"/></g>`
-	globeFillPath                     = `<g id="evaGlobeFill0"><g id="evaGlobeFill1"><path id="evaGlobeFill2" fill="currentColor" d="M22 12A10 10 0 0 0 12 2a10 10 0 0 0 0 20a10 10 0 0 0 10-10Zm-2.07-1H17a12.91 12.91 0 0 0-2.33-6.54A8 8 0 0 1 19.93 11ZM9.08 13H15a11.44 11.44 0 0 1-3 6.61A11 11 0 0 1 9.08 13Zm0-2A11.4 11.4 0 0 1 12 4.4a11.19 11.19 0 0 1 3 6.6Zm.36-6.57A13.18 13.18 0 0 0 7.07 11h-3a8 8 0 0 1 5.37-6.57ZM4.07 13h3a12.86 12.86 0 0 0 2.35 6.56A8 8 0 0 1 4.07 13Zm10.55 6.55A13.14 13.14 0 0 0 17 13h2.95a8 8 0 0 1-5.33 6.55Z"/></g></g>`
-	globeOutlinePath                  = `<g id="evaGlobeOutline0"><g id="evaGlobeOutline1"><path id="evaGlobeOutline2" fill="currentColor" d="M22 12A10 10 0 0 0 12 2a10 10 0 0 0 0 20a10 10 0 0 0 10-10Zm-2.07-1H17a12.91 12.91 0 0 0-2.33-6.54A8 8 0 0 1 19.93 11ZM9.08 13H15a11.44 11.44 0 0 1-3 6.61A11 11 0 0 1 9.08 13Zm0-2A11.4 11.4 0 0 1 12 4.4a11.19 11.19 0 0 1 3 6.6Zm.36-6.57A13.18 13.18 0 0 0 7.07 11h-3a8 8 0 0 1 5.37-6.57ZM4.07 13h3a12.86 12.86 0 0 0 2.35 6.56A8 8 0 0 1 4.07 13Zm10.55 6.55A13.14 13.14 0 0 0 17 13h2.95a8 8 0 0 1-5.33 6.55Z"/></g></g>`
-	globeThreeFillPath                = `<g id="evaGlobe3Fill0"><g id="evaGlobe3Fill1"><path id="evaGlobe3Fill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2ZM5 15.8a8.42 8.42 0 0 0 2 .27a5 5 0 0 0 3.14-1c1.71-1.34 1.71-3.06 1.71-4.44a4.76 4.76 0 0 1 .37-2.34a2.86 2.86 0 0 1 1.12-.91a9.75 9.75 0 0 0 .92-.61a4.55 4.55 0 0 0 1.4-1.87A8 8 0 0 1 19 8.12c-1.43.2-3.46.67-3.86 2.53A7 7 0 0 0 15 12a2.93 2.93 0 0 1-.29 1.47l-.1.17c-.65 1.08-1.38 2.31-.39 4c.12.21.25.41.38.61a2.29 2.29 0 0 1 .52 1.08A7.89 7.89 0 0 1 12 20a8 8 0 0 1-7-4.2Z"/></g></g>`
-	globeTwoFillPath                  = `<g id="evaGlobe2Fill0"><g id="evaGlobe2Fill1"><path id="evaGlobe2Fill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 2a8.19 8.19 0 0 1 1.79.21a2.61 2.61 0 0 1-.78 1c-.22.17-.46.31-.7.46a4.56 4.56 0 0 0-1.85 1.67a6.49 6.49 0 0 0-.62 3.3c0 1.36 0 2.16-.95 2.87c-1.37 1.07-3.46.47-4.76-.07A8.33 8.33 0 0 1 4 12a8 8 0 0 1 8-8Zm4.89 14.32a6.79 6.79 0 0 0-.63-1.14c-.11-.16-.22-.32-.32-.49c-.39-.68-.25-1 .38-2l.1-.17a4.77 4.77 0 0 0 .58-2.43a5.42 5.42 0 0 1 .09-1c.16-.73 1.71-.93 2.67-1a7.94 7.94 0 0 1-2.86 8.28Z"/></g></g>`
-	globeTwoOutlinePath               = `<g id="evaGlobe2Outline0"><g id="evaGlobe2Outline1"><path id="evaGlobe2Outline2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 2a8.19 8.19 0 0 1 1.79.21a2.61 2.61 0 0 1-.78 1c-.22.17-.46.31-.7.46a4.56 4.56 0 0 0-1.85 1.67a6.49 6.49 0 0 0-.62 3.3c0 1.36 0 2.16-.95 2.87c-1.37 1.07-3.46.47-4.76-.07A8.33 8.33 0 0 1 4 12a8 8 0 0 1 8-8ZM5 15.8a8.42 8.42 0 0 0 2 .27a5 5 0 0 0 3.14-1c1.71-1.34 1.71-3.06 1.71-4.44a4.76 4.76 0 0 1 .37-2.34a2.86 2.86 0 0 1 1.12-.91a9.75 9.75 0 0 0 .92-.61a4.55 4.55 0 0 0 1.4-1.87A8 8 0 0 1 19 8.12c-1.43.2-3.46.67-3.86 2.53A7 7 0 0 0 15 12a2.93 2.93 0 0 1-.29 1.47l-.1.17c-.65 1.08-1.38 2.31-.39 4c.12.21.25.41.38.61a2.29 2.29 0 0 1 .52 1.08A7.89 7.89 0 0 1 12 20a8 8 0 0 1-7-4.2Zm11.93 2.52a6.79 6.79 0 0 0-.63-1.14c-.11-.16-.22-.32-.32-.49c-.39-.68-.25-1 .38-2l.1-.17a4.77 4.77 0 0 0 .54-2.43a5.42 5.42 0 0 1 .09-1c.16-.73 1.71-.93 2.67-1a7.94 7.94 0 0 1-2.86 8.28Z"/></g></g>`
-	googleFillPath                    = `<g id="evaGoogleFill0"><g id="evaGoogleFill1"><path id="evaGoogleFill2" fill="currentColor" d="M17.5 14a5.51 5.51 0 0 1-4.5 3.93a6.15 6.15 0 0 1-7-5.45A6 6 0 0 1 12 6a6.12 6.12 0 0 1 2.27.44a.5.5 0 0 0 .64-.21l1.44-2.65a.52.52 0 0 0-.23-.7A10 10 0 0 0 2 12.29A10.12 10.12 0 0 0 11.57 22A10 10 0 0 0 22 12.52v-2a.51.51 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h5"/></g></g>`
-	googleOutlinePath                 = `<g id="evaGoogleOutline0"><g id="evaGoogleOutline1"><path id="evaGoogleOutline2" fill="currentColor" d="M12 22h-.43A10.16 10.16 0 0 1 2 12.29a10 10 0 0 1 14.12-9.41a1.48 1.48 0 0 1 .77.86a1.47 1.47 0 0 1-.1 1.16L15.5 7.28a1.44 1.44 0 0 1-1.83.64A4.5 4.5 0 0 0 8.77 9a4.41 4.41 0 0 0-1.16 3.34a4.36 4.36 0 0 0 1.66 3a4.52 4.52 0 0 0 3.45 1a3.89 3.89 0 0 0 2.63-1.57h-2.9A1.45 1.45 0 0 1 11 13.33v-2.68a1.45 1.45 0 0 1 1.45-1.45h8.1A1.46 1.46 0 0 1 22 10.64v1.88A10 10 0 0 1 12 22Zm0-18a8 8 0 0 0-8 8.24A8.12 8.12 0 0 0 11.65 20A8 8 0 0 0 20 12.42V11.2h-7v1.58h5.31l-.41 1.3a6 6 0 0 1-4.9 4.25A6.58 6.58 0 0 1 8 17a6.33 6.33 0 0 1-.72-9.3A6.52 6.52 0 0 1 14 5.91l.77-1.43A7.9 7.9 0 0 0 12 4Z"/></g></g>`
-	gridFillPath                      = `<g id="evaGridFill0"><g id="evaGridFill1"><path id="evaGridFill2" fill="currentColor" d="M9 3H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM9 13H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Z"/></g></g>`
-	gridOutlinePath                   = `<g id="evaGridOutline0"><g id="evaGridOutline1"><path id="evaGridOutline2" fill="currentColor" d="M9 3H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM5 9V5h4v4Zm14-6h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm-4 6V5h4v4Zm-6 4H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-4 6v-4h4v4Zm14-6h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-4 6v-4h4v4Z"/></g></g>`
-	hardDriveFillPath                 = `<g id="evaHardDriveFill0"><g id="evaHardDriveFill1"><path id="evaHardDriveFill2" fill="currentColor" d="m20.79 11.34l-3.34-6.68A3 3 0 0 0 14.76 3H9.24a3 3 0 0 0-2.69 1.66l-3.34 6.68a2 2 0 0 0-.21.9V18a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-5.76a2 2 0 0 0-.21-.9ZM8 17a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm8 0h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2ZM5.62 11l2.72-5.45a1 1 0 0 1 .9-.55h5.52a1 1 0 0 1 .9.55L18.38 11Z"/></g></g>`
-	hardDriveOutlinePath              = `<g id="evaHardDriveOutline0"><g id="evaHardDriveOutline1"><g id="evaHardDriveOutline2" fill="currentColor"><path d="m20.79 11.34l-3.34-6.68A3 3 0 0 0 14.76 3H9.24a3 3 0 0 0-2.69 1.66l-3.34 6.68a2 2 0 0 0-.21.9V18a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-5.76a2 2 0 0 0-.21-.9ZM8.34 5.55a1 1 0 0 1 .9-.55h5.52a1 1 0 0 1 .9.55L18.38 11H5.62ZM18 19H6a1 1 0 0 1-1-1v-5h14v5a1 1 0 0 1-1 1Z"/><path d="M16 15h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Z"/><circle cx="8" cy="16" r="1"/></g></g></g>`
-	hashFillPath                      = `<g id="evaHashFill0"><g id="evaHashFill1"><path id="evaHashFill2" fill="currentColor" d="M20 14h-4.3l.73-4H20a1 1 0 0 0 0-2h-3.21l.69-3.81A1 1 0 0 0 16.64 3a1 1 0 0 0-1.22.82L14.67 8h-3.88l.69-3.81A1 1 0 0 0 10.64 3a1 1 0 0 0-1.22.82L8.67 8H4a1 1 0 0 0 0 2h4.3l-.73 4H4a1 1 0 0 0 0 2h3.21l-.69 3.81A1 1 0 0 0 7.36 21a1 1 0 0 0 1.22-.82L9.33 16h3.88l-.69 3.81a1 1 0 0 0 .84 1.19a1 1 0 0 0 1.22-.82l.75-4.18H20a1 1 0 0 0 0-2ZM9.7 14l.73-4h3.87l-.73 4Z"/></g></g>`
-	hashOutlinePath                   = `<g id="evaHashOutline0"><g id="evaHashOutline1"><path id="evaHashOutline2" fill="currentColor" d="M20 14h-4.3l.73-4H20a1 1 0 0 0 0-2h-3.21l.69-3.81A1 1 0 0 0 16.64 3a1 1 0 0 0-1.22.82L14.67 8h-3.88l.69-3.81A1 1 0 0 0 10.64 3a1 1 0 0 0-1.22.82L8.67 8H4a1 1 0 0 0 0 2h4.3l-.73 4H4a1 1 0 0 0 0 2h3.21l-.69 3.81A1 1 0 0 0 7.36 21a1 1 0 0 0 1.22-.82L9.33 16h3.88l-.69 3.81a1 1 0 0 0 .84 1.19a1 1 0 0 0 1.22-.82l.75-4.18H20a1 1 0 0 0 0-2ZM9.7 14l.73-4h3.87l-.73 4Z"/></g></g>`
-	headphonesFillPath                = `<g id="evaHeadphonesFill0"><g id="evaHeadphonesFill1"><path id="evaHeadphonesFill2" fill="currentColor" d="M12 2A10.2 10.2 0 0 0 2 12.37V17a4 4 0 1 0 4-4a3.91 3.91 0 0 0-2 .56v-1.19A8.2 8.2 0 0 1 12 4a8.2 8.2 0 0 1 8 8.37v1.19a3.91 3.91 0 0 0-2-.56a4 4 0 1 0 4 4v-4.63A10.2 10.2 0 0 0 12 2Z"/></g></g>`
-	headphonesOutlinePath             = `<g id="evaHeadphonesOutline0"><g id="evaHeadphonesOutline1"><path id="evaHeadphonesOutline2" fill="currentColor" d="M12 2A10.2 10.2 0 0 0 2 12.37V17a4 4 0 1 0 4-4a3.91 3.91 0 0 0-2 .56v-1.19A8.2 8.2 0 0 1 12 4a8.2 8.2 0 0 1 8 8.37v1.19a3.91 3.91 0 0 0-2-.56a4 4 0 1 0 4 4v-4.63A10.2 10.2 0 0 0 12 2ZM6 15a2 2 0 1 1-2 2a2 2 0 0 1 2-2Zm12 4a2 2 0 1 1 2-2a2 2 0 0 1-2 2Z"/></g></g>`
-	heartFillPath                     = `<g id="evaHeartFill0"><g id="evaHeartFill1"><path id="evaHeartFill2" fill="currentColor" d="M12 21a1 1 0 0 1-.71-.29l-7.77-7.78a5.26 5.26 0 0 1 0-7.4a5.24 5.24 0 0 1 7.4 0L12 6.61l1.08-1.08a5.24 5.24 0 0 1 7.4 0a5.26 5.26 0 0 1 0 7.4l-7.77 7.78A1 1 0 0 1 12 21Z"/></g></g>`
-	heartOutlinePath                  = `<g id="evaHeartOutline0"><g id="evaHeartOutline1"><path id="evaHeartOutline2" fill="currentColor" d="M12 21a1 1 0 0 1-.71-.29l-7.77-7.78a5.26 5.26 0 0 1 0-7.4a5.24 5.24 0 0 1 7.4 0L12 6.61l1.08-1.08a5.24 5.24 0 0 1 7.4 0a5.26 5.26 0 0 1 0 7.4l-7.77 7.78A1 1 0 0 1 12 21ZM7.22 6a3.2 3.2 0 0 0-2.28.94a3.24 3.24 0 0 0 0 4.57L12 18.58l7.06-7.07a3.24 3.24 0 0 0 0-4.57a3.32 3.32 0 0 0-4.56 0l-1.79 1.8a1 1 0 0 1-1.42 0L9.5 6.94A3.2 3.2 0 0 0 7.22 6Z"/></g></g>`
-	homeFillPath                      = `<g id="evaHomeFill0"><g id="evaHomeFill1"><g id="evaHomeFill2" fill="currentColor"><path d="M10 14h4v7h-4z"/><path d="M20.42 10.18L12.71 2.3a1 1 0 0 0-1.42 0l-7.71 7.89A2 2 0 0 0 3 11.62V20a2 2 0 0 0 1.89 2H8v-9a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v9h3.11A2 2 0 0 0 21 20v-8.38a2.07 2.07 0 0 0-.58-1.44Z"/></g></g></g>`
-	homeOutlinePath                   = `<g id="evaHomeOutline0"><g id="evaHomeOutline1"><path id="evaHomeOutline2" fill="currentColor" d="M20.42 10.18L12.71 2.3a1 1 0 0 0-1.42 0l-7.71 7.89A2 2 0 0 0 3 11.62V20a2 2 0 0 0 1.89 2h14.22A2 2 0 0 0 21 20v-8.38a2.07 2.07 0 0 0-.58-1.44ZM10 20v-6h4v6Zm9 0h-3v-7a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v7H5v-8.42l7-7.15l7 7.19Z"/></g></g>`
-	imageFillPath                     = `<g id="evaImageFill0"><g id="evaImageFill1"><g id="evaImageFill2" fill="currentColor"><path d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3ZM6 5h12a1 1 0 0 1 1 1v8.36l-3.2-2.73a2.77 2.77 0 0 0-3.52 0L5 17.7V6a1 1 0 0 1 1-1Z"/><circle cx="8" cy="8.5" r="1.5"/></g></g></g>`
-	imageOutlinePath                  = `<g id="evaImageOutline0"><g id="evaImageOutline1"><g id="evaImageOutline2" fill="currentColor"><path d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3ZM6 5h12a1 1 0 0 1 1 1v8.36l-3.2-2.73a2.77 2.77 0 0 0-3.52 0L5 17.7V6a1 1 0 0 1 1-1Zm12 14H6.56l7-5.84a.78.78 0 0 1 .93 0L19 17v1a1 1 0 0 1-1 1Z"/><circle cx="8" cy="8.5" r="1.5"/></g></g></g>`
-	imageTwoFillPath                  = `<g id="evaImage2Fill0"><g id="evaImage2Fill1"><path id="evaImage2Fill2" fill="currentColor" d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3ZM8 7a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 8 7Zm11 10.83A1.09 1.09 0 0 1 18 19H6l7.57-6.82a.69.69 0 0 1 .93 0l4.5 4.48Z"/></g></g>`
-	inboxFillPath                     = `<g id="evaInboxFill0"><g id="evaInboxFill1"><path id="evaInboxFill2" fill="currentColor" d="m20.79 11.34l-3.34-6.68A3 3 0 0 0 14.76 3H9.24a3 3 0 0 0-2.69 1.66l-3.34 6.68a2 2 0 0 0-.21.9V18a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-5.76a2 2 0 0 0-.21-.9ZM8.34 5.55a1 1 0 0 1 .9-.55h5.52a1 1 0 0 1 .9.55L18.38 11H16a1 1 0 0 0-1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-2a1 1 0 0 0-1-1H5.62Z"/></g></g>`
-	inboxOutlinePath                  = `<g id="evaInboxOutline0"><g id="evaInboxOutline1"><path id="evaInboxOutline2" fill="currentColor" d="m20.79 11.34l-3.34-6.68A3 3 0 0 0 14.76 3H9.24a3 3 0 0 0-2.69 1.66l-3.34 6.68a2 2 0 0 0-.21.9V18a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-5.76a2 2 0 0 0-.21-.9ZM8.34 5.55a1 1 0 0 1 .9-.55h5.52a1 1 0 0 1 .9.55L18.38 11H16a1 1 0 0 0-1 1v3H9v-3a1 1 0 0 0-1-1H5.62ZM18 19H6a1 1 0 0 1-1-1v-5h2v3a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-3h2v5a1 1 0 0 1-1 1Z"/></g></g>`
-	infoFillPath                      = `<g id="evaInfoFill0"><g id="evaInfoFill1"><path id="evaInfoFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm1 14a1 1 0 0 1-2 0v-5a1 1 0 0 1 2 0Zm-1-7a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g>`
-	infoOutlinePath                   = `<g id="evaInfoOutline0"><g id="evaInfoOutline1"><g id="evaInfoOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><circle cx="12" cy="8" r="1"/><path d="M12 10a1 1 0 0 0-1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0-1-1Z"/></g></g></g>`
-	keypadFillPath                    = `<g id="evaKeypadFill0"><g id="evaKeypadFill1"><path id="evaKeypadFill2" fill="currentColor" d="M5 2a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm7 0a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm7 6a3 3 0 1 0-3-3a3 3 0 0 0 3 3ZM5 9a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm7 0a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm7 0a3 3 0 1 0 3 3a3 3 0 0 0-3-3ZM5 16a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm7 0a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm7 0a3 3 0 1 0 3 3a3 3 0 0 0-3-3Z"/></g></g>`
-	keypadOutlinePath                 = `<g id="evaKeypadOutline0"><g id="evaKeypadOutline1"><path id="evaKeypadOutline2" fill="currentColor" d="M5 2a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm7-4a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm7 2a3 3 0 1 0-3-3a3 3 0 0 0 3 3Zm0-4a1 1 0 1 1-1 1a1 1 0 0 1 1-1ZM5 9a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm7-4a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm7-4a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1ZM5 16a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm7-4a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm7-4a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g>`
-	layersFillPath                    = `<g id="evaLayersFill0"><g id="evaLayersFill1"><g id="evaLayersFill2" fill="currentColor"><path d="m3.24 7.29l8.52 4.63a.51.51 0 0 0 .48 0l8.52-4.63a.44.44 0 0 0-.05-.81L12.19 3a.5.5 0 0 0-.38 0L3.29 6.48a.44.44 0 0 0-.05.81Z"/><path d="m20.71 10.66l-1.83-.78l-6.64 3.61a.51.51 0 0 1-.48 0L5.12 9.88l-1.83.78a.48.48 0 0 0 0 .85l8.52 4.9a.46.46 0 0 0 .48 0l8.52-4.9a.48.48 0 0 0-.1-.85Z"/><path d="m20.71 15.1l-1.56-.68l-6.91 3.76a.51.51 0 0 1-.48 0l-6.91-3.76l-1.56.68a.49.49 0 0 0 0 .87l8.52 5a.51.51 0 0 0 .48 0l8.52-5a.49.49 0 0 0-.1-.87Z"/></g></g></g>`
-	layersOutlinePath                 = `<g id="evaLayersOutline0"><g id="evaLayersOutline1"><path id="evaLayersOutline2" fill="currentColor" d="M21 11.35a1 1 0 0 0-.61-.86l-2.15-.92l2.26-1.3a1 1 0 0 0 .5-.92a1 1 0 0 0-.61-.86l-8-3.41a1 1 0 0 0-.78 0l-8 3.41a1 1 0 0 0-.61.86a1 1 0 0 0 .5.92l2.26 1.3l-2.15.92a1 1 0 0 0-.61.86a1 1 0 0 0 .5.92l2.26 1.3l-2.15.92a1 1 0 0 0-.61.86a1 1 0 0 0 .5.92l8 4.6a1 1 0 0 0 1 0l8-4.6a1 1 0 0 0 .5-.92a1 1 0 0 0-.61-.86l-2.15-.92l2.26-1.3a1 1 0 0 0 .5-.92Zm-9-6.26l5.76 2.45L12 10.85L6.24 7.54Zm-.5 7.78a1 1 0 0 0 1 0l3.57-2l1.69.72L12 14.85l-5.76-3.31l1.69-.72Zm6.26 2.67L12 18.85l-5.76-3.31l1.69-.72l3.57 2.05a1 1 0 0 0 1 0l3.57-2.05Z"/></g></g>`
-	layoutFillPath                    = `<g id="evaLayoutFill0"><g id="evaLayoutFill1"><path id="evaLayoutFill2" fill="currentColor" d="M21 8V6a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3v2ZM3 10v8a3 3 0 0 0 3 3h5V10Zm10 0v11h5a3 3 0 0 0 3-3v-8Z"/></g></g>`
-	layoutOutlinePath                 = `<g id="evaLayoutOutline0"><g id="evaLayoutOutline1"><path id="evaLayoutOutline2" fill="currentColor" d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3ZM6 5h12a1 1 0 0 1 1 1v2H5V6a1 1 0 0 1 1-1ZM5 18v-8h6v9H6a1 1 0 0 1-1-1Zm13 1h-5v-9h6v8a1 1 0 0 1-1 1Z"/></g></g>`
-	linkFillPath                      = `<g id="evaLinkFill0"><g id="evaLinkFill1"><g id="evaLinkFill2" fill="currentColor"><path d="M8 12a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2H9a1 1 0 0 0-1 1Z"/><path d="M9 16H7.21A4.13 4.13 0 0 1 3 12.37A4 4 0 0 1 7 8h2a1 1 0 0 0 0-2H7.21a6.15 6.15 0 0 0-6.16 5.21A6 6 0 0 0 7 18h2a1 1 0 0 0 0-2Zm14-4.76A6.16 6.16 0 0 0 16.76 6h-1.51C14.44 6 14 6.45 14 7a1 1 0 0 0 1 1h1.79A4.13 4.13 0 0 1 21 11.63A4 4 0 0 1 17 16h-2a1 1 0 0 0 0 2h2a6 6 0 0 0 6-6.76Z"/></g></g></g>`
-	linkOutlinePath                   = `<g id="evaLinkOutline0"><g id="evaLinkOutline1"><g id="evaLinkOutline2" fill="currentColor"><path d="M8 12a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2H9a1 1 0 0 0-1 1Z"/><path d="M9 16H7.21A4.13 4.13 0 0 1 3 12.37A4 4 0 0 1 7 8h2a1 1 0 0 0 0-2H7.21a6.15 6.15 0 0 0-6.16 5.21A6 6 0 0 0 7 18h2a1 1 0 0 0 0-2Zm14-4.76A6.16 6.16 0 0 0 16.76 6h-1.51C14.44 6 14 6.45 14 7a1 1 0 0 0 1 1h1.79A4.13 4.13 0 0 1 21 11.63A4 4 0 0 1 17 16h-2a1 1 0 0 0 0 2h2a6 6 0 0 0 6-6.76Z"/></g></g></g>`
-	linkTwoFillPath                   = `<g id="evaLink2Fill0"><g id="evaLink2Fill1"><g id="evaLink2Fill2" fill="currentColor"><path d="m13.29 9.29l-4 4a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0-1.42-1.42Z"/><path d="M12.28 17.4L11 18.67a4.2 4.2 0 0 1-5.58.4a4 4 0 0 1-.27-5.93l1.42-1.43a1 1 0 0 0 0-1.42a1 1 0 0 0-1.42 0l-1.27 1.28a6.15 6.15 0 0 0-.67 8.07a6.06 6.06 0 0 0 9.07.6l1.42-1.42a1 1 0 0 0-1.42-1.42Zm7.38-14.18a6.18 6.18 0 0 0-8.13.68L10.45 5a1.09 1.09 0 0 0-.17 1.61a1 1 0 0 0 1.42 0L13 5.3a4.17 4.17 0 0 1 5.57-.4a4 4 0 0 1 .27 5.95l-1.42 1.43a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l1.42-1.42a6.06 6.06 0 0 0-.6-9.06Z"/></g></g></g>`
-	linkTwoOutlinePath                = `<g id="evaLink2Outline0"><g id="evaLink2Outline1"><g id="evaLink2Outline2" fill="currentColor"><path d="m13.29 9.29l-4 4a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0-1.42-1.42Z"/><path d="M12.28 17.4L11 18.67a4.2 4.2 0 0 1-5.58.4a4 4 0 0 1-.27-5.93l1.42-1.43a1 1 0 0 0 0-1.42a1 1 0 0 0-1.42 0l-1.27 1.28a6.15 6.15 0 0 0-.67 8.07a6.06 6.06 0 0 0 9.07.6l1.42-1.42a1 1 0 0 0-1.42-1.42Zm7.38-14.18a6.18 6.18 0 0 0-8.13.68L10.45 5a1.09 1.09 0 0 0-.17 1.61a1 1 0 0 0 1.42 0L13 5.3a4.17 4.17 0 0 1 5.57-.4a4 4 0 0 1 .27 5.95l-1.42 1.43a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l1.42-1.42a6.06 6.06 0 0 0-.6-9.06Z"/></g></g></g>`
-	linkedinFillPath                  = `<g id="evaLinkedinFill0"><g id="evaLinkedinFill1"><g id="evaLinkedinFill2" fill="currentColor"><path d="M15.15 8.4a5.83 5.83 0 0 0-5.85 5.82v5.88a.9.9 0 0 0 .9.9h2.1a.9.9 0 0 0 .9-.9v-5.88a1.94 1.94 0 0 1 2.15-1.93a2 2 0 0 1 1.75 2v5.81a.9.9 0 0 0 .9.9h2.1a.9.9 0 0 0 .9-.9v-5.88a5.83 5.83 0 0 0-5.85-5.82Z"/><rect width="4.5" height="11.7" x="3" y="9.3" rx=".9" ry=".9"/><circle cx="5.25" cy="5.25" r="2.25"/></g></g></g>`
-	linkedinOutlinePath               = `<g id="evaLinkedinOutline0"><g id="evaLinkedinOutline1"><path id="evaLinkedinOutline2" fill="currentColor" d="M20 22h-1.67a2 2 0 0 1-2-2v-5.37a.92.92 0 0 0-.69-.93a.84.84 0 0 0-.67.19a.85.85 0 0 0-.3.65V20a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2v-5.46a6.5 6.5 0 1 1 13 0V20a2 2 0 0 1-2 2Zm-4.5-10.31a3.73 3.73 0 0 1 .47 0a2.91 2.91 0 0 1 2.36 2.9V20H20v-5.46a4.5 4.5 0 1 0-9 0V20h1.67v-5.46a2.85 2.85 0 0 1 2.83-2.85ZM6 22H4a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2ZM4 10v10h2V10Zm1-3a3 3 0 1 1 3-3a3 3 0 0 1-3 3Zm0-4a1 1 0 1 0 1 1a1 1 0 0 0-1-1Z"/></g></g>`
-	listFillPath                      = `<g id="evaListFill0"><g id="evaListFill1"><g id="evaListFill2" fill="currentColor"><circle cx="4" cy="7" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="17" r="1"/><rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"/><rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"/><rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"/></g></g></g>`
-	listOutlinePath                   = `<g id="evaListOutline0"><g id="evaListOutline1"><g id="evaListOutline2" fill="currentColor"><circle cx="4" cy="7" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="17" r="1"/><rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"/><rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"/><rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"/></g></g></g>`
-	loaderOutlinePath                 = `<g id="evaLoaderOutline0"><g id="evaLoaderOutline1"><path id="evaLoaderOutline2" fill="currentColor" d="M12 2a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0V3a1 1 0 0 0-1-1Zm9 9h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2ZM6 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1Zm.22-7a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28a1 1 0 0 0 .72-.31a1 1 0 0 0 0-1.41ZM17 8.14a1 1 0 0 0 .69-.28l1.44-1.39A1 1 0 0 0 17.78 5l-1.44 1.42a1 1 0 0 0 0 1.41a1 1 0 0 0 .66.31ZM12 18a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1Zm5.73-1.86a1 1 0 0 0-1.39 1.44L17.78 19a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.3a1 1 0 0 0 0-1.42Zm-11.46 0l-1.44 1.39a1 1 0 0 0 0 1.42a1 1 0 0 0 .72.3a1 1 0 0 0 .67-.25l1.44-1.39a1 1 0 0 0-1.39-1.44Z"/></g></g>`
-	lockFillPath                      = `<g id="evaLockFill0"><g id="evaLockFill1"><g id="evaLockFill2" fill="currentColor"><circle cx="12" cy="15" r="1"/><path d="M17 8h-1V6.11a4 4 0 1 0-8 0V8H7a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3Zm-7-1.89A2.06 2.06 0 0 1 12 4a2.06 2.06 0 0 1 2 2.11V8h-4ZM12 18a3 3 0 1 1 3-3a3 3 0 0 1-3 3Z"/></g></g></g>`
-	lockOutlinePath                   = `<g id="evaLockOutline0"><g id="evaLockOutline1"><g id="evaLockOutline2" fill="currentColor"><path d="M17 8h-1V6.11a4 4 0 1 0-8 0V8H7a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3Zm-7-1.89A2.06 2.06 0 0 1 12 4a2.06 2.06 0 0 1 2 2.11V8h-4ZM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1Z"/><path d="M12 12a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g></g>`
-	logInFillPath                     = `<g id="evaLogInFill0"><g id="evaLogInFill1"><path id="evaLogInFill2" fill="currentColor" d="M19 4h-2a1 1 0 0 0 0 2h1v12h-1a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Zm-7.2 3.4a1 1 0 0 0-1.6 1.2L12 11H4a1 1 0 0 0 0 2h8.09l-1.72 2.44a1 1 0 0 0 .24 1.4a1 1 0 0 0 .58.18a1 1 0 0 0 .81-.42l2.82-4a1 1 0 0 0 0-1.18Z"/></g></g>`
-	logInOutlinePath                  = `<g id="evaLogInOutline0"><g id="evaLogInOutline1"><path id="evaLogInOutline2" fill="currentColor" d="M19 4h-2a1 1 0 0 0 0 2h1v12h-1a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Zm-7.2 3.4a1 1 0 0 0-1.6 1.2L12 11H4a1 1 0 0 0 0 2h8.09l-1.72 2.44a1 1 0 0 0 .24 1.4a1 1 0 0 0 .58.18a1 1 0 0 0 .81-.42l2.82-4a1 1 0 0 0 0-1.18Z"/></g></g>`
-	logOutFillPath                    = `<g id="evaLogOutFill0"><g id="evaLogOutFill1"><path id="evaLogOutFill2" fill="currentColor" d="M7 6a1 1 0 0 0 0-2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h2a1 1 0 0 0 0-2H6V6Zm13.82 5.42l-2.82-4a1 1 0 0 0-1.39-.24a1 1 0 0 0-.24 1.4L18.09 11H10a1 1 0 0 0 0 2h8l-1.8 2.4a1 1 0 0 0 .2 1.4a1 1 0 0 0 .6.2a1 1 0 0 0 .8-.4l3-4a1 1 0 0 0 .02-1.18Z"/></g></g>`
-	logOutOutlinePath                 = `<g id="evaLogOutOutline0"><g id="evaLogOutOutline1"><path id="evaLogOutOutline2" fill="currentColor" d="M7 6a1 1 0 0 0 0-2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h2a1 1 0 0 0 0-2H6V6Zm13.82 5.42l-2.82-4a1 1 0 0 0-1.39-.24a1 1 0 0 0-.24 1.4L18.09 11H10a1 1 0 0 0 0 2h8l-1.8 2.4a1 1 0 0 0 .2 1.4a1 1 0 0 0 .6.2a1 1 0 0 0 .8-.4l3-4a1 1 0 0 0 .02-1.18Z"/></g></g>`
-	mapFillPath                       = `<g id="evaMapFill0"><g id="evaMapFill1"><path id="evaMapFill2" fill="currentColor" d="m20.41 5.89l-4-1.8h-.82L12 5.7L8.41 4.09h-.05L8.24 4h-.6l-4 1.8a1 1 0 0 0-.64 1V19a1 1 0 0 0 .46.84A1 1 0 0 0 4 20a1 1 0 0 0 .41-.09L8 18.3l3.59 1.61h.05a.85.85 0 0 0 .72 0h.05L16 18.3l3.59 1.61A1 1 0 0 0 20 20a1 1 0 0 0 .54-.16A1 1 0 0 0 21 19V6.8a1 1 0 0 0-.59-.91ZM9 6.55l2 .89v10l-2-.89Zm10 10.9l-2-.89v-10l2 .89Z"/></g></g>`
-	mapOutlinePath                    = `<g id="evaMapOutline0"><g id="evaMapOutline1"><path id="evaMapOutline2" fill="currentColor" d="m20.41 5.89l-4-1.8h-.82L12 5.7L8.41 4.09h-.05L8.24 4h-.6l-4 1.8a1 1 0 0 0-.64 1V19a1 1 0 0 0 .46.84A1 1 0 0 0 4 20a1 1 0 0 0 .41-.09L8 18.3l3.59 1.61h.05a.85.85 0 0 0 .72 0h.05L16 18.3l3.59 1.61A1 1 0 0 0 20 20a1 1 0 0 0 .54-.16A1 1 0 0 0 21 19V6.8a1 1 0 0 0-.59-.91ZM5 7.44l2-.89v10l-2 .89Zm4-.89l2 .89v10l-2-.89Zm4 .89l2-.89v10l-2 .89Zm6 10l-2-.89v-10l2 .89Z"/></g></g>`
-	maximizeFillPath                  = `<g id="evaMaximizeFill0"><g id="evaMaximizeFill1"><path id="evaMaximizeFill2" fill="currentColor" d="m20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8a7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM13 12h-1v1a1 1 0 0 1-2 0v-1H9a1 1 0 0 1 0-2h1V9a1 1 0 0 1 2 0v1h1a1 1 0 0 1 0 2Z"/></g></g>`
-	maximizeOutlinePath               = `<g id="evaMaximizeOutline0"><g id="evaMaximizeOutline1"><g id="evaMaximizeOutline2" fill="currentColor"><path d="m20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8a7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM5 11a6 6 0 1 1 6 6a6 6 0 0 1-6-6Z"/><path d="M13 10h-1V9a1 1 0 0 0-2 0v1H9a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0v-1h1a1 1 0 0 0 0-2Z"/></g></g></g>`
-	menuArrowFillPath                 = `<g id="evaMenuArrowFill0"><g id="evaMenuArrowFill1"><g id="evaMenuArrowFill2" fill="currentColor"><path d="M20.05 11H5.91l1.3-1.29a1 1 0 0 0-1.42-1.42l-3 3a1 1 0 0 0 0 1.42l3 3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L5.91 13h14.14a1 1 0 0 0 .95-.95V12a1 1 0 0 0-.95-1Z"/><rect width="18" height="2" x="3" y="17" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="5" rx=".95" ry=".95"/></g></g></g>`
-	menuArrowOutlinePath              = `<g id="evaMenuArrowOutline0"><g id="evaMenuArrowOutline1"><g id="evaMenuArrowOutline2" fill="currentColor"><path d="M20.05 11H5.91l1.3-1.29a1 1 0 0 0-1.42-1.42l-3 3a1 1 0 0 0 0 1.42l3 3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L5.91 13h14.14a1 1 0 0 0 .95-.95V12a1 1 0 0 0-.95-1Z"/><rect width="18" height="2" x="3" y="17" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="5" rx=".95" ry=".95"/></g></g></g>`
-	menuFillPath                      = `<g id="evaMenuFill0"><g id="evaMenuFill1"><g id="evaMenuFill2" fill="currentColor"><rect width="18" height="2" x="3" y="11" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="16" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="6" rx=".95" ry=".95"/></g></g></g>`
-	menuOutlinePath                   = `<g id="evaMenuOutline0"><g id="evaMenuOutline1"><g id="evaMenuOutline2" fill="currentColor"><rect width="18" height="2" x="3" y="11" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="16" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="6" rx=".95" ry=".95"/></g></g></g>`
-	menuTwoFillPath                   = `<g id="evaMenu2Fill0"><g id="evaMenu2Fill1"><g id="evaMenu2Fill2" fill="currentColor"><circle cx="4" cy="12" r="1"/><rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"/><rect width="18" height="2" x="3" y="16" rx=".94" ry=".94"/><rect width="18" height="2" x="3" y="6" rx=".94" ry=".94"/></g></g></g>`
-	menuTwoOutlinePath                = `<g id="evaMenu2Outline0"><g id="evaMenu2Outline1"><g id="evaMenu2Outline2" fill="currentColor"><circle cx="4" cy="12" r="1"/><rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"/><rect width="18" height="2" x="3" y="16" rx=".94" ry=".94"/><rect width="18" height="2" x="3" y="6" rx=".94" ry=".94"/></g></g></g>`
-	messageCircleFillPath             = `<g id="evaMessageCircleFill0"><g id="evaMessageCircleFill1"><path id="evaMessageCircleFill2" fill="currentColor" d="M19.07 4.93a10 10 0 0 0-16.28 11a1.06 1.06 0 0 1 .09.64L2 20.8a1 1 0 0 0 .27.91A1 1 0 0 0 3 22h.2l4.28-.86a1.26 1.26 0 0 1 .64.09a10 10 0 0 0 11-16.28ZM8 13a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm4 0a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm4 0a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g>`
-	messageCircleOutlinePath          = `<g id="evaMessageCircleOutline0"><g id="evaMessageCircleOutline1"><g id="evaMessageCircleOutline2" fill="currentColor"><circle cx="12" cy="12" r="1"/><circle cx="16" cy="12" r="1"/><circle cx="8" cy="12" r="1"/><path d="M19.07 4.93a10 10 0 0 0-16.28 11a1.06 1.06 0 0 1 .09.64L2 20.8a1 1 0 0 0 .27.91A1 1 0 0 0 3 22h.2l4.28-.86a1.26 1.26 0 0 1 .64.09a10 10 0 0 0 11-16.28Zm.83 8.36a8 8 0 0 1-11 6.08a3.26 3.26 0 0 0-1.25-.26a3.43 3.43 0 0 0-.56.05l-2.82.57l.57-2.82a3.09 3.09 0 0 0-.21-1.81a8 8 0 0 1 6.08-11a8 8 0 0 1 9.19 9.19Z"/></g></g></g>`
-	messageSquareFillPath             = `<g id="evaMessageSquareFill0"><g id="evaMessageSquareFill1"><path id="evaMessageSquareFill2" fill="currentColor" d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3ZM8 12a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm4 0a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm4 0a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g>`
-	messageSquareOutlinePath          = `<g id="evaMessageSquareOutline0"><g id="evaMessageSquareOutline1"><g id="evaMessageSquareOutline2" fill="currentColor"><circle cx="12" cy="11" r="1"/><circle cx="16" cy="11" r="1"/><circle cx="8" cy="11" r="1"/><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z"/></g></g></g>`
-	micFillPath                       = `<g id="evaMicFill0"><g id="evaMicFill1"><g id="evaMicFill2" fill="currentColor"><path d="M12 15a4 4 0 0 0 4-4V6a4 4 0 0 0-8 0v5a4 4 0 0 0 4 4Z"/><path d="M19 11a1 1 0 0 0-2 0a5 5 0 0 1-10 0a1 1 0 0 0-2 0a7 7 0 0 0 6 6.92V20H8.89a.89.89 0 0 0-.89.89v.22a.89.89 0 0 0 .89.89h6.22a.89.89 0 0 0 .89-.89v-.22a.89.89 0 0 0-.89-.89H13v-2.08A7 7 0 0 0 19 11Z"/></g></g></g>`
-	micOffFillPath                    = `<g id="evaMicOffFill0"><g id="evaMicOffFill1"><g id="evaMicOffFill2" fill="currentColor"><path d="M15.58 12.75A4 4 0 0 0 16 11V6a4 4 0 0 0-7.92-.75M19 11a1 1 0 0 0-2 0a4.86 4.86 0 0 1-.69 2.48L17.78 15A7 7 0 0 0 19 11Zm-7 4h.16L8 10.83V11a4 4 0 0 0 4 4Zm8.71 4.29l-16-16a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/><path d="M15 20h-2v-2.08a7 7 0 0 0 1.65-.44l-1.6-1.6A4.57 4.57 0 0 1 12 16a5 5 0 0 1-5-5a1 1 0 0 0-2 0a7 7 0 0 0 6 6.92V20H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2Z"/></g></g></g>`
-	micOffOutlinePath                 = `<g id="evaMicOffOutline0"><g id="evaMicOffOutline1"><g id="evaMicOffOutline2" fill="currentColor"><path d="M10 6a2 2 0 0 1 4 0v5a1 1 0 0 1 0 .16l1.6 1.59A4 4 0 0 0 16 11V6a4 4 0 0 0-7.92-.75L10 7.17Zm9 5a1 1 0 0 0-2 0a4.86 4.86 0 0 1-.69 2.48L17.78 15A7 7 0 0 0 19 11Zm-7 4h.16L8 10.83V11a4 4 0 0 0 4 4Zm8.71 4.29l-16-16a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/><path d="M15 20h-2v-2.08a7 7 0 0 0 1.65-.44l-1.6-1.6A4.57 4.57 0 0 1 12 16a5 5 0 0 1-5-5a1 1 0 0 0-2 0a7 7 0 0 0 6 6.92V20H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2Z"/></g></g></g>`
-	micOutlinePath                    = `<g id="evaMicOutline0"><g id="evaMicOutline1"><g id="evaMicOutline2" fill="currentColor"><path d="M12 15a4 4 0 0 0 4-4V6a4 4 0 0 0-8 0v5a4 4 0 0 0 4 4Zm-2-9a2 2 0 0 1 4 0v5a2 2 0 0 1-4 0Z"/><path d="M19 11a1 1 0 0 0-2 0a5 5 0 0 1-10 0a1 1 0 0 0-2 0a7 7 0 0 0 6 6.92V20H8.89a.89.89 0 0 0-.89.89v.22a.89.89 0 0 0 .89.89h6.22a.89.89 0 0 0 .89-.89v-.22a.89.89 0 0 0-.89-.89H13v-2.08A7 7 0 0 0 19 11Z"/></g></g></g>`
-	minimizeFillPath                  = `<g id="evaMinimizeFill0"><g id="evaMinimizeFill1"><path id="evaMinimizeFill2" fill="currentColor" d="m20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8a7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM13 12H9a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2Z"/></g></g>`
-	minimizeOutlinePath               = `<g id="evaMinimizeOutline0"><g id="evaMinimizeOutline1"><g id="evaMinimizeOutline2" fill="currentColor"><path d="m20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8a7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM5 11a6 6 0 1 1 6 6a6 6 0 0 1-6-6Z"/><path d="M13 10H9a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Z"/></g></g></g>`
-	minusCircleFillPath               = `<g id="evaMinusCircleFill0"><g id="evaMinusCircleFill1"><path id="evaMinusCircleFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm3 11H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2Z"/></g></g>`
-	minusCircleOutlinePath            = `<g id="evaMinusCircleOutline0"><g id="evaMinusCircleOutline1"><g id="evaMinusCircleOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M15 11H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2Z"/></g></g></g>`
-	minusFillPath                     = `<g id="evaMinusFill0"><g id="evaMinusFill1"><path id="evaMinusFill2" fill="currentColor" d="M19 13H5a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2Z"/></g></g>`
-	minusOutlinePath                  = `<g id="evaMinusOutline0"><g id="evaMinusOutline1"><path id="evaMinusOutline2" fill="currentColor" d="M19 13H5a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2Z"/></g></g>`
-	minusSquareFillPath               = `<g id="evaMinusSquareFill0"><g id="evaMinusSquareFill1"><path id="evaMinusSquareFill2" fill="currentColor" d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm-3 10H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2Z"/></g></g>`
-	minusSquareOutlinePath            = `<g id="evaMinusSquareOutline0"><g id="evaMinusSquareOutline1"><g id="evaMinusSquareOutline2" fill="currentColor"><path d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1Z"/><path d="M15 11H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2Z"/></g></g></g>`
-	monitorFillPath                   = `<g id="evaMonitorFill0"><g id="evaMonitorFill1"><path id="evaMonitorFill2" fill="currentColor" d="M19 3H5a3 3 0 0 0-3 3v5h20V6a3 3 0 0 0-3-3ZM2 14a3 3 0 0 0 3 3h6v2H7a1 1 0 0 0 0 2h10a1 1 0 0 0 0-2h-4v-2h6a3 3 0 0 0 3-3v-1H2Z"/></g></g>`
-	monitorOutlinePath                = `<g id="evaMonitorOutline0"><g id="evaMonitorOutline1"><path id="evaMonitorOutline2" fill="currentColor" d="M19 3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h6v2H7a1 1 0 0 0 0 2h10a1 1 0 0 0 0-2h-4v-2h6a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z"/></g></g>`
-	moonFillPath                      = `<g id="evaMoonFill0"><g id="evaMoonFill1"><path id="evaMoonFill2" fill="currentColor" d="M12.3 22h-.1a10.31 10.31 0 0 1-7.34-3.15a10.46 10.46 0 0 1-.26-14a10.13 10.13 0 0 1 4-2.74a1 1 0 0 1 1.06.22a1 1 0 0 1 .24 1a8.4 8.4 0 0 0 1.94 8.81a8.47 8.47 0 0 0 8.83 1.94a1 1 0 0 1 1.27 1.29A10.16 10.16 0 0 1 19.6 19a10.28 10.28 0 0 1-7.3 3Z"/></g></g>`
-	moonOutlinePath                   = `<g id="evaMoonOutline0"><g id="evaMoonOutline1"><path id="evaMoonOutline2" fill="currentColor" d="M12.3 22h-.1a10.31 10.31 0 0 1-7.34-3.15a10.46 10.46 0 0 1-.26-14a10.13 10.13 0 0 1 4-2.74a1 1 0 0 1 1.06.22a1 1 0 0 1 .24 1a8.4 8.4 0 0 0 1.94 8.81a8.47 8.47 0 0 0 8.83 1.94a1 1 0 0 1 1.27 1.29A10.16 10.16 0 0 1 19.6 19a10.28 10.28 0 0 1-7.3 3ZM7.46 4.92a7.93 7.93 0 0 0-1.37 1.22a8.44 8.44 0 0 0 .2 11.32A8.29 8.29 0 0 0 12.22 20h.08a8.34 8.34 0 0 0 6.78-3.49A10.37 10.37 0 0 1 7.46 4.92Z"/></g></g>`
-	moreHorizontalFillPath            = `<g id="evaMoreHorizontalFill0"><g id="evaMoreHorizontalFill1"><g id="evaMoreHorizontalFill2" fill="currentColor"><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="5" cy="12" r="2"/></g></g></g>`
-	moreHorizontalOutlinePath         = `<g id="evaMoreHorizontalOutline0"><g id="evaMoreHorizontalOutline1"><g id="evaMoreHorizontalOutline2" fill="currentColor"><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="5" cy="12" r="2"/></g></g></g>`
-	moreVerticalFillPath              = `<g id="evaMoreVerticalFill0"><g id="evaMoreVerticalFill1"><g id="evaMoreVerticalFill2" fill="currentColor"><circle cx="12" cy="12" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="12" cy="19" r="2"/></g></g></g>`
-	moreVerticalOutlinePath           = `<g id="evaMoreVerticalOutline0"><g id="evaMoreVerticalOutline1"><g id="evaMoreVerticalOutline2" fill="currentColor"><circle cx="12" cy="12" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="12" cy="19" r="2"/></g></g></g>`
-	moveFillPath                      = `<g id="evaMoveFill0"><g id="evaMoveFill1"><path id="evaMoveFill2" fill="currentColor" d="m21.71 11.31l-3-3a1 1 0 0 0-1.42 1.42L18.58 11H13V5.41l1.29 1.3A1 1 0 0 0 15 7a1 1 0 0 0 .71-.29a1 1 0 0 0 0-1.42l-3-3A1 1 0 0 0 12 2a1 1 0 0 0-.7.29l-3 3a1 1 0 0 0 1.41 1.42L11 5.42V11H5.41l1.3-1.29a1 1 0 0 0-1.42-1.42l-3 3A1 1 0 0 0 2 12a1 1 0 0 0 .29.71l3 3A1 1 0 0 0 6 16a1 1 0 0 0 .71-.29a1 1 0 0 0 0-1.42L5.42 13H11v5.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3A1 1 0 0 0 12 22a1 1 0 0 0 .7-.29l3-3a1 1 0 0 0-1.42-1.42L13 18.58V13h5.59l-1.3 1.29a1 1 0 0 0 0 1.42A1 1 0 0 0 18 16a1 1 0 0 0 .71-.29l3-3A1 1 0 0 0 22 12a1 1 0 0 0-.29-.69Z"/></g></g>`
-	moveOutlinePath                   = `<g id="evaMoveOutline0"><g id="evaMoveOutline1"><path id="evaMoveOutline2" fill="currentColor" d="m21.71 11.31l-3-3a1 1 0 0 0-1.42 1.42L18.58 11H13V5.41l1.29 1.3A1 1 0 0 0 15 7a1 1 0 0 0 .71-.29a1 1 0 0 0 0-1.42l-3-3A1 1 0 0 0 12 2a1 1 0 0 0-.7.29l-3 3a1 1 0 0 0 1.41 1.42L11 5.42V11H5.41l1.3-1.29a1 1 0 0 0-1.42-1.42l-3 3A1 1 0 0 0 2 12a1 1 0 0 0 .29.71l3 3A1 1 0 0 0 6 16a1 1 0 0 0 .71-.29a1 1 0 0 0 0-1.42L5.42 13H11v5.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3A1 1 0 0 0 12 22a1 1 0 0 0 .7-.29l3-3a1 1 0 0 0-1.42-1.42L13 18.58V13h5.59l-1.3 1.29a1 1 0 0 0 0 1.42A1 1 0 0 0 18 16a1 1 0 0 0 .71-.29l3-3A1 1 0 0 0 22 12a1 1 0 0 0-.29-.69Z"/></g></g>`
-	musicFillPath                     = `<g id="evaMusicFill0"><g id="evaMusicFill1"><path id="evaMusicFill2" fill="currentColor" d="M19 15V4a1 1 0 0 0-.38-.78a1 1 0 0 0-.84-.2l-9 2A1 1 0 0 0 8 6v8.34a3.49 3.49 0 1 0 2 3.18a4.36 4.36 0 0 0 0-.52V6.8l7-1.55v7.09a3.49 3.49 0 1 0 2 3.17a4.57 4.57 0 0 0 0-.51Z"/></g></g>`
-	musicOutlinePath                  = `<g id="evaMusicOutline0"><g id="evaMusicOutline1"><path id="evaMusicOutline2" fill="currentColor" d="M19 15V4a1 1 0 0 0-.38-.78a1 1 0 0 0-.84-.2l-9 2A1 1 0 0 0 8 6v8.34a3.49 3.49 0 1 0 2 3.18a4.36 4.36 0 0 0 0-.52V6.8l7-1.55v7.09a3.49 3.49 0 1 0 2 3.17a4.57 4.57 0 0 0 0-.51ZM6.54 19A1.49 1.49 0 1 1 8 17.21a1.53 1.53 0 0 1 0 .3A1.49 1.49 0 0 1 6.54 19Zm9-2A1.5 1.5 0 1 1 17 15.21a1.53 1.53 0 0 1 0 .3A1.5 1.5 0 0 1 15.51 17Z"/></g></g>`
-	navigationFillPath                = `<g id="evaNavigationFill0"><g id="evaNavigationFill1"><path id="evaNavigationFill2" fill="currentColor" d="M20 20a.94.94 0 0 1-.55-.17l-6.9-4.56a1 1 0 0 0-1.1 0l-6.9 4.56a1 1 0 0 1-1.44-1.28l8-16a1 1 0 0 1 1.78 0l8 16a1 1 0 0 1-.23 1.2A1 1 0 0 1 20 20Z"/></g></g>`
-	navigationOutlinePath             = `<g id="evaNavigationOutline0"><g id="evaNavigationOutline1"><path id="evaNavigationOutline2" fill="currentColor" d="M20 20a.94.94 0 0 1-.55-.17L12 14.9l-7.45 4.93a1 1 0 0 1-1.44-1.28l8-16a1 1 0 0 1 1.78 0l8 16a1 1 0 0 1-.23 1.2A1 1 0 0 1 20 20Zm-8-7.3a1 1 0 0 1 .55.17l4.88 3.23L12 5.24L6.57 16.1l4.88-3.23a1 1 0 0 1 .55-.17Z"/></g></g>`
-	navigationTwoFillPath             = `<g id="evaNavigation2Fill0"><g id="evaNavigation2Fill1"><path id="evaNavigation2Fill2" fill="currentColor" d="M13.67 22h-.06a1 1 0 0 1-.92-.8l-1.54-7.57a1 1 0 0 0-.78-.78L2.8 11.31a1 1 0 0 1-.12-1.93l16-5.33A1 1 0 0 1 20 5.32l-5.33 16a1 1 0 0 1-1 .68Z"/></g></g>`
-	navigationTwoOutlinePath          = `<g id="evaNavigation2Outline0"><g id="evaNavigation2Outline1"><path id="evaNavigation2Outline2" fill="currentColor" d="M13.67 22h-.06a1 1 0 0 1-.92-.8L11 13l-8.2-1.69a1 1 0 0 1-.12-1.93l16-5.33A1 1 0 0 1 20 5.32l-5.33 16a1 1 0 0 1-1 .68Zm-6.8-11.9l5.19 1.06a1 1 0 0 1 .79.78l1.05 5.19l3.52-10.55Z"/></g></g>`
-	npmFillPath                       = `<g id="evaNpmFill0"><g id="evaNpmFill1"><path id="evaNpmFill2" fill="currentColor" d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h7V11h4v10h1a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Z"/></g></g>`
-	npmOutlinePath                    = `<g id="evaNpmOutline0"><g id="evaNpmOutline1"><g id="evaNpmOutline2" fill="currentColor"><path d="M18 21H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3ZM6 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1Z"/><path d="M12 9h4v10h-4z"/></g></g></g>`
-	optionsFillPath                   = `<g id="evaOptionsFill0"><g id="evaOptionsFill1"><path id="evaOptionsFill2" fill="currentColor" d="M7 14.18V3a1 1 0 0 0-2 0v11.18a3 3 0 0 0 0 5.64V21a1 1 0 0 0 2 0v-1.18a3 3 0 0 0 0-5.64ZM21 13a3 3 0 0 0-2-2.82V3a1 1 0 0 0-2 0v7.18a3 3 0 0 0 0 5.64V21a1 1 0 0 0 2 0v-5.18A3 3 0 0 0 21 13Zm-6-8a3 3 0 1 0-4 2.82V21a1 1 0 0 0 2 0V7.82A3 3 0 0 0 15 5Z"/></g></g>`
-	optionsOutlinePath                = `<g id="evaOptionsOutline0"><g id="evaOptionsOutline1"><path id="evaOptionsOutline2" fill="currentColor" d="M7 14.18V3a1 1 0 0 0-2 0v11.18a3 3 0 0 0 0 5.64V21a1 1 0 0 0 2 0v-1.18a3 3 0 0 0 0-5.64ZM6 18a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm15-5a3 3 0 0 0-2-2.82V3a1 1 0 0 0-2 0v7.18a3 3 0 0 0 0 5.64V21a1 1 0 0 0 2 0v-5.18A3 3 0 0 0 21 13Zm-3 1a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm-3-9a3 3 0 1 0-4 2.82V21a1 1 0 0 0 2 0V7.82A3 3 0 0 0 15 5Zm-3 1a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g>`
-	optionsTwoFillPath                = `<g id="evaOptions2Fill0"><g id="evaOptions2Fill1"><path id="evaOptions2Fill2" fill="currentColor" d="M19 9a3 3 0 0 0-2.82 2H3a1 1 0 0 0 0 2h13.18A3 3 0 1 0 19 9ZM3 7h1.18a3 3 0 0 0 5.64 0H21a1 1 0 0 0 0-2H9.82a3 3 0 0 0-5.64 0H3a1 1 0 0 0 0 2Zm18 10h-7.18a3 3 0 0 0-5.64 0H3a1 1 0 0 0 0 2h5.18a3 3 0 0 0 5.64 0H21a1 1 0 0 0 0-2Z"/></g></g>`
-	optionsTwoOutlinePath             = `<g id="evaOptions2Outline0"><g id="evaOptions2Outline1"><path id="evaOptions2Outline2" fill="currentColor" d="M19 9a3 3 0 0 0-2.82 2H3a1 1 0 0 0 0 2h13.18A3 3 0 1 0 19 9Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1ZM3 7h1.18a3 3 0 0 0 5.64 0H21a1 1 0 0 0 0-2H9.82a3 3 0 0 0-5.64 0H3a1 1 0 0 0 0 2Zm4-2a1 1 0 1 1-1 1a1 1 0 0 1 1-1Zm14 12h-7.18a3 3 0 0 0-5.64 0H3a1 1 0 0 0 0 2h5.18a3 3 0 0 0 5.64 0H21a1 1 0 0 0 0-2Zm-10 2a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g>`
-	pantoneFillPath                   = `<g id="evaPantoneFill0"><g id="evaPantoneFill1"><path id="evaPantoneFill2" fill="currentColor" d="M20 13.18h-2.7l-1.86 2L11.88 19l-1.41 1.52L10 21h10a1 1 0 0 0 1-1v-5.82a1 1 0 0 0-1-1ZM18.19 9.3l-4.14-3.86a.89.89 0 0 0-.71-.26a1 1 0 0 0-.7.31l-.82.89v10.71a5.23 5.23 0 0 1-.06.57l6.48-6.95a1 1 0 0 0-.05-1.41ZM10.82 4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v13.09a3.91 3.91 0 0 0 7.82 0Zm-2 13.09a1.91 1.91 0 0 1-3.82 0V15h3.82Zm0-4.09H5v-3h3.82Zm0-5H5V5h3.82Z"/></g></g>`
-	pantoneOutlinePath                = `<g id="evaPantoneOutline0"><g id="evaPantoneOutline1"><path id="evaPantoneOutline2" fill="currentColor" d="M20 13.18h-4.06l2.3-2.47a1 1 0 0 0 0-1.41l-4.19-3.86a.93.93 0 0 0-.71-.26a1 1 0 0 0-.7.31l-1.82 2V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v13.09A3.91 3.91 0 0 0 6.91 21H20a1 1 0 0 0 1-1v-5.82a1 1 0 0 0-1-1Zm-6.58-5.59l2.67 2.49l-5.27 5.66v-5.36ZM8.82 10v3H5v-3Zm0-5v3H5V5ZM5 17.09V15h3.82v2.09a1.91 1.91 0 0 1-3.82 0ZM19 19h-8.49l3.56-3.82H19Z"/></g></g>`
-	paperPlaneFillPath                = `<g id="evaPaperPlaneFill0"><g id="evaPaperPlaneFill1"><path id="evaPaperPlaneFill2" fill="currentColor" d="M21 4a1.31 1.31 0 0 0-.06-.27v-.09a1 1 0 0 0-.2-.3a1 1 0 0 0-.29-.19h-.09a.86.86 0 0 0-.31-.15H20a1 1 0 0 0-.3 0l-18 6a1 1 0 0 0 0 1.9l8.53 2.84l2.84 8.53a1 1 0 0 0 1.9 0l6-18A1 1 0 0 0 21 4Zm-4.7 2.29l-5.57 5.57L5.16 10ZM14 18.84l-1.86-5.57l5.57-5.57Z"/></g></g>`
-	paperPlaneOutlinePath             = `<g id="evaPaperPlaneOutline0"><g id="evaPaperPlaneOutline1"><path id="evaPaperPlaneOutline2" fill="currentColor" d="M21 4a1.31 1.31 0 0 0-.06-.27v-.09a1 1 0 0 0-.2-.3a1 1 0 0 0-.29-.19h-.09a.86.86 0 0 0-.31-.15H20a1 1 0 0 0-.3 0l-18 6a1 1 0 0 0 0 1.9l8.53 2.84l2.84 8.53a1 1 0 0 0 1.9 0l6-18A1 1 0 0 0 21 4Zm-4.7 2.29l-5.57 5.57L5.16 10ZM14 18.84l-1.86-5.57l5.57-5.57Z"/></g></g>`
-	pauseCircleFillPath               = `<g id="evaPauseCircleFill0"><g id="evaPauseCircleFill1"><path id="evaPauseCircleFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm-2 13a1 1 0 0 1-2 0V9a1 1 0 0 1 2 0Zm6 0a1 1 0 0 1-2 0V9a1 1 0 0 1 2 0Z"/></g></g>`
-	pauseCircleOutlinePath            = `<g id="evaPauseCircleOutline0"><g id="evaPauseCircleOutline1"><g id="evaPauseCircleOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M15 8a1 1 0 0 0-1 1v6a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1ZM9 8a1 1 0 0 0-1 1v6a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1Z"/></g></g></g>`
-	peopleFillPath                    = `<g id="evaPeopleFill0"><g id="evaPeopleFill1"><path id="evaPeopleFill2" fill="currentColor" d="M9 11a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm8 2a3 3 0 1 0-3-3a3 3 0 0 0 3 3Zm4 7a1 1 0 0 0 1-1a5 5 0 0 0-8.06-3.95A7 7 0 0 0 2 20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1"/></g></g>`
-	peopleOutlinePath                 = `<g id="evaPeopleOutline0"><g id="evaPeopleOutline1"><path id="evaPeopleOutline2" fill="currentColor" d="M9 11a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm0-6a2 2 0 1 1-2 2a2 2 0 0 1 2-2Zm8 8a3 3 0 1 0-3-3a3 3 0 0 0 3 3Zm0-4a1 1 0 1 1-1 1a1 1 0 0 1 1-1Zm0 5a5 5 0 0 0-3.06 1.05A7 7 0 0 0 2 20a1 1 0 0 0 2 0a5 5 0 0 1 10 0a1 1 0 0 0 2 0a6.9 6.9 0 0 0-.86-3.35A3 3 0 0 1 20 19a1 1 0 0 0 2 0a5 5 0 0 0-5-5Z"/></g></g>`
-	percentFillPath                   = `<g id="evaPercentFill0"><g id="evaPercentFill1"><path id="evaPercentFill2" fill="currentColor" d="M8 11a3.5 3.5 0 1 0-3.5-3.5A3.5 3.5 0 0 0 8 11Zm0-5a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 8 6Zm8 8a3.5 3.5 0 1 0 3.5 3.5A3.5 3.5 0 0 0 16 14Zm0 5a1.5 1.5 0 1 1 1.5-1.5A1.5 1.5 0 0 1 16 19Zm3.74-14.74a.89.89 0 0 0-1.26 0L4.26 18.48a.91.91 0 0 0-.26.63a.89.89 0 0 0 1.52.63L19.74 5.52a.89.89 0 0 0 0-1.26Z"/></g></g>`
-	percentOutlinePath                = `<g id="evaPercentOutline0"><g id="evaPercentOutline1"><path id="evaPercentOutline2" fill="currentColor" d="M8 11a3.5 3.5 0 1 0-3.5-3.5A3.5 3.5 0 0 0 8 11Zm0-5a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 8 6Zm8 8a3.5 3.5 0 1 0 3.5 3.5A3.5 3.5 0 0 0 16 14Zm0 5a1.5 1.5 0 1 1 1.5-1.5A1.5 1.5 0 0 1 16 19Zm3.74-14.74a.89.89 0 0 0-1.26 0L4.26 18.48a.91.91 0 0 0-.26.63a.89.89 0 0 0 1.52.63L19.74 5.52a.89.89 0 0 0 0-1.26Z"/></g></g>`
-	personAddFillPath                 = `<g id="evaPersonAddFill0"><g id="evaPersonAddFill1"><path id="evaPersonAddFill2" fill="currentColor" d="M21 6h-1V5a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0V8h1a1 1 0 0 0 0-2Zm-11 5a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm6 10a1 1 0 0 0 1-1a7 7 0 0 0-14 0a1 1 0 0 0 1 1"/></g></g>`
-	personAddOutlinePath              = `<g id="evaPersonAddOutline0"><g id="evaPersonAddOutline1"><path id="evaPersonAddOutline2" fill="currentColor" d="M21 6h-1V5a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0V8h1a1 1 0 0 0 0-2Zm-11 5a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm0-6a2 2 0 1 1-2 2a2 2 0 0 1 2-2Zm0 8a7 7 0 0 0-7 7a1 1 0 0 0 2 0a5 5 0 0 1 10 0a1 1 0 0 0 2 0a7 7 0 0 0-7-7Z"/></g></g>`
-	personDeleteFillPath              = `<g id="evaPersonDeleteFill0"><g id="evaPersonDeleteFill1"><path id="evaPersonDeleteFill2" fill="currentColor" d="m20.47 7.5l.73-.73a1 1 0 0 0-1.47-1.47L19 6l-.73-.73a1 1 0 0 0-1.47 1.5l.73.73l-.73.73a1 1 0 0 0 1.47 1.47L19 9l.73.73a1 1 0 0 0 1.47-1.5ZM10 11a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm6 10a1 1 0 0 0 1-1a7 7 0 0 0-14 0a1 1 0 0 0 1 1Z"/></g></g>`
-	personDeleteOutlinePath           = `<g id="evaPersonDeleteOutline0"><g id="evaPersonDeleteOutline1"><path id="evaPersonDeleteOutline2" fill="currentColor" d="m20.47 7.5l.73-.73a1 1 0 0 0-1.47-1.47L19 6l-.73-.73a1 1 0 0 0-1.47 1.5l.73.73l-.73.73a1 1 0 0 0 1.47 1.47L19 9l.73.73a1 1 0 0 0 1.47-1.5ZM10 11a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm0-6a2 2 0 1 1-2 2a2 2 0 0 1 2-2Zm0 8a7 7 0 0 0-7 7a1 1 0 0 0 2 0a5 5 0 0 1 10 0a1 1 0 0 0 2 0a7 7 0 0 0-7-7Z"/></g></g>`
-	personDoneFillPath                = `<g id="evaPersonDoneFill0"><g id="evaPersonDoneFill1"><path id="evaPersonDoneFill2" fill="currentColor" d="M21.66 4.25a1 1 0 0 0-1.41.09l-1.87 2.15l-.63-.71a1 1 0 0 0-1.5 1.33l1.39 1.56a1 1 0 0 0 .75.33a1 1 0 0 0 .74-.34l2.61-3a1 1 0 0 0-.08-1.41ZM10 11a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm6 10a1 1 0 0 0 1-1a7 7 0 0 0-14 0a1 1 0 0 0 1 1"/></g></g>`
-	personDoneOutlinePath             = `<g id="evaPersonDoneOutline0"><g id="evaPersonDoneOutline1"><path id="evaPersonDoneOutline2" fill="currentColor" d="M21.66 4.25a1 1 0 0 0-1.41.09l-1.87 2.15l-.63-.71a1 1 0 0 0-1.5 1.33l1.39 1.56a1 1 0 0 0 .75.33a1 1 0 0 0 .74-.34l2.61-3a1 1 0 0 0-.08-1.41ZM10 11a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm0-6a2 2 0 1 1-2 2a2 2 0 0 1 2-2Zm0 8a7 7 0 0 0-7 7a1 1 0 0 0 2 0a5 5 0 0 1 10 0a1 1 0 0 0 2 0a7 7 0 0 0-7-7Z"/></g></g>`
-	personFillPath                    = `<g id="evaPersonFill0"><g id="evaPersonFill1"><path id="evaPersonFill2" fill="currentColor" d="M12 11a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm6 10a1 1 0 0 0 1-1a7 7 0 0 0-14 0a1 1 0 0 0 1 1Z"/></g></g>`
-	personOutlinePath                 = `<g id="evaPersonOutline0"><g id="evaPersonOutline1"><path id="evaPersonOutline2" fill="currentColor" d="M12 11a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm0-6a2 2 0 1 1-2 2a2 2 0 0 1 2-2Zm0 8a7 7 0 0 0-7 7a1 1 0 0 0 2 0a5 5 0 0 1 10 0a1 1 0 0 0 2 0a7 7 0 0 0-7-7Z"/></g></g>`
-	personRemoveFillPath              = `<g id="evaPersonRemoveFill0"><g id="evaPersonRemoveFill1"><path id="evaPersonRemoveFill2" fill="currentColor" d="M21 6h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Zm-11 5a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm6 10a1 1 0 0 0 1-1a7 7 0 0 0-14 0a1 1 0 0 0 1 1"/></g></g>`
-	personRemoveOutlinePath           = `<g id="evaPersonRemoveOutline0"><g id="evaPersonRemoveOutline1"><path id="evaPersonRemoveOutline2" fill="currentColor" d="M21 6h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Zm-11 5a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm0-6a2 2 0 1 1-2 2a2 2 0 0 1 2-2Zm0 8a7 7 0 0 0-7 7a1 1 0 0 0 2 0a5 5 0 0 1 10 0a1 1 0 0 0 2 0a7 7 0 0 0-7-7Z"/></g></g>`
-	phoneCallFillPath                 = `<g id="evaPhoneCallFill0"><g id="evaPhoneCallFill1"><g id="evaPhoneCallFill2" fill="currentColor"><path d="M13 8a3 3 0 0 1 3 3a1 1 0 0 0 2 0a5 5 0 0 0-5-5a1 1 0 0 0 0 2Z"/><path d="M13 4a7 7 0 0 1 7 7a1 1 0 0 0 2 0a9 9 0 0 0-9-9a1 1 0 0 0 0 2Zm8.75 11.91a1 1 0 0 0-.72-.65l-6-1.37a1 1 0 0 0-.92.26c-.14.13-.15.14-.8 1.38a9.91 9.91 0 0 1-4.87-4.89C9.71 10 9.72 10 9.85 9.85a1 1 0 0 0 .26-.92L8.74 3a1 1 0 0 0-.65-.72a3.79 3.79 0 0 0-.72-.18A3.94 3.94 0 0 0 6.6 2A4.6 4.6 0 0 0 2 6.6A15.42 15.42 0 0 0 17.4 22a4.6 4.6 0 0 0 4.6-4.6a4.77 4.77 0 0 0-.06-.76a4.34 4.34 0 0 0-.19-.73Z"/></g></g></g>`
-	phoneCallOutlinePath              = `<g id="evaPhoneCallOutline0"><g id="evaPhoneCallOutline1"><g id="evaPhoneCallOutline2" fill="currentColor"><path d="M13 8a3 3 0 0 1 3 3a1 1 0 0 0 2 0a5 5 0 0 0-5-5a1 1 0 0 0 0 2Z"/><path d="M13 4a7 7 0 0 1 7 7a1 1 0 0 0 2 0a9 9 0 0 0-9-9a1 1 0 0 0 0 2Zm8.75 11.91a1 1 0 0 0-.72-.65l-6-1.37a1 1 0 0 0-.92.26c-.14.13-.15.14-.8 1.38a9.91 9.91 0 0 1-4.87-4.89C9.71 10 9.72 10 9.85 9.85a1 1 0 0 0 .26-.92L8.74 3a1 1 0 0 0-.65-.72a3.79 3.79 0 0 0-.72-.18A3.94 3.94 0 0 0 6.6 2A4.6 4.6 0 0 0 2 6.6A15.42 15.42 0 0 0 17.4 22a4.6 4.6 0 0 0 4.6-4.6a4.77 4.77 0 0 0-.06-.76a4.34 4.34 0 0 0-.19-.73ZM17.4 20A13.41 13.41 0 0 1 4 6.6A2.61 2.61 0 0 1 6.6 4h.33L8 8.64l-.54.28c-.86.45-1.54.81-1.18 1.59a11.85 11.85 0 0 0 7.18 7.21c.84.34 1.17-.29 1.62-1.16l.29-.55L20 17.07v.33a2.61 2.61 0 0 1-2.6 2.6Z"/></g></g></g>`
-	phoneFillPath                     = `<g id="evaPhoneFill0"><g id="evaPhoneFill1"><path id="evaPhoneFill2" fill="currentColor" d="M17.4 22A15.42 15.42 0 0 1 2 6.6A4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07a3.79 3.79 0 0 1 .72.18a1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65a4.34 4.34 0 0 1 .19.73a4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22Z"/></g></g>`
-	phoneMissedFillPath               = `<g id="evaPhoneMissedFill0"><g id="evaPhoneMissedFill1"><path id="evaPhoneMissedFill2" fill="currentColor" d="M21.94 16.64a4.34 4.34 0 0 0-.19-.73a1 1 0 0 0-.72-.65l-6-1.37a1 1 0 0 0-.92.26c-.14.13-.15.14-.8 1.38a10 10 0 0 1-4.88-4.89C9.71 10 9.72 10 9.85 9.85a1 1 0 0 0 .26-.92L8.74 3a1 1 0 0 0-.65-.72a3.79 3.79 0 0 0-.72-.18A3.94 3.94 0 0 0 6.6 2A4.6 4.6 0 0 0 2 6.6A15.42 15.42 0 0 0 17.4 22a4.6 4.6 0 0 0 4.6-4.6a4.77 4.77 0 0 0-.06-.76ZM15.8 8.7a1.05 1.05 0 0 0 1.47 0L18 8l.73.73a1 1 0 0 0 1.47-1.5l-.73-.73l.73-.73a1 1 0 0 0-1.47-1.47L18 5l-.73-.73a1 1 0 0 0-1.47 1.5l.73.73l-.73.73a1.05 1.05 0 0 0 0 1.47Z"/></g></g>`
-	phoneMissedOutlinePath            = `<g id="evaPhoneMissedOutline0"><g id="evaPhoneMissedOutline1"><path id="evaPhoneMissedOutline2" fill="currentColor" d="M21.94 16.64a4.34 4.34 0 0 0-.19-.73a1 1 0 0 0-.72-.65l-6-1.37a1 1 0 0 0-.92.26c-.14.13-.15.14-.8 1.38a10 10 0 0 1-4.88-4.89C9.71 10 9.72 10 9.85 9.85a1 1 0 0 0 .26-.92L8.74 3a1 1 0 0 0-.65-.72a3.79 3.79 0 0 0-.72-.18A3.94 3.94 0 0 0 6.6 2A4.6 4.6 0 0 0 2 6.6A15.42 15.42 0 0 0 17.4 22a4.6 4.6 0 0 0 4.6-4.6a4.77 4.77 0 0 0-.06-.76ZM17.4 20A13.41 13.41 0 0 1 4 6.6A2.61 2.61 0 0 1 6.6 4h.33L8 8.64l-.55.29c-.87.45-1.5.78-1.17 1.58a11.85 11.85 0 0 0 7.18 7.21c.84.34 1.17-.29 1.62-1.16l.29-.55L20 17.07v.33a2.61 2.61 0 0 1-2.6 2.6ZM15.8 8.7a1.05 1.05 0 0 0 1.47 0L18 8l.73.73a1 1 0 0 0 1.47-1.5l-.73-.73l.73-.73a1 1 0 0 0-1.47-1.47L18 5l-.73-.73a1 1 0 0 0-1.47 1.5l.73.73l-.73.73a1.05 1.05 0 0 0 0 1.47Z"/></g></g>`
-	phoneOffFillPath                  = `<g id="evaPhoneOffFill0"><g id="evaPhoneOffFill1"><path id="evaPhoneOffFill2" fill="currentColor" d="M9.27 12.06a10.37 10.37 0 0 1-.8-1.42C9.71 10 9.72 10 9.85 9.85a1 1 0 0 0 .26-.92L8.74 3a1 1 0 0 0-.65-.72a3.79 3.79 0 0 0-.72-.18A3.94 3.94 0 0 0 6.6 2A4.6 4.6 0 0 0 2 6.6a15.33 15.33 0 0 0 3.27 9.46Zm12.67 4.58a4.34 4.34 0 0 0-.19-.73a1 1 0 0 0-.72-.65l-6-1.37a1 1 0 0 0-.92.26c-.14.13-.15.14-.8 1.38a10.88 10.88 0 0 1-1.41-.8l-4 4A15.33 15.33 0 0 0 17.4 22a4.6 4.6 0 0 0 4.6-4.6a4.77 4.77 0 0 0-.06-.76Zm-2.2-12.38a.89.89 0 0 0-1.26 0L4.26 18.48a.91.91 0 0 0-.26.63a.89.89 0 0 0 1.52.63L19.74 5.52a.89.89 0 0 0 0-1.26Z"/></g></g>`
-	phoneOffOutlinePath               = `<g id="evaPhoneOffOutline0"><g id="evaPhoneOffOutline1"><path id="evaPhoneOffOutline2" fill="currentColor" d="M19.74 4.26a.89.89 0 0 0-1.26 0L4.26 18.48a.91.91 0 0 0-.26.63a.89.89 0 0 0 1.52.63L19.74 5.52a.89.89 0 0 0 0-1.26ZM6.7 14.63A13.29 13.29 0 0 1 4 6.6A2.61 2.61 0 0 1 6.6 4h.33L8 8.64l-.55.29c-.87.45-1.5.78-1.17 1.58a11.57 11.57 0 0 0 1.57 3l1.43-1.42a10.37 10.37 0 0 1-.8-1.42C9.71 10 9.72 10 9.85 9.85a1 1 0 0 0 .26-.92L8.74 3a1 1 0 0 0-.65-.72a3.79 3.79 0 0 0-.72-.18A3.94 3.94 0 0 0 6.6 2A4.6 4.6 0 0 0 2 6.6a15.33 15.33 0 0 0 3.27 9.46Zm15.24 2.01a4.34 4.34 0 0 0-.19-.73a1 1 0 0 0-.72-.65l-6-1.37a1 1 0 0 0-.92.26c-.14.13-.15.14-.8 1.38a10.88 10.88 0 0 1-1.41-.8l-1.43 1.43a11.52 11.52 0 0 0 2.94 1.56c.84.34 1.17-.29 1.62-1.16l.29-.55L20 17.07v.33a2.61 2.61 0 0 1-2.6 2.6a13.29 13.29 0 0 1-8-2.7l-1.46 1.43A15.33 15.33 0 0 0 17.4 22a4.6 4.6 0 0 0 4.6-4.6a4.77 4.77 0 0 0-.06-.76Z"/></g></g>`
-	phoneOutlinePath                  = `<g id="evaPhoneOutline0"><g id="evaPhoneOutline1"><path id="evaPhoneOutline2" fill="currentColor" d="M17.4 22A15.42 15.42 0 0 1 2 6.6A4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07a3.79 3.79 0 0 1 .72.18a1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65a4.34 4.34 0 0 1 .19.73a4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22ZM6.6 4A2.61 2.61 0 0 0 4 6.6A13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64L6.93 4Z"/></g></g>`
-	pieChartFillPath                  = `<g id="evaPieChartFill0"><g id="evaPieChartFill1"><g id="evaPieChartFill2" fill="currentColor"><path d="M14.5 10.33h6.67A.83.83 0 0 0 22 9.5A7.5 7.5 0 0 0 14.5 2a.83.83 0 0 0-.83.83V9.5a.83.83 0 0 0 .83.83Z"/><path d="M21.08 12h-8.15a.91.91 0 0 1-.91-.91V2.92A.92.92 0 0 0 11 2a10 10 0 1 0 11 11a.92.92 0 0 0-.92-1Z"/></g></g></g>`
-	pieChartOutlinePath               = `<g id="evaPieChartOutline0"><g id="evaPieChartOutline1"><g id="evaPieChartOutline2" fill="currentColor"><path d="M13 2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1a9 9 0 0 0-9-9Zm1 8V4.07A7 7 0 0 1 19.93 10Z"/><path d="M20.82 14.06a1 1 0 0 0-1.28.61A8 8 0 1 1 9.33 4.46a1 1 0 0 0-.66-1.89a10 10 0 1 0 12.76 12.76a1 1 0 0 0-.61-1.27Z"/></g></g></g>`
-	pieChartTwoFillPath               = `<g id="evaPieChart2Fill0"><g id="evaPieChart2Fill1"><g id="evaPieChart2Fill2" fill="currentColor"><path d="M14.5 10.33h6.67A.83.83 0 0 0 22 9.5A7.5 7.5 0 0 0 14.5 2a.83.83 0 0 0-.83.83V9.5a.83.83 0 0 0 .83.83Zm.83-6.6a5.83 5.83 0 0 1 4.94 4.94h-4.94Z"/><path d="M21.08 12h-8.15a.91.91 0 0 1-.91-.91V2.92A.92.92 0 0 0 11 2a10 10 0 1 0 11 11a.92.92 0 0 0-.92-1Z"/></g></g></g>`
-	pinFillPath                       = `<g id="evaPinFill0"><g id="evaPinFill1"><g id="evaPinFill2" fill="currentColor"><circle cx="12" cy="9.5" r="1.5"/><path d="M12 2a8 8 0 0 0-8 7.92c0 5.48 7.05 11.58 7.35 11.84a1 1 0 0 0 1.3 0C13 21.5 20 15.4 20 9.92A8 8 0 0 0 12 2Zm0 11a3.5 3.5 0 1 1 3.5-3.5A3.5 3.5 0 0 1 12 13Z"/></g></g></g>`
-	pinOutlinePath                    = `<g id="evaPinOutline0"><g id="evaPinOutline1"><g id="evaPinOutline2" fill="currentColor"><path d="M12 2a8 8 0 0 0-8 7.92c0 5.48 7.05 11.58 7.35 11.84a1 1 0 0 0 1.3 0C13 21.5 20 15.4 20 9.92A8 8 0 0 0 12 2Zm0 17.65c-1.67-1.59-6-6-6-9.73a6 6 0 0 1 12 0c0 3.7-4.33 8.14-6 9.73Z"/><path d="M12 6a3.5 3.5 0 1 0 3.5 3.5A3.5 3.5 0 0 0 12 6Zm0 5a1.5 1.5 0 1 1 1.5-1.5A1.5 1.5 0 0 1 12 11Z"/></g></g></g>`
-	playCircleFillPath                = `<g id="evaPlayCircleFill0"><g id="evaPlayCircleFill1"><g id="evaPlayCircleFill2" fill="currentColor"><path d="m11.5 14.6l2.81-2.6l-2.81-2.6v5.2z"/><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm4 11.18l-3.64 3.37a1.74 1.74 0 0 1-1.16.45a1.68 1.68 0 0 1-.69-.15a1.6 1.6 0 0 1-1-1.48V8.63a1.6 1.6 0 0 1 1-1.48a1.7 1.7 0 0 1 1.85.3L16 10.82a1.6 1.6 0 0 1 0 2.36Z"/></g></g></g>`
-	playCircleOutlinePath             = `<g id="evaPlayCircleOutline0"><g id="evaPlayCircleOutline1"><g id="evaPlayCircleOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M12.34 7.45a1.7 1.7 0 0 0-1.85-.3a1.6 1.6 0 0 0-1 1.48v6.74a1.6 1.6 0 0 0 1 1.48a1.68 1.68 0 0 0 .69.15a1.74 1.74 0 0 0 1.16-.45L16 13.18a1.6 1.6 0 0 0 0-2.36Zm-.84 7.15V9.4l2.81 2.6Z"/></g></g></g>`
-	plusCircleFillPath                = `<g id="evaPlusCircleFill0"><g id="evaPlusCircleFill1"><path id="evaPlusCircleFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm3 11h-2v2a1 1 0 0 1-2 0v-2H9a1 1 0 0 1 0-2h2V9a1 1 0 0 1 2 0v2h2a1 1 0 0 1 0 2Z"/></g></g>`
-	plusCircleOutlinePath             = `<g id="evaPlusCircleOutline0"><g id="evaPlusCircleOutline1"><g id="evaPlusCircleOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M15 11h-2V9a1 1 0 0 0-2 0v2H9a1 1 0 0 0 0 2h2v2a1 1 0 0 0 2 0v-2h2a1 1 0 0 0 0-2Z"/></g></g></g>`
-	plusFillPath                      = `<g id="evaPlusFill0"><g id="evaPlusFill1"><path id="evaPlusFill2" fill="currentColor" d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z"/></g></g>`
-	plusOutlinePath                   = `<g id="evaPlusOutline0"><g id="evaPlusOutline1"><path id="evaPlusOutline2" fill="currentColor" d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z"/></g></g>`
-	plusSquareFillPath                = `<g id="evaPlusSquareFill0"><g id="evaPlusSquareFill1"><path id="evaPlusSquareFill2" fill="currentColor" d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm-3 10h-2v2a1 1 0 0 1-2 0v-2H9a1 1 0 0 1 0-2h2V9a1 1 0 0 1 2 0v2h2a1 1 0 0 1 0 2Z"/></g></g>`
-	plusSquareOutlinePath             = `<g id="evaPlusSquareOutline0"><g id="evaPlusSquareOutline1"><g id="evaPlusSquareOutline2" fill="currentColor"><path d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1Z"/><path d="M15 11h-2V9a1 1 0 0 0-2 0v2H9a1 1 0 0 0 0 2h2v2a1 1 0 0 0 2 0v-2h2a1 1 0 0 0 0-2Z"/></g></g></g>`
-	powerFillPath                     = `<g id="evaPowerFill0"><g id="evaPowerFill1"><g id="evaPowerFill2" fill="currentColor"><path d="M12 13a1 1 0 0 0 1-1V2a1 1 0 0 0-2 0v10a1 1 0 0 0 1 1Z"/><path d="M16.59 3.11a1 1 0 0 0-.92 1.78a8 8 0 1 1-7.34 0a1 1 0 1 0-.92-1.78a10 10 0 1 0 9.18 0Z"/></g></g></g>`
-	powerOutlinePath                  = `<g id="evaPowerOutline0"><g id="evaPowerOutline1"><g id="evaPowerOutline2" fill="currentColor"><path d="M12 13a1 1 0 0 0 1-1V2a1 1 0 0 0-2 0v10a1 1 0 0 0 1 1Z"/><path d="M16.59 3.11a1 1 0 0 0-.92 1.78a8 8 0 1 1-7.34 0a1 1 0 1 0-.92-1.78a10 10 0 1 0 9.18 0Z"/></g></g></g>`
-	pricetagsFillPath                 = `<g id="evaPricetagsFill0"><g id="evaPricetagsFill1"><path id="evaPricetagsFill2" fill="currentColor" d="m21.47 11.58l-6.42-6.41a1 1 0 0 0-.61-.29L5.09 4a1 1 0 0 0-.8.29a1 1 0 0 0-.29.8l.88 9.35a1 1 0 0 0 .29.61l6.41 6.42a1.84 1.84 0 0 0 1.29.53a1.82 1.82 0 0 0 1.28-.53l7.32-7.32a1.82 1.82 0 0 0 0-2.57Zm-9.91 0a1.5 1.5 0 1 1 0-2.12a1.49 1.49 0 0 1 0 2.1Z"/></g></g>`
-	pricetagsOutlinePath              = `<g id="evaPricetagsOutline0"><g id="evaPricetagsOutline1"><g id="evaPricetagsOutline2" fill="currentColor"><path d="M12.87 22a1.84 1.84 0 0 1-1.29-.53l-6.41-6.42a1 1 0 0 1-.29-.61L4 5.09a1 1 0 0 1 .29-.8a1 1 0 0 1 .8-.29l9.35.88a1 1 0 0 1 .61.29l6.42 6.41a1.82 1.82 0 0 1 0 2.57l-7.32 7.32a1.82 1.82 0 0 1-1.28.53Zm-6-8.11l6 6l7.05-7.05l-6-6l-7.81-.73Z"/><circle cx="10.5" cy="10.5" r="1.5"/></g></g></g>`
-	printerFillPath                   = `<g id="evaPrinterFill0"><g id="evaPrinterFill1"><path id="evaPrinterFill2" fill="currentColor" d="M19.36 7H18V5a1.92 1.92 0 0 0-1.83-2H7.83A1.92 1.92 0 0 0 6 5v2H4.64A2.66 2.66 0 0 0 2 9.67v6.66A2.66 2.66 0 0 0 4.64 19h.86a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2h.86A2.66 2.66 0 0 0 22 16.33V9.67A2.66 2.66 0 0 0 19.36 7ZM8 5h8v2H8Zm-.5 14v-4h9v4Z"/></g></g>`
-	printerOutlinePath                = `<g id="evaPrinterOutline0"><g id="evaPrinterOutline1"><path id="evaPrinterOutline2" fill="currentColor" d="M19.36 7H18V5a1.92 1.92 0 0 0-1.83-2H7.83A1.92 1.92 0 0 0 6 5v2H4.64A2.66 2.66 0 0 0 2 9.67v6.66A2.66 2.66 0 0 0 4.64 19h.86a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2h.86A2.66 2.66 0 0 0 22 16.33V9.67A2.66 2.66 0 0 0 19.36 7ZM8 5h8v2H8Zm-.5 14v-4h9v4ZM20 16.33a.66.66 0 0 1-.64.67h-.86v-2a2 2 0 0 0-2-2h-9a2 2 0 0 0-2 2v2h-.86a.66.66 0 0 1-.64-.67V9.67A.66.66 0 0 1 4.64 9h14.72a.66.66 0 0 1 .64.67Z"/></g></g>`
-	questionMarkCircleFillPath        = `<g id="evaQuestionMarkCircleFill0"><g id="evaQuestionMarkCircleFill1"><path id="evaQuestionMarkCircleFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 16a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm1-5.16V14a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1a1.5 1.5 0 1 0-1.5-1.5a1 1 0 0 1-2 0a3.5 3.5 0 1 1 4.5 3.34Z"/></g></g>`
-	questionMarkCircleOutlinePath     = `<g id="evaQuestionMarkCircleOutline0"><g id="evaQuestionMarkCircleOutline1"><g id="evaQuestionMarkCircleOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M12 6a3.5 3.5 0 0 0-3.5 3.5a1 1 0 0 0 2 0A1.5 1.5 0 1 1 12 11a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.16A3.49 3.49 0 0 0 12 6Z"/><circle cx="12" cy="17" r="1"/></g></g></g>`
-	questionMarkFillPath              = `<g id="evaQuestionMarkFill0"><g id="evaQuestionMarkFill1"><g id="evaQuestionMarkFill2" fill="currentColor"><path d="M17 9A5 5 0 0 0 7 9a1 1 0 0 0 2 0a3 3 0 1 1 3 3a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.1A5 5 0 0 0 17 9Z"/><circle cx="12" cy="19" r="1"/></g></g></g>`
-	questionMarkOutlinePath           = `<g id="evaQuestionMarkOutline0"><g id="evaQuestionMarkOutline1"><g id="evaQuestionMarkOutline2" fill="currentColor"><path d="M17 9A5 5 0 0 0 7 9a1 1 0 0 0 2 0a3 3 0 1 1 3 3a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.1A5 5 0 0 0 17 9Z"/><circle cx="12" cy="19" r="1"/></g></g></g>`
-	radioButtonOffFillPath            = `<g id="evaRadioButtonOffFill0"><g id="evaRadioButtonOffFill1"><path id="evaRadioButtonOffFill2" fill="currentColor" d="M12 22a10 10 0 1 1 10-10a10 10 0 0 1-10 10Zm0-18a8 8 0 1 0 8 8a8 8 0 0 0-8-8Z"/></g></g>`
-	radioButtonOffOutlinePath         = `<g id="evaRadioButtonOffOutline0"><g id="evaRadioButtonOffOutline1"><path id="evaRadioButtonOffOutline2" fill="currentColor" d="M12 22a10 10 0 1 1 10-10a10 10 0 0 1-10 10Zm0-18a8 8 0 1 0 8 8a8 8 0 0 0-8-8Z"/></g></g>`
-	radioButtonOnFillPath             = `<g id="evaRadioButtonOnFill0"><g id="evaRadioButtonOnFill1"><g id="evaRadioButtonOnFill2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M12 7a5 5 0 1 0 5 5a5 5 0 0 0-5-5Z"/></g></g></g>`
-	radioButtonOnOutlinePath          = `<g id="evaRadioButtonOnOutline0"><g id="evaRadioButtonOnOutline1"><g id="evaRadioButtonOnOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M12 7a5 5 0 1 0 5 5a5 5 0 0 0-5-5Zm0 8a3 3 0 1 1 3-3a3 3 0 0 1-3 3Z"/></g></g></g>`
-	radioFillPath                     = `<g id="evaRadioFill0"><g id="evaRadioFill1"><g id="evaRadioFill2" fill="currentColor"><path d="M12 8a3 3 0 0 0-1 5.83a1 1 0 0 0 0 .17v6a1 1 0 0 0 2 0v-6a1 1 0 0 0 0-.17A3 3 0 0 0 12 8Zm-8.5 3a6.87 6.87 0 0 1 2.64-5.23a1 1 0 1 0-1.28-1.54A8.84 8.84 0 0 0 1.5 11a8.84 8.84 0 0 0 3.36 6.77a1 1 0 1 0 1.28-1.54A6.87 6.87 0 0 1 3.5 11Z"/><path d="M16.64 6.24a1 1 0 0 0-1.28 1.52A4.28 4.28 0 0 1 17 11a4.28 4.28 0 0 1-1.64 3.24A1 1 0 0 0 16 16a1 1 0 0 0 .64-.24A6.2 6.2 0 0 0 19 11a6.2 6.2 0 0 0-2.36-4.76Zm-7.88.12a1 1 0 0 0-1.4-.12A6.2 6.2 0 0 0 5 11a6.2 6.2 0 0 0 2.36 4.76a1 1 0 0 0 1.4-.12a1 1 0 0 0-.12-1.4A4.28 4.28 0 0 1 7 11a4.28 4.28 0 0 1 1.64-3.24a1 1 0 0 0 .12-1.4Z"/><path d="M19.14 4.23a1 1 0 1 0-1.28 1.54A6.87 6.87 0 0 1 20.5 11a6.87 6.87 0 0 1-2.64 5.23a1 1 0 0 0 1.28 1.54A8.84 8.84 0 0 0 22.5 11a8.84 8.84 0 0 0-3.36-6.77Z"/></g></g></g>`
-	radioOutlinePath                  = `<g id="evaRadioOutline0"><g id="evaRadioOutline1"><g id="evaRadioOutline2" fill="currentColor"><path d="M12 8a3 3 0 0 0-1 5.83a1 1 0 0 0 0 .17v6a1 1 0 0 0 2 0v-6a1 1 0 0 0 0-.17A3 3 0 0 0 12 8Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm-8.5-1a6.87 6.87 0 0 1 2.64-5.23a1 1 0 1 0-1.28-1.54A8.84 8.84 0 0 0 1.5 11a8.84 8.84 0 0 0 3.36 6.77a1 1 0 1 0 1.28-1.54A6.87 6.87 0 0 1 3.5 11Z"/><path d="M16.64 6.24a1 1 0 0 0-1.28 1.52A4.28 4.28 0 0 1 17 11a4.28 4.28 0 0 1-1.64 3.24A1 1 0 0 0 16 16a1 1 0 0 0 .64-.24A6.2 6.2 0 0 0 19 11a6.2 6.2 0 0 0-2.36-4.76Zm-7.88.12a1 1 0 0 0-1.4-.12A6.2 6.2 0 0 0 5 11a6.2 6.2 0 0 0 2.36 4.76a1 1 0 0 0 1.4-.12a1 1 0 0 0-.12-1.4A4.28 4.28 0 0 1 7 11a4.28 4.28 0 0 1 1.64-3.24a1 1 0 0 0 .12-1.4Z"/><path d="M19.14 4.23a1 1 0 1 0-1.28 1.54A6.87 6.87 0 0 1 20.5 11a6.87 6.87 0 0 1-2.64 5.23a1 1 0 0 0 1.28 1.54A8.84 8.84 0 0 0 22.5 11a8.84 8.84 0 0 0-3.36-6.77Z"/></g></g></g>`
-	recordingFillPath                 = `<g id="evaRecordingFill0"><g id="evaRecordingFill1"><path id="evaRecordingFill2" fill="currentColor" d="M18 8a4 4 0 0 0-4 4a3.91 3.91 0 0 0 .56 2H9.44a3.91 3.91 0 0 0 .56-2a4 4 0 1 0-4 4h12a4 4 0 0 0 0-8Z"/></g></g>`
-	recordingOutlinePath              = `<g id="evaRecordingOutline0"><g id="evaRecordingOutline1"><path id="evaRecordingOutline2" fill="currentColor" d="M18 8a4 4 0 0 0-4 4a3.91 3.91 0 0 0 .56 2H9.44a3.91 3.91 0 0 0 .56-2a4 4 0 1 0-4 4h12a4 4 0 0 0 0-8ZM4 12a2 2 0 1 1 2 2a2 2 0 0 1-2-2Zm14 2a2 2 0 1 1 2-2a2 2 0 0 1-2 2Z"/></g></g>`
-	refreshFillPath                   = `<g id="evaRefreshFill0"><g id="evaRefreshFill1"><path id="evaRefreshFill2" fill="currentColor" d="M20.3 13.43a1 1 0 0 0-1.25.65A7.14 7.14 0 0 1 12.18 19A7.1 7.1 0 0 1 5 12a7.1 7.1 0 0 1 7.18-7a7.26 7.26 0 0 1 4.65 1.67l-2.17-.36a1 1 0 0 0-1.15.83a1 1 0 0 0 .83 1.15l4.24.7h.17a1 1 0 0 0 .34-.06a.33.33 0 0 0 .1-.06a.78.78 0 0 0 .2-.11l.09-.11c0-.05.09-.09.13-.15s0-.1.05-.14a1.34 1.34 0 0 0 .07-.18l.75-4a1 1 0 0 0-2-.38l-.27 1.45A9.21 9.21 0 0 0 12.18 3A9.1 9.1 0 0 0 3 12a9.1 9.1 0 0 0 9.18 9A9.12 9.12 0 0 0 21 14.68a1 1 0 0 0-.7-1.25Z"/></g></g>`
-	refreshOutlinePath                = `<g id="evaRefreshOutline0"><g id="evaRefreshOutline1"><path id="evaRefreshOutline2" fill="currentColor" d="M20.3 13.43a1 1 0 0 0-1.25.65A7.14 7.14 0 0 1 12.18 19A7.1 7.1 0 0 1 5 12a7.1 7.1 0 0 1 7.18-7a7.26 7.26 0 0 1 4.65 1.67l-2.17-.36a1 1 0 0 0-1.15.83a1 1 0 0 0 .83 1.15l4.24.7h.17a1 1 0 0 0 .34-.06a.33.33 0 0 0 .1-.06a.78.78 0 0 0 .2-.11l.09-.11c0-.05.09-.09.13-.15s0-.1.05-.14a1.34 1.34 0 0 0 .07-.18l.75-4a1 1 0 0 0-2-.38l-.27 1.45A9.21 9.21 0 0 0 12.18 3A9.1 9.1 0 0 0 3 12a9.1 9.1 0 0 0 9.18 9A9.12 9.12 0 0 0 21 14.68a1 1 0 0 0-.7-1.25Z"/></g></g>`
-	repeatFillPath                    = `<g id="evaRepeatFill0"><g id="evaRepeatFill1"><path id="evaRepeatFill2" fill="currentColor" d="M17.91 5h-12l1.3-1.29a1 1 0 0 0-1.42-1.42l-3 3a1 1 0 0 0 0 1.42l3 3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L5.91 7h12a1.56 1.56 0 0 1 1.59 1.53V11a1 1 0 0 0 2 0V8.53A3.56 3.56 0 0 0 17.91 5Zm.3 9.29a1 1 0 0 0-1.42 1.42l1.3 1.29h-12a1.56 1.56 0 0 1-1.59-1.53V13a1 1 0 0 0-2 0v2.47A3.56 3.56 0 0 0 6.09 19h12l-1.3 1.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l3-3a1 1 0 0 0 0-1.42Z"/></g></g>`
-	repeatOutlinePath                 = `<g id="evaRepeatOutline0"><g id="evaRepeatOutline1"><path id="evaRepeatOutline2" fill="currentColor" d="M17.91 5h-12l1.3-1.29a1 1 0 0 0-1.42-1.42l-3 3a1 1 0 0 0 0 1.42l3 3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L5.91 7h12a1.56 1.56 0 0 1 1.59 1.53V11a1 1 0 0 0 2 0V8.53A3.56 3.56 0 0 0 17.91 5Zm.3 9.29a1 1 0 0 0-1.42 1.42l1.3 1.29h-12a1.56 1.56 0 0 1-1.59-1.53V13a1 1 0 0 0-2 0v2.47A3.56 3.56 0 0 0 6.09 19h12l-1.3 1.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l3-3a1 1 0 0 0 0-1.42Z"/></g></g>`
-	rewindLeftFillPath                = `<g id="evaRewindLeftFill0"><g id="evaRewindLeftFill1"><path id="evaRewindLeftFill2" fill="currentColor" d="M18.45 6.2a2.1 2.1 0 0 0-2.21.26l-4.74 3.92V7.79a1.76 1.76 0 0 0-1.05-1.59a2.1 2.1 0 0 0-2.21.26l-5.1 4.21a1.7 1.7 0 0 0 0 2.66l5.1 4.21a2.06 2.06 0 0 0 1.3.46a2.23 2.23 0 0 0 .91-.2a1.76 1.76 0 0 0 1.05-1.59v-2.59l4.74 3.92a2.06 2.06 0 0 0 1.3.46a2.23 2.23 0 0 0 .91-.2a1.76 1.76 0 0 0 1.05-1.59V7.79a1.76 1.76 0 0 0-1.05-1.59Z"/></g></g>`
-	rewindLeftOutlinePath             = `<g id="evaRewindLeftOutline0"><g id="evaRewindLeftOutline1"><path id="evaRewindLeftOutline2" fill="currentColor" d="M18.45 6.2a2.1 2.1 0 0 0-2.21.26l-4.74 3.92V7.79a1.76 1.76 0 0 0-1.05-1.59a2.1 2.1 0 0 0-2.21.26l-5.1 4.21a1.7 1.7 0 0 0 0 2.66l5.1 4.21a2.06 2.06 0 0 0 1.3.46a2.23 2.23 0 0 0 .91-.2a1.76 1.76 0 0 0 1.05-1.59v-2.59l4.74 3.92a2.06 2.06 0 0 0 1.3.46a2.23 2.23 0 0 0 .91-.2a1.76 1.76 0 0 0 1.05-1.59V7.79a1.76 1.76 0 0 0-1.05-1.59ZM9.5 16l-4.82-4L9.5 8.09Zm8 0l-4.82-4l4.82-3.91Z"/></g></g>`
-	rewindRightFillPath               = `<g id="evaRewindRightFill0"><g id="evaRewindRightFill1"><path id="evaRewindRightFill2" fill="currentColor" d="m20.86 10.67l-5.1-4.21a2.1 2.1 0 0 0-2.21-.26a1.76 1.76 0 0 0-1.05 1.59v2.59L7.76 6.46a2.1 2.1 0 0 0-2.21-.26a1.76 1.76 0 0 0-1 1.59v8.42a1.76 1.76 0 0 0 1 1.59a2.23 2.23 0 0 0 .91.2a2.06 2.06 0 0 0 1.3-.46l4.74-3.92v2.59a1.76 1.76 0 0 0 1.05 1.59a2.23 2.23 0 0 0 .91.2a2.06 2.06 0 0 0 1.3-.46l5.1-4.21a1.7 1.7 0 0 0 0-2.66Z"/></g></g>`
-	rewindRightOutlinePath            = `<g id="evaRewindRightOutline0"><g id="evaRewindRightOutline1"><path id="evaRewindRightOutline2" fill="currentColor" d="m20.86 10.67l-5.1-4.21a2.1 2.1 0 0 0-2.21-.26a1.76 1.76 0 0 0-1.05 1.59v2.59L7.76 6.46a2.1 2.1 0 0 0-2.21-.26a1.76 1.76 0 0 0-1 1.59v8.42a1.76 1.76 0 0 0 1 1.59a2.23 2.23 0 0 0 .91.2a2.06 2.06 0 0 0 1.3-.46l4.74-3.92v2.59a1.76 1.76 0 0 0 1.05 1.59a2.23 2.23 0 0 0 .91.2a2.06 2.06 0 0 0 1.3-.46l5.1-4.21a1.7 1.7 0 0 0 0-2.66ZM6.5 15.91V8l4.82 4Zm8 0V8l4.82 4Z"/></g></g>`
-	saveFillPath                      = `<g id="evaSaveFill0"><g id="evaSaveFill1"><g id="evaSaveFill2" fill="currentColor"><path d="M10 17h4v4h-4z"/><path d="m20.12 8.71l-4.83-4.83A3 3 0 0 0 13.17 3H10v6h5a1 1 0 0 1 0 2H9a1 1 0 0 1-1-1V3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h2v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4h2a3 3 0 0 0 3-3v-7.17a3 3 0 0 0-.88-2.12Z"/></g></g></g>`
-	saveOutlinePath                   = `<g id="evaSaveOutline0"><g id="evaSaveOutline1"><path id="evaSaveOutline2" fill="currentColor" d="m20.12 8.71l-4.83-4.83A3 3 0 0 0 13.17 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-7.17a3 3 0 0 0-.88-2.12ZM10 19v-2h4v2Zm9-1a1 1 0 0 1-1 1h-2v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h2v5a1 1 0 0 0 1 1h4a1 1 0 0 0 0-2h-3V5h3.17a1.05 1.05 0 0 1 .71.29l4.83 4.83a1 1 0 0 1 .29.71Z"/></g></g>`
-	scissorsFillPath                  = `<g id="evaScissorsFill0"><g id="evaScissorsFill1"><g id="evaScissorsFill2" fill="currentColor"><path d="M20.21 5.71a1 1 0 1 0-1.42-1.42l-6.28 6.31l-3.3-3.31A3 3 0 0 0 9.5 6a3 3 0 1 0-3 3a3 3 0 0 0 1.29-.3L11.1 12l-3.29 3.3A3 3 0 0 0 6.5 15a3 3 0 1 0 3 3a3 3 0 0 0-.29-1.26ZM6.5 7a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm0 12a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/><path d="M15.21 13.29a1 1 0 0 0-1.42 1.42l5 5a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g></g>`
-	scissorsOutlinePath               = `<g id="evaScissorsOutline0"><g id="evaScissorsOutline1"><g id="evaScissorsOutline2" fill="currentColor"><path d="M20.21 5.71a1 1 0 1 0-1.42-1.42l-6.28 6.31l-3.3-3.31A3 3 0 0 0 9.5 6a3 3 0 1 0-3 3a3 3 0 0 0 1.29-.3L11.1 12l-3.29 3.3A3 3 0 0 0 6.5 15a3 3 0 1 0 3 3a3 3 0 0 0-.29-1.26ZM6.5 7a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm0 12a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/><path d="M15.21 13.29a1 1 0 0 0-1.42 1.42l5 5a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g></g>`
-	searchFillPath                    = `<g id="evaSearchFill0"><g id="evaSearchFill1"><path id="evaSearchFill2" fill="currentColor" d="m20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8a7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM5 11a6 6 0 1 1 6 6a6 6 0 0 1-6-6Z"/></g></g>`
-	searchOutlinePath                 = `<g id="evaSearchOutline0"><g id="evaSearchOutline1"><path id="evaSearchOutline2" fill="currentColor" d="m20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8a7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM5 11a6 6 0 1 1 6 6a6 6 0 0 1-6-6Z"/></g></g>`
-	settingsFillPath                  = `<g id="evaSettingsFill0"><g id="evaSettingsFill1"><g id="evaSettingsFill2" fill="currentColor"><circle cx="12" cy="12" r="1.5"/><path d="M21.89 10.32L21.1 7.8a2.26 2.26 0 0 0-2.88-1.51l-.34.11a1.74 1.74 0 0 1-1.59-.26l-.11-.08a1.76 1.76 0 0 1-.69-1.43v-.28a2.37 2.37 0 0 0-.68-1.68a2.26 2.26 0 0 0-1.6-.67h-2.55a2.32 2.32 0 0 0-2.29 2.33v.24a1.94 1.94 0 0 1-.73 1.51l-.13.1a1.93 1.93 0 0 1-1.78.29a2.14 2.14 0 0 0-1.68.12a2.18 2.18 0 0 0-1.12 1.33l-.82 2.6a2.34 2.34 0 0 0 1.48 2.94h.16a1.83 1.83 0 0 1 1.12 1.22l.06.16a2.06 2.06 0 0 1-.23 1.86a2.37 2.37 0 0 0 .49 3.3l2.07 1.57a2.25 2.25 0 0 0 1.35.43A2 2 0 0 0 9 22a2.25 2.25 0 0 0 1.47-1l.23-.33a1.8 1.8 0 0 1 1.43-.77a1.75 1.75 0 0 1 1.5.78l.12.17a2.24 2.24 0 0 0 3.22.53L19 19.86a2.38 2.38 0 0 0 .5-3.23l-.26-.38A2 2 0 0 1 19 14.6a1.89 1.89 0 0 1 1.21-1.28l.2-.07a2.36 2.36 0 0 0 1.48-2.93ZM12 15.5a3.5 3.5 0 1 1 3.5-3.5a3.5 3.5 0 0 1-3.5 3.5Z"/></g></g></g>`
-	settingsOutlinePath               = `<g id="evaSettingsOutline0"><g id="evaSettingsOutline1"><g id="evaSettingsOutline2" fill="currentColor"><path id="evaSettingsOutline3" d="M8.61 22a2.25 2.25 0 0 1-1.35-.46L5.19 20a2.37 2.37 0 0 1-.49-3.22a2.06 2.06 0 0 0 .23-1.86l-.06-.16a1.83 1.83 0 0 0-1.12-1.22h-.16a2.34 2.34 0 0 1-1.48-2.94L2.93 8a2.18 2.18 0 0 1 1.12-1.41a2.14 2.14 0 0 1 1.68-.12a1.93 1.93 0 0 0 1.78-.29l.13-.1a1.94 1.94 0 0 0 .73-1.51v-.24A2.32 2.32 0 0 1 10.66 2h2.55a2.26 2.26 0 0 1 1.6.67a2.37 2.37 0 0 1 .68 1.68v.28a1.76 1.76 0 0 0 .69 1.43l.11.08a1.74 1.74 0 0 0 1.59.26l.34-.11A2.26 2.26 0 0 1 21.1 7.8l.79 2.52a2.36 2.36 0 0 1-1.46 2.93l-.2.07A1.89 1.89 0 0 0 19 14.6a2 2 0 0 0 .25 1.65l.26.38a2.38 2.38 0 0 1-.5 3.23L17 21.41a2.24 2.24 0 0 1-3.22-.53l-.12-.17a1.75 1.75 0 0 0-1.5-.78a1.8 1.8 0 0 0-1.43.77l-.23.33A2.25 2.25 0 0 1 9 22a2 2 0 0 1-.39 0ZM4.4 11.62a3.83 3.83 0 0 1 2.38 2.5v.12a4 4 0 0 1-.46 3.62a.38.38 0 0 0 0 .51L8.47 20a.25.25 0 0 0 .37-.07l.23-.33a3.77 3.77 0 0 1 6.2 0l.12.18a.3.3 0 0 0 .18.12a.25.25 0 0 0 .19-.05l2.06-1.56a.36.36 0 0 0 .07-.49l-.26-.38A4 4 0 0 1 17.1 14a3.92 3.92 0 0 1 2.49-2.61l.2-.07a.34.34 0 0 0 .19-.44l-.78-2.49a.35.35 0 0 0-.2-.19a.21.21 0 0 0-.19 0l-.34.11a3.74 3.74 0 0 1-3.43-.57L15 7.65a3.76 3.76 0 0 1-1.49-3v-.31a.37.37 0 0 0-.1-.26a.31.31 0 0 0-.21-.08h-2.54a.31.31 0 0 0-.29.33v.25a3.9 3.9 0 0 1-1.52 3.09l-.13.1a3.91 3.91 0 0 1-3.63.59a.22.22 0 0 0-.14 0a.28.28 0 0 0-.12.15L4 11.12a.36.36 0 0 0 .22.45Z"/><path d="M12 15.5a3.5 3.5 0 1 1 3.5-3.5a3.5 3.5 0 0 1-3.5 3.5Zm0-5a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5Z"/></g></g></g>`
-	settingsTwoFillPath               = `<g id="evaSettings2Fill0"><g id="evaSettings2Fill1"><g id="evaSettings2Fill2" fill="currentColor"><circle cx="12" cy="12" r="1.5"/><path d="M20.32 9.37h-1.09c-.14 0-.24-.11-.3-.26a.34.34 0 0 1 0-.37l.81-.74a1.63 1.63 0 0 0 .5-1.18a1.67 1.67 0 0 0-.5-1.19L18.4 4.26a1.67 1.67 0 0 0-2.37 0l-.77.74a.38.38 0 0 1-.41 0a.34.34 0 0 1-.22-.29V3.68A1.68 1.68 0 0 0 13 2h-1.94a1.69 1.69 0 0 0-1.69 1.68v1.09c0 .14-.11.24-.26.3a.34.34 0 0 1-.37 0L8 4.26a1.72 1.72 0 0 0-1.19-.5a1.65 1.65 0 0 0-1.18.5L4.26 5.6a1.67 1.67 0 0 0 0 2.4l.74.74a.38.38 0 0 1 0 .41a.34.34 0 0 1-.29.22H3.68A1.68 1.68 0 0 0 2 11.05v1.89a1.69 1.69 0 0 0 1.68 1.69h1.09c.14 0 .24.11.3.26a.34.34 0 0 1 0 .37l-.81.74a1.72 1.72 0 0 0-.5 1.19a1.66 1.66 0 0 0 .5 1.19l1.34 1.36a1.67 1.67 0 0 0 2.37 0l.77-.74a.38.38 0 0 1 .41 0a.34.34 0 0 1 .22.29v1.09A1.68 1.68 0 0 0 11.05 22h1.89a1.69 1.69 0 0 0 1.69-1.68v-1.09c0-.14.11-.24.26-.3a.34.34 0 0 1 .37 0l.76.77a1.72 1.72 0 0 0 1.19.5a1.65 1.65 0 0 0 1.18-.5l1.34-1.34a1.67 1.67 0 0 0 0-2.37l-.73-.73a.34.34 0 0 1 0-.37a.34.34 0 0 1 .29-.22h1.09A1.68 1.68 0 0 0 22 13v-1.94a1.69 1.69 0 0 0-1.68-1.69ZM12 15.5a3.5 3.5 0 1 1 3.5-3.5a3.5 3.5 0 0 1-3.5 3.5Z"/></g></g></g>`
-	settingsTwoOutlinePath            = `<g id="evaSettings2Outline0"><g id="evaSettings2Outline1"><g id="evaSettings2Outline2" fill="currentColor"><path id="evaSettings2Outline3" d="M12.94 22h-1.89a1.68 1.68 0 0 1-1.68-1.68v-1.09a.34.34 0 0 0-.22-.29a.38.38 0 0 0-.41 0l-.74.8a1.67 1.67 0 0 1-2.37 0L4.26 18.4a1.66 1.66 0 0 1-.5-1.19a1.72 1.72 0 0 1 .5-1.21l.74-.74a.34.34 0 0 0 0-.37c-.06-.15-.16-.26-.3-.26H3.68A1.69 1.69 0 0 1 2 12.94v-1.89a1.68 1.68 0 0 1 1.68-1.68h1.09a.34.34 0 0 0 .29-.22a.38.38 0 0 0 0-.41L4.26 8a1.67 1.67 0 0 1 0-2.37L5.6 4.26a1.65 1.65 0 0 1 1.18-.5a1.72 1.72 0 0 1 1.22.5l.74.74a.34.34 0 0 0 .37 0c.15-.06.26-.16.26-.3V3.68A1.69 1.69 0 0 1 11.06 2H13a1.68 1.68 0 0 1 1.68 1.68v1.09a.34.34 0 0 0 .22.29a.38.38 0 0 0 .41 0l.69-.8a1.67 1.67 0 0 1 2.37 0l1.37 1.34a1.67 1.67 0 0 1 .5 1.19a1.63 1.63 0 0 1-.5 1.21l-.74.74a.34.34 0 0 0 0 .37c.06.15.16.26.3.26h1.09A1.69 1.69 0 0 1 22 11.06V13a1.68 1.68 0 0 1-1.68 1.68h-1.09a.34.34 0 0 0-.29.22a.34.34 0 0 0 0 .37l.77.77a1.67 1.67 0 0 1 0 2.37l-1.31 1.33a1.65 1.65 0 0 1-1.18.5a1.72 1.72 0 0 1-1.19-.5l-.77-.74a.34.34 0 0 0-.37 0c-.15.06-.26.16-.26.3v1.09A1.69 1.69 0 0 1 12.94 22Zm-1.57-2h1.26v-.77a2.33 2.33 0 0 1 1.46-2.14a2.36 2.36 0 0 1 2.59.47l.54.54l.88-.88l-.54-.55a2.34 2.34 0 0 1-.48-2.56a2.33 2.33 0 0 1 2.14-1.45H20v-1.29h-.77a2.33 2.33 0 0 1-2.14-1.46a2.36 2.36 0 0 1 .47-2.59l.54-.54l-.88-.88l-.55.54a2.39 2.39 0 0 1-4-1.67V4h-1.3v.77a2.33 2.33 0 0 1-1.46 2.14a2.36 2.36 0 0 1-2.59-.47l-.54-.54l-.88.88l.54.55a2.39 2.39 0 0 1-1.67 4H4v1.26h.77a2.33 2.33 0 0 1 2.14 1.46a2.36 2.36 0 0 1-.47 2.59l-.54.54l.88.88l.55-.54a2.39 2.39 0 0 1 4 1.67Z"/><path d="M12 15.5a3.5 3.5 0 1 1 3.5-3.5a3.5 3.5 0 0 1-3.5 3.5Zm0-5a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5Z"/></g></g></g>`
-	shakeFillPath                     = `<g id="evaShakeFill0"><g id="evaShakeFill1"><g id="evaShakeFill2" fill="currentColor"><path d="M5.5 18a1 1 0 0 1-.64-.24A8.81 8.81 0 0 1 1.5 11a8.81 8.81 0 0 1 3.36-6.76a1 1 0 1 1 1.28 1.52A6.9 6.9 0 0 0 3.5 11a6.9 6.9 0 0 0 2.64 5.24a1 1 0 0 1 .13 1.4a1 1 0 0 1-.77.36ZM12 7a4.09 4.09 0 0 1 1 .14V3a1 1 0 0 0-2 0v4.14A4.09 4.09 0 0 1 12 7Zm0 8a4.09 4.09 0 0 1-1-.14V20a1 1 0 0 0 2 0v-5.14a4.09 4.09 0 0 1-1 .14Zm4 1a1 1 0 0 1-.77-.36a1 1 0 0 1 .13-1.4A4.28 4.28 0 0 0 17 11a4.28 4.28 0 0 0-1.64-3.24a1 1 0 1 1 1.28-1.52A6.2 6.2 0 0 1 19 11a6.2 6.2 0 0 1-2.36 4.76A1 1 0 0 1 16 16Z"/><path d="M8 16a1 1 0 0 1-.64-.24A6.2 6.2 0 0 1 5 11a6.2 6.2 0 0 1 2.36-4.76a1 1 0 1 1 1.28 1.52A4.28 4.28 0 0 0 7 11a4.28 4.28 0 0 0 1.64 3.24a1 1 0 0 1 .13 1.4A1 1 0 0 1 8 16Zm10.5 2a1 1 0 0 1-.77-.36a1 1 0 0 1 .13-1.4A6.9 6.9 0 0 0 20.5 11a6.9 6.9 0 0 0-2.64-5.24a1 1 0 1 1 1.28-1.52A8.81 8.81 0 0 1 22.5 11a8.81 8.81 0 0 1-3.36 6.76a1 1 0 0 1-.64.24ZM12 12a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm0-1Zm0 0Zm0 0Zm0 0Zm0 0Zm0 0Zm0 0Z"/></g></g></g>`
-	shakeOutlinePath                  = `<g id="evaShakeOutline0"><g id="evaShakeOutline1"><g id="evaShakeOutline2" fill="currentColor"><path d="M5.5 18a1 1 0 0 1-.64-.24A8.81 8.81 0 0 1 1.5 11a8.81 8.81 0 0 1 3.36-6.76a1 1 0 1 1 1.28 1.52A6.9 6.9 0 0 0 3.5 11a6.9 6.9 0 0 0 2.64 5.24a1 1 0 0 1 .13 1.4a1 1 0 0 1-.77.36ZM12 7a4.09 4.09 0 0 1 1 .14V3a1 1 0 0 0-2 0v4.14A4.09 4.09 0 0 1 12 7Zm0 8a4.09 4.09 0 0 1-1-.14V20a1 1 0 0 0 2 0v-5.14a4.09 4.09 0 0 1-1 .14Zm4 1a1 1 0 0 1-.77-.36a1 1 0 0 1 .13-1.4A4.28 4.28 0 0 0 17 11a4.28 4.28 0 0 0-1.64-3.24a1 1 0 1 1 1.28-1.52A6.2 6.2 0 0 1 19 11a6.2 6.2 0 0 1-2.36 4.76A1 1 0 0 1 16 16Z"/><path d="M8 16a1 1 0 0 1-.64-.24A6.2 6.2 0 0 1 5 11a6.2 6.2 0 0 1 2.36-4.76a1 1 0 1 1 1.28 1.52A4.28 4.28 0 0 0 7 11a4.28 4.28 0 0 0 1.64 3.24a1 1 0 0 1 .13 1.4A1 1 0 0 1 8 16Zm10.5 2a1 1 0 0 1-.77-.36a1 1 0 0 1 .13-1.4A6.9 6.9 0 0 0 20.5 11a6.9 6.9 0 0 0-2.64-5.24a1 1 0 1 1 1.28-1.52A8.81 8.81 0 0 1 22.5 11a8.81 8.81 0 0 1-3.36 6.76a1 1 0 0 1-.64.24ZM12 12a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm0-1Zm0 0Zm0 0Zm0 0Zm0 0Zm0 0Zm0 0Z"/></g></g></g>`
-	shareFillPath                     = `<g id="evaShareFill0"><g id="evaShareFill1"><path id="evaShareFill2" fill="currentColor" d="M18 15a3 3 0 0 0-2.1.86L8 12.34v-.67l7.9-3.53A3 3 0 1 0 15 6v.34L7.1 9.86a3 3 0 1 0 0 4.28l7.9 3.53V18a3 3 0 1 0 3-3Z"/></g></g>`
-	shareOutlinePath                  = `<g id="evaShareOutline0"><g id="evaShareOutline1"><path id="evaShareOutline2" fill="currentColor" d="M18 15a3 3 0 0 0-2.1.86L8 12.34v-.67l7.9-3.53A3 3 0 1 0 15 6v.34L7.1 9.86a3 3 0 1 0 0 4.28l7.9 3.53V18a3 3 0 1 0 3-3Zm0-10a1 1 0 1 1-1 1a1 1 0 0 1 1-1ZM5 13a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm13 6a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g>`
-	shieldFillPath                    = `<g id="evaShieldFill0"><g id="evaShieldFill1"><path id="evaShieldFill2" fill="currentColor" d="M12 21.85a2 2 0 0 1-1-.25l-.3-.17A15.17 15.17 0 0 1 3 8.23v-.14a2 2 0 0 1 1-1.75l7-3.94a2 2 0 0 1 2 0l7 3.94a2 2 0 0 1 1 1.75v.14a15.17 15.17 0 0 1-7.72 13.2l-.3.17a2 2 0 0 1-.98.25Z"/></g></g>`
-	shieldOffFillPath                 = `<g id="evaShieldOffFill0"><g id="evaShieldOffFill1"><path id="evaShieldOffFill2" fill="currentColor" d="M3.73 6.56A2 2 0 0 0 3 8.09v.14a15.17 15.17 0 0 0 7.72 13.2l.3.17a2 2 0 0 0 2 0l.3-.17a15.22 15.22 0 0 0 3-2.27ZM18.84 16A15.08 15.08 0 0 0 21 8.23v-.14a2 2 0 0 0-1-1.75L13 2.4a2 2 0 0 0-2 0L7.32 4.49ZM4.71 3.29a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g>`
-	shieldOffOutlinePath              = `<g id="evaShieldOffOutline0"><g id="evaShieldOffOutline1"><path id="evaShieldOffOutline2" fill="currentColor" d="M4.71 3.29a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Zm7.59 16.39l-.3.17l-.3-.17A13.15 13.15 0 0 1 5 8.23v-.14L5.16 8L3.73 6.56A2 2 0 0 0 3 8.09v.14a15.17 15.17 0 0 0 7.72 13.2l.3.17a2 2 0 0 0 2 0l.3-.17a15.22 15.22 0 0 0 3-2.27l-1.42-1.42a12.56 12.56 0 0 1-2.6 1.94ZM20 6.34L13 2.4a2 2 0 0 0-2 0L7.32 4.49L8.78 6L12 4.15l7 3.94v.14a13 13 0 0 1-1.63 6.31L18.84 16A15.08 15.08 0 0 0 21 8.23v-.14a2 2 0 0 0-1-1.75Z"/></g></g>`
-	shieldOutlinePath                 = `<g id="evaShieldOutline0"><g id="evaShieldOutline1"><path id="evaShieldOutline2" fill="currentColor" d="M12 21.85a2 2 0 0 1-1-.25l-.3-.17A15.17 15.17 0 0 1 3 8.23v-.14a2 2 0 0 1 1-1.75l7-3.94a2 2 0 0 1 2 0l7 3.94a2 2 0 0 1 1 1.75v.14a15.17 15.17 0 0 1-7.72 13.2l-.3.17a2 2 0 0 1-.98.25Zm0-17.7L5 8.09v.14a13.15 13.15 0 0 0 6.7 11.45l.3.17l.3-.17A13.15 13.15 0 0 0 19 8.23v-.14Z"/></g></g>`
-	shoppingBagFillPath               = `<g id="evaShoppingBagFill0"><g id="evaShoppingBagFill1"><path id="evaShoppingBagFill2" fill="currentColor" d="m20.12 6.71l-2.83-2.83A3 3 0 0 0 15.17 3H8.83a3 3 0 0 0-2.12.88L3.88 6.71A3 3 0 0 0 3 8.83V18a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8.83a3 3 0 0 0-.88-2.12ZM12 16a4 4 0 0 1-4-4a1 1 0 0 1 2 0a2 2 0 0 0 4 0a1 1 0 0 1 2 0a4 4 0 0 1-4 4ZM6.41 7l1.71-1.71A1.05 1.05 0 0 1 8.83 5h6.34a1.05 1.05 0 0 1 .71.29L17.59 7Z"/></g></g>`
-	shoppingBagOutlinePath            = `<g id="evaShoppingBagOutline0"><g id="evaShoppingBagOutline1"><g id="evaShoppingBagOutline2" fill="currentColor"><path d="m20.12 6.71l-2.83-2.83A3 3 0 0 0 15.17 3H8.83a3 3 0 0 0-2.12.88L3.88 6.71A3 3 0 0 0 3 8.83V18a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8.83a3 3 0 0 0-.88-2.12Zm-12-1.42A1.05 1.05 0 0 1 8.83 5h6.34a1.05 1.05 0 0 1 .71.29L17.59 7H6.41ZM18 19H6a1 1 0 0 1-1-1V9h14v9a1 1 0 0 1-1 1Z"/><path d="M15 11a1 1 0 0 0-1 1a2 2 0 0 1-4 0a1 1 0 0 0-2 0a4 4 0 0 0 8 0a1 1 0 0 0-1-1Z"/></g></g></g>`
-	shoppingCartFillPath              = `<g id="evaShoppingCartFill0"><g id="evaShoppingCartFill1"><g id="evaShoppingCartFill2" fill="currentColor"><path d="M21.08 7a2 2 0 0 0-1.7-1H6.58L6 3.74A1 1 0 0 0 5 3H3a1 1 0 0 0 0 2h1.24L7 15.26A1 1 0 0 0 8 16h9a1 1 0 0 0 .89-.55l3.28-6.56A2 2 0 0 0 21.08 7Z"/><circle cx="7.5" cy="19.5" r="1.5"/><circle cx="17.5" cy="19.5" r="1.5"/></g></g></g>`
-	shoppingCartOutlinePath           = `<g id="evaShoppingCartOutline0"><g id="evaShoppingCartOutline1"><g id="evaShoppingCartOutline2" fill="currentColor"><path d="M21.08 7a2 2 0 0 0-1.7-1H6.58L6 3.74A1 1 0 0 0 5 3H3a1 1 0 0 0 0 2h1.24L7 15.26A1 1 0 0 0 8 16h9a1 1 0 0 0 .89-.55l3.28-6.56A2 2 0 0 0 21.08 7Zm-4.7 7H8.76L7.13 8h12.25Z"/><circle cx="7.5" cy="19.5" r="1.5"/><circle cx="17.5" cy="19.5" r="1.5"/></g></g></g>`
-	shuffleFillPath                   = `<g id="evaShuffleFill0"><g id="evaShuffleFill1"><g id="evaShuffleFill2" fill="currentColor"><path d="M18 9.31a1 1 0 0 0 1 1a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-4.3a1 1 0 0 0-1 1a1 1 0 0 0 1 1h1.89L12 10.59L6.16 4.76a1 1 0 0 0-1.41 1.41L10.58 12l-6.29 6.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L18 7.42Z"/><path d="M19 13.68a1 1 0 0 0-1 1v1.91l-2.78-2.79a1 1 0 0 0-1.42 1.42L16.57 18h-1.88a1 1 0 0 0 0 2H19a1 1 0 0 0 1-1.11v-4.21a1 1 0 0 0-1-1Z"/></g></g></g>`
-	shuffleOutlinePath                = `<g id="evaShuffleOutline0"><g id="evaShuffleOutline1"><g id="evaShuffleOutline2" fill="currentColor"><path d="M18 9.31a1 1 0 0 0 1 1a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-4.3a1 1 0 0 0-1 1a1 1 0 0 0 1 1h1.89L12 10.59L6.16 4.76a1 1 0 0 0-1.41 1.41L10.58 12l-6.29 6.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L18 7.42Z"/><path d="M19 13.68a1 1 0 0 0-1 1v1.91l-2.78-2.79a1 1 0 0 0-1.42 1.42L16.57 18h-1.88a1 1 0 0 0 0 2H19a1 1 0 0 0 1-1.11v-4.21a1 1 0 0 0-1-1Z"/></g></g></g>`
-	shuffleTwoFillPath                = `<g id="evaShuffle2Fill0"><g id="evaShuffle2Fill1"><path id="evaShuffle2Fill2" fill="currentColor" d="M18.71 14.29a1 1 0 0 0-1.42 1.42l.29.29H16a4 4 0 0 1 0-8h1.59l-.3.29a1 1 0 0 0 0 1.42A1 1 0 0 0 18 10a1 1 0 0 0 .71-.29l2-2A1 1 0 0 0 21 7a1 1 0 0 0-.29-.71l-2-2a1 1 0 0 0-1.42 1.42l.29.29H16a6 6 0 0 0-5 2.69A6 6 0 0 0 6 6H4a1 1 0 0 0 0 2h2a4 4 0 0 1 0 8H4a1 1 0 0 0 0 2h2a6 6 0 0 0 5-2.69A6 6 0 0 0 16 18h1.59l-.3.29a1 1 0 0 0 0 1.42A1 1 0 0 0 18 20a1 1 0 0 0 .71-.29l2-2A1 1 0 0 0 21 17a1 1 0 0 0-.29-.71Z"/></g></g>`
-	shuffleTwoOutlinePath             = `<g id="evaShuffle2Outline0"><g id="evaShuffle2Outline1"><path id="evaShuffle2Outline2" fill="currentColor" d="M18.71 14.29a1 1 0 0 0-1.42 1.42l.29.29H16a4 4 0 0 1 0-8h1.59l-.3.29a1 1 0 0 0 0 1.42A1 1 0 0 0 18 10a1 1 0 0 0 .71-.29l2-2A1 1 0 0 0 21 7a1 1 0 0 0-.29-.71l-2-2a1 1 0 0 0-1.42 1.42l.29.29H16a6 6 0 0 0-5 2.69A6 6 0 0 0 6 6H4a1 1 0 0 0 0 2h2a4 4 0 0 1 0 8H4a1 1 0 0 0 0 2h2a6 6 0 0 0 5-2.69A6 6 0 0 0 16 18h1.59l-.3.29a1 1 0 0 0 0 1.42A1 1 0 0 0 18 20a1 1 0 0 0 .71-.29l2-2A1 1 0 0 0 21 17a1 1 0 0 0-.29-.71Z"/></g></g>`
-	skipBackFillPath                  = `<g id="evaSkipBackFill0"><g id="evaSkipBackFill1"><path id="evaSkipBackFill2" fill="currentColor" d="M16.45 6.2a2.1 2.1 0 0 0-2.21.26l-5.1 4.21l-.14.15V7a1 1 0 0 0-2 0v10a1 1 0 0 0 2 0v-3.82l.14.15l5.1 4.21a2.06 2.06 0 0 0 1.3.46a2.23 2.23 0 0 0 .91-.2a1.76 1.76 0 0 0 1.05-1.59V7.79a1.76 1.76 0 0 0-1.05-1.59Z"/></g></g>`
-	skipBackOutlinePath               = `<g id="evaSkipBackOutline0"><g id="evaSkipBackOutline1"><path id="evaSkipBackOutline2" fill="currentColor" d="M16.45 6.2a2.1 2.1 0 0 0-2.21.26l-5.1 4.21l-.14.15V7a1 1 0 0 0-2 0v10a1 1 0 0 0 2 0v-3.82l.14.15l5.1 4.21a2.06 2.06 0 0 0 1.3.46a2.23 2.23 0 0 0 .91-.2a1.76 1.76 0 0 0 1.05-1.59V7.79a1.76 1.76 0 0 0-1.05-1.59ZM15.5 16l-4.82-4l4.82-3.91Z"/></g></g>`
-	skipForwardFillPath               = `<g id="evaSkipForwardFill0"><g id="evaSkipForwardFill1"><path id="evaSkipForwardFill2" fill="currentColor" d="M16 6a1 1 0 0 0-1 1v3.82l-.14-.15l-5.1-4.21a2.1 2.1 0 0 0-2.21-.26a1.76 1.76 0 0 0-1 1.59v8.42a1.76 1.76 0 0 0 1 1.59a2.23 2.23 0 0 0 .91.2a2.06 2.06 0 0 0 1.3-.46l5.1-4.21l.14-.15V17a1 1 0 0 0 2 0V7a1 1 0 0 0-1-1Z"/></g></g>`
-	skipForwardOutlinePath            = `<g id="evaSkipForwardOutline0"><g id="evaSkipForwardOutline1"><path id="evaSkipForwardOutline2" fill="currentColor" d="M16 6a1 1 0 0 0-1 1v3.82l-.14-.15l-5.1-4.21a2.1 2.1 0 0 0-2.21-.26a1.76 1.76 0 0 0-1 1.59v8.42a1.76 1.76 0 0 0 1 1.59a2.23 2.23 0 0 0 .91.2a2.06 2.06 0 0 0 1.3-.46l5.1-4.21l.14-.15V17a1 1 0 0 0 2 0V7a1 1 0 0 0-1-1Zm-7.5 9.91V8l4.82 4Z"/></g></g>`
-	slashFillPath                     = `<g id="evaSlashFill0"><g id="evaSlashFill1"><path id="evaSlashFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm8 10a7.92 7.92 0 0 1-1.69 4.9L7.1 5.69A7.92 7.92 0 0 1 12 4a8 8 0 0 1 8 8ZM4 12a7.92 7.92 0 0 1 1.69-4.9L16.9 18.31A7.92 7.92 0 0 1 12 20a8 8 0 0 1-8-8Z"/></g></g>`
-	slashOutlinePath                  = `<g id="evaSlashOutline0"><g id="evaSlashOutline1"><path id="evaSlashOutline2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm8 10a7.92 7.92 0 0 1-1.69 4.9L7.1 5.69A7.92 7.92 0 0 1 12 4a8 8 0 0 1 8 8ZM4 12a7.92 7.92 0 0 1 1.69-4.9L16.9 18.31A7.92 7.92 0 0 1 12 20a8 8 0 0 1-8-8Z"/></g></g>`
-	smartphoneFillPath                = `<g id="evaSmartphoneFill0"><g id="evaSmartphoneFill1"><path id="evaSmartphoneFill2" fill="currentColor" d="M17 2H7a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3Zm-5 16a1.5 1.5 0 1 1 1.5-1.5A1.5 1.5 0 0 1 12 18Zm2.5-10h-5a1 1 0 0 1 0-2h5a1 1 0 0 1 0 2Z"/></g></g>`
-	smartphoneOutlinePath             = `<g id="evaSmartphoneOutline0"><g id="evaSmartphoneOutline1"><g id="evaSmartphoneOutline2" fill="currentColor"><path d="M17 2H7a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1Z"/><circle cx="12" cy="16.5" r="1.5"/><path d="M14.5 6h-5a1 1 0 0 0 0 2h5a1 1 0 0 0 0-2Z"/></g></g></g>`
-	smilingFaceFillPath               = `<g id="evaSmilingFaceFill0"><g id="evaSmilingFaceFill1"><path id="evaSmilingFaceFill2" fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16Zm5 9a5 5 0 0 1-10 0Z"/></g></g>`
-	smilingFaceOutlinePath            = `<g id="evaSmilingFaceOutline0"><g id="evaSmilingFaceOutline1"><path id="evaSmilingFaceOutline2" fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16Zm5 9a5 5 0 0 1-10 0Z"/></g></g>`
-	speakerFillPath                   = `<g id="evaSpeakerFill0"><g id="evaSpeakerFill1"><g id="evaSpeakerFill2" fill="currentColor"><circle cx="12" cy="15.5" r="1.5"/><circle cx="12" cy="8" r="1"/><path d="M17 2H7a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3Zm-5 3a3 3 0 1 1-3 3a3 3 0 0 1 3-3Zm0 14a3.5 3.5 0 1 1 3.5-3.5A3.5 3.5 0 0 1 12 19Z"/></g></g></g>`
-	speakerOutlinePath                = `<g id="evaSpeakerOutline0"><g id="evaSpeakerOutline1"><g id="evaSpeakerOutline2" fill="currentColor"><path d="M12 11a3 3 0 1 0-3-3a3 3 0 0 0 3 3Zm0-4a1 1 0 1 1-1 1a1 1 0 0 1 1-1Zm0 5a3.5 3.5 0 1 0 3.5 3.5A3.5 3.5 0 0 0 12 12Zm0 5a1.5 1.5 0 1 1 1.5-1.5A1.5 1.5 0 0 1 12 17Z"/><path d="M17 2H7a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1Z"/></g></g></g>`
-	squareFillPath                    = `<g id="evaSquareFill0"><g id="evaSquareFill1"><path id="evaSquareFill2" fill="currentColor" d="M18 21H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3ZM6 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1Z"/></g></g>`
-	squareOutlinePath                 = `<g id="evaSquareOutline0"><g id="evaSquareOutline1"><path id="evaSquareOutline2" fill="currentColor" d="M18 21H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3ZM6 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1Z"/></g></g>`
-	starFillPath                      = `<g id="evaStarFill0"><g id="evaStarFill1"><path id="evaStarFill2" fill="currentColor" d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63l-4.12-4a1 1 0 0 1-.25-1a1 1 0 0 1 .81-.68l5.7-.83l2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12l5.7.83a1 1 0 0 1 .81.68a1 1 0 0 1-.25 1l-4.12 4l1 5.63a1 1 0 0 1-.4 1a1 1 0 0 1-.62.18Z"/></g></g>`
-	starOutlinePath                   = `<g id="evaStarOutline0"><g id="evaStarOutline1"><path id="evaStarOutline2" fill="currentColor" d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63l-4.12-4a1 1 0 0 1-.25-1a1 1 0 0 1 .81-.68l5.7-.83l2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12l5.7.83a1 1 0 0 1 .81.68a1 1 0 0 1-.25 1l-4.12 4l1 5.63a1 1 0 0 1-.4 1a1 1 0 0 1-.62.18ZM12 16.1a.92.92 0 0 1 .46.11l3.77 2l-.72-4.21a1 1 0 0 1 .29-.89l3-2.93l-4.2-.62a1 1 0 0 1-.71-.56L12 5.25L10.11 9a1 1 0 0 1-.75.54l-4.2.62l3 2.93a1 1 0 0 1 .29.89l-.72 4.16l3.77-2a.92.92 0 0 1 .5-.04Z"/></g></g>`
-	stopCircleFillPath                = `<g id="evaStopCircleFill0"><g id="evaStopCircleFill1"><g id="evaStopCircleFill2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm4 12.75A1.25 1.25 0 0 1 14.75 16h-5.5A1.25 1.25 0 0 1 8 14.75v-5.5A1.25 1.25 0 0 1 9.25 8h5.5A1.25 1.25 0 0 1 16 9.25Z"/><path d="M10 10h4v4h-4z"/></g></g></g>`
-	stopCircleOutlinePath             = `<g id="evaStopCircleOutline0"><g id="evaStopCircleOutline1"><g id="evaStopCircleOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M14.75 8h-5.5A1.25 1.25 0 0 0 8 9.25v5.5A1.25 1.25 0 0 0 9.25 16h5.5A1.25 1.25 0 0 0 16 14.75v-5.5A1.25 1.25 0 0 0 14.75 8ZM14 14h-4v-4h4Z"/></g></g></g>`
-	sunFillPath                       = `<g id="evaSunFill0"><g id="evaSunFill1"><path id="evaSunFill2" fill="currentColor" d="M12 6a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1Zm9 5h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2ZM6 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1Zm.22-7a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28a1 1 0 0 0 .72-.31a1 1 0 0 0 0-1.41ZM17 8.14a1 1 0 0 0 .69-.28l1.44-1.39A1 1 0 0 0 17.78 5l-1.44 1.42a1 1 0 0 0 0 1.41a1 1 0 0 0 .66.31ZM12 18a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1Zm5.73-1.86a1 1 0 0 0-1.39 1.44L17.78 19a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.3a1 1 0 0 0 0-1.42Zm-11.46 0l-1.44 1.39a1 1 0 0 0 0 1.42a1 1 0 0 0 .72.3a1 1 0 0 0 .67-.25l1.44-1.39a1 1 0 0 0-1.39-1.44ZM12 8a4 4 0 1 0 4 4a4 4 0 0 0-4-4Z"/></g></g>`
-	sunOutlinePath                    = `<g id="evaSunOutline0"><g id="evaSunOutline1"><path id="evaSunOutline2" fill="currentColor" d="M12 6a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1Zm9 5h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2ZM6 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1Zm.22-7a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28a1 1 0 0 0 .72-.31a1 1 0 0 0 0-1.41ZM17 8.14a1 1 0 0 0 .69-.28l1.44-1.39A1 1 0 0 0 17.78 5l-1.44 1.42a1 1 0 0 0 0 1.41a1 1 0 0 0 .66.31ZM12 18a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1Zm5.73-1.86a1 1 0 0 0-1.39 1.44L17.78 19a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.3a1 1 0 0 0 0-1.42Zm-11.46 0l-1.44 1.39a1 1 0 0 0 0 1.42a1 1 0 0 0 .72.3a1 1 0 0 0 .67-.25l1.44-1.39a1 1 0 0 0-1.39-1.44ZM12 8a4 4 0 1 0 4 4a4 4 0 0 0-4-4Zm0 6a2 2 0 1 1 2-2a2 2 0 0 1-2 2Z"/></g></g>`
-	swapFillPath                      = `<g id="evaSwapFill0"><g id="evaSwapFill1"><path id="evaSwapFill2" fill="currentColor" d="M4 9h13l-1.6 1.2a1 1 0 0 0-.2 1.4a1 1 0 0 0 .8.4a1 1 0 0 0 .6-.2l4-3a1 1 0 0 0 0-1.59l-3.86-3a1 1 0 0 0-1.23 1.58L17.08 7H4a1 1 0 0 0 0 2Zm16 7H7l1.6-1.2a1 1 0 0 0-1.2-1.6l-4 3a1 1 0 0 0 0 1.59l3.86 3a1 1 0 0 0 .61.21a1 1 0 0 0 .79-.39a1 1 0 0 0-.17-1.4L6.92 18H20a1 1 0 0 0 0-2Z"/></g></g>`
-	swapOutlinePath                   = `<g id="evaSwapOutline0"><g id="evaSwapOutline1"><path id="evaSwapOutline2" fill="currentColor" d="M4 9h13l-1.6 1.2a1 1 0 0 0-.2 1.4a1 1 0 0 0 .8.4a1 1 0 0 0 .6-.2l4-3a1 1 0 0 0 0-1.59l-3.86-3a1 1 0 0 0-1.23 1.58L17.08 7H4a1 1 0 0 0 0 2Zm16 7H7l1.6-1.2a1 1 0 0 0-1.2-1.6l-4 3a1 1 0 0 0 0 1.59l3.86 3a1 1 0 0 0 .61.21a1 1 0 0 0 .79-.39a1 1 0 0 0-.17-1.4L6.92 18H20a1 1 0 0 0 0-2Z"/></g></g>`
-	syncFillPath                      = `<g id="evaSyncFill0"><g id="evaSyncFill1"><path id="evaSyncFill2" fill="currentColor" d="M21.66 10.37a.62.62 0 0 0 .07-.19l.75-4a1 1 0 0 0-2-.36l-.37 2a9.22 9.22 0 0 0-16.58.84a1 1 0 0 0 .55 1.3a1 1 0 0 0 1.31-.55A7.08 7.08 0 0 1 12.07 5a7.17 7.17 0 0 1 6.24 3.58l-1.65-.27a1 1 0 1 0-.32 2l4.25.71h.16a.93.93 0 0 0 .34-.06a.33.33 0 0 0 .1-.06a.78.78 0 0 0 .2-.11l.08-.1a1.07 1.07 0 0 0 .14-.16a.58.58 0 0 0 .05-.16Zm-1.78 3.7a1 1 0 0 0-1.31.56A7.08 7.08 0 0 1 11.93 19a7.17 7.17 0 0 1-6.24-3.58l1.65.27h.16a1 1 0 0 0 .16-2L3.41 13a.91.91 0 0 0-.33 0H3a1.15 1.15 0 0 0-.32.14a1 1 0 0 0-.18.18l-.09.1a.84.84 0 0 0-.07.19a.44.44 0 0 0-.07.17l-.75 4a1 1 0 0 0 .8 1.22h.18a1 1 0 0 0 1-.82l.37-2a9.22 9.22 0 0 0 16.58-.83a1 1 0 0 0-.57-1.28Z"/></g></g>`
-	syncOutlinePath                   = `<g id="evaSyncOutline0"><g id="evaSyncOutline1"><path id="evaSyncOutline2" fill="currentColor" d="M21.66 10.37a.62.62 0 0 0 .07-.19l.75-4a1 1 0 0 0-2-.36l-.37 2a9.22 9.22 0 0 0-16.58.84a1 1 0 0 0 .55 1.3a1 1 0 0 0 1.31-.55A7.08 7.08 0 0 1 12.07 5a7.17 7.17 0 0 1 6.24 3.58l-1.65-.27a1 1 0 1 0-.32 2l4.25.71h.16a.93.93 0 0 0 .34-.06a.33.33 0 0 0 .1-.06a.78.78 0 0 0 .2-.11l.08-.1a1.07 1.07 0 0 0 .14-.16a.58.58 0 0 0 .05-.16Zm-1.78 3.7a1 1 0 0 0-1.31.56A7.08 7.08 0 0 1 11.93 19a7.17 7.17 0 0 1-6.24-3.58l1.65.27h.16a1 1 0 0 0 .16-2L3.41 13a.91.91 0 0 0-.33 0H3a1.15 1.15 0 0 0-.32.14a1 1 0 0 0-.18.18l-.09.1a.84.84 0 0 0-.07.19a.44.44 0 0 0-.07.17l-.75 4a1 1 0 0 0 .8 1.22h.18a1 1 0 0 0 1-.82l.37-2a9.22 9.22 0 0 0 16.58-.83a1 1 0 0 0-.57-1.28Z"/></g></g>`
-	textFillPath                      = `<g id="evaTextFill0"><g id="evaTextFill1"><path id="evaTextFill2" fill="currentColor" d="M20 4H4a1 1 0 0 0-1 1v3a1 1 0 0 0 2 0V6h6v13H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2h-2V6h6v2a1 1 0 0 0 2 0V5a1 1 0 0 0-1-1Z"/></g></g>`
-	textOutlinePath                   = `<g id="evaTextOutline0"><g id="evaTextOutline1"><path id="evaTextOutline2" fill="currentColor" d="M20 4H4a1 1 0 0 0-1 1v3a1 1 0 0 0 2 0V6h6v13H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2h-2V6h6v2a1 1 0 0 0 2 0V5a1 1 0 0 0-1-1Z"/></g></g>`
-	thermometerFillPath               = `<g id="evaThermometerFill0"><g id="evaThermometerFill1"><path id="evaThermometerFill2" fill="currentColor" d="M12 22a5 5 0 0 1-3-9V5a3 3 0 0 1 3-3a3 3 0 0 1 3 3v8a5 5 0 0 1-3 9Zm1-12.46V5a.93.93 0 0 0-.29-.69A1 1 0 0 0 12 4a1 1 0 0 0-1 1v4.54Z"/></g></g>`
-	thermometerMinusFillPath          = `<g id="evaThermometerMinusFill0"><g id="evaThermometerMinusFill1"><g id="evaThermometerMinusFill2" fill="currentColor"><rect width="6" height="2" x="2" y="5" rx="1" ry="1"/><path d="M14 22a5 5 0 0 1-3-9V5a3 3 0 0 1 3-3a3 3 0 0 1 3 3v8a5 5 0 0 1-3 9Zm1-12.46V5a.93.93 0 0 0-.29-.69A1 1 0 0 0 14 4a1 1 0 0 0-1 1v4.54Z"/></g></g></g>`
-	thermometerMinusOutlinePath       = `<g id="evaThermometerMinusOutline0"><g id="evaThermometerMinusOutline1"><g id="evaThermometerMinusOutline2" fill="currentColor"><rect width="6" height="2" x="2" y="5" rx="1" ry="1"/><path d="M14 22a5 5 0 0 1-3-9V5a3 3 0 0 1 3-3a3 3 0 0 1 3 3v8a5 5 0 0 1-3 9Zm0-18a1 1 0 0 0-1 1v8.54a1 1 0 0 1-.5.87A3 3 0 0 0 11 17a3 3 0 0 0 6 0a3 3 0 0 0-1.5-2.59a1 1 0 0 1-.5-.87V5a.93.93 0 0 0-.29-.69A1 1 0 0 0 14 4Z"/></g></g></g>`
-	thermometerOutlinePath            = `<g id="evaThermometerOutline0"><g id="evaThermometerOutline1"><path id="evaThermometerOutline2" fill="currentColor" d="M12 22a5 5 0 0 1-3-9V5a3 3 0 0 1 3-3a3 3 0 0 1 3 3v8a5 5 0 0 1-3 9Zm0-18a1 1 0 0 0-1 1v8.54a1 1 0 0 1-.5.87A3 3 0 0 0 9 17a3 3 0 0 0 6 0a3 3 0 0 0-1.5-2.59a1 1 0 0 1-.5-.87V5a.93.93 0 0 0-.29-.69A1 1 0 0 0 12 4Z"/></g></g>`
-	thermometerPlusFillPath           = `<g id="evaThermometerPlusFill0"><g id="evaThermometerPlusFill1"><g id="evaThermometerPlusFill2" fill="currentColor"><rect width="6" height="2" x="2" y="5" rx="1" ry="1"/><rect width="6" height="2" x="2" y="5" rx="1" ry="1" transform="rotate(-90 5 6)"/><path d="M14 22a5 5 0 0 1-3-9V5a3 3 0 0 1 3-3a3 3 0 0 1 3 3v8a5 5 0 0 1-3 9Zm1-12.46V5a.93.93 0 0 0-.29-.69A1 1 0 0 0 14 4a1 1 0 0 0-1 1v4.54Z"/></g></g></g>`
-	thermometerPlusOutlinePath        = `<g id="evaThermometerPlusOutline0"><g id="evaThermometerPlusOutline1"><g id="evaThermometerPlusOutline2" fill="currentColor"><rect width="6" height="2" x="2" y="5" rx="1" ry="1"/><rect width="6" height="2" x="2" y="5" rx="1" ry="1" transform="rotate(-90 5 6)"/><path d="M14 22a5 5 0 0 1-3-9V5a3 3 0 0 1 3-3a3 3 0 0 1 3 3v8a5 5 0 0 1-3 9Zm0-18a1 1 0 0 0-1 1v8.54a1 1 0 0 1-.5.87A3 3 0 0 0 11 17a3 3 0 0 0 6 0a3 3 0 0 0-1.5-2.59a1 1 0 0 1-.5-.87V5a.93.93 0 0 0-.29-.69A1 1 0 0 0 14 4Z"/></g></g></g>`
-	toggleLeftFillPath                = `<g id="evaToggleLeftFill0"><g id="evaToggleLeftFill1"><g id="evaToggleLeftFill2" fill="currentColor"><path d="M15 5H9a7 7 0 0 0 0 14h6a7 7 0 0 0 0-14ZM9 15a3 3 0 1 1 3-3a3 3 0 0 1-3 3Z"/><path d="M9 11a1 1 0 1 0 0 2a1 1 0 0 0 0-2Z"/></g></g></g>`
-	toggleLeftOutlinePath             = `<g id="evaToggleLeftOutline0"><g id="evaToggleLeftOutline1"><g id="evaToggleLeftOutline2" fill="currentColor"><path d="M15 5H9a7 7 0 0 0 0 14h6a7 7 0 0 0 0-14Zm0 12H9A5 5 0 0 1 9 7h6a5 5 0 0 1 0 10Z"/><path d="M9 9a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g></g>`
-	toggleRightFillPath               = `<g id="evaToggleRightFill0"><g id="evaToggleRightFill1"><g id="evaToggleRightFill2" fill="currentColor"><circle cx="15" cy="12" r="1"/><path d="M15 5H9a7 7 0 0 0 0 14h6a7 7 0 0 0 0-14Zm0 10a3 3 0 1 1 3-3a3 3 0 0 1-3 3Z"/></g></g></g>`
-	toggleRightOutlinePath            = `<g id="evaToggleRightOutline0"><g id="evaToggleRightOutline1"><g id="evaToggleRightOutline2" fill="currentColor"><path d="M15 5H9a7 7 0 0 0 0 14h6a7 7 0 0 0 0-14Zm0 12H9A5 5 0 0 1 9 7h6a5 5 0 0 1 0 10Z"/><path d="M15 9a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g></g>`
-	trashFillPath                     = `<g id="evaTrashFill0"><g id="evaTrashFill1"><path id="evaTrashFill2" fill="currentColor" d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 4.33c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4Z"/></g></g>`
-	trashOutlinePath                  = `<g id="evaTrashOutline0"><g id="evaTrashOutline1"><path id="evaTrashOutline2" fill="currentColor" d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 4.33c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4ZM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8h12Z"/></g></g>`
-	trashTwoFillPath                  = `<g id="evaTrash2Fill0"><g id="evaTrash2Fill1"><path id="evaTrash2Fill2" fill="currentColor" d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 16a1 1 0 0 1-2 0v-4a1 1 0 0 1 2 0Zm0-11.67c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4ZM16 16a1 1 0 0 1-2 0v-4a1 1 0 0 1 2 0Z"/></g></g>`
-	trashTwoOutlinePath               = `<g id="evaTrash2Outline0"><g id="evaTrash2Outline1"><g id="evaTrash2Outline2" fill="currentColor"><path d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 4.33c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4ZM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8h12Z"/><path d="M9 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1Zm6 0a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1Z"/></g></g></g>`
-	trendingDownFillPath              = `<g id="evaTrendingDownFill0"><g id="evaTrendingDownFill1"><path id="evaTrendingDownFill2" fill="currentColor" d="M21 12a1 1 0 0 0-2 0v2.3l-4.24-5a1 1 0 0 0-1.27-.21L9.22 11.7L4.77 6.36a1 1 0 1 0-1.54 1.28l5 6a1 1 0 0 0 1.28.22l4.28-2.57l4 4.71H15a1 1 0 0 0 0 2h5a1.1 1.1 0 0 0 .36-.07l.14-.08a1.19 1.19 0 0 0 .15-.09a.75.75 0 0 0 .14-.17a1.1 1.1 0 0 0 .09-.14a.64.64 0 0 0 .05-.17A.78.78 0 0 0 21 17Z"/></g></g>`
-	trendingDownOutlinePath           = `<g id="evaTrendingDownOutline0"><g id="evaTrendingDownOutline1"><path id="evaTrendingDownOutline2" fill="currentColor" d="M21 12a1 1 0 0 0-2 0v2.3l-4.24-5a1 1 0 0 0-1.27-.21L9.22 11.7L4.77 6.36a1 1 0 1 0-1.54 1.28l5 6a1 1 0 0 0 1.28.22l4.28-2.57l4 4.71H15a1 1 0 0 0 0 2h5a1.1 1.1 0 0 0 .36-.07l.14-.08a1.19 1.19 0 0 0 .15-.09a.75.75 0 0 0 .14-.17a1.1 1.1 0 0 0 .09-.14a.64.64 0 0 0 .05-.17A.78.78 0 0 0 21 17Z"/></g></g>`
-	trendingUpFillPath                = `<g id="evaTrendingUpFill0"><g id="evaTrendingUpFill1"><path id="evaTrendingUpFill2" fill="currentColor" d="M21 7a.78.78 0 0 0 0-.21a.64.64 0 0 0-.05-.17a1.1 1.1 0 0 0-.09-.14a.75.75 0 0 0-.14-.17l-.12-.07a.69.69 0 0 0-.19-.1h-.2A.7.7 0 0 0 20 6h-5a1 1 0 0 0 0 2h2.83l-4 4.71l-4.32-2.57a1 1 0 0 0-1.28.22l-5 6a1 1 0 0 0 .13 1.41A1 1 0 0 0 4 18a1 1 0 0 0 .77-.36l4.45-5.34l4.27 2.56a1 1 0 0 0 1.27-.21L19 9.7V12a1 1 0 0 0 2 0V7Z"/></g></g>`
-	trendingUpOutlinePath             = `<g id="evaTrendingUpOutline0"><g id="evaTrendingUpOutline1"><path id="evaTrendingUpOutline2" fill="currentColor" d="M21 7a.78.78 0 0 0 0-.21a.64.64 0 0 0-.05-.17a1.1 1.1 0 0 0-.09-.14a.75.75 0 0 0-.14-.17l-.12-.07a.69.69 0 0 0-.19-.1h-.2A.7.7 0 0 0 20 6h-5a1 1 0 0 0 0 2h2.83l-4 4.71l-4.32-2.57a1 1 0 0 0-1.28.22l-5 6a1 1 0 0 0 .13 1.41A1 1 0 0 0 4 18a1 1 0 0 0 .77-.36l4.45-5.34l4.27 2.56a1 1 0 0 0 1.27-.21L19 9.7V12a1 1 0 0 0 2 0V7Z"/></g></g>`
-	tvFillPath                        = `<g id="evaTvFill0"><g id="evaTvFill1"><path id="evaTvFill2" fill="currentColor" d="M18 6h-3.59l2.3-2.29a1 1 0 1 0-1.42-1.42L12 5.59l-3.29-3.3a1 1 0 1 0-1.42 1.42L9.59 6H6a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1Z"/></g></g>`
-	tvOutlinePath                     = `<g id="evaTvOutline0"><g id="evaTvOutline1"><path id="evaTvOutline2" fill="currentColor" d="M18 6h-3.59l2.3-2.29a1 1 0 1 0-1.42-1.42L12 5.59l-3.29-3.3a1 1 0 1 0-1.42 1.42L9.59 6H6a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1Z"/></g></g>`
-	twitterFillPath                   = `<g id="evaTwitterFill0"><g id="evaTwitterFill1"><path id="evaTwitterFill2" fill="currentColor" d="M8.08 20A11.07 11.07 0 0 0 19.52 9A8.09 8.09 0 0 0 21 6.16a.44.44 0 0 0-.62-.51a1.88 1.88 0 0 1-2.16-.38a3.89 3.89 0 0 0-5.58-.17A4.13 4.13 0 0 0 11.49 9C8.14 9.2 5.84 7.61 4 5.43a.43.43 0 0 0-.75.24a9.68 9.68 0 0 0 4.6 10.05A6.73 6.73 0 0 1 3.38 18a.45.45 0 0 0-.14.84A11 11 0 0 0 8.08 20"/></g></g>`
-	twitterOutlinePath                = `<g id="evaTwitterOutline0"><g id="evaTwitterOutline1"><path id="evaTwitterOutline2" fill="currentColor" d="M8.51 20h-.08a10.87 10.87 0 0 1-4.65-1.09A1.38 1.38 0 0 1 3 17.47a1.41 1.41 0 0 1 1.16-1.18a6.63 6.63 0 0 0 2.54-.89a9.49 9.49 0 0 1-3.51-9.07a1.41 1.41 0 0 1 1-1.15a1.35 1.35 0 0 1 1.43.41a7.09 7.09 0 0 0 4.88 2.75a4.5 4.5 0 0 1 1.41-3.1a4.47 4.47 0 0 1 6.37.19a.7.7 0 0 0 .78.1A1.39 1.39 0 0 1 21 7.13a6.66 6.66 0 0 1-1.28 2.6A10.79 10.79 0 0 1 8.51 20Zm0-2h.08a8.79 8.79 0 0 0 9.09-8.59a1.32 1.32 0 0 1 .37-.85a5.19 5.19 0 0 0 .62-1a2.56 2.56 0 0 1-1.91-.85A2.45 2.45 0 0 0 15 6a2.5 2.5 0 0 0-1.79.69a2.53 2.53 0 0 0-.72 2.42l.26 1.14l-1.17.08a8.3 8.3 0 0 1-6.54-2.4a7.12 7.12 0 0 0 3.73 6.46l.95.54l-.63.9a5.62 5.62 0 0 1-2.68 1.92A8.34 8.34 0 0 0 8.5 18ZM19 6.65Z"/></g></g>`
-	umbrellaFillPath                  = `<g id="evaUmbrellaFill0"><g id="evaUmbrellaFill1"><path id="evaUmbrellaFill2" fill="currentColor" d="M12 2A10 10 0 0 0 2 12a1 1 0 0 0 1 1h8v6a3 3 0 0 0 6 0a1 1 0 0 0-2 0a1 1 0 0 1-2 0v-6h8a1 1 0 0 0 1-1A10 10 0 0 0 12 2Z"/></g></g>`
-	umbrellaOutlinePath               = `<g id="evaUmbrellaOutline0"><g id="evaUmbrellaOutline1"><path id="evaUmbrellaOutline2" fill="currentColor" d="M12 2A10 10 0 0 0 2 12a1 1 0 0 0 1 1h8v6a3 3 0 0 0 6 0a1 1 0 0 0-2 0a1 1 0 0 1-2 0v-6h8a1 1 0 0 0 1-1A10 10 0 0 0 12 2Zm-7.94 9a8 8 0 0 1 15.88 0Z"/></g></g>`
-	undoFillPath                      = `<g id="evaUndoFill0"><g id="evaUndoFill1"><path id="evaUndoFill2" fill="currentColor" d="M20.22 21a1 1 0 0 1-1-.76a8.91 8.91 0 0 0-7.8-6.69v1.12a1.78 1.78 0 0 1-1.09 1.64A2 2 0 0 1 8.18 16l-5.06-4.41a1.76 1.76 0 0 1 0-2.68l5.06-4.42a2 2 0 0 1 2.18-.3a1.78 1.78 0 0 1 1.09 1.64V7A10.89 10.89 0 0 1 21.5 17.75a10.29 10.29 0 0 1-.31 2.49a1 1 0 0 1-1 .76Z"/></g></g>`
-	undoOutlinePath                   = `<g id="evaUndoOutline0"><g id="evaUndoOutline1"><path id="evaUndoOutline2" fill="currentColor" d="M20.22 21a1 1 0 0 1-1-.76a8.91 8.91 0 0 0-7.8-6.69v1.12a1.78 1.78 0 0 1-1.09 1.64A2 2 0 0 1 8.18 16l-5.06-4.41a1.76 1.76 0 0 1 0-2.68l5.06-4.42a2 2 0 0 1 2.18-.3a1.78 1.78 0 0 1 1.09 1.64V7A10.89 10.89 0 0 1 21.5 17.75a10.29 10.29 0 0 1-.31 2.49a1 1 0 0 1-1 .76Zm-9.77-9.5a11.07 11.07 0 0 1 8.81 4.26A9 9 0 0 0 10.45 9a1 1 0 0 1-1-1V6.08l-4.82 4.17l4.82 4.21v-2a1 1 0 0 1 1-.96Z"/></g></g>`
-	unlockFillPath                    = `<g id="evaUnlockFill0"><g id="evaUnlockFill1"><g id="evaUnlockFill2" fill="currentColor"><circle cx="12" cy="15" r="1"/><path d="M17 8h-7V6a2 2 0 0 1 4 0a1 1 0 0 0 2 0a4 4 0 0 0-8 0v2H7a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3Zm-5 10a3 3 0 1 1 3-3a3 3 0 0 1-3 3Z"/></g></g></g>`
-	unlockOutlinePath                 = `<g id="evaUnlockOutline0"><g id="evaUnlockOutline1"><g id="evaUnlockOutline2" fill="currentColor"><path d="M17 8h-7V6a2 2 0 0 1 4 0a1 1 0 0 0 2 0a4 4 0 0 0-8 0v2H7a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3Zm1 11a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1Z"/><path d="M12 12a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g></g>`
-	uploadFillPath                    = `<g id="evaUploadFill0"><g id="evaUploadFill1"><g id="evaUploadFill2" fill="currentColor"><rect width="16" height="2" x="4" y="4" rx="1" ry="1" transform="rotate(180 12 5)"/><rect width="4" height="2" x="17" y="5" rx="1" ry="1" transform="rotate(90 19 6)"/><rect width="4" height="2" x="3" y="5" rx="1" ry="1" transform="rotate(90 5 6)"/><path d="M8 14a1 1 0 0 1-.8-.4a1 1 0 0 1 .2-1.4l4-3a1 1 0 0 1 1.18 0l4 2.82a1 1 0 0 1 .24 1.39a1 1 0 0 1-1.4.24L12 11.24L8.6 13.8a1 1 0 0 1-.6.2Z"/><path d="M12 21a1 1 0 0 1-1-1v-8a1 1 0 0 1 2 0v8a1 1 0 0 1-1 1Z"/></g></g></g>`
-	uploadOutlinePath                 = `<g id="evaUploadOutline0"><g id="evaUploadOutline1"><g id="evaUploadOutline2" fill="currentColor"><rect width="16" height="2" x="4" y="4" rx="1" ry="1" transform="rotate(180 12 5)"/><rect width="4" height="2" x="17" y="5" rx="1" ry="1" transform="rotate(90 19 6)"/><rect width="4" height="2" x="3" y="5" rx="1" ry="1" transform="rotate(90 5 6)"/><path d="M8 14a1 1 0 0 1-.8-.4a1 1 0 0 1 .2-1.4l4-3a1 1 0 0 1 1.18 0l4 2.82a1 1 0 0 1 .24 1.39a1 1 0 0 1-1.4.24L12 11.24L8.6 13.8a1 1 0 0 1-.6.2Z"/><path d="M12 21a1 1 0 0 1-1-1v-8a1 1 0 0 1 2 0v8a1 1 0 0 1-1 1Z"/></g></g></g>`
-	videoFillPath                     = `<g id="evaVideoFill0"><g id="evaVideoFill1"><path id="evaVideoFill2" fill="currentColor" d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45a1.68 1.68 0 0 0 .69-.15a1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15Z"/></g></g>`
-	videoOffFillPath                  = `<g id="evaVideoOffFill0"><g id="evaVideoOffFill1"><path id="evaVideoOffFill2" fill="currentColor" d="M14.22 17.05L4.88 7.71L3.12 6L3 5.8A3 3 0 0 0 2 8v8a3 3 0 0 0 3 3h9a2.94 2.94 0 0 0 1.66-.51ZM21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H7.83l1.29 1.29l6.59 6.59l2 2l2 2a1.73 1.73 0 0 0 .6.11a1.68 1.68 0 0 0 .69-.15a1.6 1.6 0 0 0 1-1.48V8.63a1.6 1.6 0 0 0-1-1.48Zm-4 8.44l-2-2L8.41 7l-2-2l-1.7-1.71a1 1 0 0 0-1.42 1.42l.54.53L5.59 7l9.34 9.34l1.46 1.46l2.9 2.91a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g>`
-	videoOffOutlinePath               = `<g id="evaVideoOffOutline0"><g id="evaVideoOffOutline1"><path id="evaVideoOffOutline2" fill="currentColor" d="m17 15.59l-2-2L8.41 7l-2-2l-1.7-1.71a1 1 0 0 0-1.42 1.42l.54.53L5.59 7l9.34 9.34l1.46 1.46l2.9 2.91a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM14 17H5a1 1 0 0 1-1-1V8a1 1 0 0 1 .4-.78L3 5.8A3 3 0 0 0 2 8v8a3 3 0 0 0 3 3h9a2.94 2.94 0 0 0 1.66-.51L14.14 17a.7.7 0 0 1-.14 0Zm7-9.85a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H7.83l2 2H14a1 1 0 0 1 1 1v4.17l4.72 4.72a1.73 1.73 0 0 0 .6.11a1.68 1.68 0 0 0 .69-.15a1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15Zm-1 7.45L17.19 12L20 9.4Z"/></g></g>`
-	videoOutlinePath                  = `<g id="evaVideoOutline0"><g id="evaVideoOutline1"><path id="evaVideoOutline2" fill="currentColor" d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45a1.68 1.68 0 0 0 .69-.15a1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15ZM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1Zm5-1.4L17.19 12L20 9.4Z"/></g></g>`
-	volumeDownFillPath                = `<g id="evaVolumeDownFill0"><g id="evaVolumeDownFill1"><path id="evaVolumeDownFill2" fill="currentColor" d="M20.78 8.37a1 1 0 1 0-1.56 1.26a4 4 0 0 1 0 4.74A1 1 0 0 0 20 16a1 1 0 0 0 .78-.37a6 6 0 0 0 0-7.26Zm-4.31-5.25a1 1 0 0 0-1 0L9 7.57H4a1 1 0 0 0-1 1v6.86a1 1 0 0 0 1 1h5l6.41 4.4A1.06 1.06 0 0 0 16 21a1 1 0 0 0 1-1V4a1 1 0 0 0-.53-.88Z"/></g></g>`
-	volumeDownOutlinePath             = `<g id="evaVolumeDownOutline0"><g id="evaVolumeDownOutline1"><path id="evaVolumeDownOutline2" fill="currentColor" d="M20.78 8.37a1 1 0 1 0-1.56 1.26a4 4 0 0 1 0 4.74A1 1 0 0 0 20 16a1 1 0 0 0 .78-.37a6 6 0 0 0 0-7.26Zm-4.31-5.25a1 1 0 0 0-1 0L9 7.57H4a1 1 0 0 0-1 1v6.86a1 1 0 0 0 1 1h5l6.41 4.4A1.06 1.06 0 0 0 16 21a1 1 0 0 0 1-1V4a1 1 0 0 0-.53-.88ZM15 18.1l-5.1-3.5a1 1 0 0 0-.57-.17H5V9.57h4.33a1 1 0 0 0 .57-.17L15 5.9Z"/></g></g>`
-	volumeMuteFillPath                = `<g id="evaVolumeMuteFill0"><g id="evaVolumeMuteFill1"><path id="evaVolumeMuteFill2" fill="currentColor" d="M17 21a1.06 1.06 0 0 1-.57-.17L10 16.43H5a1 1 0 0 1-1-1V8.57a1 1 0 0 1 1-1h5l6.41-4.4A1 1 0 0 1 18 4v16a1 1 0 0 1-1 1Z"/></g></g>`
-	volumeMuteOutlinePath             = `<g id="evaVolumeMuteOutline0"><g id="evaVolumeMuteOutline1"><path id="evaVolumeMuteOutline2" fill="currentColor" d="M17 21a1.06 1.06 0 0 1-.57-.17L10 16.43H5a1 1 0 0 1-1-1V8.57a1 1 0 0 1 1-1h5l6.41-4.4A1 1 0 0 1 18 4v16a1 1 0 0 1-1 1ZM6 14.43h4.33a1 1 0 0 1 .57.17l5.1 3.5V5.9l-5.1 3.5a1 1 0 0 1-.57.17H6Z"/></g></g>`
-	volumeOffFillPath                 = `<g id="evaVolumeOffFill0"><g id="evaVolumeOffFill1"><g id="evaVolumeOffFill2" fill="currentColor"><path d="m16.91 14.08l1.44 1.44a6 6 0 0 0-.07-7.15a1 1 0 1 0-1.56 1.26a4 4 0 0 1 .19 4.45Z"/><path d="M21 12a6.51 6.51 0 0 1-1.78 4.39l1.42 1.42A8.53 8.53 0 0 0 23 12a8.75 8.75 0 0 0-3.36-6.77a1 1 0 1 0-1.28 1.54A6.8 6.8 0 0 1 21 12Zm-6 .17V4a1 1 0 0 0-1.57-.83L9 6.2ZM4.74 7.57H2a1 1 0 0 0-1 1v6.86a1 1 0 0 0 1 1h5l6.41 4.4A1.06 1.06 0 0 0 14 21a1 1 0 0 0 1-1v-2.17Zm-.03-4.28a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g></g>`
-	volumeOffOutlinePath              = `<g id="evaVolumeOffOutline0"><g id="evaVolumeOffOutline1"><g id="evaVolumeOffOutline2" fill="currentColor"><path d="M4.71 3.29a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Zm12.2 10.79l1.44 1.44a6 6 0 0 0-.07-7.15a1 1 0 1 0-1.56 1.26a4 4 0 0 1 .19 4.45Z"/><path d="M21 12a6.51 6.51 0 0 1-1.78 4.39l1.42 1.42A8.53 8.53 0 0 0 23 12a8.75 8.75 0 0 0-3.36-6.77a1 1 0 1 0-1.28 1.54A6.8 6.8 0 0 1 21 12Zm-7.5 6.1l-5.1-3.5a1 1 0 0 0-.57-.17H3.5V9.57h3.24l-2-2H2.5a1 1 0 0 0-1 1v6.86a1 1 0 0 0 1 1h5l6.41 4.4a1.06 1.06 0 0 0 .57.17a1 1 0 0 0 1-1v-1.67l-2-2Zm0-12.2v4.77l2 2V4a1 1 0 0 0-1.57-.83L9.23 6.4l1.44 1.44Z"/></g></g></g>`
-	volumeUpFillPath                  = `<g id="evaVolumeUpFill0"><g id="evaVolumeUpFill1"><g id="evaVolumeUpFill2" fill="currentColor"><path d="M18.28 8.37a1 1 0 1 0-1.56 1.26a4 4 0 0 1 0 4.74A1 1 0 0 0 17.5 16a1 1 0 0 0 .78-.37a6 6 0 0 0 0-7.26Z"/><path d="M19.64 5.23a1 1 0 1 0-1.28 1.54A6.8 6.8 0 0 1 21 12a6.8 6.8 0 0 1-2.64 5.23a1 1 0 0 0-.13 1.41A1 1 0 0 0 19 19a1 1 0 0 0 .64-.23A8.75 8.75 0 0 0 23 12a8.75 8.75 0 0 0-3.36-6.77Zm-5.17-2.11a1 1 0 0 0-1 0L7 7.57H2a1 1 0 0 0-1 1v6.86a1 1 0 0 0 1 1h5l6.41 4.4A1.06 1.06 0 0 0 14 21a1 1 0 0 0 1-1V4a1 1 0 0 0-.53-.88Z"/></g></g></g>`
-	volumeUpOutlinePath               = `<g id="evaVolumeUpOutline0"><g id="evaVolumeUpOutline1"><g id="evaVolumeUpOutline2" fill="currentColor"><path d="M18.28 8.37a1 1 0 1 0-1.56 1.26a4 4 0 0 1 0 4.74A1 1 0 0 0 17.5 16a1 1 0 0 0 .78-.37a6 6 0 0 0 0-7.26Z"/><path d="M19.64 5.23a1 1 0 1 0-1.28 1.54A6.8 6.8 0 0 1 21 12a6.8 6.8 0 0 1-2.64 5.23a1 1 0 0 0-.13 1.41A1 1 0 0 0 19 19a1 1 0 0 0 .64-.23A8.75 8.75 0 0 0 23 12a8.75 8.75 0 0 0-3.36-6.77ZM15 3.12a1 1 0 0 0-1 0L7.52 7.57h-5a1 1 0 0 0-1 1v6.86a1 1 0 0 0 1 1h5l6.41 4.4a1.06 1.06 0 0 0 .57.17a1 1 0 0 0 1-1V4a1 1 0 0 0-.5-.88Zm-1.47 15L8.4 14.6a1 1 0 0 0-.57-.17H3.5V9.57h4.33a1 1 0 0 0 .57-.17l5.1-3.5Z"/></g></g></g>`
-	wifiFillPath                      = `<g id="evaWifiFill0"><g id="evaWifiFill1"><g id="evaWifiFill2" fill="currentColor"><circle cx="12" cy="19" r="1"/><path d="M12 14a5 5 0 0 0-3.47 1.4a1 1 0 1 0 1.39 1.44a3.08 3.08 0 0 1 4.16 0a1 1 0 1 0 1.39-1.44A5 5 0 0 0 12 14Zm0-5a9 9 0 0 0-6.47 2.75A1 1 0 0 0 7 13.14a7 7 0 0 1 10.08 0a1 1 0 0 0 .71.3a1 1 0 0 0 .72-1.69A9 9 0 0 0 12 9Z"/><path d="M21.72 7.93a14 14 0 0 0-19.44 0a1 1 0 0 0 1.38 1.44a12 12 0 0 1 16.68 0a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.31a1 1 0 0 0-.03-1.41Z"/></g></g></g>`
-	wifiOffFillPath                   = `<g id="evaWifiOffFill0"><g id="evaWifiOffFill1"><g id="evaWifiOffFill2" fill="currentColor"><circle cx="12" cy="19" r="1"/><path d="m12.44 11l-1.9-1.89l-2.46-2.44l-1.55-1.55l-1.82-1.83a1 1 0 0 0-1.42 1.42l1.38 1.37l1.46 1.46l2.23 2.24l1.55 1.54l2.74 2.74l2.79 2.8l3.85 3.85a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Zm9.28-3.07A13.93 13.93 0 0 0 12 4a14.1 14.1 0 0 0-4.44.73l1.62 1.62a11.89 11.89 0 0 1 11.16 3a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.31a1 1 0 0 0-.03-1.39ZM3.82 6.65a14.32 14.32 0 0 0-1.54 1.28a1 1 0 0 0 1.38 1.44a13.09 13.09 0 0 1 1.6-1.29ZM17 13.14a1 1 0 0 0 .71.3a1 1 0 0 0 .72-1.69A9 9 0 0 0 12 9h-.16l2.35 2.35A7 7 0 0 1 17 13.14Zm-9.57-2.88a8.8 8.8 0 0 0-1.9 1.49A1 1 0 0 0 7 13.14a7.3 7.3 0 0 1 2-1.41Zm1.1 5.14a1 1 0 1 0 1.39 1.44a3.06 3.06 0 0 1 3.84-.25l-2.52-2.52a5 5 0 0 0-2.71 1.33Z"/></g></g></g>`
-	wifiOffOutlinePath                = `<g id="evaWifiOffOutline0"><g id="evaWifiOffOutline1"><g id="evaWifiOffOutline2" fill="currentColor"><circle cx="12" cy="19" r="1"/><path d="m12.44 11l-1.9-1.89l-2.46-2.44l-1.55-1.55l-1.82-1.83a1 1 0 0 0-1.42 1.42l1.38 1.37l1.46 1.46l2.23 2.24l1.55 1.54l2.74 2.74l2.79 2.8l3.85 3.85a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Zm9.28-3.07A13.93 13.93 0 0 0 12 4a14.1 14.1 0 0 0-4.44.73l1.62 1.62a11.89 11.89 0 0 1 11.16 3a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.31a1 1 0 0 0-.03-1.39ZM3.82 6.65a14.32 14.32 0 0 0-1.54 1.28a1 1 0 0 0 1.38 1.44a13.09 13.09 0 0 1 1.6-1.29ZM17 13.14a1 1 0 0 0 .71.3a1 1 0 0 0 .72-1.69A9 9 0 0 0 12 9h-.16l2.35 2.35A7 7 0 0 1 17 13.14Zm-9.57-2.88a8.8 8.8 0 0 0-1.9 1.49A1 1 0 0 0 7 13.14a7.3 7.3 0 0 1 2-1.41Zm1.1 5.14a1 1 0 1 0 1.39 1.44a3.06 3.06 0 0 1 3.84-.25l-2.52-2.52a5 5 0 0 0-2.71 1.33Z"/></g></g></g>`
-	wifiOutlinePath                   = `<g id="evaWifiOutline0"><g id="evaWifiOutline1"><g id="evaWifiOutline2" fill="currentColor"><circle cx="12" cy="19" r="1"/><path d="M12 14a5 5 0 0 0-3.47 1.4a1 1 0 1 0 1.39 1.44a3.08 3.08 0 0 1 4.16 0a1 1 0 1 0 1.39-1.44A5 5 0 0 0 12 14Zm0-5a9 9 0 0 0-6.47 2.75A1 1 0 0 0 7 13.14a7 7 0 0 1 10.08 0a1 1 0 0 0 .71.3a1 1 0 0 0 .72-1.69A9 9 0 0 0 12 9Z"/><path d="M21.72 7.93a14 14 0 0 0-19.44 0a1 1 0 0 0 1.38 1.44a12 12 0 0 1 16.68 0a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.31a1 1 0 0 0-.03-1.41Z"/></g></g></g>`
-)
+const IconifyVersion = "1.1.3"
 
 var (
 	hAttr   = g.Attr("height", "1em")
 	viewbox = g.Attr("viewbox", "0 0 24 24")
 )
 
-func IconFromName(name string) g.Node {
-	switch name {
-	case "activityFill":
-		return ActivityFill()
-	case "activityOutline":
-		return ActivityOutline()
-	case "alertCircleFill":
-		return AlertCircleFill()
-	case "alertCircleOutline":
-		return AlertCircleOutline()
-	case "alertTriangleFill":
-		return AlertTriangleFill()
-	case "alertTriangleOutline":
-		return AlertTriangleOutline()
-	case "archiveFill":
-		return ArchiveFill()
-	case "archiveOutline":
-		return ArchiveOutline()
-	case "arrowBackFill":
-		return ArrowBackFill()
-	case "arrowBackOutline":
-		return ArrowBackOutline()
-	case "arrowCircleDownFill":
-		return ArrowCircleDownFill()
-	case "arrowCircleDownOutline":
-		return ArrowCircleDownOutline()
-	case "arrowCircleLeftFill":
-		return ArrowCircleLeftFill()
-	case "arrowCircleLeftOutline":
-		return ArrowCircleLeftOutline()
-	case "arrowCircleRightFill":
-		return ArrowCircleRightFill()
-	case "arrowCircleRightOutline":
-		return ArrowCircleRightOutline()
-	case "arrowCircleUpFill":
-		return ArrowCircleUpFill()
-	case "arrowCircleUpOutline":
-		return ArrowCircleUpOutline()
-	case "arrowDownFill":
-		return ArrowDownFill()
-	case "arrowDownOutline":
-		return ArrowDownOutline()
-	case "arrowDownwardFill":
-		return ArrowDownwardFill()
-	case "arrowDownwardOutline":
-		return ArrowDownwardOutline()
-	case "arrowForwardFill":
-		return ArrowForwardFill()
-	case "arrowForwardOutline":
-		return ArrowForwardOutline()
-	case "arrowIosBackFill":
-		return ArrowIosBackFill()
-	case "arrowIosBackOutline":
-		return ArrowIosBackOutline()
-	case "arrowIosDownwardFill":
-		return ArrowIosDownwardFill()
-	case "arrowIosDownwardOutline":
-		return ArrowIosDownwardOutline()
-	case "arrowIosForwardFill":
-		return ArrowIosForwardFill()
-	case "arrowIosForwardOutline":
-		return ArrowIosForwardOutline()
-	case "arrowIosUpwardFill":
-		return ArrowIosUpwardFill()
-	case "arrowIosUpwardOutline":
-		return ArrowIosUpwardOutline()
-	case "arrowLeftFill":
-		return ArrowLeftFill()
-	case "arrowLeftOutline":
-		return ArrowLeftOutline()
-	case "arrowRightFill":
-		return ArrowRightFill()
-	case "arrowRightOutline":
-		return ArrowRightOutline()
-	case "arrowUpFill":
-		return ArrowUpFill()
-	case "arrowUpOutline":
-		return ArrowUpOutline()
-	case "arrowUpwardFill":
-		return ArrowUpwardFill()
-	case "arrowUpwardOutline":
-		return ArrowUpwardOutline()
-	case "arrowheadDownFill":
-		return ArrowheadDownFill()
-	case "arrowheadDownOutline":
-		return ArrowheadDownOutline()
-	case "arrowheadLeftFill":
-		return ArrowheadLeftFill()
-	case "arrowheadLeftOutline":
-		return ArrowheadLeftOutline()
-	case "arrowheadRightFill":
-		return ArrowheadRightFill()
-	case "arrowheadRightOutline":
-		return ArrowheadRightOutline()
-	case "arrowheadUpFill":
-		return ArrowheadUpFill()
-	case "arrowheadUpOutline":
-		return ArrowheadUpOutline()
-	case "atFill":
-		return AtFill()
-	case "atOutline":
-		return AtOutline()
-	case "attachFill":
-		return AttachFill()
-	case "attachOutline":
-		return AttachOutline()
-	case "attachTwoFill":
-		return AttachTwoFill()
-	case "attachTwoOutline":
-		return AttachTwoOutline()
-	case "awardFill":
-		return AwardFill()
-	case "awardOutline":
-		return AwardOutline()
-	case "backspaceFill":
-		return BackspaceFill()
-	case "backspaceOutline":
-		return BackspaceOutline()
-	case "barChartFill":
-		return BarChartFill()
-	case "barChartOutline":
-		return BarChartOutline()
-	case "barChartTwoFill":
-		return BarChartTwoFill()
-	case "barChartTwoOutline":
-		return BarChartTwoOutline()
-	case "batteryFill":
-		return BatteryFill()
-	case "batteryOutline":
-		return BatteryOutline()
-	case "behanceFill":
-		return BehanceFill()
-	case "behanceOutline":
-		return BehanceOutline()
-	case "bellFill":
-		return BellFill()
-	case "bellOffFill":
-		return BellOffFill()
-	case "bellOffOutline":
-		return BellOffOutline()
-	case "bellOutline":
-		return BellOutline()
-	case "bluetoothFill":
-		return BluetoothFill()
-	case "bluetoothOutline":
-		return BluetoothOutline()
-	case "bookFill":
-		return BookFill()
-	case "bookOpenFill":
-		return BookOpenFill()
-	case "bookOpenOutline":
-		return BookOpenOutline()
-	case "bookOutline":
-		return BookOutline()
-	case "bookmarkFill":
-		return BookmarkFill()
-	case "bookmarkOutline":
-		return BookmarkOutline()
-	case "briefcaseFill":
-		return BriefcaseFill()
-	case "briefcaseOutline":
-		return BriefcaseOutline()
-	case "browserFill":
-		return BrowserFill()
-	case "browserOutline":
-		return BrowserOutline()
-	case "brushFill":
-		return BrushFill()
-	case "brushOutline":
-		return BrushOutline()
-	case "bulbFill":
-		return BulbFill()
-	case "bulbOutline":
-		return BulbOutline()
-	case "calendarFill":
-		return CalendarFill()
-	case "calendarOutline":
-		return CalendarOutline()
-	case "cameraFill":
-		return CameraFill()
-	case "cameraOutline":
-		return CameraOutline()
-	case "carFill":
-		return CarFill()
-	case "carOutline":
-		return CarOutline()
-	case "castFill":
-		return CastFill()
-	case "castOutline":
-		return CastOutline()
-	case "chargingFill":
-		return ChargingFill()
-	case "chargingOutline":
-		return ChargingOutline()
-	case "checkmarkCircleFill":
-		return CheckmarkCircleFill()
-	case "checkmarkCircleOutline":
-		return CheckmarkCircleOutline()
-	case "checkmarkCircleTwoFill":
-		return CheckmarkCircleTwoFill()
-	case "checkmarkCircleTwoOutline":
-		return CheckmarkCircleTwoOutline()
-	case "checkmarkFill":
-		return CheckmarkFill()
-	case "checkmarkOutline":
-		return CheckmarkOutline()
-	case "checkmarkSquareFill":
-		return CheckmarkSquareFill()
-	case "checkmarkSquareOutline":
-		return CheckmarkSquareOutline()
-	case "checkmarkSquareTwoFill":
-		return CheckmarkSquareTwoFill()
-	case "checkmarkSquareTwoOutline":
-		return CheckmarkSquareTwoOutline()
-	case "chevronDownFill":
-		return ChevronDownFill()
-	case "chevronDownOutline":
-		return ChevronDownOutline()
-	case "chevronLeftFill":
-		return ChevronLeftFill()
-	case "chevronLeftOutline":
-		return ChevronLeftOutline()
-	case "chevronRightFill":
-		return ChevronRightFill()
-	case "chevronRightOutline":
-		return ChevronRightOutline()
-	case "chevronUpFill":
-		return ChevronUpFill()
-	case "chevronUpOutline":
-		return ChevronUpOutline()
-	case "clipboardFill":
-		return ClipboardFill()
-	case "clipboardOutline":
-		return ClipboardOutline()
-	case "clockFill":
-		return ClockFill()
-	case "clockOutline":
-		return ClockOutline()
-	case "closeCircleFill":
-		return CloseCircleFill()
-	case "closeCircleOutline":
-		return CloseCircleOutline()
-	case "closeFill":
-		return CloseFill()
-	case "closeOutline":
-		return CloseOutline()
-	case "closeSquareFill":
-		return CloseSquareFill()
-	case "closeSquareOutline":
-		return CloseSquareOutline()
-	case "cloudDownloadFill":
-		return CloudDownloadFill()
-	case "cloudDownloadOutline":
-		return CloudDownloadOutline()
-	case "cloudUploadFill":
-		return CloudUploadFill()
-	case "cloudUploadOutline":
-		return CloudUploadOutline()
-	case "codeDownloadFill":
-		return CodeDownloadFill()
-	case "codeDownloadOutline":
-		return CodeDownloadOutline()
-	case "codeFill":
-		return CodeFill()
-	case "codeOutline":
-		return CodeOutline()
-	case "collapseFill":
-		return CollapseFill()
-	case "collapseOutline":
-		return CollapseOutline()
-	case "colorPaletteFill":
-		return ColorPaletteFill()
-	case "colorPaletteOutline":
-		return ColorPaletteOutline()
-	case "colorPickerFill":
-		return ColorPickerFill()
-	case "colorPickerOutline":
-		return ColorPickerOutline()
-	case "compassFill":
-		return CompassFill()
-	case "compassOutline":
-		return CompassOutline()
-	case "copyFill":
-		return CopyFill()
-	case "copyOutline":
-		return CopyOutline()
-	case "cornerDownLeftFill":
-		return CornerDownLeftFill()
-	case "cornerDownLeftOutline":
-		return CornerDownLeftOutline()
-	case "cornerDownRightFill":
-		return CornerDownRightFill()
-	case "cornerDownRightOutline":
-		return CornerDownRightOutline()
-	case "cornerLeftDownFill":
-		return CornerLeftDownFill()
-	case "cornerLeftDownOutline":
-		return CornerLeftDownOutline()
-	case "cornerLeftUpFill":
-		return CornerLeftUpFill()
-	case "cornerLeftUpOutline":
-		return CornerLeftUpOutline()
-	case "cornerRightDownFill":
-		return CornerRightDownFill()
-	case "cornerRightDownOutline":
-		return CornerRightDownOutline()
-	case "cornerRightUpFill":
-		return CornerRightUpFill()
-	case "cornerRightUpOutline":
-		return CornerRightUpOutline()
-	case "cornerUpLeftFill":
-		return CornerUpLeftFill()
-	case "cornerUpLeftOutline":
-		return CornerUpLeftOutline()
-	case "cornerUpRightFill":
-		return CornerUpRightFill()
-	case "cornerUpRightOutline":
-		return CornerUpRightOutline()
-	case "creditCardFill":
-		return CreditCardFill()
-	case "creditCardOutline":
-		return CreditCardOutline()
-	case "cropFill":
-		return CropFill()
-	case "cropOutline":
-		return CropOutline()
-	case "cubeFill":
-		return CubeFill()
-	case "cubeOutline":
-		return CubeOutline()
-	case "diagonalArrowLeftDownFill":
-		return DiagonalArrowLeftDownFill()
-	case "diagonalArrowLeftDownOutline":
-		return DiagonalArrowLeftDownOutline()
-	case "diagonalArrowLeftUpFill":
-		return DiagonalArrowLeftUpFill()
-	case "diagonalArrowLeftUpOutline":
-		return DiagonalArrowLeftUpOutline()
-	case "diagonalArrowRightDownFill":
-		return DiagonalArrowRightDownFill()
-	case "diagonalArrowRightDownOutline":
-		return DiagonalArrowRightDownOutline()
-	case "diagonalArrowRightUpFill":
-		return DiagonalArrowRightUpFill()
-	case "diagonalArrowRightUpOutline":
-		return DiagonalArrowRightUpOutline()
-	case "doneAllFill":
-		return DoneAllFill()
-	case "doneAllOutline":
-		return DoneAllOutline()
-	case "downloadFill":
-		return DownloadFill()
-	case "downloadOutline":
-		return DownloadOutline()
-	case "dropletFill":
-		return DropletFill()
-	case "dropletOffFill":
-		return DropletOffFill()
-	case "dropletOffOutline":
-		return DropletOffOutline()
-	case "dropletOutline":
-		return DropletOutline()
-	case "editFill":
-		return EditFill()
-	case "editOutline":
-		return EditOutline()
-	case "editTwoFill":
-		return EditTwoFill()
-	case "editTwoOutline":
-		return EditTwoOutline()
-	case "emailFill":
-		return EmailFill()
-	case "emailOutline":
-		return EmailOutline()
-	case "expandFill":
-		return ExpandFill()
-	case "expandOutline":
-		return ExpandOutline()
-	case "externalLinkFill":
-		return ExternalLinkFill()
-	case "externalLinkOutline":
-		return ExternalLinkOutline()
-	case "eyeFill":
-		return EyeFill()
-	case "eyeOffFill":
-		return EyeOffFill()
-	case "eyeOffOutline":
-		return EyeOffOutline()
-	case "eyeOffTwoFill":
-		return EyeOffTwoFill()
-	case "eyeOffTwoOutline":
-		return EyeOffTwoOutline()
-	case "eyeOutline":
-		return EyeOutline()
-	case "facebookFill":
-		return FacebookFill()
-	case "facebookOutline":
-		return FacebookOutline()
-	case "fileAddFill":
-		return FileAddFill()
-	case "fileAddOutline":
-		return FileAddOutline()
-	case "fileFill":
-		return FileFill()
-	case "fileOutline":
-		return FileOutline()
-	case "fileRemoveFill":
-		return FileRemoveFill()
-	case "fileRemoveOutline":
-		return FileRemoveOutline()
-	case "fileTextFill":
-		return FileTextFill()
-	case "fileTextOutline":
-		return FileTextOutline()
-	case "filmFill":
-		return FilmFill()
-	case "filmOutline":
-		return FilmOutline()
-	case "flagFill":
-		return FlagFill()
-	case "flagOutline":
-		return FlagOutline()
-	case "flashFill":
-		return FlashFill()
-	case "flashOffFill":
-		return FlashOffFill()
-	case "flashOffOutline":
-		return FlashOffOutline()
-	case "flashOutline":
-		return FlashOutline()
-	case "flipFill":
-		return FlipFill()
-	case "flipOutline":
-		return FlipOutline()
-	case "flipTwoFill":
-		return FlipTwoFill()
-	case "flipTwoOutline":
-		return FlipTwoOutline()
-	case "folderAddFill":
-		return FolderAddFill()
-	case "folderAddOutline":
-		return FolderAddOutline()
-	case "folderFill":
-		return FolderFill()
-	case "folderOutline":
-		return FolderOutline()
-	case "folderRemoveFill":
-		return FolderRemoveFill()
-	case "folderRemoveOutline":
-		return FolderRemoveOutline()
-	case "funnelFill":
-		return FunnelFill()
-	case "funnelOutline":
-		return FunnelOutline()
-	case "giftFill":
-		return GiftFill()
-	case "giftOutline":
-		return GiftOutline()
-	case "githubFill":
-		return GithubFill()
-	case "githubOutline":
-		return GithubOutline()
-	case "globeFill":
-		return GlobeFill()
-	case "globeOutline":
-		return GlobeOutline()
-	case "globeThreeFill":
-		return GlobeThreeFill()
-	case "globeTwoFill":
-		return GlobeTwoFill()
-	case "globeTwoOutline":
-		return GlobeTwoOutline()
-	case "googleFill":
-		return GoogleFill()
-	case "googleOutline":
-		return GoogleOutline()
-	case "gridFill":
-		return GridFill()
-	case "gridOutline":
-		return GridOutline()
-	case "hardDriveFill":
-		return HardDriveFill()
-	case "hardDriveOutline":
-		return HardDriveOutline()
-	case "hashFill":
-		return HashFill()
-	case "hashOutline":
-		return HashOutline()
-	case "headphonesFill":
-		return HeadphonesFill()
-	case "headphonesOutline":
-		return HeadphonesOutline()
-	case "heartFill":
-		return HeartFill()
-	case "heartOutline":
-		return HeartOutline()
-	case "homeFill":
-		return HomeFill()
-	case "homeOutline":
-		return HomeOutline()
-	case "imageFill":
-		return ImageFill()
-	case "imageOutline":
-		return ImageOutline()
-	case "imageTwoFill":
-		return ImageTwoFill()
-	case "inboxFill":
-		return InboxFill()
-	case "inboxOutline":
-		return InboxOutline()
-	case "infoFill":
-		return InfoFill()
-	case "infoOutline":
-		return InfoOutline()
-	case "keypadFill":
-		return KeypadFill()
-	case "keypadOutline":
-		return KeypadOutline()
-	case "layersFill":
-		return LayersFill()
-	case "layersOutline":
-		return LayersOutline()
-	case "layoutFill":
-		return LayoutFill()
-	case "layoutOutline":
-		return LayoutOutline()
-	case "linkFill":
-		return LinkFill()
-	case "linkOutline":
-		return LinkOutline()
-	case "linkTwoFill":
-		return LinkTwoFill()
-	case "linkTwoOutline":
-		return LinkTwoOutline()
-	case "linkedinFill":
-		return LinkedinFill()
-	case "linkedinOutline":
-		return LinkedinOutline()
-	case "listFill":
-		return ListFill()
-	case "listOutline":
-		return ListOutline()
-	case "loaderOutline":
-		return LoaderOutline()
-	case "lockFill":
-		return LockFill()
-	case "lockOutline":
-		return LockOutline()
-	case "logInFill":
-		return LogInFill()
-	case "logInOutline":
-		return LogInOutline()
-	case "logOutFill":
-		return LogOutFill()
-	case "logOutOutline":
-		return LogOutOutline()
-	case "mapFill":
-		return MapFill()
-	case "mapOutline":
-		return MapOutline()
-	case "maximizeFill":
-		return MaximizeFill()
-	case "maximizeOutline":
-		return MaximizeOutline()
-	case "menuArrowFill":
-		return MenuArrowFill()
-	case "menuArrowOutline":
-		return MenuArrowOutline()
-	case "menuFill":
-		return MenuFill()
-	case "menuOutline":
-		return MenuOutline()
-	case "menuTwoFill":
-		return MenuTwoFill()
-	case "menuTwoOutline":
-		return MenuTwoOutline()
-	case "messageCircleFill":
-		return MessageCircleFill()
-	case "messageCircleOutline":
-		return MessageCircleOutline()
-	case "messageSquareFill":
-		return MessageSquareFill()
-	case "messageSquareOutline":
-		return MessageSquareOutline()
-	case "micFill":
-		return MicFill()
-	case "micOffFill":
-		return MicOffFill()
-	case "micOffOutline":
-		return MicOffOutline()
-	case "micOutline":
-		return MicOutline()
-	case "minimizeFill":
-		return MinimizeFill()
-	case "minimizeOutline":
-		return MinimizeOutline()
-	case "minusCircleFill":
-		return MinusCircleFill()
-	case "minusCircleOutline":
-		return MinusCircleOutline()
-	case "minusFill":
-		return MinusFill()
-	case "minusOutline":
-		return MinusOutline()
-	case "minusSquareFill":
-		return MinusSquareFill()
-	case "minusSquareOutline":
-		return MinusSquareOutline()
-	case "monitorFill":
-		return MonitorFill()
-	case "monitorOutline":
-		return MonitorOutline()
-	case "moonFill":
-		return MoonFill()
-	case "moonOutline":
-		return MoonOutline()
-	case "moreHorizontalFill":
-		return MoreHorizontalFill()
-	case "moreHorizontalOutline":
-		return MoreHorizontalOutline()
-	case "moreVerticalFill":
-		return MoreVerticalFill()
-	case "moreVerticalOutline":
-		return MoreVerticalOutline()
-	case "moveFill":
-		return MoveFill()
-	case "moveOutline":
-		return MoveOutline()
-	case "musicFill":
-		return MusicFill()
-	case "musicOutline":
-		return MusicOutline()
-	case "navigationFill":
-		return NavigationFill()
-	case "navigationOutline":
-		return NavigationOutline()
-	case "navigationTwoFill":
-		return NavigationTwoFill()
-	case "navigationTwoOutline":
-		return NavigationTwoOutline()
-	case "npmFill":
-		return NpmFill()
-	case "npmOutline":
-		return NpmOutline()
-	case "optionsFill":
-		return OptionsFill()
-	case "optionsOutline":
-		return OptionsOutline()
-	case "optionsTwoFill":
-		return OptionsTwoFill()
-	case "optionsTwoOutline":
-		return OptionsTwoOutline()
-	case "pantoneFill":
-		return PantoneFill()
-	case "pantoneOutline":
-		return PantoneOutline()
-	case "paperPlaneFill":
-		return PaperPlaneFill()
-	case "paperPlaneOutline":
-		return PaperPlaneOutline()
-	case "pauseCircleFill":
-		return PauseCircleFill()
-	case "pauseCircleOutline":
-		return PauseCircleOutline()
-	case "peopleFill":
-		return PeopleFill()
-	case "peopleOutline":
-		return PeopleOutline()
-	case "percentFill":
-		return PercentFill()
-	case "percentOutline":
-		return PercentOutline()
-	case "personAddFill":
-		return PersonAddFill()
-	case "personAddOutline":
-		return PersonAddOutline()
-	case "personDeleteFill":
-		return PersonDeleteFill()
-	case "personDeleteOutline":
-		return PersonDeleteOutline()
-	case "personDoneFill":
-		return PersonDoneFill()
-	case "personDoneOutline":
-		return PersonDoneOutline()
-	case "personFill":
-		return PersonFill()
-	case "personOutline":
-		return PersonOutline()
-	case "personRemoveFill":
-		return PersonRemoveFill()
-	case "personRemoveOutline":
-		return PersonRemoveOutline()
-	case "phoneCallFill":
-		return PhoneCallFill()
-	case "phoneCallOutline":
-		return PhoneCallOutline()
-	case "phoneFill":
-		return PhoneFill()
-	case "phoneMissedFill":
-		return PhoneMissedFill()
-	case "phoneMissedOutline":
-		return PhoneMissedOutline()
-	case "phoneOffFill":
-		return PhoneOffFill()
-	case "phoneOffOutline":
-		return PhoneOffOutline()
-	case "phoneOutline":
-		return PhoneOutline()
-	case "pieChartFill":
-		return PieChartFill()
-	case "pieChartOutline":
-		return PieChartOutline()
-	case "pieChartTwoFill":
-		return PieChartTwoFill()
-	case "pinFill":
-		return PinFill()
-	case "pinOutline":
-		return PinOutline()
-	case "playCircleFill":
-		return PlayCircleFill()
-	case "playCircleOutline":
-		return PlayCircleOutline()
-	case "plusCircleFill":
-		return PlusCircleFill()
-	case "plusCircleOutline":
-		return PlusCircleOutline()
-	case "plusFill":
-		return PlusFill()
-	case "plusOutline":
-		return PlusOutline()
-	case "plusSquareFill":
-		return PlusSquareFill()
-	case "plusSquareOutline":
-		return PlusSquareOutline()
-	case "powerFill":
-		return PowerFill()
-	case "powerOutline":
-		return PowerOutline()
-	case "pricetagsFill":
-		return PricetagsFill()
-	case "pricetagsOutline":
-		return PricetagsOutline()
-	case "printerFill":
-		return PrinterFill()
-	case "printerOutline":
-		return PrinterOutline()
-	case "questionMarkCircleFill":
-		return QuestionMarkCircleFill()
-	case "questionMarkCircleOutline":
-		return QuestionMarkCircleOutline()
-	case "questionMarkFill":
-		return QuestionMarkFill()
-	case "questionMarkOutline":
-		return QuestionMarkOutline()
-	case "radioButtonOffFill":
-		return RadioButtonOffFill()
-	case "radioButtonOffOutline":
-		return RadioButtonOffOutline()
-	case "radioButtonOnFill":
-		return RadioButtonOnFill()
-	case "radioButtonOnOutline":
-		return RadioButtonOnOutline()
-	case "radioFill":
-		return RadioFill()
-	case "radioOutline":
-		return RadioOutline()
-	case "recordingFill":
-		return RecordingFill()
-	case "recordingOutline":
-		return RecordingOutline()
-	case "refreshFill":
-		return RefreshFill()
-	case "refreshOutline":
-		return RefreshOutline()
-	case "repeatFill":
-		return RepeatFill()
-	case "repeatOutline":
-		return RepeatOutline()
-	case "rewindLeftFill":
-		return RewindLeftFill()
-	case "rewindLeftOutline":
-		return RewindLeftOutline()
-	case "rewindRightFill":
-		return RewindRightFill()
-	case "rewindRightOutline":
-		return RewindRightOutline()
-	case "saveFill":
-		return SaveFill()
-	case "saveOutline":
-		return SaveOutline()
-	case "scissorsFill":
-		return ScissorsFill()
-	case "scissorsOutline":
-		return ScissorsOutline()
-	case "searchFill":
-		return SearchFill()
-	case "searchOutline":
-		return SearchOutline()
-	case "settingsFill":
-		return SettingsFill()
-	case "settingsOutline":
-		return SettingsOutline()
-	case "settingsTwoFill":
-		return SettingsTwoFill()
-	case "settingsTwoOutline":
-		return SettingsTwoOutline()
-	case "shakeFill":
-		return ShakeFill()
-	case "shakeOutline":
-		return ShakeOutline()
-	case "shareFill":
-		return ShareFill()
-	case "shareOutline":
-		return ShareOutline()
-	case "shieldFill":
-		return ShieldFill()
-	case "shieldOffFill":
-		return ShieldOffFill()
-	case "shieldOffOutline":
-		return ShieldOffOutline()
-	case "shieldOutline":
-		return ShieldOutline()
-	case "shoppingBagFill":
-		return ShoppingBagFill()
-	case "shoppingBagOutline":
-		return ShoppingBagOutline()
-	case "shoppingCartFill":
-		return ShoppingCartFill()
-	case "shoppingCartOutline":
-		return ShoppingCartOutline()
-	case "shuffleFill":
-		return ShuffleFill()
-	case "shuffleOutline":
-		return ShuffleOutline()
-	case "shuffleTwoFill":
-		return ShuffleTwoFill()
-	case "shuffleTwoOutline":
-		return ShuffleTwoOutline()
-	case "skipBackFill":
-		return SkipBackFill()
-	case "skipBackOutline":
-		return SkipBackOutline()
-	case "skipForwardFill":
-		return SkipForwardFill()
-	case "skipForwardOutline":
-		return SkipForwardOutline()
-	case "slashFill":
-		return SlashFill()
-	case "slashOutline":
-		return SlashOutline()
-	case "smartphoneFill":
-		return SmartphoneFill()
-	case "smartphoneOutline":
-		return SmartphoneOutline()
-	case "smilingFaceFill":
-		return SmilingFaceFill()
-	case "smilingFaceOutline":
-		return SmilingFaceOutline()
-	case "speakerFill":
-		return SpeakerFill()
-	case "speakerOutline":
-		return SpeakerOutline()
-	case "squareFill":
-		return SquareFill()
-	case "squareOutline":
-		return SquareOutline()
-	case "starFill":
-		return StarFill()
-	case "starOutline":
-		return StarOutline()
-	case "stopCircleFill":
-		return StopCircleFill()
-	case "stopCircleOutline":
-		return StopCircleOutline()
-	case "sunFill":
-		return SunFill()
-	case "sunOutline":
-		return SunOutline()
-	case "swapFill":
-		return SwapFill()
-	case "swapOutline":
-		return SwapOutline()
-	case "syncFill":
-		return SyncFill()
-	case "syncOutline":
-		return SyncOutline()
-	case "textFill":
-		return TextFill()
-	case "textOutline":
-		return TextOutline()
-	case "thermometerFill":
-		return ThermometerFill()
-	case "thermometerMinusFill":
-		return ThermometerMinusFill()
-	case "thermometerMinusOutline":
-		return ThermometerMinusOutline()
-	case "thermometerOutline":
-		return ThermometerOutline()
-	case "thermometerPlusFill":
-		return ThermometerPlusFill()
-	case "thermometerPlusOutline":
-		return ThermometerPlusOutline()
-	case "toggleLeftFill":
-		return ToggleLeftFill()
-	case "toggleLeftOutline":
-		return ToggleLeftOutline()
-	case "toggleRightFill":
-		return ToggleRightFill()
-	case "toggleRightOutline":
-		return ToggleRightOutline()
-	case "trashFill":
-		return TrashFill()
-	case "trashOutline":
-		return TrashOutline()
-	case "trashTwoFill":
-		return TrashTwoFill()
-	case "trashTwoOutline":
-		return TrashTwoOutline()
-	case "trendingDownFill":
-		return TrendingDownFill()
-	case "trendingDownOutline":
-		return TrendingDownOutline()
-	case "trendingUpFill":
-		return TrendingUpFill()
-	case "trendingUpOutline":
-		return TrendingUpOutline()
-	case "tvFill":
-		return TvFill()
-	case "tvOutline":
-		return TvOutline()
-	case "twitterFill":
-		return TwitterFill()
-	case "twitterOutline":
-		return TwitterOutline()
-	case "umbrellaFill":
-		return UmbrellaFill()
-	case "umbrellaOutline":
-		return UmbrellaOutline()
-	case "undoFill":
-		return UndoFill()
-	case "undoOutline":
-		return UndoOutline()
-	case "unlockFill":
-		return UnlockFill()
-	case "unlockOutline":
-		return UnlockOutline()
-	case "uploadFill":
-		return UploadFill()
-	case "uploadOutline":
-		return UploadOutline()
-	case "videoFill":
-		return VideoFill()
-	case "videoOffFill":
-		return VideoOffFill()
-	case "videoOffOutline":
-		return VideoOffOutline()
-	case "videoOutline":
-		return VideoOutline()
-	case "volumeDownFill":
-		return VolumeDownFill()
-	case "volumeDownOutline":
-		return VolumeDownOutline()
-	case "volumeMuteFill":
-		return VolumeMuteFill()
-	case "volumeMuteOutline":
-		return VolumeMuteOutline()
-	case "volumeOffFill":
-		return VolumeOffFill()
-	case "volumeOffOutline":
-		return VolumeOffOutline()
-	case "volumeUpFill":
-		return VolumeUpFill()
-	case "volumeUpOutline":
-		return VolumeUpOutline()
-	case "wifiFill":
-		return WifiFill()
-	case "wifiOffFill":
-		return WifiOffFill()
-	case "wifiOffOutline":
-		return WifiOffOutline()
-	case "wifiOutline":
-		return WifiOutline()
-	default:
-		panic("Unknown icon name: " + name)
-	}
-}
-
 func ActivityFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(activityFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaActivityFill0"><g id="evaActivityFill1"><path id="evaActivityFill2" fill="currentColor" d="M14.33 20h-.21a2 2 0 0 1-1.76-1.58L9.68 6l-2.76 6.4A1 1 0 0 1 6 13H3a1 1 0 0 1 0-2h2.34l2.51-5.79a2 2 0 0 1 3.79.38L14.32 18l2.76-6.38A1 1 0 0 1 18 11h3a1 1 0 0 1 0 2h-2.34l-2.51 5.79A2 2 0 0 1 14.33 20Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ActivityOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(activityOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaActivityOutline0"><g id="evaActivityOutline1"><path id="evaActivityOutline2" fill="currentColor" d="M14.33 20h-.21a2 2 0 0 1-1.76-1.58L9.68 6l-2.76 6.4A1 1 0 0 1 6 13H3a1 1 0 0 1 0-2h2.34l2.51-5.79a2 2 0 0 1 3.79.38L14.32 18l2.76-6.38A1 1 0 0 1 18 11h3a1 1 0 0 1 0 2h-2.34l-2.51 5.79A2 2 0 0 1 14.33 20Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func AlertCircleFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(alertCircleFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaAlertCircleFill0"><g id="evaAlertCircleFill1"><path id="evaAlertCircleFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 15a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm1-4a1 1 0 0 1-2 0V8a1 1 0 0 1 2 0Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func AlertCircleOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(alertCircleOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaAlertCircleOutline0"><g id="evaAlertCircleOutline1"><g id="evaAlertCircleOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><circle cx="12" cy="16" r="1"/><path d="M12 7a1 1 0 0 0-1 1v5a1 1 0 0 0 2 0V8a1 1 0 0 0-1-1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func AlertTriangleFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(alertTriangleFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaAlertTriangleFill0"><g id="evaAlertTriangleFill1"><path id="evaAlertTriangleFill2" fill="currentColor" d="M22.56 16.3L14.89 3.58a3.43 3.43 0 0 0-5.78 0L1.44 16.3a3 3 0 0 0-.05 3A3.37 3.37 0 0 0 4.33 21h15.34a3.37 3.37 0 0 0 2.94-1.66a3 3 0 0 0-.05-3.04ZM12 17a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm1-4a1 1 0 0 1-2 0V9a1 1 0 0 1 2 0Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func AlertTriangleOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(alertTriangleOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaAlertTriangleOutline0"><g id="evaAlertTriangleOutline1"><g id="evaAlertTriangleOutline2" fill="currentColor"><path d="M22.56 16.3L14.89 3.58a3.43 3.43 0 0 0-5.78 0L1.44 16.3a3 3 0 0 0-.05 3A3.37 3.37 0 0 0 4.33 21h15.34a3.37 3.37 0 0 0 2.94-1.66a3 3 0 0 0-.05-3.04Zm-1.7 2.05a1.31 1.31 0 0 1-1.19.65H4.33a1.31 1.31 0 0 1-1.19-.65a1 1 0 0 1 0-1l7.68-12.73a1.48 1.48 0 0 1 2.36 0l7.67 12.72a1 1 0 0 1 .01 1.01Z"/><circle cx="12" cy="16" r="1"/><path d="M12 8a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ArchiveFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(archiveFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArchiveFill0"><g id="evaArchiveFill1"><path id="evaArchiveFill2" fill="currentColor" d="M18 3H6a3 3 0 0 0-2 5.22V18a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8.22A3 3 0 0 0 18 3Zm-3 10.13a.87.87 0 0 1-.87.87H9.87a.87.87 0 0 1-.87-.87v-.26a.87.87 0 0 1 .87-.87h4.26a.87.87 0 0 1 .87.87ZM18 7H6a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArchiveOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(archiveOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArchiveOutline0"><g id="evaArchiveOutline1"><g id="evaArchiveOutline2" fill="currentColor"><path d="M21 6a3 3 0 0 0-3-3H6a3 3 0 0 0-2 5.22V18a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8.22A3 3 0 0 0 21 6ZM6 5h12a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2Zm12 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h12Z"/><rect width="6" height="2" x="9" y="12" rx=".87" ry=".87"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowBackFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowBackFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowBackFill0"><g id="evaArrowBackFill1"><path id="evaArrowBackFill2" fill="currentColor" d="M19 11H7.14l3.63-4.36a1 1 0 1 0-1.54-1.28l-5 6a1.19 1.19 0 0 0-.09.15c0 .05 0 .08-.07.13A1 1 0 0 0 4 12a1 1 0 0 0 .07.36c0 .05 0 .08.07.13a1.19 1.19 0 0 0 .09.15l5 6A1 1 0 0 0 10 19a1 1 0 0 0 .64-.23a1 1 0 0 0 .13-1.41L7.14 13H19a1 1 0 0 0 0-2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowBackOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowBackOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowBackOutline0"><g id="evaArrowBackOutline1"><path id="evaArrowBackOutline2" fill="currentColor" d="M19 11H7.14l3.63-4.36a1 1 0 1 0-1.54-1.28l-5 6a1.19 1.19 0 0 0-.09.15c0 .05 0 .08-.07.13A1 1 0 0 0 4 12a1 1 0 0 0 .07.36c0 .05 0 .08.07.13a1.19 1.19 0 0 0 .09.15l5 6A1 1 0 0 0 10 19a1 1 0 0 0 .64-.23a1 1 0 0 0 .13-1.41L7.14 13H19a1 1 0 0 0 0-2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowCircleDownFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowCircleDownFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowCircleDownFill0"><g id="evaArrowCircleDownFill1"><path id="evaArrowCircleDownFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm3.69 11.86l-3 2.86a.49.49 0 0 1-.15.1a.54.54 0 0 1-.16.1a.94.94 0 0 1-.76 0a1 1 0 0 1-.33-.21l-3-3a1 1 0 0 1 1.42-1.42l1.29 1.3V8a1 1 0 0 1 2 0v5.66l1.31-1.25a1 1 0 0 1 1.38 1.45Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowCircleDownOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowCircleDownOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowCircleDownOutline0"><g id="evaArrowCircleDownOutline1"><g id="evaArrowCircleDownOutline2" fill="currentColor"><path d="M14.31 12.41L13 13.66V8a1 1 0 0 0-2 0v5.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3a1 1 0 0 0 .33.21a.94.94 0 0 0 .76 0a.54.54 0 0 0 .16-.1a.49.49 0 0 0 .15-.1l3-2.86a1 1 0 0 0-1.38-1.45Z"/><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowCircleLeftFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowCircleLeftFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowCircleLeftFill0"><g id="evaArrowCircleLeftFill1"><path id="evaArrowCircleLeftFill2" fill="currentColor" d="M22 12a10 10 0 1 0-10 10a10 10 0 0 0 10-10Zm-11.86 3.69l-2.86-3a.49.49 0 0 1-.1-.15a.54.54 0 0 1-.1-.16a.94.94 0 0 1 0-.76a1 1 0 0 1 .21-.33l3-3a1 1 0 0 1 1.42 1.42L10.41 11H16a1 1 0 0 1 0 2h-5.66l1.25 1.31a1 1 0 0 1-1.45 1.38Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowCircleLeftOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowCircleLeftOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowCircleLeftOutline0"><g id="evaArrowCircleLeftOutline1"><g id="evaArrowCircleLeftOutline2" fill="currentColor"><path d="M16 11h-5.66l1.25-1.31a1 1 0 0 0-1.45-1.38l-2.86 3a1 1 0 0 0-.09.13a.72.72 0 0 0-.11.19a.88.88 0 0 0-.06.28S7 12 7 12a1 1 0 0 0 .08.38a1 1 0 0 0 .21.32l3 3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L10.41 13H16a1 1 0 0 0 0-2Z"/><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowCircleRightFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowCircleRightFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowCircleRightFill0"><g id="evaArrowCircleRightFill1"><path id="evaArrowCircleRightFill2" fill="currentColor" d="M2 12A10 10 0 1 0 12 2A10 10 0 0 0 2 12Zm11.86-3.69l2.86 3a.49.49 0 0 1 .1.15a.54.54 0 0 1 .1.16a.94.94 0 0 1 0 .76a1 1 0 0 1-.21.33l-3 3a1 1 0 0 1-1.42-1.42l1.3-1.29H8a1 1 0 0 1 0-2h5.66l-1.25-1.31a1 1 0 0 1 1.45-1.38Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowCircleRightOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowCircleRightOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowCircleRightOutline0"><g id="evaArrowCircleRightOutline1"><g id="evaArrowCircleRightOutline2" fill="currentColor"><path d="M17 12v-.09a.88.88 0 0 0-.06-.28a.72.72 0 0 0-.11-.19a1 1 0 0 0-.09-.13l-2.86-3a1 1 0 0 0-1.45 1.38L13.66 11H8a1 1 0 0 0 0 2h5.59l-1.3 1.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l3-3a1 1 0 0 0 .21-.32A1 1 0 0 0 17 12Z"/><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowCircleUpFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowCircleUpFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowCircleUpFill0"><g id="evaArrowCircleUpFill1"><path id="evaArrowCircleUpFill2" fill="currentColor" d="M12 22A10 10 0 1 0 2 12a10 10 0 0 0 10 10ZM8.31 10.14l3-2.86a.49.49 0 0 1 .15-.1a.54.54 0 0 1 .16-.1a.94.94 0 0 1 .76 0a1 1 0 0 1 .33.21l3 3a1 1 0 0 1-1.42 1.42L13 10.41V16a1 1 0 0 1-2 0v-5.66l-1.31 1.25a1 1 0 0 1-1.38-1.45Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowCircleUpOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowCircleUpOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowCircleUpOutline0"><g id="evaArrowCircleUpOutline1"><g id="evaArrowCircleUpOutline2" fill="currentColor"><path d="M12.71 7.29a1 1 0 0 0-.32-.21A1 1 0 0 0 12 7h-.1a.82.82 0 0 0-.27.06a.72.72 0 0 0-.19.11a1 1 0 0 0-.13.09l-3 2.86a1 1 0 0 0 1.38 1.45L11 10.34V16a1 1 0 0 0 2 0v-5.59l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowDownFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowDownFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowDownFill0"><g id="evaArrowDownFill1"><path id="evaArrowDownFill2" fill="currentColor" d="M12 17a1.72 1.72 0 0 1-1.33-.64l-4.21-5.1a2.1 2.1 0 0 1-.26-2.21A1.76 1.76 0 0 1 7.79 8h8.42a1.76 1.76 0 0 1 1.59 1.05a2.1 2.1 0 0 1-.26 2.21l-4.21 5.1A1.72 1.72 0 0 1 12 17Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowDownOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowDownOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowDownOutline0"><g id="evaArrowDownOutline1"><path id="evaArrowDownOutline2" fill="currentColor" d="M12 17a1.72 1.72 0 0 1-1.33-.64l-4.21-5.1a2.1 2.1 0 0 1-.26-2.21A1.76 1.76 0 0 1 7.79 8h8.42a1.76 1.76 0 0 1 1.59 1.05a2.1 2.1 0 0 1-.26 2.21l-4.21 5.1A1.72 1.72 0 0 1 12 17Zm-3.91-7L12 14.82L16 10Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowDownwardFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowDownwardFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowDownwardFill0"><g id="evaArrowDownwardFill1"><path id="evaArrowDownwardFill2" fill="currentColor" d="M18.77 13.36a1 1 0 0 0-1.41-.13L13 16.86V5a1 1 0 0 0-2 0v11.86l-4.36-3.63a1 1 0 1 0-1.28 1.54l6 5l.15.09l.13.07a1 1 0 0 0 .72 0l.13-.07l.15-.09l6-5a1 1 0 0 0 .13-1.41Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowDownwardOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowDownwardOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowDownwardOutline0"><g id="evaArrowDownwardOutline1"><path id="evaArrowDownwardOutline2" fill="currentColor" d="M18.77 13.36a1 1 0 0 0-1.41-.13L13 16.86V5a1 1 0 0 0-2 0v11.86l-4.36-3.63a1 1 0 1 0-1.28 1.54l6 5l.15.09l.13.07a1 1 0 0 0 .72 0l.13-.07l.15-.09l6-5a1 1 0 0 0 .13-1.41Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowForwardFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowForwardFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowForwardFill0"><g id="evaArrowForwardFill1"><path id="evaArrowForwardFill2" fill="currentColor" d="M5 13h11.86l-3.63 4.36a1 1 0 0 0 1.54 1.28l5-6a1.19 1.19 0 0 0 .09-.15c0-.05.05-.08.07-.13A1 1 0 0 0 20 12a1 1 0 0 0-.07-.36c0-.05-.05-.08-.07-.13a1.19 1.19 0 0 0-.09-.15l-5-6A1 1 0 0 0 14 5a1 1 0 0 0-.64.23a1 1 0 0 0-.13 1.41L16.86 11H5a1 1 0 0 0 0 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowForwardOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowForwardOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowForwardOutline0"><g id="evaArrowForwardOutline1"><path id="evaArrowForwardOutline2" fill="currentColor" d="M5 13h11.86l-3.63 4.36a1 1 0 0 0 1.54 1.28l5-6a1.19 1.19 0 0 0 .09-.15c0-.05.05-.08.07-.13A1 1 0 0 0 20 12a1 1 0 0 0-.07-.36c0-.05-.05-.08-.07-.13a1.19 1.19 0 0 0-.09-.15l-5-6A1 1 0 0 0 14 5a1 1 0 0 0-.64.23a1 1 0 0 0-.13 1.41L16.86 11H5a1 1 0 0 0 0 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowIosBackFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowIosBackFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowIosBackFill0"><g id="evaArrowIosBackFill1"><path id="evaArrowIosBackFill2" fill="currentColor" d="M13.83 19a1 1 0 0 1-.78-.37l-4.83-6a1 1 0 0 1 0-1.27l5-6a1 1 0 0 1 1.54 1.28L10.29 12l4.32 5.36a1 1 0 0 1-.78 1.64Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowIosBackOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowIosBackOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowIosBackOutline0"><g id="evaArrowIosBackOutline1"><path id="evaArrowIosBackOutline2" fill="currentColor" d="M13.83 19a1 1 0 0 1-.78-.37l-4.83-6a1 1 0 0 1 0-1.27l5-6a1 1 0 0 1 1.54 1.28L10.29 12l4.32 5.36a1 1 0 0 1-.78 1.64Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowIosDownwardFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowIosDownwardFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowIosDownwardFill0"><g id="evaArrowIosDownwardFill1"><path id="evaArrowIosDownwardFill2" fill="currentColor" d="M12 16a1 1 0 0 1-.64-.23l-6-5a1 1 0 1 1 1.28-1.54L12 13.71l5.36-4.32a1 1 0 0 1 1.41.15a1 1 0 0 1-.14 1.46l-6 4.83A1 1 0 0 1 12 16Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowIosDownwardOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowIosDownwardOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowIosDownwardOutline0"><g id="evaArrowIosDownwardOutline1"><path id="evaArrowIosDownwardOutline2" fill="currentColor" d="M12 16a1 1 0 0 1-.64-.23l-6-5a1 1 0 1 1 1.28-1.54L12 13.71l5.36-4.32a1 1 0 0 1 1.41.15a1 1 0 0 1-.14 1.46l-6 4.83A1 1 0 0 1 12 16Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowIosForwardFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowIosForwardFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowIosForwardFill0"><g id="evaArrowIosForwardFill1"><path id="evaArrowIosForwardFill2" fill="currentColor" d="M10 19a1 1 0 0 1-.64-.23a1 1 0 0 1-.13-1.41L13.71 12L9.39 6.63a1 1 0 0 1 .15-1.41a1 1 0 0 1 1.46.15l4.83 6a1 1 0 0 1 0 1.27l-5 6A1 1 0 0 1 10 19Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowIosForwardOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowIosForwardOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowIosForwardOutline0"><g id="evaArrowIosForwardOutline1"><path id="evaArrowIosForwardOutline2" fill="currentColor" d="M10 19a1 1 0 0 1-.64-.23a1 1 0 0 1-.13-1.41L13.71 12L9.39 6.63a1 1 0 0 1 .15-1.41a1 1 0 0 1 1.46.15l4.83 6a1 1 0 0 1 0 1.27l-5 6A1 1 0 0 1 10 19Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowIosUpwardFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowIosUpwardFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowIosUpwardFill0"><g id="evaArrowIosUpwardFill1"><path id="evaArrowIosUpwardFill2" fill="currentColor" d="M18 15a1 1 0 0 1-.64-.23L12 10.29l-5.37 4.32a1 1 0 0 1-1.41-.15a1 1 0 0 1 .15-1.41l6-4.83a1 1 0 0 1 1.27 0l6 5a1 1 0 0 1 .13 1.41A1 1 0 0 1 18 15Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowIosUpwardOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowIosUpwardOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowIosUpwardOutline0"><g id="evaArrowIosUpwardOutline1"><path id="evaArrowIosUpwardOutline2" fill="currentColor" d="M18 15a1 1 0 0 1-.64-.23L12 10.29l-5.37 4.32a1 1 0 0 1-1.41-.15a1 1 0 0 1 .15-1.41l6-4.83a1 1 0 0 1 1.27 0l6 5a1 1 0 0 1 .13 1.41A1 1 0 0 1 18 15Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowLeftFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowLeftFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowLeftFill0"><g id="evaArrowLeftFill1"><path id="evaArrowLeftFill2" fill="currentColor" d="M13.54 18a2.06 2.06 0 0 1-1.3-.46l-5.1-4.21a1.7 1.7 0 0 1 0-2.66l5.1-4.21a2.1 2.1 0 0 1 2.21-.26a1.76 1.76 0 0 1 1.05 1.59v8.42a1.76 1.76 0 0 1-1.05 1.59a2.23 2.23 0 0 1-.91.2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowLeftOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowLeftOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowLeftOutline0"><g id="evaArrowLeftOutline1"><path id="evaArrowLeftOutline2" fill="currentColor" d="M13.54 18a2.06 2.06 0 0 1-1.3-.46l-5.1-4.21a1.7 1.7 0 0 1 0-2.66l5.1-4.21a2.1 2.1 0 0 1 2.21-.26a1.76 1.76 0 0 1 1.05 1.59v8.42a1.76 1.76 0 0 1-1.05 1.59a2.23 2.23 0 0 1-.91.2Zm-4.86-6l4.82 4V8.09Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowRightFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowRightFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowRightFill0"><g id="evaArrowRightFill1"><path id="evaArrowRightFill2" fill="currentColor" d="M10.46 18a2.23 2.23 0 0 1-.91-.2a1.76 1.76 0 0 1-1.05-1.59V7.79A1.76 1.76 0 0 1 9.55 6.2a2.1 2.1 0 0 1 2.21.26l5.1 4.21a1.7 1.7 0 0 1 0 2.66l-5.1 4.21a2.06 2.06 0 0 1-1.3.46Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowRightOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowRightOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowRightOutline0"><g id="evaArrowRightOutline1"><path id="evaArrowRightOutline2" fill="currentColor" d="M10.46 18a2.23 2.23 0 0 1-.91-.2a1.76 1.76 0 0 1-1.05-1.59V7.79A1.76 1.76 0 0 1 9.55 6.2a2.1 2.1 0 0 1 2.21.26l5.1 4.21a1.7 1.7 0 0 1 0 2.66l-5.1 4.21a2.06 2.06 0 0 1-1.3.46Zm0-10v7.9l4.86-3.9Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowUpFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowUpFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowUpFill0"><g id="evaArrowUpFill1"><path id="evaArrowUpFill2" fill="currentColor" d="M16.21 16H7.79a1.76 1.76 0 0 1-1.59-1a2.1 2.1 0 0 1 .26-2.21l4.21-5.1a1.76 1.76 0 0 1 2.66 0l4.21 5.1A2.1 2.1 0 0 1 17.8 15a1.76 1.76 0 0 1-1.59 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowUpOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowUpOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowUpOutline0"><g id="evaArrowUpOutline1"><path id="evaArrowUpOutline2" fill="currentColor" d="M16.21 16H7.79a1.76 1.76 0 0 1-1.59-1a2.1 2.1 0 0 1 .26-2.21l4.21-5.1a1.76 1.76 0 0 1 2.66 0l4.21 5.1A2.1 2.1 0 0 1 17.8 15a1.76 1.76 0 0 1-1.59 1ZM8 14h7.9L12 9.18Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowUpwardFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowUpwardFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowUpwardFill0"><g id="evaArrowUpwardFill1"><path id="evaArrowUpwardFill2" fill="currentColor" d="M5.23 10.64a1 1 0 0 0 1.41.13L11 7.14V19a1 1 0 0 0 2 0V7.14l4.36 3.63a1 1 0 1 0 1.28-1.54l-6-5l-.15-.09l-.13-.07a1 1 0 0 0-.72 0l-.13.07l-.15.09l-6 5a1 1 0 0 0-.13 1.41Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowUpwardOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowUpwardOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowUpwardOutline0"><g id="evaArrowUpwardOutline1"><path id="evaArrowUpwardOutline2" fill="currentColor" d="M5.23 10.64a1 1 0 0 0 1.41.13L11 7.14V19a1 1 0 0 0 2 0V7.14l4.36 3.63a1 1 0 1 0 1.28-1.54l-6-5l-.15-.09l-.13-.07a1 1 0 0 0-.72 0l-.13.07l-.15.09l-6 5a1 1 0 0 0-.13 1.41Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowheadDownFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowheadDownFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowheadDownFill0"><g id="evaArrowheadDownFill1"><g id="evaArrowheadDownFill2" fill="currentColor"><path d="M17.37 12.39L12 16.71l-5.36-4.48a1 1 0 1 0-1.28 1.54l6 5a1 1 0 0 0 1.27 0l6-4.83a1 1 0 0 0 .15-1.41a1 1 0 0 0-1.41-.14Z"/><path d="M11.36 11.77a1 1 0 0 0 1.27 0l6-4.83a1 1 0 0 0 .15-1.41a1 1 0 0 0-1.41-.15L12 9.71L6.64 5.23a1 1 0 0 0-1.28 1.54Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowheadDownOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowheadDownOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowheadDownOutline0"><g id="evaArrowheadDownOutline1"><g id="evaArrowheadDownOutline2" fill="currentColor"><path d="M17.37 12.39L12 16.71l-5.36-4.48a1 1 0 1 0-1.28 1.54l6 5a1 1 0 0 0 1.27 0l6-4.83a1 1 0 0 0 .15-1.41a1 1 0 0 0-1.41-.14Z"/><path d="M11.36 11.77a1 1 0 0 0 1.27 0l6-4.83a1 1 0 0 0 .15-1.41a1 1 0 0 0-1.41-.15L12 9.71L6.64 5.23a1 1 0 0 0-1.28 1.54Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowheadLeftFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowheadLeftFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowheadLeftFill0"><g id="evaArrowheadLeftFill1"><g id="evaArrowheadLeftFill2" fill="currentColor"><path d="M11.64 5.23a1 1 0 0 0-1.41.13l-5 6a1 1 0 0 0 0 1.27l4.83 6a1 1 0 0 0 .78.37a1 1 0 0 0 .78-1.63L7.29 12l4.48-5.37a1 1 0 0 0-.13-1.4Z"/><path d="m14.29 12l4.48-5.37a1 1 0 0 0-1.54-1.28l-5 6a1 1 0 0 0 0 1.27l4.83 6a1 1 0 0 0 .78.37a1 1 0 0 0 .78-1.63Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowheadLeftOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowheadLeftOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowheadLeftOutline0"><g id="evaArrowheadLeftOutline1"><g id="evaArrowheadLeftOutline2" fill="currentColor"><path d="M11.64 5.23a1 1 0 0 0-1.41.13l-5 6a1 1 0 0 0 0 1.27l4.83 6a1 1 0 0 0 .78.37a1 1 0 0 0 .78-1.63L7.29 12l4.48-5.37a1 1 0 0 0-.13-1.4Z"/><path d="m14.29 12l4.48-5.37a1 1 0 0 0-1.54-1.28l-5 6a1 1 0 0 0 0 1.27l4.83 6a1 1 0 0 0 .78.37a1 1 0 0 0 .78-1.63Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowheadRightFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowheadRightFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowheadRightFill0"><g id="evaArrowheadRightFill1"><g id="evaArrowheadRightFill2" fill="currentColor"><path d="m18.78 11.37l-4.78-6a1 1 0 0 0-1.41-.15a1 1 0 0 0-.15 1.41L16.71 12l-4.48 5.37a1 1 0 0 0 .13 1.41A1 1 0 0 0 13 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 .01-1.27Z"/><path d="M7 5.37a1 1 0 0 0-1.61 1.26L9.71 12l-4.48 5.36a1 1 0 0 0 .13 1.41A1 1 0 0 0 6 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 0-1.27Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowheadRightOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowheadRightOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowheadRightOutline0"><g id="evaArrowheadRightOutline1"><g id="evaArrowheadRightOutline2" fill="currentColor"><path d="m18.78 11.37l-4.78-6a1 1 0 0 0-1.41-.15a1 1 0 0 0-.15 1.41L16.71 12l-4.48 5.37a1 1 0 0 0 .13 1.41A1 1 0 0 0 13 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 .01-1.27Z"/><path d="M7 5.37a1 1 0 0 0-1.61 1.26L9.71 12l-4.48 5.36a1 1 0 0 0 .13 1.41A1 1 0 0 0 6 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 0-1.27Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowheadUpFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowheadUpFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowheadUpFill0"><g id="evaArrowheadUpFill1"><g id="evaArrowheadUpFill2" fill="currentColor"><path d="M6.63 11.61L12 7.29l5.37 4.48A1 1 0 0 0 18 12a1 1 0 0 0 .77-.36a1 1 0 0 0-.13-1.41l-6-5a1 1 0 0 0-1.27 0l-6 4.83a1 1 0 0 0-.15 1.41a1 1 0 0 0 1.41.14Z"/><path d="M12.64 12.23a1 1 0 0 0-1.27 0l-6 4.83a1 1 0 0 0-.15 1.41a1 1 0 0 0 1.41.15L12 14.29l5.37 4.48A1 1 0 0 0 18 19a1 1 0 0 0 .77-.36a1 1 0 0 0-.13-1.41Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ArrowheadUpOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(arrowheadUpOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaArrowheadUpOutline0"><g id="evaArrowheadUpOutline1"><g id="evaArrowheadUpOutline2" fill="currentColor"><path d="M6.63 11.61L12 7.29l5.37 4.48A1 1 0 0 0 18 12a1 1 0 0 0 .77-.36a1 1 0 0 0-.13-1.41l-6-5a1 1 0 0 0-1.27 0l-6 4.83a1 1 0 0 0-.15 1.41a1 1 0 0 0 1.41.14Z"/><path d="M12.64 12.23a1 1 0 0 0-1.27 0l-6 4.83a1 1 0 0 0-.15 1.41a1 1 0 0 0 1.41.15L12 14.29l5.37 4.48A1 1 0 0 0 18 19a1 1 0 0 0 .77-.36a1 1 0 0 0-.13-1.41Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func AtFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(atFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaAtFill0"><g id="evaAtFill1"><path id="evaAtFill2" fill="currentColor" d="M13 2a10 10 0 0 0-5 19.1a10.15 10.15 0 0 0 4 .9a10 10 0 0 0 6.08-2.06a1 1 0 0 0 .19-1.4a1 1 0 0 0-1.41-.19A8 8 0 1 1 12.77 4A8.17 8.17 0 0 1 20 12.22v.68a1.71 1.71 0 0 1-1.78 1.7a1.82 1.82 0 0 1-1.62-1.88V8.4a1 1 0 0 0-1-1a1 1 0 0 0-1 .87a5 5 0 0 0-3.44-1.36A5.09 5.09 0 1 0 15.31 15a3.6 3.6 0 0 0 5.55.61A3.67 3.67 0 0 0 22 12.9v-.68A10.2 10.2 0 0 0 13 2Zm-1.82 13.09A3.09 3.09 0 1 1 14.27 12a3.1 3.1 0 0 1-3.09 3.09Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func AtOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(atOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaAtOutline0"><g id="evaAtOutline1"><path id="evaAtOutline2" fill="currentColor" d="M13 2a10 10 0 0 0-5 19.1a10.15 10.15 0 0 0 4 .9a10 10 0 0 0 6.08-2.06a1 1 0 0 0 .19-1.4a1 1 0 0 0-1.41-.19A8 8 0 1 1 12.77 4A8.17 8.17 0 0 1 20 12.22v.68a1.71 1.71 0 0 1-1.78 1.7a1.82 1.82 0 0 1-1.62-1.88V8.4a1 1 0 0 0-1-1a1 1 0 0 0-1 .87a5 5 0 0 0-3.44-1.36A5.09 5.09 0 1 0 15.31 15a3.6 3.6 0 0 0 5.55.61A3.67 3.67 0 0 0 22 12.9v-.68A10.2 10.2 0 0 0 13 2Zm-1.82 13.09A3.09 3.09 0 1 1 14.27 12a3.1 3.1 0 0 1-3.09 3.09Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func AttachFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(attachFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaAttachFill0"><g id="evaAttachFill1"><path id="evaAttachFill2" fill="currentColor" d="M9.29 21a6.23 6.23 0 0 1-4.43-1.88a6 6 0 0 1-.22-8.49L12 3.2A4.11 4.11 0 0 1 15 2a4.48 4.48 0 0 1 3.19 1.35a4.36 4.36 0 0 1 .15 6.13l-7.4 7.43a2.54 2.54 0 0 1-1.81.75a2.72 2.72 0 0 1-1.95-.82a2.68 2.68 0 0 1-.08-3.77l6.83-6.86a1 1 0 0 1 1.37 1.41l-6.83 6.86a.68.68 0 0 0 .08.95a.78.78 0 0 0 .53.23a.56.56 0 0 0 .4-.16l7.39-7.43a2.36 2.36 0 0 0-.15-3.31a2.38 2.38 0 0 0-3.27-.15L6.06 12a4 4 0 0 0 .22 5.67a4.22 4.22 0 0 0 3 1.29a3.67 3.67 0 0 0 2.61-1.06l7.39-7.43a1 1 0 1 1 1.42 1.41l-7.39 7.43A5.65 5.65 0 0 1 9.29 21Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func AttachOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(attachOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaAttachOutline0"><g id="evaAttachOutline1"><path id="evaAttachOutline2" fill="currentColor" d="M9.29 21a6.23 6.23 0 0 1-4.43-1.88a6 6 0 0 1-.22-8.49L12 3.2A4.11 4.11 0 0 1 15 2a4.48 4.48 0 0 1 3.19 1.35a4.36 4.36 0 0 1 .15 6.13l-7.4 7.43a2.54 2.54 0 0 1-1.81.75a2.72 2.72 0 0 1-1.95-.82a2.68 2.68 0 0 1-.08-3.77l6.83-6.86a1 1 0 0 1 1.37 1.41l-6.83 6.86a.68.68 0 0 0 .08.95a.78.78 0 0 0 .53.23a.56.56 0 0 0 .4-.16l7.39-7.43a2.36 2.36 0 0 0-.15-3.31a2.38 2.38 0 0 0-3.27-.15L6.06 12a4 4 0 0 0 .22 5.67a4.22 4.22 0 0 0 3 1.29a3.67 3.67 0 0 0 2.61-1.06l7.39-7.43a1 1 0 1 1 1.42 1.41l-7.39 7.43A5.65 5.65 0 0 1 9.29 21Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func AttachTwoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(attachTwoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaAttach2Fill0"><g id="evaAttach2Fill1"><path id="evaAttach2Fill2" fill="currentColor" d="M12 22a5.86 5.86 0 0 1-6-5.7V6.13A4.24 4.24 0 0 1 10.33 2a4.24 4.24 0 0 1 4.34 4.13v10.18a2.67 2.67 0 0 1-5.33 0V6.92a1 1 0 0 1 1-1a1 1 0 0 1 1 1v9.39a.67.67 0 0 0 1.33 0V6.13A2.25 2.25 0 0 0 10.33 4A2.25 2.25 0 0 0 8 6.13V16.3a3.86 3.86 0 0 0 4 3.7a3.86 3.86 0 0 0 4-3.7V6.13a1 1 0 1 1 2 0V16.3a5.86 5.86 0 0 1-6 5.7Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func AttachTwoOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(attachTwoOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaAttach2Outline0"><g id="evaAttach2Outline1"><path id="evaAttach2Outline2" fill="currentColor" d="M12 22a5.86 5.86 0 0 1-6-5.7V6.13A4.24 4.24 0 0 1 10.33 2a4.24 4.24 0 0 1 4.34 4.13v10.18a2.67 2.67 0 0 1-5.33 0V6.92a1 1 0 0 1 1-1a1 1 0 0 1 1 1v9.39a.67.67 0 0 0 1.33 0V6.13A2.25 2.25 0 0 0 10.33 4A2.25 2.25 0 0 0 8 6.13V16.3a3.86 3.86 0 0 0 4 3.7a3.86 3.86 0 0 0 4-3.7V6.13a1 1 0 1 1 2 0V16.3a5.86 5.86 0 0 1-6 5.7Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func AwardFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(awardFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaAwardFill0"><g id="evaAwardFill1"><path id="evaAwardFill2" fill="currentColor" d="m19 20.75l-2.31-9A5.94 5.94 0 0 0 18 8A6 6 0 0 0 6 8a5.94 5.94 0 0 0 1.34 3.77L5 20.75a1 1 0 0 0 1.48 1.11l5.33-3.13l5.68 3.14A.91.91 0 0 0 18 22a1 1 0 0 0 1-1.25ZM12 4a4 4 0 1 1-4 4a4 4 0 0 1 4-4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func AwardOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(awardOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaAwardOutline0"><g id="evaAwardOutline1"><path id="evaAwardOutline2" fill="currentColor" d="m19 20.75l-2.31-9A5.94 5.94 0 0 0 18 8A6 6 0 0 0 6 8a5.94 5.94 0 0 0 1.34 3.77L5 20.75a1 1 0 0 0 1.48 1.11l5.33-3.13l5.68 3.14A.91.91 0 0 0 18 22a1 1 0 0 0 1-1.25ZM12 4a4 4 0 1 1-4 4a4 4 0 0 1 4-4Zm.31 12.71a1 1 0 0 0-1 0l-3.75 2.2L9 13.21a5.94 5.94 0 0 0 5.92 0L16.45 19Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BackspaceFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(backspaceFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBackspaceFill0"><g id="evaBackspaceFill1"><path id="evaBackspaceFill2" fill="currentColor" d="M20.14 4h-9.77a3 3 0 0 0-2 .78l-.1.11l-6 7.48a1 1 0 0 0 .11 1.37l6 5.48a3 3 0 0 0 2 .78h9.77A1.84 1.84 0 0 0 22 18.18V5.82A1.84 1.84 0 0 0 20.14 4Zm-3.43 9.29a1 1 0 0 1 0 1.42a1 1 0 0 1-1.42 0L14 13.41l-1.29 1.3a1 1 0 0 1-1.42 0a1 1 0 0 1 0-1.42l1.3-1.29l-1.3-1.29a1 1 0 0 1 1.42-1.42l1.29 1.3l1.29-1.3a1 1 0 0 1 1.42 1.42L15.41 12Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BackspaceOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(backspaceOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBackspaceOutline0"><g id="evaBackspaceOutline1"><g id="evaBackspaceOutline2" fill="currentColor"><path d="M20.14 4h-9.77a3 3 0 0 0-2 .78l-.1.11l-6 7.48a1 1 0 0 0 .11 1.37l6 5.48a3 3 0 0 0 2 .78h9.77A1.84 1.84 0 0 0 22 18.18V5.82A1.84 1.84 0 0 0 20.14 4ZM20 18h-9.63a1 1 0 0 1-.67-.26l-5.33-4.85l5.38-6.67a1 1 0 0 1 .62-.22H20Z"/><path d="M11.29 14.71a1 1 0 0 0 1.42 0l1.29-1.3l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L15.41 12l1.3-1.29a1 1 0 0 0-1.42-1.42L14 10.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l1.3 1.29l-1.3 1.29a1 1 0 0 0 0 1.42Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func BarChartFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(barChartFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBarChartFill0"><g id="evaBarChartFill1"><path id="evaBarChartFill2" fill="currentColor" d="M12 4a1 1 0 0 0-1 1v15a1 1 0 0 0 2 0V5a1 1 0 0 0-1-1Zm7 8a1 1 0 0 0-1 1v7a1 1 0 0 0 2 0v-7a1 1 0 0 0-1-1ZM5 8a1 1 0 0 0-1 1v11a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BarChartOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(barChartOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBarChartOutline0"><g id="evaBarChartOutline1"><path id="evaBarChartOutline2" fill="currentColor" d="M12 4a1 1 0 0 0-1 1v15a1 1 0 0 0 2 0V5a1 1 0 0 0-1-1Zm7 8a1 1 0 0 0-1 1v7a1 1 0 0 0 2 0v-7a1 1 0 0 0-1-1ZM5 8a1 1 0 0 0-1 1v11a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BarChartTwoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(barChartTwoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBarChart2Fill0"><g id="evaBarChart2Fill1"><path id="evaBarChart2Fill2" fill="currentColor" d="M12 8a1 1 0 0 0-1 1v11a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1Zm7-4a1 1 0 0 0-1 1v15a1 1 0 0 0 2 0V5a1 1 0 0 0-1-1ZM5 12a1 1 0 0 0-1 1v7a1 1 0 0 0 2 0v-7a1 1 0 0 0-1-1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BarChartTwoOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(barChartTwoOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBarChart2Outline0"><g id="evaBarChart2Outline1"><path id="evaBarChart2Outline2" fill="currentColor" d="M12 8a1 1 0 0 0-1 1v11a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1Zm7-4a1 1 0 0 0-1 1v15a1 1 0 0 0 2 0V5a1 1 0 0 0-1-1ZM5 12a1 1 0 0 0-1 1v7a1 1 0 0 0 2 0v-7a1 1 0 0 0-1-1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BatteryFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(batteryFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBatteryFill0"><g id="evaBatteryFill1"><path id="evaBatteryFill2" fill="currentColor" d="M15.83 6H4.17A2.31 2.31 0 0 0 2 8.43v7.14A2.31 2.31 0 0 0 4.17 18h11.66A2.31 2.31 0 0 0 18 15.57V8.43A2.31 2.31 0 0 0 15.83 6ZM21 9a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-1-1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BatteryOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(batteryOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBatteryOutline0"><g id="evaBatteryOutline1"><path id="evaBatteryOutline2" fill="currentColor" d="M15.83 6H4.17A2.31 2.31 0 0 0 2 8.43v7.14A2.31 2.31 0 0 0 4.17 18h11.66A2.31 2.31 0 0 0 18 15.57V8.43A2.31 2.31 0 0 0 15.83 6Zm.17 9.57a.52.52 0 0 1-.17.43H4.18a.5.5 0 0 1-.18-.43V8.43A.53.53 0 0 1 4.17 8h11.65a.5.5 0 0 1 .18.43ZM21 9a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-1-1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BehanceFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(behanceFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBehanceFill0"><g id="evaBehanceFill1"><g id="evaBehanceFill2" fill="currentColor"><path d="M14.76 11.19a1 1 0 0 0-1 1.09h2.06a1 1 0 0 0-1.06-1.09ZM9.49 12.3H8.26v1.94h1c1 0 1.44-.33 1.44-1s-.46-.94-1.21-.94Zm.87-1.78c0-.53-.35-.85-.95-.85H8.26v1.74h.85c.89 0 1.25-.32 1.25-.89Z"/><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2ZM9.7 15.2H7V8.7h2.7c1.17 0 1.94.61 1.94 1.6a1.4 1.4 0 0 1-1.12 1.43A1.52 1.52 0 0 1 12 13.37c0 1.16-1 1.83-2.3 1.83Zm3.55-6h3v.5h-3ZM17 13.05h-3.3v.14a1.07 1.07 0 0 0 1.09 1.19a.9.9 0 0 0 1-.63H17a2 2 0 0 1-2.17 1.55a2.15 2.15 0 0 1-2.36-2.3v-.44a2.11 2.11 0 0 1 2.28-2.25A2.12 2.12 0 0 1 17 12.58Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func BehanceOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(behanceOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBehanceOutline0"><g id="evaBehanceOutline1"><g id="evaBehanceOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M10.52 11.78a1.4 1.4 0 0 0 1.12-1.43c0-1-.77-1.6-1.94-1.6H7v6.5h2.7c1.3-.05 2.3-.72 2.3-1.88a1.52 1.52 0 0 0-1.48-1.59ZM8.26 9.67h1.15c.6 0 .95.32.95.85s-.38.89-1.25.89h-.85Zm1 4.57h-1V12.3h1.23c.75 0 1.17.38 1.17 1s-.42.94-1.44.94Zm5.49-3.94a2.11 2.11 0 0 0-2.28 2.25V13a2.15 2.15 0 0 0 2.34 2.31A2 2 0 0 0 17 13.75h-1.21a.9.9 0 0 1-1 .63a1.07 1.07 0 0 1-1.09-1.19v-.14H17v-.47a2.12 2.12 0 0 0-2.25-2.28Zm1 2h-2.02a1 1 0 0 1 1-1.09a1 1 0 0 1 1 1.09Zm-2.5-3.1h3v.5h-3z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func BellFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(bellFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBellFill0"><g id="evaBellFill1"><path id="evaBellFill2" fill="currentColor" d="m20.52 15.21l-1.8-1.81V8.94a6.86 6.86 0 0 0-5.82-6.88a6.74 6.74 0 0 0-7.62 6.67v4.67l-1.8 1.81A1.64 1.64 0 0 0 4.64 18H8v.34A3.84 3.84 0 0 0 12 22a3.84 3.84 0 0 0 4-3.66V18h3.36a1.64 1.64 0 0 0 1.16-2.79ZM14 18.34A1.88 1.88 0 0 1 12 20a1.88 1.88 0 0 1-2-1.66V18h4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BellOffFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(bellOffFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBellOffFill0"><g id="evaBellOffFill1"><path id="evaBellOffFill2" fill="currentColor" d="m15.88 18.71l-.59-.59L14 16.78l-.07-.07L6.58 9.4L5.31 8.14a5.68 5.68 0 0 0 0 .59v4.67l-1.8 1.81A1.64 1.64 0 0 0 4.64 18H8v.34A3.84 3.84 0 0 0 12 22a3.88 3.88 0 0 0 4-3.22ZM14 18.34A1.88 1.88 0 0 1 12 20a1.88 1.88 0 0 1-2-1.66V18h4ZM7.13 4.3l1.46 1.46l9.53 9.53l2 2l.31.3a1.58 1.58 0 0 0 .45-.6a1.62 1.62 0 0 0-.35-1.78l-1.8-1.81V8.94a6.86 6.86 0 0 0-5.83-6.88a6.71 6.71 0 0 0-5.32 1.61a6.88 6.88 0 0 0-.58.54Zm13.58 14.99L19.41 18l-2-2l-9.52-9.53L6.42 5L4.71 3.29a1 1 0 0 0-1.42 1.42L5.53 7l1.75 1.7l7.31 7.3l.07.07L16 17.41l.59.59l2.7 2.71a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BellOffOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(bellOffOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBellOffOutline0"><g id="evaBellOffOutline1"><path id="evaBellOffOutline2" fill="currentColor" d="M8.9 5.17A4.67 4.67 0 0 1 12.64 4a4.86 4.86 0 0 1 4.08 4.9v4.5a1.92 1.92 0 0 0 .1.59l3.6 3.6a1.58 1.58 0 0 0 .45-.6a1.62 1.62 0 0 0-.35-1.78l-1.8-1.81V8.94a6.86 6.86 0 0 0-5.82-6.88a6.71 6.71 0 0 0-5.32 1.61a6.88 6.88 0 0 0-.58.54l1.47 1.43a4.79 4.79 0 0 1 .43-.47ZM14 16.86l-.83-.86H5.51l1.18-1.18a2 2 0 0 0 .59-1.42v-3.29l-2-2a5.68 5.68 0 0 0 0 .59v4.7l-1.8 1.81A1.63 1.63 0 0 0 4.64 18H8v.34A3.84 3.84 0 0 0 12 22a3.88 3.88 0 0 0 4-3.22l-.83-.78ZM12 20a1.88 1.88 0 0 1-2-1.66V18h4v.34A1.88 1.88 0 0 1 12 20Zm8.71-.71L19.41 18l-2-2l-9.52-9.53L6.42 5L4.71 3.29a1 1 0 0 0-1.42 1.42L5.53 7l1.75 1.7l7.31 7.3l.07.07L16 17.41l.59.59l2.7 2.71a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BellOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(bellOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBellOutline0"><g id="evaBellOutline1"><path id="evaBellOutline2" fill="currentColor" d="m20.52 15.21l-1.8-1.81V8.94a6.86 6.86 0 0 0-5.82-6.88a6.74 6.74 0 0 0-7.62 6.67v4.67l-1.8 1.81A1.64 1.64 0 0 0 4.64 18H8v.34A3.84 3.84 0 0 0 12 22a3.84 3.84 0 0 0 4-3.66V18h3.36a1.64 1.64 0 0 0 1.16-2.79ZM14 18.34A1.88 1.88 0 0 1 12 20a1.88 1.88 0 0 1-2-1.66V18h4ZM5.51 16l1.18-1.18a2 2 0 0 0 .59-1.42V8.73A4.73 4.73 0 0 1 8.9 5.17A4.67 4.67 0 0 1 12.64 4a4.86 4.86 0 0 1 4.08 4.9v4.5a2 2 0 0 0 .58 1.42L18.49 16Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BluetoothFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(bluetoothFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBluetoothFill0"><g id="evaBluetoothFill1"><path id="evaBluetoothFill2" fill="currentColor" d="m13.63 12l4-3.79a1.14 1.14 0 0 0-.13-1.77l-4.67-3.23a1.17 1.17 0 0 0-1.21-.08a1.15 1.15 0 0 0-.62 1v6.2l-3.19-4a1 1 0 0 0-1.56 1.3L9.72 12l-3.5 4.43a1 1 0 0 0 .16 1.4A1 1 0 0 0 7 18a1 1 0 0 0 .78-.38L11 13.56v6.29A1.16 1.16 0 0 0 12.16 21a1.16 1.16 0 0 0 .67-.21l4.64-3.18a1.17 1.17 0 0 0 .49-.85a1.15 1.15 0 0 0-.34-.91ZM13 5.76l2.5 1.73L13 9.85Zm0 12.49v-4.07l2.47 2.38Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BluetoothOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(bluetoothOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBluetoothOutline0"><g id="evaBluetoothOutline1"><path id="evaBluetoothOutline2" fill="currentColor" d="m13.63 12l4-3.79a1.14 1.14 0 0 0-.13-1.77l-4.67-3.23a1.17 1.17 0 0 0-1.21-.08a1.15 1.15 0 0 0-.62 1v6.2l-3.19-4a1 1 0 0 0-1.56 1.3L9.72 12l-3.5 4.43a1 1 0 0 0 .16 1.4A1 1 0 0 0 7 18a1 1 0 0 0 .78-.38L11 13.56v6.29A1.16 1.16 0 0 0 12.16 21a1.16 1.16 0 0 0 .67-.21l4.64-3.18a1.17 1.17 0 0 0 .49-.85a1.15 1.15 0 0 0-.34-.91ZM13 5.76l2.5 1.73L13 9.85Zm0 12.49v-4.07l2.47 2.38Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BookFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(bookFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBookFill0"><g id="evaBookFill1"><path id="evaBookFill2" fill="currentColor" d="M19 3H7a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1ZM7 19a1 1 0 0 1 0-2h11v2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BookOpenFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(bookOpenFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBookOpenFill0"><g id="evaBookOpenFill1"><path id="evaBookOpenFill2" fill="currentColor" d="M21 4.34a1.24 1.24 0 0 0-1.08-.23L13 5.89v14.27l7.56-1.94A1.25 1.25 0 0 0 21.5 17V5.32a1.25 1.25 0 0 0-.5-.98ZM11 5.89L4.06 4.11A1.27 1.27 0 0 0 3 4.34a1.25 1.25 0 0 0-.48 1V17a1.25 1.25 0 0 0 .94 1.21L11 20.16Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BookOpenOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(bookOpenOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBookOpenOutline0"><g id="evaBookOpenOutline1"><path id="evaBookOpenOutline2" fill="currentColor" d="M20.62 4.22a1 1 0 0 0-.84-.2L12 5.77L4.22 4A1 1 0 0 0 3 5v12.2a1 1 0 0 0 .78 1l8 1.8h.44l8-1.8a1 1 0 0 0 .78-1V5a1 1 0 0 0-.38-.78ZM5 6.25l6 1.35v10.15L5 16.4ZM19 16.4l-6 1.35V7.6l6-1.35Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BookOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(bookOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBookOutline0"><g id="evaBookOutline1"><path id="evaBookOutline2" fill="currentColor" d="M19 3H7a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1ZM7 5h11v10H7a3 3 0 0 0-1 .18V6a1 1 0 0 1 1-1Zm0 14a1 1 0 0 1 0-2h11v2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BookmarkFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(bookmarkFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBookmarkFill0"><g id="evaBookmarkFill1"><path id="evaBookmarkFill2" fill="currentColor" d="M6 21a1 1 0 0 1-.49-.13A1 1 0 0 1 5 20V5.33A2.28 2.28 0 0 1 7.2 3h9.6A2.28 2.28 0 0 1 19 5.33V20a1 1 0 0 1-.5.86a1 1 0 0 1-1 0l-5.67-3.21l-5.33 3.2A1 1 0 0 1 6 21Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BookmarkOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(bookmarkOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBookmarkOutline0"><g id="evaBookmarkOutline1"><path id="evaBookmarkOutline2" fill="currentColor" d="M6.09 21.06a1 1 0 0 1-1-1L4.94 5.4a2.26 2.26 0 0 1 2.18-2.35L16.71 3a2.27 2.27 0 0 1 2.23 2.31l.14 14.66a1 1 0 0 1-.49.87a1 1 0 0 1-1 0l-5.7-3.16l-5.29 3.23a1.2 1.2 0 0 1-.51.15Zm5.76-5.55a1.11 1.11 0 0 1 .5.12l4.71 2.61l-.12-12.95c0-.2-.13-.34-.21-.33l-9.6.09c-.08 0-.19.13-.19.33l.12 12.9l4.28-2.63a1.06 1.06 0 0 1 .51-.14Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BriefcaseFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(briefcaseFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBriefcaseFill0"><g id="evaBriefcaseFill1"><path id="evaBriefcaseFill2" fill="currentColor" d="M7 21h10V7h-1V5.5A2.5 2.5 0 0 0 13.5 3h-3A2.5 2.5 0 0 0 8 5.5V7H7Zm3-15.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V7h-4ZM19 7v14a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3ZM5 7a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BriefcaseOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(briefcaseOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBriefcaseOutline0"><g id="evaBriefcaseOutline1"><path id="evaBriefcaseOutline2" fill="currentColor" d="M19 7h-3V5.5A2.5 2.5 0 0 0 13.5 3h-3A2.5 2.5 0 0 0 8 5.5V7H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3Zm-4 2v10H9V9Zm-5-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V7h-4ZM4 18v-8a1 1 0 0 1 1-1h2v10H5a1 1 0 0 1-1-1Zm16 0a1 1 0 0 1-1 1h-2V9h2a1 1 0 0 1 1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BrowserFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(browserFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBrowserFill0"><g id="evaBrowserFill1"><path id="evaBrowserFill2" fill="currentColor" d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm-6 3a1 1 0 1 1-1 1a1 1 0 0 1 1-1ZM8 6a1 1 0 1 1-1 1a1 1 0 0 1 1-1Zm11 12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-7h14Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BrowserOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(browserOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBrowserOutline0"><g id="evaBrowserOutline1"><g id="evaBrowserOutline2" fill="currentColor"><path d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-7h14ZM5 9V6a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3Z"/><circle cx="8" cy="7.03" r="1"/><circle cx="12" cy="7.03" r="1"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func BrushFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(brushFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBrushFill0"><g id="evaBrushFill1"><path id="evaBrushFill2" fill="currentColor" d="M7.12 12.55a4 4 0 0 0-3.07 3.86v3.11a.47.47 0 0 0 .48.48l3.24-.06a3.78 3.78 0 0 0 3.44-2.2a3.65 3.65 0 0 0-4.09-5.19Zm12.14-8.09a2.14 2.14 0 0 0-2.88.21L10 11.08a.47.47 0 0 0 0 .66L12.25 14a.47.47 0 0 0 .66 0l6.49-6.47a2.06 2.06 0 0 0 .6-1.47a2 2 0 0 0-.74-1.6Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BrushOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(brushOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBrushOutline0"><g id="evaBrushOutline1"><path id="evaBrushOutline2" fill="currentColor" d="M20 6.83a2.76 2.76 0 0 0-.82-2a2.89 2.89 0 0 0-4 0l-6.6 6.6h-.22a4.42 4.42 0 0 0-4.3 4.31L4 19a1 1 0 0 0 .29.73A1.05 1.05 0 0 0 5 20l3.26-.06a4.42 4.42 0 0 0 4.31-4.3v-.23l6.61-6.6A2.74 2.74 0 0 0 20 6.83ZM8.25 17.94L6 18v-2.23a2.4 2.4 0 0 1 2.4-2.36a2.15 2.15 0 0 1 2.15 2.19a2.4 2.4 0 0 1-2.3 2.34Zm9.52-10.55l-5.87 5.87a4.55 4.55 0 0 0-.52-.64a3.94 3.94 0 0 0-.64-.52l5.87-5.86a.84.84 0 0 1 1.16 0a.81.81 0 0 1 .23.59a.79.79 0 0 1-.23.56Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BulbFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(bulbFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBulbFill0"><g id="evaBulbFill1"><path id="evaBulbFill2" fill="currentColor" d="M12 7a5 5 0 0 0-3 9v4a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-4a5 5 0 0 0-3-9Zm0-1a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1Zm9 5h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2ZM5 11H3a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2Zm2.66-4.58L6.22 5a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28a1 1 0 0 0 .72-.31a1 1 0 0 0-.06-1.41Zm11.53-1.37a1 1 0 0 0-1.41 0l-1.44 1.37a1 1 0 0 0 0 1.41a1 1 0 0 0 .72.31a1 1 0 0 0 .69-.28l1.44-1.39a1 1 0 0 0 0-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func BulbOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(bulbOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaBulbOutline0"><g id="evaBulbOutline1"><path id="evaBulbOutline2" fill="currentColor" d="M12 7a5 5 0 0 0-3 9v4a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-4a5 5 0 0 0-3-9Zm1.5 7.59a1 1 0 0 0-.5.87V20h-2v-4.54a1 1 0 0 0-.5-.87A3 3 0 0 1 9 12a3 3 0 0 1 6 0a3 3 0 0 1-1.5 2.59ZM12 6a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1Zm9 5h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2ZM5 11H3a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2Zm2.66-4.58L6.22 5a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28a1 1 0 0 0 .72-.31a1 1 0 0 0-.06-1.41Zm11.53-1.37a1 1 0 0 0-1.41 0l-1.44 1.37a1 1 0 0 0 0 1.41a1 1 0 0 0 .72.31a1 1 0 0 0 .69-.28l1.44-1.39a1 1 0 0 0 0-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CalendarFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(calendarFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCalendarFill0"><g id="evaCalendarFill1"><path id="evaCalendarFill2" fill="currentColor" d="M18 4h-1V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3ZM8 17a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm8 0h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2Zm3-6H5V7a1 1 0 0 1 1-1h1v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h1a1 1 0 0 1 1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CalendarOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(calendarOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCalendarOutline0"><g id="evaCalendarOutline1"><g id="evaCalendarOutline2" fill="currentColor"><path d="M18 4h-1V3a1 1 0 0 0-2 0v1H9V3a1 1 0 0 0-2 0v1H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3ZM6 6h1v1a1 1 0 0 0 2 0V6h6v1a1 1 0 0 0 2 0V6h1a1 1 0 0 1 1 1v4H5V7a1 1 0 0 1 1-1Zm12 14H6a1 1 0 0 1-1-1v-6h14v6a1 1 0 0 1-1 1Z"/><circle cx="8" cy="16" r="1"/><path d="M16 15h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CameraFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cameraFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCameraFill0"><g id="evaCameraFill1"><g id="evaCameraFill2" fill="currentColor"><circle cx="12" cy="14" r="1.5"/><path d="M19 7h-3V5.5A2.5 2.5 0 0 0 13.5 3h-3A2.5 2.5 0 0 0 8 5.5V7H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3Zm-9-1.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V7h-4Zm2 12a3.5 3.5 0 1 1 3.5-3.5a3.5 3.5 0 0 1-3.5 3.5Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CameraOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cameraOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCameraOutline0"><g id="evaCameraOutline1"><g id="evaCameraOutline2" fill="currentColor"><path d="M19 7h-3V5.5A2.5 2.5 0 0 0 13.5 3h-3A2.5 2.5 0 0 0 8 5.5V7H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3Zm-9-1.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V7h-4ZM20 18a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z"/><path d="M12 10.5a3.5 3.5 0 1 0 3.5 3.5a3.5 3.5 0 0 0-3.5-3.5Zm0 5a1.5 1.5 0 1 1 1.5-1.5a1.5 1.5 0 0 1-1.5 1.5Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CarFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(carFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCarFill0"><g id="evaCarFill1"><path id="evaCarFill2" fill="currentColor" d="M21.6 11.22L17 7.52V5a1.91 1.91 0 0 0-1.81-2H3.79A1.91 1.91 0 0 0 2 5v10a2 2 0 0 0 1.2 1.88a3 3 0 1 0 5.6.12h6.36a3 3 0 1 0 5.64 0h.2a1 1 0 0 0 1-1v-4a1 1 0 0 0-.4-.78ZM20 12.48V15h-3v-4.92ZM7 18a1 1 0 1 1-1-1a1 1 0 0 1 1 1Zm12 0a1 1 0 1 1-1-1a1 1 0 0 1 1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CarOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(carOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCarOutline0"><g id="evaCarOutline1"><path id="evaCarOutline2" fill="currentColor" d="M21.6 11.22L17 7.52V5a1.91 1.91 0 0 0-1.81-2H3.79A1.91 1.91 0 0 0 2 5v10a2 2 0 0 0 1.2 1.88a3 3 0 1 0 5.6.12h6.36a3 3 0 1 0 5.64 0h.2a1 1 0 0 0 1-1v-4a1 1 0 0 0-.4-.78ZM20 12.48V15h-3v-4.92ZM7 18a1 1 0 1 1-1-1a1 1 0 0 1 1 1Zm5-3H4V5h11v10Zm7 3a1 1 0 1 1-1-1a1 1 0 0 1 1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CastFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(castFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCastFill0"><g id="evaCastFill1"><g id="evaCastFill2" fill="currentColor"><path d="M18.4 3H5.6A2.7 2.7 0 0 0 3 5.78V7a1 1 0 0 0 2 0V5.78A.72.72 0 0 1 5.6 5h12.8a.72.72 0 0 1 .6.78v12.44a.72.72 0 0 1-.6.78H17a1 1 0 0 0 0 2h1.4a2.7 2.7 0 0 0 2.6-2.78V5.78A2.7 2.7 0 0 0 18.4 3ZM3.86 14A1 1 0 0 0 3 15.17a1 1 0 0 0 1.14.83a2.49 2.49 0 0 1 2.12.72a2.52 2.52 0 0 1 .51 2.84a1 1 0 0 0 .48 1.33a1.06 1.06 0 0 0 .42.09a1 1 0 0 0 .91-.58A4.52 4.52 0 0 0 3.86 14Z"/><path d="M3.86 10.08a1 1 0 0 0 .28 2a6 6 0 0 1 5.09 1.71a6 6 0 0 1 1.53 5.95a1 1 0 0 0 .68 1.26a.9.9 0 0 0 .28 0a1 1 0 0 0 1-.72a8 8 0 0 0-8.82-10.2Z"/><circle cx="4" cy="19" r="1"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CastOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(castOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCastOutline0"><g id="evaCastOutline1"><g id="evaCastOutline2" fill="currentColor"><path d="M18.4 3H5.6A2.7 2.7 0 0 0 3 5.78V7a1 1 0 0 0 2 0V5.78A.72.72 0 0 1 5.6 5h12.8a.72.72 0 0 1 .6.78v12.44a.72.72 0 0 1-.6.78H17a1 1 0 0 0 0 2h1.4a2.7 2.7 0 0 0 2.6-2.78V5.78A2.7 2.7 0 0 0 18.4 3ZM3.86 14A1 1 0 0 0 3 15.17a1 1 0 0 0 1.14.83a2.49 2.49 0 0 1 2.12.72a2.52 2.52 0 0 1 .51 2.84a1 1 0 0 0 .48 1.33a1.06 1.06 0 0 0 .42.09a1 1 0 0 0 .91-.58A4.52 4.52 0 0 0 3.86 14Z"/><path d="M3.86 10.08a1 1 0 0 0 .28 2a6 6 0 0 1 5.09 1.71a6 6 0 0 1 1.53 5.95a1 1 0 0 0 .68 1.26a.9.9 0 0 0 .28 0a1 1 0 0 0 1-.72a8 8 0 0 0-8.82-10.2Z"/><circle cx="4" cy="19" r="1"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ChargingFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(chargingFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaChargingFill0"><g id="evaChargingFill1"><g id="evaChargingFill2" fill="currentColor"><path d="M11.28 13H7a1 1 0 0 1-.86-.5a1 1 0 0 1 0-1L9.28 6H4.17A2.31 2.31 0 0 0 2 8.43v7.14A2.31 2.31 0 0 0 4.17 18h4.25Z"/><path d="M15.83 6h-4.25l-2.86 5H13a1 1 0 0 1 .86.5a1 1 0 0 1 0 1L10.72 18h5.11A2.31 2.31 0 0 0 18 15.57V8.43A2.31 2.31 0 0 0 15.83 6ZM21 9a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-1-1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ChargingOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(chargingOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaChargingOutline0"><g id="evaChargingOutline1"><g id="evaChargingOutline2" fill="currentColor"><path d="M21 9a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-1-1Zm-5.17-3h-3.1l-1.14 2h4.23a.5.5 0 0 1 .18.43v7.14a.52.52 0 0 1-.17.43H13l-1.15 2h4A2.31 2.31 0 0 0 18 15.57V8.43A2.31 2.31 0 0 0 15.83 6ZM4 15.57V8.43A.53.53 0 0 1 4.17 8H7l1.13-2h-4A2.31 2.31 0 0 0 2 8.43v7.14A2.31 2.31 0 0 0 4.17 18h3.1l1.14-2H4.18a.5.5 0 0 1-.18-.43Z"/><path d="M9 20a1 1 0 0 1-.87-1.5l3.15-5.5H7a1 1 0 0 1-.86-.5a1 1 0 0 1 0-1l4-7a1 1 0 0 1 1.74 1L8.72 11H13a1 1 0 0 1 .86.5a1 1 0 0 1 0 1l-4 7A1 1 0 0 1 9 20Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CheckmarkCircleFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(checkmarkCircleFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCheckmarkCircleFill0"><g id="evaCheckmarkCircleFill1"><g id="evaCheckmarkCircleFill2" fill="currentColor"><path d="M9.71 11.29a1 1 0 0 0-1.42 1.42l3 3A1 1 0 0 0 12 16a1 1 0 0 0 .72-.34l7-8a1 1 0 0 0-1.5-1.32L12 13.54Z"/><path d="M21 11a1 1 0 0 0-1 1a8 8 0 0 1-8 8A8 8 0 0 1 6.33 6.36A7.93 7.93 0 0 1 12 4a8.79 8.79 0 0 1 1.9.22a1 1 0 1 0 .47-1.94A10.54 10.54 0 0 0 12 2a10 10 0 0 0-7 17.09A9.93 9.93 0 0 0 12 22a10 10 0 0 0 10-10a1 1 0 0 0-1-1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CheckmarkCircleOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(checkmarkCircleOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCheckmarkCircleOutline0"><g id="evaCheckmarkCircleOutline1"><g id="evaCheckmarkCircleOutline2" fill="currentColor"><path d="M9.71 11.29a1 1 0 0 0-1.42 1.42l3 3A1 1 0 0 0 12 16a1 1 0 0 0 .72-.34l7-8a1 1 0 0 0-1.5-1.32L12 13.54Z"/><path d="M21 11a1 1 0 0 0-1 1a8 8 0 0 1-8 8A8 8 0 0 1 6.33 6.36A7.93 7.93 0 0 1 12 4a8.79 8.79 0 0 1 1.9.22a1 1 0 1 0 .47-1.94A10.54 10.54 0 0 0 12 2a10 10 0 0 0-7 17.09A9.93 9.93 0 0 0 12 22a10 10 0 0 0 10-10a1 1 0 0 0-1-1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CheckmarkCircleTwoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(checkmarkCircleTwoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCheckmarkCircle2Fill0"><g id="evaCheckmarkCircle2Fill1"><path id="evaCheckmarkCircle2Fill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm4.3 7.61l-4.57 6a1 1 0 0 1-.79.39a1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08l3.78-5a1 1 0 1 1 1.6 1.22Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CheckmarkCircleTwoOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(checkmarkCircleTwoOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCheckmarkCircle2Outline0"><g id="evaCheckmarkCircle2Outline1"><g id="evaCheckmarkCircle2Outline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="m14.7 8.39l-3.78 5l-1.63-2.11a1 1 0 0 0-1.58 1.23l2.43 3.11a1 1 0 0 0 .79.38a1 1 0 0 0 .79-.39l4.57-6a1 1 0 1 0-1.6-1.22Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CheckmarkFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(checkmarkFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCheckmarkFill0"><g id="evaCheckmarkFill1"><path id="evaCheckmarkFill2" fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CheckmarkOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(checkmarkOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCheckmarkOutline0"><g id="evaCheckmarkOutline1"><path id="evaCheckmarkOutline2" fill="currentColor" d="M9.86 18a1 1 0 0 1-.73-.32l-4.86-5.17a1 1 0 1 1 1.46-1.37l4.12 4.39l8.41-9.2a1 1 0 1 1 1.48 1.34l-9.14 10a1 1 0 0 1-.73.33Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CheckmarkSquareFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(checkmarkSquareFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCheckmarkSquareFill0"><g id="evaCheckmarkSquareFill1"><g id="evaCheckmarkSquareFill2" fill="currentColor"><path d="M20 11.83a1 1 0 0 0-1 1v5.57a.6.6 0 0 1-.6.6H5.6a.6.6 0 0 1-.6-.6V5.6a.6.6 0 0 1 .6-.6h9.57a1 1 0 1 0 0-2H5.6A2.61 2.61 0 0 0 3 5.6v12.8A2.61 2.61 0 0 0 5.6 21h12.8a2.61 2.61 0 0 0 2.6-2.6v-5.57a1 1 0 0 0-1-1Z"/><path d="M10.72 11a1 1 0 0 0-1.44 1.38l2.22 2.33a1 1 0 0 0 .72.31a1 1 0 0 0 .72-.3l6.78-7a1 1 0 1 0-1.44-1.4l-6.05 6.26Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CheckmarkSquareOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(checkmarkSquareOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCheckmarkSquareOutline0"><g id="evaCheckmarkSquareOutline1"><g id="evaCheckmarkSquareOutline2" fill="currentColor"><path d="M20 11.83a1 1 0 0 0-1 1v5.57a.6.6 0 0 1-.6.6H5.6a.6.6 0 0 1-.6-.6V5.6a.6.6 0 0 1 .6-.6h9.57a1 1 0 1 0 0-2H5.6A2.61 2.61 0 0 0 3 5.6v12.8A2.61 2.61 0 0 0 5.6 21h12.8a2.61 2.61 0 0 0 2.6-2.6v-5.57a1 1 0 0 0-1-1Z"/><path d="M10.72 11a1 1 0 0 0-1.44 1.38l2.22 2.33a1 1 0 0 0 .72.31a1 1 0 0 0 .72-.3l6.78-7a1 1 0 1 0-1.44-1.4l-6.05 6.26Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CheckmarkSquareTwoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(checkmarkSquareTwoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCheckmarkSquare2Fill0"><g id="evaCheckmarkSquare2Fill1"><path id="evaCheckmarkSquare2Fill2" fill="currentColor" d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm-1.7 6.61l-4.57 6a1 1 0 0 1-.79.39a1 1 0 0 1-.79-.38l-2.44-3.11a1 1 0 0 1 1.58-1.23l1.63 2.08l3.78-5a1 1 0 1 1 1.6 1.22Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CheckmarkSquareTwoOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(checkmarkSquareTwoOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCheckmarkSquare2Outline0"><g id="evaCheckmarkSquare2Outline1"><g id="evaCheckmarkSquare2Outline2" fill="currentColor"><path d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1Z"/><path d="m14.7 8.39l-3.78 5l-1.63-2.11a1 1 0 0 0-1.58 1.23l2.43 3.11a1 1 0 0 0 .79.38a1 1 0 0 0 .79-.39l4.57-6a1 1 0 1 0-1.6-1.22Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ChevronDownFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(chevronDownFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaChevronDownFill0"><g id="evaChevronDownFill1"><path id="evaChevronDownFill2" fill="currentColor" d="M12 15.5a1 1 0 0 1-.71-.29l-4-4a1 1 0 1 1 1.42-1.42L12 13.1l3.3-3.18a1 1 0 1 1 1.38 1.44l-4 3.86a1 1 0 0 1-.68.28Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ChevronDownOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(chevronDownOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaChevronDownOutline0"><g id="evaChevronDownOutline1"><path id="evaChevronDownOutline2" fill="currentColor" d="M12 15.5a1 1 0 0 1-.71-.29l-4-4a1 1 0 1 1 1.42-1.42L12 13.1l3.3-3.18a1 1 0 1 1 1.38 1.44l-4 3.86a1 1 0 0 1-.68.28Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ChevronLeftFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(chevronLeftFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaChevronLeftFill0"><g id="evaChevronLeftFill1"><path id="evaChevronLeftFill2" fill="currentColor" d="M13.36 17a1 1 0 0 1-.72-.31l-3.86-4a1 1 0 0 1 0-1.4l4-4a1 1 0 1 1 1.42 1.42L10.9 12l3.18 3.3a1 1 0 0 1 0 1.41a1 1 0 0 1-.72.29Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ChevronLeftOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(chevronLeftOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaChevronLeftOutline0"><g id="evaChevronLeftOutline1"><path id="evaChevronLeftOutline2" fill="currentColor" d="M13.36 17a1 1 0 0 1-.72-.31l-3.86-4a1 1 0 0 1 0-1.4l4-4a1 1 0 1 1 1.42 1.42L10.9 12l3.18 3.3a1 1 0 0 1 0 1.41a1 1 0 0 1-.72.29Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ChevronRightFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(chevronRightFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaChevronRightFill0"><g id="evaChevronRightFill1"><path id="evaChevronRightFill2" fill="currentColor" d="M10.5 17a1 1 0 0 1-.71-.29a1 1 0 0 1 0-1.42L13.1 12L9.92 8.69a1 1 0 0 1 0-1.41a1 1 0 0 1 1.42 0l3.86 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-.7.32Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ChevronRightOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(chevronRightOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaChevronRightOutline0"><g id="evaChevronRightOutline1"><path id="evaChevronRightOutline2" fill="currentColor" d="M10.5 17a1 1 0 0 1-.71-.29a1 1 0 0 1 0-1.42L13.1 12L9.92 8.69a1 1 0 0 1 0-1.41a1 1 0 0 1 1.42 0l3.86 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-.7.32Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ChevronUpFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(chevronUpFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaChevronUpFill0"><g id="evaChevronUpFill1"><path id="evaChevronUpFill2" fill="currentColor" d="M16 14.5a1 1 0 0 1-.71-.29L12 10.9l-3.3 3.18a1 1 0 0 1-1.41 0a1 1 0 0 1 0-1.42l4-3.86a1 1 0 0 1 1.4 0l4 4a1 1 0 0 1 0 1.42a1 1 0 0 1-.69.28Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ChevronUpOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(chevronUpOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaChevronUpOutline0"><g id="evaChevronUpOutline1"><path id="evaChevronUpOutline2" fill="currentColor" d="M16 14.5a1 1 0 0 1-.71-.29L12 10.9l-3.3 3.18a1 1 0 0 1-1.41 0a1 1 0 0 1 0-1.42l4-3.86a1 1 0 0 1 1.4 0l4 4a1 1 0 0 1 0 1.42a1 1 0 0 1-.69.28Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ClipboardFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(clipboardFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaClipboardFill0"><g id="evaClipboardFill1"><g id="evaClipboardFill2" fill="currentColor"><path d="M18 4v3a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Z"/><rect width="10" height="6" x="7" y="2" rx="1" ry="1"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ClipboardOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(clipboardOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaClipboardOutline0"><g id="evaClipboardOutline1"><path id="evaClipboardOutline2" fill="currentColor" d="M18 5V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v1a3 3 0 0 0-3 3v11a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3ZM8 4h8v4H8V4Zm11 15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7a1 1 0 0 1 1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ClockFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(clockFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaClockFill0"><g id="evaClockFill1"><path id="evaClockFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm4 11h-4a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v3h3a1 1 0 0 1 0 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ClockOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(clockOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaClockOutline0"><g id="evaClockOutline1"><g id="evaClockOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M16 11h-3V8a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1h4a1 1 0 0 0 0-2Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CloseCircleFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(closeCircleFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCloseCircleFill0"><g id="evaCloseCircleFill1"><path id="evaCloseCircleFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm2.71 11.29a1 1 0 0 1 0 1.42a1 1 0 0 1-1.42 0L12 13.41l-1.29 1.3a1 1 0 0 1-1.42 0a1 1 0 0 1 0-1.42l1.3-1.29l-1.3-1.29a1 1 0 0 1 1.42-1.42l1.29 1.3l1.29-1.3a1 1 0 0 1 1.42 1.42L13.41 12Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CloseCircleOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(closeCircleOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCloseCircleOutline0"><g id="evaCloseCircleOutline1"><g id="evaCloseCircleOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M14.71 9.29a1 1 0 0 0-1.42 0L12 10.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l1.3 1.29l-1.3 1.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l1.29-1.3l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L13.41 12l1.3-1.29a1 1 0 0 0 0-1.42Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CloseFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(closeFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCloseFill0"><g id="evaCloseFill1"><path id="evaCloseFill2" fill="currentColor" d="m13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29l-4.3 4.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4.29-4.3l4.29 4.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CloseOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(closeOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCloseOutline0"><g id="evaCloseOutline1"><path id="evaCloseOutline2" fill="currentColor" d="m13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29l-4.3 4.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4.29-4.3l4.29 4.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CloseSquareFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(closeSquareFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCloseSquareFill0"><g id="evaCloseSquareFill1"><path id="evaCloseSquareFill2" fill="currentColor" d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm-3.29 10.29a1 1 0 0 1 0 1.42a1 1 0 0 1-1.42 0L12 13.41l-1.29 1.3a1 1 0 0 1-1.42 0a1 1 0 0 1 0-1.42l1.3-1.29l-1.3-1.29a1 1 0 0 1 1.42-1.42l1.29 1.3l1.29-1.3a1 1 0 0 1 1.42 1.42L13.41 12Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CloseSquareOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(closeSquareOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCloseSquareOutline0"><g id="evaCloseSquareOutline1"><g id="evaCloseSquareOutline2" fill="currentColor"><path d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1Z"/><path d="M14.71 9.29a1 1 0 0 0-1.42 0L12 10.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l1.3 1.29l-1.3 1.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l1.29-1.3l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L13.41 12l1.3-1.29a1 1 0 0 0 0-1.42Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CloudDownloadFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cloudDownloadFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<defs><path id="evaCloudDownloadFill0" d="M21.9 11c0-.11-.06-.22-.09-.33a4.17 4.17 0 0 0-.18-.57c-.05-.12-.12-.24-.18-.37s-.15-.3-.24-.44S21 9.08 21 9s-.2-.25-.31-.37s-.21-.2-.32-.3L20 8l-.36-.24a3.68 3.68 0 0 0-.44-.23l-.39-.18a4.13 4.13 0 0 0-.5-.15a3 3 0 0 0-.41-.09h-.18A6 6 0 0 0 6.33 7h-.18a3 3 0 0 0-.41.09a4.13 4.13 0 0 0-.5.15l-.39.18a3.68 3.68 0 0 0-.44.23L4.05 8l-.37.31c-.11.1-.22.19-.32.3s-.21.25-.31.37s-.18.23-.26.36s-.16.29-.24.44s-.13.25-.18.37a4.17 4.17 0 0 0-.18.57c0 .11-.07.22-.09.33A5.23 5.23 0 0 0 2 12a5.5 5.5 0 0 0 .09.91c0 .1.05.19.07.29a5.58 5.58 0 0 0 .18.58l.12.29a5 5 0 0 0 .3.56l.14.22a.56.56 0 0 0 .05.08L3 15a5 5 0 0 0 4 2a2 2 0 0 1 .59-1.41A2 2 0 0 1 9 15a1.92 1.92 0 0 1 1 .27V12a2 2 0 0 1 4 0v3.37a2 2 0 0 1 1-.27a2.05 2.05 0 0 1 1.44.61A2 2 0 0 1 17 17a5 5 0 0 0 4-2l.05-.05a.56.56 0 0 0 .05-.08l.14-.22a5 5 0 0 0 .3-.56l.12-.29a5.58 5.58 0 0 0 .18-.58c0-.1.05-.19.07-.29A5.5 5.5 0 0 0 22 12a5.23 5.23 0 0 0-.1-1Z"/><path id="evaCloudDownloadFill1" d="M14.31 16.38L13 17.64V12a1 1 0 0 0-2 0v5.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3A1 1 0 0 0 12 21a1 1 0 0 0 .69-.28l3-2.9a1 1 0 1 0-1.38-1.44Z"/></defs><g id="evaCloudDownloadFill2"><g id="evaCloudDownloadFill3"><g id="evaCloudDownloadFill4" fill="currentColor"><use href="#evaCloudDownloadFill0"/><use href="#evaCloudDownloadFill1"/><use href="#evaCloudDownloadFill0"/><use href="#evaCloudDownloadFill1"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CloudDownloadOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cloudDownloadOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCloudDownloadOutline0"><g id="evaCloudDownloadOutline1"><g id="evaCloudDownloadOutline2" fill="currentColor"><path d="M14.31 16.38L13 17.64V12a1 1 0 0 0-2 0v5.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3A1 1 0 0 0 12 21a1 1 0 0 0 .69-.28l3-2.9a1 1 0 1 0-1.38-1.44Z"/><path d="M17.67 7A6 6 0 0 0 6.33 7a5 5 0 0 0-3.08 8.27A1 1 0 1 0 4.75 14A3 3 0 0 1 7 9h.1a1 1 0 0 0 1-.8a4 4 0 0 1 7.84 0a1 1 0 0 0 1 .8H17a3 3 0 0 1 2.25 5a1 1 0 0 0 .09 1.42a1 1 0 0 0 .66.25a1 1 0 0 0 .75-.34A5 5 0 0 0 17.67 7Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CloudUploadFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cloudUploadFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCloudUploadFill0"><g id="evaCloudUploadFill1"><g id="evaCloudUploadFill2" fill="currentColor"><path d="M21.9 12c0-.11-.06-.22-.09-.33a4.17 4.17 0 0 0-.18-.57c-.05-.12-.12-.24-.18-.37s-.15-.3-.24-.44S21 10.08 21 10s-.2-.25-.31-.37s-.21-.2-.32-.3L20 9l-.36-.24a3.68 3.68 0 0 0-.44-.23l-.39-.18a4.13 4.13 0 0 0-.5-.15a3 3 0 0 0-.41-.09L17.67 8A6 6 0 0 0 6.33 8l-.18.05a3 3 0 0 0-.41.09a4.13 4.13 0 0 0-.5.15l-.39.18a3.68 3.68 0 0 0-.44.23l-.36.3l-.37.31c-.11.1-.22.19-.32.3s-.21.25-.31.37s-.18.23-.26.36s-.16.29-.24.44s-.13.25-.18.37a4.17 4.17 0 0 0-.18.57c0 .11-.07.22-.09.33A5.23 5.23 0 0 0 2 13a5.5 5.5 0 0 0 .09.91c0 .1.05.19.07.29a5.58 5.58 0 0 0 .18.58l.12.29a5 5 0 0 0 .3.56l.14.22a.56.56 0 0 0 .05.08L3 16a5 5 0 0 0 4 2h3v-1.37a2 2 0 0 1-1 .27a2.05 2.05 0 0 1-1.44-.61a2 2 0 0 1 .05-2.83l3-2.9A2 2 0 0 1 12 10a2 2 0 0 1 1.41.59l3 3a2 2 0 0 1 0 2.82A2 2 0 0 1 15 17a1.92 1.92 0 0 1-1-.27V18h3a5 5 0 0 0 4-2l.05-.05a.56.56 0 0 0 .05-.08l.14-.22a5 5 0 0 0 .3-.56l.12-.29a5.58 5.58 0 0 0 .18-.58c0-.1.05-.19.07-.29A5.5 5.5 0 0 0 22 13a5.23 5.23 0 0 0-.1-1Z"/><path d="M12.71 11.29a1 1 0 0 0-1.4 0l-3 2.9a1 1 0 1 0 1.38 1.44L11 14.36V20a1 1 0 0 0 2 0v-5.59l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CloudUploadOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cloudUploadOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCloudUploadOutline0"><g id="evaCloudUploadOutline1"><g id="evaCloudUploadOutline2" fill="currentColor"><path d="M12.71 11.29a1 1 0 0 0-1.4 0l-3 2.9a1 1 0 1 0 1.38 1.44L11 14.36V20a1 1 0 0 0 2 0v-5.59l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/><path d="M17.67 7A6 6 0 0 0 6.33 7a5 5 0 0 0-3.08 8.27A1 1 0 1 0 4.75 14A3 3 0 0 1 7 9h.1a1 1 0 0 0 1-.8a4 4 0 0 1 7.84 0a1 1 0 0 0 1 .8H17a3 3 0 0 1 2.25 5a1 1 0 0 0 .09 1.42a1 1 0 0 0 .66.25a1 1 0 0 0 .75-.34A5 5 0 0 0 17.67 7Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CodeDownloadFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(codeDownloadFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCodeDownloadFill0"><g id="evaCodeDownloadFill1"><g id="evaCodeDownloadFill2" fill="currentColor"><path d="m4.29 12l4.48-5.36a1 1 0 1 0-1.54-1.28l-5 6a1 1 0 0 0 0 1.27l4.83 6a1 1 0 0 0 .78.37a1 1 0 0 0 .78-1.63Zm17.49-.63l-4.78-6a1 1 0 0 0-1.56 1.26L19.71 12l-4.48 5.37a1 1 0 0 0 .13 1.41A1 1 0 0 0 16 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 .01-1.27Z"/><path d="M15.72 11.41a1 1 0 0 0-1.41 0L13 12.64V8a1 1 0 0 0-2 0v4.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3A1 1 0 0 0 12 16a1 1 0 0 0 .69-.28l3-2.9a1 1 0 0 0 .03-1.41Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CodeDownloadOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(codeDownloadOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCodeDownloadOutline0"><g id="evaCodeDownloadOutline1"><g id="evaCodeDownloadOutline2" fill="currentColor"><path d="m4.29 12l4.48-5.36a1 1 0 1 0-1.54-1.28l-5 6a1 1 0 0 0 0 1.27l4.83 6a1 1 0 0 0 .78.37a1 1 0 0 0 .78-1.63Zm17.49-.63l-4.78-6a1 1 0 0 0-1.56 1.26L19.71 12l-4.48 5.37a1 1 0 0 0 .13 1.41A1 1 0 0 0 16 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 .01-1.27Z"/><path d="M15.72 11.41a1 1 0 0 0-1.41 0L13 12.64V8a1 1 0 0 0-2 0v4.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3A1 1 0 0 0 12 16a1 1 0 0 0 .69-.28l3-2.9a1 1 0 0 0 .03-1.41Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CodeFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(codeFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCodeFill0"><g id="evaCodeFill1"><path id="evaCodeFill2" fill="currentColor" d="M8.64 5.23a1 1 0 0 0-1.41.13l-5 6a1 1 0 0 0 0 1.27l4.83 6a1 1 0 0 0 .78.37a1 1 0 0 0 .78-1.63L4.29 12l4.48-5.36a1 1 0 0 0-.13-1.41Zm13.14 6.14l-4.78-6a1 1 0 0 0-1.41-.15a1 1 0 0 0-.15 1.41L19.71 12l-4.48 5.37a1 1 0 0 0 .13 1.41A1 1 0 0 0 16 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 .01-1.27Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CodeOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(codeOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCodeOutline0"><g id="evaCodeOutline1"><path id="evaCodeOutline2" fill="currentColor" d="M8.64 5.23a1 1 0 0 0-1.41.13l-5 6a1 1 0 0 0 0 1.27l4.83 6a1 1 0 0 0 .78.37a1 1 0 0 0 .78-1.63L4.29 12l4.48-5.36a1 1 0 0 0-.13-1.41Zm13.14 6.14l-4.78-6a1 1 0 0 0-1.41-.15a1 1 0 0 0-.15 1.41L19.71 12l-4.48 5.37a1 1 0 0 0 .13 1.41A1 1 0 0 0 16 19a1 1 0 0 0 .77-.36l5-6a1 1 0 0 0 .01-1.27Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CollapseFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(collapseFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCollapseFill0"><g id="evaCollapseFill1"><path id="evaCollapseFill2" fill="currentColor" d="M19 9h-2.58l3.29-3.29a1 1 0 1 0-1.42-1.42L15 7.57V5a1 1 0 0 0-1-1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 0-2Zm-9 4H5a1 1 0 0 0 0 2h2.57l-3.28 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L9 16.42V19a1 1 0 0 0 1 1a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CollapseOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(collapseOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCollapseOutline0"><g id="evaCollapseOutline1"><path id="evaCollapseOutline2" fill="currentColor" d="M19 9h-2.58l3.29-3.29a1 1 0 1 0-1.42-1.42L15 7.57V5a1 1 0 0 0-1-1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 0-2Zm-9 4H5a1 1 0 0 0 0 2h2.57l-3.28 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L9 16.42V19a1 1 0 0 0 1 1a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ColorPaletteFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(colorPaletteFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaColorPaletteFill0"><g id="evaColorPaletteFill1"><path id="evaColorPaletteFill2" fill="currentColor" d="M19.54 5.08A10.61 10.61 0 0 0 11.91 2a10 10 0 0 0-.05 20a2.58 2.58 0 0 0 2.53-1.89a2.52 2.52 0 0 0-.57-2.28a.5.5 0 0 1 .37-.83h1.65A6.15 6.15 0 0 0 22 11.33a8.48 8.48 0 0 0-2.46-6.25Zm-12.7 9.66a1.5 1.5 0 1 1 .4-2.08a1.49 1.49 0 0 1-.4 2.08ZM8.3 9.25a1.5 1.5 0 1 1-.55-2a1.5 1.5 0 0 1 .55 2ZM11 7a1.5 1.5 0 1 1 1.5-1.5A1.5 1.5 0 0 1 11 7Zm5.75.8a1.5 1.5 0 1 1 .55-2a1.5 1.5 0 0 1-.55 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ColorPaletteOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(colorPaletteOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaColorPaletteOutline0"><g id="evaColorPaletteOutline1"><g id="evaColorPaletteOutline2" fill="currentColor"><path d="M19.54 5.08A10.61 10.61 0 0 0 11.91 2a10 10 0 0 0-.05 20a2.58 2.58 0 0 0 2.53-1.89a2.52 2.52 0 0 0-.57-2.28a.5.5 0 0 1 .37-.83h1.65A6.15 6.15 0 0 0 22 11.33a8.48 8.48 0 0 0-2.46-6.25ZM15.88 15h-1.65a2.49 2.49 0 0 0-1.87 4.15a.49.49 0 0 1 .12.49c-.05.21-.28.34-.59.36a8 8 0 0 1-7.82-9.11A8.1 8.1 0 0 1 11.92 4H12a8.47 8.47 0 0 1 6.1 2.48a6.5 6.5 0 0 1 1.9 4.77A4.17 4.17 0 0 1 15.88 15Z"/><circle cx="12" cy="6.5" r="1.5"/><path d="M15.25 7.2a1.5 1.5 0 1 0 2.05.55a1.5 1.5 0 0 0-2.05-.55Zm-6.5 0a1.5 1.5 0 1 0 .55 2.05a1.5 1.5 0 0 0-.55-2.05Zm-2.59 4.06a1.5 1.5 0 1 0 2.08.4a1.49 1.49 0 0 0-2.08-.4Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ColorPickerFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(colorPickerFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaColorPickerFill0"><g id="evaColorPickerFill1"><path id="evaColorPickerFill2" fill="currentColor" d="M19.4 7.34L16.66 4.6A1.92 1.92 0 0 0 14 4.53l-2 2l-1.29-1.24a1 1 0 0 0-1.42 1.42L10.53 8L5 13.53a2 2 0 0 0-.57 1.21L4 18.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 20h.09l4.17-.38a2 2 0 0 0 1.21-.57l5.58-5.58l1.24 1.24a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42l-1.24-1.24l2-2a1.92 1.92 0 0 0-.07-2.71Zm-13 7.6L12 9.36l2.69 2.7l-2.79 2.79"/></g></g>`), g.Group(children),
+	)
 }
 
 func ColorPickerOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(colorPickerOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaColorPickerOutline0"><g id="evaColorPickerOutline1"><path id="evaColorPickerOutline2" fill="currentColor" d="M19.4 7.34L16.66 4.6A1.92 1.92 0 0 0 14 4.53l-2 2l-1.29-1.24a1 1 0 0 0-1.42 1.42L10.53 8L5 13.53a2 2 0 0 0-.57 1.21L4 18.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 20h.09l4.17-.38a2 2 0 0 0 1.21-.57l5.58-5.58l1.24 1.24a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42l-1.24-1.24l2-2a1.92 1.92 0 0 0-.07-2.71ZM9.08 17.62l-3 .28l.27-3L12 9.36l2.69 2.7Zm7-7L13.36 8l1.91-2L18 8.73Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CompassFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(compassFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCompassFill0"><g id="evaCompassFill1"><g id="evaCompassFill2" fill="currentColor"><path d="m10.8 13.21l1.69-.68l.71-1.74l-1.69.68l-.71 1.74z"/><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm3.93 7.42l-1.75 4.26a1 1 0 0 1-.55.55l-4.21 1.7A1 1 0 0 1 9 16a1 1 0 0 1-.71-.31h-.05a1 1 0 0 1-.18-1l1.75-4.26a1 1 0 0 1 .55-.55l4.21-1.7a1 1 0 0 1 1.1.25a1 1 0 0 1 .26.99Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CompassOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(compassOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCompassOutline0"><g id="evaCompassOutline1"><g id="evaCompassOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M15.68 8.32a1 1 0 0 0-1.1-.25l-4.21 1.7a1 1 0 0 0-.55.55l-1.75 4.26a1 1 0 0 0 .18 1h.05A1 1 0 0 0 9 16a1 1 0 0 0 .38-.07l4.21-1.7a1 1 0 0 0 .55-.55l1.75-4.26a1 1 0 0 0-.21-1.1Zm-4.88 4.89l.71-1.74l1.69-.68l-.71 1.74Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CopyFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(copyFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCopyFill0"><g id="evaCopyFill1"><path id="evaCopyFill2" fill="currentColor" d="M18 9h-3V5.67A2.68 2.68 0 0 0 12.33 3H5.67A2.68 2.68 0 0 0 3 5.67v6.66A2.68 2.68 0 0 0 5.67 15H9v3a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3Zm-9 3v1H5.67a.67.67 0 0 1-.67-.67V5.67A.67.67 0 0 1 5.67 5h6.66a.67.67 0 0 1 .67.67V9h-1a3 3 0 0 0-3 3Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CopyOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(copyOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCopyOutline0"><g id="evaCopyOutline1"><g id="evaCopyOutline2" fill="currentColor"><path d="M18 21h-6a3 3 0 0 1-3-3v-6a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3Zm-6-10a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1Z"/><path d="M9.73 15H5.67A2.68 2.68 0 0 1 3 12.33V5.67A2.68 2.68 0 0 1 5.67 3h6.66A2.68 2.68 0 0 1 15 5.67V9.4h-2V5.67a.67.67 0 0 0-.67-.67H5.67a.67.67 0 0 0-.67.67v6.66a.67.67 0 0 0 .67.67h4.06Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CornerDownLeftFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cornerDownLeftFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCornerDownLeftFill0"><g id="evaCornerDownLeftFill1"><path id="evaCornerDownLeftFill2" fill="currentColor" d="M20 6a1 1 0 0 0-1-1a1 1 0 0 0-1 1v5a1 1 0 0 1-.29.71A1 1 0 0 1 17 12H8.08l2.69-3.39a1 1 0 0 0-1.52-1.17l-4 5a1 1 0 0 0 0 1.25l4 5a1 1 0 0 0 .78.37a1 1 0 0 0 .62-.22a1 1 0 0 0 .15-1.41l-2.66-3.36h8.92a3 3 0 0 0 3-3Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CornerDownLeftOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cornerDownLeftOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCornerDownLeftOutline0"><g id="evaCornerDownLeftOutline1"><path id="evaCornerDownLeftOutline2" fill="currentColor" d="M20 6a1 1 0 0 0-1-1a1 1 0 0 0-1 1v5a1 1 0 0 1-.29.71A1 1 0 0 1 17 12H8.08l2.69-3.39a1 1 0 0 0-1.52-1.17l-4 5a1 1 0 0 0 0 1.25l4 5a1 1 0 0 0 .78.37a1 1 0 0 0 .62-.22a1 1 0 0 0 .15-1.41l-2.66-3.36h8.92a3 3 0 0 0 3-3Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CornerDownRightFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cornerDownRightFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCornerDownRightFill0"><g id="evaCornerDownRightFill1"><path id="evaCornerDownRightFill2" fill="currentColor" d="m19.78 12.38l-4-5a1 1 0 0 0-1.56 1.24l2.7 3.38H8a1 1 0 0 1-1-1V6a1 1 0 0 0-2 0v5a3 3 0 0 0 3 3h8.92l-2.7 3.38a1 1 0 0 0 .16 1.4A1 1 0 0 0 15 19a1 1 0 0 0 .78-.38l4-5a1 1 0 0 0 0-1.24Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CornerDownRightOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cornerDownRightOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCornerDownRightOutline0"><g id="evaCornerDownRightOutline1"><path id="evaCornerDownRightOutline2" fill="currentColor" d="m19.78 12.38l-4-5a1 1 0 0 0-1.56 1.24l2.7 3.38H8a1 1 0 0 1-1-1V6a1 1 0 0 0-2 0v5a3 3 0 0 0 3 3h8.92l-2.7 3.38a1 1 0 0 0 .16 1.4A1 1 0 0 0 15 19a1 1 0 0 0 .78-.38l4-5a1 1 0 0 0 0-1.24Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CornerLeftDownFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cornerLeftDownFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCornerLeftDownFill0"><g id="evaCornerLeftDownFill1"><path id="evaCornerLeftDownFill2" fill="currentColor" d="M18 5h-5a3 3 0 0 0-3 3v8.92l-3.38-2.7a1 1 0 0 0-1.24 1.56l5 4a1 1 0 0 0 1.24 0l5-4a1 1 0 1 0-1.24-1.56L12 16.92V8a1 1 0 0 1 1-1h5a1 1 0 0 0 0-2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CornerLeftDownOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cornerLeftDownOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCornerLeftDownOutline0"><g id="evaCornerLeftDownOutline1"><path id="evaCornerLeftDownOutline2" fill="currentColor" d="M18 5h-5a3 3 0 0 0-3 3v8.92l-3.38-2.7a1 1 0 0 0-1.24 1.56l5 4a1 1 0 0 0 1.24 0l5-4a1 1 0 1 0-1.24-1.56L12 16.92V8a1 1 0 0 1 1-1h5a1 1 0 0 0 0-2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CornerLeftUpFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cornerLeftUpFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCornerLeftUpFill0"><g id="evaCornerLeftUpFill1"><path id="evaCornerLeftUpFill2" fill="currentColor" d="M18 17h-5a1 1 0 0 1-1-1V7.08l3.38 2.7A1 1 0 0 0 16 10a1 1 0 0 0 .78-.38a1 1 0 0 0-.16-1.4l-5-4a1 1 0 0 0-1.24 0l-5 4a1 1 0 0 0 1.24 1.56L10 7.08V16a3 3 0 0 0 3 3h5a1 1 0 0 0 0-2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CornerLeftUpOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cornerLeftUpOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCornerLeftUpOutline0"><g id="evaCornerLeftUpOutline1"><path id="evaCornerLeftUpOutline2" fill="currentColor" d="M18 17h-5a1 1 0 0 1-1-1V7.08l3.38 2.7A1 1 0 0 0 16 10a1 1 0 0 0 .78-.38a1 1 0 0 0-.16-1.4l-5-4a1 1 0 0 0-1.24 0l-5 4a1 1 0 0 0 1.24 1.56L10 7.08V16a3 3 0 0 0 3 3h5a1 1 0 0 0 0-2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CornerRightDownFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cornerRightDownFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCornerRightDownFill0"><g id="evaCornerRightDownFill1"><path id="evaCornerRightDownFill2" fill="currentColor" d="M18.78 14.38a1 1 0 0 0-1.4-.16L14 16.92V8a3 3 0 0 0-3-3H6a1 1 0 0 0 0 2h5a1 1 0 0 1 1 1v8.92l-3.38-2.7a1 1 0 0 0-1.24 1.56l5 4a1 1 0 0 0 1.24 0l5-4a1 1 0 0 0 .16-1.4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CornerRightDownOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cornerRightDownOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCornerRightDownOutline0"><g id="evaCornerRightDownOutline1"><path id="evaCornerRightDownOutline2" fill="currentColor" d="M18.78 14.38a1 1 0 0 0-1.4-.16L14 16.92V8a3 3 0 0 0-3-3H6a1 1 0 0 0 0 2h5a1 1 0 0 1 1 1v8.92l-3.38-2.7a1 1 0 0 0-1.24 1.56l5 4a1 1 0 0 0 1.24 0l5-4a1 1 0 0 0 .16-1.4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CornerRightUpFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cornerRightUpFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCornerRightUpFill0"><g id="evaCornerRightUpFill1"><path id="evaCornerRightUpFill2" fill="currentColor" d="m18.62 8.22l-5-4a1 1 0 0 0-1.24 0l-5 4a1 1 0 0 0 1.24 1.56L12 7.08V16a1 1 0 0 1-1 1H6a1 1 0 0 0 0 2h5a3 3 0 0 0 3-3V7.08l3.38 2.7A1 1 0 0 0 18 10a1 1 0 0 0 .78-.38a1 1 0 0 0-.16-1.4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CornerRightUpOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cornerRightUpOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCornerRightUpOutline0"><g id="evaCornerRightUpOutline1"><path id="evaCornerRightUpOutline2" fill="currentColor" d="m18.62 8.22l-5-4a1 1 0 0 0-1.24 0l-5 4a1 1 0 0 0 1.24 1.56L12 7.08V16a1 1 0 0 1-1 1H6a1 1 0 0 0 0 2h5a3 3 0 0 0 3-3V7.08l3.38 2.7A1 1 0 0 0 18 10a1 1 0 0 0 .78-.38a1 1 0 0 0-.16-1.4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CornerUpLeftFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cornerUpLeftFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCornerUpLeftFill0"><g id="evaCornerUpLeftFill1"><path id="evaCornerUpLeftFill2" fill="currentColor" d="M16 10H7.08l2.7-3.38a1 1 0 1 0-1.56-1.24l-4 5a1 1 0 0 0 0 1.24l4 5A1 1 0 0 0 9 17a1 1 0 0 0 .62-.22a1 1 0 0 0 .16-1.4L7.08 12H16a1 1 0 0 1 1 1v5a1 1 0 0 0 2 0v-5a3 3 0 0 0-3-3Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CornerUpLeftOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cornerUpLeftOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCornerUpLeftOutline0"><g id="evaCornerUpLeftOutline1"><path id="evaCornerUpLeftOutline2" fill="currentColor" d="M16 10H7.08l2.7-3.38a1 1 0 1 0-1.56-1.24l-4 5a1 1 0 0 0 0 1.24l4 5A1 1 0 0 0 9 17a1 1 0 0 0 .62-.22a1 1 0 0 0 .16-1.4L7.08 12H16a1 1 0 0 1 1 1v5a1 1 0 0 0 2 0v-5a3 3 0 0 0-3-3Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CornerUpRightFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cornerUpRightFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCornerUpRightFill0"><g id="evaCornerUpRightFill1"><path id="evaCornerUpRightFill2" fill="currentColor" d="m19.78 10.38l-4-5a1 1 0 0 0-1.56 1.24l2.7 3.38H8a3 3 0 0 0-3 3v5a1 1 0 0 0 2 0v-5a1 1 0 0 1 1-1h8.92l-2.7 3.38a1 1 0 0 0 .16 1.4A1 1 0 0 0 15 17a1 1 0 0 0 .78-.38l4-5a1 1 0 0 0 0-1.24Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CornerUpRightOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cornerUpRightOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCornerUpRightOutline0"><g id="evaCornerUpRightOutline1"><path id="evaCornerUpRightOutline2" fill="currentColor" d="m19.78 10.38l-4-5a1 1 0 0 0-1.56 1.24l2.7 3.38H8a3 3 0 0 0-3 3v5a1 1 0 0 0 2 0v-5a1 1 0 0 1 1-1h8.92l-2.7 3.38a1 1 0 0 0 .16 1.4A1 1 0 0 0 15 17a1 1 0 0 0 .78-.38l4-5a1 1 0 0 0 0-1.24Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CreditCardFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(creditCardFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCreditCardFill0"><g id="evaCreditCardFill1"><path id="evaCreditCardFill2" fill="currentColor" d="M19 5H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3Zm-8 10H7a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2Zm6 0h-2a1 1 0 0 1 0-2h2a1 1 0 0 1 0 2Zm3-6H4V8a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CreditCardOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(creditCardOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCreditCardOutline0"><g id="evaCreditCardOutline1"><g id="evaCreditCardOutline2" fill="currentColor"><path d="M19 5H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3ZM4 8a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v1H4Zm16 8a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-5h16Z"/><path d="M7 15h4a1 1 0 0 0 0-2H7a1 1 0 0 0 0 2Zm8 0h2a1 1 0 0 0 0-2h-2a1 1 0 0 0 0 2Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func CropFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cropFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCropFill0"><g id="evaCropFill1"><path id="evaCropFill2" fill="currentColor" d="M21 16h-3V8.56A2.56 2.56 0 0 0 15.44 6H8V3a1 1 0 0 0-2 0v3H3a1 1 0 0 0 0 2h3v7.44A2.56 2.56 0 0 0 8.56 18H16v3a1 1 0 0 0 2 0v-3h3a1 1 0 0 0 0-2ZM8.56 16a.56.56 0 0 1-.56-.56V8h7.44a.56.56 0 0 1 .56.56V16Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CropOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cropOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCropOutline0"><g id="evaCropOutline1"><path id="evaCropOutline2" fill="currentColor" d="M21 16h-3V8.56A2.56 2.56 0 0 0 15.44 6H8V3a1 1 0 0 0-2 0v3H3a1 1 0 0 0 0 2h3v7.44A2.56 2.56 0 0 0 8.56 18H16v3a1 1 0 0 0 2 0v-3h3a1 1 0 0 0 0-2ZM8.56 16a.56.56 0 0 1-.56-.56V8h7.44a.56.56 0 0 1 .56.56V16Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CubeFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cubeFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCubeFill0"><g id="evaCubeFill1"><path id="evaCubeFill2" fill="currentColor" d="M11.25 11.83L3 8.36v7.73a1.69 1.69 0 0 0 1 1.52L11.19 21h.06ZM12 10.5l8.51-3.57a1.62 1.62 0 0 0-.51-.38l-7.2-3.37a1.87 1.87 0 0 0-1.6 0L4 6.55a1.62 1.62 0 0 0-.51.38Zm.75 1.33V21h.05l7.2-3.39a1.69 1.69 0 0 0 1-1.51V8.36Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func CubeOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(cubeOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaCubeOutline0"><g id="evaCubeOutline1"><path id="evaCubeOutline2" fill="currentColor" d="M20.66 7.26c0-.07-.1-.14-.15-.21l-.09-.1a2.5 2.5 0 0 0-.86-.68l-6.4-3a2.7 2.7 0 0 0-2.26 0l-6.4 3a2.6 2.6 0 0 0-.86.68L3.52 7a1 1 0 0 0-.15.2A2.39 2.39 0 0 0 3 8.46v7.06a2.49 2.49 0 0 0 1.46 2.26l6.4 3a2.7 2.7 0 0 0 2.27 0l6.4-3A2.49 2.49 0 0 0 21 15.54V8.46a2.39 2.39 0 0 0-.34-1.2Zm-8.95-2.2a.73.73 0 0 1 .58 0l5.33 2.48L12 10.15L6.38 7.54ZM5.3 16a.47.47 0 0 1-.3-.43V9.1l6 2.79v6.72Zm13.39 0L13 18.61v-6.72l6-2.79v6.44a.48.48 0 0 1-.31.46Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func DiagonalArrowLeftDownFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(diagonalArrowLeftDownFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaDiagonalArrowLeftDownFill0"><g id="evaDiagonalArrowLeftDownFill1"><path id="evaDiagonalArrowLeftDownFill2" fill="currentColor" d="M17.71 6.29a1 1 0 0 0-1.42 0L8 14.59V9a1 1 0 0 0-2 0v8a1 1 0 0 0 1 1h8a1 1 0 0 0 0-2H9.41l8.3-8.29a1 1 0 0 0 0-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func DiagonalArrowLeftDownOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(diagonalArrowLeftDownOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaDiagonalArrowLeftDownOutline0"><g id="evaDiagonalArrowLeftDownOutline1"><path id="evaDiagonalArrowLeftDownOutline2" fill="currentColor" d="M17.71 6.29a1 1 0 0 0-1.42 0L8 14.59V9a1 1 0 0 0-2 0v8a1 1 0 0 0 1 1h8a1 1 0 0 0 0-2H9.41l8.3-8.29a1 1 0 0 0 0-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func DiagonalArrowLeftUpFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(diagonalArrowLeftUpFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaDiagonalArrowLeftUpFill0"><g id="evaDiagonalArrowLeftUpFill1"><path id="evaDiagonalArrowLeftUpFill2" fill="currentColor" d="M17.71 16.29L9.42 8H15a1 1 0 0 0 0-2H7.05a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1H7a1 1 0 0 0 1-1V9.45l8.26 8.26a1 1 0 0 0 1.42 0a1 1 0 0 0 .03-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func DiagonalArrowLeftUpOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(diagonalArrowLeftUpOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaDiagonalArrowLeftUpOutline0"><g id="evaDiagonalArrowLeftUpOutline1"><path id="evaDiagonalArrowLeftUpOutline2" fill="currentColor" d="M17.71 16.29L9.42 8H15a1 1 0 0 0 0-2H7.05a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1H7a1 1 0 0 0 1-1V9.45l8.26 8.26a1 1 0 0 0 1.42 0a1 1 0 0 0 .03-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func DiagonalArrowRightDownFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(diagonalArrowRightDownFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaDiagonalArrowRightDownFill0"><g id="evaDiagonalArrowRightDownFill1"><path id="evaDiagonalArrowRightDownFill2" fill="currentColor" d="M17 8a1 1 0 0 0-1 1v5.59l-8.29-8.3a1 1 0 0 0-1.42 1.42l8.3 8.29H9a1 1 0 0 0 0 2h8a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func DiagonalArrowRightDownOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(diagonalArrowRightDownOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaDiagonalArrowRightDownOutline0"><g id="evaDiagonalArrowRightDownOutline1"><path id="evaDiagonalArrowRightDownOutline2" fill="currentColor" d="M17 8a1 1 0 0 0-1 1v5.59l-8.29-8.3a1 1 0 0 0-1.42 1.42l8.3 8.29H9a1 1 0 0 0 0 2h8a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func DiagonalArrowRightUpFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(diagonalArrowRightUpFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaDiagonalArrowRightUpFill0"><g id="evaDiagonalArrowRightUpFill1"><path id="evaDiagonalArrowRightUpFill2" fill="currentColor" d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1a1 1 0 0 0 1-1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func DiagonalArrowRightUpOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(diagonalArrowRightUpOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaDiagonalArrowRightUpOutline0"><g id="evaDiagonalArrowRightUpOutline1"><path id="evaDiagonalArrowRightUpOutline2" fill="currentColor" d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1a1 1 0 0 0 1-1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func DoneAllFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(doneAllFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaDoneAllFill0"><g id="evaDoneAllFill1"><g id="evaDoneAllFill2" fill="currentColor"><path d="M16.62 6.21a1 1 0 0 0-1.41.17l-7 9l-3.43-4.18a1 1 0 1 0-1.56 1.25l4.17 5.18a1 1 0 0 0 .78.37a1 1 0 0 0 .83-.38l7.83-10a1 1 0 0 0-.21-1.41Zm5 0a1 1 0 0 0-1.41.17l-7 9l-.61-.75l-1.26 1.62l1.1 1.37a1 1 0 0 0 .78.37a1 1 0 0 0 .78-.38l7.83-10a1 1 0 0 0-.21-1.4Z"/><path d="M8.71 13.06L10 11.44l-.2-.24a1 1 0 0 0-1.43-.2a1 1 0 0 0-.15 1.41Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func DoneAllOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(doneAllOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaDoneAllOutline0"><g id="evaDoneAllOutline1"><g id="evaDoneAllOutline2" fill="currentColor"><path d="M16.62 6.21a1 1 0 0 0-1.41.17l-7 9l-3.43-4.18a1 1 0 1 0-1.56 1.25l4.17 5.18a1 1 0 0 0 .78.37a1 1 0 0 0 .83-.38l7.83-10a1 1 0 0 0-.21-1.41Zm5 0a1 1 0 0 0-1.41.17l-7 9l-.61-.75l-1.26 1.62l1.1 1.37a1 1 0 0 0 .78.37a1 1 0 0 0 .78-.38l7.83-10a1 1 0 0 0-.21-1.4Z"/><path d="M8.71 13.06L10 11.44l-.2-.24a1 1 0 0 0-1.43-.2a1 1 0 0 0-.15 1.41Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func DownloadFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(downloadFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaDownloadFill0"><g id="evaDownloadFill1"><g id="evaDownloadFill2" fill="currentColor"><rect width="16" height="2" x="4" y="18" rx="1" ry="1"/><rect width="4" height="2" x="3" y="17" rx="1" ry="1" transform="rotate(-90 5 18)"/><rect width="4" height="2" x="17" y="17" rx="1" ry="1" transform="rotate(-90 19 18)"/><path d="M12 15a1 1 0 0 1-.58-.18l-4-2.82a1 1 0 0 1-.24-1.39a1 1 0 0 1 1.4-.24L12 12.76l3.4-2.56a1 1 0 0 1 1.2 1.6l-4 3a1 1 0 0 1-.6.2Z"/><path d="M12 13a1 1 0 0 1-1-1V4a1 1 0 0 1 2 0v8a1 1 0 0 1-1 1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func DownloadOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(downloadOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaDownloadOutline0"><g id="evaDownloadOutline1"><g id="evaDownloadOutline2" fill="currentColor"><rect width="16" height="2" x="4" y="18" rx="1" ry="1"/><rect width="4" height="2" x="3" y="17" rx="1" ry="1" transform="rotate(-90 5 18)"/><rect width="4" height="2" x="17" y="17" rx="1" ry="1" transform="rotate(-90 19 18)"/><path d="M12 15a1 1 0 0 1-.58-.18l-4-2.82a1 1 0 0 1-.24-1.39a1 1 0 0 1 1.4-.24L12 12.76l3.4-2.56a1 1 0 0 1 1.2 1.6l-4 3a1 1 0 0 1-.6.2Z"/><path d="M12 13a1 1 0 0 1-1-1V4a1 1 0 0 1 2 0v8a1 1 0 0 1-1 1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func DropletFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(dropletFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaDropletFill0"><g id="evaDropletFill1"><path id="evaDropletFill2" fill="currentColor" d="M12 21.1a7.4 7.4 0 0 1-5.28-2.28a7.73 7.73 0 0 1 .1-10.77l4.64-4.65a.94.94 0 0 1 .71-.3a1 1 0 0 1 .71.31l4.56 4.72a7.73 7.73 0 0 1-.09 10.77A7.33 7.33 0 0 1 12 21.1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func DropletOffFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(dropletOffFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaDropletOffFill0"><g id="evaDropletOffFill1"><path id="evaDropletOffFill2" fill="currentColor" d="M19 16.14A7.73 7.73 0 0 0 17.34 8l-4.56-4.69a1 1 0 0 0-.71-.31a1 1 0 0 0-.72.3L8.74 5.92ZM6 8.82a7.73 7.73 0 0 0 .64 9.9A7.44 7.44 0 0 0 11.92 21a7.34 7.34 0 0 0 4.64-1.6Zm14.71 10.47l-16-16a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func DropletOffOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(dropletOffOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaDropletOffOutline0"><g id="evaDropletOffOutline1"><path id="evaDropletOffOutline2" fill="currentColor" d="M12 19a5.4 5.4 0 0 1-3.88-1.64a5.73 5.73 0 0 1-.69-7.11L6 8.82a7.74 7.74 0 0 0 .7 9.94A7.37 7.37 0 0 0 12 21a7.36 7.36 0 0 0 4.58-1.59L15.15 18A5.43 5.43 0 0 1 12 19Zm0-13.57l3.88 4a5.71 5.71 0 0 1 1.49 5.15L19 16.15A7.72 7.72 0 0 0 17.31 8l-4.6-4.7A1 1 0 0 0 12 3a1 1 0 0 0-.72.3L8.73 5.9l1.42 1.42Zm8.71 13.86l-16-16a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func DropletOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(dropletOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaDropletOutline0"><g id="evaDropletOutline1"><path id="evaDropletOutline2" fill="currentColor" d="M12 21.1a7.4 7.4 0 0 1-5.28-2.28a7.73 7.73 0 0 1 .1-10.77l4.64-4.65a.94.94 0 0 1 .71-.3a1 1 0 0 1 .71.31l4.56 4.72a7.73 7.73 0 0 1-.09 10.77A7.33 7.33 0 0 1 12 21.1Zm.13-15.57L8.24 9.45a5.74 5.74 0 0 0-.07 8A5.43 5.43 0 0 0 12 19.1a5.42 5.42 0 0 0 3.9-1.61a5.72 5.72 0 0 0 .06-8Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func EditFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(editFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaEditFill0"><g id="evaEditFill1"><path id="evaEditFill2" fill="currentColor" d="M19.4 7.34L16.66 4.6A2 2 0 0 0 14 4.53l-9 9a2 2 0 0 0-.57 1.21L4 18.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 20h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71ZM16 10.68L13.32 8l1.95-2L18 8.73Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func EditOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(editOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaEditOutline0"><g id="evaEditOutline1"><path id="evaEditOutline2" fill="currentColor" d="M19.4 7.34L16.66 4.6A2 2 0 0 0 14 4.53l-9 9a2 2 0 0 0-.57 1.21L4 18.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 20h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71ZM9.08 17.62l-3 .28l.27-3L12 9.32l2.7 2.7ZM16 10.68L13.32 8l1.95-2L18 8.73Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func EditTwoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(editTwoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaEdit2Fill0"><g id="evaEdit2Fill1"><path id="evaEdit2Fill2" fill="currentColor" d="M19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2ZM5 18h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71L16.66 2.6A2 2 0 0 0 14 2.53l-9 9a2 2 0 0 0-.57 1.21L4 16.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 18ZM15.27 4L18 6.73l-2 1.95L13.32 6Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func EditTwoOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(editTwoOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaEdit2Outline0"><g id="evaEdit2Outline1"><path id="evaEdit2Outline2" fill="currentColor" d="M19 20H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2ZM5 18h.09l4.17-.38a2 2 0 0 0 1.21-.57l9-9a1.92 1.92 0 0 0-.07-2.71L16.66 2.6A2 2 0 0 0 14 2.53l-9 9a2 2 0 0 0-.57 1.21L4 16.91a1 1 0 0 0 .29.8A1 1 0 0 0 5 18ZM15.27 4L18 6.73l-2 1.95L13.32 6Zm-8.9 8.91L12 7.32l2.7 2.7l-5.6 5.6l-3 .28Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func EmailFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(emailFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaEmailFill0"><g id="evaEmailFill1"><path id="evaEmailFill2" fill="currentColor" d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm0 2l-6.5 4.47a1 1 0 0 1-1 0L5 6Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func EmailOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(emailOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaEmailOutline0"><g id="evaEmailOutline1"><path id="evaEmailOutline2" fill="currentColor" d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3Zm-.67 2L12 10.75L5.67 6ZM19 18H5a1 1 0 0 1-1-1V7.25l7.4 5.55a1 1 0 0 0 .6.2a1 1 0 0 0 .6-.2L20 7.25V17a1 1 0 0 1-1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ExpandFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(expandFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaExpandFill0"><g id="evaExpandFill1"><path id="evaExpandFill2" fill="currentColor" d="M20 5a1 1 0 0 0-1-1h-5a1 1 0 0 0 0 2h2.57l-3.28 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L18 7.42V10a1 1 0 0 0 1 1a1 1 0 0 0 1-1Zm-9.29 8.29a1 1 0 0 0-1.42 0L6 16.57V14a1 1 0 0 0-1-1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 0-2H7.42l3.29-3.29a1 1 0 0 0 0-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ExpandOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(expandOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaExpandOutline0"><g id="evaExpandOutline1"><path id="evaExpandOutline2" fill="currentColor" d="M20 5a1 1 0 0 0-1-1h-5a1 1 0 0 0 0 2h2.57l-3.28 3.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L18 7.42V10a1 1 0 0 0 1 1a1 1 0 0 0 1-1Zm-9.29 8.29a1 1 0 0 0-1.42 0L6 16.57V14a1 1 0 0 0-1-1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 0-2H7.42l3.29-3.29a1 1 0 0 0 0-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ExternalLinkFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(externalLinkFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaExternalLinkFill0"><g id="evaExternalLinkFill1"><g id="evaExternalLinkFill2" fill="currentColor"><path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1Z"/><path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ExternalLinkOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(externalLinkOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaExternalLinkOutline0"><g id="evaExternalLinkOutline1"><g id="evaExternalLinkOutline2" fill="currentColor"><path d="M20 11a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h6a1 1 0 0 0 0-2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6a1 1 0 0 0-1-1Z"/><path d="M16 5h1.58l-6.29 6.28a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L19 6.42V8a1 1 0 0 0 1 1a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-4a1 1 0 0 0 0 2Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func EyeFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(eyeFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaEyeFill0"><g id="evaEyeFill1"><g id="evaEyeFill2" fill="currentColor"><circle cx="12" cy="12" r="1.5"/><path d="M21.87 11.5c-.64-1.11-4.16-6.68-10.14-6.5c-5.53.14-8.73 5-9.6 6.5a1 1 0 0 0 0 1c.63 1.09 4 6.5 9.89 6.5h.25c5.53-.14 8.74-5 9.6-6.5a1 1 0 0 0 0-1Zm-9.87 4a3.5 3.5 0 1 1 3.5-3.5a3.5 3.5 0 0 1-3.5 3.5Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func EyeOffFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(eyeOffFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaEyeOffFill0"><g id="evaEyeOffFill1"><g id="evaEyeOffFill2" fill="currentColor"><circle cx="12" cy="12" r="1.5"/><path d="M15.29 18.12L14 16.78l-.07-.07l-1.27-1.27a4.07 4.07 0 0 1-.61.06A3.5 3.5 0 0 1 8.5 12a4.07 4.07 0 0 1 .06-.61l-2-2L5 7.87a15.89 15.89 0 0 0-2.87 3.63a1 1 0 0 0 0 1c.63 1.09 4 6.5 9.89 6.5h.25a9.48 9.48 0 0 0 3.23-.67ZM8.59 5.76l2.8 2.8A4.07 4.07 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a4.07 4.07 0 0 1-.06.61l2.68 2.68l.84.84a15.89 15.89 0 0 0 2.91-3.63a1 1 0 0 0 0-1c-.64-1.11-4.16-6.68-10.14-6.5a9.48 9.48 0 0 0-3.23.67Zm12.12 13.53L19.41 18l-2-2l-9.52-9.53L6.42 5L4.71 3.29a1 1 0 0 0-1.42 1.42L5.53 7l1.75 1.7l7.31 7.3l.07.07L16 17.41l.59.59l2.7 2.71a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func EyeOffOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(eyeOffOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaEyeOffOutline0"><g id="evaEyeOffOutline1"><g id="evaEyeOffOutline2" fill="currentColor"><path d="M4.71 3.29a1 1 0 0 0-1.42 1.42l5.63 5.63a3.5 3.5 0 0 0 4.74 4.74l5.63 5.63a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM12 13.5a1.5 1.5 0 0 1-1.5-1.5s0-.05 0-.07l1.56 1.56Z"/><path d="M12.22 17c-4.3.1-7.12-3.59-8-5a13.7 13.7 0 0 1 2.24-2.72L5 7.87a15.89 15.89 0 0 0-2.87 3.63a1 1 0 0 0 0 1c.63 1.09 4 6.5 9.89 6.5h.25a9.48 9.48 0 0 0 3.23-.67l-1.58-1.58a7.74 7.74 0 0 1-1.7.25Zm9.65-5.5c-.64-1.11-4.17-6.68-10.14-6.5a9.48 9.48 0 0 0-3.23.67l1.58 1.58a7.74 7.74 0 0 1 1.7-.25c4.29-.11 7.11 3.59 8 5a13.7 13.7 0 0 1-2.29 2.72L19 16.13a15.89 15.89 0 0 0 2.91-3.63a1 1 0 0 0-.04-1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func EyeOffTwoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(eyeOffTwoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaEyeOff2Fill0"><g id="evaEyeOff2Fill1"><path id="evaEyeOff2Fill2" fill="currentColor" d="M17.81 13.39A8.93 8.93 0 0 0 21 7.62a1 1 0 1 0-2-.24a7.07 7.07 0 0 1-14 0a1 1 0 1 0-2 .24a8.93 8.93 0 0 0 3.18 5.77l-2.3 2.32a1 1 0 0 0 1.41 1.41l2.61-2.6a9.06 9.06 0 0 0 3.1.92V19a1 1 0 0 0 2 0v-3.56a9.06 9.06 0 0 0 3.1-.92l2.61 2.6a1 1 0 0 0 1.41-1.41Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func EyeOffTwoOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(eyeOffTwoOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaEyeOff2Outline0"><g id="evaEyeOff2Outline1"><path id="evaEyeOff2Outline2" fill="currentColor" d="M17.81 13.39A8.93 8.93 0 0 0 21 7.62a1 1 0 1 0-2-.24a7.07 7.07 0 0 1-14 0a1 1 0 1 0-2 .24a8.93 8.93 0 0 0 3.18 5.77l-2.3 2.32a1 1 0 0 0 1.41 1.41l2.61-2.6a9.06 9.06 0 0 0 3.1.92V19a1 1 0 0 0 2 0v-3.56a9.06 9.06 0 0 0 3.1-.92l2.61 2.6a1 1 0 0 0 1.41-1.41Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func EyeOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(eyeOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaEyeOutline0"><g id="evaEyeOutline1"><g id="evaEyeOutline2" fill="currentColor"><path d="M21.87 11.5c-.64-1.11-4.16-6.68-10.14-6.5c-5.53.14-8.73 5-9.6 6.5a1 1 0 0 0 0 1c.63 1.09 4 6.5 9.89 6.5h.25c5.53-.14 8.74-5 9.6-6.5a1 1 0 0 0 0-1ZM12.22 17c-4.31.1-7.12-3.59-8-5c1-1.61 3.61-4.9 7.61-5c4.29-.11 7.11 3.59 8 5c-1.03 1.61-3.61 4.9-7.61 5Z"/><path d="M12 8.5a3.5 3.5 0 1 0 3.5 3.5A3.5 3.5 0 0 0 12 8.5Zm0 5a1.5 1.5 0 1 1 1.5-1.5a1.5 1.5 0 0 1-1.5 1.5Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func FacebookFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(facebookFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFacebookFill0"><g id="evaFacebookFill1"><path id="evaFacebookFill2" fill="currentColor" d="M17 3.5a.5.5 0 0 0-.5-.5H14a4.77 4.77 0 0 0-5 4.5v2.7H6.5a.5.5 0 0 0-.5.5v2.6a.5.5 0 0 0 .5.5H9v6.7a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-6.7h2.62a.5.5 0 0 0 .49-.37l.72-2.6a.5.5 0 0 0-.48-.63H13V7.5a1 1 0 0 1 1-.9h2.5a.5.5 0 0 0 .5-.5Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FacebookOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(facebookOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFacebookOutline0"><g id="evaFacebookOutline1"><path id="evaFacebookOutline2" fill="currentColor" d="M13 22H9a1 1 0 0 1-1-1v-6.2H6a1 1 0 0 1-1-1v-3.6a1 1 0 0 1 1-1h2V7.5A5.77 5.77 0 0 1 14 2h3a1 1 0 0 1 1 1v3.6a1 1 0 0 1-1 1h-3v1.6h3a1 1 0 0 1 .8.39a1 1 0 0 1 .16.88l-1 3.6a1 1 0 0 1-1 .73H14V21a1 1 0 0 1-1 1Zm-3-2h2v-6.2a1 1 0 0 1 1-1h2.24l.44-1.6H13a1 1 0 0 1-1-1V7.5a2 2 0 0 1 2-1.9h2V4h-2a3.78 3.78 0 0 0-4 3.5v2.7a1 1 0 0 1-1 1H7v1.6h2a1 1 0 0 1 1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FileAddFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(fileAddFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFileAddFill0"><g id="evaFileAddFill1"><path id="evaFileAddFill2" fill="currentColor" d="m19.74 7.33l-4.44-5a1 1 0 0 0-.74-.33h-8A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V8a1 1 0 0 0-.26-.67ZM14 15h-1v1a1 1 0 0 1-2 0v-1h-1a1 1 0 0 1 0-2h1v-1a1 1 0 0 1 2 0v1h1a1 1 0 0 1 0 2Zm.71-7a.79.79 0 0 1-.71-.85V4l3.74 4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FileAddOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(fileAddOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFileAddOutline0"><g id="evaFileAddOutline1"><g id="evaFileAddOutline2" fill="currentColor"><path d="m19.74 8.33l-5.44-6a1 1 0 0 0-.74-.33h-7A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V9a1 1 0 0 0-.26-.67ZM14 5l2.74 3h-2a.79.79 0 0 1-.74-.85Zm3.44 15H6.56a.53.53 0 0 1-.56-.5v-15a.53.53 0 0 1 .56-.5H12v3.15A2.79 2.79 0 0 0 14.71 10H18v9.5a.53.53 0 0 1-.56.5Z"/><path d="M14 13h-1v-1a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0v-1h1a1 1 0 0 0 0-2Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func FileFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(fileFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFileFill0"><g id="evaFileFill1"><path id="evaFileFill2" fill="currentColor" d="m19.74 7.33l-4.44-5a1 1 0 0 0-.74-.33h-8A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V8a1 1 0 0 0-.26-.67ZM14 4l3.74 4h-3a.79.79 0 0 1-.74-.85Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FileOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(fileOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFileOutline0"><g id="evaFileOutline1"><path id="evaFileOutline2" fill="currentColor" d="m19.74 8.33l-5.44-6a1 1 0 0 0-.74-.33h-7A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V9a1 1 0 0 0-.26-.67ZM17.65 9h-3.94a.79.79 0 0 1-.71-.85V4h.11Zm-.21 11H6.56a.53.53 0 0 1-.56-.5v-15a.53.53 0 0 1 .56-.5H11v4.15A2.79 2.79 0 0 0 13.71 11H18v8.5a.53.53 0 0 1-.56.5Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FileRemoveFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(fileRemoveFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFileRemoveFill0"><g id="evaFileRemoveFill1"><path id="evaFileRemoveFill2" fill="currentColor" d="m19.74 7.33l-4.44-5a1 1 0 0 0-.74-.33h-8A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V8a1 1 0 0 0-.26-.67ZM14 15h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2Zm.71-7a.79.79 0 0 1-.71-.85V4l3.74 4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FileRemoveOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(fileRemoveOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFileRemoveOutline0"><g id="evaFileRemoveOutline1"><g id="evaFileRemoveOutline2" fill="currentColor"><path d="m19.74 8.33l-5.44-6a1 1 0 0 0-.74-.33h-7A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V9a1 1 0 0 0-.26-.67ZM14 5l2.74 3h-2a.79.79 0 0 1-.74-.85Zm3.44 15H6.56a.53.53 0 0 1-.56-.5v-15a.53.53 0 0 1 .56-.5H12v3.15A2.79 2.79 0 0 0 14.71 10H18v9.5a.53.53 0 0 1-.56.5Z"/><path d="M14 13h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func FileTextFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(fileTextFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFileTextFill0"><g id="evaFileTextFill1"><path id="evaFileTextFill2" fill="currentColor" d="m19.74 7.33l-4.44-5a1 1 0 0 0-.74-.33h-8A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V8a1 1 0 0 0-.26-.67ZM9 12h3a1 1 0 0 1 0 2H9a1 1 0 0 1 0-2Zm6 6H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2Zm-.29-10a.79.79 0 0 1-.71-.85V4l3.74 4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FileTextOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(fileTextOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFileTextOutline0"><g id="evaFileTextOutline1"><g id="evaFileTextOutline2" fill="currentColor"><path d="M15 16H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2Zm-6-2h3a1 1 0 0 0 0-2H9a1 1 0 0 0 0 2Z"/><path d="m19.74 8.33l-5.44-6a1 1 0 0 0-.74-.33h-7A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V9a1 1 0 0 0-.26-.67ZM14 5l2.74 3h-2a.79.79 0 0 1-.74-.85Zm3.44 15H6.56a.53.53 0 0 1-.56-.5v-15a.53.53 0 0 1 .56-.5H12v3.15A2.79 2.79 0 0 0 14.71 10H18v9.5a.53.53 0 0 1-.56.5Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func FilmFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(filmFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFilmFill0"><g id="evaFilmFill1"><path id="evaFilmFill2" fill="currentColor" d="M18.26 3H5.74A2.74 2.74 0 0 0 3 5.74v12.52A2.74 2.74 0 0 0 5.74 21h12.52A2.74 2.74 0 0 0 21 18.26V5.74A2.74 2.74 0 0 0 18.26 3ZM7 11H5V9h2Zm-2 2h2v2H5Zm14-2h-2V9h2Zm-2 2h2v2h-2Zm2-7.26V7h-2V5h1.26a.74.74 0 0 1 .74.74ZM5.74 5H7v2H5V5.74A.74.74 0 0 1 5.74 5ZM5 18.26V17h2v2H5.74a.74.74 0 0 1-.74-.74Zm14 0a.74.74 0 0 1-.74.74H17v-2h2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FilmOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(filmOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFilmOutline0"><g id="evaFilmOutline1"><path id="evaFilmOutline2" fill="currentColor" d="M18.26 3H5.74A2.74 2.74 0 0 0 3 5.74v12.52A2.74 2.74 0 0 0 5.74 21h12.52A2.74 2.74 0 0 0 21 18.26V5.74A2.74 2.74 0 0 0 18.26 3ZM7 11H5V9h2Zm-2 2h2v2H5Zm4-8h6v14H9Zm10 6h-2V9h2Zm-2 2h2v2h-2Zm2-7.26V7h-2V5h1.26a.74.74 0 0 1 .74.74ZM5.74 5H7v2H5V5.74A.74.74 0 0 1 5.74 5ZM5 18.26V17h2v2H5.74a.74.74 0 0 1-.74-.74Zm14 0a.74.74 0 0 1-.74.74H17v-2h2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FlagFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(flagFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFlagFill0"><g id="evaFlagFill1"><path id="evaFlagFill2" fill="currentColor" d="M19.27 4.68a1.79 1.79 0 0 0-1.6-.25a7.53 7.53 0 0 1-2.17.28a8.54 8.54 0 0 1-3.13-.78A10.15 10.15 0 0 0 8.5 3c-2.89 0-4 1-4.2 1.14a1 1 0 0 0-.3.72V20a1 1 0 0 0 2 0v-4.3a6.28 6.28 0 0 1 2.5-.41a8.54 8.54 0 0 1 3.13.78a10.15 10.15 0 0 0 3.87.93a7.66 7.66 0 0 0 3.5-.7a1.74 1.74 0 0 0 1-1.55V6.11a1.77 1.77 0 0 0-.73-1.43Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FlagOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(flagOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFlagOutline0"><g id="evaFlagOutline1"><path id="evaFlagOutline2" fill="currentColor" d="M19.27 4.68a1.79 1.79 0 0 0-1.6-.25a7.53 7.53 0 0 1-2.17.28a8.54 8.54 0 0 1-3.13-.78A10.15 10.15 0 0 0 8.5 3c-2.89 0-4 1-4.2 1.14a1 1 0 0 0-.3.72V20a1 1 0 0 0 2 0v-4.3a6.28 6.28 0 0 1 2.5-.41a8.54 8.54 0 0 1 3.13.78a10.15 10.15 0 0 0 3.87.93a7.66 7.66 0 0 0 3.5-.7a1.74 1.74 0 0 0 1-1.55V6.11a1.77 1.77 0 0 0-.73-1.43ZM18 14.59a6.32 6.32 0 0 1-2.5.41a8.36 8.36 0 0 1-3.13-.79a10.34 10.34 0 0 0-3.87-.92a9.51 9.51 0 0 0-2.5.29V5.42A6.13 6.13 0 0 1 8.5 5a8.36 8.36 0 0 1 3.13.79a10.34 10.34 0 0 0 3.87.92a9.41 9.41 0 0 0 2.5-.3Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FlashFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(flashFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFlashFill0"><g id="evaFlashFill1"><path id="evaFlashFill2" fill="currentColor" d="M11.11 23a1 1 0 0 1-.34-.06a1 1 0 0 1-.65-1.05l.77-7.09H5a1 1 0 0 1-.83-1.56l7.89-11.8a1 1 0 0 1 1.17-.38a1 1 0 0 1 .65 1l-.77 7.14H19a1 1 0 0 1 .83 1.56l-7.89 11.8a1 1 0 0 1-.83.44Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FlashOffFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(flashOffFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFlashOffFill0"><g id="evaFlashOffFill1"><path id="evaFlashOffFill2" fill="currentColor" d="m17.33 14.5l2.5-3.74A1 1 0 0 0 19 9.2h-5.89l.77-7.09a1 1 0 0 0-.65-1a1 1 0 0 0-1.17.38L8.94 6.11Zm-10.66-5l-2.5 3.74A1 1 0 0 0 5 14.8h5.89l-.77 7.09a1 1 0 0 0 .65 1.05a1 1 0 0 0 .34.06a1 1 0 0 0 .83-.44l3.12-4.67Zm14.04 9.79l-16-16a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FlashOffOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(flashOffOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFlashOffOutline0"><g id="evaFlashOffOutline1"><path id="evaFlashOffOutline2" fill="currentColor" d="m20.71 19.29l-16-16a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Zm-8.17-1.23l.27-2.42L10 12.8H6.87l1.24-1.86L6.67 9.5l-2.5 3.74A1 1 0 0 0 5 14.8h5.89l-.77 7.09a1 1 0 0 0 .65 1.05a1 1 0 0 0 .34.06a1 1 0 0 0 .83-.44l3.12-4.67l-1.44-1.44ZM11.46 5.94l-.27 2.42L14 11.2h3.1l-1.24 1.86l1.44 1.44l2.5-3.74A1 1 0 0 0 19 9.2h-5.89l.77-7.09a1 1 0 0 0-.65-1a1 1 0 0 0-1.17.38L8.94 6.11l1.44 1.44Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FlashOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(flashOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFlashOutline0"><g id="evaFlashOutline1"><path id="evaFlashOutline2" fill="currentColor" d="M11.11 23a1 1 0 0 1-.34-.06a1 1 0 0 1-.65-1.05l.77-7.09H5a1 1 0 0 1-.83-1.56l7.89-11.8a1 1 0 0 1 1.17-.38a1 1 0 0 1 .65 1l-.77 7.14H19a1 1 0 0 1 .83 1.56l-7.89 11.8a1 1 0 0 1-.83.44ZM6.87 12.8H12a1 1 0 0 1 .74.33a1 1 0 0 1 .25.78l-.45 4.15l4.59-6.86H12a1 1 0 0 1-1-1.11l.45-4.15Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FlipFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(flipFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFlipFill0"><g id="evaFlipFill1"><path id="evaFlipFill2" fill="currentColor" d="M5 6.09v12l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3a1 1 0 0 0 1.42 0l3-3a1 1 0 0 0 0-1.42a1 1 0 0 0-1.42 0L7 18.09v-12A1.56 1.56 0 0 1 8.53 4.5H11a1 1 0 0 0 0-2H8.53A3.56 3.56 0 0 0 5 6.09Zm9.29-.3a1 1 0 0 0 1.42 1.42L17 5.91v12a1.56 1.56 0 0 1-1.53 1.59H13a1 1 0 0 0 0 2h2.47A3.56 3.56 0 0 0 19 17.91v-12l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42l-3-3a1 1 0 0 0-1.42 0Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FlipOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(flipOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFlipOutline0"><g id="evaFlipOutline1"><path id="evaFlipOutline2" fill="currentColor" d="M5 6.09v12l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3a1 1 0 0 0 1.42 0l3-3a1 1 0 0 0 0-1.42a1 1 0 0 0-1.42 0L7 18.09v-12A1.56 1.56 0 0 1 8.53 4.5H11a1 1 0 0 0 0-2H8.53A3.56 3.56 0 0 0 5 6.09Zm9.29-.3a1 1 0 0 0 1.42 1.42L17 5.91v12a1.56 1.56 0 0 1-1.53 1.59H13a1 1 0 0 0 0 2h2.47A3.56 3.56 0 0 0 19 17.91v-12l1.29 1.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42l-3-3a1 1 0 0 0-1.42 0Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FlipTwoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(flipTwoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFlip2Fill0"><g id="evaFlip2Fill1"><path id="evaFlip2Fill2" fill="currentColor" d="M6.09 19h12l-1.3 1.29a1 1 0 0 0 1.42 1.42l3-3a1 1 0 0 0 0-1.42l-3-3a1 1 0 0 0-1.42 0a1 1 0 0 0 0 1.42l1.3 1.29h-12a1.56 1.56 0 0 1-1.59-1.53V13a1 1 0 0 0-2 0v2.47A3.56 3.56 0 0 0 6.09 19Zm-.3-9.29a1 1 0 1 0 1.42-1.42L5.91 7h12a1.56 1.56 0 0 1 1.59 1.53V11a1 1 0 0 0 2 0V8.53A3.56 3.56 0 0 0 17.91 5h-12l1.3-1.29a1 1 0 0 0 0-1.42a1 1 0 0 0-1.42 0l-3 3a1 1 0 0 0 0 1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FlipTwoOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(flipTwoOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFlip2Outline0"><g id="evaFlip2Outline1"><path id="evaFlip2Outline2" fill="currentColor" d="M6.09 19h12l-1.3 1.29a1 1 0 0 0 1.42 1.42l3-3a1 1 0 0 0 0-1.42l-3-3a1 1 0 0 0-1.42 0a1 1 0 0 0 0 1.42l1.3 1.29h-12a1.56 1.56 0 0 1-1.59-1.53V13a1 1 0 0 0-2 0v2.47A3.56 3.56 0 0 0 6.09 19Zm-.3-9.29a1 1 0 1 0 1.42-1.42L5.91 7h12a1.56 1.56 0 0 1 1.59 1.53V11a1 1 0 0 0 2 0V8.53A3.56 3.56 0 0 0 17.91 5h-12l1.3-1.29a1 1 0 0 0 0-1.42a1 1 0 0 0-1.42 0l-3 3a1 1 0 0 0 0 1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FolderAddFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(folderAddFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFolderAddFill0"><g id="evaFolderAddFill1"><path id="evaFolderAddFill2" fill="currentColor" d="M19.5 7.05h-7L9.87 3.87a1 1 0 0 0-.77-.37H4.5A2.47 2.47 0 0 0 2 5.93v12.14a2.47 2.47 0 0 0 2.5 2.43h15a2.47 2.47 0 0 0 2.5-2.43V9.48a2.47 2.47 0 0 0-2.5-2.43ZM14 15h-1v1a1 1 0 0 1-2 0v-1h-1a1 1 0 0 1 0-2h1v-1a1 1 0 0 1 2 0v1h1a1 1 0 0 1 0 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FolderAddOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(folderAddOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFolderAddOutline0"><g id="evaFolderAddOutline1"><g id="evaFolderAddOutline2" fill="currentColor"><path d="M14 13h-1v-1a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0v-1h1a1 1 0 0 0 0-2Z"/><path d="M19.5 7.05h-7L9.87 3.87a1 1 0 0 0-.77-.37H4.5A2.47 2.47 0 0 0 2 5.93v12.14a2.47 2.47 0 0 0 2.5 2.43h15a2.47 2.47 0 0 0 2.5-2.43V9.48a2.47 2.47 0 0 0-2.5-2.43Zm.5 11a.46.46 0 0 1-.5.43h-15a.46.46 0 0 1-.5-.43V5.93a.46.46 0 0 1 .5-.43h4.13l2.6 3.18a1 1 0 0 0 .77.37h7.5a.46.46 0 0 1 .5.43Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func FolderFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(folderFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFolderFill0"><g id="evaFolderFill1"><path id="evaFolderFill2" fill="currentColor" d="M19.5 20.5h-15A2.47 2.47 0 0 1 2 18.07V5.93A2.47 2.47 0 0 1 4.5 3.5h4.6a1 1 0 0 1 .77.37l2.6 3.18h7A2.47 2.47 0 0 1 22 9.48v8.59a2.47 2.47 0 0 1-2.5 2.43Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FolderOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(folderOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFolderOutline0"><g id="evaFolderOutline1"><path id="evaFolderOutline2" fill="currentColor" d="M19.5 20.5h-15A2.47 2.47 0 0 1 2 18.07V5.93A2.47 2.47 0 0 1 4.5 3.5h4.6a1 1 0 0 1 .77.37l2.6 3.18h7A2.47 2.47 0 0 1 22 9.48v8.59a2.47 2.47 0 0 1-2.5 2.43ZM4 13.76v4.31a.46.46 0 0 0 .5.43h15a.46.46 0 0 0 .5-.43V9.48a.46.46 0 0 0-.5-.43H12a1 1 0 0 1-.77-.37L8.63 5.5H4.5a.46.46 0 0 0-.5.43Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FolderRemoveFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(folderRemoveFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFolderRemoveFill0"><g id="evaFolderRemoveFill1"><path id="evaFolderRemoveFill2" fill="currentColor" d="M19.5 7.05h-7L9.87 3.87a1 1 0 0 0-.77-.37H4.5A2.47 2.47 0 0 0 2 5.93v12.14a2.47 2.47 0 0 0 2.5 2.43h15a2.47 2.47 0 0 0 2.5-2.43V9.48a2.47 2.47 0 0 0-2.5-2.43ZM14 15h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FolderRemoveOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(folderRemoveOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFolderRemoveOutline0"><g id="evaFolderRemoveOutline1"><g id="evaFolderRemoveOutline2" fill="currentColor"><path d="M14 13h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Z"/><path d="M19.5 7.05h-7L9.87 3.87a1 1 0 0 0-.77-.37H4.5A2.47 2.47 0 0 0 2 5.93v12.14a2.47 2.47 0 0 0 2.5 2.43h15a2.47 2.47 0 0 0 2.5-2.43V9.48a2.47 2.47 0 0 0-2.5-2.43Zm.5 11a.46.46 0 0 1-.5.43h-15a.46.46 0 0 1-.5-.43V5.93a.46.46 0 0 1 .5-.43h4.13l2.6 3.18a1 1 0 0 0 .77.37h7.5a.46.46 0 0 1 .5.43Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func FunnelFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(funnelFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFunnelFill0"><g id="evaFunnelFill1"><path id="evaFunnelFill2" fill="currentColor" d="M13.9 22a1 1 0 0 1-.6-.2l-4-3.05a1 1 0 0 1-.39-.8v-3.27l-4.8-9.22A1 1 0 0 1 5 4h14a1 1 0 0 1 .86.49a1 1 0 0 1 0 1l-5 9.21V21a1 1 0 0 1-.55.9a1 1 0 0 1-.41.1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func FunnelOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(funnelOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaFunnelOutline0"><g id="evaFunnelOutline1"><path id="evaFunnelOutline2" fill="currentColor" d="M13.9 22a1 1 0 0 1-.6-.2l-4-3.05a1 1 0 0 1-.39-.8v-3.27l-4.8-9.22A1 1 0 0 1 5 4h14a1 1 0 0 1 .86.49a1 1 0 0 1 0 1l-5 9.21V21a1 1 0 0 1-.55.9a1 1 0 0 1-.41.1Zm-3-4.54l2 1.53v-4.55A1 1 0 0 1 13 14l4.3-8H6.64l4.13 8a1 1 0 0 1 .11.46Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func GiftFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(giftFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaGiftFill0"><g id="evaGiftFill1"><path id="evaGiftFill2" fill="currentColor" d="M4.64 15.27v4.82a.92.92 0 0 0 .92.91h5.62v-5.73ZM12.82 21h5.62a.92.92 0 0 0 .92-.91v-4.82h-6.54ZM20.1 7.09h-1.84a2.82 2.82 0 0 0 .29-1.23A2.87 2.87 0 0 0 15.68 3A4.21 4.21 0 0 0 12 5.57A4.21 4.21 0 0 0 8.32 3a2.87 2.87 0 0 0-2.87 2.86a2.82 2.82 0 0 0 .29 1.23H3.9c-.5 0-.9.59-.9 1.31v3.93c0 .72.4 1.31.9 1.31h7.28V7.09h1.64v6.55h7.28c.5 0 .9-.59.9-1.31V8.4c0-.72-.4-1.31-.9-1.31Zm-11.78 0a1.23 1.23 0 1 1 0-2.45c1.4 0 2.19 1.44 2.58 2.45Zm7.36 0H13.1c.39-1 1.18-2.45 2.58-2.45a1.23 1.23 0 1 1 0 2.45Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func GiftOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(giftOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaGiftOutline0"><g id="evaGiftOutline1"><path id="evaGiftOutline2" fill="currentColor" d="M19.2 7h-.39A3 3 0 0 0 19 6a3.08 3.08 0 0 0-3.14-3A4.46 4.46 0 0 0 12 5.4A4.46 4.46 0 0 0 8.14 3A3.08 3.08 0 0 0 5 6a3 3 0 0 0 .19 1H4.8A2 2 0 0 0 3 9.2v3.6A2.08 2.08 0 0 0 4.5 15v4.37A1.75 1.75 0 0 0 6.31 21h11.38a1.75 1.75 0 0 0 1.81-1.67V15a2.08 2.08 0 0 0 1.5-2.2V9.2A2 2 0 0 0 19.2 7ZM19 9.2v3.6a.56.56 0 0 1 0 .2h-6V9h6a.56.56 0 0 1 0 .2ZM15.86 5A1.08 1.08 0 0 1 17 6a1.08 1.08 0 0 1-1.14 1H13.4a2.93 2.93 0 0 1 2.46-2ZM7 6a1.08 1.08 0 0 1 1.14-1a2.93 2.93 0 0 1 2.45 2H8.14A1.08 1.08 0 0 1 7 6ZM5 9.2A.56.56 0 0 1 5 9h6v4H5a.56.56 0 0 1 0-.2ZM6.5 15H11v4H6.5Zm6.5 4v-4h4.5v4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func GithubFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(githubFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaGithubFill0"><g id="evaGithubFill1"><g id="evaGithubFill2"><g id="evaGithubFill3"><g id="evaGithubFill4"><g id="evaGithubFill5"><path id="evaGithubFill6" fill="currentColor" d="M12 1A10.89 10.89 0 0 0 1 11.77A10.79 10.79 0 0 0 8.52 22c.55.1.75-.23.75-.52v-1.83c-3.06.65-3.71-1.44-3.71-1.44a2.86 2.86 0 0 0-1.22-1.58c-1-.66.08-.65.08-.65a2.31 2.31 0 0 1 1.68 1.11a2.37 2.37 0 0 0 3.2.89a2.33 2.33 0 0 1 .7-1.44c-2.44-.27-5-1.19-5-5.32a4.15 4.15 0 0 1 1.11-2.91a3.78 3.78 0 0 1 .11-2.84s.93-.29 3 1.1a10.68 10.68 0 0 1 5.5 0c2.1-1.39 3-1.1 3-1.1a3.78 3.78 0 0 1 .11 2.84A4.15 4.15 0 0 1 19 11.2c0 4.14-2.58 5.05-5 5.32a2.5 2.5 0 0 1 .75 2v2.95c0 .35.2.63.75.52A10.8 10.8 0 0 0 23 11.77A10.89 10.89 0 0 0 12 1"/></g></g></g></g></g></g>`), g.Group(children),
+	)
 }
 
 func GithubOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(githubOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaGithubOutline0"><path id="evaGithubOutline1" fill="currentColor" d="M16.24 22a1 1 0 0 1-1-1v-2.6a2.15 2.15 0 0 0-.54-1.66a1 1 0 0 1 .61-1.67C17.75 14.78 20 14 20 9.77a4 4 0 0 0-.67-2.22a2.75 2.75 0 0 1-.41-2.06a3.71 3.71 0 0 0 0-1.41a7.65 7.65 0 0 0-2.09 1.09a1 1 0 0 1-.84.15a10.15 10.15 0 0 0-5.52 0a1 1 0 0 1-.84-.15a7.4 7.4 0 0 0-2.11-1.09a3.52 3.52 0 0 0 0 1.41a2.84 2.84 0 0 1-.43 2.08a4.07 4.07 0 0 0-.67 2.23c0 3.89 1.88 4.93 4.7 5.29a1 1 0 0 1 .82.66a1 1 0 0 1-.21 1a2.06 2.06 0 0 0-.55 1.56V21a1 1 0 0 1-2 0v-.57a6 6 0 0 1-5.27-2.09a3.9 3.9 0 0 0-1.16-.88a1 1 0 1 1 .5-1.94a4.93 4.93 0 0 1 2 1.36c1 1 2 1.88 3.9 1.52a3.89 3.89 0 0 1 .23-1.58c-2.06-.52-5-2-5-7a6 6 0 0 1 1-3.33a.85.85 0 0 0 .13-.62a5.69 5.69 0 0 1 .33-3.21a1 1 0 0 1 .63-.57c.34-.1 1.56-.3 3.87 1.2a12.16 12.16 0 0 1 5.69 0c2.31-1.5 3.53-1.31 3.86-1.2a1 1 0 0 1 .63.57a5.71 5.71 0 0 1 .33 3.22a.75.75 0 0 0 .11.57a6 6 0 0 1 1 3.34c0 5.07-2.92 6.54-5 7a4.28 4.28 0 0 1 .22 1.67V21a1 1 0 0 1-.94 1Z"/></g>`), g.Group(children),
+	)
 }
 
 func GlobeFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(globeFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaGlobeFill0"><g id="evaGlobeFill1"><path id="evaGlobeFill2" fill="currentColor" d="M22 12A10 10 0 0 0 12 2a10 10 0 0 0 0 20a10 10 0 0 0 10-10Zm-2.07-1H17a12.91 12.91 0 0 0-2.33-6.54A8 8 0 0 1 19.93 11ZM9.08 13H15a11.44 11.44 0 0 1-3 6.61A11 11 0 0 1 9.08 13Zm0-2A11.4 11.4 0 0 1 12 4.4a11.19 11.19 0 0 1 3 6.6Zm.36-6.57A13.18 13.18 0 0 0 7.07 11h-3a8 8 0 0 1 5.37-6.57ZM4.07 13h3a12.86 12.86 0 0 0 2.35 6.56A8 8 0 0 1 4.07 13Zm10.55 6.55A13.14 13.14 0 0 0 17 13h2.95a8 8 0 0 1-5.33 6.55Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func GlobeOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(globeOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaGlobeOutline0"><g id="evaGlobeOutline1"><path id="evaGlobeOutline2" fill="currentColor" d="M22 12A10 10 0 0 0 12 2a10 10 0 0 0 0 20a10 10 0 0 0 10-10Zm-2.07-1H17a12.91 12.91 0 0 0-2.33-6.54A8 8 0 0 1 19.93 11ZM9.08 13H15a11.44 11.44 0 0 1-3 6.61A11 11 0 0 1 9.08 13Zm0-2A11.4 11.4 0 0 1 12 4.4a11.19 11.19 0 0 1 3 6.6Zm.36-6.57A13.18 13.18 0 0 0 7.07 11h-3a8 8 0 0 1 5.37-6.57ZM4.07 13h3a12.86 12.86 0 0 0 2.35 6.56A8 8 0 0 1 4.07 13Zm10.55 6.55A13.14 13.14 0 0 0 17 13h2.95a8 8 0 0 1-5.33 6.55Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func GlobeThreeFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(globeThreeFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaGlobe3Fill0"><g id="evaGlobe3Fill1"><path id="evaGlobe3Fill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2ZM5 15.8a8.42 8.42 0 0 0 2 .27a5 5 0 0 0 3.14-1c1.71-1.34 1.71-3.06 1.71-4.44a4.76 4.76 0 0 1 .37-2.34a2.86 2.86 0 0 1 1.12-.91a9.75 9.75 0 0 0 .92-.61a4.55 4.55 0 0 0 1.4-1.87A8 8 0 0 1 19 8.12c-1.43.2-3.46.67-3.86 2.53A7 7 0 0 0 15 12a2.93 2.93 0 0 1-.29 1.47l-.1.17c-.65 1.08-1.38 2.31-.39 4c.12.21.25.41.38.61a2.29 2.29 0 0 1 .52 1.08A7.89 7.89 0 0 1 12 20a8 8 0 0 1-7-4.2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func GlobeTwoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(globeTwoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaGlobe2Fill0"><g id="evaGlobe2Fill1"><path id="evaGlobe2Fill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 2a8.19 8.19 0 0 1 1.79.21a2.61 2.61 0 0 1-.78 1c-.22.17-.46.31-.7.46a4.56 4.56 0 0 0-1.85 1.67a6.49 6.49 0 0 0-.62 3.3c0 1.36 0 2.16-.95 2.87c-1.37 1.07-3.46.47-4.76-.07A8.33 8.33 0 0 1 4 12a8 8 0 0 1 8-8Zm4.89 14.32a6.79 6.79 0 0 0-.63-1.14c-.11-.16-.22-.32-.32-.49c-.39-.68-.25-1 .38-2l.1-.17a4.77 4.77 0 0 0 .58-2.43a5.42 5.42 0 0 1 .09-1c.16-.73 1.71-.93 2.67-1a7.94 7.94 0 0 1-2.86 8.28Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func GlobeTwoOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(globeTwoOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaGlobe2Outline0"><g id="evaGlobe2Outline1"><path id="evaGlobe2Outline2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 2a8.19 8.19 0 0 1 1.79.21a2.61 2.61 0 0 1-.78 1c-.22.17-.46.31-.7.46a4.56 4.56 0 0 0-1.85 1.67a6.49 6.49 0 0 0-.62 3.3c0 1.36 0 2.16-.95 2.87c-1.37 1.07-3.46.47-4.76-.07A8.33 8.33 0 0 1 4 12a8 8 0 0 1 8-8ZM5 15.8a8.42 8.42 0 0 0 2 .27a5 5 0 0 0 3.14-1c1.71-1.34 1.71-3.06 1.71-4.44a4.76 4.76 0 0 1 .37-2.34a2.86 2.86 0 0 1 1.12-.91a9.75 9.75 0 0 0 .92-.61a4.55 4.55 0 0 0 1.4-1.87A8 8 0 0 1 19 8.12c-1.43.2-3.46.67-3.86 2.53A7 7 0 0 0 15 12a2.93 2.93 0 0 1-.29 1.47l-.1.17c-.65 1.08-1.38 2.31-.39 4c.12.21.25.41.38.61a2.29 2.29 0 0 1 .52 1.08A7.89 7.89 0 0 1 12 20a8 8 0 0 1-7-4.2Zm11.93 2.52a6.79 6.79 0 0 0-.63-1.14c-.11-.16-.22-.32-.32-.49c-.39-.68-.25-1 .38-2l.1-.17a4.77 4.77 0 0 0 .54-2.43a5.42 5.42 0 0 1 .09-1c.16-.73 1.71-.93 2.67-1a7.94 7.94 0 0 1-2.86 8.28Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func GoogleFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(googleFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaGoogleFill0"><g id="evaGoogleFill1"><path id="evaGoogleFill2" fill="currentColor" d="M17.5 14a5.51 5.51 0 0 1-4.5 3.93a6.15 6.15 0 0 1-7-5.45A6 6 0 0 1 12 6a6.12 6.12 0 0 1 2.27.44a.5.5 0 0 0 .64-.21l1.44-2.65a.52.52 0 0 0-.23-.7A10 10 0 0 0 2 12.29A10.12 10.12 0 0 0 11.57 22A10 10 0 0 0 22 12.52v-2a.51.51 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h5"/></g></g>`), g.Group(children),
+	)
 }
 
 func GoogleOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(googleOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaGoogleOutline0"><g id="evaGoogleOutline1"><path id="evaGoogleOutline2" fill="currentColor" d="M12 22h-.43A10.16 10.16 0 0 1 2 12.29a10 10 0 0 1 14.12-9.41a1.48 1.48 0 0 1 .77.86a1.47 1.47 0 0 1-.1 1.16L15.5 7.28a1.44 1.44 0 0 1-1.83.64A4.5 4.5 0 0 0 8.77 9a4.41 4.41 0 0 0-1.16 3.34a4.36 4.36 0 0 0 1.66 3a4.52 4.52 0 0 0 3.45 1a3.89 3.89 0 0 0 2.63-1.57h-2.9A1.45 1.45 0 0 1 11 13.33v-2.68a1.45 1.45 0 0 1 1.45-1.45h8.1A1.46 1.46 0 0 1 22 10.64v1.88A10 10 0 0 1 12 22Zm0-18a8 8 0 0 0-8 8.24A8.12 8.12 0 0 0 11.65 20A8 8 0 0 0 20 12.42V11.2h-7v1.58h5.31l-.41 1.3a6 6 0 0 1-4.9 4.25A6.58 6.58 0 0 1 8 17a6.33 6.33 0 0 1-.72-9.3A6.52 6.52 0 0 1 14 5.91l.77-1.43A7.9 7.9 0 0 0 12 4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func GridFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(gridFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaGridFill0"><g id="evaGridFill1"><path id="evaGridFill2" fill="currentColor" d="M9 3H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM9 13H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func GridOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(gridOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaGridOutline0"><g id="evaGridOutline1"><path id="evaGridOutline2" fill="currentColor" d="M9 3H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2ZM5 9V5h4v4Zm14-6h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm-4 6V5h4v4Zm-6 4H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-4 6v-4h4v4Zm14-6h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-4 6v-4h4v4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func HardDriveFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(hardDriveFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaHardDriveFill0"><g id="evaHardDriveFill1"><path id="evaHardDriveFill2" fill="currentColor" d="m20.79 11.34l-3.34-6.68A3 3 0 0 0 14.76 3H9.24a3 3 0 0 0-2.69 1.66l-3.34 6.68a2 2 0 0 0-.21.9V18a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-5.76a2 2 0 0 0-.21-.9ZM8 17a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm8 0h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2ZM5.62 11l2.72-5.45a1 1 0 0 1 .9-.55h5.52a1 1 0 0 1 .9.55L18.38 11Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func HardDriveOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(hardDriveOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaHardDriveOutline0"><g id="evaHardDriveOutline1"><g id="evaHardDriveOutline2" fill="currentColor"><path d="m20.79 11.34l-3.34-6.68A3 3 0 0 0 14.76 3H9.24a3 3 0 0 0-2.69 1.66l-3.34 6.68a2 2 0 0 0-.21.9V18a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-5.76a2 2 0 0 0-.21-.9ZM8.34 5.55a1 1 0 0 1 .9-.55h5.52a1 1 0 0 1 .9.55L18.38 11H5.62ZM18 19H6a1 1 0 0 1-1-1v-5h14v5a1 1 0 0 1-1 1Z"/><path d="M16 15h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Z"/><circle cx="8" cy="16" r="1"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func HashFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(hashFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaHashFill0"><g id="evaHashFill1"><path id="evaHashFill2" fill="currentColor" d="M20 14h-4.3l.73-4H20a1 1 0 0 0 0-2h-3.21l.69-3.81A1 1 0 0 0 16.64 3a1 1 0 0 0-1.22.82L14.67 8h-3.88l.69-3.81A1 1 0 0 0 10.64 3a1 1 0 0 0-1.22.82L8.67 8H4a1 1 0 0 0 0 2h4.3l-.73 4H4a1 1 0 0 0 0 2h3.21l-.69 3.81A1 1 0 0 0 7.36 21a1 1 0 0 0 1.22-.82L9.33 16h3.88l-.69 3.81a1 1 0 0 0 .84 1.19a1 1 0 0 0 1.22-.82l.75-4.18H20a1 1 0 0 0 0-2ZM9.7 14l.73-4h3.87l-.73 4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func HashOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(hashOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaHashOutline0"><g id="evaHashOutline1"><path id="evaHashOutline2" fill="currentColor" d="M20 14h-4.3l.73-4H20a1 1 0 0 0 0-2h-3.21l.69-3.81A1 1 0 0 0 16.64 3a1 1 0 0 0-1.22.82L14.67 8h-3.88l.69-3.81A1 1 0 0 0 10.64 3a1 1 0 0 0-1.22.82L8.67 8H4a1 1 0 0 0 0 2h4.3l-.73 4H4a1 1 0 0 0 0 2h3.21l-.69 3.81A1 1 0 0 0 7.36 21a1 1 0 0 0 1.22-.82L9.33 16h3.88l-.69 3.81a1 1 0 0 0 .84 1.19a1 1 0 0 0 1.22-.82l.75-4.18H20a1 1 0 0 0 0-2ZM9.7 14l.73-4h3.87l-.73 4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func HeadphonesFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(headphonesFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaHeadphonesFill0"><g id="evaHeadphonesFill1"><path id="evaHeadphonesFill2" fill="currentColor" d="M12 2A10.2 10.2 0 0 0 2 12.37V17a4 4 0 1 0 4-4a3.91 3.91 0 0 0-2 .56v-1.19A8.2 8.2 0 0 1 12 4a8.2 8.2 0 0 1 8 8.37v1.19a3.91 3.91 0 0 0-2-.56a4 4 0 1 0 4 4v-4.63A10.2 10.2 0 0 0 12 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func HeadphonesOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(headphonesOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaHeadphonesOutline0"><g id="evaHeadphonesOutline1"><path id="evaHeadphonesOutline2" fill="currentColor" d="M12 2A10.2 10.2 0 0 0 2 12.37V17a4 4 0 1 0 4-4a3.91 3.91 0 0 0-2 .56v-1.19A8.2 8.2 0 0 1 12 4a8.2 8.2 0 0 1 8 8.37v1.19a3.91 3.91 0 0 0-2-.56a4 4 0 1 0 4 4v-4.63A10.2 10.2 0 0 0 12 2ZM6 15a2 2 0 1 1-2 2a2 2 0 0 1 2-2Zm12 4a2 2 0 1 1 2-2a2 2 0 0 1-2 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func HeartFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(heartFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaHeartFill0"><g id="evaHeartFill1"><path id="evaHeartFill2" fill="currentColor" d="M12 21a1 1 0 0 1-.71-.29l-7.77-7.78a5.26 5.26 0 0 1 0-7.4a5.24 5.24 0 0 1 7.4 0L12 6.61l1.08-1.08a5.24 5.24 0 0 1 7.4 0a5.26 5.26 0 0 1 0 7.4l-7.77 7.78A1 1 0 0 1 12 21Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func HeartOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(heartOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaHeartOutline0"><g id="evaHeartOutline1"><path id="evaHeartOutline2" fill="currentColor" d="M12 21a1 1 0 0 1-.71-.29l-7.77-7.78a5.26 5.26 0 0 1 0-7.4a5.24 5.24 0 0 1 7.4 0L12 6.61l1.08-1.08a5.24 5.24 0 0 1 7.4 0a5.26 5.26 0 0 1 0 7.4l-7.77 7.78A1 1 0 0 1 12 21ZM7.22 6a3.2 3.2 0 0 0-2.28.94a3.24 3.24 0 0 0 0 4.57L12 18.58l7.06-7.07a3.24 3.24 0 0 0 0-4.57a3.32 3.32 0 0 0-4.56 0l-1.79 1.8a1 1 0 0 1-1.42 0L9.5 6.94A3.2 3.2 0 0 0 7.22 6Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func HomeFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(homeFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaHomeFill0"><g id="evaHomeFill1"><g id="evaHomeFill2" fill="currentColor"><path d="M10 14h4v7h-4z"/><path d="M20.42 10.18L12.71 2.3a1 1 0 0 0-1.42 0l-7.71 7.89A2 2 0 0 0 3 11.62V20a2 2 0 0 0 1.89 2H8v-9a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v9h3.11A2 2 0 0 0 21 20v-8.38a2.07 2.07 0 0 0-.58-1.44Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func HomeOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(homeOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaHomeOutline0"><g id="evaHomeOutline1"><path id="evaHomeOutline2" fill="currentColor" d="M20.42 10.18L12.71 2.3a1 1 0 0 0-1.42 0l-7.71 7.89A2 2 0 0 0 3 11.62V20a2 2 0 0 0 1.89 2h14.22A2 2 0 0 0 21 20v-8.38a2.07 2.07 0 0 0-.58-1.44ZM10 20v-6h4v6Zm9 0h-3v-7a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v7H5v-8.42l7-7.15l7 7.19Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ImageFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(imageFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaImageFill0"><g id="evaImageFill1"><g id="evaImageFill2" fill="currentColor"><path d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3ZM6 5h12a1 1 0 0 1 1 1v8.36l-3.2-2.73a2.77 2.77 0 0 0-3.52 0L5 17.7V6a1 1 0 0 1 1-1Z"/><circle cx="8" cy="8.5" r="1.5"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ImageOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(imageOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaImageOutline0"><g id="evaImageOutline1"><g id="evaImageOutline2" fill="currentColor"><path d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3ZM6 5h12a1 1 0 0 1 1 1v8.36l-3.2-2.73a2.77 2.77 0 0 0-3.52 0L5 17.7V6a1 1 0 0 1 1-1Zm12 14H6.56l7-5.84a.78.78 0 0 1 .93 0L19 17v1a1 1 0 0 1-1 1Z"/><circle cx="8" cy="8.5" r="1.5"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ImageTwoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(imageTwoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaImage2Fill0"><g id="evaImage2Fill1"><path id="evaImage2Fill2" fill="currentColor" d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3ZM8 7a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 8 7Zm11 10.83A1.09 1.09 0 0 1 18 19H6l7.57-6.82a.69.69 0 0 1 .93 0l4.5 4.48Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func InboxFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(inboxFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaInboxFill0"><g id="evaInboxFill1"><path id="evaInboxFill2" fill="currentColor" d="m20.79 11.34l-3.34-6.68A3 3 0 0 0 14.76 3H9.24a3 3 0 0 0-2.69 1.66l-3.34 6.68a2 2 0 0 0-.21.9V18a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-5.76a2 2 0 0 0-.21-.9ZM8.34 5.55a1 1 0 0 1 .9-.55h5.52a1 1 0 0 1 .9.55L18.38 11H16a1 1 0 0 0-1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-2a1 1 0 0 0-1-1H5.62Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func InboxOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(inboxOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaInboxOutline0"><g id="evaInboxOutline1"><path id="evaInboxOutline2" fill="currentColor" d="m20.79 11.34l-3.34-6.68A3 3 0 0 0 14.76 3H9.24a3 3 0 0 0-2.69 1.66l-3.34 6.68a2 2 0 0 0-.21.9V18a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-5.76a2 2 0 0 0-.21-.9ZM8.34 5.55a1 1 0 0 1 .9-.55h5.52a1 1 0 0 1 .9.55L18.38 11H16a1 1 0 0 0-1 1v3H9v-3a1 1 0 0 0-1-1H5.62ZM18 19H6a1 1 0 0 1-1-1v-5h2v3a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-3h2v5a1 1 0 0 1-1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func InfoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(infoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaInfoFill0"><g id="evaInfoFill1"><path id="evaInfoFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm1 14a1 1 0 0 1-2 0v-5a1 1 0 0 1 2 0Zm-1-7a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func InfoOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(infoOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaInfoOutline0"><g id="evaInfoOutline1"><g id="evaInfoOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><circle cx="12" cy="8" r="1"/><path d="M12 10a1 1 0 0 0-1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0-1-1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func KeypadFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(keypadFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaKeypadFill0"><g id="evaKeypadFill1"><path id="evaKeypadFill2" fill="currentColor" d="M5 2a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm7 0a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm7 6a3 3 0 1 0-3-3a3 3 0 0 0 3 3ZM5 9a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm7 0a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm7 0a3 3 0 1 0 3 3a3 3 0 0 0-3-3ZM5 16a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm7 0a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm7 0a3 3 0 1 0 3 3a3 3 0 0 0-3-3Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func KeypadOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(keypadOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaKeypadOutline0"><g id="evaKeypadOutline1"><path id="evaKeypadOutline2" fill="currentColor" d="M5 2a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm7-4a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm7 2a3 3 0 1 0-3-3a3 3 0 0 0 3 3Zm0-4a1 1 0 1 1-1 1a1 1 0 0 1 1-1ZM5 9a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm7-4a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm7-4a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1ZM5 16a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm7-4a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm7-4a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func LayersFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(layersFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaLayersFill0"><g id="evaLayersFill1"><g id="evaLayersFill2" fill="currentColor"><path d="m3.24 7.29l8.52 4.63a.51.51 0 0 0 .48 0l8.52-4.63a.44.44 0 0 0-.05-.81L12.19 3a.5.5 0 0 0-.38 0L3.29 6.48a.44.44 0 0 0-.05.81Z"/><path d="m20.71 10.66l-1.83-.78l-6.64 3.61a.51.51 0 0 1-.48 0L5.12 9.88l-1.83.78a.48.48 0 0 0 0 .85l8.52 4.9a.46.46 0 0 0 .48 0l8.52-4.9a.48.48 0 0 0-.1-.85Z"/><path d="m20.71 15.1l-1.56-.68l-6.91 3.76a.51.51 0 0 1-.48 0l-6.91-3.76l-1.56.68a.49.49 0 0 0 0 .87l8.52 5a.51.51 0 0 0 .48 0l8.52-5a.49.49 0 0 0-.1-.87Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func LayersOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(layersOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaLayersOutline0"><g id="evaLayersOutline1"><path id="evaLayersOutline2" fill="currentColor" d="M21 11.35a1 1 0 0 0-.61-.86l-2.15-.92l2.26-1.3a1 1 0 0 0 .5-.92a1 1 0 0 0-.61-.86l-8-3.41a1 1 0 0 0-.78 0l-8 3.41a1 1 0 0 0-.61.86a1 1 0 0 0 .5.92l2.26 1.3l-2.15.92a1 1 0 0 0-.61.86a1 1 0 0 0 .5.92l2.26 1.3l-2.15.92a1 1 0 0 0-.61.86a1 1 0 0 0 .5.92l8 4.6a1 1 0 0 0 1 0l8-4.6a1 1 0 0 0 .5-.92a1 1 0 0 0-.61-.86l-2.15-.92l2.26-1.3a1 1 0 0 0 .5-.92Zm-9-6.26l5.76 2.45L12 10.85L6.24 7.54Zm-.5 7.78a1 1 0 0 0 1 0l3.57-2l1.69.72L12 14.85l-5.76-3.31l1.69-.72Zm6.26 2.67L12 18.85l-5.76-3.31l1.69-.72l3.57 2.05a1 1 0 0 0 1 0l3.57-2.05Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func LayoutFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(layoutFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaLayoutFill0"><g id="evaLayoutFill1"><path id="evaLayoutFill2" fill="currentColor" d="M21 8V6a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3v2ZM3 10v8a3 3 0 0 0 3 3h5V10Zm10 0v11h5a3 3 0 0 0 3-3v-8Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func LayoutOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(layoutOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaLayoutOutline0"><g id="evaLayoutOutline1"><path id="evaLayoutOutline2" fill="currentColor" d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3ZM6 5h12a1 1 0 0 1 1 1v2H5V6a1 1 0 0 1 1-1ZM5 18v-8h6v9H6a1 1 0 0 1-1-1Zm13 1h-5v-9h6v8a1 1 0 0 1-1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func LinkFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(linkFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaLinkFill0"><g id="evaLinkFill1"><g id="evaLinkFill2" fill="currentColor"><path d="M8 12a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2H9a1 1 0 0 0-1 1Z"/><path d="M9 16H7.21A4.13 4.13 0 0 1 3 12.37A4 4 0 0 1 7 8h2a1 1 0 0 0 0-2H7.21a6.15 6.15 0 0 0-6.16 5.21A6 6 0 0 0 7 18h2a1 1 0 0 0 0-2Zm14-4.76A6.16 6.16 0 0 0 16.76 6h-1.51C14.44 6 14 6.45 14 7a1 1 0 0 0 1 1h1.79A4.13 4.13 0 0 1 21 11.63A4 4 0 0 1 17 16h-2a1 1 0 0 0 0 2h2a6 6 0 0 0 6-6.76Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func LinkOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(linkOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaLinkOutline0"><g id="evaLinkOutline1"><g id="evaLinkOutline2" fill="currentColor"><path d="M8 12a1 1 0 0 0 1 1h6a1 1 0 0 0 0-2H9a1 1 0 0 0-1 1Z"/><path d="M9 16H7.21A4.13 4.13 0 0 1 3 12.37A4 4 0 0 1 7 8h2a1 1 0 0 0 0-2H7.21a6.15 6.15 0 0 0-6.16 5.21A6 6 0 0 0 7 18h2a1 1 0 0 0 0-2Zm14-4.76A6.16 6.16 0 0 0 16.76 6h-1.51C14.44 6 14 6.45 14 7a1 1 0 0 0 1 1h1.79A4.13 4.13 0 0 1 21 11.63A4 4 0 0 1 17 16h-2a1 1 0 0 0 0 2h2a6 6 0 0 0 6-6.76Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func LinkTwoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(linkTwoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaLink2Fill0"><g id="evaLink2Fill1"><g id="evaLink2Fill2" fill="currentColor"><path d="m13.29 9.29l-4 4a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0-1.42-1.42Z"/><path d="M12.28 17.4L11 18.67a4.2 4.2 0 0 1-5.58.4a4 4 0 0 1-.27-5.93l1.42-1.43a1 1 0 0 0 0-1.42a1 1 0 0 0-1.42 0l-1.27 1.28a6.15 6.15 0 0 0-.67 8.07a6.06 6.06 0 0 0 9.07.6l1.42-1.42a1 1 0 0 0-1.42-1.42Zm7.38-14.18a6.18 6.18 0 0 0-8.13.68L10.45 5a1.09 1.09 0 0 0-.17 1.61a1 1 0 0 0 1.42 0L13 5.3a4.17 4.17 0 0 1 5.57-.4a4 4 0 0 1 .27 5.95l-1.42 1.43a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l1.42-1.42a6.06 6.06 0 0 0-.6-9.06Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func LinkTwoOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(linkTwoOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaLink2Outline0"><g id="evaLink2Outline1"><g id="evaLink2Outline2" fill="currentColor"><path d="m13.29 9.29l-4 4a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4-4a1 1 0 0 0-1.42-1.42Z"/><path d="M12.28 17.4L11 18.67a4.2 4.2 0 0 1-5.58.4a4 4 0 0 1-.27-5.93l1.42-1.43a1 1 0 0 0 0-1.42a1 1 0 0 0-1.42 0l-1.27 1.28a6.15 6.15 0 0 0-.67 8.07a6.06 6.06 0 0 0 9.07.6l1.42-1.42a1 1 0 0 0-1.42-1.42Zm7.38-14.18a6.18 6.18 0 0 0-8.13.68L10.45 5a1.09 1.09 0 0 0-.17 1.61a1 1 0 0 0 1.42 0L13 5.3a4.17 4.17 0 0 1 5.57-.4a4 4 0 0 1 .27 5.95l-1.42 1.43a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l1.42-1.42a6.06 6.06 0 0 0-.6-9.06Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func LinkedinFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(linkedinFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaLinkedinFill0"><g id="evaLinkedinFill1"><g id="evaLinkedinFill2" fill="currentColor"><path d="M15.15 8.4a5.83 5.83 0 0 0-5.85 5.82v5.88a.9.9 0 0 0 .9.9h2.1a.9.9 0 0 0 .9-.9v-5.88a1.94 1.94 0 0 1 2.15-1.93a2 2 0 0 1 1.75 2v5.81a.9.9 0 0 0 .9.9h2.1a.9.9 0 0 0 .9-.9v-5.88a5.83 5.83 0 0 0-5.85-5.82Z"/><rect width="4.5" height="11.7" x="3" y="9.3" rx=".9" ry=".9"/><circle cx="5.25" cy="5.25" r="2.25"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func LinkedinOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(linkedinOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaLinkedinOutline0"><g id="evaLinkedinOutline1"><path id="evaLinkedinOutline2" fill="currentColor" d="M20 22h-1.67a2 2 0 0 1-2-2v-5.37a.92.92 0 0 0-.69-.93a.84.84 0 0 0-.67.19a.85.85 0 0 0-.3.65V20a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2v-5.46a6.5 6.5 0 1 1 13 0V20a2 2 0 0 1-2 2Zm-4.5-10.31a3.73 3.73 0 0 1 .47 0a2.91 2.91 0 0 1 2.36 2.9V20H20v-5.46a4.5 4.5 0 1 0-9 0V20h1.67v-5.46a2.85 2.85 0 0 1 2.83-2.85ZM6 22H4a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2ZM4 10v10h2V10Zm1-3a3 3 0 1 1 3-3a3 3 0 0 1-3 3Zm0-4a1 1 0 1 0 1 1a1 1 0 0 0-1-1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ListFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(listFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaListFill0"><g id="evaListFill1"><g id="evaListFill2" fill="currentColor"><circle cx="4" cy="7" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="17" r="1"/><rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"/><rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"/><rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ListOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(listOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaListOutline0"><g id="evaListOutline1"><g id="evaListOutline2" fill="currentColor"><circle cx="4" cy="7" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="17" r="1"/><rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"/><rect width="14" height="2" x="7" y="16" rx=".94" ry=".94"/><rect width="14" height="2" x="7" y="6" rx=".94" ry=".94"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func LoaderOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(loaderOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaLoaderOutline0"><g id="evaLoaderOutline1"><path id="evaLoaderOutline2" fill="currentColor" d="M12 2a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0V3a1 1 0 0 0-1-1Zm9 9h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2ZM6 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1Zm.22-7a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28a1 1 0 0 0 .72-.31a1 1 0 0 0 0-1.41ZM17 8.14a1 1 0 0 0 .69-.28l1.44-1.39A1 1 0 0 0 17.78 5l-1.44 1.42a1 1 0 0 0 0 1.41a1 1 0 0 0 .66.31ZM12 18a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1Zm5.73-1.86a1 1 0 0 0-1.39 1.44L17.78 19a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.3a1 1 0 0 0 0-1.42Zm-11.46 0l-1.44 1.39a1 1 0 0 0 0 1.42a1 1 0 0 0 .72.3a1 1 0 0 0 .67-.25l1.44-1.39a1 1 0 0 0-1.39-1.44Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func LockFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(lockFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaLockFill0"><g id="evaLockFill1"><g id="evaLockFill2" fill="currentColor"><circle cx="12" cy="15" r="1"/><path d="M17 8h-1V6.11a4 4 0 1 0-8 0V8H7a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3Zm-7-1.89A2.06 2.06 0 0 1 12 4a2.06 2.06 0 0 1 2 2.11V8h-4ZM12 18a3 3 0 1 1 3-3a3 3 0 0 1-3 3Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func LockOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(lockOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaLockOutline0"><g id="evaLockOutline1"><g id="evaLockOutline2" fill="currentColor"><path d="M17 8h-1V6.11a4 4 0 1 0-8 0V8H7a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3Zm-7-1.89A2.06 2.06 0 0 1 12 4a2.06 2.06 0 0 1 2 2.11V8h-4ZM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1Z"/><path d="M12 12a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func LogInFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(logInFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaLogInFill0"><g id="evaLogInFill1"><path id="evaLogInFill2" fill="currentColor" d="M19 4h-2a1 1 0 0 0 0 2h1v12h-1a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Zm-7.2 3.4a1 1 0 0 0-1.6 1.2L12 11H4a1 1 0 0 0 0 2h8.09l-1.72 2.44a1 1 0 0 0 .24 1.4a1 1 0 0 0 .58.18a1 1 0 0 0 .81-.42l2.82-4a1 1 0 0 0 0-1.18Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func LogInOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(logInOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaLogInOutline0"><g id="evaLogInOutline1"><path id="evaLogInOutline2" fill="currentColor" d="M19 4h-2a1 1 0 0 0 0 2h1v12h-1a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Zm-7.2 3.4a1 1 0 0 0-1.6 1.2L12 11H4a1 1 0 0 0 0 2h8.09l-1.72 2.44a1 1 0 0 0 .24 1.4a1 1 0 0 0 .58.18a1 1 0 0 0 .81-.42l2.82-4a1 1 0 0 0 0-1.18Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func LogOutFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(logOutFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaLogOutFill0"><g id="evaLogOutFill1"><path id="evaLogOutFill2" fill="currentColor" d="M7 6a1 1 0 0 0 0-2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h2a1 1 0 0 0 0-2H6V6Zm13.82 5.42l-2.82-4a1 1 0 0 0-1.39-.24a1 1 0 0 0-.24 1.4L18.09 11H10a1 1 0 0 0 0 2h8l-1.8 2.4a1 1 0 0 0 .2 1.4a1 1 0 0 0 .6.2a1 1 0 0 0 .8-.4l3-4a1 1 0 0 0 .02-1.18Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func LogOutOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(logOutOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaLogOutOutline0"><g id="evaLogOutOutline1"><path id="evaLogOutOutline2" fill="currentColor" d="M7 6a1 1 0 0 0 0-2H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h2a1 1 0 0 0 0-2H6V6Zm13.82 5.42l-2.82-4a1 1 0 0 0-1.39-.24a1 1 0 0 0-.24 1.4L18.09 11H10a1 1 0 0 0 0 2h8l-1.8 2.4a1 1 0 0 0 .2 1.4a1 1 0 0 0 .6.2a1 1 0 0 0 .8-.4l3-4a1 1 0 0 0 .02-1.18Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func MapFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(mapFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMapFill0"><g id="evaMapFill1"><path id="evaMapFill2" fill="currentColor" d="m20.41 5.89l-4-1.8h-.82L12 5.7L8.41 4.09h-.05L8.24 4h-.6l-4 1.8a1 1 0 0 0-.64 1V19a1 1 0 0 0 .46.84A1 1 0 0 0 4 20a1 1 0 0 0 .41-.09L8 18.3l3.59 1.61h.05a.85.85 0 0 0 .72 0h.05L16 18.3l3.59 1.61A1 1 0 0 0 20 20a1 1 0 0 0 .54-.16A1 1 0 0 0 21 19V6.8a1 1 0 0 0-.59-.91ZM9 6.55l2 .89v10l-2-.89Zm10 10.9l-2-.89v-10l2 .89Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func MapOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(mapOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMapOutline0"><g id="evaMapOutline1"><path id="evaMapOutline2" fill="currentColor" d="m20.41 5.89l-4-1.8h-.82L12 5.7L8.41 4.09h-.05L8.24 4h-.6l-4 1.8a1 1 0 0 0-.64 1V19a1 1 0 0 0 .46.84A1 1 0 0 0 4 20a1 1 0 0 0 .41-.09L8 18.3l3.59 1.61h.05a.85.85 0 0 0 .72 0h.05L16 18.3l3.59 1.61A1 1 0 0 0 20 20a1 1 0 0 0 .54-.16A1 1 0 0 0 21 19V6.8a1 1 0 0 0-.59-.91ZM5 7.44l2-.89v10l-2 .89Zm4-.89l2 .89v10l-2-.89Zm4 .89l2-.89v10l-2 .89Zm6 10l-2-.89v-10l2 .89Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func MaximizeFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(maximizeFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMaximizeFill0"><g id="evaMaximizeFill1"><path id="evaMaximizeFill2" fill="currentColor" d="m20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8a7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM13 12h-1v1a1 1 0 0 1-2 0v-1H9a1 1 0 0 1 0-2h1V9a1 1 0 0 1 2 0v1h1a1 1 0 0 1 0 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func MaximizeOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(maximizeOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMaximizeOutline0"><g id="evaMaximizeOutline1"><g id="evaMaximizeOutline2" fill="currentColor"><path d="m20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8a7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM5 11a6 6 0 1 1 6 6a6 6 0 0 1-6-6Z"/><path d="M13 10h-1V9a1 1 0 0 0-2 0v1H9a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0v-1h1a1 1 0 0 0 0-2Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MenuArrowFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(menuArrowFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMenuArrowFill0"><g id="evaMenuArrowFill1"><g id="evaMenuArrowFill2" fill="currentColor"><path d="M20.05 11H5.91l1.3-1.29a1 1 0 0 0-1.42-1.42l-3 3a1 1 0 0 0 0 1.42l3 3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L5.91 13h14.14a1 1 0 0 0 .95-.95V12a1 1 0 0 0-.95-1Z"/><rect width="18" height="2" x="3" y="17" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="5" rx=".95" ry=".95"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MenuArrowOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(menuArrowOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMenuArrowOutline0"><g id="evaMenuArrowOutline1"><g id="evaMenuArrowOutline2" fill="currentColor"><path d="M20.05 11H5.91l1.3-1.29a1 1 0 0 0-1.42-1.42l-3 3a1 1 0 0 0 0 1.42l3 3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L5.91 13h14.14a1 1 0 0 0 .95-.95V12a1 1 0 0 0-.95-1Z"/><rect width="18" height="2" x="3" y="17" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="5" rx=".95" ry=".95"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MenuFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(menuFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMenuFill0"><g id="evaMenuFill1"><g id="evaMenuFill2" fill="currentColor"><rect width="18" height="2" x="3" y="11" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="16" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="6" rx=".95" ry=".95"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MenuOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(menuOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMenuOutline0"><g id="evaMenuOutline1"><g id="evaMenuOutline2" fill="currentColor"><rect width="18" height="2" x="3" y="11" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="16" rx=".95" ry=".95"/><rect width="18" height="2" x="3" y="6" rx=".95" ry=".95"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MenuTwoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(menuTwoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMenu2Fill0"><g id="evaMenu2Fill1"><g id="evaMenu2Fill2" fill="currentColor"><circle cx="4" cy="12" r="1"/><rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"/><rect width="18" height="2" x="3" y="16" rx=".94" ry=".94"/><rect width="18" height="2" x="3" y="6" rx=".94" ry=".94"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MenuTwoOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(menuTwoOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMenu2Outline0"><g id="evaMenu2Outline1"><g id="evaMenu2Outline2" fill="currentColor"><circle cx="4" cy="12" r="1"/><rect width="14" height="2" x="7" y="11" rx=".94" ry=".94"/><rect width="18" height="2" x="3" y="16" rx=".94" ry=".94"/><rect width="18" height="2" x="3" y="6" rx=".94" ry=".94"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MessageCircleFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(messageCircleFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMessageCircleFill0"><g id="evaMessageCircleFill1"><path id="evaMessageCircleFill2" fill="currentColor" d="M19.07 4.93a10 10 0 0 0-16.28 11a1.06 1.06 0 0 1 .09.64L2 20.8a1 1 0 0 0 .27.91A1 1 0 0 0 3 22h.2l4.28-.86a1.26 1.26 0 0 1 .64.09a10 10 0 0 0 11-16.28ZM8 13a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm4 0a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm4 0a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func MessageCircleOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(messageCircleOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMessageCircleOutline0"><g id="evaMessageCircleOutline1"><g id="evaMessageCircleOutline2" fill="currentColor"><circle cx="12" cy="12" r="1"/><circle cx="16" cy="12" r="1"/><circle cx="8" cy="12" r="1"/><path d="M19.07 4.93a10 10 0 0 0-16.28 11a1.06 1.06 0 0 1 .09.64L2 20.8a1 1 0 0 0 .27.91A1 1 0 0 0 3 22h.2l4.28-.86a1.26 1.26 0 0 1 .64.09a10 10 0 0 0 11-16.28Zm.83 8.36a8 8 0 0 1-11 6.08a3.26 3.26 0 0 0-1.25-.26a3.43 3.43 0 0 0-.56.05l-2.82.57l.57-2.82a3.09 3.09 0 0 0-.21-1.81a8 8 0 0 1 6.08-11a8 8 0 0 1 9.19 9.19Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MessageSquareFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(messageSquareFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMessageSquareFill0"><g id="evaMessageSquareFill1"><path id="evaMessageSquareFill2" fill="currentColor" d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3ZM8 12a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm4 0a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm4 0a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func MessageSquareOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(messageSquareOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMessageSquareOutline0"><g id="evaMessageSquareOutline1"><g id="evaMessageSquareOutline2" fill="currentColor"><circle cx="12" cy="11" r="1"/><circle cx="16" cy="11" r="1"/><circle cx="8" cy="11" r="1"/><path d="M19 3H5a3 3 0 0 0-3 3v15a1 1 0 0 0 .51.87A1 1 0 0 0 3 22a1 1 0 0 0 .51-.14L8 19.14a1 1 0 0 1 .55-.14H19a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H8.55a3 3 0 0 0-1.55.43l-3 1.8V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MicFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(micFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMicFill0"><g id="evaMicFill1"><g id="evaMicFill2" fill="currentColor"><path d="M12 15a4 4 0 0 0 4-4V6a4 4 0 0 0-8 0v5a4 4 0 0 0 4 4Z"/><path d="M19 11a1 1 0 0 0-2 0a5 5 0 0 1-10 0a1 1 0 0 0-2 0a7 7 0 0 0 6 6.92V20H8.89a.89.89 0 0 0-.89.89v.22a.89.89 0 0 0 .89.89h6.22a.89.89 0 0 0 .89-.89v-.22a.89.89 0 0 0-.89-.89H13v-2.08A7 7 0 0 0 19 11Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MicOffFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(micOffFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMicOffFill0"><g id="evaMicOffFill1"><g id="evaMicOffFill2" fill="currentColor"><path d="M15.58 12.75A4 4 0 0 0 16 11V6a4 4 0 0 0-7.92-.75M19 11a1 1 0 0 0-2 0a4.86 4.86 0 0 1-.69 2.48L17.78 15A7 7 0 0 0 19 11Zm-7 4h.16L8 10.83V11a4 4 0 0 0 4 4Zm8.71 4.29l-16-16a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/><path d="M15 20h-2v-2.08a7 7 0 0 0 1.65-.44l-1.6-1.6A4.57 4.57 0 0 1 12 16a5 5 0 0 1-5-5a1 1 0 0 0-2 0a7 7 0 0 0 6 6.92V20H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MicOffOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(micOffOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMicOffOutline0"><g id="evaMicOffOutline1"><g id="evaMicOffOutline2" fill="currentColor"><path d="M10 6a2 2 0 0 1 4 0v5a1 1 0 0 1 0 .16l1.6 1.59A4 4 0 0 0 16 11V6a4 4 0 0 0-7.92-.75L10 7.17Zm9 5a1 1 0 0 0-2 0a4.86 4.86 0 0 1-.69 2.48L17.78 15A7 7 0 0 0 19 11Zm-7 4h.16L8 10.83V11a4 4 0 0 0 4 4Zm8.71 4.29l-16-16a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/><path d="M15 20h-2v-2.08a7 7 0 0 0 1.65-.44l-1.6-1.6A4.57 4.57 0 0 1 12 16a5 5 0 0 1-5-5a1 1 0 0 0-2 0a7 7 0 0 0 6 6.92V20H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MicOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(micOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMicOutline0"><g id="evaMicOutline1"><g id="evaMicOutline2" fill="currentColor"><path d="M12 15a4 4 0 0 0 4-4V6a4 4 0 0 0-8 0v5a4 4 0 0 0 4 4Zm-2-9a2 2 0 0 1 4 0v5a2 2 0 0 1-4 0Z"/><path d="M19 11a1 1 0 0 0-2 0a5 5 0 0 1-10 0a1 1 0 0 0-2 0a7 7 0 0 0 6 6.92V20H8.89a.89.89 0 0 0-.89.89v.22a.89.89 0 0 0 .89.89h6.22a.89.89 0 0 0 .89-.89v-.22a.89.89 0 0 0-.89-.89H13v-2.08A7 7 0 0 0 19 11Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MinimizeFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(minimizeFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMinimizeFill0"><g id="evaMinimizeFill1"><path id="evaMinimizeFill2" fill="currentColor" d="m20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8a7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM13 12H9a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func MinimizeOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(minimizeOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMinimizeOutline0"><g id="evaMinimizeOutline1"><g id="evaMinimizeOutline2" fill="currentColor"><path d="m20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8a7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM5 11a6 6 0 1 1 6 6a6 6 0 0 1-6-6Z"/><path d="M13 10H9a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MinusCircleFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(minusCircleFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMinusCircleFill0"><g id="evaMinusCircleFill1"><path id="evaMinusCircleFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm3 11H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func MinusCircleOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(minusCircleOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMinusCircleOutline0"><g id="evaMinusCircleOutline1"><g id="evaMinusCircleOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M15 11H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MinusFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(minusFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMinusFill0"><g id="evaMinusFill1"><path id="evaMinusFill2" fill="currentColor" d="M19 13H5a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func MinusOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(minusOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMinusOutline0"><g id="evaMinusOutline1"><path id="evaMinusOutline2" fill="currentColor" d="M19 13H5a1 1 0 0 1 0-2h14a1 1 0 0 1 0 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func MinusSquareFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(minusSquareFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMinusSquareFill0"><g id="evaMinusSquareFill1"><path id="evaMinusSquareFill2" fill="currentColor" d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm-3 10H9a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func MinusSquareOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(minusSquareOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMinusSquareOutline0"><g id="evaMinusSquareOutline1"><g id="evaMinusSquareOutline2" fill="currentColor"><path d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1Z"/><path d="M15 11H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MonitorFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(monitorFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMonitorFill0"><g id="evaMonitorFill1"><path id="evaMonitorFill2" fill="currentColor" d="M19 3H5a3 3 0 0 0-3 3v5h20V6a3 3 0 0 0-3-3ZM2 14a3 3 0 0 0 3 3h6v2H7a1 1 0 0 0 0 2h10a1 1 0 0 0 0-2h-4v-2h6a3 3 0 0 0 3-3v-1H2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func MonitorOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(monitorOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMonitorOutline0"><g id="evaMonitorOutline1"><path id="evaMonitorOutline2" fill="currentColor" d="M19 3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h6v2H7a1 1 0 0 0 0 2h10a1 1 0 0 0 0-2h-4v-2h6a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func MoonFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(moonFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMoonFill0"><g id="evaMoonFill1"><path id="evaMoonFill2" fill="currentColor" d="M12.3 22h-.1a10.31 10.31 0 0 1-7.34-3.15a10.46 10.46 0 0 1-.26-14a10.13 10.13 0 0 1 4-2.74a1 1 0 0 1 1.06.22a1 1 0 0 1 .24 1a8.4 8.4 0 0 0 1.94 8.81a8.47 8.47 0 0 0 8.83 1.94a1 1 0 0 1 1.27 1.29A10.16 10.16 0 0 1 19.6 19a10.28 10.28 0 0 1-7.3 3Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func MoonOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(moonOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMoonOutline0"><g id="evaMoonOutline1"><path id="evaMoonOutline2" fill="currentColor" d="M12.3 22h-.1a10.31 10.31 0 0 1-7.34-3.15a10.46 10.46 0 0 1-.26-14a10.13 10.13 0 0 1 4-2.74a1 1 0 0 1 1.06.22a1 1 0 0 1 .24 1a8.4 8.4 0 0 0 1.94 8.81a8.47 8.47 0 0 0 8.83 1.94a1 1 0 0 1 1.27 1.29A10.16 10.16 0 0 1 19.6 19a10.28 10.28 0 0 1-7.3 3ZM7.46 4.92a7.93 7.93 0 0 0-1.37 1.22a8.44 8.44 0 0 0 .2 11.32A8.29 8.29 0 0 0 12.22 20h.08a8.34 8.34 0 0 0 6.78-3.49A10.37 10.37 0 0 1 7.46 4.92Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func MoreHorizontalFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(moreHorizontalFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMoreHorizontalFill0"><g id="evaMoreHorizontalFill1"><g id="evaMoreHorizontalFill2" fill="currentColor"><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="5" cy="12" r="2"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MoreHorizontalOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(moreHorizontalOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMoreHorizontalOutline0"><g id="evaMoreHorizontalOutline1"><g id="evaMoreHorizontalOutline2" fill="currentColor"><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="5" cy="12" r="2"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MoreVerticalFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(moreVerticalFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMoreVerticalFill0"><g id="evaMoreVerticalFill1"><g id="evaMoreVerticalFill2" fill="currentColor"><circle cx="12" cy="12" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="12" cy="19" r="2"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MoreVerticalOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(moreVerticalOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMoreVerticalOutline0"><g id="evaMoreVerticalOutline1"><g id="evaMoreVerticalOutline2" fill="currentColor"><circle cx="12" cy="12" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="12" cy="19" r="2"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func MoveFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(moveFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMoveFill0"><g id="evaMoveFill1"><path id="evaMoveFill2" fill="currentColor" d="m21.71 11.31l-3-3a1 1 0 0 0-1.42 1.42L18.58 11H13V5.41l1.29 1.3A1 1 0 0 0 15 7a1 1 0 0 0 .71-.29a1 1 0 0 0 0-1.42l-3-3A1 1 0 0 0 12 2a1 1 0 0 0-.7.29l-3 3a1 1 0 0 0 1.41 1.42L11 5.42V11H5.41l1.3-1.29a1 1 0 0 0-1.42-1.42l-3 3A1 1 0 0 0 2 12a1 1 0 0 0 .29.71l3 3A1 1 0 0 0 6 16a1 1 0 0 0 .71-.29a1 1 0 0 0 0-1.42L5.42 13H11v5.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3A1 1 0 0 0 12 22a1 1 0 0 0 .7-.29l3-3a1 1 0 0 0-1.42-1.42L13 18.58V13h5.59l-1.3 1.29a1 1 0 0 0 0 1.42A1 1 0 0 0 18 16a1 1 0 0 0 .71-.29l3-3A1 1 0 0 0 22 12a1 1 0 0 0-.29-.69Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func MoveOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(moveOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMoveOutline0"><g id="evaMoveOutline1"><path id="evaMoveOutline2" fill="currentColor" d="m21.71 11.31l-3-3a1 1 0 0 0-1.42 1.42L18.58 11H13V5.41l1.29 1.3A1 1 0 0 0 15 7a1 1 0 0 0 .71-.29a1 1 0 0 0 0-1.42l-3-3A1 1 0 0 0 12 2a1 1 0 0 0-.7.29l-3 3a1 1 0 0 0 1.41 1.42L11 5.42V11H5.41l1.3-1.29a1 1 0 0 0-1.42-1.42l-3 3A1 1 0 0 0 2 12a1 1 0 0 0 .29.71l3 3A1 1 0 0 0 6 16a1 1 0 0 0 .71-.29a1 1 0 0 0 0-1.42L5.42 13H11v5.59l-1.29-1.3a1 1 0 0 0-1.42 1.42l3 3A1 1 0 0 0 12 22a1 1 0 0 0 .7-.29l3-3a1 1 0 0 0-1.42-1.42L13 18.58V13h5.59l-1.3 1.29a1 1 0 0 0 0 1.42A1 1 0 0 0 18 16a1 1 0 0 0 .71-.29l3-3A1 1 0 0 0 22 12a1 1 0 0 0-.29-.69Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func MusicFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(musicFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMusicFill0"><g id="evaMusicFill1"><path id="evaMusicFill2" fill="currentColor" d="M19 15V4a1 1 0 0 0-.38-.78a1 1 0 0 0-.84-.2l-9 2A1 1 0 0 0 8 6v8.34a3.49 3.49 0 1 0 2 3.18a4.36 4.36 0 0 0 0-.52V6.8l7-1.55v7.09a3.49 3.49 0 1 0 2 3.17a4.57 4.57 0 0 0 0-.51Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func MusicOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(musicOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaMusicOutline0"><g id="evaMusicOutline1"><path id="evaMusicOutline2" fill="currentColor" d="M19 15V4a1 1 0 0 0-.38-.78a1 1 0 0 0-.84-.2l-9 2A1 1 0 0 0 8 6v8.34a3.49 3.49 0 1 0 2 3.18a4.36 4.36 0 0 0 0-.52V6.8l7-1.55v7.09a3.49 3.49 0 1 0 2 3.17a4.57 4.57 0 0 0 0-.51ZM6.54 19A1.49 1.49 0 1 1 8 17.21a1.53 1.53 0 0 1 0 .3A1.49 1.49 0 0 1 6.54 19Zm9-2A1.5 1.5 0 1 1 17 15.21a1.53 1.53 0 0 1 0 .3A1.5 1.5 0 0 1 15.51 17Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func NavigationFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(navigationFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaNavigationFill0"><g id="evaNavigationFill1"><path id="evaNavigationFill2" fill="currentColor" d="M20 20a.94.94 0 0 1-.55-.17l-6.9-4.56a1 1 0 0 0-1.1 0l-6.9 4.56a1 1 0 0 1-1.44-1.28l8-16a1 1 0 0 1 1.78 0l8 16a1 1 0 0 1-.23 1.2A1 1 0 0 1 20 20Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func NavigationOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(navigationOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaNavigationOutline0"><g id="evaNavigationOutline1"><path id="evaNavigationOutline2" fill="currentColor" d="M20 20a.94.94 0 0 1-.55-.17L12 14.9l-7.45 4.93a1 1 0 0 1-1.44-1.28l8-16a1 1 0 0 1 1.78 0l8 16a1 1 0 0 1-.23 1.2A1 1 0 0 1 20 20Zm-8-7.3a1 1 0 0 1 .55.17l4.88 3.23L12 5.24L6.57 16.1l4.88-3.23a1 1 0 0 1 .55-.17Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func NavigationTwoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(navigationTwoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaNavigation2Fill0"><g id="evaNavigation2Fill1"><path id="evaNavigation2Fill2" fill="currentColor" d="M13.67 22h-.06a1 1 0 0 1-.92-.8l-1.54-7.57a1 1 0 0 0-.78-.78L2.8 11.31a1 1 0 0 1-.12-1.93l16-5.33A1 1 0 0 1 20 5.32l-5.33 16a1 1 0 0 1-1 .68Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func NavigationTwoOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(navigationTwoOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaNavigation2Outline0"><g id="evaNavigation2Outline1"><path id="evaNavigation2Outline2" fill="currentColor" d="M13.67 22h-.06a1 1 0 0 1-.92-.8L11 13l-8.2-1.69a1 1 0 0 1-.12-1.93l16-5.33A1 1 0 0 1 20 5.32l-5.33 16a1 1 0 0 1-1 .68Zm-6.8-11.9l5.19 1.06a1 1 0 0 1 .79.78l1.05 5.19l3.52-10.55Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func NpmFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(npmFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaNpmFill0"><g id="evaNpmFill1"><path id="evaNpmFill2" fill="currentColor" d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h7V11h4v10h1a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func NpmOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(npmOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaNpmOutline0"><g id="evaNpmOutline1"><g id="evaNpmOutline2" fill="currentColor"><path d="M18 21H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3ZM6 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1Z"/><path d="M12 9h4v10h-4z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func OptionsFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(optionsFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaOptionsFill0"><g id="evaOptionsFill1"><path id="evaOptionsFill2" fill="currentColor" d="M7 14.18V3a1 1 0 0 0-2 0v11.18a3 3 0 0 0 0 5.64V21a1 1 0 0 0 2 0v-1.18a3 3 0 0 0 0-5.64ZM21 13a3 3 0 0 0-2-2.82V3a1 1 0 0 0-2 0v7.18a3 3 0 0 0 0 5.64V21a1 1 0 0 0 2 0v-5.18A3 3 0 0 0 21 13Zm-6-8a3 3 0 1 0-4 2.82V21a1 1 0 0 0 2 0V7.82A3 3 0 0 0 15 5Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func OptionsOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(optionsOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaOptionsOutline0"><g id="evaOptionsOutline1"><path id="evaOptionsOutline2" fill="currentColor" d="M7 14.18V3a1 1 0 0 0-2 0v11.18a3 3 0 0 0 0 5.64V21a1 1 0 0 0 2 0v-1.18a3 3 0 0 0 0-5.64ZM6 18a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm15-5a3 3 0 0 0-2-2.82V3a1 1 0 0 0-2 0v7.18a3 3 0 0 0 0 5.64V21a1 1 0 0 0 2 0v-5.18A3 3 0 0 0 21 13Zm-3 1a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm-3-9a3 3 0 1 0-4 2.82V21a1 1 0 0 0 2 0V7.82A3 3 0 0 0 15 5Zm-3 1a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func OptionsTwoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(optionsTwoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaOptions2Fill0"><g id="evaOptions2Fill1"><path id="evaOptions2Fill2" fill="currentColor" d="M19 9a3 3 0 0 0-2.82 2H3a1 1 0 0 0 0 2h13.18A3 3 0 1 0 19 9ZM3 7h1.18a3 3 0 0 0 5.64 0H21a1 1 0 0 0 0-2H9.82a3 3 0 0 0-5.64 0H3a1 1 0 0 0 0 2Zm18 10h-7.18a3 3 0 0 0-5.64 0H3a1 1 0 0 0 0 2h5.18a3 3 0 0 0 5.64 0H21a1 1 0 0 0 0-2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func OptionsTwoOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(optionsTwoOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaOptions2Outline0"><g id="evaOptions2Outline1"><path id="evaOptions2Outline2" fill="currentColor" d="M19 9a3 3 0 0 0-2.82 2H3a1 1 0 0 0 0 2h13.18A3 3 0 1 0 19 9Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1ZM3 7h1.18a3 3 0 0 0 5.64 0H21a1 1 0 0 0 0-2H9.82a3 3 0 0 0-5.64 0H3a1 1 0 0 0 0 2Zm4-2a1 1 0 1 1-1 1a1 1 0 0 1 1-1Zm14 12h-7.18a3 3 0 0 0-5.64 0H3a1 1 0 0 0 0 2h5.18a3 3 0 0 0 5.64 0H21a1 1 0 0 0 0-2Zm-10 2a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PantoneFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(pantoneFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPantoneFill0"><g id="evaPantoneFill1"><path id="evaPantoneFill2" fill="currentColor" d="M20 13.18h-2.7l-1.86 2L11.88 19l-1.41 1.52L10 21h10a1 1 0 0 0 1-1v-5.82a1 1 0 0 0-1-1ZM18.19 9.3l-4.14-3.86a.89.89 0 0 0-.71-.26a1 1 0 0 0-.7.31l-.82.89v10.71a5.23 5.23 0 0 1-.06.57l6.48-6.95a1 1 0 0 0-.05-1.41ZM10.82 4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v13.09a3.91 3.91 0 0 0 7.82 0Zm-2 13.09a1.91 1.91 0 0 1-3.82 0V15h3.82Zm0-4.09H5v-3h3.82Zm0-5H5V5h3.82Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PantoneOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(pantoneOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPantoneOutline0"><g id="evaPantoneOutline1"><path id="evaPantoneOutline2" fill="currentColor" d="M20 13.18h-4.06l2.3-2.47a1 1 0 0 0 0-1.41l-4.19-3.86a.93.93 0 0 0-.71-.26a1 1 0 0 0-.7.31l-1.82 2V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v13.09A3.91 3.91 0 0 0 6.91 21H20a1 1 0 0 0 1-1v-5.82a1 1 0 0 0-1-1Zm-6.58-5.59l2.67 2.49l-5.27 5.66v-5.36ZM8.82 10v3H5v-3Zm0-5v3H5V5ZM5 17.09V15h3.82v2.09a1.91 1.91 0 0 1-3.82 0ZM19 19h-8.49l3.56-3.82H19Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PaperPlaneFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(paperPlaneFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPaperPlaneFill0"><g id="evaPaperPlaneFill1"><path id="evaPaperPlaneFill2" fill="currentColor" d="M21 4a1.31 1.31 0 0 0-.06-.27v-.09a1 1 0 0 0-.2-.3a1 1 0 0 0-.29-.19h-.09a.86.86 0 0 0-.31-.15H20a1 1 0 0 0-.3 0l-18 6a1 1 0 0 0 0 1.9l8.53 2.84l2.84 8.53a1 1 0 0 0 1.9 0l6-18A1 1 0 0 0 21 4Zm-4.7 2.29l-5.57 5.57L5.16 10ZM14 18.84l-1.86-5.57l5.57-5.57Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PaperPlaneOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(paperPlaneOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPaperPlaneOutline0"><g id="evaPaperPlaneOutline1"><path id="evaPaperPlaneOutline2" fill="currentColor" d="M21 4a1.31 1.31 0 0 0-.06-.27v-.09a1 1 0 0 0-.2-.3a1 1 0 0 0-.29-.19h-.09a.86.86 0 0 0-.31-.15H20a1 1 0 0 0-.3 0l-18 6a1 1 0 0 0 0 1.9l8.53 2.84l2.84 8.53a1 1 0 0 0 1.9 0l6-18A1 1 0 0 0 21 4Zm-4.7 2.29l-5.57 5.57L5.16 10ZM14 18.84l-1.86-5.57l5.57-5.57Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PauseCircleFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(pauseCircleFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPauseCircleFill0"><g id="evaPauseCircleFill1"><path id="evaPauseCircleFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm-2 13a1 1 0 0 1-2 0V9a1 1 0 0 1 2 0Zm6 0a1 1 0 0 1-2 0V9a1 1 0 0 1 2 0Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PauseCircleOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(pauseCircleOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPauseCircleOutline0"><g id="evaPauseCircleOutline1"><g id="evaPauseCircleOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M15 8a1 1 0 0 0-1 1v6a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1ZM9 8a1 1 0 0 0-1 1v6a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func PeopleFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(peopleFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPeopleFill0"><g id="evaPeopleFill1"><path id="evaPeopleFill2" fill="currentColor" d="M9 11a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm8 2a3 3 0 1 0-3-3a3 3 0 0 0 3 3Zm4 7a1 1 0 0 0 1-1a5 5 0 0 0-8.06-3.95A7 7 0 0 0 2 20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1"/></g></g>`), g.Group(children),
+	)
 }
 
 func PeopleOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(peopleOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPeopleOutline0"><g id="evaPeopleOutline1"><path id="evaPeopleOutline2" fill="currentColor" d="M9 11a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm0-6a2 2 0 1 1-2 2a2 2 0 0 1 2-2Zm8 8a3 3 0 1 0-3-3a3 3 0 0 0 3 3Zm0-4a1 1 0 1 1-1 1a1 1 0 0 1 1-1Zm0 5a5 5 0 0 0-3.06 1.05A7 7 0 0 0 2 20a1 1 0 0 0 2 0a5 5 0 0 1 10 0a1 1 0 0 0 2 0a6.9 6.9 0 0 0-.86-3.35A3 3 0 0 1 20 19a1 1 0 0 0 2 0a5 5 0 0 0-5-5Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PercentFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(percentFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPercentFill0"><g id="evaPercentFill1"><path id="evaPercentFill2" fill="currentColor" d="M8 11a3.5 3.5 0 1 0-3.5-3.5A3.5 3.5 0 0 0 8 11Zm0-5a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 8 6Zm8 8a3.5 3.5 0 1 0 3.5 3.5A3.5 3.5 0 0 0 16 14Zm0 5a1.5 1.5 0 1 1 1.5-1.5A1.5 1.5 0 0 1 16 19Zm3.74-14.74a.89.89 0 0 0-1.26 0L4.26 18.48a.91.91 0 0 0-.26.63a.89.89 0 0 0 1.52.63L19.74 5.52a.89.89 0 0 0 0-1.26Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PercentOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(percentOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPercentOutline0"><g id="evaPercentOutline1"><path id="evaPercentOutline2" fill="currentColor" d="M8 11a3.5 3.5 0 1 0-3.5-3.5A3.5 3.5 0 0 0 8 11Zm0-5a1.5 1.5 0 1 1-1.5 1.5A1.5 1.5 0 0 1 8 6Zm8 8a3.5 3.5 0 1 0 3.5 3.5A3.5 3.5 0 0 0 16 14Zm0 5a1.5 1.5 0 1 1 1.5-1.5A1.5 1.5 0 0 1 16 19Zm3.74-14.74a.89.89 0 0 0-1.26 0L4.26 18.48a.91.91 0 0 0-.26.63a.89.89 0 0 0 1.52.63L19.74 5.52a.89.89 0 0 0 0-1.26Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PersonAddFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(personAddFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPersonAddFill0"><g id="evaPersonAddFill1"><path id="evaPersonAddFill2" fill="currentColor" d="M21 6h-1V5a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0V8h1a1 1 0 0 0 0-2Zm-11 5a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm6 10a1 1 0 0 0 1-1a7 7 0 0 0-14 0a1 1 0 0 0 1 1"/></g></g>`), g.Group(children),
+	)
 }
 
 func PersonAddOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(personAddOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPersonAddOutline0"><g id="evaPersonAddOutline1"><path id="evaPersonAddOutline2" fill="currentColor" d="M21 6h-1V5a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0V8h1a1 1 0 0 0 0-2Zm-11 5a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm0-6a2 2 0 1 1-2 2a2 2 0 0 1 2-2Zm0 8a7 7 0 0 0-7 7a1 1 0 0 0 2 0a5 5 0 0 1 10 0a1 1 0 0 0 2 0a7 7 0 0 0-7-7Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PersonDeleteFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(personDeleteFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPersonDeleteFill0"><g id="evaPersonDeleteFill1"><path id="evaPersonDeleteFill2" fill="currentColor" d="m20.47 7.5l.73-.73a1 1 0 0 0-1.47-1.47L19 6l-.73-.73a1 1 0 0 0-1.47 1.5l.73.73l-.73.73a1 1 0 0 0 1.47 1.47L19 9l.73.73a1 1 0 0 0 1.47-1.5ZM10 11a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm6 10a1 1 0 0 0 1-1a7 7 0 0 0-14 0a1 1 0 0 0 1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PersonDeleteOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(personDeleteOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPersonDeleteOutline0"><g id="evaPersonDeleteOutline1"><path id="evaPersonDeleteOutline2" fill="currentColor" d="m20.47 7.5l.73-.73a1 1 0 0 0-1.47-1.47L19 6l-.73-.73a1 1 0 0 0-1.47 1.5l.73.73l-.73.73a1 1 0 0 0 1.47 1.47L19 9l.73.73a1 1 0 0 0 1.47-1.5ZM10 11a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm0-6a2 2 0 1 1-2 2a2 2 0 0 1 2-2Zm0 8a7 7 0 0 0-7 7a1 1 0 0 0 2 0a5 5 0 0 1 10 0a1 1 0 0 0 2 0a7 7 0 0 0-7-7Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PersonDoneFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(personDoneFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPersonDoneFill0"><g id="evaPersonDoneFill1"><path id="evaPersonDoneFill2" fill="currentColor" d="M21.66 4.25a1 1 0 0 0-1.41.09l-1.87 2.15l-.63-.71a1 1 0 0 0-1.5 1.33l1.39 1.56a1 1 0 0 0 .75.33a1 1 0 0 0 .74-.34l2.61-3a1 1 0 0 0-.08-1.41ZM10 11a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm6 10a1 1 0 0 0 1-1a7 7 0 0 0-14 0a1 1 0 0 0 1 1"/></g></g>`), g.Group(children),
+	)
 }
 
 func PersonDoneOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(personDoneOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPersonDoneOutline0"><g id="evaPersonDoneOutline1"><path id="evaPersonDoneOutline2" fill="currentColor" d="M21.66 4.25a1 1 0 0 0-1.41.09l-1.87 2.15l-.63-.71a1 1 0 0 0-1.5 1.33l1.39 1.56a1 1 0 0 0 .75.33a1 1 0 0 0 .74-.34l2.61-3a1 1 0 0 0-.08-1.41ZM10 11a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm0-6a2 2 0 1 1-2 2a2 2 0 0 1 2-2Zm0 8a7 7 0 0 0-7 7a1 1 0 0 0 2 0a5 5 0 0 1 10 0a1 1 0 0 0 2 0a7 7 0 0 0-7-7Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PersonFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(personFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPersonFill0"><g id="evaPersonFill1"><path id="evaPersonFill2" fill="currentColor" d="M12 11a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm6 10a1 1 0 0 0 1-1a7 7 0 0 0-14 0a1 1 0 0 0 1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PersonOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(personOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPersonOutline0"><g id="evaPersonOutline1"><path id="evaPersonOutline2" fill="currentColor" d="M12 11a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm0-6a2 2 0 1 1-2 2a2 2 0 0 1 2-2Zm0 8a7 7 0 0 0-7 7a1 1 0 0 0 2 0a5 5 0 0 1 10 0a1 1 0 0 0 2 0a7 7 0 0 0-7-7Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PersonRemoveFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(personRemoveFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPersonRemoveFill0"><g id="evaPersonRemoveFill1"><path id="evaPersonRemoveFill2" fill="currentColor" d="M21 6h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Zm-11 5a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm6 10a1 1 0 0 0 1-1a7 7 0 0 0-14 0a1 1 0 0 0 1 1"/></g></g>`), g.Group(children),
+	)
 }
 
 func PersonRemoveOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(personRemoveOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPersonRemoveOutline0"><g id="evaPersonRemoveOutline1"><path id="evaPersonRemoveOutline2" fill="currentColor" d="M21 6h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2Zm-11 5a4 4 0 1 0-4-4a4 4 0 0 0 4 4Zm0-6a2 2 0 1 1-2 2a2 2 0 0 1 2-2Zm0 8a7 7 0 0 0-7 7a1 1 0 0 0 2 0a5 5 0 0 1 10 0a1 1 0 0 0 2 0a7 7 0 0 0-7-7Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PhoneCallFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(phoneCallFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPhoneCallFill0"><g id="evaPhoneCallFill1"><g id="evaPhoneCallFill2" fill="currentColor"><path d="M13 8a3 3 0 0 1 3 3a1 1 0 0 0 2 0a5 5 0 0 0-5-5a1 1 0 0 0 0 2Z"/><path d="M13 4a7 7 0 0 1 7 7a1 1 0 0 0 2 0a9 9 0 0 0-9-9a1 1 0 0 0 0 2Zm8.75 11.91a1 1 0 0 0-.72-.65l-6-1.37a1 1 0 0 0-.92.26c-.14.13-.15.14-.8 1.38a9.91 9.91 0 0 1-4.87-4.89C9.71 10 9.72 10 9.85 9.85a1 1 0 0 0 .26-.92L8.74 3a1 1 0 0 0-.65-.72a3.79 3.79 0 0 0-.72-.18A3.94 3.94 0 0 0 6.6 2A4.6 4.6 0 0 0 2 6.6A15.42 15.42 0 0 0 17.4 22a4.6 4.6 0 0 0 4.6-4.6a4.77 4.77 0 0 0-.06-.76a4.34 4.34 0 0 0-.19-.73Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func PhoneCallOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(phoneCallOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPhoneCallOutline0"><g id="evaPhoneCallOutline1"><g id="evaPhoneCallOutline2" fill="currentColor"><path d="M13 8a3 3 0 0 1 3 3a1 1 0 0 0 2 0a5 5 0 0 0-5-5a1 1 0 0 0 0 2Z"/><path d="M13 4a7 7 0 0 1 7 7a1 1 0 0 0 2 0a9 9 0 0 0-9-9a1 1 0 0 0 0 2Zm8.75 11.91a1 1 0 0 0-.72-.65l-6-1.37a1 1 0 0 0-.92.26c-.14.13-.15.14-.8 1.38a9.91 9.91 0 0 1-4.87-4.89C9.71 10 9.72 10 9.85 9.85a1 1 0 0 0 .26-.92L8.74 3a1 1 0 0 0-.65-.72a3.79 3.79 0 0 0-.72-.18A3.94 3.94 0 0 0 6.6 2A4.6 4.6 0 0 0 2 6.6A15.42 15.42 0 0 0 17.4 22a4.6 4.6 0 0 0 4.6-4.6a4.77 4.77 0 0 0-.06-.76a4.34 4.34 0 0 0-.19-.73ZM17.4 20A13.41 13.41 0 0 1 4 6.6A2.61 2.61 0 0 1 6.6 4h.33L8 8.64l-.54.28c-.86.45-1.54.81-1.18 1.59a11.85 11.85 0 0 0 7.18 7.21c.84.34 1.17-.29 1.62-1.16l.29-.55L20 17.07v.33a2.61 2.61 0 0 1-2.6 2.6Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func PhoneFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(phoneFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPhoneFill0"><g id="evaPhoneFill1"><path id="evaPhoneFill2" fill="currentColor" d="M17.4 22A15.42 15.42 0 0 1 2 6.6A4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07a3.79 3.79 0 0 1 .72.18a1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65a4.34 4.34 0 0 1 .19.73a4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PhoneMissedFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(phoneMissedFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPhoneMissedFill0"><g id="evaPhoneMissedFill1"><path id="evaPhoneMissedFill2" fill="currentColor" d="M21.94 16.64a4.34 4.34 0 0 0-.19-.73a1 1 0 0 0-.72-.65l-6-1.37a1 1 0 0 0-.92.26c-.14.13-.15.14-.8 1.38a10 10 0 0 1-4.88-4.89C9.71 10 9.72 10 9.85 9.85a1 1 0 0 0 .26-.92L8.74 3a1 1 0 0 0-.65-.72a3.79 3.79 0 0 0-.72-.18A3.94 3.94 0 0 0 6.6 2A4.6 4.6 0 0 0 2 6.6A15.42 15.42 0 0 0 17.4 22a4.6 4.6 0 0 0 4.6-4.6a4.77 4.77 0 0 0-.06-.76ZM15.8 8.7a1.05 1.05 0 0 0 1.47 0L18 8l.73.73a1 1 0 0 0 1.47-1.5l-.73-.73l.73-.73a1 1 0 0 0-1.47-1.47L18 5l-.73-.73a1 1 0 0 0-1.47 1.5l.73.73l-.73.73a1.05 1.05 0 0 0 0 1.47Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PhoneMissedOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(phoneMissedOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPhoneMissedOutline0"><g id="evaPhoneMissedOutline1"><path id="evaPhoneMissedOutline2" fill="currentColor" d="M21.94 16.64a4.34 4.34 0 0 0-.19-.73a1 1 0 0 0-.72-.65l-6-1.37a1 1 0 0 0-.92.26c-.14.13-.15.14-.8 1.38a10 10 0 0 1-4.88-4.89C9.71 10 9.72 10 9.85 9.85a1 1 0 0 0 .26-.92L8.74 3a1 1 0 0 0-.65-.72a3.79 3.79 0 0 0-.72-.18A3.94 3.94 0 0 0 6.6 2A4.6 4.6 0 0 0 2 6.6A15.42 15.42 0 0 0 17.4 22a4.6 4.6 0 0 0 4.6-4.6a4.77 4.77 0 0 0-.06-.76ZM17.4 20A13.41 13.41 0 0 1 4 6.6A2.61 2.61 0 0 1 6.6 4h.33L8 8.64l-.55.29c-.87.45-1.5.78-1.17 1.58a11.85 11.85 0 0 0 7.18 7.21c.84.34 1.17-.29 1.62-1.16l.29-.55L20 17.07v.33a2.61 2.61 0 0 1-2.6 2.6ZM15.8 8.7a1.05 1.05 0 0 0 1.47 0L18 8l.73.73a1 1 0 0 0 1.47-1.5l-.73-.73l.73-.73a1 1 0 0 0-1.47-1.47L18 5l-.73-.73a1 1 0 0 0-1.47 1.5l.73.73l-.73.73a1.05 1.05 0 0 0 0 1.47Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PhoneOffFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(phoneOffFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPhoneOffFill0"><g id="evaPhoneOffFill1"><path id="evaPhoneOffFill2" fill="currentColor" d="M9.27 12.06a10.37 10.37 0 0 1-.8-1.42C9.71 10 9.72 10 9.85 9.85a1 1 0 0 0 .26-.92L8.74 3a1 1 0 0 0-.65-.72a3.79 3.79 0 0 0-.72-.18A3.94 3.94 0 0 0 6.6 2A4.6 4.6 0 0 0 2 6.6a15.33 15.33 0 0 0 3.27 9.46Zm12.67 4.58a4.34 4.34 0 0 0-.19-.73a1 1 0 0 0-.72-.65l-6-1.37a1 1 0 0 0-.92.26c-.14.13-.15.14-.8 1.38a10.88 10.88 0 0 1-1.41-.8l-4 4A15.33 15.33 0 0 0 17.4 22a4.6 4.6 0 0 0 4.6-4.6a4.77 4.77 0 0 0-.06-.76Zm-2.2-12.38a.89.89 0 0 0-1.26 0L4.26 18.48a.91.91 0 0 0-.26.63a.89.89 0 0 0 1.52.63L19.74 5.52a.89.89 0 0 0 0-1.26Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PhoneOffOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(phoneOffOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPhoneOffOutline0"><g id="evaPhoneOffOutline1"><path id="evaPhoneOffOutline2" fill="currentColor" d="M19.74 4.26a.89.89 0 0 0-1.26 0L4.26 18.48a.91.91 0 0 0-.26.63a.89.89 0 0 0 1.52.63L19.74 5.52a.89.89 0 0 0 0-1.26ZM6.7 14.63A13.29 13.29 0 0 1 4 6.6A2.61 2.61 0 0 1 6.6 4h.33L8 8.64l-.55.29c-.87.45-1.5.78-1.17 1.58a11.57 11.57 0 0 0 1.57 3l1.43-1.42a10.37 10.37 0 0 1-.8-1.42C9.71 10 9.72 10 9.85 9.85a1 1 0 0 0 .26-.92L8.74 3a1 1 0 0 0-.65-.72a3.79 3.79 0 0 0-.72-.18A3.94 3.94 0 0 0 6.6 2A4.6 4.6 0 0 0 2 6.6a15.33 15.33 0 0 0 3.27 9.46Zm15.24 2.01a4.34 4.34 0 0 0-.19-.73a1 1 0 0 0-.72-.65l-6-1.37a1 1 0 0 0-.92.26c-.14.13-.15.14-.8 1.38a10.88 10.88 0 0 1-1.41-.8l-1.43 1.43a11.52 11.52 0 0 0 2.94 1.56c.84.34 1.17-.29 1.62-1.16l.29-.55L20 17.07v.33a2.61 2.61 0 0 1-2.6 2.6a13.29 13.29 0 0 1-8-2.7l-1.46 1.43A15.33 15.33 0 0 0 17.4 22a4.6 4.6 0 0 0 4.6-4.6a4.77 4.77 0 0 0-.06-.76Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PhoneOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(phoneOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPhoneOutline0"><g id="evaPhoneOutline1"><path id="evaPhoneOutline2" fill="currentColor" d="M17.4 22A15.42 15.42 0 0 1 2 6.6A4.6 4.6 0 0 1 6.6 2a3.94 3.94 0 0 1 .77.07a3.79 3.79 0 0 1 .72.18a1 1 0 0 1 .65.75l1.37 6a1 1 0 0 1-.26.92c-.13.14-.14.15-1.37.79a9.91 9.91 0 0 0 4.87 4.89c.65-1.24.66-1.25.8-1.38a1 1 0 0 1 .92-.26l6 1.37a1 1 0 0 1 .72.65a4.34 4.34 0 0 1 .19.73a4.77 4.77 0 0 1 .06.76A4.6 4.6 0 0 1 17.4 22ZM6.6 4A2.61 2.61 0 0 0 4 6.6A13.41 13.41 0 0 0 17.4 20a2.61 2.61 0 0 0 2.6-2.6v-.33L15.36 16l-.29.55c-.45.87-.78 1.5-1.62 1.16a11.85 11.85 0 0 1-7.18-7.21c-.36-.78.32-1.14 1.18-1.59L8 8.64L6.93 4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PieChartFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(pieChartFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPieChartFill0"><g id="evaPieChartFill1"><g id="evaPieChartFill2" fill="currentColor"><path d="M14.5 10.33h6.67A.83.83 0 0 0 22 9.5A7.5 7.5 0 0 0 14.5 2a.83.83 0 0 0-.83.83V9.5a.83.83 0 0 0 .83.83Z"/><path d="M21.08 12h-8.15a.91.91 0 0 1-.91-.91V2.92A.92.92 0 0 0 11 2a10 10 0 1 0 11 11a.92.92 0 0 0-.92-1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func PieChartOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(pieChartOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPieChartOutline0"><g id="evaPieChartOutline1"><g id="evaPieChartOutline2" fill="currentColor"><path d="M13 2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1a9 9 0 0 0-9-9Zm1 8V4.07A7 7 0 0 1 19.93 10Z"/><path d="M20.82 14.06a1 1 0 0 0-1.28.61A8 8 0 1 1 9.33 4.46a1 1 0 0 0-.66-1.89a10 10 0 1 0 12.76 12.76a1 1 0 0 0-.61-1.27Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func PieChartTwoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(pieChartTwoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPieChart2Fill0"><g id="evaPieChart2Fill1"><g id="evaPieChart2Fill2" fill="currentColor"><path d="M14.5 10.33h6.67A.83.83 0 0 0 22 9.5A7.5 7.5 0 0 0 14.5 2a.83.83 0 0 0-.83.83V9.5a.83.83 0 0 0 .83.83Zm.83-6.6a5.83 5.83 0 0 1 4.94 4.94h-4.94Z"/><path d="M21.08 12h-8.15a.91.91 0 0 1-.91-.91V2.92A.92.92 0 0 0 11 2a10 10 0 1 0 11 11a.92.92 0 0 0-.92-1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func PinFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(pinFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPinFill0"><g id="evaPinFill1"><g id="evaPinFill2" fill="currentColor"><circle cx="12" cy="9.5" r="1.5"/><path d="M12 2a8 8 0 0 0-8 7.92c0 5.48 7.05 11.58 7.35 11.84a1 1 0 0 0 1.3 0C13 21.5 20 15.4 20 9.92A8 8 0 0 0 12 2Zm0 11a3.5 3.5 0 1 1 3.5-3.5A3.5 3.5 0 0 1 12 13Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func PinOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(pinOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPinOutline0"><g id="evaPinOutline1"><g id="evaPinOutline2" fill="currentColor"><path d="M12 2a8 8 0 0 0-8 7.92c0 5.48 7.05 11.58 7.35 11.84a1 1 0 0 0 1.3 0C13 21.5 20 15.4 20 9.92A8 8 0 0 0 12 2Zm0 17.65c-1.67-1.59-6-6-6-9.73a6 6 0 0 1 12 0c0 3.7-4.33 8.14-6 9.73Z"/><path d="M12 6a3.5 3.5 0 1 0 3.5 3.5A3.5 3.5 0 0 0 12 6Zm0 5a1.5 1.5 0 1 1 1.5-1.5A1.5 1.5 0 0 1 12 11Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func PlayCircleFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(playCircleFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPlayCircleFill0"><g id="evaPlayCircleFill1"><g id="evaPlayCircleFill2" fill="currentColor"><path d="m11.5 14.6l2.81-2.6l-2.81-2.6v5.2z"/><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm4 11.18l-3.64 3.37a1.74 1.74 0 0 1-1.16.45a1.68 1.68 0 0 1-.69-.15a1.6 1.6 0 0 1-1-1.48V8.63a1.6 1.6 0 0 1 1-1.48a1.7 1.7 0 0 1 1.85.3L16 10.82a1.6 1.6 0 0 1 0 2.36Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func PlayCircleOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(playCircleOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPlayCircleOutline0"><g id="evaPlayCircleOutline1"><g id="evaPlayCircleOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M12.34 7.45a1.7 1.7 0 0 0-1.85-.3a1.6 1.6 0 0 0-1 1.48v6.74a1.6 1.6 0 0 0 1 1.48a1.68 1.68 0 0 0 .69.15a1.74 1.74 0 0 0 1.16-.45L16 13.18a1.6 1.6 0 0 0 0-2.36Zm-.84 7.15V9.4l2.81 2.6Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func PlusCircleFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(plusCircleFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPlusCircleFill0"><g id="evaPlusCircleFill1"><path id="evaPlusCircleFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm3 11h-2v2a1 1 0 0 1-2 0v-2H9a1 1 0 0 1 0-2h2V9a1 1 0 0 1 2 0v2h2a1 1 0 0 1 0 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PlusCircleOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(plusCircleOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPlusCircleOutline0"><g id="evaPlusCircleOutline1"><g id="evaPlusCircleOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M15 11h-2V9a1 1 0 0 0-2 0v2H9a1 1 0 0 0 0 2h2v2a1 1 0 0 0 2 0v-2h2a1 1 0 0 0 0-2Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func PlusFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(plusFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPlusFill0"><g id="evaPlusFill1"><path id="evaPlusFill2" fill="currentColor" d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PlusOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(plusOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPlusOutline0"><g id="evaPlusOutline1"><path id="evaPlusOutline2" fill="currentColor" d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PlusSquareFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(plusSquareFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPlusSquareFill0"><g id="evaPlusSquareFill1"><path id="evaPlusSquareFill2" fill="currentColor" d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm-3 10h-2v2a1 1 0 0 1-2 0v-2H9a1 1 0 0 1 0-2h2V9a1 1 0 0 1 2 0v2h2a1 1 0 0 1 0 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PlusSquareOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(plusSquareOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPlusSquareOutline0"><g id="evaPlusSquareOutline1"><g id="evaPlusSquareOutline2" fill="currentColor"><path d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1Z"/><path d="M15 11h-2V9a1 1 0 0 0-2 0v2H9a1 1 0 0 0 0 2h2v2a1 1 0 0 0 2 0v-2h2a1 1 0 0 0 0-2Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func PowerFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(powerFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPowerFill0"><g id="evaPowerFill1"><g id="evaPowerFill2" fill="currentColor"><path d="M12 13a1 1 0 0 0 1-1V2a1 1 0 0 0-2 0v10a1 1 0 0 0 1 1Z"/><path d="M16.59 3.11a1 1 0 0 0-.92 1.78a8 8 0 1 1-7.34 0a1 1 0 1 0-.92-1.78a10 10 0 1 0 9.18 0Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func PowerOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(powerOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPowerOutline0"><g id="evaPowerOutline1"><g id="evaPowerOutline2" fill="currentColor"><path d="M12 13a1 1 0 0 0 1-1V2a1 1 0 0 0-2 0v10a1 1 0 0 0 1 1Z"/><path d="M16.59 3.11a1 1 0 0 0-.92 1.78a8 8 0 1 1-7.34 0a1 1 0 1 0-.92-1.78a10 10 0 1 0 9.18 0Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func PricetagsFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(pricetagsFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPricetagsFill0"><g id="evaPricetagsFill1"><path id="evaPricetagsFill2" fill="currentColor" d="m21.47 11.58l-6.42-6.41a1 1 0 0 0-.61-.29L5.09 4a1 1 0 0 0-.8.29a1 1 0 0 0-.29.8l.88 9.35a1 1 0 0 0 .29.61l6.41 6.42a1.84 1.84 0 0 0 1.29.53a1.82 1.82 0 0 0 1.28-.53l7.32-7.32a1.82 1.82 0 0 0 0-2.57Zm-9.91 0a1.5 1.5 0 1 1 0-2.12a1.49 1.49 0 0 1 0 2.1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PricetagsOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(pricetagsOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPricetagsOutline0"><g id="evaPricetagsOutline1"><g id="evaPricetagsOutline2" fill="currentColor"><path d="M12.87 22a1.84 1.84 0 0 1-1.29-.53l-6.41-6.42a1 1 0 0 1-.29-.61L4 5.09a1 1 0 0 1 .29-.8a1 1 0 0 1 .8-.29l9.35.88a1 1 0 0 1 .61.29l6.42 6.41a1.82 1.82 0 0 1 0 2.57l-7.32 7.32a1.82 1.82 0 0 1-1.28.53Zm-6-8.11l6 6l7.05-7.05l-6-6l-7.81-.73Z"/><circle cx="10.5" cy="10.5" r="1.5"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func PrinterFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(printerFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPrinterFill0"><g id="evaPrinterFill1"><path id="evaPrinterFill2" fill="currentColor" d="M19.36 7H18V5a1.92 1.92 0 0 0-1.83-2H7.83A1.92 1.92 0 0 0 6 5v2H4.64A2.66 2.66 0 0 0 2 9.67v6.66A2.66 2.66 0 0 0 4.64 19h.86a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2h.86A2.66 2.66 0 0 0 22 16.33V9.67A2.66 2.66 0 0 0 19.36 7ZM8 5h8v2H8Zm-.5 14v-4h9v4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func PrinterOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(printerOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaPrinterOutline0"><g id="evaPrinterOutline1"><path id="evaPrinterOutline2" fill="currentColor" d="M19.36 7H18V5a1.92 1.92 0 0 0-1.83-2H7.83A1.92 1.92 0 0 0 6 5v2H4.64A2.66 2.66 0 0 0 2 9.67v6.66A2.66 2.66 0 0 0 4.64 19h.86a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2h.86A2.66 2.66 0 0 0 22 16.33V9.67A2.66 2.66 0 0 0 19.36 7ZM8 5h8v2H8Zm-.5 14v-4h9v4ZM20 16.33a.66.66 0 0 1-.64.67h-.86v-2a2 2 0 0 0-2-2h-9a2 2 0 0 0-2 2v2h-.86a.66.66 0 0 1-.64-.67V9.67A.66.66 0 0 1 4.64 9h14.72a.66.66 0 0 1 .64.67Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func QuestionMarkCircleFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(questionMarkCircleFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaQuestionMarkCircleFill0"><g id="evaQuestionMarkCircleFill1"><path id="evaQuestionMarkCircleFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 16a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm1-5.16V14a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1a1.5 1.5 0 1 0-1.5-1.5a1 1 0 0 1-2 0a3.5 3.5 0 1 1 4.5 3.34Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func QuestionMarkCircleOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(questionMarkCircleOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaQuestionMarkCircleOutline0"><g id="evaQuestionMarkCircleOutline1"><g id="evaQuestionMarkCircleOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M12 6a3.5 3.5 0 0 0-3.5 3.5a1 1 0 0 0 2 0A1.5 1.5 0 1 1 12 11a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.16A3.49 3.49 0 0 0 12 6Z"/><circle cx="12" cy="17" r="1"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func QuestionMarkFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(questionMarkFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaQuestionMarkFill0"><g id="evaQuestionMarkFill1"><g id="evaQuestionMarkFill2" fill="currentColor"><path d="M17 9A5 5 0 0 0 7 9a1 1 0 0 0 2 0a3 3 0 1 1 3 3a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.1A5 5 0 0 0 17 9Z"/><circle cx="12" cy="19" r="1"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func QuestionMarkOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(questionMarkOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaQuestionMarkOutline0"><g id="evaQuestionMarkOutline1"><g id="evaQuestionMarkOutline2" fill="currentColor"><path d="M17 9A5 5 0 0 0 7 9a1 1 0 0 0 2 0a3 3 0 1 1 3 3a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-1.1A5 5 0 0 0 17 9Z"/><circle cx="12" cy="19" r="1"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func RadioButtonOffFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(radioButtonOffFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaRadioButtonOffFill0"><g id="evaRadioButtonOffFill1"><path id="evaRadioButtonOffFill2" fill="currentColor" d="M12 22a10 10 0 1 1 10-10a10 10 0 0 1-10 10Zm0-18a8 8 0 1 0 8 8a8 8 0 0 0-8-8Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func RadioButtonOffOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(radioButtonOffOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaRadioButtonOffOutline0"><g id="evaRadioButtonOffOutline1"><path id="evaRadioButtonOffOutline2" fill="currentColor" d="M12 22a10 10 0 1 1 10-10a10 10 0 0 1-10 10Zm0-18a8 8 0 1 0 8 8a8 8 0 0 0-8-8Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func RadioButtonOnFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(radioButtonOnFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaRadioButtonOnFill0"><g id="evaRadioButtonOnFill1"><g id="evaRadioButtonOnFill2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M12 7a5 5 0 1 0 5 5a5 5 0 0 0-5-5Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func RadioButtonOnOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(radioButtonOnOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaRadioButtonOnOutline0"><g id="evaRadioButtonOnOutline1"><g id="evaRadioButtonOnOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M12 7a5 5 0 1 0 5 5a5 5 0 0 0-5-5Zm0 8a3 3 0 1 1 3-3a3 3 0 0 1-3 3Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func RadioFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(radioFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaRadioFill0"><g id="evaRadioFill1"><g id="evaRadioFill2" fill="currentColor"><path d="M12 8a3 3 0 0 0-1 5.83a1 1 0 0 0 0 .17v6a1 1 0 0 0 2 0v-6a1 1 0 0 0 0-.17A3 3 0 0 0 12 8Zm-8.5 3a6.87 6.87 0 0 1 2.64-5.23a1 1 0 1 0-1.28-1.54A8.84 8.84 0 0 0 1.5 11a8.84 8.84 0 0 0 3.36 6.77a1 1 0 1 0 1.28-1.54A6.87 6.87 0 0 1 3.5 11Z"/><path d="M16.64 6.24a1 1 0 0 0-1.28 1.52A4.28 4.28 0 0 1 17 11a4.28 4.28 0 0 1-1.64 3.24A1 1 0 0 0 16 16a1 1 0 0 0 .64-.24A6.2 6.2 0 0 0 19 11a6.2 6.2 0 0 0-2.36-4.76Zm-7.88.12a1 1 0 0 0-1.4-.12A6.2 6.2 0 0 0 5 11a6.2 6.2 0 0 0 2.36 4.76a1 1 0 0 0 1.4-.12a1 1 0 0 0-.12-1.4A4.28 4.28 0 0 1 7 11a4.28 4.28 0 0 1 1.64-3.24a1 1 0 0 0 .12-1.4Z"/><path d="M19.14 4.23a1 1 0 1 0-1.28 1.54A6.87 6.87 0 0 1 20.5 11a6.87 6.87 0 0 1-2.64 5.23a1 1 0 0 0 1.28 1.54A8.84 8.84 0 0 0 22.5 11a8.84 8.84 0 0 0-3.36-6.77Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func RadioOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(radioOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaRadioOutline0"><g id="evaRadioOutline1"><g id="evaRadioOutline2" fill="currentColor"><path d="M12 8a3 3 0 0 0-1 5.83a1 1 0 0 0 0 .17v6a1 1 0 0 0 2 0v-6a1 1 0 0 0 0-.17A3 3 0 0 0 12 8Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm-8.5-1a6.87 6.87 0 0 1 2.64-5.23a1 1 0 1 0-1.28-1.54A8.84 8.84 0 0 0 1.5 11a8.84 8.84 0 0 0 3.36 6.77a1 1 0 1 0 1.28-1.54A6.87 6.87 0 0 1 3.5 11Z"/><path d="M16.64 6.24a1 1 0 0 0-1.28 1.52A4.28 4.28 0 0 1 17 11a4.28 4.28 0 0 1-1.64 3.24A1 1 0 0 0 16 16a1 1 0 0 0 .64-.24A6.2 6.2 0 0 0 19 11a6.2 6.2 0 0 0-2.36-4.76Zm-7.88.12a1 1 0 0 0-1.4-.12A6.2 6.2 0 0 0 5 11a6.2 6.2 0 0 0 2.36 4.76a1 1 0 0 0 1.4-.12a1 1 0 0 0-.12-1.4A4.28 4.28 0 0 1 7 11a4.28 4.28 0 0 1 1.64-3.24a1 1 0 0 0 .12-1.4Z"/><path d="M19.14 4.23a1 1 0 1 0-1.28 1.54A6.87 6.87 0 0 1 20.5 11a6.87 6.87 0 0 1-2.64 5.23a1 1 0 0 0 1.28 1.54A8.84 8.84 0 0 0 22.5 11a8.84 8.84 0 0 0-3.36-6.77Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func RecordingFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(recordingFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaRecordingFill0"><g id="evaRecordingFill1"><path id="evaRecordingFill2" fill="currentColor" d="M18 8a4 4 0 0 0-4 4a3.91 3.91 0 0 0 .56 2H9.44a3.91 3.91 0 0 0 .56-2a4 4 0 1 0-4 4h12a4 4 0 0 0 0-8Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func RecordingOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(recordingOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaRecordingOutline0"><g id="evaRecordingOutline1"><path id="evaRecordingOutline2" fill="currentColor" d="M18 8a4 4 0 0 0-4 4a3.91 3.91 0 0 0 .56 2H9.44a3.91 3.91 0 0 0 .56-2a4 4 0 1 0-4 4h12a4 4 0 0 0 0-8ZM4 12a2 2 0 1 1 2 2a2 2 0 0 1-2-2Zm14 2a2 2 0 1 1 2-2a2 2 0 0 1-2 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func RefreshFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(refreshFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaRefreshFill0"><g id="evaRefreshFill1"><path id="evaRefreshFill2" fill="currentColor" d="M20.3 13.43a1 1 0 0 0-1.25.65A7.14 7.14 0 0 1 12.18 19A7.1 7.1 0 0 1 5 12a7.1 7.1 0 0 1 7.18-7a7.26 7.26 0 0 1 4.65 1.67l-2.17-.36a1 1 0 0 0-1.15.83a1 1 0 0 0 .83 1.15l4.24.7h.17a1 1 0 0 0 .34-.06a.33.33 0 0 0 .1-.06a.78.78 0 0 0 .2-.11l.09-.11c0-.05.09-.09.13-.15s0-.1.05-.14a1.34 1.34 0 0 0 .07-.18l.75-4a1 1 0 0 0-2-.38l-.27 1.45A9.21 9.21 0 0 0 12.18 3A9.1 9.1 0 0 0 3 12a9.1 9.1 0 0 0 9.18 9A9.12 9.12 0 0 0 21 14.68a1 1 0 0 0-.7-1.25Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func RefreshOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(refreshOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaRefreshOutline0"><g id="evaRefreshOutline1"><path id="evaRefreshOutline2" fill="currentColor" d="M20.3 13.43a1 1 0 0 0-1.25.65A7.14 7.14 0 0 1 12.18 19A7.1 7.1 0 0 1 5 12a7.1 7.1 0 0 1 7.18-7a7.26 7.26 0 0 1 4.65 1.67l-2.17-.36a1 1 0 0 0-1.15.83a1 1 0 0 0 .83 1.15l4.24.7h.17a1 1 0 0 0 .34-.06a.33.33 0 0 0 .1-.06a.78.78 0 0 0 .2-.11l.09-.11c0-.05.09-.09.13-.15s0-.1.05-.14a1.34 1.34 0 0 0 .07-.18l.75-4a1 1 0 0 0-2-.38l-.27 1.45A9.21 9.21 0 0 0 12.18 3A9.1 9.1 0 0 0 3 12a9.1 9.1 0 0 0 9.18 9A9.12 9.12 0 0 0 21 14.68a1 1 0 0 0-.7-1.25Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func RepeatFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(repeatFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaRepeatFill0"><g id="evaRepeatFill1"><path id="evaRepeatFill2" fill="currentColor" d="M17.91 5h-12l1.3-1.29a1 1 0 0 0-1.42-1.42l-3 3a1 1 0 0 0 0 1.42l3 3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L5.91 7h12a1.56 1.56 0 0 1 1.59 1.53V11a1 1 0 0 0 2 0V8.53A3.56 3.56 0 0 0 17.91 5Zm.3 9.29a1 1 0 0 0-1.42 1.42l1.3 1.29h-12a1.56 1.56 0 0 1-1.59-1.53V13a1 1 0 0 0-2 0v2.47A3.56 3.56 0 0 0 6.09 19h12l-1.3 1.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l3-3a1 1 0 0 0 0-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func RepeatOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(repeatOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaRepeatOutline0"><g id="evaRepeatOutline1"><path id="evaRepeatOutline2" fill="currentColor" d="M17.91 5h-12l1.3-1.29a1 1 0 0 0-1.42-1.42l-3 3a1 1 0 0 0 0 1.42l3 3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42L5.91 7h12a1.56 1.56 0 0 1 1.59 1.53V11a1 1 0 0 0 2 0V8.53A3.56 3.56 0 0 0 17.91 5Zm.3 9.29a1 1 0 0 0-1.42 1.42l1.3 1.29h-12a1.56 1.56 0 0 1-1.59-1.53V13a1 1 0 0 0-2 0v2.47A3.56 3.56 0 0 0 6.09 19h12l-1.3 1.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l3-3a1 1 0 0 0 0-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func RewindLeftFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(rewindLeftFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaRewindLeftFill0"><g id="evaRewindLeftFill1"><path id="evaRewindLeftFill2" fill="currentColor" d="M18.45 6.2a2.1 2.1 0 0 0-2.21.26l-4.74 3.92V7.79a1.76 1.76 0 0 0-1.05-1.59a2.1 2.1 0 0 0-2.21.26l-5.1 4.21a1.7 1.7 0 0 0 0 2.66l5.1 4.21a2.06 2.06 0 0 0 1.3.46a2.23 2.23 0 0 0 .91-.2a1.76 1.76 0 0 0 1.05-1.59v-2.59l4.74 3.92a2.06 2.06 0 0 0 1.3.46a2.23 2.23 0 0 0 .91-.2a1.76 1.76 0 0 0 1.05-1.59V7.79a1.76 1.76 0 0 0-1.05-1.59Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func RewindLeftOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(rewindLeftOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaRewindLeftOutline0"><g id="evaRewindLeftOutline1"><path id="evaRewindLeftOutline2" fill="currentColor" d="M18.45 6.2a2.1 2.1 0 0 0-2.21.26l-4.74 3.92V7.79a1.76 1.76 0 0 0-1.05-1.59a2.1 2.1 0 0 0-2.21.26l-5.1 4.21a1.7 1.7 0 0 0 0 2.66l5.1 4.21a2.06 2.06 0 0 0 1.3.46a2.23 2.23 0 0 0 .91-.2a1.76 1.76 0 0 0 1.05-1.59v-2.59l4.74 3.92a2.06 2.06 0 0 0 1.3.46a2.23 2.23 0 0 0 .91-.2a1.76 1.76 0 0 0 1.05-1.59V7.79a1.76 1.76 0 0 0-1.05-1.59ZM9.5 16l-4.82-4L9.5 8.09Zm8 0l-4.82-4l4.82-3.91Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func RewindRightFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(rewindRightFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaRewindRightFill0"><g id="evaRewindRightFill1"><path id="evaRewindRightFill2" fill="currentColor" d="m20.86 10.67l-5.1-4.21a2.1 2.1 0 0 0-2.21-.26a1.76 1.76 0 0 0-1.05 1.59v2.59L7.76 6.46a2.1 2.1 0 0 0-2.21-.26a1.76 1.76 0 0 0-1 1.59v8.42a1.76 1.76 0 0 0 1 1.59a2.23 2.23 0 0 0 .91.2a2.06 2.06 0 0 0 1.3-.46l4.74-3.92v2.59a1.76 1.76 0 0 0 1.05 1.59a2.23 2.23 0 0 0 .91.2a2.06 2.06 0 0 0 1.3-.46l5.1-4.21a1.7 1.7 0 0 0 0-2.66Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func RewindRightOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(rewindRightOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaRewindRightOutline0"><g id="evaRewindRightOutline1"><path id="evaRewindRightOutline2" fill="currentColor" d="m20.86 10.67l-5.1-4.21a2.1 2.1 0 0 0-2.21-.26a1.76 1.76 0 0 0-1.05 1.59v2.59L7.76 6.46a2.1 2.1 0 0 0-2.21-.26a1.76 1.76 0 0 0-1 1.59v8.42a1.76 1.76 0 0 0 1 1.59a2.23 2.23 0 0 0 .91.2a2.06 2.06 0 0 0 1.3-.46l4.74-3.92v2.59a1.76 1.76 0 0 0 1.05 1.59a2.23 2.23 0 0 0 .91.2a2.06 2.06 0 0 0 1.3-.46l5.1-4.21a1.7 1.7 0 0 0 0-2.66ZM6.5 15.91V8l4.82 4Zm8 0V8l4.82 4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SaveFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(saveFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSaveFill0"><g id="evaSaveFill1"><g id="evaSaveFill2" fill="currentColor"><path d="M10 17h4v4h-4z"/><path d="m20.12 8.71l-4.83-4.83A3 3 0 0 0 13.17 3H10v6h5a1 1 0 0 1 0 2H9a1 1 0 0 1-1-1V3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h2v-4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4h2a3 3 0 0 0 3-3v-7.17a3 3 0 0 0-.88-2.12Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func SaveOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(saveOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSaveOutline0"><g id="evaSaveOutline1"><path id="evaSaveOutline2" fill="currentColor" d="m20.12 8.71l-4.83-4.83A3 3 0 0 0 13.17 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-7.17a3 3 0 0 0-.88-2.12ZM10 19v-2h4v2Zm9-1a1 1 0 0 1-1 1h-2v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h2v5a1 1 0 0 0 1 1h4a1 1 0 0 0 0-2h-3V5h3.17a1.05 1.05 0 0 1 .71.29l4.83 4.83a1 1 0 0 1 .29.71Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ScissorsFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(scissorsFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaScissorsFill0"><g id="evaScissorsFill1"><g id="evaScissorsFill2" fill="currentColor"><path d="M20.21 5.71a1 1 0 1 0-1.42-1.42l-6.28 6.31l-3.3-3.31A3 3 0 0 0 9.5 6a3 3 0 1 0-3 3a3 3 0 0 0 1.29-.3L11.1 12l-3.29 3.3A3 3 0 0 0 6.5 15a3 3 0 1 0 3 3a3 3 0 0 0-.29-1.26ZM6.5 7a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm0 12a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/><path d="M15.21 13.29a1 1 0 0 0-1.42 1.42l5 5a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ScissorsOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(scissorsOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaScissorsOutline0"><g id="evaScissorsOutline1"><g id="evaScissorsOutline2" fill="currentColor"><path d="M20.21 5.71a1 1 0 1 0-1.42-1.42l-6.28 6.31l-3.3-3.31A3 3 0 0 0 9.5 6a3 3 0 1 0-3 3a3 3 0 0 0 1.29-.3L11.1 12l-3.29 3.3A3 3 0 0 0 6.5 15a3 3 0 1 0 3 3a3 3 0 0 0-.29-1.26ZM6.5 7a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm0 12a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/><path d="M15.21 13.29a1 1 0 0 0-1.42 1.42l5 5a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func SearchFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(searchFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSearchFill0"><g id="evaSearchFill1"><path id="evaSearchFill2" fill="currentColor" d="m20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8a7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM5 11a6 6 0 1 1 6 6a6 6 0 0 1-6-6Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SearchOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(searchOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSearchOutline0"><g id="evaSearchOutline1"><path id="evaSearchOutline2" fill="currentColor" d="m20.71 19.29l-3.4-3.39A7.92 7.92 0 0 0 19 11a8 8 0 1 0-8 8a7.92 7.92 0 0 0 4.9-1.69l3.39 3.4a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM5 11a6 6 0 1 1 6 6a6 6 0 0 1-6-6Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SettingsFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(settingsFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSettingsFill0"><g id="evaSettingsFill1"><g id="evaSettingsFill2" fill="currentColor"><circle cx="12" cy="12" r="1.5"/><path d="M21.89 10.32L21.1 7.8a2.26 2.26 0 0 0-2.88-1.51l-.34.11a1.74 1.74 0 0 1-1.59-.26l-.11-.08a1.76 1.76 0 0 1-.69-1.43v-.28a2.37 2.37 0 0 0-.68-1.68a2.26 2.26 0 0 0-1.6-.67h-2.55a2.32 2.32 0 0 0-2.29 2.33v.24a1.94 1.94 0 0 1-.73 1.51l-.13.1a1.93 1.93 0 0 1-1.78.29a2.14 2.14 0 0 0-1.68.12a2.18 2.18 0 0 0-1.12 1.33l-.82 2.6a2.34 2.34 0 0 0 1.48 2.94h.16a1.83 1.83 0 0 1 1.12 1.22l.06.16a2.06 2.06 0 0 1-.23 1.86a2.37 2.37 0 0 0 .49 3.3l2.07 1.57a2.25 2.25 0 0 0 1.35.43A2 2 0 0 0 9 22a2.25 2.25 0 0 0 1.47-1l.23-.33a1.8 1.8 0 0 1 1.43-.77a1.75 1.75 0 0 1 1.5.78l.12.17a2.24 2.24 0 0 0 3.22.53L19 19.86a2.38 2.38 0 0 0 .5-3.23l-.26-.38A2 2 0 0 1 19 14.6a1.89 1.89 0 0 1 1.21-1.28l.2-.07a2.36 2.36 0 0 0 1.48-2.93ZM12 15.5a3.5 3.5 0 1 1 3.5-3.5a3.5 3.5 0 0 1-3.5 3.5Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func SettingsOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(settingsOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSettingsOutline0"><g id="evaSettingsOutline1"><g id="evaSettingsOutline2" fill="currentColor"><path id="evaSettingsOutline3" d="M8.61 22a2.25 2.25 0 0 1-1.35-.46L5.19 20a2.37 2.37 0 0 1-.49-3.22a2.06 2.06 0 0 0 .23-1.86l-.06-.16a1.83 1.83 0 0 0-1.12-1.22h-.16a2.34 2.34 0 0 1-1.48-2.94L2.93 8a2.18 2.18 0 0 1 1.12-1.41a2.14 2.14 0 0 1 1.68-.12a1.93 1.93 0 0 0 1.78-.29l.13-.1a1.94 1.94 0 0 0 .73-1.51v-.24A2.32 2.32 0 0 1 10.66 2h2.55a2.26 2.26 0 0 1 1.6.67a2.37 2.37 0 0 1 .68 1.68v.28a1.76 1.76 0 0 0 .69 1.43l.11.08a1.74 1.74 0 0 0 1.59.26l.34-.11A2.26 2.26 0 0 1 21.1 7.8l.79 2.52a2.36 2.36 0 0 1-1.46 2.93l-.2.07A1.89 1.89 0 0 0 19 14.6a2 2 0 0 0 .25 1.65l.26.38a2.38 2.38 0 0 1-.5 3.23L17 21.41a2.24 2.24 0 0 1-3.22-.53l-.12-.17a1.75 1.75 0 0 0-1.5-.78a1.8 1.8 0 0 0-1.43.77l-.23.33A2.25 2.25 0 0 1 9 22a2 2 0 0 1-.39 0ZM4.4 11.62a3.83 3.83 0 0 1 2.38 2.5v.12a4 4 0 0 1-.46 3.62a.38.38 0 0 0 0 .51L8.47 20a.25.25 0 0 0 .37-.07l.23-.33a3.77 3.77 0 0 1 6.2 0l.12.18a.3.3 0 0 0 .18.12a.25.25 0 0 0 .19-.05l2.06-1.56a.36.36 0 0 0 .07-.49l-.26-.38A4 4 0 0 1 17.1 14a3.92 3.92 0 0 1 2.49-2.61l.2-.07a.34.34 0 0 0 .19-.44l-.78-2.49a.35.35 0 0 0-.2-.19a.21.21 0 0 0-.19 0l-.34.11a3.74 3.74 0 0 1-3.43-.57L15 7.65a3.76 3.76 0 0 1-1.49-3v-.31a.37.37 0 0 0-.1-.26a.31.31 0 0 0-.21-.08h-2.54a.31.31 0 0 0-.29.33v.25a3.9 3.9 0 0 1-1.52 3.09l-.13.1a3.91 3.91 0 0 1-3.63.59a.22.22 0 0 0-.14 0a.28.28 0 0 0-.12.15L4 11.12a.36.36 0 0 0 .22.45Z"/><path d="M12 15.5a3.5 3.5 0 1 1 3.5-3.5a3.5 3.5 0 0 1-3.5 3.5Zm0-5a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func SettingsTwoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(settingsTwoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSettings2Fill0"><g id="evaSettings2Fill1"><g id="evaSettings2Fill2" fill="currentColor"><circle cx="12" cy="12" r="1.5"/><path d="M20.32 9.37h-1.09c-.14 0-.24-.11-.3-.26a.34.34 0 0 1 0-.37l.81-.74a1.63 1.63 0 0 0 .5-1.18a1.67 1.67 0 0 0-.5-1.19L18.4 4.26a1.67 1.67 0 0 0-2.37 0l-.77.74a.38.38 0 0 1-.41 0a.34.34 0 0 1-.22-.29V3.68A1.68 1.68 0 0 0 13 2h-1.94a1.69 1.69 0 0 0-1.69 1.68v1.09c0 .14-.11.24-.26.3a.34.34 0 0 1-.37 0L8 4.26a1.72 1.72 0 0 0-1.19-.5a1.65 1.65 0 0 0-1.18.5L4.26 5.6a1.67 1.67 0 0 0 0 2.4l.74.74a.38.38 0 0 1 0 .41a.34.34 0 0 1-.29.22H3.68A1.68 1.68 0 0 0 2 11.05v1.89a1.69 1.69 0 0 0 1.68 1.69h1.09c.14 0 .24.11.3.26a.34.34 0 0 1 0 .37l-.81.74a1.72 1.72 0 0 0-.5 1.19a1.66 1.66 0 0 0 .5 1.19l1.34 1.36a1.67 1.67 0 0 0 2.37 0l.77-.74a.38.38 0 0 1 .41 0a.34.34 0 0 1 .22.29v1.09A1.68 1.68 0 0 0 11.05 22h1.89a1.69 1.69 0 0 0 1.69-1.68v-1.09c0-.14.11-.24.26-.3a.34.34 0 0 1 .37 0l.76.77a1.72 1.72 0 0 0 1.19.5a1.65 1.65 0 0 0 1.18-.5l1.34-1.34a1.67 1.67 0 0 0 0-2.37l-.73-.73a.34.34 0 0 1 0-.37a.34.34 0 0 1 .29-.22h1.09A1.68 1.68 0 0 0 22 13v-1.94a1.69 1.69 0 0 0-1.68-1.69ZM12 15.5a3.5 3.5 0 1 1 3.5-3.5a3.5 3.5 0 0 1-3.5 3.5Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func SettingsTwoOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(settingsTwoOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSettings2Outline0"><g id="evaSettings2Outline1"><g id="evaSettings2Outline2" fill="currentColor"><path id="evaSettings2Outline3" d="M12.94 22h-1.89a1.68 1.68 0 0 1-1.68-1.68v-1.09a.34.34 0 0 0-.22-.29a.38.38 0 0 0-.41 0l-.74.8a1.67 1.67 0 0 1-2.37 0L4.26 18.4a1.66 1.66 0 0 1-.5-1.19a1.72 1.72 0 0 1 .5-1.21l.74-.74a.34.34 0 0 0 0-.37c-.06-.15-.16-.26-.3-.26H3.68A1.69 1.69 0 0 1 2 12.94v-1.89a1.68 1.68 0 0 1 1.68-1.68h1.09a.34.34 0 0 0 .29-.22a.38.38 0 0 0 0-.41L4.26 8a1.67 1.67 0 0 1 0-2.37L5.6 4.26a1.65 1.65 0 0 1 1.18-.5a1.72 1.72 0 0 1 1.22.5l.74.74a.34.34 0 0 0 .37 0c.15-.06.26-.16.26-.3V3.68A1.69 1.69 0 0 1 11.06 2H13a1.68 1.68 0 0 1 1.68 1.68v1.09a.34.34 0 0 0 .22.29a.38.38 0 0 0 .41 0l.69-.8a1.67 1.67 0 0 1 2.37 0l1.37 1.34a1.67 1.67 0 0 1 .5 1.19a1.63 1.63 0 0 1-.5 1.21l-.74.74a.34.34 0 0 0 0 .37c.06.15.16.26.3.26h1.09A1.69 1.69 0 0 1 22 11.06V13a1.68 1.68 0 0 1-1.68 1.68h-1.09a.34.34 0 0 0-.29.22a.34.34 0 0 0 0 .37l.77.77a1.67 1.67 0 0 1 0 2.37l-1.31 1.33a1.65 1.65 0 0 1-1.18.5a1.72 1.72 0 0 1-1.19-.5l-.77-.74a.34.34 0 0 0-.37 0c-.15.06-.26.16-.26.3v1.09A1.69 1.69 0 0 1 12.94 22Zm-1.57-2h1.26v-.77a2.33 2.33 0 0 1 1.46-2.14a2.36 2.36 0 0 1 2.59.47l.54.54l.88-.88l-.54-.55a2.34 2.34 0 0 1-.48-2.56a2.33 2.33 0 0 1 2.14-1.45H20v-1.29h-.77a2.33 2.33 0 0 1-2.14-1.46a2.36 2.36 0 0 1 .47-2.59l.54-.54l-.88-.88l-.55.54a2.39 2.39 0 0 1-4-1.67V4h-1.3v.77a2.33 2.33 0 0 1-1.46 2.14a2.36 2.36 0 0 1-2.59-.47l-.54-.54l-.88.88l.54.55a2.39 2.39 0 0 1-1.67 4H4v1.26h.77a2.33 2.33 0 0 1 2.14 1.46a2.36 2.36 0 0 1-.47 2.59l-.54.54l.88.88l.55-.54a2.39 2.39 0 0 1 4 1.67Z"/><path d="M12 15.5a3.5 3.5 0 1 1 3.5-3.5a3.5 3.5 0 0 1-3.5 3.5Zm0-5a1.5 1.5 0 1 0 1.5 1.5a1.5 1.5 0 0 0-1.5-1.5Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ShakeFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(shakeFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaShakeFill0"><g id="evaShakeFill1"><g id="evaShakeFill2" fill="currentColor"><path d="M5.5 18a1 1 0 0 1-.64-.24A8.81 8.81 0 0 1 1.5 11a8.81 8.81 0 0 1 3.36-6.76a1 1 0 1 1 1.28 1.52A6.9 6.9 0 0 0 3.5 11a6.9 6.9 0 0 0 2.64 5.24a1 1 0 0 1 .13 1.4a1 1 0 0 1-.77.36ZM12 7a4.09 4.09 0 0 1 1 .14V3a1 1 0 0 0-2 0v4.14A4.09 4.09 0 0 1 12 7Zm0 8a4.09 4.09 0 0 1-1-.14V20a1 1 0 0 0 2 0v-5.14a4.09 4.09 0 0 1-1 .14Zm4 1a1 1 0 0 1-.77-.36a1 1 0 0 1 .13-1.4A4.28 4.28 0 0 0 17 11a4.28 4.28 0 0 0-1.64-3.24a1 1 0 1 1 1.28-1.52A6.2 6.2 0 0 1 19 11a6.2 6.2 0 0 1-2.36 4.76A1 1 0 0 1 16 16Z"/><path d="M8 16a1 1 0 0 1-.64-.24A6.2 6.2 0 0 1 5 11a6.2 6.2 0 0 1 2.36-4.76a1 1 0 1 1 1.28 1.52A4.28 4.28 0 0 0 7 11a4.28 4.28 0 0 0 1.64 3.24a1 1 0 0 1 .13 1.4A1 1 0 0 1 8 16Zm10.5 2a1 1 0 0 1-.77-.36a1 1 0 0 1 .13-1.4A6.9 6.9 0 0 0 20.5 11a6.9 6.9 0 0 0-2.64-5.24a1 1 0 1 1 1.28-1.52A8.81 8.81 0 0 1 22.5 11a8.81 8.81 0 0 1-3.36 6.76a1 1 0 0 1-.64.24ZM12 12a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm0-1Zm0 0Zm0 0Zm0 0Zm0 0Zm0 0Zm0 0Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ShakeOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(shakeOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaShakeOutline0"><g id="evaShakeOutline1"><g id="evaShakeOutline2" fill="currentColor"><path d="M5.5 18a1 1 0 0 1-.64-.24A8.81 8.81 0 0 1 1.5 11a8.81 8.81 0 0 1 3.36-6.76a1 1 0 1 1 1.28 1.52A6.9 6.9 0 0 0 3.5 11a6.9 6.9 0 0 0 2.64 5.24a1 1 0 0 1 .13 1.4a1 1 0 0 1-.77.36ZM12 7a4.09 4.09 0 0 1 1 .14V3a1 1 0 0 0-2 0v4.14A4.09 4.09 0 0 1 12 7Zm0 8a4.09 4.09 0 0 1-1-.14V20a1 1 0 0 0 2 0v-5.14a4.09 4.09 0 0 1-1 .14Zm4 1a1 1 0 0 1-.77-.36a1 1 0 0 1 .13-1.4A4.28 4.28 0 0 0 17 11a4.28 4.28 0 0 0-1.64-3.24a1 1 0 1 1 1.28-1.52A6.2 6.2 0 0 1 19 11a6.2 6.2 0 0 1-2.36 4.76A1 1 0 0 1 16 16Z"/><path d="M8 16a1 1 0 0 1-.64-.24A6.2 6.2 0 0 1 5 11a6.2 6.2 0 0 1 2.36-4.76a1 1 0 1 1 1.28 1.52A4.28 4.28 0 0 0 7 11a4.28 4.28 0 0 0 1.64 3.24a1 1 0 0 1 .13 1.4A1 1 0 0 1 8 16Zm10.5 2a1 1 0 0 1-.77-.36a1 1 0 0 1 .13-1.4A6.9 6.9 0 0 0 20.5 11a6.9 6.9 0 0 0-2.64-5.24a1 1 0 1 1 1.28-1.52A8.81 8.81 0 0 1 22.5 11a8.81 8.81 0 0 1-3.36 6.76a1 1 0 0 1-.64.24ZM12 12a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm0-1Zm0 0Zm0 0Zm0 0Zm0 0Zm0 0Zm0 0Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ShareFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(shareFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaShareFill0"><g id="evaShareFill1"><path id="evaShareFill2" fill="currentColor" d="M18 15a3 3 0 0 0-2.1.86L8 12.34v-.67l7.9-3.53A3 3 0 1 0 15 6v.34L7.1 9.86a3 3 0 1 0 0 4.28l7.9 3.53V18a3 3 0 1 0 3-3Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ShareOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(shareOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaShareOutline0"><g id="evaShareOutline1"><path id="evaShareOutline2" fill="currentColor" d="M18 15a3 3 0 0 0-2.1.86L8 12.34v-.67l7.9-3.53A3 3 0 1 0 15 6v.34L7.1 9.86a3 3 0 1 0 0 4.28l7.9 3.53V18a3 3 0 1 0 3-3Zm0-10a1 1 0 1 1-1 1a1 1 0 0 1 1-1ZM5 13a1 1 0 1 1 1-1a1 1 0 0 1-1 1Zm13 6a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ShieldFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(shieldFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaShieldFill0"><g id="evaShieldFill1"><path id="evaShieldFill2" fill="currentColor" d="M12 21.85a2 2 0 0 1-1-.25l-.3-.17A15.17 15.17 0 0 1 3 8.23v-.14a2 2 0 0 1 1-1.75l7-3.94a2 2 0 0 1 2 0l7 3.94a2 2 0 0 1 1 1.75v.14a15.17 15.17 0 0 1-7.72 13.2l-.3.17a2 2 0 0 1-.98.25Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ShieldOffFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(shieldOffFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaShieldOffFill0"><g id="evaShieldOffFill1"><path id="evaShieldOffFill2" fill="currentColor" d="M3.73 6.56A2 2 0 0 0 3 8.09v.14a15.17 15.17 0 0 0 7.72 13.2l.3.17a2 2 0 0 0 2 0l.3-.17a15.22 15.22 0 0 0 3-2.27ZM18.84 16A15.08 15.08 0 0 0 21 8.23v-.14a2 2 0 0 0-1-1.75L13 2.4a2 2 0 0 0-2 0L7.32 4.49ZM4.71 3.29a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ShieldOffOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(shieldOffOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaShieldOffOutline0"><g id="evaShieldOffOutline1"><path id="evaShieldOffOutline2" fill="currentColor" d="M4.71 3.29a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Zm7.59 16.39l-.3.17l-.3-.17A13.15 13.15 0 0 1 5 8.23v-.14L5.16 8L3.73 6.56A2 2 0 0 0 3 8.09v.14a15.17 15.17 0 0 0 7.72 13.2l.3.17a2 2 0 0 0 2 0l.3-.17a15.22 15.22 0 0 0 3-2.27l-1.42-1.42a12.56 12.56 0 0 1-2.6 1.94ZM20 6.34L13 2.4a2 2 0 0 0-2 0L7.32 4.49L8.78 6L12 4.15l7 3.94v.14a13 13 0 0 1-1.63 6.31L18.84 16A15.08 15.08 0 0 0 21 8.23v-.14a2 2 0 0 0-1-1.75Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ShieldOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(shieldOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaShieldOutline0"><g id="evaShieldOutline1"><path id="evaShieldOutline2" fill="currentColor" d="M12 21.85a2 2 0 0 1-1-.25l-.3-.17A15.17 15.17 0 0 1 3 8.23v-.14a2 2 0 0 1 1-1.75l7-3.94a2 2 0 0 1 2 0l7 3.94a2 2 0 0 1 1 1.75v.14a15.17 15.17 0 0 1-7.72 13.2l-.3.17a2 2 0 0 1-.98.25Zm0-17.7L5 8.09v.14a13.15 13.15 0 0 0 6.7 11.45l.3.17l.3-.17A13.15 13.15 0 0 0 19 8.23v-.14Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ShoppingBagFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(shoppingBagFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaShoppingBagFill0"><g id="evaShoppingBagFill1"><path id="evaShoppingBagFill2" fill="currentColor" d="m20.12 6.71l-2.83-2.83A3 3 0 0 0 15.17 3H8.83a3 3 0 0 0-2.12.88L3.88 6.71A3 3 0 0 0 3 8.83V18a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8.83a3 3 0 0 0-.88-2.12ZM12 16a4 4 0 0 1-4-4a1 1 0 0 1 2 0a2 2 0 0 0 4 0a1 1 0 0 1 2 0a4 4 0 0 1-4 4ZM6.41 7l1.71-1.71A1.05 1.05 0 0 1 8.83 5h6.34a1.05 1.05 0 0 1 .71.29L17.59 7Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ShoppingBagOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(shoppingBagOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaShoppingBagOutline0"><g id="evaShoppingBagOutline1"><g id="evaShoppingBagOutline2" fill="currentColor"><path d="m20.12 6.71l-2.83-2.83A3 3 0 0 0 15.17 3H8.83a3 3 0 0 0-2.12.88L3.88 6.71A3 3 0 0 0 3 8.83V18a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8.83a3 3 0 0 0-.88-2.12Zm-12-1.42A1.05 1.05 0 0 1 8.83 5h6.34a1.05 1.05 0 0 1 .71.29L17.59 7H6.41ZM18 19H6a1 1 0 0 1-1-1V9h14v9a1 1 0 0 1-1 1Z"/><path d="M15 11a1 1 0 0 0-1 1a2 2 0 0 1-4 0a1 1 0 0 0-2 0a4 4 0 0 0 8 0a1 1 0 0 0-1-1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ShoppingCartFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(shoppingCartFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaShoppingCartFill0"><g id="evaShoppingCartFill1"><g id="evaShoppingCartFill2" fill="currentColor"><path d="M21.08 7a2 2 0 0 0-1.7-1H6.58L6 3.74A1 1 0 0 0 5 3H3a1 1 0 0 0 0 2h1.24L7 15.26A1 1 0 0 0 8 16h9a1 1 0 0 0 .89-.55l3.28-6.56A2 2 0 0 0 21.08 7Z"/><circle cx="7.5" cy="19.5" r="1.5"/><circle cx="17.5" cy="19.5" r="1.5"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ShoppingCartOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(shoppingCartOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaShoppingCartOutline0"><g id="evaShoppingCartOutline1"><g id="evaShoppingCartOutline2" fill="currentColor"><path d="M21.08 7a2 2 0 0 0-1.7-1H6.58L6 3.74A1 1 0 0 0 5 3H3a1 1 0 0 0 0 2h1.24L7 15.26A1 1 0 0 0 8 16h9a1 1 0 0 0 .89-.55l3.28-6.56A2 2 0 0 0 21.08 7Zm-4.7 7H8.76L7.13 8h12.25Z"/><circle cx="7.5" cy="19.5" r="1.5"/><circle cx="17.5" cy="19.5" r="1.5"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ShuffleFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(shuffleFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaShuffleFill0"><g id="evaShuffleFill1"><g id="evaShuffleFill2" fill="currentColor"><path d="M18 9.31a1 1 0 0 0 1 1a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-4.3a1 1 0 0 0-1 1a1 1 0 0 0 1 1h1.89L12 10.59L6.16 4.76a1 1 0 0 0-1.41 1.41L10.58 12l-6.29 6.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L18 7.42Z"/><path d="M19 13.68a1 1 0 0 0-1 1v1.91l-2.78-2.79a1 1 0 0 0-1.42 1.42L16.57 18h-1.88a1 1 0 0 0 0 2H19a1 1 0 0 0 1-1.11v-4.21a1 1 0 0 0-1-1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ShuffleOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(shuffleOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaShuffleOutline0"><g id="evaShuffleOutline1"><g id="evaShuffleOutline2" fill="currentColor"><path d="M18 9.31a1 1 0 0 0 1 1a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-4.3a1 1 0 0 0-1 1a1 1 0 0 0 1 1h1.89L12 10.59L6.16 4.76a1 1 0 0 0-1.41 1.41L10.58 12l-6.29 6.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L18 7.42Z"/><path d="M19 13.68a1 1 0 0 0-1 1v1.91l-2.78-2.79a1 1 0 0 0-1.42 1.42L16.57 18h-1.88a1 1 0 0 0 0 2H19a1 1 0 0 0 1-1.11v-4.21a1 1 0 0 0-1-1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ShuffleTwoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(shuffleTwoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaShuffle2Fill0"><g id="evaShuffle2Fill1"><path id="evaShuffle2Fill2" fill="currentColor" d="M18.71 14.29a1 1 0 0 0-1.42 1.42l.29.29H16a4 4 0 0 1 0-8h1.59l-.3.29a1 1 0 0 0 0 1.42A1 1 0 0 0 18 10a1 1 0 0 0 .71-.29l2-2A1 1 0 0 0 21 7a1 1 0 0 0-.29-.71l-2-2a1 1 0 0 0-1.42 1.42l.29.29H16a6 6 0 0 0-5 2.69A6 6 0 0 0 6 6H4a1 1 0 0 0 0 2h2a4 4 0 0 1 0 8H4a1 1 0 0 0 0 2h2a6 6 0 0 0 5-2.69A6 6 0 0 0 16 18h1.59l-.3.29a1 1 0 0 0 0 1.42A1 1 0 0 0 18 20a1 1 0 0 0 .71-.29l2-2A1 1 0 0 0 21 17a1 1 0 0 0-.29-.71Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ShuffleTwoOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(shuffleTwoOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaShuffle2Outline0"><g id="evaShuffle2Outline1"><path id="evaShuffle2Outline2" fill="currentColor" d="M18.71 14.29a1 1 0 0 0-1.42 1.42l.29.29H16a4 4 0 0 1 0-8h1.59l-.3.29a1 1 0 0 0 0 1.42A1 1 0 0 0 18 10a1 1 0 0 0 .71-.29l2-2A1 1 0 0 0 21 7a1 1 0 0 0-.29-.71l-2-2a1 1 0 0 0-1.42 1.42l.29.29H16a6 6 0 0 0-5 2.69A6 6 0 0 0 6 6H4a1 1 0 0 0 0 2h2a4 4 0 0 1 0 8H4a1 1 0 0 0 0 2h2a6 6 0 0 0 5-2.69A6 6 0 0 0 16 18h1.59l-.3.29a1 1 0 0 0 0 1.42A1 1 0 0 0 18 20a1 1 0 0 0 .71-.29l2-2A1 1 0 0 0 21 17a1 1 0 0 0-.29-.71Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SkipBackFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(skipBackFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSkipBackFill0"><g id="evaSkipBackFill1"><path id="evaSkipBackFill2" fill="currentColor" d="M16.45 6.2a2.1 2.1 0 0 0-2.21.26l-5.1 4.21l-.14.15V7a1 1 0 0 0-2 0v10a1 1 0 0 0 2 0v-3.82l.14.15l5.1 4.21a2.06 2.06 0 0 0 1.3.46a2.23 2.23 0 0 0 .91-.2a1.76 1.76 0 0 0 1.05-1.59V7.79a1.76 1.76 0 0 0-1.05-1.59Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SkipBackOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(skipBackOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSkipBackOutline0"><g id="evaSkipBackOutline1"><path id="evaSkipBackOutline2" fill="currentColor" d="M16.45 6.2a2.1 2.1 0 0 0-2.21.26l-5.1 4.21l-.14.15V7a1 1 0 0 0-2 0v10a1 1 0 0 0 2 0v-3.82l.14.15l5.1 4.21a2.06 2.06 0 0 0 1.3.46a2.23 2.23 0 0 0 .91-.2a1.76 1.76 0 0 0 1.05-1.59V7.79a1.76 1.76 0 0 0-1.05-1.59ZM15.5 16l-4.82-4l4.82-3.91Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SkipForwardFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(skipForwardFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSkipForwardFill0"><g id="evaSkipForwardFill1"><path id="evaSkipForwardFill2" fill="currentColor" d="M16 6a1 1 0 0 0-1 1v3.82l-.14-.15l-5.1-4.21a2.1 2.1 0 0 0-2.21-.26a1.76 1.76 0 0 0-1 1.59v8.42a1.76 1.76 0 0 0 1 1.59a2.23 2.23 0 0 0 .91.2a2.06 2.06 0 0 0 1.3-.46l5.1-4.21l.14-.15V17a1 1 0 0 0 2 0V7a1 1 0 0 0-1-1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SkipForwardOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(skipForwardOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSkipForwardOutline0"><g id="evaSkipForwardOutline1"><path id="evaSkipForwardOutline2" fill="currentColor" d="M16 6a1 1 0 0 0-1 1v3.82l-.14-.15l-5.1-4.21a2.1 2.1 0 0 0-2.21-.26a1.76 1.76 0 0 0-1 1.59v8.42a1.76 1.76 0 0 0 1 1.59a2.23 2.23 0 0 0 .91.2a2.06 2.06 0 0 0 1.3-.46l5.1-4.21l.14-.15V17a1 1 0 0 0 2 0V7a1 1 0 0 0-1-1Zm-7.5 9.91V8l4.82 4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SlashFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(slashFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSlashFill0"><g id="evaSlashFill1"><path id="evaSlashFill2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm8 10a7.92 7.92 0 0 1-1.69 4.9L7.1 5.69A7.92 7.92 0 0 1 12 4a8 8 0 0 1 8 8ZM4 12a7.92 7.92 0 0 1 1.69-4.9L16.9 18.31A7.92 7.92 0 0 1 12 20a8 8 0 0 1-8-8Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SlashOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(slashOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSlashOutline0"><g id="evaSlashOutline1"><path id="evaSlashOutline2" fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm8 10a7.92 7.92 0 0 1-1.69 4.9L7.1 5.69A7.92 7.92 0 0 1 12 4a8 8 0 0 1 8 8ZM4 12a7.92 7.92 0 0 1 1.69-4.9L16.9 18.31A7.92 7.92 0 0 1 12 20a8 8 0 0 1-8-8Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SmartphoneFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(smartphoneFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSmartphoneFill0"><g id="evaSmartphoneFill1"><path id="evaSmartphoneFill2" fill="currentColor" d="M17 2H7a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3Zm-5 16a1.5 1.5 0 1 1 1.5-1.5A1.5 1.5 0 0 1 12 18Zm2.5-10h-5a1 1 0 0 1 0-2h5a1 1 0 0 1 0 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SmartphoneOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(smartphoneOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSmartphoneOutline0"><g id="evaSmartphoneOutline1"><g id="evaSmartphoneOutline2" fill="currentColor"><path d="M17 2H7a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1Z"/><circle cx="12" cy="16.5" r="1.5"/><path d="M14.5 6h-5a1 1 0 0 0 0 2h5a1 1 0 0 0 0-2Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func SmilingFaceFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(smilingFaceFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSmilingFaceFill0"><g id="evaSmilingFaceFill1"><path id="evaSmilingFaceFill2" fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16Zm5 9a5 5 0 0 1-10 0Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SmilingFaceOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(smilingFaceOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSmilingFaceOutline0"><g id="evaSmilingFaceOutline1"><path id="evaSmilingFaceOutline2" fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2Zm0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16Zm5 9a5 5 0 0 1-10 0Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SpeakerFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(speakerFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSpeakerFill0"><g id="evaSpeakerFill1"><g id="evaSpeakerFill2" fill="currentColor"><circle cx="12" cy="15.5" r="1.5"/><circle cx="12" cy="8" r="1"/><path d="M17 2H7a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3Zm-5 3a3 3 0 1 1-3 3a3 3 0 0 1 3-3Zm0 14a3.5 3.5 0 1 1 3.5-3.5A3.5 3.5 0 0 1 12 19Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func SpeakerOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(speakerOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSpeakerOutline0"><g id="evaSpeakerOutline1"><g id="evaSpeakerOutline2" fill="currentColor"><path d="M12 11a3 3 0 1 0-3-3a3 3 0 0 0 3 3Zm0-4a1 1 0 1 1-1 1a1 1 0 0 1 1-1Zm0 5a3.5 3.5 0 1 0 3.5 3.5A3.5 3.5 0 0 0 12 12Zm0 5a1.5 1.5 0 1 1 1.5-1.5A1.5 1.5 0 0 1 12 17Z"/><path d="M17 2H7a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3Zm1 17a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func SquareFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(squareFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSquareFill0"><g id="evaSquareFill1"><path id="evaSquareFill2" fill="currentColor" d="M18 21H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3ZM6 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SquareOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(squareOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSquareOutline0"><g id="evaSquareOutline1"><path id="evaSquareOutline2" fill="currentColor" d="M18 21H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3ZM6 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func StarFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(starFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaStarFill0"><g id="evaStarFill1"><path id="evaStarFill2" fill="currentColor" d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63l-4.12-4a1 1 0 0 1-.25-1a1 1 0 0 1 .81-.68l5.7-.83l2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12l5.7.83a1 1 0 0 1 .81.68a1 1 0 0 1-.25 1l-4.12 4l1 5.63a1 1 0 0 1-.4 1a1 1 0 0 1-.62.18Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func StarOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(starOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaStarOutline0"><g id="evaStarOutline1"><path id="evaStarOutline2" fill="currentColor" d="M17.56 21a1 1 0 0 1-.46-.11L12 18.22l-5.1 2.67a1 1 0 0 1-1.45-1.06l1-5.63l-4.12-4a1 1 0 0 1-.25-1a1 1 0 0 1 .81-.68l5.7-.83l2.51-5.13a1 1 0 0 1 1.8 0l2.54 5.12l5.7.83a1 1 0 0 1 .81.68a1 1 0 0 1-.25 1l-4.12 4l1 5.63a1 1 0 0 1-.4 1a1 1 0 0 1-.62.18ZM12 16.1a.92.92 0 0 1 .46.11l3.77 2l-.72-4.21a1 1 0 0 1 .29-.89l3-2.93l-4.2-.62a1 1 0 0 1-.71-.56L12 5.25L10.11 9a1 1 0 0 1-.75.54l-4.2.62l3 2.93a1 1 0 0 1 .29.89l-.72 4.16l3.77-2a.92.92 0 0 1 .5-.04Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func StopCircleFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(stopCircleFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaStopCircleFill0"><g id="evaStopCircleFill1"><g id="evaStopCircleFill2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm4 12.75A1.25 1.25 0 0 1 14.75 16h-5.5A1.25 1.25 0 0 1 8 14.75v-5.5A1.25 1.25 0 0 1 9.25 8h5.5A1.25 1.25 0 0 1 16 9.25Z"/><path d="M10 10h4v4h-4z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func StopCircleOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(stopCircleOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaStopCircleOutline0"><g id="evaStopCircleOutline1"><g id="evaStopCircleOutline2" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8a8 8 0 0 1-8 8Z"/><path d="M14.75 8h-5.5A1.25 1.25 0 0 0 8 9.25v5.5A1.25 1.25 0 0 0 9.25 16h5.5A1.25 1.25 0 0 0 16 14.75v-5.5A1.25 1.25 0 0 0 14.75 8ZM14 14h-4v-4h4Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func SunFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(sunFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSunFill0"><g id="evaSunFill1"><path id="evaSunFill2" fill="currentColor" d="M12 6a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1Zm9 5h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2ZM6 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1Zm.22-7a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28a1 1 0 0 0 .72-.31a1 1 0 0 0 0-1.41ZM17 8.14a1 1 0 0 0 .69-.28l1.44-1.39A1 1 0 0 0 17.78 5l-1.44 1.42a1 1 0 0 0 0 1.41a1 1 0 0 0 .66.31ZM12 18a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1Zm5.73-1.86a1 1 0 0 0-1.39 1.44L17.78 19a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.3a1 1 0 0 0 0-1.42Zm-11.46 0l-1.44 1.39a1 1 0 0 0 0 1.42a1 1 0 0 0 .72.3a1 1 0 0 0 .67-.25l1.44-1.39a1 1 0 0 0-1.39-1.44ZM12 8a4 4 0 1 0 4 4a4 4 0 0 0-4-4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SunOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(sunOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSunOutline0"><g id="evaSunOutline1"><path id="evaSunOutline2" fill="currentColor" d="M12 6a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1Zm9 5h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2ZM6 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1Zm.22-7a1 1 0 0 0-1.39 1.47l1.44 1.39a1 1 0 0 0 .73.28a1 1 0 0 0 .72-.31a1 1 0 0 0 0-1.41ZM17 8.14a1 1 0 0 0 .69-.28l1.44-1.39A1 1 0 0 0 17.78 5l-1.44 1.42a1 1 0 0 0 0 1.41a1 1 0 0 0 .66.31ZM12 18a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1Zm5.73-1.86a1 1 0 0 0-1.39 1.44L17.78 19a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.3a1 1 0 0 0 0-1.42Zm-11.46 0l-1.44 1.39a1 1 0 0 0 0 1.42a1 1 0 0 0 .72.3a1 1 0 0 0 .67-.25l1.44-1.39a1 1 0 0 0-1.39-1.44ZM12 8a4 4 0 1 0 4 4a4 4 0 0 0-4-4Zm0 6a2 2 0 1 1 2-2a2 2 0 0 1-2 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SwapFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(swapFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSwapFill0"><g id="evaSwapFill1"><path id="evaSwapFill2" fill="currentColor" d="M4 9h13l-1.6 1.2a1 1 0 0 0-.2 1.4a1 1 0 0 0 .8.4a1 1 0 0 0 .6-.2l4-3a1 1 0 0 0 0-1.59l-3.86-3a1 1 0 0 0-1.23 1.58L17.08 7H4a1 1 0 0 0 0 2Zm16 7H7l1.6-1.2a1 1 0 0 0-1.2-1.6l-4 3a1 1 0 0 0 0 1.59l3.86 3a1 1 0 0 0 .61.21a1 1 0 0 0 .79-.39a1 1 0 0 0-.17-1.4L6.92 18H20a1 1 0 0 0 0-2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SwapOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(swapOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSwapOutline0"><g id="evaSwapOutline1"><path id="evaSwapOutline2" fill="currentColor" d="M4 9h13l-1.6 1.2a1 1 0 0 0-.2 1.4a1 1 0 0 0 .8.4a1 1 0 0 0 .6-.2l4-3a1 1 0 0 0 0-1.59l-3.86-3a1 1 0 0 0-1.23 1.58L17.08 7H4a1 1 0 0 0 0 2Zm16 7H7l1.6-1.2a1 1 0 0 0-1.2-1.6l-4 3a1 1 0 0 0 0 1.59l3.86 3a1 1 0 0 0 .61.21a1 1 0 0 0 .79-.39a1 1 0 0 0-.17-1.4L6.92 18H20a1 1 0 0 0 0-2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SyncFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(syncFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSyncFill0"><g id="evaSyncFill1"><path id="evaSyncFill2" fill="currentColor" d="M21.66 10.37a.62.62 0 0 0 .07-.19l.75-4a1 1 0 0 0-2-.36l-.37 2a9.22 9.22 0 0 0-16.58.84a1 1 0 0 0 .55 1.3a1 1 0 0 0 1.31-.55A7.08 7.08 0 0 1 12.07 5a7.17 7.17 0 0 1 6.24 3.58l-1.65-.27a1 1 0 1 0-.32 2l4.25.71h.16a.93.93 0 0 0 .34-.06a.33.33 0 0 0 .1-.06a.78.78 0 0 0 .2-.11l.08-.1a1.07 1.07 0 0 0 .14-.16a.58.58 0 0 0 .05-.16Zm-1.78 3.7a1 1 0 0 0-1.31.56A7.08 7.08 0 0 1 11.93 19a7.17 7.17 0 0 1-6.24-3.58l1.65.27h.16a1 1 0 0 0 .16-2L3.41 13a.91.91 0 0 0-.33 0H3a1.15 1.15 0 0 0-.32.14a1 1 0 0 0-.18.18l-.09.1a.84.84 0 0 0-.07.19a.44.44 0 0 0-.07.17l-.75 4a1 1 0 0 0 .8 1.22h.18a1 1 0 0 0 1-.82l.37-2a9.22 9.22 0 0 0 16.58-.83a1 1 0 0 0-.57-1.28Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func SyncOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(syncOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaSyncOutline0"><g id="evaSyncOutline1"><path id="evaSyncOutline2" fill="currentColor" d="M21.66 10.37a.62.62 0 0 0 .07-.19l.75-4a1 1 0 0 0-2-.36l-.37 2a9.22 9.22 0 0 0-16.58.84a1 1 0 0 0 .55 1.3a1 1 0 0 0 1.31-.55A7.08 7.08 0 0 1 12.07 5a7.17 7.17 0 0 1 6.24 3.58l-1.65-.27a1 1 0 1 0-.32 2l4.25.71h.16a.93.93 0 0 0 .34-.06a.33.33 0 0 0 .1-.06a.78.78 0 0 0 .2-.11l.08-.1a1.07 1.07 0 0 0 .14-.16a.58.58 0 0 0 .05-.16Zm-1.78 3.7a1 1 0 0 0-1.31.56A7.08 7.08 0 0 1 11.93 19a7.17 7.17 0 0 1-6.24-3.58l1.65.27h.16a1 1 0 0 0 .16-2L3.41 13a.91.91 0 0 0-.33 0H3a1.15 1.15 0 0 0-.32.14a1 1 0 0 0-.18.18l-.09.1a.84.84 0 0 0-.07.19a.44.44 0 0 0-.07.17l-.75 4a1 1 0 0 0 .8 1.22h.18a1 1 0 0 0 1-.82l.37-2a9.22 9.22 0 0 0 16.58-.83a1 1 0 0 0-.57-1.28Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func TextFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(textFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaTextFill0"><g id="evaTextFill1"><path id="evaTextFill2" fill="currentColor" d="M20 4H4a1 1 0 0 0-1 1v3a1 1 0 0 0 2 0V6h6v13H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2h-2V6h6v2a1 1 0 0 0 2 0V5a1 1 0 0 0-1-1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func TextOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(textOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaTextOutline0"><g id="evaTextOutline1"><path id="evaTextOutline2" fill="currentColor" d="M20 4H4a1 1 0 0 0-1 1v3a1 1 0 0 0 2 0V6h6v13H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2h-2V6h6v2a1 1 0 0 0 2 0V5a1 1 0 0 0-1-1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ThermometerFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(thermometerFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaThermometerFill0"><g id="evaThermometerFill1"><path id="evaThermometerFill2" fill="currentColor" d="M12 22a5 5 0 0 1-3-9V5a3 3 0 0 1 3-3a3 3 0 0 1 3 3v8a5 5 0 0 1-3 9Zm1-12.46V5a.93.93 0 0 0-.29-.69A1 1 0 0 0 12 4a1 1 0 0 0-1 1v4.54Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ThermometerMinusFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(thermometerMinusFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaThermometerMinusFill0"><g id="evaThermometerMinusFill1"><g id="evaThermometerMinusFill2" fill="currentColor"><rect width="6" height="2" x="2" y="5" rx="1" ry="1"/><path d="M14 22a5 5 0 0 1-3-9V5a3 3 0 0 1 3-3a3 3 0 0 1 3 3v8a5 5 0 0 1-3 9Zm1-12.46V5a.93.93 0 0 0-.29-.69A1 1 0 0 0 14 4a1 1 0 0 0-1 1v4.54Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ThermometerMinusOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(thermometerMinusOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaThermometerMinusOutline0"><g id="evaThermometerMinusOutline1"><g id="evaThermometerMinusOutline2" fill="currentColor"><rect width="6" height="2" x="2" y="5" rx="1" ry="1"/><path d="M14 22a5 5 0 0 1-3-9V5a3 3 0 0 1 3-3a3 3 0 0 1 3 3v8a5 5 0 0 1-3 9Zm0-18a1 1 0 0 0-1 1v8.54a1 1 0 0 1-.5.87A3 3 0 0 0 11 17a3 3 0 0 0 6 0a3 3 0 0 0-1.5-2.59a1 1 0 0 1-.5-.87V5a.93.93 0 0 0-.29-.69A1 1 0 0 0 14 4Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ThermometerOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(thermometerOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaThermometerOutline0"><g id="evaThermometerOutline1"><path id="evaThermometerOutline2" fill="currentColor" d="M12 22a5 5 0 0 1-3-9V5a3 3 0 0 1 3-3a3 3 0 0 1 3 3v8a5 5 0 0 1-3 9Zm0-18a1 1 0 0 0-1 1v8.54a1 1 0 0 1-.5.87A3 3 0 0 0 9 17a3 3 0 0 0 6 0a3 3 0 0 0-1.5-2.59a1 1 0 0 1-.5-.87V5a.93.93 0 0 0-.29-.69A1 1 0 0 0 12 4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func ThermometerPlusFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(thermometerPlusFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaThermometerPlusFill0"><g id="evaThermometerPlusFill1"><g id="evaThermometerPlusFill2" fill="currentColor"><rect width="6" height="2" x="2" y="5" rx="1" ry="1"/><rect width="6" height="2" x="2" y="5" rx="1" ry="1" transform="rotate(-90 5 6)"/><path d="M14 22a5 5 0 0 1-3-9V5a3 3 0 0 1 3-3a3 3 0 0 1 3 3v8a5 5 0 0 1-3 9Zm1-12.46V5a.93.93 0 0 0-.29-.69A1 1 0 0 0 14 4a1 1 0 0 0-1 1v4.54Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ThermometerPlusOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(thermometerPlusOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaThermometerPlusOutline0"><g id="evaThermometerPlusOutline1"><g id="evaThermometerPlusOutline2" fill="currentColor"><rect width="6" height="2" x="2" y="5" rx="1" ry="1"/><rect width="6" height="2" x="2" y="5" rx="1" ry="1" transform="rotate(-90 5 6)"/><path d="M14 22a5 5 0 0 1-3-9V5a3 3 0 0 1 3-3a3 3 0 0 1 3 3v8a5 5 0 0 1-3 9Zm0-18a1 1 0 0 0-1 1v8.54a1 1 0 0 1-.5.87A3 3 0 0 0 11 17a3 3 0 0 0 6 0a3 3 0 0 0-1.5-2.59a1 1 0 0 1-.5-.87V5a.93.93 0 0 0-.29-.69A1 1 0 0 0 14 4Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ToggleLeftFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(toggleLeftFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaToggleLeftFill0"><g id="evaToggleLeftFill1"><g id="evaToggleLeftFill2" fill="currentColor"><path d="M15 5H9a7 7 0 0 0 0 14h6a7 7 0 0 0 0-14ZM9 15a3 3 0 1 1 3-3a3 3 0 0 1-3 3Z"/><path d="M9 11a1 1 0 1 0 0 2a1 1 0 0 0 0-2Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ToggleLeftOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(toggleLeftOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaToggleLeftOutline0"><g id="evaToggleLeftOutline1"><g id="evaToggleLeftOutline2" fill="currentColor"><path d="M15 5H9a7 7 0 0 0 0 14h6a7 7 0 0 0 0-14Zm0 12H9A5 5 0 0 1 9 7h6a5 5 0 0 1 0 10Z"/><path d="M9 9a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ToggleRightFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(toggleRightFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaToggleRightFill0"><g id="evaToggleRightFill1"><g id="evaToggleRightFill2" fill="currentColor"><circle cx="15" cy="12" r="1"/><path d="M15 5H9a7 7 0 0 0 0 14h6a7 7 0 0 0 0-14Zm0 10a3 3 0 1 1 3-3a3 3 0 0 1-3 3Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func ToggleRightOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(toggleRightOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaToggleRightOutline0"><g id="evaToggleRightOutline1"><g id="evaToggleRightOutline2" fill="currentColor"><path d="M15 5H9a7 7 0 0 0 0 14h6a7 7 0 0 0 0-14Zm0 12H9A5 5 0 0 1 9 7h6a5 5 0 0 1 0 10Z"/><path d="M15 9a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func TrashFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(trashFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaTrashFill0"><g id="evaTrashFill1"><path id="evaTrashFill2" fill="currentColor" d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 4.33c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func TrashOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(trashOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaTrashOutline0"><g id="evaTrashOutline1"><path id="evaTrashOutline2" fill="currentColor" d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 4.33c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4ZM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8h12Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func TrashTwoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(trashTwoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaTrash2Fill0"><g id="evaTrash2Fill1"><path id="evaTrash2Fill2" fill="currentColor" d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 16a1 1 0 0 1-2 0v-4a1 1 0 0 1 2 0Zm0-11.67c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4ZM16 16a1 1 0 0 1-2 0v-4a1 1 0 0 1 2 0Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func TrashTwoOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(trashTwoOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaTrash2Outline0"><g id="evaTrash2Outline1"><g id="evaTrash2Outline2" fill="currentColor"><path d="M21 6h-5V4.33A2.42 2.42 0 0 0 13.5 2h-3A2.42 2.42 0 0 0 8 4.33V6H3a1 1 0 0 0 0 2h1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8h1a1 1 0 0 0 0-2ZM10 4.33c0-.16.21-.33.5-.33h3c.29 0 .5.17.5.33V6h-4ZM18 19a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8h12Z"/><path d="M9 17a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1Zm6 0a1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v4a1 1 0 0 0 1 1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func TrendingDownFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(trendingDownFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaTrendingDownFill0"><g id="evaTrendingDownFill1"><path id="evaTrendingDownFill2" fill="currentColor" d="M21 12a1 1 0 0 0-2 0v2.3l-4.24-5a1 1 0 0 0-1.27-.21L9.22 11.7L4.77 6.36a1 1 0 1 0-1.54 1.28l5 6a1 1 0 0 0 1.28.22l4.28-2.57l4 4.71H15a1 1 0 0 0 0 2h5a1.1 1.1 0 0 0 .36-.07l.14-.08a1.19 1.19 0 0 0 .15-.09a.75.75 0 0 0 .14-.17a1.1 1.1 0 0 0 .09-.14a.64.64 0 0 0 .05-.17A.78.78 0 0 0 21 17Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func TrendingDownOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(trendingDownOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaTrendingDownOutline0"><g id="evaTrendingDownOutline1"><path id="evaTrendingDownOutline2" fill="currentColor" d="M21 12a1 1 0 0 0-2 0v2.3l-4.24-5a1 1 0 0 0-1.27-.21L9.22 11.7L4.77 6.36a1 1 0 1 0-1.54 1.28l5 6a1 1 0 0 0 1.28.22l4.28-2.57l4 4.71H15a1 1 0 0 0 0 2h5a1.1 1.1 0 0 0 .36-.07l.14-.08a1.19 1.19 0 0 0 .15-.09a.75.75 0 0 0 .14-.17a1.1 1.1 0 0 0 .09-.14a.64.64 0 0 0 .05-.17A.78.78 0 0 0 21 17Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func TrendingUpFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(trendingUpFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaTrendingUpFill0"><g id="evaTrendingUpFill1"><path id="evaTrendingUpFill2" fill="currentColor" d="M21 7a.78.78 0 0 0 0-.21a.64.64 0 0 0-.05-.17a1.1 1.1 0 0 0-.09-.14a.75.75 0 0 0-.14-.17l-.12-.07a.69.69 0 0 0-.19-.1h-.2A.7.7 0 0 0 20 6h-5a1 1 0 0 0 0 2h2.83l-4 4.71l-4.32-2.57a1 1 0 0 0-1.28.22l-5 6a1 1 0 0 0 .13 1.41A1 1 0 0 0 4 18a1 1 0 0 0 .77-.36l4.45-5.34l4.27 2.56a1 1 0 0 0 1.27-.21L19 9.7V12a1 1 0 0 0 2 0V7Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func TrendingUpOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(trendingUpOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaTrendingUpOutline0"><g id="evaTrendingUpOutline1"><path id="evaTrendingUpOutline2" fill="currentColor" d="M21 7a.78.78 0 0 0 0-.21a.64.64 0 0 0-.05-.17a1.1 1.1 0 0 0-.09-.14a.75.75 0 0 0-.14-.17l-.12-.07a.69.69 0 0 0-.19-.1h-.2A.7.7 0 0 0 20 6h-5a1 1 0 0 0 0 2h2.83l-4 4.71l-4.32-2.57a1 1 0 0 0-1.28.22l-5 6a1 1 0 0 0 .13 1.41A1 1 0 0 0 4 18a1 1 0 0 0 .77-.36l4.45-5.34l4.27 2.56a1 1 0 0 0 1.27-.21L19 9.7V12a1 1 0 0 0 2 0V7Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func TvFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(tvFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaTvFill0"><g id="evaTvFill1"><path id="evaTvFill2" fill="currentColor" d="M18 6h-3.59l2.3-2.29a1 1 0 1 0-1.42-1.42L12 5.59l-3.29-3.3a1 1 0 1 0-1.42 1.42L9.59 6H6a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func TvOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(tvOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaTvOutline0"><g id="evaTvOutline1"><path id="evaTvOutline2" fill="currentColor" d="M18 6h-3.59l2.3-2.29a1 1 0 1 0-1.42-1.42L12 5.59l-3.29-3.3a1 1 0 1 0-1.42 1.42L9.59 6H6a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3Zm1 13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func TwitterFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(twitterFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaTwitterFill0"><g id="evaTwitterFill1"><path id="evaTwitterFill2" fill="currentColor" d="M8.08 20A11.07 11.07 0 0 0 19.52 9A8.09 8.09 0 0 0 21 6.16a.44.44 0 0 0-.62-.51a1.88 1.88 0 0 1-2.16-.38a3.89 3.89 0 0 0-5.58-.17A4.13 4.13 0 0 0 11.49 9C8.14 9.2 5.84 7.61 4 5.43a.43.43 0 0 0-.75.24a9.68 9.68 0 0 0 4.6 10.05A6.73 6.73 0 0 1 3.38 18a.45.45 0 0 0-.14.84A11 11 0 0 0 8.08 20"/></g></g>`), g.Group(children),
+	)
 }
 
 func TwitterOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(twitterOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaTwitterOutline0"><g id="evaTwitterOutline1"><path id="evaTwitterOutline2" fill="currentColor" d="M8.51 20h-.08a10.87 10.87 0 0 1-4.65-1.09A1.38 1.38 0 0 1 3 17.47a1.41 1.41 0 0 1 1.16-1.18a6.63 6.63 0 0 0 2.54-.89a9.49 9.49 0 0 1-3.51-9.07a1.41 1.41 0 0 1 1-1.15a1.35 1.35 0 0 1 1.43.41a7.09 7.09 0 0 0 4.88 2.75a4.5 4.5 0 0 1 1.41-3.1a4.47 4.47 0 0 1 6.37.19a.7.7 0 0 0 .78.1A1.39 1.39 0 0 1 21 7.13a6.66 6.66 0 0 1-1.28 2.6A10.79 10.79 0 0 1 8.51 20Zm0-2h.08a8.79 8.79 0 0 0 9.09-8.59a1.32 1.32 0 0 1 .37-.85a5.19 5.19 0 0 0 .62-1a2.56 2.56 0 0 1-1.91-.85A2.45 2.45 0 0 0 15 6a2.5 2.5 0 0 0-1.79.69a2.53 2.53 0 0 0-.72 2.42l.26 1.14l-1.17.08a8.3 8.3 0 0 1-6.54-2.4a7.12 7.12 0 0 0 3.73 6.46l.95.54l-.63.9a5.62 5.62 0 0 1-2.68 1.92A8.34 8.34 0 0 0 8.5 18ZM19 6.65Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func UmbrellaFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(umbrellaFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaUmbrellaFill0"><g id="evaUmbrellaFill1"><path id="evaUmbrellaFill2" fill="currentColor" d="M12 2A10 10 0 0 0 2 12a1 1 0 0 0 1 1h8v6a3 3 0 0 0 6 0a1 1 0 0 0-2 0a1 1 0 0 1-2 0v-6h8a1 1 0 0 0 1-1A10 10 0 0 0 12 2Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func UmbrellaOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(umbrellaOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaUmbrellaOutline0"><g id="evaUmbrellaOutline1"><path id="evaUmbrellaOutline2" fill="currentColor" d="M12 2A10 10 0 0 0 2 12a1 1 0 0 0 1 1h8v6a3 3 0 0 0 6 0a1 1 0 0 0-2 0a1 1 0 0 1-2 0v-6h8a1 1 0 0 0 1-1A10 10 0 0 0 12 2Zm-7.94 9a8 8 0 0 1 15.88 0Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func UndoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(undoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaUndoFill0"><g id="evaUndoFill1"><path id="evaUndoFill2" fill="currentColor" d="M20.22 21a1 1 0 0 1-1-.76a8.91 8.91 0 0 0-7.8-6.69v1.12a1.78 1.78 0 0 1-1.09 1.64A2 2 0 0 1 8.18 16l-5.06-4.41a1.76 1.76 0 0 1 0-2.68l5.06-4.42a2 2 0 0 1 2.18-.3a1.78 1.78 0 0 1 1.09 1.64V7A10.89 10.89 0 0 1 21.5 17.75a10.29 10.29 0 0 1-.31 2.49a1 1 0 0 1-1 .76Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func UndoOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(undoOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaUndoOutline0"><g id="evaUndoOutline1"><path id="evaUndoOutline2" fill="currentColor" d="M20.22 21a1 1 0 0 1-1-.76a8.91 8.91 0 0 0-7.8-6.69v1.12a1.78 1.78 0 0 1-1.09 1.64A2 2 0 0 1 8.18 16l-5.06-4.41a1.76 1.76 0 0 1 0-2.68l5.06-4.42a2 2 0 0 1 2.18-.3a1.78 1.78 0 0 1 1.09 1.64V7A10.89 10.89 0 0 1 21.5 17.75a10.29 10.29 0 0 1-.31 2.49a1 1 0 0 1-1 .76Zm-9.77-9.5a11.07 11.07 0 0 1 8.81 4.26A9 9 0 0 0 10.45 9a1 1 0 0 1-1-1V6.08l-4.82 4.17l4.82 4.21v-2a1 1 0 0 1 1-.96Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func UnlockFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(unlockFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaUnlockFill0"><g id="evaUnlockFill1"><g id="evaUnlockFill2" fill="currentColor"><circle cx="12" cy="15" r="1"/><path d="M17 8h-7V6a2 2 0 0 1 4 0a1 1 0 0 0 2 0a4 4 0 0 0-8 0v2H7a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3Zm-5 10a3 3 0 1 1 3-3a3 3 0 0 1-3 3Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func UnlockOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(unlockOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaUnlockOutline0"><g id="evaUnlockOutline1"><g id="evaUnlockOutline2" fill="currentColor"><path d="M17 8h-7V6a2 2 0 0 1 4 0a1 1 0 0 0 2 0a4 4 0 0 0-8 0v2H7a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3Zm1 11a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1Z"/><path d="M12 12a3 3 0 1 0 3 3a3 3 0 0 0-3-3Zm0 4a1 1 0 1 1 1-1a1 1 0 0 1-1 1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func UploadFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(uploadFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaUploadFill0"><g id="evaUploadFill1"><g id="evaUploadFill2" fill="currentColor"><rect width="16" height="2" x="4" y="4" rx="1" ry="1" transform="rotate(180 12 5)"/><rect width="4" height="2" x="17" y="5" rx="1" ry="1" transform="rotate(90 19 6)"/><rect width="4" height="2" x="3" y="5" rx="1" ry="1" transform="rotate(90 5 6)"/><path d="M8 14a1 1 0 0 1-.8-.4a1 1 0 0 1 .2-1.4l4-3a1 1 0 0 1 1.18 0l4 2.82a1 1 0 0 1 .24 1.39a1 1 0 0 1-1.4.24L12 11.24L8.6 13.8a1 1 0 0 1-.6.2Z"/><path d="M12 21a1 1 0 0 1-1-1v-8a1 1 0 0 1 2 0v8a1 1 0 0 1-1 1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func UploadOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(uploadOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaUploadOutline0"><g id="evaUploadOutline1"><g id="evaUploadOutline2" fill="currentColor"><rect width="16" height="2" x="4" y="4" rx="1" ry="1" transform="rotate(180 12 5)"/><rect width="4" height="2" x="17" y="5" rx="1" ry="1" transform="rotate(90 19 6)"/><rect width="4" height="2" x="3" y="5" rx="1" ry="1" transform="rotate(90 5 6)"/><path d="M8 14a1 1 0 0 1-.8-.4a1 1 0 0 1 .2-1.4l4-3a1 1 0 0 1 1.18 0l4 2.82a1 1 0 0 1 .24 1.39a1 1 0 0 1-1.4.24L12 11.24L8.6 13.8a1 1 0 0 1-.6.2Z"/><path d="M12 21a1 1 0 0 1-1-1v-8a1 1 0 0 1 2 0v8a1 1 0 0 1-1 1Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func VideoFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(videoFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaVideoFill0"><g id="evaVideoFill1"><path id="evaVideoFill2" fill="currentColor" d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45a1.68 1.68 0 0 0 .69-.15a1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func VideoOffFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(videoOffFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaVideoOffFill0"><g id="evaVideoOffFill1"><path id="evaVideoOffFill2" fill="currentColor" d="M14.22 17.05L4.88 7.71L3.12 6L3 5.8A3 3 0 0 0 2 8v8a3 3 0 0 0 3 3h9a2.94 2.94 0 0 0 1.66-.51ZM21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H7.83l1.29 1.29l6.59 6.59l2 2l2 2a1.73 1.73 0 0 0 .6.11a1.68 1.68 0 0 0 .69-.15a1.6 1.6 0 0 0 1-1.48V8.63a1.6 1.6 0 0 0-1-1.48Zm-4 8.44l-2-2L8.41 7l-2-2l-1.7-1.71a1 1 0 0 0-1.42 1.42l.54.53L5.59 7l9.34 9.34l1.46 1.46l2.9 2.91a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func VideoOffOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(videoOffOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaVideoOffOutline0"><g id="evaVideoOffOutline1"><path id="evaVideoOffOutline2" fill="currentColor" d="m17 15.59l-2-2L8.41 7l-2-2l-1.7-1.71a1 1 0 0 0-1.42 1.42l.54.53L5.59 7l9.34 9.34l1.46 1.46l2.9 2.91a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42ZM14 17H5a1 1 0 0 1-1-1V8a1 1 0 0 1 .4-.78L3 5.8A3 3 0 0 0 2 8v8a3 3 0 0 0 3 3h9a2.94 2.94 0 0 0 1.66-.51L14.14 17a.7.7 0 0 1-.14 0Zm7-9.85a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H7.83l2 2H14a1 1 0 0 1 1 1v4.17l4.72 4.72a1.73 1.73 0 0 0 .6.11a1.68 1.68 0 0 0 .69-.15a1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15Zm-1 7.45L17.19 12L20 9.4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func VideoOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(videoOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaVideoOutline0"><g id="evaVideoOutline1"><path id="evaVideoOutline2" fill="currentColor" d="M21 7.15a1.7 1.7 0 0 0-1.85.3l-2.15 2V8a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h9a3 3 0 0 0 3-3v-1.45l2.16 2a1.74 1.74 0 0 0 1.16.45a1.68 1.68 0 0 0 .69-.15a1.6 1.6 0 0 0 1-1.48V8.63A1.6 1.6 0 0 0 21 7.15ZM15 16a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1Zm5-1.4L17.19 12L20 9.4Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func VolumeDownFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(volumeDownFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaVolumeDownFill0"><g id="evaVolumeDownFill1"><path id="evaVolumeDownFill2" fill="currentColor" d="M20.78 8.37a1 1 0 1 0-1.56 1.26a4 4 0 0 1 0 4.74A1 1 0 0 0 20 16a1 1 0 0 0 .78-.37a6 6 0 0 0 0-7.26Zm-4.31-5.25a1 1 0 0 0-1 0L9 7.57H4a1 1 0 0 0-1 1v6.86a1 1 0 0 0 1 1h5l6.41 4.4A1.06 1.06 0 0 0 16 21a1 1 0 0 0 1-1V4a1 1 0 0 0-.53-.88Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func VolumeDownOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(volumeDownOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaVolumeDownOutline0"><g id="evaVolumeDownOutline1"><path id="evaVolumeDownOutline2" fill="currentColor" d="M20.78 8.37a1 1 0 1 0-1.56 1.26a4 4 0 0 1 0 4.74A1 1 0 0 0 20 16a1 1 0 0 0 .78-.37a6 6 0 0 0 0-7.26Zm-4.31-5.25a1 1 0 0 0-1 0L9 7.57H4a1 1 0 0 0-1 1v6.86a1 1 0 0 0 1 1h5l6.41 4.4A1.06 1.06 0 0 0 16 21a1 1 0 0 0 1-1V4a1 1 0 0 0-.53-.88ZM15 18.1l-5.1-3.5a1 1 0 0 0-.57-.17H5V9.57h4.33a1 1 0 0 0 .57-.17L15 5.9Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func VolumeMuteFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(volumeMuteFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaVolumeMuteFill0"><g id="evaVolumeMuteFill1"><path id="evaVolumeMuteFill2" fill="currentColor" d="M17 21a1.06 1.06 0 0 1-.57-.17L10 16.43H5a1 1 0 0 1-1-1V8.57a1 1 0 0 1 1-1h5l6.41-4.4A1 1 0 0 1 18 4v16a1 1 0 0 1-1 1Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func VolumeMuteOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(volumeMuteOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaVolumeMuteOutline0"><g id="evaVolumeMuteOutline1"><path id="evaVolumeMuteOutline2" fill="currentColor" d="M17 21a1.06 1.06 0 0 1-.57-.17L10 16.43H5a1 1 0 0 1-1-1V8.57a1 1 0 0 1 1-1h5l6.41-4.4A1 1 0 0 1 18 4v16a1 1 0 0 1-1 1ZM6 14.43h4.33a1 1 0 0 1 .57.17l5.1 3.5V5.9l-5.1 3.5a1 1 0 0 1-.57.17H6Z"/></g></g>`), g.Group(children),
+	)
 }
 
 func VolumeOffFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(volumeOffFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaVolumeOffFill0"><g id="evaVolumeOffFill1"><g id="evaVolumeOffFill2" fill="currentColor"><path d="m16.91 14.08l1.44 1.44a6 6 0 0 0-.07-7.15a1 1 0 1 0-1.56 1.26a4 4 0 0 1 .19 4.45Z"/><path d="M21 12a6.51 6.51 0 0 1-1.78 4.39l1.42 1.42A8.53 8.53 0 0 0 23 12a8.75 8.75 0 0 0-3.36-6.77a1 1 0 1 0-1.28 1.54A6.8 6.8 0 0 1 21 12Zm-6 .17V4a1 1 0 0 0-1.57-.83L9 6.2ZM4.74 7.57H2a1 1 0 0 0-1 1v6.86a1 1 0 0 0 1 1h5l6.41 4.4A1.06 1.06 0 0 0 14 21a1 1 0 0 0 1-1v-2.17Zm-.03-4.28a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func VolumeOffOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(volumeOffOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaVolumeOffOutline0"><g id="evaVolumeOffOutline1"><g id="evaVolumeOffOutline2" fill="currentColor"><path d="M4.71 3.29a1 1 0 0 0-1.42 1.42l16 16a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Zm12.2 10.79l1.44 1.44a6 6 0 0 0-.07-7.15a1 1 0 1 0-1.56 1.26a4 4 0 0 1 .19 4.45Z"/><path d="M21 12a6.51 6.51 0 0 1-1.78 4.39l1.42 1.42A8.53 8.53 0 0 0 23 12a8.75 8.75 0 0 0-3.36-6.77a1 1 0 1 0-1.28 1.54A6.8 6.8 0 0 1 21 12Zm-7.5 6.1l-5.1-3.5a1 1 0 0 0-.57-.17H3.5V9.57h3.24l-2-2H2.5a1 1 0 0 0-1 1v6.86a1 1 0 0 0 1 1h5l6.41 4.4a1.06 1.06 0 0 0 .57.17a1 1 0 0 0 1-1v-1.67l-2-2Zm0-12.2v4.77l2 2V4a1 1 0 0 0-1.57-.83L9.23 6.4l1.44 1.44Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func VolumeUpFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(volumeUpFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaVolumeUpFill0"><g id="evaVolumeUpFill1"><g id="evaVolumeUpFill2" fill="currentColor"><path d="M18.28 8.37a1 1 0 1 0-1.56 1.26a4 4 0 0 1 0 4.74A1 1 0 0 0 17.5 16a1 1 0 0 0 .78-.37a6 6 0 0 0 0-7.26Z"/><path d="M19.64 5.23a1 1 0 1 0-1.28 1.54A6.8 6.8 0 0 1 21 12a6.8 6.8 0 0 1-2.64 5.23a1 1 0 0 0-.13 1.41A1 1 0 0 0 19 19a1 1 0 0 0 .64-.23A8.75 8.75 0 0 0 23 12a8.75 8.75 0 0 0-3.36-6.77Zm-5.17-2.11a1 1 0 0 0-1 0L7 7.57H2a1 1 0 0 0-1 1v6.86a1 1 0 0 0 1 1h5l6.41 4.4A1.06 1.06 0 0 0 14 21a1 1 0 0 0 1-1V4a1 1 0 0 0-.53-.88Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func VolumeUpOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(volumeUpOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaVolumeUpOutline0"><g id="evaVolumeUpOutline1"><g id="evaVolumeUpOutline2" fill="currentColor"><path d="M18.28 8.37a1 1 0 1 0-1.56 1.26a4 4 0 0 1 0 4.74A1 1 0 0 0 17.5 16a1 1 0 0 0 .78-.37a6 6 0 0 0 0-7.26Z"/><path d="M19.64 5.23a1 1 0 1 0-1.28 1.54A6.8 6.8 0 0 1 21 12a6.8 6.8 0 0 1-2.64 5.23a1 1 0 0 0-.13 1.41A1 1 0 0 0 19 19a1 1 0 0 0 .64-.23A8.75 8.75 0 0 0 23 12a8.75 8.75 0 0 0-3.36-6.77ZM15 3.12a1 1 0 0 0-1 0L7.52 7.57h-5a1 1 0 0 0-1 1v6.86a1 1 0 0 0 1 1h5l6.41 4.4a1.06 1.06 0 0 0 .57.17a1 1 0 0 0 1-1V4a1 1 0 0 0-.5-.88Zm-1.47 15L8.4 14.6a1 1 0 0 0-.57-.17H3.5V9.57h4.33a1 1 0 0 0 .57-.17l5.1-3.5Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func WifiFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(wifiFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaWifiFill0"><g id="evaWifiFill1"><g id="evaWifiFill2" fill="currentColor"><circle cx="12" cy="19" r="1"/><path d="M12 14a5 5 0 0 0-3.47 1.4a1 1 0 1 0 1.39 1.44a3.08 3.08 0 0 1 4.16 0a1 1 0 1 0 1.39-1.44A5 5 0 0 0 12 14Zm0-5a9 9 0 0 0-6.47 2.75A1 1 0 0 0 7 13.14a7 7 0 0 1 10.08 0a1 1 0 0 0 .71.3a1 1 0 0 0 .72-1.69A9 9 0 0 0 12 9Z"/><path d="M21.72 7.93a14 14 0 0 0-19.44 0a1 1 0 0 0 1.38 1.44a12 12 0 0 1 16.68 0a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.31a1 1 0 0 0-.03-1.41Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func WifiOffFill(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(wifiOffFillPath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaWifiOffFill0"><g id="evaWifiOffFill1"><g id="evaWifiOffFill2" fill="currentColor"><circle cx="12" cy="19" r="1"/><path d="m12.44 11l-1.9-1.89l-2.46-2.44l-1.55-1.55l-1.82-1.83a1 1 0 0 0-1.42 1.42l1.38 1.37l1.46 1.46l2.23 2.24l1.55 1.54l2.74 2.74l2.79 2.8l3.85 3.85a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Zm9.28-3.07A13.93 13.93 0 0 0 12 4a14.1 14.1 0 0 0-4.44.73l1.62 1.62a11.89 11.89 0 0 1 11.16 3a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.31a1 1 0 0 0-.03-1.39ZM3.82 6.65a14.32 14.32 0 0 0-1.54 1.28a1 1 0 0 0 1.38 1.44a13.09 13.09 0 0 1 1.6-1.29ZM17 13.14a1 1 0 0 0 .71.3a1 1 0 0 0 .72-1.69A9 9 0 0 0 12 9h-.16l2.35 2.35A7 7 0 0 1 17 13.14Zm-9.57-2.88a8.8 8.8 0 0 0-1.9 1.49A1 1 0 0 0 7 13.14a7.3 7.3 0 0 1 2-1.41Zm1.1 5.14a1 1 0 1 0 1.39 1.44a3.06 3.06 0 0 1 3.84-.25l-2.52-2.52a5 5 0 0 0-2.71 1.33Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func WifiOffOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(wifiOffOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaWifiOffOutline0"><g id="evaWifiOffOutline1"><g id="evaWifiOffOutline2" fill="currentColor"><circle cx="12" cy="19" r="1"/><path d="m12.44 11l-1.9-1.89l-2.46-2.44l-1.55-1.55l-1.82-1.83a1 1 0 0 0-1.42 1.42l1.38 1.37l1.46 1.46l2.23 2.24l1.55 1.54l2.74 2.74l2.79 2.8l3.85 3.85a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Zm9.28-3.07A13.93 13.93 0 0 0 12 4a14.1 14.1 0 0 0-4.44.73l1.62 1.62a11.89 11.89 0 0 1 11.16 3a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.31a1 1 0 0 0-.03-1.39ZM3.82 6.65a14.32 14.32 0 0 0-1.54 1.28a1 1 0 0 0 1.38 1.44a13.09 13.09 0 0 1 1.6-1.29ZM17 13.14a1 1 0 0 0 .71.3a1 1 0 0 0 .72-1.69A9 9 0 0 0 12 9h-.16l2.35 2.35A7 7 0 0 1 17 13.14Zm-9.57-2.88a8.8 8.8 0 0 0-1.9 1.49A1 1 0 0 0 7 13.14a7.3 7.3 0 0 1 2-1.41Zm1.1 5.14a1 1 0 1 0 1.39 1.44a3.06 3.06 0 0 1 3.84-.25l-2.52-2.52a5 5 0 0 0-2.71 1.33Z"/></g></g></g>`), g.Group(children),
+	)
 }
 
 func WifiOutline(children ...g.Node) g.Node {
-	return s.SVG(viewbox, hAttr, g.Raw(wifiOutlinePath), g.Group(children))
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g id="evaWifiOutline0"><g id="evaWifiOutline1"><g id="evaWifiOutline2" fill="currentColor"><circle cx="12" cy="19" r="1"/><path d="M12 14a5 5 0 0 0-3.47 1.4a1 1 0 1 0 1.39 1.44a3.08 3.08 0 0 1 4.16 0a1 1 0 1 0 1.39-1.44A5 5 0 0 0 12 14Zm0-5a9 9 0 0 0-6.47 2.75A1 1 0 0 0 7 13.14a7 7 0 0 1 10.08 0a1 1 0 0 0 .71.3a1 1 0 0 0 .72-1.69A9 9 0 0 0 12 9Z"/><path d="M21.72 7.93a14 14 0 0 0-19.44 0a1 1 0 0 0 1.38 1.44a12 12 0 0 1 16.68 0a1 1 0 0 0 .69.28a1 1 0 0 0 .72-.31a1 1 0 0 0-.03-1.41Z"/></g></g></g>`), g.Group(children),
+	)
 }

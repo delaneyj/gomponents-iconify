@@ -7,8 +7,9 @@ interval: "500ms"
 tasks:
   bump:
     vars:
-      VERSION: "0.0.20231006"
+      VERSION: "0.0.20231020"
     cmds:
+      - git push origin
       - git tag v{{.VERSION}}
       - git push origin v{{.VERSION}}
       - GOPROXY=proxy.golang.org go list -m github.com/delaneyj/gomponents-iconify@v{{.VERSION}}
