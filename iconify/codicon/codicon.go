@@ -341,6 +341,13 @@ func ChevronUp(children ...g.Node) g.Node {
 	)
 }
 
+func Chip(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5 1h1v2h1V1h1v2h1V1h1v2h1l1 1v1h2v1h-2v1h2v1h-2v1h2v1h-2v1l-1 1h-1v2H9v-2H8v2H7v-2H6v2H5v-2H4l-1-1v-1H1V9h2V8H1V7h2V6H1V5h2V4l1-1h1V1ZM4 11h7V4H4v7Z" clip-rule="evenodd"/>`), g.Group(children),
+	)
+}
+
 func ChromeClose(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
@@ -481,6 +488,13 @@ func Code(children ...g.Node) g.Node {
 	)
 }
 
+func Coffee(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g fill="currentColor"><path d="M3 1v.5c0 .47.274.706.8 1.1l.04.03C4.314 2.985 5 3.498 5 4.5V5H4v-.5c0-.47-.274-.706-.8-1.1l-.04-.03C2.686 3.015 2 2.502 2 1.5V1h1Zm3 0v.5c0 .47.274.706.8 1.1l.04.03C7.314 2.985 8 3.498 8 4.5V5H7v-.5c0-.47-.274-.706-.8-1.1l-.04-.03C5.686 3.015 5 2.502 5 1.5V1h1Zm3 0v.5c0 .47.274.706.8 1.1l.04.03c.474.355 1.16.868 1.16 1.87V5h-1v-.5c0-.47-.274-.706-.8-1.1l-.04-.03C8.686 3.015 8 2.502 8 1.5V1h1Z"/><path fill-rule="evenodd" d="m2 7l1-1h10.5a2.5 2.5 0 0 1 0 5h-.626A4.002 4.002 0 0 1 9 14H6a4 4 0 0 1-4-4V7Zm10 3V7H3v3a3 3 0 0 0 3 3h3a3 3 0 0 0 3-3Zm1-3v3h.5a1.5 1.5 0 0 0 0-3H13Z" clip-rule="evenodd"/></g>`), g.Group(children),
+	)
+}
+
 func CollapseAll(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
@@ -548,6 +562,13 @@ func CompassDot(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
 		g.Raw(`<g fill="currentColor"><path fill-rule="evenodd" d="M9.101 13.9a6.004 6.004 0 0 1-.601.08V13h-1v.98a6.001 6.001 0 0 1-5.482-5.518H3v-1h-.976A6.001 6.001 0 0 1 7.5 2.02V3h1v-.98a6.001 6.001 0 0 1 5.48 5.48H13v1h.98a6.004 6.004 0 0 1-.08.601c.334.077.652.196.95.351a7 7 0 1 0-5.397 5.397a3.973 3.973 0 0 1-.352-.95Zm.803-3.433L6.99 9.01L4.967 4.967L9.009 6.99l1.459 2.913a4.02 4.02 0 0 0-.564.563Zm-.469-1.032L8.481 7.52l-1.916-.955l.954 1.917l1.916.954Z" clip-rule="evenodd"/><circle cx="13" cy="13" r="3"/></g>`), g.Group(children),
+	)
+}
+
+func Copilot(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g fill="currentColor"><path d="M6.25 9a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 6.25 9Zm4.25.75a.75.75 0 0 0-1.5 0v1.5a.75.75 0 0 0 1.5 0v-1.5Z"/><path d="M7.86 1.77c.05.052.097.107.14.164a1.97 1.97 0 0 1 .14-.165c.681-.73 1.737-.899 2.943-.765c1.23.137 2.145.528 2.724 1.261c.566.716.693 1.614.693 2.485c0 .572-.053 1.147-.254 1.655l.168.838l.066.033A2.75 2.75 0 0 1 16 9.736V11c0 .24-.086.438-.156.567a2.177 2.177 0 0 1-.259.366a5.18 5.18 0 0 1-.605.58a9.985 9.985 0 0 1-.556.43c-.24.174-.485.333-.741.48c-.307.177-.749.41-1.296.642C11.296 14.528 9.756 15 8 15c-1.756 0-3.296-.472-4.387-.935a12.079 12.079 0 0 1-1.296-.642a8.503 8.503 0 0 1-.74-.48a9.608 9.608 0 0 1-.557-.43a5.18 5.18 0 0 1-.605-.58a2.17 2.17 0 0 1-.259-.366A1.19 1.19 0 0 1 0 11V9.736a2.75 2.75 0 0 1 1.52-2.46l.067-.033l.167-.838C1.553 5.897 1.5 5.322 1.5 4.75c0-.87.127-1.77.693-2.485c.579-.733 1.494-1.124 2.724-1.26c1.206-.135 2.262.034 2.944.764ZM3.024 7.708L3 7.824v4.261l.065.038c.264.152.65.356 1.134.561c.972.413 2.307.816 3.801.816c1.494 0 2.83-.403 3.8-.816a10.58 10.58 0 0 0 1.2-.599v-4.26l-.023-.116c-.49.21-1.075.29-1.727.29c-1.146 0-2.06-.327-2.71-.99A3.223 3.223 0 0 1 8 6.266a3.244 3.244 0 0 1-.54.743c-.65.663-1.564.99-2.71.99c-.652 0-1.237-.08-1.727-.29Zm3.741-4.916c-.193-.207-.637-.414-1.681-.298c-1.02.114-1.48.404-1.713.7c-.247.313-.37.79-.37 1.555c0 .792.129 1.17.308 1.37c.162.181.52.38 1.442.38c.854 0 1.339-.236 1.638-.541c.315-.322.527-.826.618-1.552c.117-.936-.038-1.396-.242-1.614Zm2.472 0c-.204.218-.359.678-.242 1.614c.09.726.303 1.23.618 1.552c.299.305.784.54 1.638.54c.922 0 1.28-.198 1.442-.379c.179-.2.308-.578.308-1.37c0-.766-.123-1.242-.37-1.555c-.233-.296-.693-.586-1.713-.7c-1.044-.116-1.488.091-1.681.298Z"/></g>`), g.Group(children),
 	)
 }
 
@@ -1118,6 +1139,13 @@ func FolderOpened(children ...g.Node) g.Node {
 	)
 }
 
+func Game(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g fill="currentColor"><path fill-rule="evenodd" d="M4 3h8a4 4 0 0 1 4 4v3a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Zm0 1a3 3 0 0 0-3 3v3a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H4Z" clip-rule="evenodd"/><path d="M5.5 6a.5.5 0 0 0-.5.5V8H3.5a.5.5 0 0 0 0 1H5v1.5a.5.5 0 0 0 1 0V9h1.5a.5.5 0 0 0 0-1H6V6.5a.5.5 0 0 0-.5-.5ZM13 7a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm-1 3a1 1 0 1 1-2 0a1 1 0 0 1 2 0Z"/></g>`), g.Group(children),
+	)
+}
+
 func Gear(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
@@ -1157,6 +1185,13 @@ func GitCompare(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
 		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="m7.389 12.99l-1.27-1.27l.67-.7l2.13 2.13v.7l-2.13 2.13l-.71-.71L7.349 14h-1.85a2.49 2.49 0 0 1-2.5-2.5V5.95a2.59 2.59 0 0 1-1.27-.68a2.52 2.52 0 0 1-.54-2.73A2.5 2.5 0 0 1 3.499 1a2.45 2.45 0 0 1 1 .19a2.48 2.48 0 0 1 1.35 1.35c.133.317.197.658.19 1a2.5 2.5 0 0 1-2 2.45v5.5a1.5 1.5 0 0 0 1.5 1.5h1.85zm-4.68-8.25a1.5 1.5 0 0 0 2.08-2.08a1.55 1.55 0 0 0-.68-.56a1.49 1.49 0 0 0-.86-.08a1.49 1.49 0 0 0-1.18 1.18a1.49 1.49 0 0 0 .08.86c.117.277.311.513.56.68zm10.33 6.3c.48.098.922.335 1.27.68a2.51 2.51 0 0 1 .31 3.159a2.5 2.5 0 1 1-3.47-3.468c.269-.182.571-.308.89-.37V5.49a1.5 1.5 0 0 0-1.5-1.5h-1.85l1.27 1.27l-.71.71l-2.13-2.13v-.7l2.13-2.13l.71.71l-1.27 1.27h1.85a2.49 2.49 0 0 1 2.5 2.5v5.55zm-.351 3.943a1.5 1.5 0 0 0 1.1-2.322a1.55 1.55 0 0 0-.68-.56a1.49 1.49 0 0 0-.859-.08a1.49 1.49 0 0 0-1.18 1.18a1.49 1.49 0 0 0 .08.86a1.5 1.5 0 0 0 1.539.922z" clip-rule="evenodd"/>`), g.Group(children),
+	)
+}
+
+func GitFetch(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g fill="currentColor"><path d="M9 2H8v1h1V2Zm-.854 12l-5-5l.708-.707L8 12.439V11h1v1.44l4.146-4.147l.707.707l-5 5h-.707ZM8 5h1v1H8V5Z"/><path d="M9 8H8v1h1V8Z"/></g>`), g.Group(children),
 	)
 }
 
@@ -1769,6 +1804,13 @@ func Mic(children ...g.Node) g.Node {
 	)
 }
 
+func MicFilled(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g fill="currentColor"><path d="M8 1a3 3 0 0 0-3 3v4a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3Z"/><path d="M11.695 9.53A4 4 0 0 0 12 8h1a5.001 5.001 0 0 1-4.5 4.975V15h-1v-2.025A4.997 4.997 0 0 1 3 8h1a4.002 4.002 0 0 0 4 4a4 4 0 0 0 3.695-2.47Z"/></g>`), g.Group(children),
+	)
+}
+
 func Milestone(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
@@ -1801,6 +1843,13 @@ func MultipleWindows(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
 		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="m6 1.5l.5-.5h8l.5.5v7l-.5.5H12V8h2V4H7v1H6V1.5zM7 2v1h7V2H7zM1.5 7l-.5.5v7l.5.5h8l.5-.5v-7L9.5 7h-8zM2 9V8h7v1H2zm0 1h7v4H2v-4z" clip-rule="evenodd"/>`), g.Group(children),
+	)
+}
+
+func Music(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M14 7h-1v2.5a2.5 2.5 0 1 0 1 2V7Zm-2.5 3a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Z"/><path d="m13.469 2.001l-8 .5L5 3v7.5a2.5 2.5 0 1 0 1 2V6.47l7-.438V7h1V2.5l-.531-.499ZM13 3.032V5.03l-7 .438V3.47l7-.438ZM3.5 11a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3Z"/></g>`), g.Group(children),
 	)
 }
 
@@ -1927,6 +1976,13 @@ func PersonAdd(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
 		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M13 10h-1v2h-2v1h2v2h1v-2h2v-1h-2v-2zM8.556 2.169a1 1 0 1 0-1.112 1.663a1 1 0 0 0 1.112-1.663zm-1.667-.832A2 2 0 1 1 9.11 4.663a2 2 0 0 1-2.22-3.326zM6.77 5.49h2.46A1.77 1.77 0 0 1 11 7.26V8h-1v-.74a.76.76 0 0 0-.77-.77H6.77a.76.76 0 0 0-.77.77V10h1v3.31a.2.2 0 0 0 .2.2H8v1.02h-.8a1.2 1.2 0 0 1-1.2-1.2V11a1.06 1.06 0 0 1-1-1.1V7.26a1.77 1.77 0 0 1 1.77-1.77z" clip-rule="evenodd"/>`), g.Group(children),
+	)
+}
+
+func Piano(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M1 2L0 3v6h1V3h2v5.5l.5.5h1l.5-.5V3h2v5.5l.5.5h1l.5-.5V3h2v5.5l.5.5h1l.5-.5V3h2v10h-3v-3h-1v3H8.5v-3h-1v3H5v-3H4v3H1V9H0v4l1 1h14l1-1V3l-1-1H1Z"/>`), g.Group(children),
 	)
 }
 
@@ -2389,6 +2445,13 @@ func Smiley(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
 		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4.111 2.18a7 7 0 1 1 7.778 11.64A7 7 0 0 1 4.11 2.18zm.556 10.809a6 6 0 1 0 6.666-9.978a6 6 0 0 0-6.666 9.978zM6.5 7a1 1 0 1 1-2 0a1 1 0 0 1 2 0zm5 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0zM8 11a3 3 0 0 1-2.65-1.58l-.87.48a4 4 0 0 0 7.12-.16l-.9-.43A3 3 0 0 1 8 11z" clip-rule="evenodd"/>`), g.Group(children),
+	)
+}
+
+func Snake(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g fill="currentColor"><path d="M8 3.5a.5.5 0 1 1-1 0a.5.5 0 0 1 1 0Z"/><path fill-rule="evenodd" d="M5.5 1a2.5 2.5 0 0 0-2.086 3.879L2.293 6H.5v1H2v1.5h1V6.707l1.121-1.121c.396.262.87.414 1.379.414H7v2H6a2 2 0 0 0-2 2a2 2 0 1 0 0 4h9a2 2 0 1 0 0-4a2 2 0 0 0-2-2V4.5A3.5 3.5 0 0 0 7.5 1h-2ZM4 3.5A1.5 1.5 0 0 1 5.5 2h2A2.5 2.5 0 0 1 10 4.5v4l.5.5h.5a1 1 0 0 1 1 1v1h1a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2h1v-1a1 1 0 0 1 1-1h1.5l.5-.5v-3L7.5 5h-2A1.5 1.5 0 0 1 4 3.5Z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -2949,6 +3012,13 @@ func VmRunning(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
 		g.Raw(`<g fill="currentColor"><path fill-rule="evenodd" d="M1.5 2h13l.5.5v5.503a5.006 5.006 0 0 0-1-.583V3H2v9h5a5 5 0 0 0 1 3H4v-1h3v-1H1.5l-.5-.5v-10l.5-.5z" clip-rule="evenodd"/><path d="M12 8c.367 0 .721.047 1.063.14c.34.094.658.23.953.407c.294.177.563.385.808.625c.245.24.455.509.63.808a4.03 4.03 0 0 1 .405 3.082c-.093.342-.229.66-.406.954a4.382 4.382 0 0 1-.625.808c-.24.245-.509.455-.808.63a4.029 4.029 0 0 1-3.082.405a3.784 3.784 0 0 1-.954-.406a4.382 4.382 0 0 1-.808-.625a3.808 3.808 0 0 1-.63-.808a4.027 4.027 0 0 1-.405-3.082c.093-.342.229-.66.406-.954c.177-.294.385-.563.625-.808c.24-.245.509-.455.808-.63A4.028 4.028 0 0 1 12 8zm2 3.988L11 10v4l3-2.012z"/></g>`), g.Group(children),
+	)
+}
+
+func Vr(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<g fill="currentColor"><path fill-rule="evenodd" d="M4 3h8a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3h-.394a3 3 0 0 1-1.665-.504l-.832-.555a2 2 0 0 0-2.218 0l-.832.555A3 3 0 0 1 4.394 13H4a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3Zm0 1a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h.394a2 2 0 0 0 1.11-.336l.832-.555a3 3 0 0 1 3.328 0l.832.555a2 2 0 0 0 1.11.336H12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4Z" clip-rule="evenodd"/><path d="M0 7h1v3H0V7Zm15 0h1v3h-1V7ZM6.5 8a.5.5 0 0 1 0 1H4a.5.5 0 0 1 0-1h2.5ZM12 8a.5.5 0 0 1 0 1H9.5a.5.5 0 0 1 0-1H12Z"/></g>`), g.Group(children),
 	)
 }
 

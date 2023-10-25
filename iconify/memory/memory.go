@@ -516,6 +516,27 @@ func ApplicationCode(children ...g.Node) g.Node {
 	)
 }
 
+func Apps(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M7 7H3V3h4m6 4H9V3h4m6 4h-4V3h4M7 13H3V9h4m6 4H9V9h4m6 4h-4V9h4M7 19H3v-4h4m6 4H9v-4h4m6 4h-4v-4h4Z"/>`), g.Group(children),
+	)
+}
+
+func AppsBox(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M8 8H6V6h2m4 2h-2V6h2m4 2h-2V6h2m-8 6H6v-2h2m4 2h-2v-2h2m4 2h-2v-2h2m-8 6H6v-2h2m4 2h-2v-2h2m4 2h-2v-2h2m2 6H4v-1H3v-1H2V4h1V3h1V2h14v1h1v1h1v14h-1v1h-1m-1-1v-1h1V5h-1V4H5v1H4v12h1v1Z"/>`), g.Group(children),
+	)
+}
+
+func AppsBoxFill(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M18 20H4v-1H3v-1H2V4h1V3h1V2h14v1h1v1h1v14h-1v1h-1M8 8V6H6v2m6 0V6h-2v2m6 0V6h-2v2m-6 4v-2H6v2m6 0v-2h-2v2m6 0v-2h-2v2m-6 4v-2H6v2m6 0v-2h-2v2m6 0v-2h-2v2Z"/>`), g.Group(children),
+	)
+}
+
 func Archive(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
@@ -827,7 +848,7 @@ func BagPersonalFill(children ...g.Node) g.Node {
 func Bank(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" d="M21 8H1V6h2V5h2V4h2V3h2V2h4v1h2v1h2v1h2v1h2ZM7 17H3V9h4Zm6 0H9V9h4Zm6 0h-4V9h4Zm2 3H1v-2h20Z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" d="M20 19H2v-2h2V9H2V7h1V6h2V5h2V4h2V3h4v1h2v1h2v1h2v1h1v2h-2v8h2m-3-8V7h-2V6h-2V5H9v1H7v1H5v2m3 8v-6H6v6m6 0v-6h-2v6m6 0v-6h-2v6Z"/>`), g.Group(children),
 	)
 }
 
@@ -870,6 +891,20 @@ func BattleAxe(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
 		g.Raw(`<path fill="currentColor" d="M15 1h-4v1h-1v1H9v1H8v4h4v1h-1v1h-1v1H9v1H8v1H7v1H6v1H5v1H4v1H3v1H2v1H1v1h1v1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v4h4v-1h1v-1h1v-1h1V7h-4V5h-2"/>`), g.Group(children),
+	)
+}
+
+func Beer(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M9 15H7V8h2m3 7h-2V8h2m3 11H4V3h11v4h3v1h1v8h-1v1h-3m2-2V9h-2v6m-2 2V6H6v11Z"/>`), g.Group(children),
+	)
+}
+
+func Bell(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M19 17H3v-1h1v-1h1V7h1V6h1V5h2V4h1V2h2v2h1v1h2v1h1v1h1v8h1v1h1m-7 4h-2v-1H9v-1h4v1h-1m3-4V8h-1V7h-1V6H9v1H8v1H7v7Z"/>`), g.Group(children),
 	)
 }
 
@@ -1048,6 +1083,13 @@ func BoxLightDashedDownRight(children ...g.Node) g.Node {
 	)
 }
 
+func BoxLightDashedHorizontal(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M2 12H0v-2h2m5 2H4v-2h3m6 2H9v-2h4m5 2h-3v-2h3m4 2h-2v-2h2Z"/>`), g.Group(children),
+	)
+}
+
 func BoxLightDashedUpLeft(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
@@ -1059,6 +1101,20 @@ func BoxLightDashedUpRight(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
 		g.Raw(`<path fill="currentColor" d="M0 10h2v2H0v-2m4 0h3v2H4v-2m5 0h3v3h-2v-1H9v-2m1 12v-2h2v2h-2m0-4v-3h2v3h-2Z"/>`), g.Group(children),
+	)
+}
+
+func BoxLightDashedVertical(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M12 2h-2V0h2m0 7h-2V4h2m0 9h-2V9h2m0 9h-2v-3h2m0 7h-2v-2h2Z"/>`), g.Group(children),
+	)
+}
+
+func BoxLightDashedVerticalHorizontal(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M12 2h-2V0h2m0 7h-2V4h2M2 12H0v-2h2m5 2H4v-2h3m11 2h-3v-2h3m4 2h-2v-2h2m-10 3h-2v-1H9v-2h1V9h2v1h1v2h-1m0 6h-2v-3h2m0 7h-2v-2h2Z"/>`), g.Group(children),
 	)
 }
 
@@ -1626,6 +1682,13 @@ func BoxLightVerticalCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
 		g.Raw(`<path fill="currentColor" d="M12 22h-2v-7H9v-1H8v-1H7V9h1V8h1V7h1V0h2v7h1v1h1v1h1v4h-1v1h-1v1h-1m0-2v-1h1v-2h-1V9h-2v1H9v2h1v1Z"/>`), g.Group(children),
+	)
+}
+
+func BoxLightVerticalHorizontal(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M12 22h-2V12H0v-2h10V0h2v10h10v2H12Z"/>`), g.Group(children),
 	)
 }
 
@@ -2273,6 +2336,13 @@ func Briefcase(children ...g.Node) g.Node {
 	)
 }
 
+func Broadcast(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M12 13h-2v-1H9v-2h1V9h2v1h1v2h-1m3 4h-1v-1h-1v-1h1v-1h1V9h-1V8h-1V7H9v1H8v1H7v4h1v1h1v1H8v1H7v-1H6v-1H5V8h1V7h1V6h1V5h6v1h1v1h1v1h1v6h-1v1h-1m2 5h-1v-1h-1v-1h1v-1h1v-1h1v-2h1V8h-1V6h-1V5h-1V4h-2V3H8v1H6v1H5v1H4v2H3v6h1v2h1v1h1v1h1v1H6v1H5v-1H4v-1H3v-1H2v-2H1V7h1V5h1V4h1V3h1V2h2V1h8v1h2v1h1v1h1v1h1v2h1v8h-1v2h-1v1h-1v1h-1Z"/>`), g.Group(children),
+	)
+}
+
 func Bug(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
@@ -2298,6 +2368,13 @@ func Calendar(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
 		g.Raw(`<path fill="currentColor" d="M19 20H3v-1H2V3h1V2h2V0h2v2h8V0h2v2h2v1h1v16h-1v1M4 4v2h14V4H4m0 4v10h14V8H4m8 4h4v4h-4v-4Z"/>`), g.Group(children),
+	)
+}
+
+func CalendarImport(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M19 19h-6v-2h5V9H4v8h5v2H3v-1H2V4h1V3h2V1h2v2h8V1h2v2h2v1h1v14h-1m-7 3h-2v-6H7v-1h1v-1h1v-1h1v-1h2v1h1v1h1v1h1v1h-3m6-8V5H4v2Z"/>`), g.Group(children),
 	)
 }
 
@@ -2336,6 +2413,13 @@ func Cart(children ...g.Node) g.Node {
 	)
 }
 
+func Cast(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M5 19H2v-3h2v1h1m3 2H6v-3H5v-1H2v-2h3v1h2v2h1m3 3H9v-4H8v-2H6v-1H2v-2h4v1h2v1h1v1h1v2h1m8 4h-6v-2h5V5H4v3H2V4h1V3h16v1h1v14h-1Z"/>`), g.Group(children),
+	)
+}
+
 func Castle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
@@ -2353,7 +2437,14 @@ func ChartBar(children ...g.Node) g.Node {
 func Chat(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" d="M7 4h9v1h2v1h1v1h1v1h1v6h-1v1h-1v1h-1v1h-2v1H8v1H4v1H1v-2h2v-1h1v-2H3v-1H2V8h1V7h1V6h1V5h2V4m10 4V7h-2V6H8v1H6v1H5v1H4v4h1v1h1v1h2v1h7v-1h2v-1h1v-1h1V9h-1V8h-1Z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" d="M6 20H1v-2h1v-1h1v-1h1v-2H3V8h1V7h1V6h1V5h2V4h8v1h2v1h1v1h1v1h1v6h-1v1h-1v1h-1v1h-2v1H8v1H6m0-1v-1h1v-1h8v-1h2v-1h1v-1h1V9h-1V8h-1V7h-2V6H9v1H7v1H6v1H5v4h1v3H5v1H4v1Z"/>`), g.Group(children),
+	)
+}
+
+func ChatProcessing(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M9 12H7v-2h2m4 2h-2v-2h2m4 2h-2v-2h2M6 20H1v-2h1v-1h1v-1h1v-2H3V8h1V7h1V6h1V5h2V4h8v1h2v1h1v1h1v1h1v6h-1v1h-1v1h-1v1h-2v1H8v1H6m0-1v-1h1v-1h8v-1h2v-1h1v-1h1V9h-1V8h-1V7h-2V6H9v1H7v1H6v1H5v4h1v3H5v1H4v1Z"/>`), g.Group(children),
 	)
 }
 
@@ -2375,6 +2466,20 @@ func CheckboxCross(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
 		g.Raw(`<path fill="currentColor" d="M13 12h1v1h1v2h-2v-1h-1v-1h-2v1H9v1H7v-2h1v-1h1v-2H8V9H7V7h2v1h1v1h2V8h1V7h2v2h-1v1h-1v2m5 7H4v-1H3V4h1V3h14v1h1v14h-1v1M5 5v12h12V5H5Z"/>`), g.Group(children),
+	)
+}
+
+func CheckboxIntermediate(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M15 15H7V7h8m3 12H4v-1H3V4h1V3h14v1h1v14h-1m-1-1V5H5v12Z"/>`), g.Group(children),
+	)
+}
+
+func CheckboxIntermediateVariant(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M8 15H7V7h8v1h-1v1h-1v1h-1v1h-1v1h-1v1H9v1H8m10 5H4v-1H3V4h1V3h14v1h1v14h-1m-1-1V5H5v12Z"/>`), g.Group(children),
 	)
 }
 
@@ -2728,6 +2833,20 @@ func Email(children ...g.Node) g.Node {
 	)
 }
 
+func Eye(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M13 14H9v-1H8V9h1V8h4v1h1v4h-1m2 4H7v-1H5v-1H3v-1H2v-1H1V9h1V8h1V7h2V6h2V5h8v1h2v1h2v1h1v1h1v4h-1v1h-1v1h-2v1h-2m-3-4v-2h-2v2m5 3v-1h2v-1h1v-1h1v-2h-1V9h-1V8h-2V7H7v1H5v1H4v1H3v2h1v1h1v1h2v1Z"/>`), g.Group(children),
+	)
+}
+
+func EyeFill(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M12 14h-2v-1H9v-1H8v-2h1V9h1V8h2v1h1v1h1v2h-1v1h-1m3 4H7v-1H5v-1H3v-1H2v-1H1V9h1V8h1V7h2V6h2V5h8v1h2v1h2v1h1v1h1v4h-1v1h-1v1h-2v1h-2m-2-1v-1h1v-1h1V9h-1V8h-1V7H9v1H8v1H7v4h1v1h1v1Z"/>`), g.Group(children),
+	)
+}
+
 func File(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
@@ -2739,6 +2858,13 @@ func Fill(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
 		g.Raw(`<path fill="currentColor" d="M22 22H0V0h22Z"/>`), g.Group(children),
+	)
+}
+
+func Filter(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M11 17h1v-7h1V9h1V8h1V7h1V5H6v2h1v1h1v1h1v1h1v6h1m3 4h-3v-1h-1v-1H9v-1H8v-6H7v-1H6V9H5V8H4V4h1V3h12v1h1v4h-1v1h-1v1h-1v1h-1Z"/>`), g.Group(children),
 	)
 }
 
@@ -3050,6 +3176,13 @@ func HeartBroken(children ...g.Node) g.Node {
 	)
 }
 
+func Help(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M12 15h-2v-3h1v-1h1v-1h1V9h1V6h-1V5H9v1H8v3H6V5h1V4h1V3h6v1h1v1h1v5h-1v1h-1v1h-1v1h-1m0 6h-2v-2h2Z"/>`), g.Group(children),
+	)
+}
+
 func Hexagon(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
@@ -3061,6 +3194,13 @@ func Image(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
 		g.Raw(`<path fill="currentColor" d="M1 4h1V3h18v1h1v14h-1v1H2v-1H1V4m2 10h1v-1h1v-1h1v-1h1v-1h1V9h2v1h1v1h1v1h1v1h1v1h1v1h1v1h1v1h2V5H3v9m11 3v-1h-1v-1h-1v-1h-1v-1h-1v-1H8v1H7v1H6v1H5v1H4v1h10m-1-9h1V7h2v1h1v2h-1v1h-2v-1h-1V8Z"/>`), g.Group(children),
+	)
+}
+
+func Key(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M9 15H5v-1H4v-1H3V9h1V8h1V7h4v1h1v1h1v1h8v2h-2v2h-2v-2h-4v1h-1v1H9m-1-1v-1h1v-2H8V9H6v1H5v2h1v1Z"/>`), g.Group(children),
 	)
 }
 
@@ -3463,6 +3603,20 @@ func PlusCircleFill(children ...g.Node) g.Node {
 	)
 }
 
+func Poll(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M7 18H4V8h3m5 10H9V4h3m5 14h-3v-7h3Z"/>`), g.Group(children),
+	)
+}
+
+func Pound(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M14 19h-2v-4H8v4H6v-4H3v-2h4V9H4V7h4V3h2v4h4V3h2v4h3v2h-4v4h3v2h-4m-1-2V9H9v4Z"/>`), g.Group(children),
+	)
+}
+
 func Radiobox(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
@@ -3589,10 +3743,192 @@ func TableTopDoorOneWayUp(children ...g.Node) g.Node {
 	)
 }
 
+func TableTopDoorSecretHorizontal(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M16 14h-2v-4h-2v3h-1v1H7v-1H6V8h2v4h2V9h1V8h4v1h1m2 8H6v-1H4v-1H3v-3H0v-2h3V6h1V5h12v1h2v2h1v2h3v2h-3v4h-1m-1-1V8h-1V7H5v7h1v1Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopDoorSecretVertical(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M13 16H8v-2h4v-2H9v-1H8V7h1V6h5v2h-4v2h3v1h1v4h-1m-1 7h-2v-3H6v-1H5V6h1V4h1V3h3V0h2v3h4v1h1v12h-1v2h-2v1h-2m2-2v-1h1V5H8v1H7v11Z"/>`), g.Group(children),
+	)
+}
+
 func TableTopDoorVertical(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
 		g.Raw(`<path fill="currentColor" d="M12 22h-2v-4H7V4h3V0h2v4h3v14h-3m1-2V6H9v10Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopHorizontalRotateClockwise(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M12 8h-1V5H9v1H7v1H6v1H4V6h1V5h1V4h2V3h3V0h1v1h1v1h1v1h1v2h-1v1h-1v1h-1M2 12H0v-2h2m7 2H3v-2h6m3 2h-2v-2h2m7 2h-6v-2h6m3 2h-2v-2h2m-8 9H8v-1H6v-1H5v-1H4v-2h2v1h1v1h2v1h4v-1h2v-1h1v-1h2v2h-1v1h-1v1h-2Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopHorizontalRotateCounterclockwise(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M18 8h-2V7h-1V6h-2V5h-2v3h-1V7H9V6H8V5H7V3h1V2h1V1h1V0h1v3h3v1h2v1h1v1h1M2 12H0v-2h2m7 2H3v-2h6m3 2h-2v-2h2m7 2h-6v-2h6m3 2h-2v-2h2m-8 9H8v-1H6v-1H5v-1H4v-2h2v1h1v1h2v1h4v-1h2v-1h1v-1h2v2h-1v1h-1v1h-2Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopHorizontalStairsAscendLeft(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M12 2h-2V0h2m0 17h-2V5h2M9 18H7V4h2M6 19H4V3h2M3 20H1V2h2m9 20h-2v-2h2Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopHorizontalStairsAscendRight(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M12 2h-2V0h2m0 17h-2V5h2m3 13h-2V4h2m3 15h-2V3h2m3 17h-2V2h2m-9 20h-2v-2h2Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopHorizontalStairsDescendDown(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M2 12H0v-2h2m16 2H4v-2h14m4 2h-2v-2h2m-5 5H5v-2h12m-1 5H6v-2h10m-1 5H7v-2h8Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopHorizontalStairsDescendLeft(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M12 2h-2V0h2M3 15H1V7h2m3 9H4V6h2m3 11H7V5h2m3 13h-2V4h2m0 18h-2v-2h2Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopHorizontalStairsDescendRight(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M12 2h-2V0h2m9 15h-2V7h2m-3 9h-2V6h2m-3 11h-2V5h2m-3 13h-2V4h2m0 18h-2v-2h2Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopHorizontalStairsDescendUp(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M15 3H7V1h8m1 5H6V4h10m1 5H5V7h12M2 12H0v-2h2m16 2H4v-2h14m4 2h-2v-2h2Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopSpiralStairsDown(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M12 3h1V2h-1m2 1h1V2h-1m2 1h1V2h-1m2 1h1V2h-1m-5 2h1V3h-1m2 1h1V3h-1m2 1h1V3h-1m-5 2h1V4h-1m2 1h1V4h-1m2 1h1V4h-1m-3 2h1V5h-1m2 1h1V5h-1m4 2h-1V6h1m-7 1h1V6h-1m2 1h1V6h-1m-1 2h1V7h-1m4 2h-1V8h1m2 1h-1V8h1m-7 1h1V8h-1M2 19h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1H2m17 7h1v-8h-8v1h1v1h1v1h1v1h1v1h1v1h1v1h1m3 4H0V0h2v2h8V0h12M10 5V3H2v2m8 3V6H2v2m18 2V3h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1m-3 1V9H2v2m9 9v-8h-1v1H9v1H8v1H7v1H6v1H5v1H4v1H3v1m16 0v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v7Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopSpiralStairsLeft(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M9 9h1V2H3v1h1v1h1v1h1v1h1v1h1v1h1m4 5h1v-1h-1m2 1h1v-1h-1m2 1h1v-1h-1m2 1h1v-1h-1m-5 2h1v-1h-1m2 1h1v-1h-1m2 1h1v-1h-1m-3 2h1v-1h-1m2 1h1v-1h-1m2 1h1v-1h-1m-5 3h-1v-1h1m2 0h1v-1h-1m2 1h1v-1h-1m-1 2h1v-1h-1m2 1h1v-1h-1m-5 3h-1v-1h1m2 1h-1v-1h1m2 0h1v-1h-1M2 19h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1H2m17 7h1v-1h-1m3 4H0V0h22v2h-2v8h2m-9 0V2h-2v8m5 0V2h-2v8m5 0V2h-2v8m-7 1v-1H9V9H8V8H7V7H6V6H5V5H4V4H3V3H2v8m9 9v-8h-1v1H9v1H8v1H7v1H6v1H5v1H4v1H3v1m16 0v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v7Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopSpiralStairsRight(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M7 4H6V3h1m2 1H8V3h1M2 4h1V3H2m1 2h1V4H3m6 2H8V5h1M2 6h1V5H2m2 1h1V5H4M3 7h1V6H3m2 1h1V6H5M2 8h1V7H2m2 1h1V7H4m2 1h1V7H6M3 9h1V8H3m2 1h1V8H5m2 1h1V8H7m2 1h1V2H3v1h1v1h1v1h1v1h1v1h1v1h1m-7 2h1V9H2m2 1h1V9H4m2 1h1V9H6m2 1h1V9H8m3 1h1V9h1V8h1V7h1V6h1V5h1V4h1V3h1V2h-8m8 17h1v-8h-8v1h1v1h1v1h1v1h1v1h1v1h1v1h1m3 4H0v-2h2v-8H0V0h22m-2 10V3h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1M5 20v-8H3v8m5 0v-8H6v8m5 0v-8H9v8m10 0v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v7Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopSpiralStairsRoundDown(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M12 3h1V2h-1m1 2h1V3h-1m2 1h1V3h-1m-3 2h1V4h-1m2 1h1V4h-1m2 1h1V4h-1m-3 2h1V5h-1m2 1h1V5h-1m-3 2h1V6h-1m2 1h1V6h-1m-1 2h1V7h-1m4 2h-1V8h1V7h1v1h-1m-5 1h1V8h-1m-8 9h1v-1h1v-1h1v-1h1v-1h1v-1H2v2h1v2h1m13 1h1v-1h1v-2h1v-3h-8v1h1v1h1v1h1v1h1v1h1m-3 6H8v-1H5v-1H4v-1H3v-1H2v-1H1v-3H0V0h2v2h8V0h4v1h3v1h1v1h1v1h1v1h1v3h1v6h-1v3h-1v1h-1v1h-1v1h-1v1h-3M10 5V3H2v2m8 3V6H2v2m18 2V8h-1V6h-1V5h-1v1h-1v1h-1v1h-1v1h-1v1m-3 1V9H2v2m9 9v-8h-1v1H9v1H8v1H7v1H6v1H5v1h1v1h2v1m6 0v-1h2v-1h1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v7Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopSpiralStairsRoundLeft(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M9 9h1V2H8v1H6v1H5v1h1v1h1v1h1v1h1m4 5h1v-1h-1m2 1h1v-1h-1m2 1h1v-1h-1m2 1h1v-1h-1m-5 2h1v-1h-1m2 1h1v-1h-1m2 1h1v-1h-1m-3 2h1v-1h-1m2 1h1v-1h-1m-1 2h1v-1h-1m2 1h1v-1h-1M4 17h1v-1h1v-1h1v-1h1v-1h1v-1H2v2h1v2h1m11 2h-1v-1h-1v-1h1v1h1m2 0h1v-1h-1m-3 6H8v-1H5v-1H4v-1H3v-1H2v-1H1v-3H0V8h1V5h1V4h1V3h1V2h1V1h3V0h14v2h-2v8h2v4h-1v3h-1v1h-1v1h-1v1h-1v1h-3m-1-11V2h-2v8m5 0V2h-2v8m5 0V2h-2v8m-7 1v-1H9V9H8V8H7V7H6V6H5V5H4v1H3v2H2v3m9 9v-8h-1v1H9v1H8v1H7v1H6v1H5v1h1v1h2v1m6 0v-1h2v-1h1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v7Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopSpiralStairsRoundRight(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M9 6H8V5H7V4h1v1h1M4 6h1V5H4M3 7h1V6H3m2 1h1V6H5M4 8h1V7H4m2 1h1V7H6M3 9h1V8H3m2 1h1V8H5m2 1h1V8H7m2 1h1V2H8v1H6v1H5v1h1v1h1v1h1v1h1m-7 2h1V9H2m2 1h1V9H4m2 1h1V9H6m2 1h1V9H8m3 1h1V9h1V8h1V7h1V6h1V5h1V4h-1V3h-2V2h-3m6 15h1v-1h1v-2h1v-3h-8v1h1v1h1v1h1v1h1v1h1m-3 6H0v-2h2v-8H0V8h1V5h1V4h1V3h1V2h1V1h3V0h6v1h3v1h1v1h1v1h1v1h1v3h1v6h-1v3h-1v1h-1v1h-1v1h-1v1h-3m6-11V8h-1V6h-1V5h-1v1h-1v1h-1v1h-1v1h-1v1M5 20v-8H3v8m5 0v-8H6v8m5 0v-8H9v8m5 0v-1h2v-1h1v-1h-1v-1h-1v-1h-1v-1h-1v-1h-1v7Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopSpiralStairsRoundUp(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M9 9h1V2H8v1H6v1H5v1h1v1h1v1h1v1h1m2 2h1V9h1V8h1V7h1V6h1V5h1V4h-1V3h-2V2h-3M5 15H4v-1h1v-1h1v1H5m4 0h1v-1H9m-1 2h1v-1H8m-1 2h1v-1H7m2 1h1v-1H9m-5 2h1v-1h1v-1h1v-1h1v-1h1v-1H2v2h1v2h1m2 1h1v-1H6m2 1h1v-1H8m-3 2h1v-1H5m2 1h1v-1H7m2 1h1v-1H9m-3 2h1v-1H6m2 1h1v-1H8m1 2h1v-1H9m13 3h-2v-2h-8v2H8v-1H5v-1H4v-1H3v-1H2v-1H1v-3H0V8h1V5h1V4h1V3h1V2h1V1h3V0h6v1h3v1h1v1h1v1h1v1h1v3h1m-2 2V8h-1V6h-1V5h-1v1h-1v1h-1v1h-1v1h-1v1m-3 1v-1H9V9H8V8H7V7H6V6H5V5H4v1H3v2H2v3m18 2v-2h-8v2m8 3v-2h-8v2m8 3v-2h-8v2Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopSpiralStairsUp(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M9 9h1V2H3v1h1v1h1v1h1v1h1v1h1v1h1m2 2h1V9h1V8h1V7h1V6h1V5h1V4h1V3h1V2h-8M4 14H3v-1h1m2 1H5v-1h1m3 1h1v-1H9m-5 3H3v-1h1m4 0h1v-1H8m-1 2h1v-1H7m2 1h1v-1H9m-3 2h1v-1H6m2 1h1v-1H8m-3 2h1v-1H5m2 1h1v-1H7m2 1h1v-1H9m-7 2h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1h1v-1H2m2 7h1v-1H4m2 1h1v-1H6m2 1h1v-1H8m-5 2h1v-1H3m2 1h1v-1H5m2 1h1v-1H7m2 1h1v-1H9m13 3h-2v-2h-8v2H0V0h22m-2 10V3h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1h-1v1m-3 1v-1H9V9H8V8H7V7H6V6H5V5H4V4H3V3H2v8m18 2v-2h-8v2m8 3v-2h-8v2m8 3v-2h-8v2Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopStairsDown(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M15 4H7V2h8m1 6H6V6h10m1 6H5v-2h12m1 6H4v-2h14m1 6H3v-2h16Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopStairsLeft(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M20 15h-2V7h2m-4 9h-2V6h2m-4 11h-2V5h2M8 18H6V4h2M4 19H2V3h2Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopStairsRight(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M4 15H2V7h2m4 9H6V6h2m4 11h-2V5h2m4 13h-2V4h2m4 15h-2V3h2Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopStairsUp(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M19 4H3V2h16m-1 6H4V6h14m-1 6H5v-2h12m-1 6H6v-2h10m-1 6H7v-2h8Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopVerticalRotateClockwise(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M12 2h-2V0h2m0 9h-2V3h2m0 9h-2v-2h2m7 5h-2v-1h-1v-1h-1v-1h-1v-1h3V9h-1V7h-1V6h-1V4h2v1h1v1h1v2h1v3h3v1h-1v1h-1v1h-1M8 18H6v-1H5v-1H4v-2H3V8h1V6h1V5h1V4h2v2H7v1H6v2H5v4h1v2h1v1h1m4 3h-2v-6h2m0 9h-2v-2h2Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopVerticalRotateCounterclockwise(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M12 2h-2V0h2m0 9h-2V3h2m0 9h-2v-2h2m-7 5H3v-1H2v-1H1v-1H0v-1h3V8h1V6h1V5h1V4h2v2H7v1H6v2H5v2h3v1H7v1H6v1H5m11 4h-2v-2h1v-1h1v-2h1V9h-1V7h-1V6h-1V4h2v1h1v1h1v2h1v6h-1v2h-1v1h-1m-4 2h-2v-6h2m0 9h-2v-2h2Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopVerticalStairsAscendDown(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M2 12H0v-2h2m15 2H5v-2h12m5 2h-2v-2h2m-4 5H4v-2h14m1 5H3v-2h16m1 5H2v-2h18Z"/>`), g.Group(children),
+	)
+}
+
+func TableTopVerticalStairsAscendUp(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M20 3H2V1h18m-1 5H3V4h16m-1 5H4V7h14M2 12H0v-2h2m15 2H5v-2h12m5 2h-2v-2h2Z"/>`), g.Group(children),
 	)
 }
 
@@ -3614,6 +3950,13 @@ func Target(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
 		g.Raw(`<path fill="currentColor" d="M12 13h-2v-1H9v-2h1V9h2v1h1v2h-1Zm2 4H8v-1H7v-1H6v-1H5V8h1V7h1V6h1V5h6v1h1v1h1v1h1v6h-1v1h-1v1h-1Zm1 4H7v-1H5v-1H4v-1H3v-1H2v-2H1V7h1V5h1V4h1V3h1V2h2V1h8v1h2v1h1v1h1v1h1v2h1v8h-1v2h-1v1h-1v1h-1v1h-2Zm-2-6v-1h1v-1h1V9h-1V8h-1V7H9v1H8v1H7v4h1v1h1v1Zm1 4v-1h2v-1h1v-1h1v-2h1V8h-1V6h-1V5h-1V4h-2V3H8v1H6v1H5v1H4v2H3v6h1v2h1v1h1v1h2v1Z"/>`), g.Group(children),
+	)
+}
+
+func Tent(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M19 19H3v-2h7V8H9v2H8v2H7v2H6v2H3v-1h1v-2h1v-2h1v-1h1V8h1V6h1V4h1V3h2v1h1v2h1v2h1v2h1v1h1v2h1v2h1v1h-3v-2h-1v-2h-1v-2h-1V8h-1v9h7Z"/>`), g.Group(children),
 	)
 }
 
@@ -3761,6 +4104,13 @@ func TooltipStartText(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
 		g.Raw(`<path fill="currentColor" d="M5 8V6h8v2H5m0 8v-2h6v2H5m0-4v-2h8v2H5m-4 8V2h1V1h14v1h1v5h1v1h1v1h1v1h1v2h-1v1h-1v1h-1v1h-1v5h-1v1H2v-1H1m2-1h12v-5h1v-1h1v-1h1v-2h-1V9h-1V8h-1V3H3v16Z"/>`), g.Group(children),
+	)
+}
+
+func ToyBrick(children ...g.Node) g.Node {
+	return s.SVG(
+		viewbox, hAttr,
+		g.Raw(`<path fill="currentColor" d="M7 7h1V6H7m7 1h1V6h-1m5 12H3V7h2V5h1V4h3v1h1v2h2V5h1V4h3v1h1v2h2m-2 9V9H5v7Z"/>`), g.Group(children),
 	)
 }
 

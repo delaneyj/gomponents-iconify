@@ -5,7 +5,7 @@ import (
 	s "github.com/maragudk/gomponents/svg"
 )
 
-const IconifyVersion = "0.48.1"
+const IconifyVersion = "0.48.2"
 
 var (
 	hAttr   = g.Attr("height", "1em")
