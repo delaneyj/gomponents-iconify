@@ -22,6 +22,7 @@ require (
 	github.com/smartystreets/goconvey v1.8.0 // indirect
 	golang.org/x/sys v0.6.0 // indirect
 	google.golang.org/protobuf v1.30.0 // indirect
+	maragu.dev/gomponents v1.0.0-beta1 // indirect
 	modernc.org/libc v1.22.3 // indirect
 	modernc.org/mathutil v1.5.0 // indirect
 	modernc.org/memory v1.5.0 // indirect

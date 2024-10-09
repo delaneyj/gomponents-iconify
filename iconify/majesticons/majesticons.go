@@ -71,7 +71,7 @@ func AdjustmentsLine(children ...g.Node) g.Node {
 func Airplane(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M16.48 14h4.02a2.5 2.5 0 1 0 0-5H6.618a1 1 0 0 1-.894-.553l-.448-.894A1 1 0 0 0 4.382 7H2.517a1 1 0 0 0-.92 1.394l2.143 5a1 1 0 0 0 .92.606h3.863a1 1 0 0 1 .928 1.371L8.55 17.63A1 1 0 0 0 9.477 19h2.042a1 1 0 0 0 .781-.375l3.4-4.25a1 1 0 0 1 .78-.375zM9.5 8h4.75L12.3 5.4a1 1 0 0 0-.8-.4H9.618a1 1 0 0 0-.894 1.447L9.5 8z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M16.48 14h4.02a2.5 2.5 0 1 0 0-5H6.618a1 1 0 0 1-.894-.553l-.448-.894A1 1 0 0 0 4.382 7H2.517a1 1 0 0 0-.92 1.394l2.143 5a1 1 0 0 0 .92.606h3.863a1 1 0 0 1 .928 1.371L8.55 17.63A1 1 0 0 0 9.477 19h2.042a1 1 0 0 0 .781-.375l3.4-4.25a1 1 0 0 1 .78-.375M9.5 8h4.75L12.3 5.4a1 1 0 0 0-.8-.4H9.618a1 1 0 0 0-.894 1.447z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -85,7 +85,7 @@ func AirplaneFlightTwo(children ...g.Node) g.Node {
 func AirplaneFlightTwoLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><g clip-path="url(#majesticonsAirplaneFlight2Line0)"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.071 7.586l-.828.828A2 2 0 0 1 11.828 9h-1.414c-.375 0-.735.149-1 .414v0a1.414 1.414 0 0 0 0 2l1.829 1.829a2 2 0 0 0 2.828 0l1.414-1.415l.964 2.121a1.346 1.346 0 0 0 2.178.395v0c.252-.252.394-.595.394-.952v-4.27a2 2 0 0 1 .586-1.415l2.242-2.243c.472-.47 1.132-1.697 0-2.828c-1.131-1.131-2.357-.471-2.828 0l-1.768 1.768m-3.182 3.182l-2.02-.674a1.448 1.448 0 0 1-.566-2.397v0a1.448 1.448 0 0 1 1.12-.421l4.648.31m-3.182 3.182l3.182-3.182M2 14.905c.705-1.234 1.825-2.32 3-3.204M2 22.404c1.072-3.002 3.055-5.564 5.023-7.5m.477 6.5c.721-1.442 1.96-3.077 3.087-4.405"/></g><defs><clipPath id="majesticonsAirplaneFlight2Line0"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><g clip-path="url(#majesticonsAirplaneFlight2Line0)"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.071 7.586l-.828.828A2 2 0 0 1 11.828 9h-1.414c-.375 0-.735.149-1 .414v0a1.414 1.414 0 0 0 0 2l1.829 1.829a2 2 0 0 0 2.828 0l1.414-1.415l.964 2.121a1.346 1.346 0 0 0 2.178.395v0c.252-.252.394-.595.394-.952v-4.27a2 2 0 0 1 .586-1.415l2.242-2.243c.472-.47 1.132-1.697 0-2.828s-2.357-.471-2.828 0l-1.768 1.768m-3.182 3.182l-2.02-.674a1.448 1.448 0 0 1-.566-2.397v0a1.45 1.45 0 0 1 1.12-.421l4.648.31m-3.182 3.182l3.182-3.182M2 14.905c.705-1.234 1.825-2.32 3-3.204M2 22.404c1.072-3.002 3.055-5.564 5.023-7.5m.477 6.5c.721-1.442 1.96-3.077 3.087-4.405"/></g><defs><clipPath id="majesticonsAirplaneFlight2Line0"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></g>`), g.Group(children),
 	)
 }
 
@@ -99,14 +99,14 @@ func AirplaneLine(children ...g.Node) g.Node {
 func AlertCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2zm0 5a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1zm1 9a1 1 0 1 0-2 0a1 1 0 1 0 2 0z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2m0 5a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1m1 9a1 1 0 1 0-2 0a1 1 0 1 0 2 0" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func AlertCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5m0 3v0"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5m0 3"/></g>`), g.Group(children),
 	)
 }
 
@@ -127,7 +127,7 @@ func AlignBottomLine(children ...g.Node) g.Node {
 func AlignHorizontalCenter(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M4 8a2 2 0 0 1 2-2h12a2 2 0 1 1 0 4H6a2 2 0 0 1-2-2zm3 8a2 2 0 0 1 2-2h6a2 2 0 1 1 0 4H9a2 2 0 0 1-2-2z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6H6a2 2 0 1 0 0 4h6m0-4h6a2 2 0 1 1 0 4h-6m0-4V3m0 7v4m0 0H9a2 2 0 1 0 0 4h3m0-4h3a2 2 0 1 1 0 4h-3m0 0v3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M4 8a2 2 0 0 1 2-2h12a2 2 0 1 1 0 4H6a2 2 0 0 1-2-2m3 8a2 2 0 0 1 2-2h6a2 2 0 1 1 0 4H9a2 2 0 0 1-2-2"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6H6a2 2 0 1 0 0 4h6m0-4h6a2 2 0 1 1 0 4h-6m0-4V3m0 7v4m0 0H9a2 2 0 1 0 0 4h3m0-4h3a2 2 0 1 1 0 4h-3m0 0v3"/></g>`), g.Group(children),
 	)
 }
 
@@ -183,7 +183,7 @@ func AlignTopLine(children ...g.Node) g.Node {
 func AlignVerticalCenter(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M8 20a2 2 0 0 1-2-2V6a2 2 0 1 1 4 0v12a2 2 0 0 1-2 2zm8-3a2 2 0 0 1-2-2V9a2 2 0 1 1 4 0v6a2 2 0 0 1-2 2z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 12v6a2 2 0 1 0 4 0v-6m-4 0V6a2 2 0 1 1 4 0v6m-4 0H3m7 0h4m0 0v3a2 2 0 1 0 4 0v-3m-4 0V9a2 2 0 1 1 4 0v3m0 0h3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M8 20a2 2 0 0 1-2-2V6a2 2 0 1 1 4 0v12a2 2 0 0 1-2 2m8-3a2 2 0 0 1-2-2V9a2 2 0 1 1 4 0v6a2 2 0 0 1-2 2"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 12v6a2 2 0 1 0 4 0v-6m-4 0V6a2 2 0 1 1 4 0v6m-4 0H3m7 0h4m0 0v3a2 2 0 1 0 4 0v-3m-4 0V9a2 2 0 1 1 4 0v3m0 0h3"/></g>`), g.Group(children),
 	)
 }
 
@@ -197,14 +197,14 @@ func AlignVerticalCenterLine(children ...g.Node) g.Node {
 func Analytics(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6zm10 2a1 1 0 1 0-2 0v8a1 1 0 1 0 2 0V8zm-4 3a1 1 0 1 0-2 0v5a1 1 0 1 0 2 0v-5zm8 3a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3zm10 2a1 1 0 1 0-2 0v8a1 1 0 1 0 2 0zm-4 3a1 1 0 1 0-2 0v5a1 1 0 1 0 2 0zm8 3a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func AnalyticsDelete(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 5l2-2m-2 2l-2-2m2 2l2 2m-2-2l-2 2"/><path fill="currentColor" fill-rule="evenodd" d="M21 10.659A6 6 0 0 1 13.341 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-7.341zM12 7a1 1 0 0 1 1 1v8a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1zm-4 3a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0v-5a1 1 0 0 1 1-1zm8 3a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 5l2-2m-2 2l-2-2m2 2l2 2m-2-2l-2 2"/><path fill="currentColor" fill-rule="evenodd" d="M21 10.659A6 6 0 0 1 13.341 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3zM12 7a1 1 0 0 1 1 1v8a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1m-4 3a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0v-5a1 1 0 0 1 1-1m8 3a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -218,14 +218,14 @@ func AnalyticsDeleteLine(children ...g.Node) g.Node {
 func AnalyticsLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16v-5m4 5V8m4 8v-2m2-10H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16v-5m4 5V8m4 8v-2m2-10H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/>`), g.Group(children),
 	)
 }
 
 func AnalyticsPlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 2v3m0 3V5m0 0h3m-3 0h-3"/><path fill="currentColor" fill-rule="evenodd" d="M21 10.659A6 6 0 0 1 13.341 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-7.341zM12 7a1 1 0 0 1 1 1v8a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1zm-4 3a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0v-5a1 1 0 0 1 1-1zm8 3a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 2v3m0 3V5m0 0h3m-3 0h-3"/><path fill="currentColor" fill-rule="evenodd" d="M21 10.659A6 6 0 0 1 13.341 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3zM12 7a1 1 0 0 1 1 1v8a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1m-4 3a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0v-5a1 1 0 0 1 1-1m8 3a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -239,7 +239,7 @@ func AnalyticsPlusLine(children ...g.Node) g.Node {
 func AnalyticsRestricted(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.975 7.975a3.5 3.5 0 1 0-4.95-4.95m4.95 4.95a3.5 3.5 0 1 1-4.95-4.95m4.95 4.95L18.5 5.5l-2.475-2.475"/><path fill="currentColor" fill-rule="evenodd" d="M21 11.502a6.48 6.48 0 0 1-2.5.498A6.495 6.495 0 0 1 13 8.966V16a1 1 0 1 1-2 0V8a1 1 0 0 1 1.178-.984A6.515 6.515 0 0 1 12.498 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-6.498zM8 10a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0v-5a1 1 0 0 1 1-1zm8 3a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.975 7.975a3.5 3.5 0 1 0-4.95-4.95m4.95 4.95a3.5 3.5 0 1 1-4.95-4.95m4.95 4.95L18.5 5.5l-2.475-2.475"/><path fill="currentColor" fill-rule="evenodd" d="M21 11.502a6.5 6.5 0 0 1-2.5.498A6.5 6.5 0 0 1 13 8.966V16a1 1 0 1 1-2 0V8a1 1 0 0 1 1.178-.984A6.5 6.5 0 0 1 12.498 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3zM8 10a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0v-5a1 1 0 0 1 1-1m8 3a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -372,7 +372,7 @@ func ArrowDown(children ...g.Node) g.Node {
 func ArrowDownCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18zm.707-12.707l3 3a1 1 0 0 1-1.414 1.414L13 11.414V15a1 1 0 1 1-2 0v-3.586l-1.293 1.293a1 1 0 0 1-1.414-1.414l3-3a1 1 0 0 1 1.414 0z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m.707-12.707l3 3a1 1 0 0 1-1.414 1.414L13 11.414V15a1 1 0 1 1-2 0v-3.586l-1.293 1.293a1 1 0 0 1-1.414-1.414l3-3a1 1 0 0 1 1.414 0" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -400,7 +400,7 @@ func ArrowLeft(children ...g.Node) g.Node {
 func ArrowLeftCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18zm.707-5.293l3-3a1 1 0 0 0-1.414-1.414L13 12.586V9a1 1 0 1 0-2 0v3.586l-1.293-1.293a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m.707-5.293l3-3a1 1 0 0 0-1.414-1.414L13 12.586V9a1 1 0 1 0-2 0v3.586l-1.293-1.293a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -428,7 +428,7 @@ func ArrowRight(children ...g.Node) g.Node {
 func ArrowRightCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18zm-.707-12.707a1 1 0 0 1 1.414 1.415L11.414 11H15a1 1 0 1 1 0 2h-3.585l1.292 1.293a1 1 0 0 1-1.414 1.414l-3-3a1 1 0 0 1 0-1.415l3-3z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.707-12.707a1 1 0 0 1 1.414 1.415L11.414 11H15a1 1 0 1 1 0 2h-3.585l1.292 1.293a1 1 0 0 1-1.414 1.414l-3-3a1 1 0 0 1 0-1.415l3-3z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -456,7 +456,7 @@ func ArrowUp(children ...g.Node) g.Node {
 func ArrowUpCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18zm.707-5.293a1 1 0 0 1-1.415-1.414L12.585 13H9a1 1 0 1 1 0-2h3.586l-1.293-1.293a1 1 0 0 1 1.415-1.414l3 3a1 1 0 0 1 0 1.414l-3 3z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m.707-5.293a1 1 0 0 1-1.415-1.414L12.585 13H9a1 1 0 1 1 0-2h3.586l-1.293-1.293a1 1 0 0 1 1.415-1.414l3 3a1 1 0 0 1 0 1.414l-3 3z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -519,28 +519,28 @@ func ArrowsExpandLine(children ...g.Node) g.Node {
 func Article(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 6a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V6zm5 1a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H7zm1 4V9h2v2H8zm7-4a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2h-2zm0 4a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2h-2zm-8 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H7z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 6a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3zm5 1a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1zm1 4V9h2v2zm7-4a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zm-8 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ArticleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 8h2m-2 4h2m0 4H7m0-8v4h4V8H7zM5 20h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 8h2m-2 4h2m0 4H7m0-8v4h4V8zM5 20h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2"/>`), g.Group(children),
 	)
 }
 
 func ArticleSearch(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h8.257a5.477 5.477 0 0 1-1.235-4H7a1 1 0 1 1 0-2h5.6a5.525 5.525 0 0 1 1.92-2.123A1 1 0 0 1 15 11h2a1 1 0 0 1 1 1.022a5.496 5.496 0 0 1 4 2.315V6a3 3 0 0 0-3-3H5zm1 5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8zm2 1v2h2V9H8zm6-1a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h8.257a5.48 5.48 0 0 1-1.235-4H7a1 1 0 1 1 0-2h5.6a5.5 5.5 0 0 1 1.92-2.123A1 1 0 0 1 15 11h2a1 1 0 0 1 1 1.022a5.5 5.5 0 0 1 4 2.315V6a3 3 0 0 0-3-3zm1 5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm2 1v2h2V9zm6-1a1 1 0 0 1 1-1h2a1 1 0 1 1 0 2h-2a1 1 0 0 1-1-1" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ArticleSearchLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 8h2m-2 4h2m-5 4H7m14-4V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7M7 8v4h4V8H7z"/><path d="M19.268 19.268a2.5 2.5 0 1 0-3.536-3.536a2.5 2.5 0 0 0 3.536 3.536zm0 0L21 21"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 8h2m-2 4h2m-5 4H7m14-4V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7M7 8v4h4V8z"/><path d="M19.268 19.268a2.5 2.5 0 1 0-3.536-3.536a2.5 2.5 0 0 0 3.536 3.536m0 0L21 21"/></g>`), g.Group(children),
 	)
 }
 
@@ -589,7 +589,7 @@ func AttachmentLine(children ...g.Node) g.Node {
 func Award(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="9" r="7"/><path fill="currentColor" d="M7 20.234V14c.667.667 2.6 2 5 2s4.333-1.333 5-2v6.234a1 1 0 0 1-1.514.857l-2.972-1.782a1 1 0 0 0-1.028 0L8.514 21.09A1 1 0 0 1 7 20.234z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="9" r="7"/><path fill="currentColor" d="M7 20.234V14c.667.667 2.6 2 5 2s4.333-1.333 5-2v6.234a1 1 0 0 1-1.514.857l-2.972-1.782a1 1 0 0 0-1.028 0L8.514 21.09A1 1 0 0 1 7 20.234"/></g>`), g.Group(children),
 	)
 }
 
@@ -603,14 +603,14 @@ func AwardLine(children ...g.Node) g.Node {
 func BackCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M23 12c0-6.075-4.925-11-11-11S1 5.925 1 12s4.925 11 11 11s11-4.925 11-11zm-7.496-4.868A1 1 0 0 1 17 8v8a1 1 0 0 1-1.496.868L9 13.152V16a1 1 0 1 1-2 0V8a1 1 0 1 1 2 0v2.848l6.504-3.716zM15 9.723L11.016 12L15 14.277V9.723z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M23 12c0-6.075-4.925-11-11-11S1 5.925 1 12s4.925 11 11 11s11-4.925 11-11m-7.496-4.868A1 1 0 0 1 17 8v8a1 1 0 0 1-1.496.868L9 13.152V16a1 1 0 1 1-2 0V8a1 1 0 1 1 2 0v2.848zM15 9.723L11.016 12L15 14.277z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func BackCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 8v8m8-8v8l-7-4l7-4z"/><circle r="10" transform="matrix(-1 0 0 1 12 12)"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 8v8m8-8v8l-7-4z"/><circle r="10" transform="matrix(-1 0 0 1 12 12)"/></g>`), g.Group(children),
 	)
 }
 
@@ -631,28 +631,28 @@ func BackspaceLine(children ...g.Node) g.Node {
 func BackwardCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12S5.925 1 12 1zm5.493 7.13a1 1 0 0 0-1.008.013L12 10.833V9a1 1 0 0 0-1.514-.857l-5 3a1 1 0 0 0 0 1.714l5 3A1 1 0 0 0 12 15v-1.834l4.485 2.691A1 1 0 0 0 18 15V9a1 1 0 0 0-.507-.87zM16 13.234L13.944 12L16 10.766v2.468zM7.944 12L10 13.234v-2.468L7.944 12z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12S5.925 1 12 1m5.493 7.13a1 1 0 0 0-1.008.013L12 10.833V9a1 1 0 0 0-1.514-.857l-5 3a1 1 0 0 0 0 1.714l5 3A1 1 0 0 0 12 15v-1.834l4.485 2.691A1 1 0 0 0 18 15V9a1 1 0 0 0-.507-.87M16 13.234L13.944 12L16 10.766zM7.944 12L10 13.234v-2.468z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func BackwardCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle r="10" transform="matrix(-1 0 0 1 12 12)"/><path d="M17 15V9l-5 3l5 3zm-6 0V9l-5 3l5 3z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle r="10" transform="matrix(-1 0 0 1 12 12)"/><path d="M17 15V9l-5 3zm-6 0V9l-5 3z"/></g>`), g.Group(children),
 	)
 }
 
 func BackwardStartCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12S5.925 1 12 1zm5.493 7.13a1 1 0 0 0-1.008.013L13 10.233V9a1 1 0 0 0-1.514-.857L8 10.233V9a1 1 0 0 0-2 0v6a1 1 0 1 0 2 0v-1.234l3.486 2.091A1 1 0 0 0 13 15v-1.234l3.485 2.091A1 1 0 0 0 18 15V9a1 1 0 0 0-.507-.87zM11 12v-1.234L8.944 12L11 13.234V12zm5 1.234L13.944 12L16 10.766v2.468z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12S5.925 1 12 1m5.493 7.13a1 1 0 0 0-1.008.013L13 10.233V9a1 1 0 0 0-1.514-.857L8 10.233V9a1 1 0 0 0-2 0v6a1 1 0 1 0 2 0v-1.234l3.486 2.091A1 1 0 0 0 13 15v-1.234l3.485 2.091A1 1 0 0 0 18 15V9a1 1 0 0 0-.507-.87M11 12v-1.234L8.944 12L11 13.234zm5 1.234L13.944 12L16 10.766z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func BackwardStartCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle r="10" transform="matrix(-1 0 0 1 12 12)"/><path d="M17 15V9l-5 3l5 3zM7 12l5 3V9l-5 3zm0 0V9m0 3v3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle r="10" transform="matrix(-1 0 0 1 12 12)"/><path d="M17 15V9l-5 3zM7 12l5 3V9zm0 0V9m0 3v3"/></g>`), g.Group(children),
 	)
 }
 
@@ -687,35 +687,35 @@ func BanLine(children ...g.Node) g.Node {
 func BandAids(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><rect width="9" height="19" x="2" y="8.364" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" rx="4.5" transform="rotate(-45 2 8.364)"/><path fill="currentColor" d="m11.546 18.617l.354-.353L5.535 11.9l-.354.353a4.5 4.5 0 0 0 6.364 6.364zm.707-13.435l-.354.354l6.365 6.364l.353-.354a4.5 4.5 0 1 0-6.364-6.364z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m11.546 18.617l.354-.353L5.535 11.9l-.354.353a4.5 4.5 0 0 0 6.364 6.364zm.707-13.435l-.354.354l6.365 6.364l.353-.354a4.5 4.5 0 1 0-6.364-6.364zM9.779 11.9h0M11.9 9.778h0m2.121 2.122h0M11.9 14.021h0"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><rect width="9" height="19" x="2" y="8.364" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" rx="4.5" transform="rotate(-45 2 8.364)"/><path fill="currentColor" d="m11.546 18.617l.354-.353L5.535 11.9l-.354.353a4.5 4.5 0 0 0 6.364 6.364zm.707-13.435l-.354.354l6.365 6.364l.353-.354a4.5 4.5 0 1 0-6.364-6.364"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m11.546 18.617l.354-.353L5.535 11.9l-.354.353a4.5 4.5 0 0 0 6.364 6.364zm.707-13.435l-.354.354l6.365 6.364l.353-.354a4.5 4.5 0 1 0-6.364-6.364m-.353 8.839"/></g>`), g.Group(children),
 	)
 }
 
 func BandAidsLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="9" height="19" x="2" y="8.364" rx="4.5" transform="rotate(-45 2 8.364)"/><path d="m11.9 18.264l-.354.353a4.5 4.5 0 0 1-6.364 0v0a4.5 4.5 0 0 1 0-6.364l.354-.353M11.9 5.536l.353-.354a4.5 4.5 0 0 1 6.364 0v0a4.5 4.5 0 0 1 0 6.364l-.354.354m-8.484 0h0M11.9 9.778h0m2.121 2.122h0M11.9 14.021h0"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="9" height="19" x="2" y="8.364" rx="4.5" transform="rotate(-45 2 8.364)"/><path d="m11.9 18.264l-.354.353a4.5 4.5 0 0 1-6.364 0v0a4.5 4.5 0 0 1 0-6.364l.354-.353M11.9 5.536l.353-.354a4.5 4.5 0 0 1 6.364 0v0a4.5 4.5 0 0 1 0 6.364l-.354.354M11.9 14.021"/></g>`), g.Group(children),
 	)
 }
 
 func BarcodeTwo(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 6v12m7-12v12m7-12v12M10 6.5v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zm7 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zM3.5 6v0a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 .5.5v0a.5.5 0 0 0 .5-.5v-11a.5.5 0 0 0-.5-.5z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 6v12m7-12v12m7-12v12M10 6.5v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0m7 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0M3.5 6a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 .5.5v0a.5.5 0 0 0 .5-.5v-11a.5.5 0 0 0-.5-.5"/>`), g.Group(children),
 	)
 }
 
 func BarcodeTwoLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 6v12m7-12v12m7-12v12M10 6.5v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zm7 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0zM3.5 6v0a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 .5.5v0a.5.5 0 0 0 .5-.5v-11a.5.5 0 0 0-.5-.5z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 6v12m7-12v12m7-12v12M10 6.5v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0m7 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0M3.5 6a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 .5.5v0a.5.5 0 0 0 .5-.5v-11a.5.5 0 0 0-.5-.5"/>`), g.Group(children),
 	)
 }
 
 func BasketTwo(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M9.612 6.084C9.16 6.711 9 7.494 9 8v1h6V8c0-.507-.16-1.289-.611-1.916C13.974 5.508 13.274 5 12 5c-1.274 0-1.974.508-2.388 1.084zM17 9V8c0-.827-.24-2.044-.988-3.084C15.226 3.825 13.926 3 12 3c-1.926 0-3.226.825-4.012 1.916C7.24 5.956 7 7.173 7 8v1H3a1 1 0 0 0 0 2h.095l.91 9.1A1 1 0 0 0 5 21h14a1 1 0 0 0 .995-.9l.91-9.1H21a1 1 0 1 0 0-2h-4zm-8 5a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2zm4 0a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2zm4 0a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M9.612 6.084C9.16 6.711 9 7.494 9 8v1h6V8c0-.507-.16-1.289-.611-1.916C13.974 5.508 13.274 5 12 5s-1.974.508-2.388 1.084M17 9V8c0-.827-.24-2.044-.988-3.084C15.226 3.825 13.926 3 12 3s-3.226.825-4.012 1.916C7.24 5.956 7 7.173 7 8v1H3a1 1 0 0 0 0 2h.095l.91 9.1A1 1 0 0 0 5 21h14a1 1 0 0 0 .995-.9l.91-9.1H21a1 1 0 1 0 0-2zm-8 5a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0zm4 0a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0zm4 0a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -729,84 +729,84 @@ func BasketTwoLine(children ...g.Node) g.Node {
 func BathShower(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M20 14v-2H4v2c0 1.138.583 3.248 2.745 3.841c.37.102.787.159 1.255.159h8a4.71 4.71 0 0 0 1.255-.159C19.417 17.248 20 15.138 20 14z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h1m16 0v0a1 1 0 0 0 1-1V7c0-1-.6-3-3-3s-3 2-3 3m5 5v2c0 1.138-.583 3.248-2.745 3.841M20 12H4m0 0v2c0 1.138.583 3.248 2.745 3.841M6 20l.745-2.159m0 0c.37.102.787.159 1.255.159h8a4.71 4.71 0 0 0 1.255-.159M18 20l-.745-2.159M15 7h-2m2 0h2"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M20 14v-2H4v2c0 1.138.583 3.248 2.745 3.841c.37.102.787.159 1.255.159h8a4.7 4.7 0 0 0 1.255-.159C19.417 17.248 20 15.138 20 14"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h1m16 0a1 1 0 0 0 1-1V7c0-1-.6-3-3-3s-3 2-3 3m5 5v2c0 1.138-.583 3.248-2.745 3.841M20 12H4m0 0v2c0 1.138.583 3.248 2.745 3.841M6 20l.745-2.159m0 0c.37.102.787.159 1.255.159h8a4.7 4.7 0 0 0 1.255-.159M18 20l-.745-2.159M15 7h-2m2 0h2"/></g>`), g.Group(children),
 	)
 }
 
 func BathShowerLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h1m16 0v0a1 1 0 0 0 1-1V7c0-1-.6-3-3-3s-3 2-3 3m5 5v2c0 1.138-.583 3.248-2.745 3.841M20 12H4m0 0v2c0 1.138.583 3.248 2.745 3.841M6 20l.745-2.159m0 0c.37.102.787.159 1.255.159h8a4.71 4.71 0 0 0 1.255-.159M18 20l-.745-2.159M15 7h-2m2 0h2"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h1m16 0a1 1 0 0 0 1-1V7c0-1-.6-3-3-3s-3 2-3 3m5 5v2c0 1.138-.583 3.248-2.745 3.841M20 12H4m0 0v2c0 1.138.583 3.248 2.745 3.841M6 20l.745-2.159m0 0c.37.102.787.159 1.255.159h8a4.7 4.7 0 0 0 1.255-.159M18 20l-.745-2.159M15 7h-2m2 0h2"/>`), g.Group(children),
 	)
 }
 
 func Battery(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M16 6H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zm6 7v-2a1 1 0 0 0-1-1v4a1 1 0 0 0 1-1z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 6H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zm6 7v-2a1 1 0 0 0-1-1v4a1 1 0 0 0 1-1z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M16 6H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2m6 7v-2a1 1 0 0 0-1-1v4a1 1 0 0 0 1-1"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 6H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2m6 7v-2a1 1 0 0 0-1-1v4a1 1 0 0 0 1-1"/></g>`), g.Group(children),
 	)
 }
 
 func BatteryFull(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 8a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V8zm19 2a1 1 0 0 1 1-1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2a1 1 0 0 1-1-1v-4zM7 10a1 1 0 0 0-2 0v4a1 1 0 1 0 2 0v-4zm3-1a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1zm5 1a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0v-4z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 8a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3zm19 2a1 1 0 0 1 1-1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2a1 1 0 0 1-1-1zM7 10a1 1 0 0 0-2 0v4a1 1 0 1 0 2 0zm3-1a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1m5 1a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func BatteryFullLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 10v4m4 0v-4m4 0v4m4-4V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2m0-4v0a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2v0m0-4v4"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 10v4m4 0v-4m4 0v4m4-4V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2m0-4a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2v0m0-4v4"/>`), g.Group(children),
 	)
 }
 
 func BatteryHalf(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H4zm17 4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2zM6 9a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1zm5 1a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0v-4z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3zm17 4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2M6 9a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1m5 1a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func BatteryHalfLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 10v4m4 0v-4m8 0V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2m0-4v0a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2v0m0-4v4"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 10v4m4 0v-4m8 0V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2m0-4a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2v0m0-4v4"/>`), g.Group(children),
 	)
 }
 
 func BatteryLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 10V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2m0-4v0a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2v0m0-4v4"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 10V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2m0-4a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2v0m0-4v4"/>`), g.Group(children),
 	)
 }
 
 func BatteryLow(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 8a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3V8zm19 2a1 1 0 0 1 1-1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2a1 1 0 0 1-1-1v-4zM7 10a1 1 0 0 0-2 0v4a1 1 0 1 0 2 0v-4z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 8a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H4a3 3 0 0 1-3-3zm19 2a1 1 0 0 1 1-1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2a1 1 0 0 1-1-1zM7 10a1 1 0 0 0-2 0v4a1 1 0 1 0 2 0z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func BatteryLowLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 10v4m12-4V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2m0-4v0a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2v0m0-4v4"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 10v4m12-4V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2m0-4a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2v0m0-4v4"/>`), g.Group(children),
 	)
 }
 
 func Beach(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M10 5.196c1.5-2.598 5.098-2.83 7.696-1.33s4.196 4.732 2.696 7.33l-3.464-2l-1.732-1l-1.732-1l-3.464-2z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.696 3.866C15.098 2.366 11.5 2.598 10 5.196l3.464 2m4.232-3.33c2.598 1.5 4.196 4.732 2.696 7.33l-5.196-3m2.5-4.33l.5-.866m-.5.866c-1.821.488-2.982 1.165-4.232 3.33m4.232-3.33c.488 1.821.482 3.165-.768 5.33m-1.732-1l-1.732-1m1.732 1l-3 5.196M3 21l.88-1.056a2.001 2.001 0 0 1 3.139.08v0a2.001 2.001 0 0 0 3.107.118l.19-.218a2.236 2.236 0 0 1 3.367 0l.191.218c.838.957 2.344.9 3.107-.117v0a2.001 2.001 0 0 1 3.14-.08L21 21M6.708 16A7.97 7.97 0 0 1 12 14a7.97 7.97 0 0 1 5.292 2"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M10 5.196c1.5-2.598 5.098-2.83 7.696-1.33s4.196 4.732 2.696 7.33l-3.464-2l-1.732-1l-1.732-1z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.696 3.866C15.098 2.366 11.5 2.598 10 5.196l3.464 2m4.232-3.33c2.598 1.5 4.196 4.732 2.696 7.33l-5.196-3m2.5-4.33l.5-.866m-.5.866c-1.821.488-2.982 1.165-4.232 3.33m4.232-3.33c.488 1.821.482 3.165-.768 5.33m-1.732-1l-1.732-1m1.732 1l-3 5.196M3 21l.88-1.056a2 2 0 0 1 3.139.08v0a2 2 0 0 0 3.107.118l.19-.218a2.236 2.236 0 0 1 3.367 0l.191.218c.838.957 2.344.9 3.107-.117v0a2 2 0 0 1 3.14-.08L21 21M6.708 16A7.97 7.97 0 0 1 12 14a7.97 7.97 0 0 1 5.292 2"/></g>`), g.Group(children),
 	)
 }
 
 func BeachLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.696 3.866C15.098 2.366 11.5 2.598 10 5.196l3.464 2m4.232-3.33c2.598 1.5 4.196 4.732 2.696 7.33l-5.196-3m2.5-4.33l.5-.866m-.5.866c-1.821.488-2.982 1.165-4.232 3.33m4.232-3.33c.488 1.821.482 3.165-.768 5.33m-1.732-1l-1.732-1m1.732 1l-3 5.196M3 21l.88-1.056a2.001 2.001 0 0 1 3.139.08v0a2.001 2.001 0 0 0 3.107.118l.19-.218a2.236 2.236 0 0 1 3.367 0l.191.218c.838.957 2.344.9 3.107-.117v0a2.001 2.001 0 0 1 3.14-.08L21 21M6.708 16A7.97 7.97 0 0 1 12 14a7.97 7.97 0 0 1 5.292 2"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.696 3.866C15.098 2.366 11.5 2.598 10 5.196l3.464 2m4.232-3.33c2.598 1.5 4.196 4.732 2.696 7.33l-5.196-3m2.5-4.33l.5-.866m-.5.866c-1.821.488-2.982 1.165-4.232 3.33m4.232-3.33c.488 1.821.482 3.165-.768 5.33m-1.732-1l-1.732-1m1.732 1l-3 5.196M3 21l.88-1.056a2 2 0 0 1 3.139.08v0a2 2 0 0 0 3.107.118l.19-.218a2.236 2.236 0 0 1 3.367 0l.191.218c.838.957 2.344.9 3.107-.117v0a2 2 0 0 1 3.14-.08L21 21M6.708 16A7.97 7.97 0 0 1 12 14a7.97 7.97 0 0 1 5.292 2"/>`), g.Group(children),
 	)
 }
 
@@ -827,7 +827,7 @@ func BeakerLine(children ...g.Node) g.Node {
 func Bell(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M6 11c0-4.8 4-6 6-6c4.8 0 6 4 6 6v4l2 2H4l2-2v-4z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5c-2 0-6 1.2-6 6v4l-2 2h16l-2-2v-4c0-2-1.2-6-6-6zm0 0V3M9 18c0 1 .6 3 3 3s3-2 3-3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M6 11c0-4.8 4-6 6-6c4.8 0 6 4 6 6v4l2 2H4l2-2z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5c-2 0-6 1.2-6 6v4l-2 2h16l-2-2v-4c0-2-1.2-6-6-6m0 0V3M9 18c0 1 .6 3 3 3s3-2 3-3"/></g>`), g.Group(children),
 	)
 }
 
@@ -841,49 +841,49 @@ func BellLine(children ...g.Node) g.Node {
 func BitcoinCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12zm10-6a1 1 0 1 0-2 0v1H8a1 1 0 0 0 0 2h1v6H8a1 1 0 1 0 0 2h1v1a1 1 0 1 0 2 0v-1h1v1a1 1 0 1 0 2 0v-1c.493 0 1.211-.14 1.834-.588C16.51 15.925 17 15.126 17 14c0-.851-.281-1.516-.71-2c.429-.484.71-1.149.71-2c0-1.126-.491-1.926-1.166-2.412A3.233 3.233 0 0 0 14 7V6a1 1 0 1 0-2 0v1h-1V6zm0 5V9h3c.173 0 .456.06.666.212c.159.114.334.314.334.788c0 .474-.175.674-.334.789A1.25 1.25 0 0 1 14 11h-3zm0 2h3c.173 0 .456.06.666.211c.159.115.334.315.334.789c0 .474-.175.674-.334.789A1.25 1.25 0 0 1 14 15h-3v-2z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m10-6a1 1 0 1 0-2 0v1H8a1 1 0 0 0 0 2h1v6H8a1 1 0 1 0 0 2h1v1a1 1 0 1 0 2 0v-1h1v1a1 1 0 1 0 2 0v-1c.493 0 1.211-.14 1.834-.588C16.51 15.925 17 15.126 17 14c0-.851-.281-1.516-.71-2c.429-.484.71-1.149.71-2c0-1.126-.491-1.926-1.166-2.412A3.23 3.23 0 0 0 14 7V6a1 1 0 1 0-2 0v1h-1zm0 5V9h3c.173 0 .456.06.666.212c.159.114.334.314.334.788s-.175.674-.334.789A1.25 1.25 0 0 1 14 11zm0 2h3c.173 0 .456.06.666.211c.159.115.334.315.334.789s-.175.674-.334.789A1.25 1.25 0 0 1 14 15h-3z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func BitcoinCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10z"/><path d="M8 8h5m1 4c.667 0 2-.4 2-2s-1.333-2-2-2h-1m1 4c.667 0 2 .4 2 2s-1.333 2-2 2h-1m1-4h-4m-2 4h5M10 6v6m0 6v-6m3-6v2m0 8v2"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10"/><path d="M8 8h5m1 4c.667 0 2-.4 2-2s-1.333-2-2-2h-1m1 4c.667 0 2 .4 2 2s-1.333 2-2 2h-1m1-4h-4m-2 4h5M10 6v6m0 6v-6m3-6v2m0 8v2"/></g>`), g.Group(children),
 	)
 }
 
 func Bluetooth(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 12l5-4l-5-4v8zm0 0l5 4l-5 4v-8zm0 0L7 8m5 4l-5 4"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 12l5-4l-5-4zm0 0l5 4l-5 4zm0 0L7 8m5 4l-5 4"/>`), g.Group(children),
 	)
 }
 
 func BluetoothLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 12l5-4l-5-4v8zm0 0l5 4l-5 4v-8zm0 0L7 8m5 4l-5 4"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 12l5-4l-5-4zm0 0l5 4l-5 4zm0 0L7 8m5 4l-5 4"/>`), g.Group(children),
 	)
 }
 
 func Bold(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 6H6v6h7a3 3 0 1 0 0-6zm2 6H6v6h9a3 3 0 1 0 0-6z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 6H6v6h7a3 3 0 1 0 0-6m2 6H6v6h9a3 3 0 1 0 0-6"/>`), g.Group(children),
 	)
 }
 
 func BoldLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 6H6v6h7a3 3 0 1 0 0-6zm2 6H6v6h9a3 3 0 1 0 0-6z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 6H6v6h7a3 3 0 1 0 0-6m2 6H6v6h9a3 3 0 1 0 0-6"/>`), g.Group(children),
 	)
 }
 
 func Book(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3 5a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V5zm5 0v7l2.293-2.293a1 1 0 0 1 1.414 0L14 12V5a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3 5a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3zm5 0v7l2.293-2.293a1 1 0 0 1 1.414 0L14 12V5a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -897,7 +897,7 @@ func BookLine(children ...g.Node) g.Node {
 func BookMinus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 19h-6"/><path fill="currentColor" fill-rule="evenodd" d="M6 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h7.803A6 6 0 0 1 21 13.341V5a3 3 0 0 0-3-3H6zm2 10V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v7l-2.293-2.293a1 1 0 0 0-1.414 0L8 12z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 19h-6"/><path fill="currentColor" fill-rule="evenodd" d="M6 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h7.803A6 6 0 0 1 21 13.341V5a3 3 0 0 0-3-3zm2 10V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v7l-2.293-2.293a1 1 0 0 0-1.414 0z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -911,7 +911,7 @@ func BookMinusLine(children ...g.Node) g.Node {
 func BookOpen(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11 4.85c-2.195-1.022-5.52-1.565-8.633.979A1 1 0 0 0 2 6.603V19a1 1 0 0 0 1.633.774c2.736-2.236 5.734-1.31 7.367-.255V4.849zm2 0v14.669c1.633-1.056 4.63-1.981 7.367.255A1 1 0 0 0 22 19V6.603a1 1 0 0 0-.367-.774C18.52 3.285 15.195 3.828 13 4.849z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11 4.85c-2.195-1.022-5.52-1.565-8.633.979A1 1 0 0 0 2 6.603V19a1 1 0 0 0 1.633.774c2.736-2.236 5.734-1.31 7.367-.255zm2 0v14.669c1.633-1.056 4.63-1.981 7.367.255A1 1 0 0 0 22 19V6.603a1 1 0 0 0-.367-.774C18.52 3.285 15.195 3.828 13 4.849z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -925,7 +925,7 @@ func BookOpenLine(children ...g.Node) g.Node {
 func BookPlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 16v3m0 3v-3m0 0h3m-3 0h-3"/><path fill="currentColor" fill-rule="evenodd" d="M6 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h7.803A6 6 0 0 1 21 13.341V5a3 3 0 0 0-3-3H6zm2 10V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v7l-2.293-2.293a1 1 0 0 0-1.414 0L8 12z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 16v3m0 3v-3m0 0h3m-3 0h-3"/><path fill="currentColor" fill-rule="evenodd" d="M6 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h7.803A6 6 0 0 1 21 13.341V5a3 3 0 0 0-3-3zm2 10V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v7l-2.293-2.293a1 1 0 0 0-1.414 0z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -939,7 +939,7 @@ func BookPlusLine(children ...g.Node) g.Node {
 func Bookmark(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M7 2a3 3 0 0 0-3 3v15.138a1.5 1.5 0 0 0 2.244 1.303l5.26-3.006a1 1 0 0 1 .992 0l5.26 3.006A1.5 1.5 0 0 0 20 20.138V5a3 3 0 0 0-3-3H7z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M7 2a3 3 0 0 0-3 3v15.138a1.5 1.5 0 0 0 2.244 1.303l5.26-3.006a1 1 0 0 1 .992 0l5.26 3.006A1.5 1.5 0 0 0 20 20.138V5a3 3 0 0 0-3-3z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -960,42 +960,42 @@ func BookmarkBookLine(children ...g.Node) g.Node {
 func BookmarkLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 3H7a2 2 0 0 0-2 2v15.138a.5.5 0 0 0 .748.434l5.26-3.005a2 2 0 0 1 1.984 0l5.26 3.006a.5.5 0 0 0 .748-.435V5a2 2 0 0 0-2-2z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 3H7a2 2 0 0 0-2 2v15.138a.5.5 0 0 0 .748.434l5.26-3.005a2 2 0 0 1 1.984 0l5.26 3.006a.5.5 0 0 0 .748-.435V5a2 2 0 0 0-2-2"/>`), g.Group(children),
 	)
 }
 
 func BookmarkMinus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4 5a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v15.138a1.5 1.5 0 0 1-2.244 1.303l-5.26-3.006a1 1 0 0 0-.992 0l-5.26 3.006A1.5 1.5 0 0 1 4 20.138V5zm11 4a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2h6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4 5a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v15.138a1.5 1.5 0 0 1-2.244 1.303l-5.26-3.006a1 1 0 0 0-.992 0l-5.26 3.006A1.5 1.5 0 0 1 4 20.138zm11 4a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func BookmarkMinusLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 3H7a2 2 0 0 0-2 2v15.138a.5.5 0 0 0 .748.434l5.26-3.005a2 2 0 0 1 1.984 0l5.26 3.006a.5.5 0 0 0 .748-.435V5a2 2 0 0 0-2-2zm-8 7h6"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 3H7a2 2 0 0 0-2 2v15.138a.5.5 0 0 0 .748.434l5.26-3.005a2 2 0 0 1 1.984 0l5.26 3.006a.5.5 0 0 0 .748-.435V5a2 2 0 0 0-2-2m-8 7h6"/>`), g.Group(children),
 	)
 }
 
 func BookmarkPlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4 5a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v15.138a1.5 1.5 0 0 1-2.244 1.303l-5.26-3.006a1 1 0 0 0-.992 0l-5.26 3.006A1.5 1.5 0 0 1 4 20.138V5zm7 2a1 1 0 1 1 2 0v2h2a1 1 0 1 1 0 2h-2v2a1 1 0 1 1-2 0v-2H9a1 1 0 1 1 0-2h2V7z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4 5a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v15.138a1.5 1.5 0 0 1-2.244 1.303l-5.26-3.006a1 1 0 0 0-.992 0l-5.26 3.006A1.5 1.5 0 0 1 4 20.138zm7 2a1 1 0 1 1 2 0v2h2a1 1 0 1 1 0 2h-2v2a1 1 0 1 1-2 0v-2H9a1 1 0 1 1 0-2h2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func BookmarkPlusLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 3H7a2 2 0 0 0-2 2v15.138a.5.5 0 0 0 .748.434l5.26-3.005a2 2 0 0 1 1.984 0l5.26 3.006a.5.5 0 0 0 .748-.435V5a2 2 0 0 0-2-2zm-5 4v3m0 3v-3m0 0H9m3 0h3"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 3H7a2 2 0 0 0-2 2v15.138a.5.5 0 0 0 .748.434l5.26-3.005a2 2 0 0 1 1.984 0l5.26 3.006a.5.5 0 0 0 .748-.435V5a2 2 0 0 0-2-2m-5 4v3m0 3v-3m0 0H9m3 0h3"/>`), g.Group(children),
 	)
 }
 
 func Box(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11.47 2.152a1 1 0 0 1 1.06 0l6.904 4.315L12 10.84L4.566 6.467l6.904-4.315zM3.008 7.871A1.001 1.001 0 0 0 3 8v8a1 1 0 0 0 .47.848L11 21.554v-8.982L3.008 7.87zM13 21.554l7.53-4.706A1 1 0 0 0 21 16V8c0-.043-.003-.087-.008-.129L13 12.571v8.983z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11.47 2.152a1 1 0 0 1 1.06 0l6.904 4.315L12 10.84L4.566 6.467zM3.008 7.871A1 1 0 0 0 3 8v8a1 1 0 0 0 .47.848L11 21.554v-8.982L3.008 7.87zM13 21.554l7.53-4.706A1 1 0 0 0 21 16V8q0-.065-.008-.129L13 12.571z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -1009,7 +1009,7 @@ func BoxLine(children ...g.Node) g.Node {
 func Briefcase(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8 6a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3v1h3a3 3 0 0 1 3 3v2h-7v-1a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v1H2v-2a3 3 0 0 1 3-3h3V6zm-6 8v4a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-4h-7v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-1H2zm8-7h4V6a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v1zm3 7h-2v-2h2v2z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8 6a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3v1h3a3 3 0 0 1 3 3v2h-7v-1a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v1H2v-2a3 3 0 0 1 3-3h3zm-6 8v4a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-4h-7v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-1zm8-7h4V6a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1zm3 7h-2v-2h2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -1023,21 +1023,21 @@ func BriefcaseLine(children ...g.Node) g.Node {
 func Browser(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2M3 8v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8M3 8h18"/><path fill="currentColor" d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2H3V6z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2M3 8v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8M3 8h18"/><path fill="currentColor" d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2H3z"/></g>`), g.Group(children),
 	)
 }
 
 func BrowserCookie(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2M3 8v10a2 2 0 0 0 2 2h4M3 8h18m0 0v2"/><path fill="currentColor" fill-rule="evenodd" d="M18 12v1h2a1 1 0 0 1 1 1v2h1a1 1 0 0 1 1 1a6 6 0 1 1-6-6a1 1 0 0 1 1 1zm-4 4a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H15a1 1 0 0 1-1-1zm4 2a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2H18z" clip-rule="evenodd"/><path fill="currentColor" d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2H3V6z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2M3 8v10a2 2 0 0 0 2 2h4M3 8h18m0 0v2"/><path fill="currentColor" fill-rule="evenodd" d="M18 12v1h2a1 1 0 0 1 1 1v2h1a1 1 0 0 1 1 1a6 6 0 1 1-6-6a1 1 0 0 1 1 1m-4 4a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H15a1 1 0 0 1-1-1m4 2a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2z" clip-rule="evenodd"/><path fill="currentColor" d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2H3z"/></g>`), g.Group(children),
 	)
 }
 
 func BrowserCookieLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2M3 8v10a2 2 0 0 0 2 2h4M3 8h18m0 0v2m-6 7h.001M18 19h.001M22 17a5 5 0 1 1-5-5v2h3v3h2z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2M3 8v10a2 2 0 0 0 2 2h4M3 8h18m0 0v2m-3 9h.001M22 17a5 5 0 1 1-5-5v2h3v3z"/>`), g.Group(children),
 	)
 }
 
@@ -1051,77 +1051,77 @@ func BrowserLine(children ...g.Node) g.Node {
 func BugTwo(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M7.293 3.293a1 1 0 0 1 1.414 0l1.876 1.876A6.39 6.39 0 0 1 12 5c.515 0 .996.049 1.445.14l1.848-1.847a1 1 0 1 1 1.414 1.414L15.45 5.965A5.5 5.5 0 0 1 17.249 8H18c.173 0 .456-.06.666-.212c.159-.114.334-.314.334-.788a1 1 0 1 1 2 0c0 1.126-.491 1.926-1.166 2.412A3.233 3.233 0 0 1 18 10h-.086c.06.36.086.7.086 1v1h2a1 1 0 1 1 0 2h-2v1c0 .3-.026.64-.086 1H18c.493 0 1.211.14 1.834.588C20.51 17.075 21 17.875 21 19a1 1 0 1 1-2 0c0-.474-.175-.674-.334-.788A1.239 1.239 0 0 0 18 18h-.751a5.537 5.537 0 0 1-1.552 1.857C14.766 20.563 13.543 21 12 21c-1.543 0-2.765-.437-3.697-1.143c-.7-.53-1.2-1.188-1.552-1.857H6c-.173 0-.456.06-.666.212c-.159.114-.334.314-.334.788a1 1 0 1 1-2 0c0-1.126.492-1.926 1.166-2.412A3.233 3.233 0 0 1 6 16h.086c-.06-.36-.086-.7-.086-1v-1H4a1 1 0 1 1 0-2h2v-1c0-.349.022-.682.065-1H6c-.493 0-1.211-.14-1.834-.588C3.492 8.926 3 8.126 3 7a1 1 0 0 1 2 0c0 .474.175.674.334.788c.21.152.493.212.666.212h.696A5.34 5.34 0 0 1 8.58 5.994L7.293 4.707a1 1 0 0 1 0-1.414zM12 9a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2H12zm-3 4a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H10a1 1 0 0 1-1-1zm5-1a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2H14z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M7.293 3.293a1 1 0 0 1 1.414 0l1.876 1.876A6.4 6.4 0 0 1 12 5q.772.002 1.445.14l1.848-1.847a1 1 0 1 1 1.414 1.414L15.45 5.965A5.5 5.5 0 0 1 17.249 8H18c.173 0 .456-.06.666-.212c.159-.114.334-.314.334-.788a1 1 0 1 1 2 0c0 1.126-.491 1.926-1.166 2.412A3.23 3.23 0 0 1 18 10h-.086c.06.36.086.7.086 1v1h2a1 1 0 1 1 0 2h-2v1c0 .3-.026.64-.086 1H18c.493 0 1.211.14 1.834.588C20.51 17.075 21 17.875 21 19a1 1 0 1 1-2 0c0-.474-.175-.674-.334-.788A1.24 1.24 0 0 0 18 18h-.751a5.5 5.5 0 0 1-1.552 1.857C14.766 20.563 13.543 21 12 21s-2.765-.437-3.697-1.143c-.7-.53-1.2-1.188-1.552-1.857H6c-.173 0-.456.06-.666.212c-.159.114-.334.314-.334.788a1 1 0 1 1-2 0c0-1.126.492-1.926 1.166-2.412A3.23 3.23 0 0 1 6 16h.086c-.06-.36-.086-.7-.086-1v-1H4a1 1 0 1 1 0-2h2v-1q0-.523.065-1H6c-.493 0-1.211-.14-1.834-.588C3.492 8.926 3 8.126 3 7a1 1 0 0 1 2 0c0 .474.175.674.334.788c.21.152.493.212.666.212h.696A5.34 5.34 0 0 1 8.58 5.994L7.293 4.707a1 1 0 0 1 0-1.414M12 9a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2zm-3 4a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H10a1 1 0 0 1-1-1m5-1a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func BugTwoLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16 4l-2.251 2.251m0 0A5.782 5.782 0 0 0 12 6a5.56 5.56 0 0 0-1.711.289m3.46-.038c1.551.49 2.417 1.623 2.858 2.749M8 4l2.289 2.289m0 0C9.135 6.67 7.914 7.479 7.339 9m9.268 0A5.66 5.66 0 0 1 17 11v2m-.393-4H18c.667 0 2-.4 2-2m-3 6v2a5.66 5.66 0 0 1-.393 2M17 13h3m-3.393 4c-.585 1.494-1.918 3-4.607 3s-4.022-1.506-4.607-3m9.214 0H18c.667 0 2 .4 2 2M7.338 9C7.125 9.564 7 10.226 7 11v2m.338-4H6c-.667 0-2-.4-2-2m3 6v2c0 .546.107 1.272.393 2M7 13H4m3.393 4H6c-.667 0-2 .4-2 2m8-9h.001M10 13h.001M14 13h.001"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16 4l-2.251 2.251m0 0A5.8 5.8 0 0 0 12 6a5.6 5.6 0 0 0-1.711.289m3.46-.038c1.551.49 2.417 1.623 2.858 2.749M8 4l2.289 2.289m0 0C9.135 6.67 7.914 7.479 7.339 9m9.268 0A5.7 5.7 0 0 1 17 11v2m-.393-4H18c.667 0 2-.4 2-2m-3 6v2a5.7 5.7 0 0 1-.393 2M17 13h3m-3.393 4c-.585 1.494-1.918 3-4.607 3s-4.022-1.506-4.607-3m9.214 0H18c.667 0 2 .4 2 2M7.338 9C7.125 9.564 7 10.226 7 11v2m.338-4H6c-.667 0-2-.4-2-2m3 6v2c0 .546.107 1.272.393 2M7 13H4m3.393 4H6c-.667 0-2 .4-2 2m10-6"/>`), g.Group(children),
 	)
 }
 
 func Burger(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14 15l3.172-3.172a2.83 2.83 0 0 1 2-.828H20a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v0a2 2 0 0 1 2-2h3.657c1.5 0 2.939.596 4 1.657L14 15z"/><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15h18v2a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-2z"/><path fill="currentColor" fill-rule="evenodd" d="M5.467 4.554C7.27 3.457 9.58 3 12 3s4.73.457 6.533 1.554c1.844 1.121 3.109 2.886 3.402 5.328C22.082 11.106 21.067 12 20 12H4c-1.067 0-2.082-.894-1.935-2.118c.293-2.442 1.558-4.207 3.402-5.328zM7 6a1 1 0 0 0 0 2h.001a1 1 0 0 0 0-2H7zm8 1a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H16a1 1 0 0 1-1-1zm-4 1a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2H11z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14 15l3.172-3.172a2.83 2.83 0 0 1 2-.828H20a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v0a2 2 0 0 1 2-2h3.657c1.5 0 2.939.596 4 1.657z"/><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15h18v2a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z"/><path fill="currentColor" fill-rule="evenodd" d="M5.467 4.554C7.27 3.457 9.58 3 12 3s4.73.457 6.533 1.554c1.844 1.121 3.109 2.886 3.402 5.328C22.082 11.106 21.067 12 20 12H4c-1.067 0-2.082-.894-1.935-2.118c.293-2.442 1.558-4.207 3.402-5.328M7 6a1 1 0 0 0 0 2h.001a1 1 0 0 0 0-2zm8 1a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H16a1 1 0 0 1-1-1m-4 1a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func BurgerLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m15 15l3.379-3.379a2.121 2.121 0 0 1 1.5-.621H20a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v0a2 2 0 0 1 2-2h4.515a6 6 0 0 1 4.242 1.757L15 15zM3 15h18v2a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-2z"/><path d="M12 4c-4.623 0-8.432 1.756-8.942 6c-.066.55.39 1 .942 1h16c.552 0 1.008-.45.942-1c-.51-4.244-4.319-6-8.942-6zM7.001 8H7m8.001-1H15m-2.999 1H12"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m15 15l3.379-3.379a2.12 2.12 0 0 1 1.5-.621H20a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v0a2 2 0 0 1 2-2h4.515a6 6 0 0 1 4.242 1.757zM3 15h18v2a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3z"/><path d="M12 4c-4.623 0-8.432 1.756-8.942 6c-.066.55.39 1 .942 1h16c.552 0 1.008-.45.942-1c-.51-4.244-4.319-6-8.942-6M7.001 8H7m5.002 0"/></g>`), g.Group(children),
 	)
 }
 
 func Bus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 19v0a2 2 0 0 1-2-2v-4m2 6v1.5a.5.5 0 0 0 .5.5v0a.5.5 0 0 0 .5-.5V19m-1 0h1m11 0v0a2 2 0 0 0 2-2v-4m-2 6v1.5a.5.5 0 0 1-.5.5v0a.5.5 0 0 1-.5-.5V19m1 0h-1M4 13V7m0 6h8m8 0V7m0 6h-8m-5 6h10M4 7V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2M4 7h8m8 0h-8m0 0v6"/><path fill="currentColor" fill-rule="evenodd" d="M4 13h16v6H4v-6zm3 3a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1zm9-1a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2H16z" clip-rule="evenodd"/><path fill="currentColor" d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2H4V5z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 19a2 2 0 0 1-2-2v-4m2 6v1.5a.5.5 0 0 0 .5.5v0a.5.5 0 0 0 .5-.5V19m-1 0h1m11 0a2 2 0 0 0 2-2v-4m-2 6v1.5a.5.5 0 0 1-.5.5v0a.5.5 0 0 1-.5-.5V19m1 0h-1M4 13V7m0 6h8m8 0V7m0 6h-8m-5 6h10M4 7V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2M4 7h8m8 0h-8m0 0v6"/><path fill="currentColor" fill-rule="evenodd" d="M4 13h16v6H4zm3 3a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1m9-1a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2z" clip-rule="evenodd"/><path fill="currentColor" d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2H4z"/></g>`), g.Group(children),
 	)
 }
 
 func BusLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 19v0a2 2 0 0 1-2-2v-4m2 6v1.5a.5.5 0 0 0 .5.5v0a.5.5 0 0 0 .5-.5V19m-1 0h1m11 0v0a2 2 0 0 0 2-2v-4m-2 6v1.5a.5.5 0 0 1-.5.5v0a.5.5 0 0 1-.5-.5V19m1 0h-1M4 13V7m0 6h8m8 0V7m0 6h-8m-5 6h10M4 7v0a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v0M4 7h8m8 0h-8m0 0v6m-4 3h.001M16 16h.001"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 19a2 2 0 0 1-2-2v-4m2 6v1.5a.5.5 0 0 0 .5.5v0a.5.5 0 0 0 .5-.5V19m-1 0h1m11 0a2 2 0 0 0 2-2v-4m-2 6v1.5a.5.5 0 0 1-.5.5v0a.5.5 0 0 1-.5-.5V19m1 0h-1M4 13V7m0 6h8m8 0V7m0 6h-8m-5 6h10M4 7a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v0M4 7h8m8 0h-8m0 0v6m4 3h.001"/>`), g.Group(children),
 	)
 }
 
 func Cake(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3h.01M7 3h.01M17 3h.01"/><path fill="currentColor" fill-rule="evenodd" d="M7 5a1 1 0 0 1 1 1v2h3V6a1 1 0 1 1 2 0v2h3V6a1 1 0 1 1 2 0v2.1a5.005 5.005 0 0 1 3.937 4.102c-.4.155-.75.383-1.047.63c-.532.44-.966.994-1.302 1.46c-.265.367-.714.708-1.588.708c-.874 0-1.324-.342-1.588-.71A2.355 2.355 0 0 1 16 13a1 1 0 1 0-2 0c0 .34-.11.872-.412 1.29c-.264.368-.714.71-1.588.71c-.874 0-1.324-.342-1.588-.71A2.355 2.355 0 0 1 10 13a1 1 0 1 0-2 0c0 .34-.11.872-.412 1.29c-.264.368-.714.71-1.588.71c-.874 0-1.323-.341-1.588-.709c-.336-.465-.77-1.019-1.302-1.46a3.822 3.822 0 0 0-1.047-.629A5.005 5.005 0 0 1 6 8.1V6a1 1 0 0 1 1-1zm-5 9.52V19a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-4.48c-.27.256-.532.583-.79.94c-.635.883-1.685 1.54-3.21 1.54c-1.367 0-2.353-.529-3-1.273c-.647.744-1.633 1.273-3 1.273s-2.353-.529-3-1.273C8.353 16.47 7.367 17 6 17c-1.525 0-2.575-.657-3.21-1.54a6.756 6.756 0 0 0-.79-.94z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3h.01M7 3h.01M17 3h.01"/><path fill="currentColor" fill-rule="evenodd" d="M7 5a1 1 0 0 1 1 1v2h3V6a1 1 0 1 1 2 0v2h3V6a1 1 0 1 1 2 0v2.1a5.005 5.005 0 0 1 3.937 4.102c-.4.155-.75.383-1.047.63c-.532.44-.966.994-1.302 1.46c-.265.367-.714.708-1.588.708s-1.324-.342-1.588-.71A2.36 2.36 0 0 1 16 13a1 1 0 1 0-2 0c0 .34-.11.872-.412 1.29c-.264.368-.714.71-1.588.71s-1.324-.342-1.588-.71A2.36 2.36 0 0 1 10 13a1 1 0 1 0-2 0c0 .34-.11.872-.412 1.29c-.264.368-.714.71-1.588.71s-1.323-.341-1.588-.709c-.336-.465-.77-1.019-1.302-1.46a3.8 3.8 0 0 0-1.047-.629A5.005 5.005 0 0 1 6 8.1V6a1 1 0 0 1 1-1m-5 9.52V19a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-4.48c-.27.256-.532.583-.79.94c-.635.883-1.685 1.54-3.21 1.54c-1.367 0-2.353-.529-3-1.273c-.647.744-1.633 1.273-3 1.273s-2.353-.529-3-1.273C8.353 16.47 7.367 17 6 17c-1.525 0-2.575-.657-3.21-1.54a7 7 0 0 0-.79-.94" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func CakeLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 9v0a4 4 0 0 0-4 4v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6a4 4 0 0 0-4-4v0M7 9h10M7 9V6m10 3V6m-5 0v3m0-6h.01M7 3h.01M17 3h.01"/><path d="M3 13c0 1 .6 3 3 3s3-2 3-3c0 1 .6 3 3 3s3-2 3-3c0 1 .6 3 3 3s3-2 3-3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 9a4 4 0 0 0-4 4v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6a4 4 0 0 0-4-4v0M7 9h10M7 9V6m10 3V6m-5 0v3m0-6h.01M7 3h.01M17 3h.01"/><path d="M3 13c0 1 .6 3 3 3s3-2 3-3c0 1 .6 3 3 3s3-2 3-3c0 1 .6 3 3 3s3-2 3-3"/></g>`), g.Group(children),
 	)
 }
 
 func Calculator(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M7 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H7zm0 4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V6zm1 7a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H8zm3 1a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H12a1 1 0 0 1-1-1zm1 2a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H12zm-5 1a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1zm10-3a1 1 0 1 0-2 0v3a1 1 0 1 0 2 0v-3z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M7 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3zm0 4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1zm1 7a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2zm3 1a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H12a1 1 0 0 1-1-1m1 2a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2zm-5 1a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1m10-3a1 1 0 1 0-2 0v3a1 1 0 1 0 2 0z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func CalculatorLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 14v3M9 7v4h6V7H9zM7 21h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2zm2-7h.01M12 14h.01M12 17h.01M9 17h.01"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 14v3M9 7v4h6V7zM7 21h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2m2-7h.01M12 14h.01M12 17h.01M9 17h.01"/>`), g.Group(children),
 	)
 }
 
 func Calendar(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M4 7v2h16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 5h2a2 2 0 0 1 2 2v2H4V7a2 2 0 0 1 2-2h2m8 0V3m0 2H8m0-2v2M4 9.5V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9.5"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M4 7v2h16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 5h2a2 2 0 0 1 2 2v2H4V7a2 2 0 0 1 2-2h2m8 0V3m0 2H8m0-2v2M4 9.5V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9.5"/></g>`), g.Group(children),
 	)
 }
 
@@ -1135,7 +1135,7 @@ func CalendarLine(children ...g.Node) g.Node {
 func CalendarPlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 16v3m0 3v-3m0 0h3m-3 0h-3"/><path fill="currentColor" d="M4 7v2h16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 5h2a2 2 0 0 1 2 2v2H4V7a2 2 0 0 1 2-2h2m8 0V3m0 2H8m0-2v2M4 9.5V19a2 2 0 0 0 2 2h7m7-11.5v2.75"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 16v3m0 3v-3m0 0h3m-3 0h-3"/><path fill="currentColor" d="M4 7v2h16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 5h2a2 2 0 0 1 2 2v2H4V7a2 2 0 0 1 2-2h2m8 0V3m0 2H8m0-2v2M4 9.5V19a2 2 0 0 0 2 2h7m7-11.5v2.75"/></g>`), g.Group(children),
 	)
 }
 
@@ -1149,21 +1149,21 @@ func CalendarPlusLine(children ...g.Node) g.Node {
 func Camera(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M7.574 4.336A3 3 0 0 1 10.07 3h3.86a3 3 0 0 1 2.496 1.336l.812 1.219A1 1 0 0 0 18.07 6H19a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h.93a1 1 0 0 0 .832-.445l.812-1.22zM10 13a2 2 0 1 1 4 0a2 2 0 0 1-4 0zm2-4a4 4 0 1 0 0 8a4 4 0 0 0 0-8z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M7.574 4.336A3 3 0 0 1 10.07 3h3.86a3 3 0 0 1 2.496 1.336l.812 1.219A1 1 0 0 0 18.07 6H19a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3h.93a1 1 0 0 0 .832-.445l.812-1.22zM10 13a2 2 0 1 1 4 0a2 2 0 0 1-4 0m2-4a4 4 0 1 0 0 8a4 4 0 0 0 0-8" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func CameraLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 18V9a2 2 0 0 1 2-2h.93a2 2 0 0 0 1.664-.89l.812-1.22A2 2 0 0 1 10.07 4h3.86a2 2 0 0 1 1.664.89l.812 1.22A2 2 0 0 0 18.07 7H19a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 18V9a2 2 0 0 1 2-2h.93a2 2 0 0 0 1.664-.89l.812-1.22A2 2 0 0 1 10.07 4h3.86a2 2 0 0 1 1.664.89l.812 1.22A2 2 0 0 0 18.07 7H19a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2"/><circle cx="12" cy="13" r="3"/></g>`), g.Group(children),
 	)
 }
 
 func CameraOff(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 3l18 18"/><path fill="currentColor" fill-rule="evenodd" d="M5.172 6H5a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h14c.35 0 .688-.06 1-.17l-5.087-5.089a4 4 0 1 1-5.654-5.654L5.172 6zm5.502 5.503a2 2 0 1 0 2.823 2.823l-2.823-2.823zM22 17.172V9a3 3 0 0 0-3-3h-.93a1 1 0 0 1-.832-.445l-.812-1.22A3 3 0 0 0 13.93 3h-3.86a3 3 0 0 0-1.708.534L22 17.172z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 3l18 18"/><path fill="currentColor" fill-rule="evenodd" d="M5.172 6H5a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h14c.35 0 .688-.06 1-.17l-5.087-5.089a4 4 0 1 1-5.654-5.654zm5.502 5.503a2 2 0 1 0 2.823 2.823zM22 17.172V9a3 3 0 0 0-3-3h-.93a1 1 0 0 1-.832-.445l-.812-1.22A3 3 0 0 0 13.93 3h-3.86a3 3 0 0 0-1.708.534z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -1177,7 +1177,7 @@ func CameraOffLine(children ...g.Node) g.Node {
 func Car(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 11l2.48-5.788A2 2 0 0 1 7.32 4h9.362a2 2 0 0 1 1.838 1.212L21 11M3 11h18M3 11v7m18-7v7m-3 0v.5a1.5 1.5 0 0 0 1.5 1.5v0a1.5 1.5 0 0 0 1.5-1.5V18m-3 0H6m12 0h3M6 18v.5A1.5 1.5 0 0 1 4.5 20v0A1.5 1.5 0 0 1 3 18.5V18m3 0H3"/><path fill="currentColor" fill-rule="evenodd" d="M3 11h18v7H3v-7zm3 3a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1zm11-1a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2H17z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 11l2.48-5.788A2 2 0 0 1 7.32 4h9.362a2 2 0 0 1 1.838 1.212L21 11M3 11h18M3 11v7m18-7v7m-3 0v.5a1.5 1.5 0 0 0 1.5 1.5v0a1.5 1.5 0 0 0 1.5-1.5V18m-3 0H6m12 0h3M6 18v.5A1.5 1.5 0 0 1 4.5 20v0A1.5 1.5 0 0 1 3 18.5V18m3 0H3"/><path fill="currentColor" fill-rule="evenodd" d="M3 11h18v7H3zm3 3a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1m11-1a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -1205,14 +1205,14 @@ func CashLine(children ...g.Node) g.Node {
 func CentCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12zm12-6a1 1 0 1 0-2 0v1.1a5.002 5.002 0 0 0 0 9.8V18a1 1 0 1 0 2 0v-1.1c.98-.2 1.856-.685 2.536-1.364a1 1 0 1 0-1.415-1.415a3 3 0 1 1 0-4.243a1 1 0 1 0 1.415-1.414A4.993 4.993 0 0 0 13 7.1V6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m12-6a1 1 0 1 0-2 0v1.1a5.002 5.002 0 0 0 0 9.8V18a1 1 0 1 0 2 0v-1.1c.98-.2 1.856-.685 2.536-1.364a1 1 0 1 0-1.415-1.415a3 3 0 1 1 0-4.243a1 1 0 1 0 1.415-1.414A5 5 0 0 0 13 7.1z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func CentCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10z"/><path d="M12 16a4 4 0 0 1 0-8m0 8v2m0-2a3.987 3.987 0 0 0 2.828-1.172M12 8V6m0 2c1.105 0 2.105.448 2.828 1.172"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10"/><path d="M12 16a4 4 0 0 1 0-8m0 8v2m0-2a4 4 0 0 0 2.828-1.172M12 8V6m0 2c1.105 0 2.105.448 2.828 1.172"/></g>`), g.Group(children),
 	)
 }
 
@@ -1247,112 +1247,112 @@ func ChartPieLine(children ...g.Node) g.Node {
 func Chat(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 1 0-7.605-4.185L3 21l4.185-1.395A8.958 8.958 0 0 0 12 21z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 1 0-7.605-4.185L3 21l4.185-1.395A8.96 8.96 0 0 0 12 21"/>`), g.Group(children),
 	)
 }
 
 func ChatLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 1 0-7.605-4.185L3 21l4.185-1.395A8.958 8.958 0 0 0 12 21z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 1 0-7.605-4.185L3 21l4.185-1.395A8.96 8.96 0 0 0 12 21"/>`), g.Group(children),
 	)
 }
 
 func ChatSignal(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10a9.96 9.96 0 0 1-4.935-1.3l-3.749 1.249a1 1 0 0 1-1.265-1.265l1.25-3.749A9.959 9.959 0 0 1 2 12zm10.221-7.752a1 1 0 0 0-.442 1.95a8.013 8.013 0 0 1 6.023 6.023a1 1 0 1 0 1.95-.442a10.013 10.013 0 0 0-7.53-7.531zM9 9a1 1 0 0 1 1-1a6 6 0 0 1 6 6a1 1 0 1 1-2 0a4 4 0 0 0-4-4a1 1 0 0 1-1-1zm1 3a1 1 0 1 0 0 2a1 1 0 1 0 2 0a2 2 0 0 0-2-2z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10a9.96 9.96 0 0 1-4.935-1.3l-3.749 1.249a1 1 0 0 1-1.265-1.265l1.25-3.749A9.96 9.96 0 0 1 2 12m10.221-7.752a1 1 0 0 0-.442 1.95a8.01 8.01 0 0 1 6.023 6.023a1 1 0 1 0 1.95-.442a10.01 10.01 0 0 0-7.53-7.531zM9 9a1 1 0 0 1 1-1a6 6 0 0 1 6 6a1 1 0 1 1-2 0a4 4 0 0 0-4-4a1 1 0 0 1-1-1m1 3a1 1 0 1 0 0 2a1 1 0 1 0 2 0a2 2 0 0 0-2-2" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ChatSignalLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 3.223a9.003 9.003 0 0 0-5.605 13.592L3 21l4.185-1.395A9.003 9.003 0 0 0 20.777 14m0-4A9.013 9.013 0 0 0 14 3.223M17 12a5 5 0 0 0-5-5m1 5a1 1 0 0 0-1-1"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 3.223a9.003 9.003 0 0 0-5.605 13.592L3 21l4.185-1.395A9.003 9.003 0 0 0 20.777 14m0-4A9.01 9.01 0 0 0 14 3.223M17 12a5 5 0 0 0-5-5m1 5a1 1 0 0 0-1-1"/>`), g.Group(children),
 	)
 }
 
 func ChatStatus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12a9.97 9.97 0 0 0 1.3 4.935l-1.249 3.749a1 1 0 0 0 1.265 1.265l3.749-1.25A9.96 9.96 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 6c-.902 0-1.731.297-2.4.8a1 1 0 1 1-1.2-1.6a6 6 0 0 1 8.4 8.4a1 1 0 0 1-1.598-1.2A4 4 0 0 0 12 8zm-5 3a1 1 0 0 1 1 1a4 4 0 0 0 4 4a1 1 0 1 1 0 2a6 6 0 0 1-6-6a1 1 0 0 1 1-1zm5-1a2 2 0 1 0 0 4a2 2 0 0 0 0-4z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12a9.97 9.97 0 0 0 1.3 4.935l-1.249 3.749a1 1 0 0 0 1.265 1.265l3.749-1.25A9.96 9.96 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2m0 6c-.902 0-1.731.297-2.4.8a1 1 0 1 1-1.2-1.6a6 6 0 0 1 8.4 8.4a1 1 0 0 1-1.598-1.2A4 4 0 0 0 12 8m-5 3a1 1 0 0 1 1 1a4 4 0 0 0 4 4a1 1 0 1 1 0 2a6 6 0 0 1-6-6a1 1 0 0 1 1-1m5-1a2 2 0 1 0 0 4a2 2 0 0 0 0-4" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ChatStatusLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 3.512a9.025 9.025 0 0 1 5.5 5.523M11 3.055a9.001 9.001 0 0 0-6.605 13.76L3 21l4.185-1.395A9.001 9.001 0 0 0 20.945 13"/><path d="M12 17a5 5 0 0 1-5-5m2-4a5 5 0 0 1 7 7"/><circle cx="12" cy="12" r="1"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 3.512a9.03 9.03 0 0 1 5.5 5.523M11 3.055a9 9 0 0 0-6.605 13.76L3 21l4.185-1.395A9 9 0 0 0 20.945 13"/><path d="M12 17a5 5 0 0 1-5-5m2-4a5 5 0 0 1 7 7"/><circle cx="12" cy="12" r="1"/></g>`), g.Group(children),
 	)
 }
 
 func ChatText(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10a9.96 9.96 0 0 1-4.935-1.3l-3.749 1.249a1 1 0 0 1-1.265-1.265l1.25-3.749A9.959 9.959 0 0 1 2 12zm6-5a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2H8zm0 4a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8zm0 4a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2H8z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10a9.96 9.96 0 0 1-4.935-1.3l-3.749 1.249a1 1 0 0 1-1.265-1.265l1.25-3.749A9.96 9.96 0 0 1 2 12m6-5a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ChatTextLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9h8m-8 3h8m-8 3h3m10-3a9 9 0 0 1-13.815 7.605L3 21l1.395-4.185A9 9 0 1 1 21 12z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9h8m-8 3h8m-8 3h3m10-3a9 9 0 0 1-13.815 7.605L3 21l1.395-4.185A9 9 0 1 1 21 12"/>`), g.Group(children),
 	)
 }
 
 func ChatTwo(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19c5.523 0 10-3.582 10-8s-4.477-8-10-8S2 6.582 2 11c0 2.157 1.067 4.114 2.801 5.553C4.271 18.65 3 20 2 21c3 0 4.527-.979 6.32-2.559c1.14.36 2.38.559 3.68.559z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19c5.523 0 10-3.582 10-8s-4.477-8-10-8S2 6.582 2 11c0 2.157 1.067 4.114 2.801 5.553C4.271 18.65 3 20 2 21c3 0 4.527-.979 6.32-2.559c1.14.36 2.38.559 3.68.559"/>`), g.Group(children),
 	)
 }
 
 func ChatTwoLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19c5.523 0 10-3.582 10-8s-4.477-8-10-8S2 6.582 2 11c0 2.157 1.067 4.114 2.801 5.553C4.271 18.65 3 20 2 21c3 0 4.527-.979 6.32-2.559c1.14.36 2.38.559 3.68.559z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19c5.523 0 10-3.582 10-8s-4.477-8-10-8S2 6.582 2 11c0 2.157 1.067 4.114 2.801 5.553C4.271 18.65 3 20 2 21c3 0 4.527-.979 6.32-2.559c1.14.36 2.38.559 3.68.559"/>`), g.Group(children),
 	)
 }
 
 func ChatTwoText(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 11c0-5.167 5.145-9 11-9s11 3.833 11 9s-5.145 9-11 9c-1.198 0-2.354-.156-3.437-.447c-.785.662-1.59 1.244-2.54 1.672C4.894 21.735 3.617 22 2 22a1 1 0 0 1-.707-1.707c.876-.876 1.843-1.914 2.368-3.416C2.029 15.327 1 13.28 1 11zm7-5a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2H8zm0 4a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8zm0 4a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2H8z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 11c0-5.167 5.145-9 11-9s11 3.833 11 9s-5.145 9-11 9c-1.198 0-2.354-.156-3.437-.447c-.785.662-1.59 1.244-2.54 1.672C4.894 21.735 3.617 22 2 22a1 1 0 0 1-.707-1.707c.876-.876 1.843-1.914 2.368-3.416C2.029 15.327 1 13.28 1 11m7-5a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ChatTwoTextLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 8h8m-8 3h8m-8 3h3m11-3c0 4.418-4.477 8-10 8c-1.3 0-2.54-.198-3.68-.559C6.528 20.021 5 21 2 21c1-1 2.27-2.35 2.801-4.447C3.067 15.114 2 13.157 2 11c0-4.418 4.477-8 10-8s10 3.582 10 8z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 8h8m-8 3h8m-8 3h3m11-3c0 4.418-4.477 8-10 8c-1.3 0-2.54-.198-3.68-.559C6.528 20.021 5 21 2 21c1-1 2.27-2.35 2.801-4.447C3.067 15.114 2 13.157 2 11c0-4.418 4.477-8 10-8s10 3.582 10 8"/>`), g.Group(children),
 	)
 }
 
 func Chats(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M13.584 7a5.001 5.001 0 1 0-8.809 4.675L4 14l2.325-.775c.214.136.44.256.675.359"/><path fill="currentColor" d="M15 20a5 5 0 1 1 4.225-2.325L20 20l-2.325-.775A4.976 4.976 0 0 1 15 20z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M13.584 7a5.001 5.001 0 1 0-8.809 4.675L4 14l2.325-.775q.322.204.675.359"/><path fill="currentColor" d="M15 20a5 5 0 1 1 4.225-2.325L20 20l-2.325-.775A5 5 0 0 1 15 20"/></g>`), g.Group(children),
 	)
 }
 
 func ChatsLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.584 7a5.001 5.001 0 1 0-8.809 4.675L4 14l2.325-.775c.214.136.44.256.675.359M15 20a5 5 0 1 1 4.225-2.325L20 20l-2.325-.775A4.976 4.976 0 0 1 15 20z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.584 7a5.001 5.001 0 1 0-8.809 4.675L4 14l2.325-.775q.322.204.675.359M15 20a5 5 0 1 1 4.225-2.325L20 20l-2.325-.775A5 5 0 0 1 15 20"/>`), g.Group(children),
 	)
 }
 
 func ChatsTwo(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 18.72C6.339 20.134 4.82 21 2 21c1-1 2.27-2.35 2.801-4.447C3.067 15.114 2 13.157 2 11c0-4.418 4.477-8 10-8c5.1 0 9.308 3.054 9.923 7"/><path fill="currentColor" d="M16 19.889c-3.314 0-6-1.99-6-4.445C10 12.99 12.686 11 16 11s6 1.99 6 4.444c0 1.199-.64 2.286-1.68 3.085c.317 1.165 1.08 1.915 1.68 2.471c-1.8 0-2.716-.544-3.792-1.422c-.684.2-1.428.31-2.208.31z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 18.72C6.339 20.134 4.82 21 2 21c1-1 2.27-2.35 2.801-4.447C3.067 15.114 2 13.157 2 11c0-4.418 4.477-8 10-8c5.1 0 9.308 3.054 9.923 7"/><path fill="currentColor" d="M16 19.889c-3.314 0-6-1.99-6-4.445S12.686 11 16 11s6 1.99 6 4.444c0 1.199-.64 2.286-1.68 3.085c.317 1.165 1.08 1.915 1.68 2.471c-1.8 0-2.716-.544-3.792-1.422c-.684.2-1.428.31-2.208.31z"/></g>`), g.Group(children),
 	)
 }
 
 func ChatsTwoLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 18.72C6.339 20.134 4.82 21 2 21c1-1 2.27-2.35 2.801-4.447C3.067 15.114 2 13.157 2 11c0-4.418 4.477-8 10-8c5.1 0 9.308 3.054 9.923 7"/><path d="M16 19.889c-3.314 0-6-1.99-6-4.445C10 12.99 12.686 11 16 11s6 1.99 6 4.444c0 1.199-.64 2.286-1.68 3.085c.317 1.165 1.08 1.915 1.68 2.471c-1.8 0-2.716-.544-3.792-1.422c-.684.2-1.428.31-2.208.31z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 18.72C6.339 20.134 4.82 21 2 21c1-1 2.27-2.35 2.801-4.447C3.067 15.114 2 13.157 2 11c0-4.418 4.477-8 10-8c5.1 0 9.308 3.054 9.923 7"/><path d="M16 19.889c-3.314 0-6-1.99-6-4.445S12.686 11 16 11s6 1.99 6 4.444c0 1.199-.64 2.286-1.68 3.085c.317 1.165 1.08 1.915 1.68 2.471c-1.8 0-2.716-.544-3.792-1.422c-.684.2-1.428.31-2.208.31z"/></g>`), g.Group(children),
 	)
 }
 
@@ -1415,14 +1415,14 @@ func CheckboxListLine(children ...g.Node) g.Node {
 func Cheese(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M10.783 3.024a1 1 0 0 1 .664.082l10 5A1 1 0 0 1 22 9v4a1 1 0 0 1-1 1c-.173 0-.456.06-.666.211c-.159.115-.334.315-.334.789c0 .474.175.674.334.789c.21.15.493.211.666.211a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4.5a1 1 0 0 1-.894-.553c-1.34-2.679-2.02-6.427-1.136-9.824c.903-3.475 3.434-6.515 8.313-7.6zM8 17a1 1 0 1 1 0-2h.001a1 1 0 1 1 0 2H8zm4-4a1 1 0 0 0 1 1h.001a1 1 0 1 0 0-2H13a1 1 0 0 0-1 1zm3 4a1 1 0 1 1 0-2h.001a1 1 0 1 1 0 2H15z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M10.783 3.024a1 1 0 0 1 .664.082l10 5A1 1 0 0 1 22 9v4a1 1 0 0 1-1 1c-.173 0-.456.06-.666.211c-.159.115-.334.315-.334.789s.175.674.334.789c.21.15.493.211.666.211a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4.5a1 1 0 0 1-.894-.553c-1.34-2.679-2.02-6.427-1.136-9.824c.903-3.475 3.434-6.515 8.313-7.6zM8 17a1 1 0 1 1 0-2h.001a1 1 0 1 1 0 2zm4-4a1 1 0 0 0 1 1h.001a1 1 0 1 0 0-2H13a1 1 0 0 0-1 1m3 4a1 1 0 1 1 0-2h.001a1 1 0 1 1 0 2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func CheeseLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 9v4c-.667 0-2 .4-2 2s1.333 2 2 2v3H4.5C2 15 2 6 11 4l10 5zm0 0H5m3 7h.001M13 13h.001M15 16h.001"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 9v4c-.667 0-2 .4-2 2s1.333 2 2 2v3H4.5C2 15 2 6 11 4zm0 0H5m10 7"/>`), g.Group(children),
 	)
 }
 
@@ -1492,7 +1492,7 @@ func ChevronDown(children ...g.Node) g.Node {
 func ChevronDownCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18zM9.707 10.293a1 1 0 1 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l3-3a1 1 0 0 0-1.414-1.414L12 12.586l-2.293-2.293z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18M9.707 10.293a1 1 0 1 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l3-3a1 1 0 0 0-1.414-1.414L12 12.586z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -1520,7 +1520,7 @@ func ChevronLeft(children ...g.Node) g.Node {
 func ChevronLeftCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18zm1.707-11.293a1 1 0 0 0-1.414-1.414l-3 3a1 1 0 0 0 0 1.414l3 3a1 1 0 0 0 1.414-1.414L11.414 12l2.293-2.293z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m1.707-11.293a1 1 0 0 0-1.414-1.414l-3 3a1 1 0 0 0 0 1.414l3 3a1 1 0 0 0 1.414-1.414L11.414 12z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -1548,7 +1548,7 @@ func ChevronRight(children ...g.Node) g.Node {
 func ChevronRightCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18zM10.293 9.707a1 1 0 1 1 1.414-1.414l3 3a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L12.586 12l-2.293-2.293z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18M10.293 9.707a1 1 0 1 1 1.414-1.414l3 3a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L12.586 12z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -1576,7 +1576,7 @@ func ChevronUp(children ...g.Node) g.Node {
 func ChevronUpCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18zm-2.293-7.293a1 1 0 0 1-1.414-1.414l3-3a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1-1.414 1.414L12 11.414l-2.293 2.293z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-2.293-7.293a1 1 0 0 1-1.414-1.414l3-3a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1-1.414 1.414L12 11.414z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -1611,7 +1611,7 @@ func ChipLine(children ...g.Node) g.Node {
 func Chromecast(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 20h.01M7 20a4 4 0 0 0-4-4m8 4a8 8 0 0 0-8-8"/><path fill="currentColor" d="M19 4H5a2 2 0 0 0-2 2v2.5c4 .167 12 2.7 12 11.5h4a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 20h.01M7 20a4 4 0 0 0-4-4m8 4a8 8 0 0 0-8-8"/><path fill="currentColor" d="M19 4H5a2 2 0 0 0-2 2v2.5c4 .167 12 2.7 12 11.5h4a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></g>`), g.Group(children),
 	)
 }
 
@@ -1625,7 +1625,7 @@ func ChromecastLine(children ...g.Node) g.Node {
 func Church(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 3a1 1 0 0 1 1 1v1h1a1 1 0 1 1 0 2h-1v1.5l7.6 5.7A1 1 0 0 1 20 16h-1v3h2a1 1 0 1 1 0 2h-7v-3a2 2 0 1 0-4 0v3H3a1 1 0 1 1 0-2h2v-3H4a1 1 0 0 1-.6-1.8L11 8.5V7h-1a1 1 0 0 1 0-2h1V4a1 1 0 0 1 1-1z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 3a1 1 0 0 1 1 1v1h1a1 1 0 1 1 0 2h-1v1.5l7.6 5.7A1 1 0 0 1 20 16h-1v3h2a1 1 0 1 1 0 2h-7v-3a2 2 0 1 0-4 0v3H3a1 1 0 1 1 0-2h2v-3H4a1 1 0 0 1-.6-1.8L11 8.5V7h-1a1 1 0 0 1 0-2h1V4a1 1 0 0 1 1-1" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -1639,21 +1639,21 @@ func ChurchLine(children ...g.Node) g.Node {
 func Clipboard(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M7.17 4A3.001 3.001 0 0 1 10 2h4c1.306 0 2.418.835 2.83 2H18a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h1.17zM10 4a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2h-4z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M7.17 4A3 3 0 0 1 10 2h4c1.306 0 2.418.835 2.83 2H18a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3zM10 4a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ClipboardCheck(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M10 2a3.001 3.001 0 0 0-2.83 2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3h-1.17A3.001 3.001 0 0 0 14 2h-4zM9 5a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1zm6.78 6.625a1 1 0 1 0-1.56-1.25l-3.303 4.128l-1.21-1.21a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.488-.082l4-5z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M10 2a3 3 0 0 0-2.83 2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3h-1.17A3 3 0 0 0 14 2zM9 5a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1m6.78 6.625a1 1 0 1 0-1.56-1.25l-3.303 4.128l-1.21-1.21a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.488-.082l4-5z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ClipboardCheckLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M8 5v0a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v0M8 5v0a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v0"/><path d="m9 14l2 2l4-5"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M8 5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v0M8 5a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v0"/><path d="m9 14l2 2l4-5"/></g>`), g.Group(children),
 	)
 }
 
@@ -1674,7 +1674,7 @@ func ClipboardCopyLine(children ...g.Node) g.Node {
 func ClipboardLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M8 5v0a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v0M8 5v0a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v0"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M8 5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v0M8 5a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v0"/>`), g.Group(children),
 	)
 }
 
@@ -1695,35 +1695,35 @@ func ClipboardListLine(children ...g.Node) g.Node {
 func ClipboardMinus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M10 2a3.001 3.001 0 0 0-2.83 2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3h-1.17A3.001 3.001 0 0 0 14 2h-4zM9 5a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1zm6 8a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2h6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M10 2a3 3 0 0 0-2.83 2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3h-1.17A3 3 0 0 0 14 2zM9 5a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1m6 8a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ClipboardMinusLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M8 5v0a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v0M8 5v0a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v0m-7 9h6"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M8 5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v0M8 5a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v0m-7 9h6"/>`), g.Group(children),
 	)
 }
 
 func ClipboardPlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M10 2a3.001 3.001 0 0 0-2.83 2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3h-1.17A3.001 3.001 0 0 0 14 2h-4zM9 5a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1zm2 6a1 1 0 1 1 2 0v2h2a1 1 0 1 1 0 2h-2v2a1 1 0 1 1-2 0v-2H9a1 1 0 1 1 0-2h2v-2z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M10 2a3 3 0 0 0-2.83 2H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3h-1.17A3 3 0 0 0 14 2zM9 5a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1m2 6a1 1 0 1 1 2 0v2h2a1 1 0 1 1 0 2h-2v2a1 1 0 1 1-2 0v-2H9a1 1 0 1 1 0-2h2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ClipboardPlusLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M8 5v0a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v0M8 5v0a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v0m-4 6v3m0 3v-3m0 0H9m3 0h3"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M8 5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v0M8 5a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v0m-4 6v3m0 3v-3m0 0H9m3 0h3"/>`), g.Group(children),
 	)
 }
 
 func Clock(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12zm11-5a1 1 0 1 0-2 0v3.764a3 3 0 0 0 1.658 2.683l2.895 1.447a1 1 0 1 0 .894-1.788l-2.894-1.448a1 1 0 0 1-.553-.894V7z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12m11-5a1 1 0 1 0-2 0v3.764a3 3 0 0 0 1.658 2.683l2.895 1.447a1 1 0 1 0 .894-1.788l-2.894-1.448a1 1 0 0 1-.553-.894z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -1737,7 +1737,7 @@ func ClockLine(children ...g.Node) g.Node {
 func ClockPlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 16v3m0 3v-3m0 0h-3m3 0h3"/><path fill="currentColor" fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10c.587 0 1.161-.05 1.72-.147A5.973 5.973 0 0 1 13 19c0-1.746.746-3.318 1.936-4.414l-2.278-1.139A3 3 0 0 1 11 10.764V7a1 1 0 1 1 2 0v3.764a1 1 0 0 0 .553.894l2.894 1.448c.149.074.271.18.362.306A5.986 5.986 0 0 1 19 13c1.033 0 2.004.26 2.853.72A10.15 10.15 0 0 0 22 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 16v3m0 3v-3m0 0h-3m3 0h3"/><path fill="currentColor" fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10q.881 0 1.72-.147A6 6 0 0 1 13 19c0-1.746.746-3.318 1.936-4.414l-2.278-1.139A3 3 0 0 1 11 10.764V7a1 1 0 1 1 2 0v3.764a1 1 0 0 0 .553.894l2.894 1.448c.149.074.271.18.362.306A6 6 0 0 1 19 13c1.033 0 2.004.26 2.853.72A10 10 0 0 0 22 12c0-5.523-4.477-10-10-10" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -1779,7 +1779,7 @@ func CloseLine(children ...g.Node) g.Node {
 func Cloud(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 13.5C2 17.9 5.667 19 7.5 19h10c1.5 0 4.5-.9 4.5-4.5S19 10 17.5 10c0-1.5-1.5-5-5-5c-2.8 0-4.5 2-5 3C5.667 8 2 9.1 2 13.5z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 13.5C2 17.9 5.667 19 7.5 19h10c1.5 0 4.5-.9 4.5-4.5S19 10 17.5 10c0-1.5-1.5-5-5-5c-2.8 0-4.5 2-5 3C5.667 8 2 9.1 2 13.5"/>`), g.Group(children),
 	)
 }
 
@@ -1800,7 +1800,7 @@ func CloudDownloadLine(children ...g.Node) g.Node {
 func CloudLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 13.5C2 17.9 5.667 19 7.5 19h10c1.5 0 4.5-.9 4.5-4.5S19 10 17.5 10c0-1.5-1.5-5-5-5c-2.8 0-4.5 2-5 3C5.667 8 2 9.1 2 13.5z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 13.5C2 17.9 5.667 19 7.5 19h10c1.5 0 4.5-.9 4.5-4.5S19 10 17.5 10c0-1.5-1.5-5-5-5c-2.8 0-4.5 2-5 3C5.667 8 2 9.1 2 13.5"/>`), g.Group(children),
 	)
 }
 
@@ -1828,14 +1828,14 @@ func Code(children ...g.Node) g.Node {
 func CodeBlock(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 6a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V6zm5 1a1 1 0 0 0 0 2h5a1 1 0 1 0 0-2H7zm8 0a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2h-2zm-8 4a1 1 0 1 0 0 2h1a1 1 0 1 0 0-2H7zm4 0a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2h-6zm-4 4a1 1 0 1 0 0 2h5a1 1 0 1 0 0-2H7zm8 0a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2h-2z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 6a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3zm5 1a1 1 0 0 0 0 2h5a1 1 0 1 0 0-2zm8 0a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zm-8 4a1 1 0 1 0 0 2h1a1 1 0 1 0 0-2zm4 0a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2zm-4 4a1 1 0 1 0 0 2h5a1 1 0 1 0 0-2zm8 0a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func CodeBlockLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h5m3 0h2m0 4h-6m-3 0H7m0 4h5m3 0h2M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h5m3 0h2m0 4h-6m-3 0H7m0 4h5m3 0h2M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>`), g.Group(children),
 	)
 }
 
@@ -1863,7 +1863,7 @@ func CogLine(children ...g.Node) g.Node {
 func Coins(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M21 8c0 1.02-1.186 1.92-3 2.462c-1.134.34-2.513.538-4 .538s-2.866-.199-4-.538C8.187 9.92 7 9.02 7 8c0-1.657 3.134-3 7-3s7 1.343 7 3z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 8c0-1.657-3.134-3-7-3S7 6.343 7 8m14 0v4c0 1.02-1.186 1.92-3 2.462c-1.134.34-2.513.538-4 .538s-2.866-.199-4-.538C8.187 13.92 7 13.02 7 12V8m14 0c0 1.02-1.186 1.92-3 2.462c-1.134.34-2.513.538-4 .538s-2.866-.199-4-.538C8.187 9.92 7 9.02 7 8"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12v4c0 1.02 1.187 1.92 3 2.462c1.134.34 2.513.538 4 .538s2.866-.199 4-.538c1.813-.542 3-1.442 3-2.462v-1M3 12c0-1.197 1.635-2.23 4-2.711M3 12c0 1.02 1.187 1.92 3 2.462c1.134.34 2.513.538 4 .538c.695 0 1.366-.043 2-.124"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M21 8c0 1.02-1.186 1.92-3 2.462c-1.134.34-2.513.538-4 .538s-2.866-.199-4-.538C8.187 9.92 7 9.02 7 8c0-1.657 3.134-3 7-3s7 1.343 7 3"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 8c0-1.657-3.134-3-7-3S7 6.343 7 8m14 0v4c0 1.02-1.186 1.92-3 2.462c-1.134.34-2.513.538-4 .538s-2.866-.199-4-.538C8.187 13.92 7 13.02 7 12V8m14 0c0 1.02-1.186 1.92-3 2.462c-1.134.34-2.513.538-4 .538s-2.866-.199-4-.538C8.187 9.92 7 9.02 7 8"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12v4c0 1.02 1.187 1.92 3 2.462c1.134.34 2.513.538 4 .538s2.866-.199 4-.538c1.813-.542 3-1.442 3-2.462v-1M3 12c0-1.197 1.635-2.23 4-2.711M3 12c0 1.02 1.187 1.92 3 2.462c1.134.34 2.513.538 4 .538c.695 0 1.366-.043 2-.124"/></g>`), g.Group(children),
 	)
 }
 
@@ -1919,98 +1919,98 @@ func CometLine(children ...g.Node) g.Node {
 func Comment(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 4H5a2 2 0 0 0-2 2v15l3.467-2.6a2 2 0 0 1 1.2-.4H19a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 4H5a2 2 0 0 0-2 2v15l3.467-2.6a2 2 0 0 1 1.2-.4H19a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/>`), g.Group(children),
 	)
 }
 
 func CommentLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 4H5a2 2 0 0 0-2 2v15l3.467-2.6a2 2 0 0 1 1.2-.4H19a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 4H5a2 2 0 0 0-2 2v15l3.467-2.6a2 2 0 0 1 1.2-.4H19a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/>`), g.Group(children),
 	)
 }
 
 func CommentText(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 6a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7.667a1 1 0 0 0-.6.2L3.6 21.8A1 1 0 0 1 2 21V6zm5 0a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2H7zm0 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H7zm0 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H7z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 6a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7.667a1 1 0 0 0-.6.2L3.6 21.8A1 1 0 0 1 2 21zm5 0a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func CommentTextLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 11h10M7 14h4m-8 4V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7.667a2 2 0 0 0-1.2.4L3 21v-3z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 11h10M7 14h4m-8 4V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7.667a2 2 0 0 0-1.2.4L3 21z"/>`), g.Group(children),
 	)
 }
 
 func CommentTwo(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 4H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3.188c1 0 1.812.811 1.812 1.812c0 .808.976 1.212 1.547.641l1.867-1.867A2 2 0 0 1 14.828 18H19a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 4H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3.188c1 0 1.812.811 1.812 1.812c0 .808.976 1.212 1.547.641l1.867-1.867A2 2 0 0 1 14.828 18H19a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/>`), g.Group(children),
 	)
 }
 
 func CommentTwoLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 4H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3.188c1 0 1.812.811 1.812 1.812c0 .808.976 1.212 1.547.641l1.867-1.867A2 2 0 0 1 14.828 18H19a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 4H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3.188c1 0 1.812.811 1.812 1.812c0 .808.976 1.212 1.547.641l1.867-1.867A2 2 0 0 1 14.828 18H19a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/>`), g.Group(children),
 	)
 }
 
 func CommentTwoText(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 6a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-4.172a1 1 0 0 0-.707.293l-1.867 1.867C11.054 22.361 9 21.51 9 19.812A.812.812 0 0 0 8.188 19H5a3 3 0 0 1-3-3V6zm5 0a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2H7zm0 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H7zm0 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H7z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 6a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-4.172a1 1 0 0 0-.707.293l-1.867 1.867C11.054 22.361 9 21.51 9 19.812A.81.81 0 0 0 8.188 19H5a3 3 0 0 1-3-3zm5 0a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func CommentTwoTextLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 11h10M7 14h4m3.828 4H19a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3.188c1 0 1.812.811 1.812 1.812v0c0 .808.976 1.212 1.547.641l1.867-1.867A2 2 0 0 1 14.828 18z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 11h10M7 14h4m3.828 4H19a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3.188c1 0 1.812.811 1.812 1.812v0c0 .808.976 1.212 1.547.641l1.867-1.867A2 2 0 0 1 14.828 18"/>`), g.Group(children),
 	)
 }
 
 func Comments(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 12h-.394a2 2 0 0 0-1.11.336L3 14V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v2"/><path fill="currentColor" d="M12 10h7a2 2 0 0 1 2 2v9l-2.496-1.664a2 2 0 0 0-1.11-.336H12a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 12h-.394a2 2 0 0 0-1.11.336L3 14V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v2"/><path fill="currentColor" d="M12 10h7a2 2 0 0 1 2 2v9l-2.496-1.664a2 2 0 0 0-1.11-.336H12a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2"/></g>`), g.Group(children),
 	)
 }
 
 func CommentsLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12h-.394a2 2 0 0 0-1.11.336L3 14V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v2m-2 3h7a2 2 0 0 1 2 2v9l-2.496-1.664a2 2 0 0 0-1.11-.336H12a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12h-.394a2 2 0 0 0-1.11.336L3 14V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v2m-2 3h7a2 2 0 0 1 2 2v9l-2.496-1.664a2 2 0 0 0-1.11-.336H12a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2"/>`), g.Group(children),
 	)
 }
 
 func CommentsTwo(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 14v-1a2 2 0 0 0-2-2v0a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3"/><path fill="currentColor" d="M12 11h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-.64A1.36 1.36 0 0 0 17 20.36a.68.68 0 0 1-1.16.48l-1.254-1.254A2 2 0 0 0 13.172 19H12a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 14v-1a2 2 0 0 0-2-2v0a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3"/><path fill="currentColor" d="M12 11h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-.64A1.36 1.36 0 0 0 17 20.36a.68.68 0 0 1-1.16.48l-1.254-1.254A2 2 0 0 0 13.172 19H12a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2"/></g>`), g.Group(children),
 	)
 }
 
 func CommentsTwoLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 14v-1a2 2 0 0 0-2-2v0a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3m-2 3h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-.64A1.36 1.36 0 0 0 17 20.36a.68.68 0 0 1-1.16.48l-1.254-1.254A2 2 0 0 0 13.172 19H12a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 14v-1a2 2 0 0 0-2-2v0a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3m-2 3h7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-.64A1.36 1.36 0 0 0 17 20.36a.68.68 0 0 1-1.16.48l-1.254-1.254A2 2 0 0 0 13.172 19H12a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2"/>`), g.Group(children),
 	)
 }
 
 func Community(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M6 6a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3h-3.51a3.82 3.82 0 0 0 .51-1.911v-5.438a3.867 3.867 0 0 0-1.172-2.766l-4-3.911C9.52 5.694 7.53 5.487 6 6.351V6zm11 1a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H18a1 1 0 0 1-1-1zm-3-1a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2H14zm3 6a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H18a1 1 0 0 1-1-1zm1 4a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2H18z"/><path d="M5.879 8.707a3 3 0 0 1 4.242 0l3 3A3 3 0 0 1 14 13.828V18a3 3 0 0 1-3 3H9v-3a1 1 0 1 0-2 0v3H5a3 3 0 0 1-3-3v-4.172a3 3 0 0 1 .879-2.12l3-3z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M6 6a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3h-3.51a3.8 3.8 0 0 0 .51-1.911v-5.438a3.87 3.87 0 0 0-1.172-2.766l-4-3.911C9.52 5.694 7.53 5.487 6 6.351zm11 1a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H18a1 1 0 0 1-1-1m-3-1a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2zm3 6a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H18a1 1 0 0 1-1-1m1 4a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2z"/><path d="M5.879 8.707a3 3 0 0 1 4.242 0l3 3A3 3 0 0 1 14 13.828V18a3 3 0 0 1-3 3H9v-3a1 1 0 1 0-2 0v3H5a3 3 0 0 1-3-3v-4.172a3 3 0 0 1 .879-2.12z"/></g>`), g.Group(children),
 	)
 }
 
 func CommunityLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 9V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6m0 0v-6.172a2 2 0 0 0-.586-1.414l-3-3a2 2 0 0 0-2.828 0l-3 3A2 2 0 0 0 3 13.828V18a2 2 0 0 0 2 2h3m5 0H8m0-4v4m9.001-12H17m-3.999 0H13m4.001 4H17m.001 4H17"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 9V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6m0 0v-6.172a2 2 0 0 0-.586-1.414l-3-3a2 2 0 0 0-2.828 0l-3 3A2 2 0 0 0 3 13.828V18a2 2 0 0 0 2 2h3m5 0H8m0-4v4m9.001-12H17m.002 4H17m.001 4H17"/>`), g.Group(children),
 	)
 }
 
@@ -2031,7 +2031,7 @@ func CompassLine(children ...g.Node) g.Node {
 func CompassTwo(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12zm14.243-4.243L9.879 9.88l-2.122 6.364l6.364-2.122l2.122-6.364z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12m14.243-4.243L9.879 9.88l-2.122 6.364l6.364-2.122l2.122-6.364z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -2059,70 +2059,70 @@ func ContactLine(children ...g.Node) g.Node {
 func Cookie(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M6.85 4.787C8.731 3.44 10.958 3 12.456 3h1.005a1 1 0 0 1 1 1v3h2.014a1 1 0 0 1 1 1v2h3.019a1 1 0 0 1 1 1v1c0 3.503-1.395 5.808-3.297 7.206c-1.85 1.36-4.087 1.794-5.74 1.794c-1.654 0-3.89-.434-5.742-1.794C4.814 17.808 3.419 15.503 3.419 12c0-3.528 1.5-5.828 3.431-7.213zM9.442 7a1 1 0 1 0 0 2h.001a1 1 0 0 0 0-2zm-3.01 5a1 1 0 0 1 1-1h.002a1 1 0 1 1 0 2h-.001a1 1 0 0 1-1-1zm6.024 0a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2zm-3.01 4a1 1 0 0 1 1-1h.002a1 1 0 1 1 0 2h-.001a1 1 0 0 1-1-1zm7.029-2a1 1 0 1 0 0 2a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M6.85 4.787C8.731 3.44 10.958 3 12.456 3h1.005a1 1 0 0 1 1 1v3h2.014a1 1 0 0 1 1 1v2h3.019a1 1 0 0 1 1 1v1c0 3.503-1.395 5.808-3.297 7.206c-1.85 1.36-4.087 1.794-5.74 1.794s-3.89-.434-5.742-1.794C4.814 17.808 3.419 15.503 3.419 12c0-3.528 1.5-5.828 3.431-7.213M9.442 7a1 1 0 1 0 0 2h.001a1 1 0 0 0 0-2zm-3.01 5a1 1 0 0 1 1-1h.002a1 1 0 1 1 0 2h-.001a1 1 0 0 1-1-1zm6.024 0a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2zm-3.01 4a1 1 0 0 1 1-1h.002a1 1 0 1 1 0 2h-.001a1 1 0 0 1-1-1zm7.029-2a1 1 0 1 0 0 2a1 1 0 1 0 0-2" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func CookieLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.419 12c0-6.4 5.358-8 8.037-8h1.005v4h3.014v3h4.019v1c0 6.4-5.024 8-8.038 8c-3.014 0-8.037-1.6-8.037-8zm5.023-4h.001m-2.01 4h0m5.023 1h.001m-2.01 3h0m6.028-1h0"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.419 12c0-6.4 5.358-8 8.037-8h1.005v4h3.014v3h4.019v1c0 6.4-5.024 8-8.038 8s-8.037-1.6-8.037-8m12.054 3"/>`), g.Group(children),
 	)
 }
 
 func Covid(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M10 1a1 1 0 0 0 0 2h1v1.062A7.96 7.96 0 0 0 7.094 5.68L5.914 4.5l.793-.793a1 1 0 0 0-1.414-1.414l-3 3a1 1 0 0 0 1.414 1.414l.793-.793l1.18 1.18A7.96 7.96 0 0 0 4.062 11H3v-1a1 1 0 0 0-2 0v4a1 1 0 1 0 2 0v-1h1.062c.182 1.46.759 2.8 1.618 3.906l-1.18 1.18l-.793-.793a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414-1.414l-.793-.793l1.18-1.18A7.965 7.965 0 0 0 11 19.938V21h-1a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2h-1v-1.062a7.965 7.965 0 0 0 3.906-1.618l1.18 1.18l-.793.793a1 1 0 0 0 1.414 1.414l3-3a1 1 0 0 0-1.414-1.414l-.793.793l-1.18-1.18A7.965 7.965 0 0 0 19.938 13H21v1a1 1 0 1 0 2 0v-4a1 1 0 1 0-2 0v1h-1.062a7.965 7.965 0 0 0-1.618-3.906l1.18-1.18l.793.793a1 1 0 1 0 1.414-1.414l-3-3a1 1 0 1 0-1.414 1.414l.793.793l-1.18 1.18A7.966 7.966 0 0 0 13 4.062V3h1a1 1 0 1 0 0-2h-4zm3 13a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H14a1 1 0 0 1-1-1zm-3-3.5a.5.5 0 1 1 1 0a.5.5 0 0 1-1 0zm.5-2.5a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M10 1a1 1 0 0 0 0 2h1v1.062A7.96 7.96 0 0 0 7.094 5.68L5.914 4.5l.793-.793a1 1 0 0 0-1.414-1.414l-3 3a1 1 0 0 0 1.414 1.414l.793-.793l1.18 1.18A7.96 7.96 0 0 0 4.062 11H3v-1a1 1 0 0 0-2 0v4a1 1 0 1 0 2 0v-1h1.062c.182 1.46.759 2.8 1.618 3.906l-1.18 1.18l-.793-.793a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414-1.414l-.793-.793l1.18-1.18A7.97 7.97 0 0 0 11 19.938V21h-1a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2h-1v-1.062a7.97 7.97 0 0 0 3.906-1.618l1.18 1.18l-.793.793a1 1 0 0 0 1.414 1.414l3-3a1 1 0 0 0-1.414-1.414l-.793.793l-1.18-1.18A7.97 7.97 0 0 0 19.938 13H21v1a1 1 0 1 0 2 0v-4a1 1 0 1 0-2 0v1h-1.062a7.97 7.97 0 0 0-1.618-3.906l1.18-1.18l.793.793a1 1 0 1 0 1.414-1.414l-3-3a1 1 0 1 0-1.414 1.414l.793.793l-1.18 1.18A7.97 7.97 0 0 0 13 4.062V3h1a1 1 0 1 0 0-2zm3 13a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H14a1 1 0 0 1-1-1m-3-3.5a.5.5 0 1 1 1 0a.5.5 0 0 1-1 0m.5-2.5a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func CovidExclamation(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M9 2a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-1v1.062c1.46.182 2.8.759 3.906 1.618l1.18-1.18l-.793-.793a1 1 0 0 1 1.414-1.414l3 3a1 1 0 0 1-1.414 1.414l-.793-.793l-1.345 1.346A9 9 0 0 0 7.26 18.155L5.914 19.5l.793.793a1 1 0 1 1-1.414 1.414l-3-3a1 1 0 1 1 1.414-1.414l.793.793l1.18-1.18A7.966 7.966 0 0 1 4.062 13H3v1a1 1 0 1 1-2 0v-4a1 1 0 0 1 2 0v1h1.062A7.96 7.96 0 0 1 5.68 7.094L4.5 5.914l-.793.793a1 1 0 0 1-1.414-1.414l3-3a1 1 0 0 1 1.414 1.414l-.793.793l1.18 1.18A7.96 7.96 0 0 1 11 4.062V3h-1a1 1 0 0 1-1-1z"/><path d="M16 9a7 7 0 1 0 0 14a7 7 0 0 0 0-14zm-1 10a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H16a1 1 0 0 1-1-1zm2-6a1 1 0 1 0-2 0l.001 3a1 1 0 1 0 2 0L17 13z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M9 2a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-1v1.062c1.46.182 2.8.759 3.906 1.618l1.18-1.18l-.793-.793a1 1 0 0 1 1.414-1.414l3 3a1 1 0 0 1-1.414 1.414l-.793-.793l-1.345 1.346A9 9 0 0 0 7.26 18.155L5.914 19.5l.793.793a1 1 0 1 1-1.414 1.414l-3-3a1 1 0 1 1 1.414-1.414l.793.793l1.18-1.18A7.97 7.97 0 0 1 4.062 13H3v1a1 1 0 1 1-2 0v-4a1 1 0 0 1 2 0v1h1.062A7.96 7.96 0 0 1 5.68 7.094L4.5 5.914l-.793.793a1 1 0 0 1-1.414-1.414l3-3a1 1 0 0 1 1.414 1.414l-.793.793l1.18 1.18A7.96 7.96 0 0 1 11 4.062V3h-1a1 1 0 0 1-1-1"/><path d="M16 9a7 7 0 1 0 0 14a7 7 0 0 0 0-14m-1 10a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H16a1 1 0 0 1-1-1m2-6a1 1 0 1 0-2 0l.001 3a1 1 0 1 0 2 0z"/></g>`), g.Group(children),
 	)
 }
 
 func CovidExclamationLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12a7 7 0 0 1 7-7m-7 7H2m3 0c0 1.933.784 3.683 2.05 4.95L4.5 19.5M12 5V2m0 3c1.933 0 3.683.784 4.95 2.05L19.5 4.5M12 2h2m-2 0h-2M2 12v-2m0 2v2m17.5-9.5L18 3m1.5 1.5L21 6M4.5 4.5L6 3M4.5 4.5L3 6m1.5-1.5L7 7M4.5 19.5L6 21m-1.5-1.5L3 18m13 1h.001M9 10.5A1.5 1.5 0 0 1 10.5 9m5.501 7L16 13m6 3a6 6 0 1 1-12 0a6 6 0 0 1 12 0z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12a7 7 0 0 1 7-7m-7 7H2m3 0c0 1.933.784 3.683 2.05 4.95L4.5 19.5M12 5V2m0 3c1.933 0 3.683.784 4.95 2.05L19.5 4.5M12 2h2m-2 0h-2M2 12v-2m0 2v2m17.5-9.5L18 3m1.5 1.5L21 6M4.5 4.5L6 3M4.5 4.5L3 6m1.5-1.5L7 7M4.5 19.5L6 21m-1.5-1.5L3 18m13 1h.001M9 10.5A1.5 1.5 0 0 1 10.5 9m5.501 7L16 13m6 3a6 6 0 1 1-12 0a6 6 0 0 1 12 0"/>`), g.Group(children),
 	)
 }
 
 func CovidLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M19 12h3m-3 0a6.978 6.978 0 0 1-2.05 4.95M19 12a6.978 6.978 0 0 0-2.05-4.95M12 19v3m0-3a6.978 6.978 0 0 0 4.95-2.05M12 19a6.978 6.978 0 0 1-4.95-2.05M5 12a7 7 0 0 1 7-7m-7 7H2m3 0c0 1.933.784 3.683 2.05 4.95M12 5V2m0 3c1.933 0 3.683.784 4.95 2.05M12 2h2m-2 0h-2m2 20h2m-2 0h-2m12-10v-2m0 2v2M2 12v-2m0 2v2m17.5-9.5L18 3m1.5 1.5L21 6m-1.5-1.5l-2.55 2.55M4.5 4.5L6 3M4.5 4.5L3 6m1.5-1.5L7 7M4.5 19.5L6 21m-1.5-1.5L3 18m1.5 1.5l2.55-2.55M19.5 19.5L18 21m1.5-1.5L21 18m-1.5 1.5l-2.55-2.55M14 14h.001"/><circle cx="10.5" cy="10.5" r="1.5"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M19 12h3m-3 0a6.98 6.98 0 0 1-2.05 4.95M19 12a6.98 6.98 0 0 0-2.05-4.95M12 19v3m0-3a6.98 6.98 0 0 0 4.95-2.05M12 19a6.98 6.98 0 0 1-4.95-2.05M5 12a7 7 0 0 1 7-7m-7 7H2m3 0c0 1.933.784 3.683 2.05 4.95M12 5V2m0 3c1.933 0 3.683.784 4.95 2.05M12 2h2m-2 0h-2m2 20h2m-2 0h-2m12-10v-2m0 2v2M2 12v-2m0 2v2m17.5-9.5L18 3m1.5 1.5L21 6m-1.5-1.5l-2.55 2.55M4.5 4.5L6 3M4.5 4.5L3 6m1.5-1.5L7 7M4.5 19.5L6 21m-1.5-1.5L3 18m1.5 1.5l2.55-2.55M19.5 19.5L18 21m1.5-1.5L21 18m-1.5 1.5l-2.55-2.55M14 14"/><circle cx="10.5" cy="10.5" r="1.5"/></g>`), g.Group(children),
 	)
 }
 
 func CovidOff(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 3l18 18"/><path fill="currentColor" fill-rule="evenodd" d="M3.379 4.207L2.293 5.293a1 1 0 0 0 1.414 1.414l.793-.793l1.18 1.18A7.96 7.96 0 0 0 4.062 11H3v-1a1 1 0 0 0-2 0v4a1 1 0 1 0 2 0v-1h1.062c.182 1.46.759 2.8 1.618 3.906l-1.18 1.18l-.793-.793a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414-1.414l-.793-.793l1.18-1.18A7.965 7.965 0 0 0 11 19.938V21h-1a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2h-1v-1.062a7.965 7.965 0 0 0 3.906-1.618l1.18 1.18l-.793.793a1 1 0 0 0 1.414 1.414l1.086-1.086l-5.634-5.633a1.017 1.017 0 0 1-.158.012H14a1 1 0 0 1-.987-1.159l-1.208-1.208a2.5 2.5 0 0 1-3.438-3.438L3.379 4.207zm16.153 10.496A7.945 7.945 0 0 0 19.938 13H21v1a1 1 0 1 0 2 0v-4a1 1 0 1 0-2 0v1h-1.062a7.965 7.965 0 0 0-1.618-3.906l1.18-1.18l.793.793a1 1 0 1 0 1.414-1.414l-3-3a1 1 0 1 0-1.414 1.414l.793.793l-1.18 1.18A7.966 7.966 0 0 0 13 4.062V3h1a1 1 0 1 0 0-2h-4a1 1 0 0 0 0 2h1v1.062a7.95 7.95 0 0 0-1.703.406l10.235 10.235z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 3l18 18"/><path fill="currentColor" fill-rule="evenodd" d="M3.379 4.207L2.293 5.293a1 1 0 0 0 1.414 1.414l.793-.793l1.18 1.18A7.96 7.96 0 0 0 4.062 11H3v-1a1 1 0 0 0-2 0v4a1 1 0 1 0 2 0v-1h1.062c.182 1.46.759 2.8 1.618 3.906l-1.18 1.18l-.793-.793a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414-1.414l-.793-.793l1.18-1.18A7.97 7.97 0 0 0 11 19.938V21h-1a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2h-1v-1.062a7.97 7.97 0 0 0 3.906-1.618l1.18 1.18l-.793.793a1 1 0 0 0 1.414 1.414l1.086-1.086l-5.634-5.633a1 1 0 0 1-.158.012H14a1 1 0 0 1-.987-1.159l-1.208-1.208a2.5 2.5 0 0 1-3.438-3.438zm16.153 10.496A8 8 0 0 0 19.938 13H21v1a1 1 0 1 0 2 0v-4a1 1 0 1 0-2 0v1h-1.062a7.97 7.97 0 0 0-1.618-3.906l1.18-1.18l.793.793a1 1 0 1 0 1.414-1.414l-3-3a1 1 0 1 0-1.414 1.414l.793.793l-1.18 1.18A7.97 7.97 0 0 0 13 4.062V3h1a1 1 0 1 0 0-2h-4a1 1 0 0 0 0 2h1v1.062a8 8 0 0 0-1.703.406z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func CovidOffLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12h3m-3 0a6.978 6.978 0 0 0-2.05-4.95M19 12v1m-7 6v3m0-3a6.978 6.978 0 0 0 4.95-2.05l2.55 2.55L18 21m-6-2a6.978 6.978 0 0 1-4.95-2.05M5 12H2m3 0c0 1.933.784 3.683 2.05 4.95M5 12c0-1.352.47-3.488 1.955-5.045M12 5V2m0 3c1.933 0 3.683.784 4.95 2.05M12 5h-1m1-3h2m-2 0h-2m2 20h2m-2 0h-2m12-10v-2m0 2v2M2 12v-2m0 2v2m17.5-9.5L18 3m1.5 1.5L21 6m-1.5-1.5l-2.55 2.55M3 6l1.5-1.5l2.455 2.455M4.5 19.5L6 21m-1.5-1.5L3 18m1.5 1.5l2.55-2.55M7 7l-.045-.045M14 14h.001M9.382 9.5a1.5 1.5 0 0 0 2.01 2.206M3 3l18 18"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12h3m-3 0a6.98 6.98 0 0 0-2.05-4.95M19 12v1m-7 6v3m0-3a6.98 6.98 0 0 0 4.95-2.05l2.55 2.55L18 21m-6-2a6.98 6.98 0 0 1-4.95-2.05M5 12H2m3 0c0 1.933.784 3.683 2.05 4.95M5 12c0-1.352.47-3.488 1.955-5.045M12 5V2m0 3c1.933 0 3.683.784 4.95 2.05M12 5h-1m1-3h2m-2 0h-2m2 20h2m-2 0h-2m12-10v-2m0 2v2M2 12v-2m0 2v2m17.5-9.5L18 3m1.5 1.5L21 6m-1.5-1.5l-2.55 2.55M3 6l1.5-1.5l2.455 2.455M4.5 19.5L6 21m-1.5-1.5L3 18m1.5 1.5l2.55-2.55M7 7l-.045-.045M9.382 9.5a1.5 1.5 0 0 0 2.01 2.206M3 3l18 18"/>`), g.Group(children),
 	)
 }
 
 func Cpu(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M9 2a1 1 0 0 1 1 1v1h4V3a1 1 0 1 1 2 0v1h1a3 3 0 0 1 3 3v1h1a1 1 0 1 1 0 2h-1v4h1a1 1 0 1 1 0 2h-1v1a3 3 0 0 1-3 3h-1v1a1 1 0 1 1-2 0v-1h-4v1a1 1 0 1 1-2 0v-1H7a3 3 0 0 1-3-3v-1H3a1 1 0 1 1 0-2h1v-4H3a1 1 0 0 1 0-2h1V7a3 3 0 0 1 3-3h1V3a1 1 0 0 1 1-1zm2 8h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M9 2a1 1 0 0 1 1 1v1h4V3a1 1 0 1 1 2 0v1h1a3 3 0 0 1 3 3v1h1a1 1 0 1 1 0 2h-1v4h1a1 1 0 1 1 0 2h-1v1a3 3 0 0 1-3 3h-1v1a1 1 0 1 1-2 0v-1h-4v1a1 1 0 1 1-2 0v-1H7a3 3 0 0 1-3-3v-1H3a1 1 0 1 1 0-2h1v-4H3a1 1 0 0 1 0-2h1V7a3 3 0 0 1 3-3h1V3a1 1 0 0 1 1-1m2 8h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func CpuLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 0 0-2 2v2m4-4V3m0 2h6m0 0h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-2M15 5V3M9 21v-2m6 2v-2M5 15H3m2 0V9m0 0H3m18 6h-2m2-6h-2m-6 1h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 0 0-2 2v2m4-4V3m0 2h6m0 0h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-2M15 5V3M9 21v-2m6 2v-2M5 15H3m2 0V9m0 0H3m18 6h-2m2-6h-2m-6 1h-2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/>`), g.Group(children),
 	)
 }
 
@@ -2143,21 +2143,21 @@ func CreditCardLine(children ...g.Node) g.Node {
 func Creditcard(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 7a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v1H2V7zm0 3v7a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-7H2zm5 2a1 1 0 1 0 0 2h5a1 1 0 1 0 0-2H7z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 7a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v1H2zm0 3v7a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-7zm5 2a1 1 0 1 0 0 2h5a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func CreditcardHand(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M17 13V5a2 2 0 0 0-2-2h-2m0 0H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7M13 3v10.5M9 7v3"/><path fill="currentColor" d="M18.948 9.95L16.998 8v6.587c0 .89-1.077 1.337-1.707.707L13.996 14c-.5-.5-1.701-.8-2.502 0c-.8.8-.5 2 0 2.5l4.918 4.915a2 2 0 0 0 1.414.585H20a1 1 0 0 0 1-1v-6.1a7 7 0 0 0-2.052-4.95z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M17 13V5a2 2 0 0 0-2-2h-2m0 0H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7M13 3v10.5M9 7v3"/><path fill="currentColor" d="M18.948 9.95L16.998 8v6.587c0 .89-1.077 1.337-1.707.707L13.996 14c-.5-.5-1.701-.8-2.502 0s-.5 2 0 2.5l4.918 4.915a2 2 0 0 0 1.414.585H20a1 1 0 0 0 1-1v-6.1a7 7 0 0 0-2.052-4.95"/></g>`), g.Group(children),
 	)
 }
 
 func CreditcardHandLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M17 13V5a2 2 0 0 0-2-2h-2m0 0H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7M13 3v10.5M9 7v3"/><path d="M21 22v-7.1a7 7 0 0 0-2.052-4.95L16.998 8v6.587c0 .89-1.077 1.337-1.707.707L13.996 14c-.5-.5-1.701-.8-2.502 0c-.8.8-.5 2 0 2.5l5.503 5.5"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M17 13V5a2 2 0 0 0-2-2h-2m0 0H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7M13 3v10.5M9 7v3"/><path d="M21 22v-7.1a7 7 0 0 0-2.052-4.95L16.998 8v6.587c0 .89-1.077 1.337-1.707.707L13.996 14c-.5-.5-1.701-.8-2.502 0s-.5 2 0 2.5l5.503 5.5"/></g>`), g.Group(children),
 	)
 }
 
@@ -2171,7 +2171,7 @@ func CreditcardLine(children ...g.Node) g.Node {
 func CreditcardPlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 15v3m0 3v-3m0 0h-3m3 0h3"/><path fill="currentColor" fill-rule="evenodd" d="M5 4a3 3 0 0 0-3 3v1h20V7a3 3 0 0 0-3-3H5zM2 17v-7h20v3.528A6 6 0 0 0 12.341 20H5a3 3 0 0 1-3-3zm4-4a1 1 0 0 1 1-1h5a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 15v3m0 3v-3m0 0h-3m3 0h3"/><path fill="currentColor" fill-rule="evenodd" d="M5 4a3 3 0 0 0-3 3v1h20V7a3 3 0 0 0-3-3zM2 17v-7h20v3.528A6 6 0 0 0 12.341 20H5a3 3 0 0 1-3-3m4-4a1 1 0 0 1 1-1h5a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -2185,14 +2185,14 @@ func CreditcardPlusLine(children ...g.Node) g.Node {
 func Crown(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 3a1 1 0 0 1 .832.445l3.471 5.207l4.182-2.51a1 1 0 0 1 1.503 1.01l-2 13A1 1 0 0 1 19 21H5a1 1 0 0 1-.988-.848l-2-13a1 1 0 0 1 1.503-1.01l4.182 2.51l3.471-5.207A1 1 0 0 1 12 3zm-1 11a1 1 0 1 1 2 0a1 1 0 0 1-2 0zm1-3a3 3 0 1 0 0 6a3 3 0 0 0 0-6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 3a1 1 0 0 1 .832.445l3.471 5.207l4.182-2.51a1 1 0 0 1 1.503 1.01l-2 13A1 1 0 0 1 19 21H5a1 1 0 0 1-.988-.848l-2-13a1 1 0 0 1 1.503-1.01l4.182 2.51l3.471-5.207A1 1 0 0 1 12 3m-1 11a1 1 0 1 1 2 0a1 1 0 0 1-2 0m1-3a3 3 0 1 0 0 6a3 3 0 0 0 0-6" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func CrownLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m3 7l2 13h14l2-13l-5 3l-4-6l-4 6l-5-3z"/><circle cx="12" cy="14" r="2"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m3 7l2 13h14l2-13l-5 3l-4-6l-4 6z"/><circle cx="12" cy="14" r="2"/></g>`), g.Group(children),
 	)
 }
 
@@ -2213,7 +2213,7 @@ func CubeLine(children ...g.Node) g.Node {
 func Cup(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M4 5h12v7a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V5z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 5H4v7a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4V5zm0 0h2v0a2 2 0 0 1 2 2v4M4 19h14"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M4 5h12v7a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 5H4v7a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4zm0 0h2v0a2 2 0 0 1 2 2v4M4 19h14"/></g>`), g.Group(children),
 	)
 }
 
@@ -2269,7 +2269,7 @@ func DashboardLine(children ...g.Node) g.Node {
 func Data(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M21 7c0 2.21-4.03 4-9 4S3 9.21 3 7s4.03-4 9-4s9 1.79 9 4z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7c0 2.21-4.03 4-9 4S3 9.21 3 7m18 0c0-2.21-4.03-4-9-4S3 4.79 3 7m18 0v5M3 7v5m18 0c0 2.21-4.03 4-9 4s-9-1.79-9-4m18 0v5c0 2.21-4.03 4-9 4s-9-1.79-9-4v-5"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M21 7c0 2.21-4.03 4-9 4S3 9.21 3 7s4.03-4 9-4s9 1.79 9 4"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7c0 2.21-4.03 4-9 4S3 9.21 3 7m18 0c0-2.21-4.03-4-9-4S3 4.79 3 7m18 0v5M3 7v5m18 0c0 2.21-4.03 4-9 4s-9-1.79-9-4m18 0v5c0 2.21-4.03 4-9 4s-9-1.79-9-4v-5"/></g>`), g.Group(children),
 	)
 }
 
@@ -2283,7 +2283,7 @@ func DataLine(children ...g.Node) g.Node {
 func DataMinus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M21 7c0 2.21-4.03 4-9 4S3 9.21 3 7s4.03-4 9-4s9 1.79 9 4z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7c0 2.21-4.03 4-9 4S3 9.21 3 7m18 0c0-2.21-4.03-4-9-4S3 4.79 3 7m18 0v5M3 7v5m9 4c-4.97 0-9-1.79-9-4m0 0v5c0 2.21 4.03 4 9 4m9-3h-6"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M21 7c0 2.21-4.03 4-9 4S3 9.21 3 7s4.03-4 9-4s9 1.79 9 4"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7c0 2.21-4.03 4-9 4S3 9.21 3 7m18 0c0-2.21-4.03-4-9-4S3 4.79 3 7m18 0v5M3 7v5m9 4c-4.97 0-9-1.79-9-4m0 0v5c0 2.21 4.03 4 9 4m9-3h-6"/></g>`), g.Group(children),
 	)
 }
 
@@ -2297,7 +2297,7 @@ func DataMinusLine(children ...g.Node) g.Node {
 func DataPlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M21 7c0 2.21-4.03 4-9 4S3 9.21 3 7s4.03-4 9-4s9 1.79 9 4z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7c0 2.21-4.03 4-9 4S3 9.21 3 7m18 0c0-2.21-4.03-4-9-4S3 4.79 3 7m18 0v5M3 7v5m9 4c-4.97 0-9-1.79-9-4m0 0v5c0 2.21 4.03 4 9 4m6-6v3m0 3v-3m0 0h3m-3 0h-3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M21 7c0 2.21-4.03 4-9 4S3 9.21 3 7s4.03-4 9-4s9 1.79 9 4"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7c0 2.21-4.03 4-9 4S3 9.21 3 7m18 0c0-2.21-4.03-4-9-4S3 4.79 3 7m18 0v5M3 7v5m9 4c-4.97 0-9-1.79-9-4m0 0v5c0 2.21 4.03 4 9 4m6-6v3m0 3v-3m0 0h3m-3 0h-3"/></g>`), g.Group(children),
 	)
 }
 
@@ -2325,14 +2325,14 @@ func DatabaseLine(children ...g.Node) g.Node {
 func DeleteBin(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M9 7h9v11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V7h3z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7h-2M4 7h2m0 0h12M6 7v11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7m-9-.5v0A2.5 2.5 0 0 1 11.5 4h1A2.5 2.5 0 0 1 15 6.5v0"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M9 7h9v11a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V7z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7h-2M4 7h2m0 0h12M6 7v11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7m-9-.5A2.5 2.5 0 0 1 11.5 4h1A2.5 2.5 0 0 1 15 6.5v0"/></g>`), g.Group(children),
 	)
 }
 
 func DeleteBinLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7v0a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v0M9 7h6M9 7H6m9 0h3m2 0h-2M4 7h2m0 0v11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v0M9 7h6M9 7H6m9 0h3m2 0h-2M4 7h2m0 0v11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7"/>`), g.Group(children),
 	)
 }
 
@@ -2423,21 +2423,21 @@ func DivideLine(children ...g.Node) g.Node {
 func Document(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M19 21H5c-1.126 0-1.926-.491-2.412-1.166A3.233 3.233 0 0 1 2 18V6a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v5h3a1 1 0 0 1 1 1v6c0 .493-.14 1.211-.588 1.834C20.925 20.51 20.125 21 19 21zm1-7a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0v-4z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M19 21H5c-1.126 0-1.926-.491-2.412-1.166A3.23 3.23 0 0 1 2 18V6a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v5h3a1 1 0 0 1 1 1v6c0 .493-.14 1.211-.588 1.834C20.925 20.51 20.125 21 19 21m1-7a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func DocumentAward(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5 21h14c1.126 0 1.926-.491 2.412-1.166c.448-.623.588-1.34.588-1.834v-6a1 1 0 0 0-1-1h-3V6a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v12c0 .493.14 1.211.588 1.834C3.074 20.51 3.874 21 5 21zm14-8a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1zM9 10a1 1 0 1 1 2 0a1 1 0 0 1-2 0zm1-3a3 3 0 1 0 0 6a3 3 0 0 0 0-6zm-3 8a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2H7z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5 21h14c1.126 0 1.926-.491 2.412-1.166c.448-.623.588-1.34.588-1.834v-6a1 1 0 0 0-1-1h-3V6a3 3 0 0 0-3-3H5a3 3 0 0 0-3 3v12c0 .493.14 1.211.588 1.834C3.074 20.51 3.874 21 5 21m14-8a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1M9 10a1 1 0 1 1 2 0a1 1 0 0 1-2 0m1-3a3 3 0 1 0 0 6a3 3 0 0 0 0-6m-3 8a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func DocumentAwardLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M19 20H5c-1.6 0-2-1.333-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6m2 8c-.667 0-2-.4-2-2v-6m2 8c1.6 0 2-1.333 2-2v-6h-4"/><path d="M7 16h6m-1-6a2 2 0 1 1-4 0a2 2 0 0 1 4 0z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M19 20H5c-1.6 0-2-1.333-2-2V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6m2 8c-.667 0-2-.4-2-2v-6m2 8c1.6 0 2-1.333 2-2v-6h-4"/><path d="M7 16h6m-1-6a2 2 0 1 1-4 0a2 2 0 0 1 4 0"/></g>`), g.Group(children),
 	)
 }
 
@@ -2451,42 +2451,42 @@ func DocumentLine(children ...g.Node) g.Node {
 func DollarCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12zm12-6a1 1 0 1 0-2 0v1a3 3 0 0 0 0 6h2a1 1 0 1 1 0 2H9a1 1 0 1 0 0 2h2v1a1 1 0 1 0 2 0v-1a3 3 0 1 0 0-6h-2a1 1 0 1 1 0-2h4a1 1 0 1 0 0-2h-2V6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m12-6a1 1 0 1 0-2 0v1a3 3 0 0 0 0 6h2a1 1 0 1 1 0 2H9a1 1 0 1 0 0 2h2v1a1 1 0 1 0 2 0v-1a3 3 0 1 0 0-6h-2a1 1 0 1 1 0-2h4a1 1 0 1 0 0-2h-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func DollarCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10z"/><path d="M15 8h-3m-3 8h3m0 0h1a2 2 0 0 0 2-2v0a2 2 0 0 0-2-2h-2a2 2 0 0 1-2-2v0a2 2 0 0 1 2-2h1m0 8v2m0-10V6"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10"/><path d="M15 8h-3m-3 8h3m0 0h1a2 2 0 0 0 2-2v0a2 2 0 0 0-2-2h-2a2 2 0 0 1-2-2v0a2 2 0 0 1 2-2h1m0 8v2m0-10V6"/></g>`), g.Group(children),
 	)
 }
 
 func DoorEnter(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M10.138 1.815A3 3 0 0 1 14 4.688v14.624a3 3 0 0 1-3.862 2.873l-6-1.8A3 3 0 0 1 2 17.512V6.488a3 3 0 0 1 2.138-2.873l6-1.8zM15 4a1 1 0 0 1 1-1h3a3 3 0 0 1 3 3v1a1 1 0 1 1-2 0V6a1 1 0 0 0-1-1h-3a1 1 0 0 1-1-1zm6 12a1 1 0 0 1 1 1v1a3 3 0 0 1-3 3h-3a1 1 0 1 1 0-2h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1zM9 11a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2H9z" clip-rule="evenodd"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12h-5m0 0l2-2m-2 2l2 2"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M10.138 1.815A3 3 0 0 1 14 4.688v14.624a3 3 0 0 1-3.862 2.873l-6-1.8A3 3 0 0 1 2 17.512V6.488a3 3 0 0 1 2.138-2.873zM15 4a1 1 0 0 1 1-1h3a3 3 0 0 1 3 3v1a1 1 0 1 1-2 0V6a1 1 0 0 0-1-1h-3a1 1 0 0 1-1-1m6 12a1 1 0 0 1 1 1v1a3 3 0 0 1-3 3h-3a1 1 0 1 1 0-2h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1M9 11a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2z" clip-rule="evenodd"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12h-5m0 0l2-2m-2 2l2 2"/></g>`), g.Group(children),
 	)
 }
 
 func DoorEnterLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4h3a2 2 0 0 1 2 2v1m-5 13h3a2 2 0 0 0 2-2v-1M4.425 19.428l6 1.8A2 2 0 0 0 13 19.312V4.688a2 2 0 0 0-2.575-1.916l-6 1.8A2 2 0 0 0 3 6.488v11.024a2 2 0 0 0 1.425 1.916zM9.001 12H9m12 0h-5m0 0l2-2m-2 2l2 2"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4h3a2 2 0 0 1 2 2v1m-5 13h3a2 2 0 0 0 2-2v-1M4.425 19.428l6 1.8A2 2 0 0 0 13 19.312V4.688a2 2 0 0 0-2.575-1.916l-6 1.8A2 2 0 0 0 3 6.488v11.024a2 2 0 0 0 1.425 1.916M21.001 12h-5m0 0l2-2m-2 2l2 2"/>`), g.Group(children),
 	)
 }
 
 func DoorExit(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M10.138 1.815A3 3 0 0 1 14 4.688v14.624a3 3 0 0 1-3.862 2.873l-6-1.8A3 3 0 0 1 2 17.512V6.488a3 3 0 0 1 2.138-2.873l6-1.8zM15 4a1 1 0 0 1 1-1h3a3 3 0 0 1 3 3v1a1 1 0 1 1-2 0V6a1 1 0 0 0-1-1h-3a1 1 0 0 1-1-1zm6 12a1 1 0 0 1 1 1v1a3 3 0 0 1-3 3h-3a1 1 0 1 1 0-2h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1zM9 11a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2H9z" clip-rule="evenodd"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12h5m0 0l-2-2m2 2l-2 2"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M10.138 1.815A3 3 0 0 1 14 4.688v14.624a3 3 0 0 1-3.862 2.873l-6-1.8A3 3 0 0 1 2 17.512V6.488a3 3 0 0 1 2.138-2.873zM15 4a1 1 0 0 1 1-1h3a3 3 0 0 1 3 3v1a1 1 0 1 1-2 0V6a1 1 0 0 0-1-1h-3a1 1 0 0 1-1-1m6 12a1 1 0 0 1 1 1v1a3 3 0 0 1-3 3h-3a1 1 0 1 1 0-2h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1M9 11a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2z" clip-rule="evenodd"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12h5m0 0l-2-2m2 2l-2 2"/></g>`), g.Group(children),
 	)
 }
 
 func DoorExitLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4h3a2 2 0 0 1 2 2v1m-5 13h3a2 2 0 0 0 2-2v-1M4.425 19.428l6 1.8A2 2 0 0 0 13 19.312V4.688a2 2 0 0 0-2.575-1.916l-6 1.8A2 2 0 0 0 3 6.488v11.024a2 2 0 0 0 1.425 1.916zM9.001 12H9m7 0h5m0 0l-2-2m2 2l-2 2"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 4h3a2 2 0 0 1 2 2v1m-5 13h3a2 2 0 0 0 2-2v-1M4.425 19.428l6 1.8A2 2 0 0 0 13 19.312V4.688a2 2 0 0 0-2.575-1.916l-6 1.8A2 2 0 0 0 3 6.488v11.024a2 2 0 0 0 1.425 1.916M16.001 12h5m0 0l-2-2m2 2l-2 2"/>`), g.Group(children),
 	)
 }
 
@@ -2549,21 +2549,21 @@ func DuplicateLine(children ...g.Node) g.Node {
 func EarthSphere(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 12a9.966 9.966 0 0 1-.832 4M12 22a9.966 9.966 0 0 0 7.071-2.929M2 12a9.966 9.966 0 0 1 2.929-7.071M12 2a9.966 9.966 0 0 0-4 .832m0 18.336A10.02 10.02 0 0 1 2.832 16m13-13A10.02 10.02 0 0 1 21 8.168"/><path fill="currentColor" fill-rule="evenodd" d="M9.06 5.646A6.977 6.977 0 0 1 12 5a6.998 6.998 0 0 1 6.184 3.718l-2.015.671a3 3 0 0 0-1.851 3.923l1.7 4.42A6.97 6.97 0 0 1 12 19a6.985 6.985 0 0 1-2.519-.467l1.564-1.369a2.44 2.44 0 0 0-.515-4.017a.44.44 0 0 1-.067-.744l.473-.355a2.804 2.804 0 0 0 .3-4.226L9.06 5.646zm-1.708 1.12A6.984 6.984 0 0 0 5 12c0 2.221 1.035 4.2 2.646 5.481l2.082-1.822a.44.44 0 0 0-.093-.723c-1.621-.811-1.823-3.045-.372-4.133l.473-.355a.804.804 0 0 0 .086-1.212l-2.47-2.47zm10.23 9.46A6.973 6.973 0 0 0 19 12c0-.479-.048-.947-.14-1.4l-2.058.687a1 1 0 0 0-.617 1.307l1.396 3.632z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 12a10 10 0 0 1-.832 4M12 22a9.97 9.97 0 0 0 7.071-2.929M2 12a9.97 9.97 0 0 1 2.929-7.071M12 2a10 10 0 0 0-4 .832m0 18.336A10.02 10.02 0 0 1 2.832 16m13-13A10.02 10.02 0 0 1 21 8.168"/><path fill="currentColor" fill-rule="evenodd" d="M9.06 5.646A7 7 0 0 1 12 5a7 7 0 0 1 6.184 3.718l-2.015.671a3 3 0 0 0-1.851 3.923l1.7 4.42A6.97 6.97 0 0 1 12 19a7 7 0 0 1-2.519-.467l1.564-1.369a2.44 2.44 0 0 0-.515-4.017a.44.44 0 0 1-.067-.744l.473-.355a2.804 2.804 0 0 0 .3-4.226zm-1.708 1.12A6.98 6.98 0 0 0 5 12c0 2.221 1.035 4.2 2.646 5.481l2.082-1.822a.44.44 0 0 0-.093-.723c-1.621-.811-1.823-3.045-.372-4.133l.473-.355a.804.804 0 0 0 .086-1.212zm10.23 9.46A6.97 6.97 0 0 0 19 12q-.001-.72-.14-1.4l-2.058.687a1 1 0 0 0-.617 1.307l1.396 3.632z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func EarthSphereLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 12a9.966 9.966 0 0 1-.832 4M12 22a9.966 9.966 0 0 0 7.071-2.929M2 12a9.966 9.966 0 0 1 2.929-7.071M12 2a9.966 9.966 0 0 0-4 .832m0 18.336A10.02 10.02 0 0 1 2.832 16m13-13A10.02 10.02 0 0 1 21 8.168M9 6.803A5.998 5.998 0 0 0 6 12c0 2.22 1.207 4.16 3 5.197M9 6.803A6.003 6.003 0 0 1 17.659 10M9 6.803l1.603 1.708a1.83 1.83 0 0 1-.236 2.714l-.59.442a1.373 1.373 0 0 0 .21 2.327v0c.92.46 1.027 1.729.198 2.336L9 17.197m0 0c.883.51 1.907.803 3 .803c1.792 0 3.4-.786 4.5-2.031M17.659 10A5.99 5.99 0 0 1 18 12a5.977 5.977 0 0 1-1.5 3.969M17.659 10l-1.101.349a2 2 0 0 0-1.252 2.653L16.5 15.97"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 12a10 10 0 0 1-.832 4M12 22a9.97 9.97 0 0 0 7.071-2.929M2 12a9.97 9.97 0 0 1 2.929-7.071M12 2a10 10 0 0 0-4 .832m0 18.336A10.02 10.02 0 0 1 2.832 16m13-13A10.02 10.02 0 0 1 21 8.168M9 6.803A6 6 0 0 0 6 12c0 2.22 1.207 4.16 3 5.197M9 6.803A6.003 6.003 0 0 1 17.659 10M9 6.803l1.603 1.708a1.83 1.83 0 0 1-.236 2.714l-.59.442a1.373 1.373 0 0 0 .21 2.327v0c.92.46 1.027 1.729.198 2.336L9 17.197m0 0c.883.51 1.907.803 3 .803c1.792 0 3.4-.786 4.5-2.031M17.659 10A6 6 0 0 1 18 12a5.98 5.98 0 0 1-1.5 3.969M17.659 10l-1.101.349a2 2 0 0 0-1.252 2.653L16.5 15.97"/>`), g.Group(children),
 	)
 }
 
 func EditPenFour(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M17.586 2a2 2 0 0 1 2.828 0L22 3.586a2 2 0 0 1 0 2.828L20.414 8L16 3.586L17.586 2zm-3 3l-5 5A2 2 0 0 0 9 11.414V13a2 2 0 0 0 2 2h1.586A2 2 0 0 0 14 14.414l5-5L14.586 5z" clip-rule="evenodd"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 14H5a2 2 0 0 0-2 2v0a2 2 0 0 0 2 2h14a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2h-4"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M17.586 2a2 2 0 0 1 2.828 0L22 3.586a2 2 0 0 1 0 2.828L20.414 8L16 3.586zm-3 3l-5 5A2 2 0 0 0 9 11.414V13a2 2 0 0 0 2 2h1.586A2 2 0 0 0 14 14.414l5-5z" clip-rule="evenodd"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 14H5a2 2 0 0 0-2 2v0a2 2 0 0 0 2 2h14a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2h-4"/></g>`), g.Group(children),
 	)
 }
 
@@ -2577,7 +2577,7 @@ func EditPenFourLine(children ...g.Node) g.Node {
 func EditPenTwo(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M15.586 3a2 2 0 0 1 2.828 0L21 5.586a2 2 0 0 1 0 2.828L19.414 10L14 4.586L15.586 3zm-3 3l-9 9A2 2 0 0 0 3 16.414V19a2 2 0 0 0 2 2h2.586A2 2 0 0 0 9 20.414l9-9L12.586 6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M15.586 3a2 2 0 0 1 2.828 0L21 5.586a2 2 0 0 1 0 2.828L19.414 10L14 4.586zm-3 3l-9 9A2 2 0 0 0 3 16.414V19a2 2 0 0 0 2 2h2.586A2 2 0 0 0 9 20.414l9-9z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -2591,14 +2591,14 @@ func EditPenTwoLine(children ...g.Node) g.Node {
 func Eject(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="m5 15l7-10l7 10H5z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 19h14M12 5L5 15h14L12 5z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="m5 15l7-10l7 10z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 19h14M12 5L5 15h14z"/></g>`), g.Group(children),
 	)
 }
 
 func EjectLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 19h14M12 5L5 15h14L12 5z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 19h14M12 5L5 15h14z"/>`), g.Group(children),
 	)
 }
 
@@ -2633,7 +2633,7 @@ func EmojiSadLine(children ...g.Node) g.Node {
 func Eraser(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3.121 17.85a3 3 0 0 1 0-4.243l7.071-7.072l8.486 8.486l-3.243 3.242H20a1 1 0 1 1 0 2H6.778a3 3 0 0 1-2.121-.878L3.12 17.849zm16.97-4.243l1.415-1.415a3 3 0 0 0 0-4.242l-4.243-4.243a3 3 0 0 0-4.242 0l-1.414 1.414l8.485 8.486z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3.121 17.85a3 3 0 0 1 0-4.243l7.071-7.072l8.486 8.486l-3.243 3.242H20a1 1 0 1 1 0 2H6.778a3 3 0 0 1-2.121-.878L3.12 17.849zm16.97-4.243l1.415-1.415a3 3 0 0 0 0-4.242l-4.243-4.243a3 3 0 0 0-4.242 0l-1.414 1.414z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -2647,28 +2647,28 @@ func EraserLine(children ...g.Node) g.Node {
 func EtheriumCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12zm11.814-7.581a1 1 0 0 0-1.628 0l-5 7a1 1 0 0 0 0 1.162l5 7a1 1 0 0 0 1.628 0l5-7a1 1 0 0 0 0-1.162l-5-7zM12 12.923L9.693 12L12 11.077l2.307.923l-2.307.923zm.371 2.005l1.832-.732L12 17.279l-2.203-3.083l1.832.732a1 1 0 0 0 .742 0zM12 6.72L9.797 9.804l1.832-.732a1 1 0 0 1 .742 0l1.832.732L12 6.72z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m11.814-7.581a1 1 0 0 0-1.628 0l-5 7a1 1 0 0 0 0 1.162l5 7a1 1 0 0 0 1.628 0l5-7a1 1 0 0 0 0-1.162zM12 12.923L9.693 12L12 11.077l2.307.923zm.371 2.005l1.832-.732L12 17.279l-2.203-3.083l1.832.732a1 1 0 0 0 .742 0M12 6.72L9.797 9.804l1.832-.732a1 1 0 0 1 .742 0l1.832.732z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func EtheriumCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10z"/><path d="m7 12l5-7l5 7M7 12l5 7l5-7M7 12l5-2l5 2M7 12l5 2l5-2"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10"/><path d="m7 12l5-7l5 7M7 12l5 7l5-7M7 12l5-2l5 2M7 12l5 2l5-2"/></g>`), g.Group(children),
 	)
 }
 
 func EuroCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12zm8 0c0-.17.01-.336.031-.5H12a1 1 0 1 0 0-2H9.877A3.993 3.993 0 0 1 13 8c.902 0 1.731.297 2.4.8a1 1 0 0 0 1.2-1.6a6.001 6.001 0 0 0-9.057 2.3H7a1 1 0 0 0 0 2h.02a6.081 6.081 0 0 0 0 1H7a1 1 0 1 0 0 2h.544a6.001 6.001 0 0 0 9.057 2.3a1 1 0 0 0-1.201-1.6c-.669.503-1.498.8-2.4.8a3.992 3.992 0 0 1-3.123-1.5H12a1 1 0 1 0 0-2H9.031A4.039 4.039 0 0 1 9 12z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m8 0q0-.255.031-.5H12a1 1 0 1 0 0-2H9.877A4 4 0 0 1 13 8c.902 0 1.731.297 2.4.8a1 1 0 0 0 1.2-1.6a6 6 0 0 0-9.057 2.3H7a1 1 0 0 0 0 2h.02a6 6 0 0 0 0 1H7a1 1 0 1 0 0 2h.544a6 6 0 0 0 9.057 2.3a1 1 0 0 0-1.201-1.6c-.669.503-1.498.8-2.4.8a4 4 0 0 1-3.123-1.5H12a1 1 0 1 0 0-2H9.031A4 4 0 0 1 9 12" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func EuroCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10z"/><path d="M16 8a5 5 0 1 0 0 8m-9-5.5h5m0 3H7"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10"/><path d="M16 8a5 5 0 1 0 0 8m-9-5.5h5m0 3H7"/></g>`), g.Group(children),
 	)
 }
 
@@ -2717,28 +2717,28 @@ func ExternalLinkLine(children ...g.Node) g.Node {
 func Eye(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4.19 7.262C5.94 5.577 8.517 4 12 4c3.483 0 6.06 1.577 7.81 3.262a15.086 15.086 0 0 1 3.001 4.11c.193.399.193.857 0 1.255a15.086 15.086 0 0 1-3 4.111C18.06 18.423 15.483 20 12 20c-3.483 0-6.06-1.577-7.81-3.262a15.088 15.088 0 0 1-3.001-4.11a1.435 1.435 0 0 1 0-1.255a15.088 15.088 0 0 1 3-4.111zM12 15a3 3 0 1 0 0-6a3 3 0 0 0 0 6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4.19 7.262C5.94 5.577 8.517 4 12 4s6.06 1.577 7.81 3.262a15.1 15.1 0 0 1 3.001 4.11c.193.399.193.857 0 1.255a15.1 15.1 0 0 1-3 4.111C18.06 18.423 15.483 20 12 20s-6.06-1.577-7.81-3.262a15.1 15.1 0 0 1-3.001-4.11a1.44 1.44 0 0 1 0-1.255a15.1 15.1 0 0 1 3-4.111zM12 15a3 3 0 1 0 0-6a3 3 0 0 0 0 6" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func EyeLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 5c-6.307 0-9.367 5.683-9.91 6.808a.435.435 0 0 0 0 .384C2.632 13.317 5.692 19 12 19s9.367-5.683 9.91-6.808a.435.435 0 0 0 0-.384C21.368 10.683 18.308 5 12 5z"/><circle cx="12" cy="12" r="3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 5c-6.307 0-9.367 5.683-9.91 6.808a.44.44 0 0 0 0 .384C2.632 13.317 5.692 19 12 19s9.367-5.683 9.91-6.808a.44.44 0 0 0 0-.384C21.368 10.683 18.308 5 12 5"/><circle cx="12" cy="12" r="3"/></g>`), g.Group(children),
 	)
 }
 
 func EyeOff(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 3l18 18"/><path fill="currentColor" fill-rule="evenodd" d="M5.4 6.23c-.44.33-.843.678-1.21 1.032a15.088 15.088 0 0 0-3.001 4.11a1.435 1.435 0 0 0 0 1.255a15.088 15.088 0 0 0 3 4.111C5.94 18.423 8.518 20 12 20c2.236 0 4.1-.65 5.61-1.562l-3.944-3.943a3 3 0 0 1-4.161-4.161L5.401 6.229zm15.266 9.608a15.06 15.06 0 0 0 2.145-3.21a1.435 1.435 0 0 0 0-1.255a15.086 15.086 0 0 0-3-4.111C18.06 5.577 15.483 4 12 4a10.83 10.83 0 0 0-2.808.363l11.474 11.475z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 3l18 18"/><path fill="currentColor" fill-rule="evenodd" d="M5.4 6.23c-.44.33-.843.678-1.21 1.032a15.1 15.1 0 0 0-3.001 4.11a1.44 1.44 0 0 0 0 1.255a15.1 15.1 0 0 0 3 4.111C5.94 18.423 8.518 20 12 20c2.236 0 4.1-.65 5.61-1.562l-3.944-3.943a3 3 0 0 1-4.161-4.161L5.401 6.229zm15.266 9.608a15 15 0 0 0 2.145-3.21a1.44 1.44 0 0 0 0-1.255a15.1 15.1 0 0 0-3-4.111C18.06 5.577 15.483 4 12 4a10.8 10.8 0 0 0-2.808.363z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func EyeOffLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 6.362A9.707 9.707 0 0 1 12 5c6.307 0 9.367 5.683 9.91 6.808c.06.123.06.261 0 .385c-.352.728-1.756 3.362-4.41 5.131M14 18.8a9.93 9.93 0 0 1-2 .2c-6.307 0-9.367-5.683-9.91-6.808a.44.44 0 0 1 0-.386c.219-.452.84-1.632 1.91-2.885m6 .843A3 3 0 0 1 14.236 14M3 3l18 18"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 6.362A9.7 9.7 0 0 1 12 5c6.307 0 9.367 5.683 9.91 6.808c.06.123.06.261 0 .385c-.352.728-1.756 3.362-4.41 5.131M14 18.8a10 10 0 0 1-2 .2c-6.307 0-9.367-5.683-9.91-6.808a.44.44 0 0 1 0-.386c.219-.452.84-1.632 1.91-2.885m6 .843A3 3 0 0 1 14.236 14M3 3l18 18"/>`), g.Group(children),
 	)
 }
 
@@ -2773,7 +2773,7 @@ func FerrisWheelLine(children ...g.Node) g.Node {
 func File(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 2H6a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-8h-6a3 3 0 0 1-3-3V2zm9 7v-.172a3 3 0 0 0-.879-2.12l-3.828-3.83A3 3 0 0 0 14.172 2H14v6a1 1 0 0 0 1 1h6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 2H6a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-8h-6a3 3 0 0 1-3-3zm9 7v-.172a3 3 0 0 0-.879-2.12l-3.828-3.83A3 3 0 0 0 14.172 2H14v6a1 1 0 0 0 1 1z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -2829,7 +2829,7 @@ func FileLine(children ...g.Node) g.Node {
 func FileMinus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 19h-6"/><path fill="currentColor" fill-rule="evenodd" d="M6 2h6v6a3 3 0 0 0 3 3h6v2.803A6 6 0 0 0 12.803 22H6a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3zm15 6.828V9h-6a1 1 0 0 1-1-1V2h.172a3 3 0 0 1 2.12.879l3.83 3.828A3 3 0 0 1 21 8.828z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 19h-6"/><path fill="currentColor" fill-rule="evenodd" d="M6 2h6v6a3 3 0 0 0 3 3h6v2.803A6 6 0 0 0 12.803 22H6a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3m15 6.828V9h-6a1 1 0 0 1-1-1V2h.172a3 3 0 0 1 2.12.879l3.83 3.828A3 3 0 0 1 21 8.828" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -2843,7 +2843,7 @@ func FileMinusLine(children ...g.Node) g.Node {
 func FilePlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 16v3m0 0v3m0-3h3m-3 0h-3"/><path fill="currentColor" fill-rule="evenodd" d="M6 2h6v6a3 3 0 0 0 3 3h6v2.341A6 6 0 0 0 13.803 22H6a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3zm15 6.828V9h-6a1 1 0 0 1-1-1V2h.172a3 3 0 0 1 2.12.879l3.83 3.828A3 3 0 0 1 21 8.828z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 16v3m0 0v3m0-3h3m-3 0h-3"/><path fill="currentColor" fill-rule="evenodd" d="M6 2h6v6a3 3 0 0 0 3 3h6v2.341A6 6 0 0 0 13.803 22H6a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3m15 6.828V9h-6a1 1 0 0 1-1-1V2h.172a3 3 0 0 1 2.12.879l3.83 3.828A3 3 0 0 1 21 8.828" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -2927,14 +2927,14 @@ func FilmLine(children ...g.Node) g.Node {
 func Filter(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-width="2" d="M18 4H6c-1.105 0-2.026.91-1.753 1.98a8.018 8.018 0 0 0 4.298 5.238c.823.394 1.455 1.168 1.455 2.08v6.084a1 1 0 0 0 1.447.894l2-1a1 1 0 0 0 .553-.894v-5.084c0-.912.632-1.686 1.454-2.08a8.017 8.017 0 0 0 4.3-5.238C20.025 4.91 19.103 4 18 4z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-width="2" d="M18 4H6c-1.105 0-2.026.91-1.753 1.98a8.02 8.02 0 0 0 4.298 5.238c.823.394 1.455 1.168 1.455 2.08v6.084a1 1 0 0 0 1.447.894l2-1a1 1 0 0 0 .553-.894v-5.084c0-.912.632-1.686 1.454-2.08a8.02 8.02 0 0 0 4.3-5.238C20.025 4.91 19.103 4 18 4z"/>`), g.Group(children),
 	)
 }
 
 func FilterLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-width="2" d="M18 4H6c-1.105 0-2.026.91-1.753 1.98a8.018 8.018 0 0 0 4.298 5.238c.823.394 1.455 1.168 1.455 2.08v6.084a1 1 0 0 0 1.447.894l2-1a1 1 0 0 0 .553-.894v-5.084c0-.912.632-1.686 1.454-2.08a8.017 8.017 0 0 0 4.3-5.238C20.025 4.91 19.103 4 18 4z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-width="2" d="M18 4H6c-1.105 0-2.026.91-1.753 1.98a8.02 8.02 0 0 0 4.298 5.238c.823.394 1.455 1.168 1.455 2.08v6.084a1 1 0 0 0 1.447.894l2-1a1 1 0 0 0 .553-.894v-5.084c0-.912.632-1.686 1.454-2.08a8.02 8.02 0 0 0 4.3-5.238C20.025 4.91 19.103 4 18 4z"/>`), g.Group(children),
 	)
 }
 
@@ -2955,7 +2955,7 @@ func FireLine(children ...g.Node) g.Node {
 func Fish(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M14.346 6.005A13.18 13.18 0 0 0 14 6c-3.633 0-7.031 2.294-9.46 4.574a20.998 20.998 0 0 1-1.716-2.14a1 1 0 1 0-1.648 1.133A23.129 23.129 0 0 0 3.133 12c-.813.89-1.48 1.74-1.957 2.434a1 1 0 1 0 1.648 1.133c.41-.596.994-1.345 1.716-2.141C6.97 15.706 10.367 18 14 18c.123 0 .245-.002.365-.005a10.755 10.755 0 0 1-.592-1.732a19.124 19.124 0 0 1-.545-3.332c-.167-2.218.022-4.825 1.118-6.926zm2.122 11.742c.09-.02.18-.04.269-.062c2.017-.492 3.559-1.843 4.562-2.985a13.663 13.663 0 0 0 1.47-2.029c.036-.06.063-.109.082-.143l.023-.042l.007-.013l.002-.004v-.001l.001-.001l-.787-.416l.787.415l.247-.466l-.247-.466l-.787.415l.787-.416l-.001-.002l-.002-.005l-.007-.012l-.023-.042a11.436 11.436 0 0 0-.387-.637A13.66 13.66 0 0 0 21.3 9.3c-1.003-1.142-2.546-2.493-4.562-2.985a10.316 10.316 0 0 0-.27-.062a.998.998 0 0 1-.12.278c-1.033 1.648-1.294 4.005-1.125 6.25a17.16 17.16 0 0 0 .486 2.978c.226.867.47 1.447.632 1.698c.059.092.101.19.128.29zm-5.26-7.04a1 1 0 0 0-1.415-1.414c-.272.271-.47.662-.606 1.015a5.387 5.387 0 0 0-.318 1.32c-.104.928.016 2.172.924 3.08a1 1 0 0 0 1.414-1.415c-.292-.293-.422-.8-.35-1.445c.033-.306.11-.594.197-.822c.073-.19.134-.286.152-.313c.006-.01.007-.011.001-.006zM17 11a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H18a1 1 0 0 1-1-1z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M14.346 6.005A13 13 0 0 0 14 6c-3.633 0-7.031 2.294-9.46 4.574a21 21 0 0 1-1.716-2.14a1 1 0 1 0-1.648 1.133A23 23 0 0 0 3.133 12c-.813.89-1.48 1.74-1.957 2.434a1 1 0 1 0 1.648 1.133c.41-.596.994-1.345 1.716-2.141C6.97 15.706 10.367 18 14 18q.185 0 .365-.005a11 11 0 0 1-.592-1.732a19 19 0 0 1-.545-3.332c-.167-2.218.022-4.825 1.118-6.926m2.122 11.742q.135-.03.269-.062c2.017-.492 3.559-1.843 4.562-2.985a13.7 13.7 0 0 0 1.47-2.029q.054-.091.082-.143l.023-.042l.007-.013l.002-.004v-.001l.001-.001l-.787-.416l.787.415l.247-.466l-.247-.466l-.787.415l.787-.416l-.001-.002l-.002-.005l-.007-.012l-.023-.042a11 11 0 0 0-.387-.637A14 14 0 0 0 21.3 9.3c-1.003-1.142-2.546-2.493-4.562-2.985l-.27-.062a1 1 0 0 1-.12.278c-1.033 1.648-1.294 4.005-1.125 6.25a17 17 0 0 0 .486 2.978c.226.867.47 1.447.632 1.698q.088.139.128.29zm-5.26-7.04a1 1 0 0 0-1.415-1.414c-.272.271-.47.662-.606 1.015a5.4 5.4 0 0 0-.318 1.32c-.104.928.016 2.172.924 3.08a1 1 0 0 0 1.414-1.415c-.292-.293-.422-.8-.35-1.445c.033-.306.11-.594.197-.822c.073-.19.134-.286.152-.313q.01-.014.001-.006zM17 11a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H18a1 1 0 0 1-1-1" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -2969,7 +2969,7 @@ func FishLine(children ...g.Node) g.Node {
 func Flag(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M19 5H5v9h14V5z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 20v-6m0-9h14v9H5m0-9v9m0-9V4"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M19 5H5v9h14z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 20v-6m0-9h14v9H5m0-9v9m0-9V4"/></g>`), g.Group(children),
 	)
 }
 
@@ -2997,21 +2997,21 @@ func FlaskLine(children ...g.Node) g.Node {
 func FlowerTwo(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M4 14c0 2.333 1.4 7 7 7c0-2.333-1.4-7-7-7zm3-6V4l2.5 2L12 3l2.5 3L17 4v4c0 1.667-1 5-5 5S7 9.667 7 8zm13 6c0 2.333-1.4 7-7 7c0-2.333 1.4-7 7-7z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 21c-5.6 0-7-4.667-7-7c5.6 0 7 4.667 7 7zm0 0h1m0 0v-8m0 8h1m-1-8c-4 0-5-3.333-5-5V4l2.5 2L12 3l2.5 3L17 4v4c0 1.667-1 5-5 5zm1 8c5.6 0 7-4.667 7-7c-5.6 0-7 4.667-7 7z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M4 14c0 2.333 1.4 7 7 7c0-2.333-1.4-7-7-7m3-6V4l2.5 2L12 3l2.5 3L17 4v4c0 1.667-1 5-5 5S7 9.667 7 8m13 6c0 2.333-1.4 7-7 7c0-2.333 1.4-7 7-7"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 21c-5.6 0-7-4.667-7-7c5.6 0 7 4.667 7 7m0 0h1m0 0v-8m0 8h1m-1-8c-4 0-5-3.333-5-5V4l2.5 2L12 3l2.5 3L17 4v4c0 1.667-1 5-5 5m1 8c5.6 0 7-4.667 7-7c-5.6 0-7 4.667-7 7"/></g>`), g.Group(children),
 	)
 }
 
 func FlowerTwoLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13c-4 0-5-3.333-5-5V4l2.5 2L12 3l2.5 3L17 4v4c0 1.667-1 5-5 5zm0 0v8m1 0c5.6 0 7-4.667 7-7c-5.6 0-7 4.667-7 7zm0 0h-1m-1 0c-5.6 0-7-4.667-7-7c5.6 0 7 4.667 7 7zm0 0h1"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13c-4 0-5-3.333-5-5V4l2.5 2L12 3l2.5 3L17 4v4c0 1.667-1 5-5 5m0 0v8m1 0c5.6 0 7-4.667 7-7c-5.6 0-7 4.667-7 7m0 0h-1m-1 0c-5.6 0-7-4.667-7-7c5.6 0 7 4.667 7 7m0 0h1"/>`), g.Group(children),
 	)
 }
 
 func Folder(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6a2 2 0 0 1 2-2h3.93a2 2 0 0 1 1.664.89l.812 1.22A2 2 0 0 0 13.07 7H19a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6a2 2 0 0 1 2-2h3.93a2 2 0 0 1 1.664.89l.812 1.22A2 2 0 0 0 13.07 7H19a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>`), g.Group(children),
 	)
 }
 
@@ -3032,7 +3032,7 @@ func FolderAddLine(children ...g.Node) g.Node {
 func FolderCheck(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M5 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7.174A6.5 6.5 0 0 1 21 12.498V9a2 2 0 0 0-2-2h-5.93a2 2 0 0 1-1.664-.89l-.812-1.22A2 2 0 0 0 8.93 4H5z" clip-rule="evenodd"/><path fill="currentColor" d="M12.174 20v1a1 1 0 0 0 .973-1.23l-.973.23zM21 12.498l-.385.923A1 1 0 0 0 22 12.498h-1zM11.406 6.11l.832-.554l-.832.554zm-.812-1.218l-.832.554l.832-.554zM4 6a1 1 0 0 1 1-1V3a3 3 0 0 0-3 3h2zm0 12V6H2v12h2zm1 1a1 1 0 0 1-1-1H2a3 3 0 0 0 3 3v-2zm7.174 0H5v2h7.174v-2zm.973.77A5.522 5.522 0 0 1 13 18.5h-2c0 .594.07 1.174.2 1.73l1.947-.46zM13 18.5a5.5 5.5 0 0 1 5.5-5.5v-2a7.5 7.5 0 0 0-7.5 7.5h2zm5.5-5.5c.752 0 1.465.15 2.115.421l.77-1.846A7.48 7.48 0 0 0 18.5 11v2zM20 9v3.498h2V9h-2zm-1-1a1 1 0 0 1 1 1h2a3 3 0 0 0-3-3v2zm-5.93 0H19V6h-5.93v2zm-2.496-1.336A3 3 0 0 0 13.07 8V6a1 1 0 0 1-.832-.445l-1.664 1.11zm-.812-1.219l.812 1.22l1.664-1.11l-.812-1.22l-1.664 1.11zM8.93 5a1 1 0 0 1 .832.445l1.664-1.11A3 3 0 0 0 8.93 3v2zM5 5h3.93V3H5v2z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16 19l2 2l4-5"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M5 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7.174A6.5 6.5 0 0 1 21 12.498V9a2 2 0 0 0-2-2h-5.93a2 2 0 0 1-1.664-.89l-.812-1.22A2 2 0 0 0 8.93 4z" clip-rule="evenodd"/><path fill="currentColor" d="M12.174 20v1a1 1 0 0 0 .973-1.23zM21 12.498l-.385.923A1 1 0 0 0 22 12.498zM11.406 6.11l.832-.554zm-.812-1.218l-.832.554zM4 6a1 1 0 0 1 1-1V3a3 3 0 0 0-3 3zm0 12V6H2v12zm1 1a1 1 0 0 1-1-1H2a3 3 0 0 0 3 3zm7.174 0H5v2h7.174zm.973.77A5.5 5.5 0 0 1 13 18.5h-2c0 .594.07 1.174.2 1.73zM13 18.5a5.5 5.5 0 0 1 5.5-5.5v-2a7.5 7.5 0 0 0-7.5 7.5zm5.5-5.5c.752 0 1.465.15 2.115.421l.77-1.846A7.5 7.5 0 0 0 18.5 11zM20 9v3.498h2V9zm-1-1a1 1 0 0 1 1 1h2a3 3 0 0 0-3-3zm-5.93 0H19V6h-5.93zm-2.496-1.336A3 3 0 0 0 13.07 8V6a1 1 0 0 1-.832-.445l-1.664 1.11zm-.812-1.219l.812 1.22l1.664-1.11l-.812-1.22zM8.93 5a1 1 0 0 1 .832.445l1.664-1.11A3 3 0 0 0 8.93 3zM5 5h3.93V3H5z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16 19l2 2l4-5"/></g>`), g.Group(children),
 	)
 }
 
@@ -3060,14 +3060,14 @@ func FolderDownloadLine(children ...g.Node) g.Node {
 func FolderLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6a2 2 0 0 1 2-2h3.93a2 2 0 0 1 1.664.89l.812 1.22A2 2 0 0 0 13.07 7H19a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6a2 2 0 0 1 2-2h3.93a2 2 0 0 1 1.664.89l.812 1.22A2 2 0 0 0 13.07 7H19a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>`), g.Group(children),
 	)
 }
 
 func FolderMinus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M5 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6.498A6.5 6.5 0 0 1 21 12.022V9a2 2 0 0 0-2-2h-5.93a2 2 0 0 1-1.664-.89l-.812-1.22A2 2 0 0 0 8.93 4H5z" clip-rule="evenodd"/><path fill="currentColor" d="M11.498 20v1a1 1 0 0 0 .923-1.385l-.923.385zM21 12.022l-.54.842a1 1 0 0 0 1.54-.842h-1zm-9.594-5.913l.832-.554l-.832.554zm-.812-1.218l-.832.554l.832-.554zM4 6a1 1 0 0 1 1-1V3a3 3 0 0 0-3 3h2zm0 12V6H2v12h2zm1 1a1 1 0 0 1-1-1H2a3 3 0 0 0 3 3v-2zm6.498 0H5v2h6.498v-2zm.923.615A5.48 5.48 0 0 1 12 17.5h-2c0 1.02.204 1.995.575 2.885l1.846-.77zM12 17.5a5.5 5.5 0 0 1 5.5-5.5v-2a7.5 7.5 0 0 0-7.5 7.5h2zm5.5-5.5a5.47 5.47 0 0 1 2.96.864l1.08-1.684A7.47 7.47 0 0 0 17.5 10v2zM20 9v3.022h2V9h-2zm-1-1a1 1 0 0 1 1 1h2a3 3 0 0 0-3-3v2zm-5.93 0H19V6h-5.93v2zm-2.496-1.336A3 3 0 0 0 13.07 8V6a1 1 0 0 1-.832-.445l-1.664 1.11zm-.812-1.219l.812 1.22l1.664-1.11l-.812-1.22l-1.664 1.11zM8.93 5a1 1 0 0 1 .832.445l1.664-1.11A3 3 0 0 0 8.93 3v2zM5 5h3.93V3H5v2z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 18h6"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M5 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6.498A6.5 6.5 0 0 1 21 12.022V9a2 2 0 0 0-2-2h-5.93a2 2 0 0 1-1.664-.89l-.812-1.22A2 2 0 0 0 8.93 4z" clip-rule="evenodd"/><path fill="currentColor" d="M11.498 20v1a1 1 0 0 0 .923-1.385zM21 12.022l-.54.842a1 1 0 0 0 1.54-.842zm-9.594-5.913l.832-.554zm-.812-1.218l-.832.554zM4 6a1 1 0 0 1 1-1V3a3 3 0 0 0-3 3zm0 12V6H2v12zm1 1a1 1 0 0 1-1-1H2a3 3 0 0 0 3 3zm6.498 0H5v2h6.498zm.923.615A5.5 5.5 0 0 1 12 17.5h-2c0 1.02.204 1.995.575 2.885zM12 17.5a5.5 5.5 0 0 1 5.5-5.5v-2a7.5 7.5 0 0 0-7.5 7.5zm5.5-5.5a5.47 5.47 0 0 1 2.96.864l1.08-1.684A7.47 7.47 0 0 0 17.5 10zM20 9v3.022h2V9zm-1-1a1 1 0 0 1 1 1h2a3 3 0 0 0-3-3zm-5.93 0H19V6h-5.93zm-2.496-1.336A3 3 0 0 0 13.07 8V6a1 1 0 0 1-.832-.445l-1.664 1.11zm-.812-1.219l.812 1.22l1.664-1.11l-.812-1.22zM8.93 5a1 1 0 0 1 .832.445l1.664-1.11A3 3 0 0 0 8.93 3zM5 5h3.93V3H5z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 18h6"/></g>`), g.Group(children),
 	)
 }
 
@@ -3095,7 +3095,7 @@ func FolderOpenLine(children ...g.Node) g.Node {
 func FolderPlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M5 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6.29A7 7 0 0 1 21 11.674V9a2 2 0 0 0-2-2h-5.93a2 2 0 0 1-1.664-.89l-.812-1.22A2 2 0 0 0 8.93 4H5z" clip-rule="evenodd"/><path fill="currentColor" d="M11.29 20v1a1 1 0 0 0 .958-1.285L11.29 20zM21 11.674l-.43.903a1 1 0 0 0 1.43-.903h-1zm-9.594-5.565l.832-.554l-.832.554zm-.812-1.218l-.832.554l.832-.554zM4 6a1 1 0 0 1 1-1V3a3 3 0 0 0-3 3h2zm0 12V6H2v12h2zm1 1a1 1 0 0 1-1-1H2a3 3 0 0 0 3 3v-2zm6.29 0H5v2h6.29v-2zm.958.715A6.002 6.002 0 0 1 12 18h-2c0 .793.116 1.56.331 2.285l1.917-.57zM12 18a6 6 0 0 1 6-6v-2a8 8 0 0 0-8 8h2zm6-6a5.96 5.96 0 0 1 2.57.577l.86-1.807A7.973 7.973 0 0 0 18 10v2zm2-3v2.674h2V9h-2zm-1-1a1 1 0 0 1 1 1h2a3 3 0 0 0-3-3v2zm-5.93 0H19V6h-5.93v2zm-2.496-1.336A3 3 0 0 0 13.07 8V6a1 1 0 0 1-.832-.445l-1.664 1.11zm-.812-1.219l.812 1.22l1.664-1.11l-.812-1.22l-1.664 1.11zM8.93 5a1 1 0 0 1 .832.445l1.664-1.11A3 3 0 0 0 8.93 3v2zM5 5h3.93V3H5v2z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 15v3m0 3v-3m0 0h-3m3 0h3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M5 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6.29A7 7 0 0 1 21 11.674V9a2 2 0 0 0-2-2h-5.93a2 2 0 0 1-1.664-.89l-.812-1.22A2 2 0 0 0 8.93 4z" clip-rule="evenodd"/><path fill="currentColor" d="M11.29 20v1a1 1 0 0 0 .958-1.285zM21 11.674l-.43.903a1 1 0 0 0 1.43-.903zm-9.594-5.565l.832-.554zm-.812-1.218l-.832.554zM4 6a1 1 0 0 1 1-1V3a3 3 0 0 0-3 3zm0 12V6H2v12zm1 1a1 1 0 0 1-1-1H2a3 3 0 0 0 3 3zm6.29 0H5v2h6.29zm.958.715A6 6 0 0 1 12 18h-2c0 .793.116 1.56.331 2.285zM12 18a6 6 0 0 1 6-6v-2a8 8 0 0 0-8 8zm6-6a5.96 5.96 0 0 1 2.57.577l.86-1.807A8 8 0 0 0 18 10zm2-3v2.674h2V9zm-1-1a1 1 0 0 1 1 1h2a3 3 0 0 0-3-3zm-5.93 0H19V6h-5.93zm-2.496-1.336A3 3 0 0 0 13.07 8V6a1 1 0 0 1-.832-.445l-1.664 1.11zm-.812-1.219l.812 1.22l1.664-1.11l-.812-1.22zM8.93 5a1 1 0 0 1 .832.445l1.664-1.11A3 3 0 0 0 8.93 3zM5 5h3.93V3H5z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 15v3m0 3v-3m0 0h-3m3 0h3"/></g>`), g.Group(children),
 	)
 }
 
@@ -3144,28 +3144,28 @@ func Forward(children ...g.Node) g.Node {
 func ForwardCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1zM6.507 8.13a1 1 0 0 1 1.008.013L12 10.833V9a1 1 0 0 1 1.514-.857l5 3a1 1 0 0 1 0 1.714l-5 3A1 1 0 0 1 12 15v-1.834l-4.486 2.691A1 1 0 0 1 6 15V9a1 1 0 0 1 .507-.87zM8 13.234L10.056 12L8 10.766v2.468zM16.056 12L14 13.234v-2.468L16.056 12z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1M6.507 8.13a1 1 0 0 1 1.008.013L12 10.833V9a1 1 0 0 1 1.514-.857l5 3a1 1 0 0 1 0 1.714l-5 3A1 1 0 0 1 12 15v-1.834l-4.486 2.691A1 1 0 0 1 6 15V9a1 1 0 0 1 .507-.87M8 13.234L10.056 12L8 10.766zM16.056 12L14 13.234v-2.468z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ForwardCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M7 15V9l5 3l-5 3zm6 0V9l5 3l-5 3z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M7 15V9l5 3zm6 0V9l5 3z"/></g>`), g.Group(children),
 	)
 }
 
 func ForwardEndCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1zM6.507 8.13a1 1 0 0 1 1.008.013L11 10.233V9a1 1 0 0 1 1.514-.857L16 10.233V9a1 1 0 1 1 2 0v6a1 1 0 1 1-2 0v-1.234l-3.486 2.091A1 1 0 0 1 11 15v-1.234l-3.486 2.091A1 1 0 0 1 6 15V9a1 1 0 0 1 .507-.87zM13 12v1.234L15.056 12L13 10.766V12zm-5 1.234L10.056 12L8 10.766v2.468z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 1 12 1M6.507 8.13a1 1 0 0 1 1.008.013L11 10.233V9a1 1 0 0 1 1.514-.857L16 10.233V9a1 1 0 1 1 2 0v6a1 1 0 1 1-2 0v-1.234l-3.486 2.091A1 1 0 0 1 11 15v-1.234l-3.486 2.091A1 1 0 0 1 6 15V9a1 1 0 0 1 .507-.87M13 12v1.234L15.056 12L13 10.766zm-5 1.234L10.056 12L8 10.766z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ForwardEndCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M7 15V9l5 3l-5 3zm10-3l-5 3V9l5 3zm0 0V9m0 3v3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M7 15V9l5 3zm10-3l-5 3V9zm0 0V9m0 3v3"/></g>`), g.Group(children),
 	)
 }
 
@@ -3207,7 +3207,7 @@ func GitBranchLine(children ...g.Node) g.Node {
 func GitCommit(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M12 16a4 4 0 1 1 0-8a4 4 0 0 1 0 8z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16a4 4 0 0 1 0-8m0 8a4 4 0 0 0 0-8m0 8v5m0-13V3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M12 16a4 4 0 1 1 0-8a4 4 0 0 1 0 8"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16a4 4 0 0 1 0-8m0 8a4 4 0 0 0 0-8m0 8v5m0-13V3"/></g>`), g.Group(children),
 	)
 }
 
@@ -3221,14 +3221,14 @@ func GitCommitLine(children ...g.Node) g.Node {
 func GitCompare(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M21 17a3 3 0 1 1-6 0a3 3 0 0 1 6 0z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 14a3 3 0 1 0 0 6a3 3 0 0 0 0-6zm0 0V9a2 2 0 0 0-2-2h-1m-2 0l2-2v2m-2 0h2m-2 0l2 2V7"/><path fill="currentColor" d="M3 8a3 3 0 1 1 6 0a3 3 0 0 1-6 0z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 11a3 3 0 1 0 0-6a3 3 0 0 0 0 6zm0 0v5a2 2 0 0 0 2 2h1m2 0l-2 2v-2m2 0H9m2 0l-2-2v2"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M21 17a3 3 0 1 1-6 0a3 3 0 0 1 6 0"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 14a3 3 0 1 0 0 6a3 3 0 0 0 0-6m0 0V9a2 2 0 0 0-2-2h-1m-2 0l2-2v2m-2 0h2m-2 0l2 2V7"/><path fill="currentColor" d="M3 8a3 3 0 1 1 6 0a3 3 0 0 1-6 0"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 11a3 3 0 1 0 0-6a3 3 0 0 0 0 6m0 0v5a2 2 0 0 0 2 2h1m2 0l-2 2v-2m2 0H9m2 0l-2-2v2"/></g>`), g.Group(children),
 	)
 }
 
 func GitCompareLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 14a3 3 0 1 0 0 6a3 3 0 0 0 0-6zm0 0V9a2 2 0 0 0-2-2h-1m-2 0l2-2v2m-2 0h2m-2 0l2 2V7m-9 4a3 3 0 1 0 0-6a3 3 0 0 0 0 6zm0 0v5a2 2 0 0 0 2 2h1m2 0l-2 2v-2m2 0H9m2 0l-2-2v2"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 14a3 3 0 1 0 0 6a3 3 0 0 0 0-6m0 0V9a2 2 0 0 0-2-2h-1m-2 0l2-2v2m-2 0h2m-2 0l2 2V7m-9 4a3 3 0 1 0 0-6a3 3 0 0 0 0 6m0 0v5a2 2 0 0 0 2 2h1m2 0l-2 2v-2m2 0H9m2 0l-2-2v2"/>`), g.Group(children),
 	)
 }
 
@@ -3249,35 +3249,35 @@ func GitForkLine(children ...g.Node) g.Node {
 func GitMerge(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M10 7a3 3 0 1 1-6 0a3 3 0 0 1 6 0z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 10a3 3 0 1 0 0-6a3 3 0 0 0 0 6zm0 0v10m0-10c0 2.333 1.4 7 7 7"/><circle cx="17" cy="17" r="3" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M10 7a3 3 0 1 1-6 0a3 3 0 0 1 6 0"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 10a3 3 0 1 0 0-6a3 3 0 0 0 0 6m0 0v10m0-10c0 2.333 1.4 7 7 7"/><circle cx="17" cy="17" r="3" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></g>`), g.Group(children),
 	)
 }
 
 func GitMergeLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 10a3 3 0 1 0 0-6a3 3 0 0 0 0 6zm0 0v10m0-10c0 2.333 1.4 7 7 7"/><circle cx="17" cy="17" r="3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 10a3 3 0 1 0 0-6a3 3 0 0 0 0 6m0 0v10m0-10c0 2.333 1.4 7 7 7"/><circle cx="17" cy="17" r="3"/></g>`), g.Group(children),
 	)
 }
 
 func GitPull(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M9 7a3 3 0 1 1-6 0a3 3 0 0 1 6 0z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 10a3 3 0 1 0 0-6a3 3 0 0 0 0 6zm0 0v10"/><path fill="currentColor" d="M21 17a3 3 0 1 1-6 0a3 3 0 0 1 6 0z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 14a3 3 0 1 0 0 6a3 3 0 0 0 0-6zm0 0V9a2 2 0 0 0-2-2h-1m-2 0l2-2v2m-2 0h2m-2 0l2 2V7"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M9 7a3 3 0 1 1-6 0a3 3 0 0 1 6 0"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 10a3 3 0 1 0 0-6a3 3 0 0 0 0 6m0 0v10"/><path fill="currentColor" d="M21 17a3 3 0 1 1-6 0a3 3 0 0 1 6 0"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 14a3 3 0 1 0 0 6a3 3 0 0 0 0-6m0 0V9a2 2 0 0 0-2-2h-1m-2 0l2-2v2m-2 0h2m-2 0l2 2V7"/></g>`), g.Group(children),
 	)
 }
 
 func GitPullLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 10a3 3 0 1 0 0-6a3 3 0 0 0 0 6zm0 0v10m12-6a3 3 0 1 0 0 6a3 3 0 0 0 0-6zm0 0V9a2 2 0 0 0-2-2h-1m-2 0l2-2v2m-2 0h2m-2 0l2 2V7"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 10a3 3 0 1 0 0-6a3 3 0 0 0 0 6m0 0v10m12-6a3 3 0 1 0 0 6a3 3 0 0 0 0-6m0 0V9a2 2 0 0 0-2-2h-1m-2 0l2-2v2m-2 0h2m-2 0l2 2V7"/>`), g.Group(children),
 	)
 }
 
 func GlasWater(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M15.234 20H8.766a2 2 0 0 1-1.985-1.752L6 12l2.072-.69a2 2 0 0 1 1.742.233l1.077.717a2 2 0 0 0 2.218 0l1.077-.717a2 2 0 0 1 1.742-.234L18 12l-.781 6.248A2 2 0 0 1 15.234 20z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 4h15M6 12l.781 6.248A2 2 0 0 0 8.766 20h6.468a2 2 0 0 0 1.985-1.752L18 12M6 12l2.072-.69a2 2 0 0 1 1.742.233l1.077.717a2 2 0 0 0 2.218 0l1.077-.717a2 2 0 0 1 1.742-.234L18 12M6 12l-.938-7.5M18 12l.938-7.5"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M15.234 20H8.766a2 2 0 0 1-1.985-1.752L6 12l2.072-.69a2 2 0 0 1 1.742.233l1.077.717a2 2 0 0 0 2.218 0l1.077-.717a2 2 0 0 1 1.742-.234L18 12l-.781 6.248A2 2 0 0 1 15.234 20"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.5 4h15M6 12l.781 6.248A2 2 0 0 0 8.766 20h6.468a2 2 0 0 0 1.985-1.752L18 12M6 12l2.072-.69a2 2 0 0 1 1.742.233l1.077.717a2 2 0 0 0 2.218 0l1.077-.717a2 2 0 0 1 1.742-.234L18 12M6 12l-.938-7.5M18 12l.938-7.5"/></g>`), g.Group(children),
 	)
 }
 
@@ -3298,7 +3298,7 @@ func Globe(children ...g.Node) g.Node {
 func GlobeEarth(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path fill="currentColor" d="M8 6V4c2.5-1.167 8.4-2 12 4h-1a2 2 0 0 0-2 2a2 2 0 1 1-4 0a2 2 0 0 0-2-2h-1a2 2 0 0 1-2-2zm9 10h3c-1.2 1.6-3.833 3.333-5 4v-2a2 2 0 0 1 2-2zm-6 2v2c-6.4-.4-8-5.5-8-8h2a2 2 0 0 1 2 2a2 2 0 0 0 2 2a2 2 0 0 1 2 2z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 6V4c2.5-1.167 8.4-2 12 4h-1a2 2 0 0 0-2 2a2 2 0 1 1-4 0a2 2 0 0 0-2-2h-1a2 2 0 0 1-2-2zm9 10h3c-1.2 1.6-3.833 3.333-5 4v-2a2 2 0 0 1 2-2zm-6 2v2c-6.4-.4-8-5.5-8-8h2a2 2 0 0 1 2 2a2 2 0 0 0 2 2a2 2 0 0 1 2 2z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path fill="currentColor" d="M8 6V4c2.5-1.167 8.4-2 12 4h-1a2 2 0 0 0-2 2a2 2 0 1 1-4 0a2 2 0 0 0-2-2h-1a2 2 0 0 1-2-2m9 10h3c-1.2 1.6-3.833 3.333-5 4v-2a2 2 0 0 1 2-2m-6 2v2c-6.4-.4-8-5.5-8-8h2a2 2 0 0 1 2 2a2 2 0 0 0 2 2a2 2 0 0 1 2 2"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 6V4c2.5-1.167 8.4-2 12 4h-1a2 2 0 0 0-2 2a2 2 0 1 1-4 0a2 2 0 0 0-2-2h-1a2 2 0 0 1-2-2m9 10h3c-1.2 1.6-3.833 3.333-5 4v-2a2 2 0 0 1 2-2m-6 2v2c-6.4-.4-8-5.5-8-8h2a2 2 0 0 1 2 2a2 2 0 0 0 2 2a2 2 0 0 1 2 2"/></g>`), g.Group(children),
 	)
 }
 
@@ -3312,28 +3312,28 @@ func GlobeEarthLine(children ...g.Node) g.Node {
 func GlobeEarthTwo(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="9"/><path fill="currentColor" d="M13.5 6h.5a2 2 0 0 0 2-2C8.4 1.2 4.5 6.5 3.5 9.5l4.167 5.093c.215.263.333.593.333.933C8 16.34 8.673 17 9.487 17c.828 0 1.513.672 1.513 1.5V21c2.167-.167 6.8-1.2 8-4h-1a2 2 0 0 1-2-2a2 2 0 0 0-2-2h-2a2 2 0 0 1-2-2v-1a1 1 0 0 1 1-1a1 1 0 0 0 1-1v-.5A1.5 1.5 0 0 1 13.5 6z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="9"/><path fill="currentColor" d="M13.5 6h.5a2 2 0 0 0 2-2C8.4 1.2 4.5 6.5 3.5 9.5l4.167 5.093c.215.263.333.593.333.933C8 16.34 8.673 17 9.487 17c.828 0 1.513.672 1.513 1.5V21c2.167-.167 6.8-1.2 8-4h-1a2 2 0 0 1-2-2a2 2 0 0 0-2-2h-2a2 2 0 0 1-2-2v-1a1 1 0 0 1 1-1a1 1 0 0 0 1-1v-.5A1.5 1.5 0 0 1 13.5 6"/></g>`), g.Group(children),
 	)
 }
 
 func GlobeEarthTwoLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M16 4v0a2 2 0 0 1-2 2h-.5A1.5 1.5 0 0 0 12 7.5V8a1 1 0 0 1-1 1v0a1 1 0 0 0-1 1v1a2 2 0 0 0 2 2h2a2 2 0 0 1 2 2v0a2 2 0 0 0 2 2h1m-8 4v-2.5c0-.828-.685-1.5-1.513-1.5v0C8.673 17 8 16.34 8 15.526v0c0-.34-.118-.67-.333-.933L3.5 9.5"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M16 4a2 2 0 0 1-2 2h-.5A1.5 1.5 0 0 0 12 7.5V8a1 1 0 0 1-1 1v0a1 1 0 0 0-1 1v1a2 2 0 0 0 2 2h2a2 2 0 0 1 2 2v0a2 2 0 0 0 2 2h1m-8 4v-2.5c0-.828-.685-1.5-1.513-1.5v0C8.673 17 8 16.34 8 15.526v0c0-.34-.118-.67-.333-.933L3.5 9.5"/></g>`), g.Group(children),
 	)
 }
 
 func GlobeGrid(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20.5 9.035a9.004 9.004 0 0 0-17 0m17 0c.324.928.5 1.926.5 2.965a8.988 8.988 0 0 1-.5 2.966m0-5.931h-17m0 0A8.987 8.987 0 0 0 3 12a8.99 8.99 0 0 0 .5 2.966m0 0a9.004 9.004 0 0 0 17 0m-17 0h17"/><path d="M12 21c4.97-4.97 4.97-13.03 0-18c-4.97 4.97-4.97 13.03 0 18z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20.5 9.035a9.004 9.004 0 0 0-17 0m17 0c.324.928.5 1.926.5 2.965a9 9 0 0 1-.5 2.966m0-5.931h-17m0 0A9 9 0 0 0 3 12a9 9 0 0 0 .5 2.966m0 0a9.004 9.004 0 0 0 17 0m-17 0h17"/><path d="M12 21c4.97-4.97 4.97-13.03 0-18c-4.97 4.97-4.97 13.03 0 18"/></g>`), g.Group(children),
 	)
 }
 
 func GlobeGridLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20.5 9.035a9.004 9.004 0 0 0-17 0m17 0c.324.928.5 1.926.5 2.965a8.988 8.988 0 0 1-.5 2.966m0-5.931h-17m0 0A8.987 8.987 0 0 0 3 12a8.99 8.99 0 0 0 .5 2.966m0 0a9.004 9.004 0 0 0 17 0m-17 0h17"/><path d="M12 21c4.97-4.97 4.97-13.03 0-18c-4.97 4.97-4.97 13.03 0 18z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20.5 9.035a9.004 9.004 0 0 0-17 0m17 0c.324.928.5 1.926.5 2.965a9 9 0 0 1-.5 2.966m0-5.931h-17m0 0A9 9 0 0 0 3 12a9 9 0 0 0 .5 2.966m0 0a9.004 9.004 0 0 0 17 0m-17 0h17"/><path d="M12 21c4.97-4.97 4.97-13.03 0-18c-4.97 4.97-4.97 13.03 0 18"/></g>`), g.Group(children),
 	)
 }
 
@@ -3347,7 +3347,7 @@ func GlobeLine(children ...g.Node) g.Node {
 func Hand(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.5 22C4.7 22 3 16.333 3 13.5V10c0-.167.1-.5.5-.5s.5.333.5.5v2c1.215.722 1.877.699 3 0V4c0-.167.1-.5.5-.5s.5.333.5.5v8c1.93-.882 2.73-1.484 3-3V3c0-.167.1-.5.5-.5s.5.333.5.5v6c.622 1.739 1.26 2.168 3 2V4c0-.167.1-.5.5-.5s.5.333.5.5v7c.728.963 1.455 1.09 3 1V9c0-.167.1-.5.5-.5s.5.333.5.5v4.5c0 2.833-1.7 8.5-8.5 8.5z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.5 22C4.7 22 3 16.333 3 13.5V10c0-.167.1-.5.5-.5s.5.333.5.5v2c1.215.722 1.877.699 3 0V4c0-.167.1-.5.5-.5s.5.333.5.5v8c1.93-.882 2.73-1.484 3-3V3c0-.167.1-.5.5-.5s.5.333.5.5v6c.622 1.739 1.26 2.168 3 2V4c0-.167.1-.5.5-.5s.5.333.5.5v7c.728.963 1.455 1.09 3 1V9c0-.167.1-.5.5-.5s.5.333.5.5v4.5c0 2.833-1.7 8.5-8.5 8.5"/>`), g.Group(children),
 	)
 }
 
@@ -3361,14 +3361,14 @@ func HandLine(children ...g.Node) g.Node {
 func HandPointer(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 17v1a2 2 0 0 1-2 2H8.236a2 2 0 0 1-1.789-1.106l-2.276-4.552A1.618 1.618 0 0 1 5.618 12H6a2 2 0 0 1 1.6.8L10 16V6a2 2 0 1 1 4 0v6a1 1 0 0 0 1 1h1a4 4 0 0 1 4 4z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 17v1a2 2 0 0 1-2 2H8.236a2 2 0 0 1-1.789-1.106l-2.276-4.552A1.618 1.618 0 0 1 5.618 12H6a2 2 0 0 1 1.6.8L10 16V6a2 2 0 1 1 4 0v6a1 1 0 0 0 1 1h1a4 4 0 0 1 4 4"/>`), g.Group(children),
 	)
 }
 
 func HandPointerEvent(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" d="M15 15h1a4 4 0 0 1 4 4a2 2 0 0 1-2 2H8.132a2 2 0 0 1-1.715-.971l-2.194-3.657A1.566 1.566 0 0 1 5.566 14H6a2 2 0 0 1 1.6.8L10 18V9a2 2 0 1 1 4 0v5a1 1 0 0 0 1 1z"/><path d="M12 4V3m6 7h1M5 10h1m1.343-4.657l-.707-.707m10.021.707l.707-.707"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" d="M15 15h1a4 4 0 0 1 4 4a2 2 0 0 1-2 2H8.132a2 2 0 0 1-1.715-.971l-2.194-3.657A1.566 1.566 0 0 1 5.566 14H6a2 2 0 0 1 1.6.8L10 18V9a2 2 0 1 1 4 0v5a1 1 0 0 0 1 1"/><path d="M12 4V3m6 7h1M5 10h1m1.343-4.657l-.707-.707m10.021.707l.707-.707"/></g>`), g.Group(children),
 	)
 }
 
@@ -3389,7 +3389,7 @@ func HandPointerLine(children ...g.Node) g.Node {
 func HandPointerTwo(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.5 22C4.7 22 3 16.333 3 13.5V10c0-.333.2-1 1-1s1 .667 1 1v2c0 .5.3 1.5 1.5 1.5S8 12.5 8 12V3c0-.333.2-1 1-1s1 .667 1 1v7c.5.5.8 1.2 2 0V8c0-.333.2-1 1-1s1 .667 1 1v1h1c0-.333.2-1 1-1s1 .667 1 1v1h1c0-.333.2-1 1-1s1 .667 1 1v3.5c0 2.833-1.7 8.5-8.5 8.5z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.5 22C4.7 22 3 16.333 3 13.5V10c0-.333.2-1 1-1s1 .667 1 1v2c0 .5.3 1.5 1.5 1.5S8 12.5 8 12V3c0-.333.2-1 1-1s1 .667 1 1v7c.5.5.8 1.2 2 0V8c0-.333.2-1 1-1s1 .667 1 1v1h1c0-.333.2-1 1-1s1 .667 1 1v1h1c0-.333.2-1 1-1s1 .667 1 1v3.5c0 2.833-1.7 8.5-8.5 8.5"/>`), g.Group(children),
 	)
 }
 
@@ -3403,7 +3403,7 @@ func HandPointerTwoLine(children ...g.Node) g.Node {
 func HardDrive(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4 5a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v9H4V5zm0 11v3a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-3H4zm9 2a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2h-3z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4 5a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v9H4zm0 11v3a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-3zm9 2a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -3431,189 +3431,189 @@ func HashtagLine(children ...g.Node) g.Node {
 func Headset(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M4 18v-7c0-2.333 2.4-7 8-7s8 4.667 8 7v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h3v-3c0-2.333-2.4-7-8-7s-8 4.667-8 7v3h3a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 14v4a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2H4zm0 0v-3c0-2.333 2.4-7 8-7s8 4.667 8 7v3m0 0v4a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h3z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M4 18v-7c0-2.333 2.4-7 8-7s8 4.667 8 7v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h3v-3c0-2.333-2.4-7-8-7s-8 4.667-8 7v3h3a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 14v4a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2zm0 0v-3c0-2.333 2.4-7 8-7s8 4.667 8 7v3m0 0v4a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2z"/></g>`), g.Group(children),
 	)
 }
 
 func HeadsetLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 14v4a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2H4zm0 0v-3c0-2.333 2.4-7 8-7s8 4.667 8 7v3m0 0v4a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h3z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 14v4a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2zm0 0v-3c0-2.333 2.4-7 8-7s8 4.667 8 7v3m0 0v4a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2z"/>`), g.Group(children),
 	)
 }
 
 func Heart(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 4c-3.2 0-5 2.667-5 4c0-1.333-1.8-4-5-4S3 6.667 3 8c0 7 9 12 9 12s9-5 9-12c0-1.333-.8-4-4-4z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 4c-3.2 0-5 2.667-5 4c0-1.333-1.8-4-5-4S3 6.667 3 8c0 7 9 12 9 12s9-5 9-12c0-1.333-.8-4-4-4"/>`), g.Group(children),
 	)
 }
 
 func HeartLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 4c-3.2 0-5 2.667-5 4c0-1.333-1.8-4-5-4S3 6.667 3 8c0 7 9 12 9 12s9-5 9-12c0-1.333-.8-4-4-4z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 4c-3.2 0-5 2.667-5 4c0-1.333-1.8-4-5-4S3 6.667 3 8c0 7 9 12 9 12s9-5 9-12c0-1.333-.8-4-4-4"/>`), g.Group(children),
 	)
 }
 
 func Home(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 19v-8.5a1 1 0 0 0-.4-.8l-7-5.25a1 1 0 0 0-1.2 0l-7 5.25a1 1 0 0 0-.4.8V19a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 19v-8.5a1 1 0 0 0-.4-.8l-7-5.25a1 1 0 0 0-1.2 0l-7 5.25a1 1 0 0 0-.4.8V19a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1"/>`), g.Group(children),
 	)
 }
 
 func HomeAnalytics(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M10.8 3.65a2 2 0 0 1 2.4 0l7 5.25l-.6.8l.6-.8a2 2 0 0 1 .8 1.6V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-8.5a2 2 0 0 1 .8-1.6l7-5.25zM13 10a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0v-6zm-4 3a1 1 0 1 0-2 0v3a1 1 0 1 0 2 0v-3zm8 2a1 1 0 1 0-2 0v1a1 1 0 1 0 2 0v-1z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M10.8 3.65a2 2 0 0 1 2.4 0l7 5.25l-.6.8l.6-.8a2 2 0 0 1 .8 1.6V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-8.5a2 2 0 0 1 .8-1.6zM13 10a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0zm-4 3a1 1 0 1 0-2 0v3a1 1 0 1 0 2 0zm8 2a1 1 0 1 0-2 0v1a1 1 0 1 0 2 0z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func HomeAnalyticsLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 19v-8.5a1 1 0 0 0-.4-.8l-7-5.25a1 1 0 0 0-1.2 0l-7 5.25a1 1 0 0 0-.4.8V19a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1zM8 13v3m4-6v6m4-1v1"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 19v-8.5a1 1 0 0 0-.4-.8l-7-5.25a1 1 0 0 0-1.2 0l-7 5.25a1 1 0 0 0-.4.8V19a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1M8 13v3m4-6v6m4-1v1"/>`), g.Group(children),
 	)
 }
 
 func HomeLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 19v-8.5a1 1 0 0 0-.4-.8l-7-5.25a1 1 0 0 0-1.2 0l-7 5.25a1 1 0 0 0-.4.8V19a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 19v-8.5a1 1 0 0 0-.4-.8l-7-5.25a1 1 0 0 0-1.2 0l-7 5.25a1 1 0 0 0-.4.8V19a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1"/>`), g.Group(children),
 	)
 }
 
 func HomeSimple(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 19v-8.5a1 1 0 0 0-.4-.8l-7-5.25a1 1 0 0 0-1.2 0l-7 5.25a1 1 0 0 0-.4.8V19a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 19v-8.5a1 1 0 0 0-.4-.8l-7-5.25a1 1 0 0 0-1.2 0l-7 5.25a1 1 0 0 0-.4.8V19a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1"/>`), g.Group(children),
 	)
 }
 
 func HomeSimpleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 19v-8.5a1 1 0 0 0-.4-.8l-7-5.25a1 1 0 0 0-1.2 0l-7 5.25a1 1 0 0 0-.4.8V19a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 19v-8.5a1 1 0 0 0-.4-.8l-7-5.25a1 1 0 0 0-1.2 0l-7 5.25a1 1 0 0 0-.4.8V19a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1"/>`), g.Group(children),
 	)
 }
 
 func Image(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v6.5a1 1 0 0 1-.032.25A1 1 0 0 1 22 12v7a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-3a1 1 0 0 1 .032-.25A1.002 1.002 0 0 1 2 15.5V5zm2.994 9.83c-.348.006-.68.022-.994.046V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v6.016c-4.297.139-7.4 1.174-9.58 2.623c.826.293 1.75.71 2.656 1.256c1.399.84 2.821 2.02 3.778 3.583a1 1 0 1 1-1.706 1.044c-.736-1.203-1.878-2.178-3.102-2.913c-1.222-.734-2.465-1.192-3.327-1.392a15.466 15.466 0 0 0-3.703-.386h-.022zm1.984-8.342A2.674 2.674 0 0 1 8.5 6c.41 0 1.003.115 1.522.488c.57.41.978 1.086.978 2.012c0 .926-.408 1.601-.978 2.011A2.674 2.674 0 0 1 8.5 11c-.41 0-1.003-.115-1.522-.489C6.408 10.101 6 9.427 6 8.5c0-.926.408-1.601.978-2.012z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v6.5a1 1 0 0 1-.032.25A1 1 0 0 1 22 12v7a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-3a1 1 0 0 1 .032-.25A1 1 0 0 1 2 15.5zm2.994 9.83q-.522.01-.994.046V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v6.016c-4.297.139-7.4 1.174-9.58 2.623c.826.293 1.75.71 2.656 1.256c1.399.84 2.821 2.02 3.778 3.583a1 1 0 1 1-1.706 1.044c-.736-1.203-1.878-2.178-3.102-2.913c-1.222-.734-2.465-1.192-3.327-1.392a15.5 15.5 0 0 0-3.703-.386h-.022zm1.984-8.342A2.67 2.67 0 0 1 8.5 6c.41 0 1.003.115 1.522.488c.57.41.978 1.086.978 2.012s-.408 1.601-.978 2.011A2.67 2.67 0 0 1 8.5 11c-.41 0-1.003-.115-1.522-.489C6.408 10.101 6 9.427 6 8.5c0-.926.408-1.601.978-2.012" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ImageCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M6.978 6.488A2.674 2.674 0 0 1 8.5 6c.41 0 1.003.115 1.522.488c.57.41.978 1.086.978 2.012c0 .926-.408 1.601-.978 2.011A2.674 2.674 0 0 1 8.5 11c-.41 0-1.003-.115-1.522-.489C6.408 10.101 6 9.427 6 8.5c0-.926.408-1.601.978-2.012zm9.353 15.456C18.611 21.177 23 18.143 23 12a1 1 0 0 0-1-1h-1c-4.803 0-8.21 1.072-10.555 2.622c2.035.662 4.076 1.82 5.63 3.751a1 1 0 0 1-1.56 1.254c-1.515-1.884-3.65-2.912-5.796-3.41a15.464 15.464 0 0 0-3.531-.388c-.784.003-1.477.066-2.024.157a1.005 1.005 0 0 1-.232.012l-.096.016a1 1 0 0 0-.76 1.367c.652 1.584 2.135 3.723 4.51 5.097c2.42 1.399 5.684 1.958 9.745.466z" clip-rule="evenodd"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M6.978 6.488A2.67 2.67 0 0 1 8.5 6c.41 0 1.003.115 1.522.488c.57.41.978 1.086.978 2.012s-.408 1.601-.978 2.011A2.67 2.67 0 0 1 8.5 11c-.41 0-1.003-.115-1.522-.489C6.408 10.101 6 9.427 6 8.5c0-.926.408-1.601.978-2.012m9.353 15.456C18.611 21.177 23 18.143 23 12a1 1 0 0 0-1-1h-1c-4.803 0-8.21 1.072-10.555 2.622c2.035.662 4.076 1.82 5.63 3.751a1 1 0 0 1-1.56 1.254c-1.515-1.884-3.65-2.912-5.796-3.41a15.5 15.5 0 0 0-3.531-.388c-.784.003-1.477.066-2.024.157a1 1 0 0 1-.232.012l-.096.016a1 1 0 0 0-.76 1.367c.652 1.584 2.135 3.723 4.51 5.097c2.42 1.399 5.684 1.958 9.745.466" clip-rule="evenodd"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></g>`), g.Group(children),
 	)
 }
 
 func ImageCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 16c1.403-.234 3.637-.293 5.945.243M16 21c-1.704-2.768-4.427-4.148-7.055-4.757m0 0C10.895 13.985 14.558 12 21 12h1M8.5 7C8 7 7 7.3 7 8.5S8 10 8.5 10S10 9.7 10 8.5S9 7 8.5 7z"/><circle cx="12" cy="12" r="10"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 16c1.403-.234 3.637-.293 5.945.243M16 21c-1.704-2.768-4.427-4.148-7.055-4.757m0 0C10.895 13.985 14.558 12 21 12h1M8.5 7C8 7 7 7.3 7 8.5S8 10 8.5 10S10 9.7 10 8.5S9 7 8.5 7"/><circle cx="12" cy="12" r="10"/></g>`), g.Group(children),
 	)
 }
 
 func ImageCircleOff(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.859 5A9.968 9.968 0 0 0 2 12c0 5.523 4.477 10 10 10a9.967 9.967 0 0 0 7-2.859M21.542 15A9.997 9.997 0 0 0 22 12c0-5.523-4.477-10-10-10a9.966 9.966 0 0 0-4 .832M2 2l20 20"/><path fill="currentColor" fill-rule="evenodd" d="M6.346 7.174C6.13 7.534 6 7.977 6 8.5c0 .926.408 1.601.978 2.011A2.674 2.674 0 0 0 8.5 11c.357 0 .852-.087 1.316-.355l-3.47-3.47zm5.598 5.599c-.542.261-1.04.546-1.5.849c2.036.662 4.077 1.82 5.63 3.751a1 1 0 0 1-1.558 1.254c-1.516-1.884-3.65-2.912-5.797-3.41a15.464 15.464 0 0 0-3.531-.388c-.784.003-1.477.066-2.024.157a1.005 1.005 0 0 1-.232.012l-.096.016a1 1 0 0 0-.76 1.367c.652 1.584 2.135 3.723 4.51 5.097c2.42 1.399 5.684 1.958 9.745.465c.829-.278 1.936-.856 3.01-1.774l-7.397-7.396zm9.898 4.24C22.541 15.65 23 13.988 23 12a1 1 0 0 0-1-1h-1c-1.772 0-3.355.146-4.763.408l5.605 5.606z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.859 5A9.97 9.97 0 0 0 2 12c0 5.523 4.477 10 10 10a9.97 9.97 0 0 0 7-2.859M21.542 15A10 10 0 0 0 22 12c0-5.523-4.477-10-10-10a10 10 0 0 0-4 .832M2 2l20 20"/><path fill="currentColor" fill-rule="evenodd" d="M6.346 7.174C6.13 7.534 6 7.977 6 8.5c0 .926.408 1.601.978 2.011A2.67 2.67 0 0 0 8.5 11c.357 0 .852-.087 1.316-.355zm5.598 5.599q-.811.393-1.5.849c2.036.662 4.077 1.82 5.63 3.751a1 1 0 0 1-1.558 1.254c-1.516-1.884-3.65-2.912-5.797-3.41a15.5 15.5 0 0 0-3.531-.388c-.784.003-1.477.066-2.024.157a1 1 0 0 1-.232.012l-.096.016a1 1 0 0 0-.76 1.367c.652 1.584 2.135 3.723 4.51 5.097c2.42 1.399 5.684 1.958 9.745.465c.829-.278 1.936-.856 3.01-1.774zm9.898 4.24C22.541 15.65 23 13.988 23 12a1 1 0 0 0-1-1h-1c-1.772 0-3.355.146-4.763.408z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func ImageCircleOffLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 16c1.403-.234 3.637-.293 5.945.243M16 21c-1.704-2.768-4.427-4.148-7.055-4.757m0 0c.927-1.073 2.24-2.084 4.055-2.85M22 12h-1c-1.475 0-2.804.104-4 .291M7.341 7.5C7.14 7.728 7 8.051 7 8.5C7 9.7 8 10 8.5 10a1.66 1.66 0 0 0 1-.348"/><path d="M4.859 5A9.968 9.968 0 0 0 2 12c0 5.523 4.477 10 10 10a9.967 9.967 0 0 0 7-2.859M8 2.832A9.966 9.966 0 0 1 12 2c5.523 0 10 4.477 10 10a9.997 9.997 0 0 1-.832 4M2 2l20 20"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 16c1.403-.234 3.637-.293 5.945.243M16 21c-1.704-2.768-4.427-4.148-7.055-4.757m0 0c.927-1.073 2.24-2.084 4.055-2.85M22 12h-1c-1.475 0-2.804.104-4 .291M7.341 7.5C7.14 7.728 7 8.051 7 8.5C7 9.7 8 10 8.5 10a1.66 1.66 0 0 0 1-.348"/><path d="M4.859 5A9.97 9.97 0 0 0 2 12c0 5.523 4.477 10 10 10a9.97 9.97 0 0 0 7-2.859M8 2.832A10 10 0 0 1 12 2c5.523 0 10 4.477 10 10a10 10 0 0 1-.832 4M2 2l20 20"/></g>`), g.Group(children),
 	)
 }
 
 func ImageCirclePlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m7 0v3m0 3V5m0 0h3m-3 0h-3"/><path fill="currentColor" fill-rule="evenodd" d="M6.978 6.488A2.674 2.674 0 0 1 8.5 6c.41 0 1.003.115 1.522.488c.57.41.978 1.086.978 2.012c0 .926-.408 1.601-.978 2.011A2.674 2.674 0 0 1 8.5 11c-.41 0-1.003-.115-1.522-.489C6.408 10.101 6 9.427 6 8.5c0-.926.408-1.601.978-2.012zm9.353 15.456C18.611 21.177 23 18.143 23 12a1 1 0 0 0-1-1h-1c-4.803 0-8.21 1.072-10.555 2.622c2.035.662 4.076 1.82 5.63 3.751a1 1 0 0 1-1.56 1.254c-1.515-1.884-3.65-2.912-5.796-3.41a15.464 15.464 0 0 0-3.531-.388c-.784.003-1.477.066-2.024.157a1.005 1.005 0 0 1-.232.012l-.096.016a1 1 0 0 0-.76 1.367c.652 1.584 2.135 3.723 4.51 5.097c2.42 1.399 5.684 1.958 9.745.466z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m7 0v3m0 3V5m0 0h3m-3 0h-3"/><path fill="currentColor" fill-rule="evenodd" d="M6.978 6.488A2.67 2.67 0 0 1 8.5 6c.41 0 1.003.115 1.522.488c.57.41.978 1.086.978 2.012s-.408 1.601-.978 2.011A2.67 2.67 0 0 1 8.5 11c-.41 0-1.003-.115-1.522-.489C6.408 10.101 6 9.427 6 8.5c0-.926.408-1.601.978-2.012m9.353 15.456C18.611 21.177 23 18.143 23 12a1 1 0 0 0-1-1h-1c-4.803 0-8.21 1.072-10.555 2.622c2.035.662 4.076 1.82 5.63 3.751a1 1 0 0 1-1.56 1.254c-1.515-1.884-3.65-2.912-5.796-3.41a15.5 15.5 0 0 0-3.531-.388c-.784.003-1.477.066-2.024.157a1 1 0 0 1-.232.012l-.096.016a1 1 0 0 0-.76 1.367c.652 1.584 2.135 3.723 4.51 5.097c2.42 1.399 5.684 1.958 9.745.466" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func ImageCirclePlusLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 16c1.403-.234 3.637-.293 5.945.243M16 21c-1.704-2.768-4.427-4.148-7.055-4.757m0 0C10.895 13.985 14.558 12 21 12h1M8.5 7C8 7 7 7.3 7 8.5S8 10 8.5 10S10 9.7 10 8.5S9 7 8.5 7z"/><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m7 0v3m0 3V5m0 0h3m-3 0h-3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 16c1.403-.234 3.637-.293 5.945.243M16 21c-1.704-2.768-4.427-4.148-7.055-4.757m0 0C10.895 13.985 14.558 12 21 12h1M8.5 7C8 7 7 7.3 7 8.5S8 10 8.5 10S10 9.7 10 8.5S9 7 8.5 7"/><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m7 0v3m0 3V5m0 0h3m-3 0h-3"/></g>`), g.Group(children),
 	)
 }
 
 func ImageCircleStory(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 12a9.966 9.966 0 0 1-.832 4M12 22a9.966 9.966 0 0 0 7.071-2.929M2 12a9.966 9.966 0 0 1 2.929-7.071M12 2a9.966 9.966 0 0 0-4 .832m0 18.336A10.02 10.02 0 0 1 2.832 16m13-13A10.02 10.02 0 0 1 21 8.168"/><path fill="currentColor" fill-rule="evenodd" d="M7.545 12.095a4.55 4.55 0 0 1 9.068-.54c-2.271.051-3.942.557-5.143 1.284c1.085.378 2.17 1.018 3.007 2.059a.75.75 0 0 1-1.169.94c-.79-.981-1.907-1.524-3.049-1.789a8.265 8.265 0 0 0-2.359-.19a4.535 4.535 0 0 1-.355-1.764zm4.55-6.36a6.36 6.36 0 1 0 0 12.72a6.36 6.36 0 0 0 0-12.72zm-1.909 3.087c-.224 0-.547.063-.83.267c-.31.224-.534.592-.534 1.097s.223.873.534 1.097c.283.204.606.267.83.267c.224 0 .547-.063.83-.267c.311-.224.534-.592.534-1.097s-.223-.873-.534-1.097a1.459 1.459 0 0 0-.83-.267z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 12a10 10 0 0 1-.832 4M12 22a9.97 9.97 0 0 0 7.071-2.929M2 12a9.97 9.97 0 0 1 2.929-7.071M12 2a10 10 0 0 0-4 .832m0 18.336A10.02 10.02 0 0 1 2.832 16m13-13A10.02 10.02 0 0 1 21 8.168"/><path fill="currentColor" fill-rule="evenodd" d="M7.545 12.095a4.55 4.55 0 0 1 9.068-.54c-2.271.051-3.942.557-5.143 1.284c1.085.378 2.17 1.018 3.007 2.059a.75.75 0 0 1-1.169.94c-.79-.981-1.907-1.524-3.049-1.789a8.3 8.3 0 0 0-2.359-.19a4.5 4.5 0 0 1-.355-1.764m4.55-6.36a6.36 6.36 0 1 0 0 12.72a6.36 6.36 0 0 0 0-12.72m-1.909 3.087c-.224 0-.547.063-.83.267c-.31.224-.534.592-.534 1.097s.223.873.534 1.097c.283.204.606.267.83.267s.547-.063.83-.267c.311-.224.534-.592.534-1.097s-.223-.873-.534-1.097a1.46 1.46 0 0 0-.83-.267" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func ImageCircleStoryLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M11.23 13.92c1.598.614 2.56 1.587 3.77 3.08m-3.77-3.08c-1.943-.747-3.405-.942-4.73-.92m4.73.92c1.515-1.666 2.51-2.867 6.27-3.42M10 10h.001"/><circle cx="12" cy="12" r="6"/><path d="M22 12a9.966 9.966 0 0 1-.832 4M12 22a9.966 9.966 0 0 0 7.071-2.929M2 12a9.966 9.966 0 0 1 2.929-7.071M12 2a9.966 9.966 0 0 0-4 .832m0 18.336A10.02 10.02 0 0 1 2.832 16m13-13A10.02 10.02 0 0 1 21 8.168"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M11.23 13.92c1.598.614 2.56 1.587 3.77 3.08m-3.77-3.08c-1.943-.747-3.405-.942-4.73-.92m4.73.92c1.515-1.666 2.51-2.867 6.27-3.42M10 10"/><circle cx="12" cy="12" r="6"/><path d="M22 12a10 10 0 0 1-.832 4M12 22a9.97 9.97 0 0 0 7.071-2.929M2 12a9.97 9.97 0 0 1 2.929-7.071M12 2a10 10 0 0 0-4 .832m0 18.336A10.02 10.02 0 0 1 2.832 16m13-13A10.02 10.02 0 0 1 21 8.168"/></g>`), g.Group(children),
 	)
 }
 
 func ImageFrame(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12.707 4.121a1 1 0 0 0-1.414 0L10.414 5h3.172l-.879-.879zm3.66.879a1.003 1.003 0 0 0-.16-.207l-2.086-2.086a3 3 0 0 0-4.242 0L7.793 4.793a1.001 1.001 0 0 0-.16.207H5a3 3 0 0 0-3 3v6.5c0 .086.01.17.031.25c-.02.08-.031.164-.031.25v3a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-5a1 1 0 0 0-.032-.25a.985.985 0 0 0 .032-.25V8a3 3 0 0 0-3-3h-2.634zM20 11.986V8a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v6.016A1 1 0 0 0 5 15c2.689 0 4.861.353 6.585.87c2.34.702 3.853 1.708 4.717 2.551a1 1 0 1 0 1.396-1.431c-1.12-1.094-2.925-2.252-5.539-3.036a19.62 19.62 0 0 0-.773-.215c1.176-.573 2.472-.967 3.737-1.235A25.149 25.149 0 0 1 20 11.986zM5.978 8.488A2.674 2.674 0 0 1 7.5 8c.41 0 1.003.115 1.522.488c.57.41.978 1.086.978 2.012c0 .926-.408 1.601-.978 2.011A2.674 2.674 0 0 1 7.5 13c-.41 0-1.003-.115-1.522-.489C5.408 12.101 5 11.427 5 10.5c0-.926.408-1.601.978-2.012z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12.707 4.121a1 1 0 0 0-1.414 0L10.414 5h3.172zm3.66.879a1 1 0 0 0-.16-.207l-2.086-2.086a3 3 0 0 0-4.242 0L7.793 4.793a1 1 0 0 0-.16.207H5a3 3 0 0 0-3 3v6.5q0 .13.031.25q-.03.12-.031.25v3a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-5a1 1 0 0 0-.032-.25A1 1 0 0 0 22 12.5V8a3 3 0 0 0-3-3h-2.634zM20 11.986V8a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v6.016A1 1 0 0 0 5 15c2.689 0 4.861.353 6.585.87c2.34.702 3.853 1.708 4.717 2.551a1 1 0 1 0 1.396-1.431c-1.12-1.094-2.925-2.252-5.539-3.036a20 20 0 0 0-.773-.215c1.176-.573 2.472-.967 3.737-1.235A25 25 0 0 1 20 11.986M5.978 8.488A2.67 2.67 0 0 1 7.5 8c.41 0 1.003.115 1.522.488c.57.41.978 1.086.978 2.012s-.408 1.601-.978 2.011A2.67 2.67 0 0 1 7.5 13c-.41 0-1.003-.115-1.522-.489C5.408 12.101 5 11.427 5 10.5c0-.926.408-1.601.978-2.012" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ImageFrameLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 20h3a2 2 0 0 0 2-2v-5m-5 7H5a2 2 0 0 1-2-2v-3m13 5c-.558-1.116-2.43-2.979-6.128-4.088M21 13V8a2 2 0 0 0-2-2h-3m5 7c-3.076-.118-8.335.435-11.128 2.912M3 15V8a2 2 0 0 1 2-2h3m-5 9c2.776 0 5.047.364 6.872.912M8 6l2.586-2.586a2 2 0 0 1 2.828 0L16 6M8 6h8M7.5 9C7 9 6 9.3 6 10.5S7 12 7.5 12S9 11.7 9 10.5S8 9 7.5 9z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 20h3a2 2 0 0 0 2-2v-5m-5 7H5a2 2 0 0 1-2-2v-3m13 5c-.558-1.116-2.43-2.979-6.128-4.088M21 13V8a2 2 0 0 0-2-2h-3m5 7c-3.076-.118-8.335.435-11.128 2.912M3 15V8a2 2 0 0 1 2-2h3m-5 9c2.776 0 5.047.364 6.872.912M8 6l2.586-2.586a2 2 0 0 1 2.828 0L16 6M8 6h8M7.5 9C7 9 6 9.3 6 10.5S7 12 7.5 12S9 11.7 9 10.5S8 9 7.5 9"/>`), g.Group(children),
 	)
 }
 
 func ImageInPicture(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h.001M20 8h.001M20 12h.001M20 16h.001M20 20h.001M16 20h.001M4 4h.001M8 4h.001M12 4h.001M16 4h.001M20 4h.001"/><path fill="currentColor" fill-rule="evenodd" d="M3 13a3 3 0 0 1 3-3h5a3 3 0 0 1 3 3v1h-1c-1.14 0-2.624.28-3.85 1.2C7.876 16.156 7 17.715 7 20v1H6a3 3 0 0 1-3-3v-5zm6 8h2a3 3 0 0 0 3-3v-2h-1c-.86 0-1.876.22-2.65.8C9.624 17.344 9 18.285 9 20v1zm-3-9a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H6z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h.001M20 8h.001M20 12h.001M20 16h.001M20 20h.001M16 20h.001M4 4h.001M16 4h.001M20 4h.001"/><path fill="currentColor" fill-rule="evenodd" d="M3 13a3 3 0 0 1 3-3h5a3 3 0 0 1 3 3v1h-1c-1.14 0-2.624.28-3.85 1.2C7.876 16.156 7 17.715 7 20v1H6a3 3 0 0 1-3-3zm6 8h2a3 3 0 0 0 3-3v-2h-1c-.86 0-1.876.22-2.65.8C9.624 17.344 9 18.285 9 20zm-3-9a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func ImageInPictureLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 15v-2a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h2m5-5v3a2 2 0 0 1-2 2H8m5-5c-2 0-5 1-5 5m-1-6h.01M4 8h.001M20 8h.001M20 12h.001M20 16h.001M20 20h.001M16 20h.001M4 4h.001M8 4h.001M12 4h.001M16 4h.001M20 4h.001"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 15v-2a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h2m5-5v3a2 2 0 0 1-2 2H8m5-5c-2 0-5 1-5 5m-1-6h.01M4 8h.001M20 8h.001M20 12h.001M20 16h.001M20 20h.001M16 20h.001M4 4h.001M16 4h.001M20 4h.001"/>`), g.Group(children),
 	)
 }
 
 func ImageLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v11m18-4v7a2 2 0 0 1-2 2h-3m5-9c-6.442 0-10.105 1.985-12.055 4.243M3 16v3a2 2 0 0 0 2 2v0h11M3 16c1.403-.234 3.637-.293 5.945.243M16 21c-1.704-2.768-4.427-4.148-7.055-4.757M8.5 7C8 7 7 7.3 7 8.5S8 10 8.5 10S10 9.7 10 8.5S9 7 8.5 7z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v11m18-4v7a2 2 0 0 1-2 2h-3m5-9c-6.442 0-10.105 1.985-12.055 4.243M3 16v3a2 2 0 0 0 2 2v0h11M3 16c1.403-.234 3.637-.293 5.945.243M16 21c-1.704-2.768-4.427-4.148-7.055-4.757M8.5 7C8 7 7 7.3 7 8.5S8 10 8.5 10S10 9.7 10 8.5S9 7 8.5 7"/>`), g.Group(children),
 	)
 }
 
 func ImageMultiple(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 6v12a4 4 0 0 1-4 4H6"/><path fill="currentColor" fill-rule="evenodd" d="M1 3.7A2.7 2.7 0 0 1 3.7 1h12.6A2.7 2.7 0 0 1 19 3.7v5.85c0 .078-.01.153-.028.225A.897.897 0 0 1 19 10v6.3a2.7 2.7 0 0 1-2.7 2.7H3.7A2.7 2.7 0 0 1 1 16.3v-2.7a.9.9 0 0 1 .028-.225A.902.902 0 0 1 1 13.15V3.7zm2.695 8.848a13.81 13.81 0 0 0-.895.04V3.7a.9.9 0 0 1 .9-.9h12.6a.9.9 0 0 1 .9.9v5.414c-3.868.125-6.66 1.057-8.623 2.36c.745.265 1.575.64 2.391 1.131c1.26.756 2.54 1.819 3.4 3.225a.9.9 0 1 1-1.535.94c-.663-1.083-1.69-1.96-2.792-2.622c-1.1-.66-2.218-1.073-2.994-1.253a13.924 13.924 0 0 0-3.333-.348h-.02zM5.48 5.04a2.403 2.403 0 0 1 1.37-.44c.369 0 .903.103 1.37.44c.513.369.88.977.88 1.81c0 .833-.367 1.441-.88 1.81a2.403 2.403 0 0 1-1.37.44c-.369 0-.903-.103-1.37-.44c-.513-.369-.88-.977-.88-1.81c0-.833.367-1.441.88-1.81z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 6v12a4 4 0 0 1-4 4H6"/><path fill="currentColor" fill-rule="evenodd" d="M1 3.7A2.7 2.7 0 0 1 3.7 1h12.6A2.7 2.7 0 0 1 19 3.7v5.85q0 .117-.028.225A1 1 0 0 1 19 10v6.3a2.7 2.7 0 0 1-2.7 2.7H3.7A2.7 2.7 0 0 1 1 16.3v-2.7a1 1 0 0 1 .028-.225A1 1 0 0 1 1 13.15zm2.695 8.848a14 14 0 0 0-.895.04V3.7a.9.9 0 0 1 .9-.9h12.6a.9.9 0 0 1 .9.9v5.414c-3.868.125-6.66 1.057-8.623 2.36c.745.265 1.575.64 2.391 1.131c1.26.756 2.54 1.819 3.4 3.225a.9.9 0 1 1-1.535.94c-.663-1.083-1.69-1.96-2.792-2.622c-1.1-.66-2.218-1.073-2.994-1.253a14 14 0 0 0-3.333-.348h-.02zM5.48 5.04a2.4 2.4 0 0 1 1.37-.44c.369 0 .903.103 1.37.44c.513.369.88.977.88 1.81s-.367 1.441-.88 1.81a2.4 2.4 0 0 1-1.37.44c-.369 0-.903-.103-1.37-.44c-.513-.369-.88-.977-.88-1.81s.367-1.441.88-1.81" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func ImageMultipleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 9V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v9m16-4v7a2 2 0 0 1-2 2h-2m4-9c-6.442 0-9.105 1.985-11.055 4.243M2 13v4a1 1 0 0 0 1 1v0h11M2 13c1.403-.234 2.637-.293 4.945.243M14 18c-1.704-2.768-4.427-4.148-7.055-4.757M6.5 5C6 5 5 5.3 5 6.5S6 8 6.5 8S8 7.7 8 6.5S7 5 6.5 5z"/><path d="M22 6v12a4 4 0 0 1-4 4H6"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 9V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v9m16-4v7a2 2 0 0 1-2 2h-2m4-9c-6.442 0-9.105 1.985-11.055 4.243M2 13v4a1 1 0 0 0 1 1v0h11M2 13c1.403-.234 2.637-.293 4.945.243M14 18c-1.704-2.768-4.427-4.148-7.055-4.757M6.5 5C6 5 5 5.3 5 6.5S6 8 6.5 8S8 7.7 8 6.5S7 5 6.5 5"/><path d="M22 6v12a4 4 0 0 1-4 4H6"/></g>`), g.Group(children),
 	)
 }
 
 func ImageOff(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m2 2l20 20"/><path fill="currentColor" fill-rule="evenodd" d="M2.505 3.333A2.986 2.986 0 0 0 2 5v10.5c0 .086.011.17.032.25A1 1 0 0 0 2 16v3a3 3 0 0 0 3 3h14c.617 0 1.19-.186 1.666-.505l-8.722-8.723c-.552.267-1.06.558-1.525.867c.827.293 1.75.71 2.657 1.256c1.399.84 2.821 2.02 3.778 3.583a1 1 0 1 1-1.706 1.044c-.736-1.203-1.878-2.178-3.102-2.913c-1.222-.734-2.465-1.192-3.327-1.392a15.466 15.466 0 0 0-3.703-.386h-.022c-.348.005-.68.02-.994.045V5a.93.93 0 0 1 .013-.159L2.505 3.333zm13.732 8.075A25.003 25.003 0 0 1 20 11.016V5a1 1 0 0 0-1-1H8.828l-2-2H19a3 3 0 0 1 3 3v6.5a1 1 0 0 1-.032.25A1 1 0 0 1 22 12v5.172l-5.763-5.764zM6.346 7.174C6.13 7.534 6 7.977 6 8.5c0 .926.408 1.601.978 2.011A2.674 2.674 0 0 0 8.5 11c.357 0 .852-.087 1.316-.355l-3.47-3.47z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m2 2l20 20"/><path fill="currentColor" fill-rule="evenodd" d="M2.505 3.333A3 3 0 0 0 2 5v10.5q0 .13.032.25A1 1 0 0 0 2 16v3a3 3 0 0 0 3 3h14c.617 0 1.19-.186 1.666-.505l-8.722-8.723q-.828.402-1.525.867c.827.293 1.75.71 2.657 1.256c1.399.84 2.821 2.02 3.778 3.583a1 1 0 1 1-1.706 1.044c-.736-1.203-1.878-2.178-3.102-2.913c-1.222-.734-2.465-1.192-3.327-1.392a15.5 15.5 0 0 0-3.703-.386h-.022q-.522.008-.994.045V5a1 1 0 0 1 .013-.159zm13.732 8.075A25 25 0 0 1 20 11.016V5a1 1 0 0 0-1-1H8.828l-2-2H19a3 3 0 0 1 3 3v6.5a1 1 0 0 1-.032.25A1 1 0 0 1 22 12v5.172zM6.346 7.174C6.13 7.534 6 7.977 6 8.5c0 .926.408 1.601.978 2.011A2.67 2.67 0 0 0 8.5 11c.357 0 .852-.087 1.316-.355z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -3627,28 +3627,28 @@ func ImageOffLine(children ...g.Node) g.Node {
 func ImagePhotography(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 10V5a1 1 0 0 1 1-1h1l2-2h4l2 2h1a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H11a1 1 0 0 1-1-1z"/><circle cx="16" cy="7" r="1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path fill="currentColor" fill-rule="evenodd" d="M7 2H5a3 3 0 0 0-3 3v10.5c0 .086.011.17.032.25A1 1 0 0 0 2 16v3a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-5H11.335c.567.246 1.157.544 1.741.895c1.399.84 2.821 2.02 3.778 3.583a1 1 0 1 1-1.706 1.044c-.736-1.203-1.878-2.178-3.102-2.913c-1.222-.734-2.465-1.192-3.327-1.392a15.466 15.466 0 0 0-3.703-.386h-.022c-.348.005-.68.02-.994.045V5a1 1 0 0 1 1-1h2V2zm0 4.473a2.23 2.23 0 0 0-.022.015C6.408 6.898 6 7.574 6 8.5c0 .926.408 1.601.978 2.011l.022.016V6.473z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 10V5a1 1 0 0 1 1-1h1l2-2h4l2 2h1a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H11a1 1 0 0 1-1-1"/><circle cx="16" cy="7" r="1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path fill="currentColor" fill-rule="evenodd" d="M7 2H5a3 3 0 0 0-3 3v10.5q0 .13.032.25A1 1 0 0 0 2 16v3a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-5H11.335c.567.246 1.157.544 1.741.895c1.399.84 2.821 2.02 3.778 3.583a1 1 0 1 1-1.706 1.044c-.736-1.203-1.878-2.178-3.102-2.913c-1.222-.734-2.465-1.192-3.327-1.392a15.5 15.5 0 0 0-3.703-.386h-.022q-.522.008-.994.045V5a1 1 0 0 1 1-1h2zm0 4.473l-.022.015C6.408 6.898 6 7.574 6 8.5s.408 1.601.978 2.011l.022.016z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func ImagePhotographyLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 8c-.5 0-1.5.3-1.5 1.5S6.5 11 7 11m-5 6v3a2 2 0 0 0 2 2v0h11M2 17V6a2 2 0 0 1 2-2h3M2 17c1.403-.234 3.637-.293 5.945.243M15 22h3a2 2 0 0 0 2-2v-6m-5 8c-1.704-2.768-4.427-4.148-7.055-4.757m0 0c1.095-1.268 2.73-2.45 5.096-3.243M10 10V5a1 1 0 0 1 1-1h1l2-2h4l2 2h1a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H11a1 1 0 0 1-1-1z"/><circle cx="16" cy="7" r="1"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 8c-.5 0-1.5.3-1.5 1.5S6.5 11 7 11m-5 6v3a2 2 0 0 0 2 2v0h11M2 17V6a2 2 0 0 1 2-2h3M2 17c1.403-.234 3.637-.293 5.945.243M15 22h3a2 2 0 0 0 2-2v-6m-5 8c-1.704-2.768-4.427-4.148-7.055-4.757m0 0c1.095-1.268 2.73-2.45 5.096-3.243M10 10V5a1 1 0 0 1 1-1h1l2-2h4l2 2h1a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H11a1 1 0 0 1-1-1"/><circle cx="16" cy="7" r="1"/></g>`), g.Group(children),
 	)
 }
 
 func ImagePlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 2v3m0 3V5m0 0h3m-3 0h-3"/><path fill="currentColor" fill-rule="evenodd" d="M13 2H5a3 3 0 0 0-3 3v10.5c0 .086.011.17.032.25A1 1 0 0 0 2 16v3a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-7a1 1 0 0 0-.032-.25A1 1 0 0 0 22 11.5V11h-2v.016c-4.297.139-7.4 1.174-9.58 2.623c.826.293 1.75.71 2.656 1.256c1.399.84 2.821 2.02 3.778 3.583a1 1 0 1 1-1.706 1.044c-.736-1.203-1.878-2.178-3.102-2.913c-1.222-.734-2.465-1.192-3.327-1.392a15.466 15.466 0 0 0-3.703-.386h-.022c-.348.005-.68.02-.994.045V5a1 1 0 0 1 1-1h8V2zM8.5 6a2.68 2.68 0 0 0-1.522.488C6.408 6.898 6 7.574 6 8.5c0 .926.408 1.601.978 2.011A2.674 2.674 0 0 0 8.5 11c.41 0 1.003-.115 1.522-.489c.57-.41.978-1.085.978-2.011c0-.926-.408-1.601-.978-2.012A2.674 2.674 0 0 0 8.5 6z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 2v3m0 3V5m0 0h3m-3 0h-3"/><path fill="currentColor" fill-rule="evenodd" d="M13 2H5a3 3 0 0 0-3 3v10.5q0 .13.032.25A1 1 0 0 0 2 16v3a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-7a1 1 0 0 0-.032-.25A1 1 0 0 0 22 11.5V11h-2v.016c-4.297.139-7.4 1.174-9.58 2.623c.826.293 1.75.71 2.656 1.256c1.399.84 2.821 2.02 3.778 3.583a1 1 0 1 1-1.706 1.044c-.736-1.203-1.878-2.178-3.102-2.913c-1.222-.734-2.465-1.192-3.327-1.392a15.5 15.5 0 0 0-3.703-.386h-.022q-.522.008-.994.045V5a1 1 0 0 1 1-1h8zM8.5 6a2.7 2.7 0 0 0-1.522.488C6.408 6.898 6 7.574 6 8.5s.408 1.601.978 2.011A2.67 2.67 0 0 0 8.5 11c.41 0 1.003-.115 1.522-.489c.57-.41.978-1.085.978-2.011s-.408-1.601-.978-2.012A2.67 2.67 0 0 0 8.5 6" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func ImagePlusLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12v7a2 2 0 0 1-2 2h-3m5-9c-6.442 0-10.105 1.985-12.055 4.243M21 12v-1.5M3 16v3a2 2 0 0 0 2 2v0h11M3 16V5a2 2 0 0 1 2-2h8M3 16c1.403-.234 3.637-.293 5.945.243M16 21c-1.704-2.768-4.427-4.148-7.055-4.757M8.5 7C8 7 7 7.3 7 8.5S8 10 8.5 10S10 9.7 10 8.5S9 7 8.5 7zM19 2v3m0 3V5m0 0h3m-3 0h-3"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12v7a2 2 0 0 1-2 2h-3m5-9c-6.442 0-10.105 1.985-12.055 4.243M21 12v-1.5M3 16v3a2 2 0 0 0 2 2v0h11M3 16V5a2 2 0 0 1 2-2h8M3 16c1.403-.234 3.637-.293 5.945.243M16 21c-1.704-2.768-4.427-4.148-7.055-4.757M8.5 7C8 7 7 7.3 7 8.5S8 10 8.5 10S10 9.7 10 8.5S9 7 8.5 7M19 2v3m0 3V5m0 0h3m-3 0h-3"/>`), g.Group(children),
 	)
 }
 
@@ -3683,7 +3683,7 @@ func InboxLine(children ...g.Node) g.Node {
 func Incognito(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M19 6v5H5V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 11h2m16.5 0H19m0 0V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v5m14 0H5"/><circle cx="7" cy="17" r="3" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><circle cx="17" cy="17" r="3" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 16h4"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M19 6v5H5V6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 11h2m16.5 0H19m0 0V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v5m14 0H5"/><circle cx="7" cy="17" r="3" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><circle cx="17" cy="17" r="3" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 16h4"/></g>`), g.Group(children),
 	)
 }
 
@@ -3697,14 +3697,14 @@ func IncognitoLine(children ...g.Node) g.Node {
 func InfoCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2zm0 14a1 1 0 0 0 1-1v-3a1 1 0 1 0-2 0v3a1 1 0 0 0 1 1zm1-7a1 1 0 1 1-2 0a1 1 0 1 1 2 0z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2m0 14a1 1 0 0 0 1-1v-3a1 1 0 1 0-2 0v3a1 1 0 0 0 1 1m1-7a1 1 0 1 1-2 0a1 1 0 1 1 2 0" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func InfoCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 15v-3m0-3v0"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 15v-3m0-3"/></g>`), g.Group(children),
 	)
 }
 
@@ -3725,28 +3725,28 @@ func InformationCircleLine(children ...g.Node) g.Node {
 func IphoneOldApps(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5 5a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V5zm3 1.001a1 1 0 0 0 2 0V6a1 1 0 1 0-2 0v.001zm4 1a1 1 0 0 1-1-1V6a1 1 0 1 1 2 0v.001a1 1 0 0 1-1 1zm2-1a1 1 0 1 0 2 0V6a1 1 0 1 0-2 0v.001zm-5 4a1 1 0 0 1-1-1V9a1 1 0 1 1 2 0v.001a1 1 0 0 1-1 1zm2-1a1 1 0 1 0 2 0V9a1 1 0 1 0-2 0v.001zm4 1a1 1 0 0 1-1-1V9a1 1 0 1 1 2 0v.001a1 1 0 0 1-1 1zm-7 2a1 1 0 1 0 2 0V12a1 1 0 1 0-2 0v.001zm4 1a1 1 0 0 1-1-1V12a1 1 0 1 1 2 0v.001a1 1 0 0 1-1 1zm-1 5a1 1 0 1 0 2 0V18a1 1 0 1 0-2 0v.001z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5 5a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3zm3 1.001a1 1 0 0 0 2 0V6a1 1 0 1 0-2 0zm4 1a1 1 0 0 1-1-1V6a1 1 0 1 1 2 0v.001a1 1 0 0 1-1 1m2-1a1 1 0 1 0 2 0V6a1 1 0 1 0-2 0zm-5 4a1 1 0 0 1-1-1V9a1 1 0 1 1 2 0v.001a1 1 0 0 1-1 1m2-1a1 1 0 1 0 2 0V9a1 1 0 1 0-2 0zm4 1a1 1 0 0 1-1-1V9a1 1 0 1 1 2 0v.001a1 1 0 0 1-1 1m-7 2a1 1 0 1 0 2 0V12a1 1 0 1 0-2 0zm4 1a1 1 0 0 1-1-1V12a1 1 0 1 1 2 0v.001a1 1 0 0 1-1 1m-1 5a1 1 0 1 0 2 0V18a1 1 0 1 0-2 0z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func IphoneOldAppsLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 19V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9 6.001V6m3 .001V6m3 .001V6M9 9.001V9m3 .001V9m3 .001V9m-6 3.001V12m3 .001V12m0 6.001V18"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 19V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9 6.001V6m3 .001V6m3 .001V6m-3 12.006V18"/>`), g.Group(children),
 	)
 }
 
 func IphoneXApps(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 3H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-2m-4 0h4m-4 0v1m4-1v1m0 0v0a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v0m4 0h-4M9 8.001V8m0 3.001V11m3 .001V11m0-2.999V8m3 .001V8m0 3.001V11m-6 3.001V14m3 .001V14"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 3H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-2m-4 0h4m-4 0v1m4-1v1m0 0a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v0m4 0h-4m2 10.008"/>`), g.Group(children),
 	)
 }
 
 func IphoneXAppsLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 3H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-2m-4 0h4m-4 0v1m4-1v1m0 0v0a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v0m4 0h-4M9 8.001V8m0 3.001V11m3 .001V11m0-2.999V8m3 .001V8m0 3.001V11m-6 3.001V14m3 .001V14"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 3H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-2m-4 0h4m-4 0v1m4-1v1m0 0a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v0m4 0h-4m2 10.008"/>`), g.Group(children),
 	)
 }
 
@@ -3767,63 +3767,63 @@ func ItalicLine(children ...g.Node) g.Node {
 func Key(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8 9a7 7 0 1 1 5.562 6.852L12 17.414a2 2 0 0 1-1.414.586H10a2 2 0 0 1-2 2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-2.586A2 2 0 0 1 2.586 16l5.562-5.562A7.026 7.026 0 0 1 8 9zm7-3a1 1 0 1 0 0 2a1 1 0 0 1 1 1a1 1 0 1 0 2 0a3 3 0 0 0-3-3z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8 9a7 7 0 1 1 5.562 6.852L12 17.414a2 2 0 0 1-1.414.586H10a2 2 0 0 1-2 2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-2.586A2 2 0 0 1 2.586 16l5.562-5.562A7 7 0 0 1 8 9m7-3a1 1 0 1 0 0 2a1 1 0 0 1 1 1a1 1 0 1 0 2 0a3 3 0 0 0-3-3" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func KeyLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15a6 6 0 1 0-5.743-4.257L9 11l-5.707 5.707a1 1 0 0 0-.293.707V20a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1a1 1 0 0 1 1-1a1 1 0 0 0 1-1a1 1 0 0 1 1-1h.586a1 1 0 0 0 .707-.293L13 15l.257-.257A5.999 5.999 0 0 0 15 15zm2-6a2 2 0 0 0-2-2"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15a6 6 0 1 0-5.743-4.257L9 11l-5.707 5.707a1 1 0 0 0-.293.707V20a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1a1 1 0 0 1 1-1a1 1 0 0 0 1-1a1 1 0 0 1 1-1h.586a1 1 0 0 0 .707-.293L13 15l.257-.257A6 6 0 0 0 15 15m2-6a2 2 0 0 0-2-2"/>`), g.Group(children),
 	)
 }
 
 func Keyboard(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4 19a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h16a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H4zm6-6a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2h-4zm3-3a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H14a1 1 0 0 1-1-1zm5-1a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H18zm-9 1a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H10a1 1 0 0 1-1-1zM6 9a1 1 0 0 0 0 2h.01a1 1 0 1 0 0-2H6zm-1 5a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1zm13-1a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H18z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4 19a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h16a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3zm6-6a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2zm3-3a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H14a1 1 0 0 1-1-1m5-1a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2zm-9 1a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H10a1 1 0 0 1-1-1M6 9a1 1 0 0 0 0 2h.01a1 1 0 1 0 0-2zm-1 5a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1m13-1a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func KeyboardLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14h4m8 2V8a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2zm-8-6h.01M18 10h.01M10 10h.01M6 10h.01M6 14h.01M18 14h.01"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14h4m8 2V8a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2m-8-6h.01M18 10h.01M10 10h.01M6 10h.01M6 14h.01M18 14h.01"/>`), g.Group(children),
 	)
 }
 
 func Laptop(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v7.764l1.447 2.894l-.894.448l.894-.448c.998 1.995-.453 4.342-2.683 4.342H4.236c-2.23 0-3.68-2.347-2.683-4.342L3 13.764V6zm3-1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v7.764l1.447 2.894l-.894.448l.894-.448c.998 1.995-.453 4.342-2.683 4.342H4.236c-2.23 0-3.68-2.347-2.683-4.342L3 13.764zm3-1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func LaptopLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8H4V6zm16 8H4l-1.553 3.106A2 2 0 0 0 4.237 20h15.527a2 2 0 0 0 1.789-2.894L20 14z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8H4zm16 8H4l-1.553 3.106A2 2 0 0 0 4.237 20h15.527a2 2 0 0 0 1.789-2.894z"/>`), g.Group(children),
 	)
 }
 
 func LeafThreeAngled(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M20.156 6.473a2.639 2.639 0 0 0-2.63-2.629C15.049 3.817 9.909 4.193 6.5 7.6c-2.796 2.796-2.915 7.3-.157 10.057c2.758 2.758 7.26 2.639 10.057-.157c3.407-3.408 3.783-8.548 3.756-11.027zm-4.62 1.991a1 1 0 0 1 0 1.415l-.978.977l.587.195a1 1 0 0 1-.633 1.898l-1.535-.512l-1.247 1.247l.586.196a1 1 0 0 1-.632 1.897l-1.173-.39a3.01 3.01 0 0 1-.344-.14l-2.41 2.41l-3.121 3.121a1 1 0 0 1-1.414-1.414l3.121-3.121l2.41-2.41a3.009 3.009 0 0 1-.14-.344l-.39-1.173a1 1 0 0 1 1.897-.632l.196.586l1.247-1.247l-.512-1.535a1 1 0 0 1 1.898-.633l.195.587l.977-.978a1 1 0 0 1 1.414 0z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M20.156 6.473a2.64 2.64 0 0 0-2.63-2.629C15.049 3.817 9.909 4.193 6.5 7.6c-2.796 2.796-2.915 7.3-.157 10.057s7.26 2.639 10.057-.157c3.407-3.408 3.783-8.548 3.756-11.027m-4.62 1.991a1 1 0 0 1 0 1.415l-.978.977l.587.195a1 1 0 0 1-.633 1.898l-1.535-.512l-1.247 1.247l.586.196a1 1 0 0 1-.632 1.897l-1.173-.39a3 3 0 0 1-.344-.14l-2.41 2.41l-3.121 3.121a1 1 0 0 1-1.414-1.414l3.121-3.121l2.41-2.41a3 3 0 0 1-.14-.344l-.39-1.173a1 1 0 0 1 1.897-.632l.196.586l1.247-1.247l-.512-1.535a1 1 0 0 1 1.898-.633l.195.587l.977-.978a1 1 0 0 1 1.414 0z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func LeafThreeAngledLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.05 16.95c2.343 2.343 6.213 2.273 8.643-.157c3.1-3.1 3.49-7.869 3.463-10.309a1.64 1.64 0 0 0-1.64-1.64c-2.44-.026-7.208.363-10.309 3.463c-2.43 2.43-2.5 6.3-.157 8.643zm0 0l-2.12 2.12m2.12-2.12l5.657-5.657m2.121-2.121l-2.12 2.12m0 0l2.12.708m-2.12-.707L12 9.172m0 5.656l-1.173-.39a2 2 0 0 1-1.265-1.265L9.172 12"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.05 16.95c2.343 2.343 6.213 2.273 8.643-.157c3.1-3.1 3.49-7.869 3.463-10.309a1.64 1.64 0 0 0-1.64-1.64c-2.44-.026-7.208.363-10.309 3.463c-2.43 2.43-2.5 6.3-.157 8.643m0 0l-2.12 2.12m2.12-2.12l5.657-5.657m2.121-2.121l-2.12 2.12m0 0l2.12.708m-2.12-.707L12 9.172m0 5.656l-1.173-.39a2 2 0 0 1-1.265-1.265L9.172 12"/>`), g.Group(children),
 	)
 }
 
 func Library(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11.514 3.126a1 1 0 0 1 .972 0l9 5A1 1 0 0 1 21 10v9a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2v-9a1 1 0 0 1-.486-1.874l9-5zM9 13a1 1 0 1 0-2 0v3a1 1 0 1 0 2 0v-3zm4 0a1 1 0 1 0-2 0v3a1 1 0 1 0 2 0v-3zm4 0a1 1 0 1 0-2 0v3a1 1 0 1 0 2 0v-3z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11.514 3.126a1 1 0 0 1 .972 0l9 5A1 1 0 0 1 21 10v9a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2v-9a1 1 0 0 1-.486-1.874zM9 13a1 1 0 1 0-2 0v3a1 1 0 1 0 2 0zm4 0a1 1 0 1 0-2 0v3a1 1 0 1 0 2 0zm4 0a1 1 0 1 0-2 0v3a1 1 0 1 0 2 0z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -3837,28 +3837,28 @@ func LibraryLine(children ...g.Node) g.Node {
 func LidquidDropWavesTwo(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" d="M15 8.824C15 11.455 13 12 12 12s-3-.545-3-3.176C9 6.192 12 3 12 3s3 3.192 3 5.824z"/><path d="m3 15l.872.697a2.33 2.33 0 0 0 3.102-.171v0a2.33 2.33 0 0 1 3.164-.122l.18.154c.968.83 2.396.83 3.364 0l.18-.154a2.33 2.33 0 0 1 3.164.121v0a2.33 2.33 0 0 0 3.102.172L21 15m-.5 4l-.442.442c-.86.86-2.255.86-3.116 0v0a2.203 2.203 0 0 0-2.99-.114l-.27.23c-.968.83-2.396.83-3.364 0l-.27-.23a2.203 2.203 0 0 0-2.99.114v0c-.86.86-2.255.86-3.116 0L3.5 19"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" d="M15 8.824C15 11.455 13 12 12 12s-3-.545-3-3.176S12 3 12 3s3 3.192 3 5.824"/><path d="m3 15l.872.697a2.33 2.33 0 0 0 3.102-.171v0a2.33 2.33 0 0 1 3.164-.122l.18.154c.968.83 2.396.83 3.364 0l.18-.154a2.33 2.33 0 0 1 3.164.121v0a2.33 2.33 0 0 0 3.102.172L21 15m-.5 4l-.442.442c-.86.86-2.255.86-3.116 0v0a2.203 2.203 0 0 0-2.99-.114l-.27.23c-.968.83-2.396.83-3.364 0l-.27-.23a2.203 2.203 0 0 0-2.99.114v0c-.86.86-2.255.86-3.116 0L3.5 19"/></g>`), g.Group(children),
 	)
 }
 
 func LidquidDropWavesTwoLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 8.824C15 11.455 13 12 12 12s-3-.545-3-3.176C9 6.192 12 3 12 3s3 3.192 3 5.824zM3 15l.872.697a2.33 2.33 0 0 0 3.102-.171v0a2.33 2.33 0 0 1 3.164-.122l.18.154c.968.83 2.396.83 3.364 0l.18-.154a2.33 2.33 0 0 1 3.164.121v0a2.33 2.33 0 0 0 3.102.172L21 15m-.5 4l-.442.442c-.86.86-2.255.86-3.116 0v0a2.203 2.203 0 0 0-2.99-.114l-.27.23c-.968.83-2.396.83-3.364 0l-.27-.23a2.203 2.203 0 0 0-2.99.114v0c-.86.86-2.255.86-3.116 0L3.5 19"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 8.824C15 11.455 13 12 12 12s-3-.545-3-3.176S12 3 12 3s3 3.192 3 5.824M3 15l.872.697a2.33 2.33 0 0 0 3.102-.171v0a2.33 2.33 0 0 1 3.164-.122l.18.154c.968.83 2.396.83 3.364 0l.18-.154a2.33 2.33 0 0 1 3.164.121v0a2.33 2.33 0 0 0 3.102.172L21 15m-.5 4l-.442.442c-.86.86-2.255.86-3.116 0v0a2.203 2.203 0 0 0-2.99-.114l-.27.23c-.968.83-2.396.83-3.364 0l-.27-.23a2.203 2.203 0 0 0-2.99.114v0c-.86.86-2.255.86-3.116 0L3.5 19"/>`), g.Group(children),
 	)
 }
 
 func Lifebuoy(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M18.33 19.742A9.959 9.959 0 0 1 12 22a9.959 9.959 0 0 1-6.33-2.258a.967.967 0 0 0 .037-.035l4.261-4.26c.595.351 1.29.553 2.032.553s1.437-.202 2.032-.554l4.26 4.261a.93.93 0 0 0 .038.035zm1.412-1.412A9.959 9.959 0 0 0 22 12a9.959 9.959 0 0 0-2.258-6.33a.967.967 0 0 1-.035.037l-4.26 4.261c.351.595.553 1.29.553 2.032s-.202 1.437-.554 2.032l4.261 4.26a.93.93 0 0 1 .035.038zM18.33 4.258a.977.977 0 0 0-.037.035l-4.261 4.26A3.982 3.982 0 0 0 12 8c-.742 0-1.437.202-2.032.554l-4.26-4.261a1.018 1.018 0 0 0-.038-.035A9.959 9.959 0 0 1 12 2a9.96 9.96 0 0 1 6.33 2.258zM4.258 5.67A9.959 9.959 0 0 0 2 12a9.96 9.96 0 0 0 2.258 6.33a.977.977 0 0 1 .035-.037l4.26-4.261A3.982 3.982 0 0 1 8 12c0-.742.202-1.437.554-2.032l-4.261-4.26a1.018 1.018 0 0 1-.035-.038z" clip-rule="evenodd"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M18.33 19.742A9.96 9.96 0 0 1 12 22a9.96 9.96 0 0 1-6.33-2.258l.037-.035l4.261-4.26c.595.351 1.29.553 2.032.553s1.437-.202 2.032-.554l4.26 4.261zm1.412-1.412A9.96 9.96 0 0 0 22 12a9.96 9.96 0 0 0-2.258-6.33l-.035.037l-4.26 4.261c.351.595.553 1.29.553 2.032s-.202 1.437-.554 2.032l4.261 4.26zM18.33 4.258l-.037.035l-4.261 4.26A4 4 0 0 0 12 8c-.742 0-1.437.202-2.032.554l-4.26-4.261l-.038-.035A9.96 9.96 0 0 1 12 2a9.96 9.96 0 0 1 6.33 2.258M4.258 5.67A9.96 9.96 0 0 0 2 12a9.96 9.96 0 0 0 2.258 6.33l.035-.037l4.26-4.261A4 4 0 0 1 8 12c0-.742.202-1.437.554-2.032l-4.261-4.26z" clip-rule="evenodd"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/></g>`), g.Group(children),
 	)
 }
 
 func LifebuoyLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m18 6l-3.172 3.172M6 18l3.172-3.172M6 6l3.172 3.172M18 18l-3.172-3.172m0-5.656A3.987 3.987 0 0 0 12 8a3.987 3.987 0 0 0-2.828 1.172m5.656 0A3.984 3.984 0 0 1 16 12a3.987 3.987 0 0 1-1.172 2.828M9.172 9.172A3.987 3.987 0 0 0 8 12c0 1.105.448 2.105 1.172 2.828m0 0A3.987 3.987 0 0 0 12 16a3.987 3.987 0 0 0 2.828-1.172"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="m18 6l-3.172 3.172M6 18l3.172-3.172M6 6l3.172 3.172M18 18l-3.172-3.172m0-5.656A4 4 0 0 0 12 8a4 4 0 0 0-2.828 1.172m5.656 0A3.98 3.98 0 0 1 16 12a4 4 0 0 1-1.172 2.828M9.172 9.172A4 4 0 0 0 8 12c0 1.105.448 2.105 1.172 2.828m0 0A4 4 0 0 0 12 16a4 4 0 0 0 2.828-1.172"/></g>`), g.Group(children),
 	)
 }
 
@@ -3879,28 +3879,28 @@ func LightBulbLine(children ...g.Node) g.Node {
 func LightbulbShine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M12 7a5 5 0 0 0-2 9.584V19h4v-2.416A5.001 5.001 0 0 0 12 7z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12h1m-3.5-6.5l1-1M12 3V2M5.5 5.5l-1-1M3 12H2m8 10h4m3-10a5 5 0 1 0-7 4.584V19h4v-2.416A5.001 5.001 0 0 0 17 12z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M12 7a5 5 0 0 0-2 9.584V19h4v-2.416A5.001 5.001 0 0 0 12 7"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12h1m-3.5-6.5l1-1M12 3V2M5.5 5.5l-1-1M3 12H2m8 10h4m3-10a5 5 0 1 0-7 4.584V19h4v-2.416A5 5 0 0 0 17 12"/></g>`), g.Group(children),
 	)
 }
 
 func LightbulbShineLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12h1m-3.5-6.5l1-1M12 3V2M5.5 5.5l-1-1M3 12H2m8 10h4m3-10a5 5 0 1 0-7 4.584V19h4v-2.416A5.001 5.001 0 0 0 17 12z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12h1m-3.5-6.5l1-1M12 3V2M5.5 5.5l-1-1M3 12H2m8 10h4m3-10a5 5 0 1 0-7 4.584V19h4v-2.416A5 5 0 0 0 17 12"/>`), g.Group(children),
 	)
 }
 
 func LightningBolt(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 14L14 3v7h6L10 21v-7H4z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 14L14 3v7h6L10 21v-7z"/>`), g.Group(children),
 	)
 }
 
 func LightningBoltLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 14L14 3v7h6L10 21v-7H4z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 14L14 3v7h6L10 21v-7z"/>`), g.Group(children),
 	)
 }
 
@@ -3928,7 +3928,7 @@ func Link(children ...g.Node) g.Node {
 func LinkCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12zm8-4c-.66 0-1.628.19-2.46.788C6.659 9.424 6 10.474 6 12c0 1.526.658 2.576 1.54 3.211A4.35 4.35 0 0 0 10 16a1 1 0 1 0 0-2c-.34 0-.872-.11-1.29-.412C8.341 13.325 8 12.874 8 12c0-.874.342-1.324.71-1.588C9.127 10.11 9.66 10 10 10a1 1 0 1 0 0-2zm4 0a1 1 0 1 0 0 2c.34 0 .872.11 1.29.412c.368.264.71.714.71 1.588c0 .874-.342 1.324-.71 1.588c-.418.302-.95.412-1.29.412a1 1 0 1 0 0 2c.66 0 1.628-.19 2.46-.789C17.341 14.576 18 13.526 18 12c0-1.526-.658-2.576-1.54-3.212A4.35 4.35 0 0 0 14 8zm-4 3a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2h-4z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12m8-4c-.66 0-1.628.19-2.46.788C6.659 9.424 6 10.474 6 12s.658 2.576 1.54 3.211A4.35 4.35 0 0 0 10 16a1 1 0 1 0 0-2c-.34 0-.872-.11-1.29-.412C8.341 13.325 8 12.874 8 12s.342-1.324.71-1.588C9.127 10.11 9.66 10 10 10a1 1 0 1 0 0-2m4 0a1 1 0 1 0 0 2c.34 0 .872.11 1.29.412c.368.264.71.714.71 1.588s-.342 1.324-.71 1.588c-.418.302-.95.412-1.29.412a1 1 0 1 0 0 2c.66 0 1.628-.19 2.46-.789C17.341 14.576 18 13.526 18 12s-.658-2.576-1.54-3.212A4.35 4.35 0 0 0 14 8m-4 3a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -3949,28 +3949,28 @@ func LinkLine(children ...g.Node) g.Node {
 func LiraCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12zm11-6a1 1 0 1 0-2 0v1.28l-2.316.771a1 1 0 1 0 .632 1.898L10 9.387v.892l-2.316.772a1 1 0 0 0 .632 1.898L10 12.387V17a1 1 0 0 0 1 1c.993 0 2.461-.29 3.71-1.189C16.008 15.876 17 14.326 17 12a1 1 0 1 0-2 0c0 1.674-.675 2.624-1.46 3.188a4.402 4.402 0 0 1-1.54.687V11.72l2.316-.772a1 1 0 0 0-.632-1.898L12 9.613V8.72l2.316-.772a1 1 0 1 0-.632-1.898L12 6.613V6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m11-6a1 1 0 1 0-2 0v1.28l-2.316.771a1 1 0 1 0 .632 1.898L10 9.387v.892l-2.316.772a1 1 0 0 0 .632 1.898L10 12.387V17a1 1 0 0 0 1 1c.993 0 2.461-.29 3.71-1.189C16.008 15.876 17 14.326 17 12a1 1 0 1 0-2 0c0 1.674-.675 2.624-1.46 3.188a4.4 4.4 0 0 1-1.54.687V11.72l2.316-.772a1 1 0 0 0-.632-1.898L12 9.613V8.72l2.316-.772a1 1 0 1 0-.632-1.898L12 6.613z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func LiraCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10z"/><path d="M11 6v11c1.667 0 5-1 5-5M8 9l6-2m-6 5l6-2"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10"/><path d="M11 6v11c1.667 0 5-1 5-5M8 9l6-2m-6 5l6-2"/></g>`), g.Group(children),
 	)
 }
 
 func ListBox(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M6 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3H6zm4 5a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2h-6a1 1 0 0 1-1-1zm0 4a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2h-6a1 1 0 0 1-1-1zm0 4a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2h-6a1 1 0 0 1-1-1zM7 7a1 1 0 0 0 0 2h.001a1 1 0 0 0 0-2H7zm-1 5a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1zm1 3a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2H7z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M6 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3zm4 5a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2h-6a1 1 0 0 1-1-1m0 4a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2h-6a1 1 0 0 1-1-1m0 4a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2h-6a1 1 0 0 1-1-1M7 7a1 1 0 0 0 0 2h.001a1 1 0 0 0 0-2zm-1 5a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1m1 3a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ListBoxLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 8h5m0 4h-5m5 4h-5m-5 4h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2zM8 8h.001M8 12h.001M8 16h.001"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 8h5m0 4h-5m5 4h-5m-5 4h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2m2-4"/>`), g.Group(children),
 	)
 }
 
@@ -3991,7 +3991,7 @@ func LocationMarkerLine(children ...g.Node) g.Node {
 func Lock(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M3 12a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-7zm10 2a1 1 0 1 0-2 0v3a1 1 0 1 0 2 0v-3z" clip-rule="evenodd"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10V7a4 4 0 0 1 4-4v0a4 4 0 0 1 4 4v3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M3 12a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3zm10 2a1 1 0 1 0-2 0v3a1 1 0 1 0 2 0z" clip-rule="evenodd"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10V7a4 4 0 0 1 4-4v0a4 4 0 0 1 4 4v3"/></g>`), g.Group(children),
 	)
 }
 
@@ -4019,7 +4019,7 @@ func LockLine(children ...g.Node) g.Node {
 func LockOff(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M7 7.828V9H6a3 3 0 0 0-3 3v7a3 3 0 0 0 3 3h12c.872 0 1.657-.372 2.205-.966l-7.223-7.223A.97.97 0 0 1 13 14v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1.19-.982L7 7.828zm14 8.344V12a3 3 0 0 0-3-3h-1V7a5 5 0 0 0-8.62-3.449l1.415 1.415A3 3 0 0 1 15 7v2h-1.172L21 16.172z" clip-rule="evenodd"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 3l18 18"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M7 7.828V9H6a3 3 0 0 0-3 3v7a3 3 0 0 0 3 3h12c.872 0 1.657-.372 2.205-.966l-7.223-7.223A1 1 0 0 1 13 14v3a1 1 0 1 1-2 0v-3a1 1 0 0 1 1.19-.982zm14 8.344V12a3 3 0 0 0-3-3h-1V7a5 5 0 0 0-8.62-3.449l1.415 1.415A3 3 0 0 1 15 7v2h-1.172z" clip-rule="evenodd"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 3l18 18"/></g>`), g.Group(children),
 	)
 }
 
@@ -4047,14 +4047,14 @@ func LockOpenLine(children ...g.Node) g.Node {
 func Login(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3h-6zm1.293 6.293a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L13.586 13H5a1 1 0 1 1 0-2h8.586l-1.293-1.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3zm1.293 6.293a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L13.586 13H5a1 1 0 1 1 0-2h8.586l-1.293-1.293a1 1 0 0 1 0-1.414" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func LoginHalfCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M13.204 2.244C11.347 1.826 10 3.422 10 5v14c0 1.578 1.347 3.174 3.204 2.756C17.666 20.752 21 16.766 21 12s-3.334-8.752-7.796-9.756zm.089 6.049a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L14.586 13H4a1 1 0 1 1 0-2h10.586l-1.293-1.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M13.204 2.244C11.347 1.826 10 3.422 10 5v14c0 1.578 1.347 3.174 3.204 2.756C17.666 20.752 21 16.766 21 12s-3.334-8.752-7.796-9.756m.089 6.049a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L14.586 13H4a1 1 0 1 1 0-2h10.586l-1.293-1.293a1 1 0 0 1 0-1.414" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -4075,14 +4075,14 @@ func LoginLine(children ...g.Node) g.Node {
 func Logout(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M6 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H6zm10.293 5.293a1 1 0 0 1 1.414 0l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414-1.414L18.586 13H10a1 1 0 1 1 0-2h8.586l-2.293-2.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M6 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3zm10.293 5.293a1 1 0 0 1 1.414 0l4 4a1 1 0 0 1 0 1.414l-4 4a1 1 0 0 1-1.414-1.414L18.586 13H10a1 1 0 1 1 0-2h8.586l-2.293-2.293a1 1 0 0 1 0-1.414" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func LogoutHalfCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M10.796 2.244C12.653 1.826 14 3.422 14 5v14c0 1.578-1.347 3.174-3.204 2.756C6.334 20.752 3 16.766 3 12s3.334-8.752 7.796-9.756zm5.497 6.049a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L17.586 13H9a1 1 0 1 1 0-2h8.586l-1.293-1.293a1 1 0 0 1 0-1.414z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M10.796 2.244C12.653 1.826 14 3.422 14 5v14c0 1.578-1.347 3.174-3.204 2.756C6.334 20.752 3 16.766 3 12s3.334-8.752 7.796-9.756m5.497 6.049a1 1 0 0 1 1.414 0l3 3a1 1 0 0 1 0 1.414l-3 3a1 1 0 0 1-1.414-1.414L17.586 13H9a1 1 0 1 1 0-2h8.586l-1.293-1.293a1 1 0 0 1 0-1.414" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -4103,14 +4103,14 @@ func LogoutLine(children ...g.Node) g.Node {
 func Mail(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5 20a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H5zM7.625 8.22a1 1 0 1 0-1.25 1.56l3.75 3.001a3 3 0 0 0 3.75 0l3.75-3a1 1 0 1 0-1.25-1.562l-3.75 3a1 1 0 0 1-1.25 0l-3.75-3z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5 20a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3zM7.625 8.22a1 1 0 1 0-1.25 1.56l3.75 3.001a3 3 0 0 0 3.75 0l3.75-3a1 1 0 1 0-1.25-1.562l-3.75 3a1 1 0 0 1-1.25 0z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func MailLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9l3.75 3a2 2 0 0 0 2.5 0L17 9m4 8V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9l3.75 3a2 2 0 0 0 2.5 0L17 9m4 8V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2"/>`), g.Group(children),
 	)
 }
 
@@ -4145,105 +4145,105 @@ func MapLine(children ...g.Node) g.Node {
 func MapMarker(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11.291 21.706L12 21l-.709.706zM12 21l.708.706a1 1 0 0 1-1.417 0l-.006-.007l-.017-.017l-.062-.063a47.708 47.708 0 0 1-1.04-1.106a49.562 49.562 0 0 1-2.456-2.908c-.892-1.15-1.804-2.45-2.497-3.734C4.535 12.612 4 11.248 4 10c0-4.539 3.592-8 8-8c4.408 0 8 3.461 8 8c0 1.248-.535 2.612-1.213 3.87c-.693 1.286-1.604 2.585-2.497 3.735a49.583 49.583 0 0 1-3.496 4.014l-.062.063l-.017.017l-.006.006L12 21zm0-8a3 3 0 1 0 0-6a3 3 0 0 0 0 6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11.291 21.706L12 21zM12 21l.708.706a1 1 0 0 1-1.417 0l-.006-.007l-.017-.017l-.062-.063a48 48 0 0 1-1.04-1.106a50 50 0 0 1-2.456-2.908c-.892-1.15-1.804-2.45-2.497-3.734C4.535 12.612 4 11.248 4 10c0-4.539 3.592-8 8-8s8 3.461 8 8c0 1.248-.535 2.612-1.213 3.87c-.693 1.286-1.604 2.585-2.497 3.735a50 50 0 0 1-3.496 4.014l-.062.063l-.017.017l-.006.006zm0-8a3 3 0 1 0 0-6a3 3 0 0 0 0 6" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func MapMarkerArea(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 16.016c1.245.529 2 1.223 2 1.984c0 1.657-3.582 3-8 3s-8-1.343-8-3c0-.76.755-1.456 2-1.984"/><path fill="currentColor" fill-rule="evenodd" d="M11.262 17.675L12 17l-.738.675zm1.476 0l.005-.005l.012-.014l.045-.05l.166-.186a38.19 38.19 0 0 0 2.348-2.957c.642-.9 1.3-1.92 1.801-2.933c.49-.99.885-2.079.885-3.086C18 4.871 15.382 2 12 2S6 4.87 6 8.444c0 1.007.395 2.096.885 3.086c.501 1.013 1.16 2.033 1.8 2.933a38.153 38.153 0 0 0 2.515 3.143l.045.05l.012.014l.005.005a1 1 0 0 0 1.476 0zM12 17l.738.674L12 17zm0-11a2 2 0 1 0 0 4a2 2 0 0 0 0-4z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 16.016c1.245.529 2 1.223 2 1.984c0 1.657-3.582 3-8 3s-8-1.343-8-3c0-.76.755-1.456 2-1.984"/><path fill="currentColor" fill-rule="evenodd" d="M11.262 17.675L12 17zm1.476 0l.005-.005l.012-.014l.045-.05l.166-.186a38 38 0 0 0 2.348-2.957c.642-.9 1.3-1.92 1.801-2.933c.49-.99.885-2.079.885-3.086C18 4.871 15.382 2 12 2S6 4.87 6 8.444c0 1.007.395 2.096.885 3.086c.501 1.013 1.16 2.033 1.8 2.933a38 38 0 0 0 2.515 3.143l.045.05l.012.014l.005.005a1 1 0 0 0 1.476 0M12 17l.738.674zm0-11a2 2 0 1 0 0 4a2 2 0 0 0 0-4" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func MapMarkerAreaLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 16.016c1.245.529 2 1.223 2 1.984c0 1.657-3.582 3-8 3s-8-1.343-8-3c0-.76.755-1.456 2-1.984"/><path d="M17 8.444C17 11.537 12 17 12 17s-5-5.463-5-8.556C7 5.352 9.239 3 12 3s5 2.352 5 5.444z"/><circle cx="12" cy="8" r="1"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 16.016c1.245.529 2 1.223 2 1.984c0 1.657-3.582 3-8 3s-8-1.343-8-3c0-.76.755-1.456 2-1.984"/><path d="M17 8.444C17 11.537 12 17 12 17s-5-5.463-5-8.556S9.239 3 12 3s5 2.352 5 5.444"/><circle cx="12" cy="8" r="1"/></g>`), g.Group(children),
 	)
 }
 
 func MapMarkerLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M19 10c0 3.976-7 11-7 11s-7-7.024-7-11s3.134-7 7-7s7 3.024 7 7z"/><circle cx="12" cy="10" r="3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M19 10c0 3.976-7 11-7 11s-7-7.024-7-11s3.134-7 7-7s7 3.024 7 7"/><circle cx="12" cy="10" r="3"/></g>`), g.Group(children),
 	)
 }
 
 func MapMarkerPath(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 9a2 2 0 1 0 0-4a2 2 0 0 0 0 4zm0 0v1m0 7v-1"/><path fill="currentColor" d="M7 19a2 2 0 1 0-4 0a2 2 0 0 0 4 0z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 19a2 2 0 1 0-4 0a2 2 0 0 0 4 0zm0 0h1m9-2a2 2 0 1 1-2 2m2-2a2 2 0 0 0-2 2m2-2v-1m-2 3h-1"/><circle cx="5" cy="13" r="1" fill="currentColor"/><circle cx="11" cy="19" r="1" fill="currentColor"/><path fill="currentColor" fill-rule="evenodd" d="m17 13l-.647.763l-.001-.002l-.004-.002l-.01-.01l-.039-.033l-.137-.121a20.909 20.909 0 0 1-1.923-1.967c-.525-.617-1.072-1.343-1.491-2.109C12.335 8.766 12 7.892 12 7c0-1.547.538-2.825 1.49-3.711C14.431 2.413 15.69 2 17 2c1.31 0 2.569.413 3.51 1.289C21.462 4.175 22 5.453 22 7c0 .892-.335 1.766-.748 2.52c-.42.765-.965 1.491-1.49 2.108a20.909 20.909 0 0 1-2.061 2.088l-.038.033l-.011.01l-.004.002v.001h-.001L17 13zm0 0l.646.763a1 1 0 0 1-1.292 0L17 13zm0-5a1 1 0 1 0 0-2a1 1 0 0 0 0 2z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 9a2 2 0 1 0 0-4a2 2 0 0 0 0 4m0 0v1m0 7v-1"/><path fill="currentColor" d="M7 19a2 2 0 1 0-4 0a2 2 0 0 0 4 0"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 19a2 2 0 1 0-4 0a2 2 0 0 0 4 0m0 0h1m9-2a2 2 0 1 1-2 2m2-2a2 2 0 0 0-2 2m2-2v-1m-2 3h-1"/><circle cx="5" cy="13" r="1" fill="currentColor"/><circle cx="11" cy="19" r="1" fill="currentColor"/><path fill="currentColor" fill-rule="evenodd" d="m17 13l-.647.763l-.001-.002l-.004-.002l-.01-.01l-.039-.033l-.137-.121a21 21 0 0 1-1.923-1.967c-.525-.617-1.072-1.343-1.491-2.109C12.335 8.766 12 7.892 12 7c0-1.547.538-2.825 1.49-3.711C14.431 2.413 15.69 2 17 2s2.569.413 3.51 1.289C21.462 4.175 22 5.453 22 7c0 .892-.335 1.766-.748 2.52c-.42.765-.965 1.491-1.49 2.108a21 21 0 0 1-2.061 2.088l-.038.033l-.011.01l-.004.002v.001h-.001zm0 0l.646.763a1 1 0 0 1-1.292 0zm0-5a1 1 0 1 0 0-2a1 1 0 0 0 0 2" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func MapMarkerPathLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 9a2 2 0 1 0 0-4a2 2 0 0 0 0 4zm0 0v1m0 7v-1m2 3a2 2 0 1 0-4 0a2 2 0 0 0 4 0zm0 0h1m9-2a2 2 0 1 1-2 2m2-2a2 2 0 0 0-2 2m2-2v-1m-2 3h-1"/><circle cx="5" cy="13" r="1" fill="currentColor"/><circle cx="11" cy="19" r="1" fill="currentColor"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7c0 2.611-4 6-4 6s-4-3.389-4-6s1.79-4 4-4s4 1.389 4 4z"/><circle cx="17" cy="7" r="1" fill="currentColor"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 9a2 2 0 1 0 0-4a2 2 0 0 0 0 4m0 0v1m0 7v-1m2 3a2 2 0 1 0-4 0a2 2 0 0 0 4 0m0 0h1m9-2a2 2 0 1 1-2 2m2-2a2 2 0 0 0-2 2m2-2v-1m-2 3h-1"/><circle cx="5" cy="13" r="1" fill="currentColor"/><circle cx="11" cy="19" r="1" fill="currentColor"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7c0 2.611-4 6-4 6s-4-3.389-4-6s1.79-4 4-4s4 1.389 4 4"/><circle cx="17" cy="7" r="1" fill="currentColor"/></g>`), g.Group(children),
 	)
 }
 
 func MapMarkerPlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11.291 21.706L12 21l-.709.706zM12 21l.708.706a1 1 0 0 1-1.417 0l-.006-.007l-.017-.017l-.062-.063a47.708 47.708 0 0 1-1.04-1.106a49.562 49.562 0 0 1-2.456-2.908c-.892-1.15-1.804-2.45-2.497-3.734C4.535 12.612 4 11.248 4 10c0-4.539 3.592-8 8-8c4.408 0 8 3.461 8 8c0 1.248-.535 2.612-1.213 3.87c-.693 1.286-1.604 2.585-2.497 3.735a49.583 49.583 0 0 1-3.496 4.014l-.062.063l-.017.017l-.006.006L12 21zm1-14a1 1 0 1 0-2 0v2H9a1 1 0 0 0 0 2h2v2a1 1 0 1 0 2 0v-2h2a1 1 0 1 0 0-2h-2V7z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11.291 21.706L12 21zM12 21l.708.706a1 1 0 0 1-1.417 0l-.006-.007l-.017-.017l-.062-.063a48 48 0 0 1-1.04-1.106a50 50 0 0 1-2.456-2.908c-.892-1.15-1.804-2.45-2.497-3.734C4.535 12.612 4 11.248 4 10c0-4.539 3.592-8 8-8s8 3.461 8 8c0 1.248-.535 2.612-1.213 3.87c-.693 1.286-1.604 2.585-2.497 3.735a50 50 0 0 1-3.496 4.014l-.062.063l-.017.017l-.006.006zm1-14a1 1 0 1 0-2 0v2H9a1 1 0 0 0 0 2h2v2a1 1 0 1 0 2 0v-2h2a1 1 0 1 0 0-2h-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func MapMarkerPlusLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 10c0 3.976-7 11-7 11s-7-7.024-7-11s3.134-7 7-7s7 3.024 7 7zM9 10h3m3 0h-3m0 0V7m0 3v3"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 10c0 3.976-7 11-7 11s-7-7.024-7-11s3.134-7 7-7s7 3.024 7 7M9 10h3m3 0h-3m0 0V7m0 3v3"/>`), g.Group(children),
 	)
 }
 
 func MapSimple(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="currentColor"><path d="M9 4L3 8v12l6-4l6 4l6-4V4l-6 4l-6-4z"/><path fill-rule="evenodd" d="M21.472 3.118A1 1 0 0 1 22 4v12a1 1 0 0 1-.445.832l-6 4a1 1 0 0 1-1.11 0L9 17.202l-5.445 3.63A1 1 0 0 1 2 20V8a1 1 0 0 1 .445-.832l6-4a1 1 0 0 1 1.11 0L15 6.798l5.445-3.63a1 1 0 0 1 1.027-.05zM4 8.535v9.596l4.445-2.963a1 1 0 0 1 1.11 0L15 18.798l5-3.333V5.869l-4.445 2.963a1 1 0 0 1-1.11 0L9 5.202L4 8.535z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="currentColor"><path d="M9 4L3 8v12l6-4l6 4l6-4V4l-6 4z"/><path fill-rule="evenodd" d="M21.472 3.118A1 1 0 0 1 22 4v12a1 1 0 0 1-.445.832l-6 4a1 1 0 0 1-1.11 0L9 17.202l-5.445 3.63A1 1 0 0 1 2 20V8a1 1 0 0 1 .445-.832l6-4a1 1 0 0 1 1.11 0L15 6.798l5.445-3.63a1 1 0 0 1 1.027-.05M4 8.535v9.596l4.445-2.963a1 1 0 0 1 1.11 0L15 18.798l5-3.333V5.869l-4.445 2.963a1 1 0 0 1-1.11 0L9 5.202z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func MapSimpleDestination(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8.445 3.168a1 1 0 0 1 1.002-.062L15 5.882l5.553-2.776A1 1 0 0 1 22 4v12a1 1 0 0 1-.445.832l-6 4a1 1 0 0 1-1.002.062L9 18.118l-5.553 2.776A1 1 0 0 1 2 20V8a1 1 0 0 1 .445-.832l6-4zM5 12a1 1 0 1 0 2 0a1 1 0 1 0-2 0v.001zm5 1a1 1 0 0 1-1-1a1 1 0 1 1 2 0v.001a1 1 0 0 1-1 1zm4.707-3.708a1 1 0 1 0-1.414 1.414L14.586 12l-1.293 1.293a1 1 0 0 0 1.414 1.414L16 13.414l1.293 1.293a1 1 0 0 0 1.414-1.414L17.414 12l1.293-1.293a1 1 0 0 0-1.414-1.414L16 10.586l-1.293-1.293z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8.445 3.168a1 1 0 0 1 1.002-.062L15 5.882l5.553-2.776A1 1 0 0 1 22 4v12a1 1 0 0 1-.445.832l-6 4a1 1 0 0 1-1.002.062L9 18.118l-5.553 2.776A1 1 0 0 1 2 20V8a1 1 0 0 1 .445-.832zM5 12a1 1 0 1 0 2 0a1 1 0 1 0-2 0m5 1a1 1 0 0 1-1-1a1 1 0 1 1 2 0v.001a1 1 0 0 1-1 1zm4.707-3.708a1 1 0 1 0-1.414 1.414L14.586 12l-1.293 1.293a1 1 0 0 0 1.414 1.414L16 13.414l1.293 1.293a1 1 0 0 0 1.414-1.414L17.414 12l1.293-1.293a1 1 0 0 0-1.414-1.414L16 10.586l-1.293-1.293z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func MapSimpleDestinationLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 4L3 8v12l6-3l6 3l6-4V4l-6 3l-6-3zm-2 8.001V12m4 .001V12m3-2l2 2m2 2l-2-2m0 0l2-2m-2 2l-2 2"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 4L3 8v12l6-3l6 3l6-4V4l-6 3zm5 6.002l2 2m2 2l-2-2m0 0l2-2m-2 2l-2 2"/>`), g.Group(children),
 	)
 }
 
 func MapSimpleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 4L3 8v12l6-4l6 4l6-4V4l-6 4l-6-4z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 4L3 8v12l6-4l6 4l6-4V4l-6 4z"/>`), g.Group(children),
 	)
 }
 
 func MapSimpleMarker(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="m17 21l-.647.763l-.001-.002l-.004-.002l-.01-.01l-.039-.033l-.137-.121a20.909 20.909 0 0 1-1.923-1.967c-.525-.617-1.072-1.343-1.491-2.109C12.335 16.766 12 15.892 12 15c0-1.547.538-2.825 1.49-3.711C14.431 10.413 15.69 10 17 10c1.31 0 2.569.413 3.51 1.289c.952.886 1.49 2.164 1.49 3.711c0 .892-.335 1.766-.748 2.52c-.42.765-.965 1.491-1.49 2.108a20.909 20.909 0 0 1-2.061 2.088l-.038.033l-.011.01l-.004.002v.001h-.001L17 21zm0 0l.646.763a1 1 0 0 1-1.292 0L17 21zm0-5a1 1 0 1 0 0-2a1 1 0 0 0 0 2z"/><path d="M22 4a1 1 0 0 0-1.555-.832L15 6.798l-5.445-3.63a1 1 0 0 0-1.11 0l-6 4A1 1 0 0 0 2 8v12a1 1 0 0 0 1.555.832L9 17.202l.75.5c-.254-.707-.417-1.45-.417-2.202c0-2.32.825-4.238 2.285-5.567C13.061 8.62 14.991 8 17 8c1.837 0 3.608.518 5 1.61V4z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="m17 21l-.647.763l-.001-.002l-.004-.002l-.01-.01l-.039-.033l-.137-.121a21 21 0 0 1-1.923-1.967c-.525-.617-1.072-1.343-1.491-2.109C12.335 16.766 12 15.892 12 15c0-1.547.538-2.825 1.49-3.711C14.431 10.413 15.69 10 17 10s2.569.413 3.51 1.289C21.462 12.175 22 13.453 22 15c0 .892-.335 1.766-.748 2.52c-.42.765-.965 1.491-1.49 2.108a21 21 0 0 1-2.061 2.088l-.038.033l-.011.01l-.004.002v.001h-.001zm0 0l.646.763a1 1 0 0 1-1.292 0zm0-5a1 1 0 1 0 0-2a1 1 0 0 0 0 2"/><path d="M22 4a1 1 0 0 0-1.555-.832L15 6.798l-5.445-3.63a1 1 0 0 0-1.11 0l-6 4A1 1 0 0 0 2 8v12a1 1 0 0 0 1.555.832L9 17.202l.75.5c-.254-.707-.417-1.45-.417-2.202c0-2.32.825-4.238 2.285-5.567C13.061 8.62 14.991 8 17 8c1.837 0 3.608.518 5 1.61z"/></g>`), g.Group(children),
 	)
 }
 
 func MapSimpleMarkerLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21 9V4l-6 4l-6-4l-6 4v12l6-4l1 .667"/><path d="M21 15c0 2.611-4 6-4 6s-4-3.389-4-6s1.79-4 4-4s4 1.389 4 4zm-4 .001V15"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21 9V4l-6 4l-6-4l-6 4v12l6-4l1 .667"/><path d="M21 15c0 2.611-4 6-4 6s-4-3.389-4-6s1.79-4 4-4s4 1.389 4 4m-4 .001"/></g>`), g.Group(children),
 	)
 }
 
 func MapSimpleOff(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 3l18 18"/><path fill="currentColor" fill-rule="evenodd" d="M4.782 5.61L2.445 7.168A1 1 0 0 0 2 8v12a1 1 0 0 0 1.555.832L9 17.202l5.445 3.63a1 1 0 0 0 1.11 0l2.67-1.78L4.781 5.61zm16.834 11.178A1 1 0 0 0 22 16V4a1 1 0 0 0-1.555-.832L15 6.798l-5.445-3.63a1 1 0 0 0-1.11 0l-.269.18l13.44 13.44z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 3l18 18"/><path fill="currentColor" fill-rule="evenodd" d="M4.782 5.61L2.445 7.168A1 1 0 0 0 2 8v12a1 1 0 0 0 1.555.832L9 17.202l5.445 3.63a1 1 0 0 0 1.11 0l2.67-1.78L4.781 5.61zm16.834 11.178A1 1 0 0 0 22 16V4a1 1 0 0 0-1.555-.832L15 6.798l-5.445-3.63a1 1 0 0 0-1.11 0l-.269.18z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -4271,7 +4271,7 @@ func MaximizeLine(children ...g.Node) g.Node {
 func Megaphone(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M18.008 2.987C19.34 2.225 21 3.187 21 4.723v12.554c0 1.535-1.659 2.498-2.992 1.736L14 16.723V5.277l4.008-2.29zM12 6H7a5 5 0 0 0-1 9.9v3.6a2.5 2.5 0 0 0 5 0V16h1V6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M18.008 2.987C19.34 2.225 21 3.187 21 4.723v12.554c0 1.535-1.659 2.498-2.992 1.736L14 16.723V5.277zM12 6H7a5 5 0 0 0-1 9.9v3.6a2.5 2.5 0 0 0 5 0V16h1z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -4369,14 +4369,14 @@ func MessagesLine(children ...g.Node) g.Node {
 func Microphone(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" d="M9 6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3v0a3 3 0 0 1-3-3V6z"/><path d="M12 18v0a7 7 0 0 1-7-7v0v-1m7 8v0a7 7 0 0 0 7-7v0v-1m-7 8v3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" d="M9 6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3v0a3 3 0 0 1-3-3z"/><path d="M12 18a7 7 0 0 1-7-7v0v-1m7 8a7 7 0 0 0 7-7v0v-1m-7 8v3"/></g>`), g.Group(children),
 	)
 }
 
 func MicrophoneLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3v0a3 3 0 0 1-3-3V6zm3 12v0a7 7 0 0 1-7-7v0v-1m7 8v0a7 7 0 0 0 7-7v0v-1m-7 8v3"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3v0a3 3 0 0 1-3-3zm3 12a7 7 0 0 1-7-7v0v-1m7 8a7 7 0 0 0 7-7v0v-1m-7 8v3"/>`), g.Group(children),
 	)
 }
 
@@ -4418,7 +4418,7 @@ func MinusCircleLine(children ...g.Node) g.Node {
 func MinusFiveCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M23 12c0-6.075-4.925-11-11-11S1 5.925 1 12s4.925 11 11 11s11-4.925 11-11zm-9-4a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h1.5a.5.5 0 0 1 0 1H14a1 1 0 1 0 0 2h1.5a2.5 2.5 0 0 0 0-5H15v-1h2a1 1 0 1 0 0-2h-3zm-7 3a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2H7z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M23 12c0-6.075-4.925-11-11-11S1 5.925 1 12s4.925 11 11 11s11-4.925 11-11m-9-4a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h1.5a.5.5 0 0 1 0 1H14a1 1 0 1 0 0 2h1.5a2.5 2.5 0 0 0 0-5H15v-1h2a1 1 0 1 0 0-2zm-7 3a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -4439,35 +4439,35 @@ func MinusLine(children ...g.Node) g.Node {
 func MinusTenCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M23 12c0-6.075-4.925-11-11-11S1 5.925 1 12s4.925 11 11 11s11-4.925 11-11zM10 8a1 1 0 0 0 0 2h1v5a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1h-2zm6.5 0a2.5 2.5 0 0 0-2.5 2.5v3a2.5 2.5 0 0 0 5 0v-3A2.5 2.5 0 0 0 16.5 8zm-.5 2.5a.5.5 0 0 1 1 0v3a.5.5 0 0 1-1 0v-3zM5 11a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2H5z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M23 12c0-6.075-4.925-11-11-11S1 5.925 1 12s4.925 11 11 11s11-4.925 11-11M10 8a1 1 0 0 0 0 2h1v5a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1zm6.5 0a2.5 2.5 0 0 0-2.5 2.5v3a2.5 2.5 0 0 0 5 0v-3A2.5 2.5 0 0 0 16.5 8m-.5 2.5a.5.5 0 0 1 1 0v3a.5.5 0 0 1-1 0zM5 11a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func MinusTenCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 12h3m2-3h2v6m6-1.5v-3A1.5 1.5 0 0 0 16.5 9v0a1.5 1.5 0 0 0-1.5 1.5v3a1.5 1.5 0 0 0 1.5 1.5v0a1.5 1.5 0 0 0 1.5-1.5z"/><circle r="10" transform="matrix(-1 0 0 1 12 12)"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 12h3m2-3h2v6m6-1.5v-3A1.5 1.5 0 0 0 16.5 9v0a1.5 1.5 0 0 0-1.5 1.5v3a1.5 1.5 0 0 0 1.5 1.5v0a1.5 1.5 0 0 0 1.5-1.5"/><circle r="10" transform="matrix(-1 0 0 1 12 12)"/></g>`), g.Group(children),
 	)
 }
 
 func Money(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 8a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V8zm9 4a1 1 0 1 1 2 0a1 1 0 0 1-2 0zm1-3a3 3 0 1 0 0 6a3 3 0 0 0 0-6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 8a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3zm9 4a1 1 0 1 1 2 0a1 1 0 0 1-2 0m1-3a3 3 0 1 0 0 6a3 3 0 0 0 0-6" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func MoneyHand(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" d="M16.948 9.95L14.998 8v6.587c0 .89-1.077 1.337-1.707.707L11.996 14c-.5-.5-1.701-.8-2.502 0c-.8.8-.5 2 0 2.5l3.603 4.4A3 3 0 0 0 15.42 22H18a1 1 0 0 0 1-1v-6.1a7 7 0 0 0-2.052-4.95z"/><path d="M11 2h2a2 2 0 0 1 2 2v2m-4-4c0 1.333.8 4 4 4m-4-4H9m6 4v6M5 12v2a2 2 0 0 0 2 2h2c0-1.333-.8-4-4-4zm0 0V6m4-4H7a2 2 0 0 0-2 2v2m4-4c0 1.333-.8 4-4 4"/><circle cx="10" cy="9" r="1" transform="rotate(90 10 9)"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" d="M16.948 9.95L14.998 8v6.587c0 .89-1.077 1.337-1.707.707L11.996 14c-.5-.5-1.701-.8-2.502 0s-.5 2 0 2.5l3.603 4.4A3 3 0 0 0 15.42 22H18a1 1 0 0 0 1-1v-6.1a7 7 0 0 0-2.052-4.95"/><path d="M11 2h2a2 2 0 0 1 2 2v2m-4-4c0 1.333.8 4 4 4m-4-4H9m6 4v6M5 12v2a2 2 0 0 0 2 2h2c0-1.333-.8-4-4-4m0 0V6m4-4H7a2 2 0 0 0-2 2v2m4-4c0 1.333-.8 4-4 4"/><circle cx="10" cy="9" r="1" transform="rotate(90 10 9)"/></g>`), g.Group(children),
 	)
 }
 
 func MoneyHandLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M19 22v-7.1a7 7 0 0 0-2.052-4.95L14.998 8v6.587c0 .89-1.077 1.337-1.707.707L11.996 14c-.5-.5-1.701-.8-2.502 0c-.8.8-.5 2 0 2.5l5.504 5.5"/><path d="M11 2h2a2 2 0 0 1 2 2v2m-4-4c0 1.333.8 4 4 4m-4-4H9m6 4v6M5 12v2a2 2 0 0 0 2 2h2c0-1.333-.8-4-4-4zm0 0V6m4-4H7a2 2 0 0 0-2 2v2m4-4c0 1.333-.8 4-4 4"/><circle cx="10" cy="9" r="1" transform="rotate(90 10 9)"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M19 22v-7.1a7 7 0 0 0-2.052-4.95L14.998 8v6.587c0 .89-1.077 1.337-1.707.707L11.996 14c-.5-.5-1.701-.8-2.502 0s-.5 2 0 2.5l5.504 5.5"/><path d="M11 2h2a2 2 0 0 1 2 2v2m-4-4c0 1.333.8 4 4 4m-4-4H9m6 4v6M5 12v2a2 2 0 0 0 2 2h2c0-1.333-.8-4-4-4m0 0V6m4-4H7a2 2 0 0 0-2 2v2m4-4c0 1.333-.8 4-4 4"/><circle cx="10" cy="9" r="1" transform="rotate(90 10 9)"/></g>`), g.Group(children),
 	)
 }
 
@@ -4481,7 +4481,7 @@ func MoneyLine(children ...g.Node) g.Node {
 func MoneyMinus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 18h6"/><path fill="currentColor" fill-rule="evenodd" d="M5 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h7.083A6.036 6.036 0 0 1 12 18c0-1.148.322-2.22.881-3.131A3.001 3.001 0 0 1 9 12a3 3 0 1 1 5.869.881A5.972 5.972 0 0 1 18 12c1.537 0 2.939.578 4 1.528V8a3 3 0 0 0-3-3H5zm7 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 18h6"/><path fill="currentColor" fill-rule="evenodd" d="M5 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h7.083A6 6 0 0 1 12 18c0-1.148.322-2.22.881-3.131A3 3 0 0 1 9 12a3 3 0 1 1 5.869.881A5.97 5.97 0 0 1 18 12c1.537 0 2.939.578 4 1.528V8a3 3 0 0 0-3-3zm7 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -4495,7 +4495,7 @@ func MoneyMinusLine(children ...g.Node) g.Node {
 func MoneyPlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 15v3m0 3v-3m0 0h-3m3 0h3"/><path fill="currentColor" fill-rule="evenodd" d="M5 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h7.083A6.036 6.036 0 0 1 12 18c0-1.148.322-2.22.881-3.131A3.001 3.001 0 0 1 9 12a3 3 0 1 1 5.869.881A5.972 5.972 0 0 1 18 12c1.537 0 2.939.578 4 1.528V8a3 3 0 0 0-3-3H5zm7 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 15v3m0 3v-3m0 0h-3m3 0h3"/><path fill="currentColor" fill-rule="evenodd" d="M5 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h7.083A6 6 0 0 1 12 18c0-1.148.322-2.22.881-3.131A3 3 0 0 1 9 12a3 3 0 1 1 5.869.881A5.97 5.97 0 0 1 18 12c1.537 0 2.939.578 4 1.528V8a3 3 0 0 0-3-3zm7 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -4509,28 +4509,28 @@ func MoneyPlusLine(children ...g.Node) g.Node {
 func Monitor(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M19 4H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16h7a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h7zm0 0v4m0 0h4m-4 0H8"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M19 4H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16h7a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2zm0 0v4m0 0h4m-4 0H8"/></g>`), g.Group(children),
 	)
 }
 
 func MonitorLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16h7a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h7zm0 0v4m0 0h4m-4 0H8"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 16h7a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2zm0 0v4m0 0h4m-4 0H8"/>`), g.Group(children),
 	)
 }
 
 func Moon(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.353 3C5.849 4.408 3 7.463 3 11.47A9.53 9.53 0 0 0 12.53 21c4.007 0 7.062-2.849 8.47-6.353C8.17 17.065 8.14 8.14 9.353 3z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.353 3C5.849 4.408 3 7.463 3 11.47A9.53 9.53 0 0 0 12.53 21c4.007 0 7.062-2.849 8.47-6.353C8.17 17.065 8.14 8.14 9.353 3"/>`), g.Group(children),
 	)
 }
 
 func MoonLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.353 3C5.849 4.408 3 7.463 3 11.47A9.53 9.53 0 0 0 12.53 21c4.007 0 7.062-2.849 8.47-6.353C8.17 17.065 8.14 8.14 9.353 3z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.353 3C5.849 4.408 3 7.463 3 11.47A9.53 9.53 0 0 0 12.53 21c4.007 0 7.062-2.849 8.47-6.353C8.17 17.065 8.14 8.14 9.353 3"/>`), g.Group(children),
 	)
 }
 
@@ -4565,7 +4565,7 @@ func MoreMenuVerticalLine(children ...g.Node) g.Node {
 func Mouse(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11 2.07A7.002 7.002 0 0 0 5 9v1h6V2.07zM5 12v3a7 7 0 1 0 14 0v-3H5zm14-2V9a7.002 7.002 0 0 0-6-6.93V10h6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11 2.07A7 7 0 0 0 5 9v1h6zM5 12v3a7 7 0 1 0 14 0v-3zm14-2V9a7 7 0 0 0-6-6.93V10z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -4593,7 +4593,7 @@ func MultiplyLine(children ...g.Node) g.Node {
 func Music(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><circle cx="6" cy="18" r="3" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><circle cx="18" cy="17" r="3" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path fill="currentColor" d="M21 3L9 6v4l12-3V3z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 18v-8m12 7V7M9 10V6l12-3v4M9 10l12-3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><circle cx="6" cy="18" r="3" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><circle cx="18" cy="17" r="3" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path fill="currentColor" d="M21 3L9 6v4l12-3z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 18v-8m12 7V7M9 10V6l12-3v4M9 10l12-3"/></g>`), g.Group(children),
 	)
 }
 
@@ -4607,14 +4607,14 @@ func MusicLine(children ...g.Node) g.Node {
 func MusicNote(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M13 4h4v4h-4v9c0 1-.6 3-3 3s-3-2-3-3s.6-3 3-3s3 2 3 3V4z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17V8m0 9c0 1-.6 3-3 3s-3-2-3-3s.6-3 3-3s3 2 3 3zm0-9V4h4v4h-4z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M13 4h4v4h-4v9c0 1-.6 3-3 3s-3-2-3-3s.6-3 3-3s3 2 3 3z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17V8m0 9c0 1-.6 3-3 3s-3-2-3-3s.6-3 3-3s3 2 3 3m0-9V4h4v4z"/></g>`), g.Group(children),
 	)
 }
 
 func MusicNoteLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17V8m0 9c0 1-.6 3-3 3s-3-2-3-3s.6-3 3-3s3 2 3 3zm0-9V4h4v4h-4z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17V8m0 9c0 1-.6 3-3 3s-3-2-3-3s.6-3 3-3s3 2 3 3m0-9V4h4v4z"/>`), g.Group(children),
 	)
 }
 
@@ -4635,21 +4635,21 @@ func NewspaperLine(children ...g.Node) g.Node {
 func NextCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12zm6.498-4.865a1 1 0 0 1 .998-.003L15 10.848V8a1 1 0 1 1 2 0v8a1 1 0 1 1-2 0v-2.848l-6.504 3.716A1 1 0 0 1 7 16V8a1 1 0 0 1 .498-.865z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m6.498-4.865a1 1 0 0 1 .998-.003L15 10.848V8a1 1 0 1 1 2 0v8a1 1 0 1 1-2 0v-2.848l-6.504 3.716A1 1 0 0 1 7 16V8a1 1 0 0 1 .498-.865" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func NextCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 8v8M8 8v8l7-4l-7-4z"/><circle cx="12" cy="12" r="10"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 8v8M8 8v8l7-4z"/><circle cx="12" cy="12" r="10"/></g>`), g.Group(children),
 	)
 }
 
 func NoteText(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h9v-5a3 3 0 0 1 3-3h5V5a3 3 0 0 0-3-3H5zm12.293 19.121a3 3 0 0 1-1.293.762V17a1 1 0 0 1 1-1h4.883a3 3 0 0 1-.762 1.293l-3.828 3.828zM7 6a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2H7zm0 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H7zm0 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H7z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h9v-5a3 3 0 0 1 3-3h5V5a3 3 0 0 0-3-3zm12.293 19.121a3 3 0 0 1-1.293.762V17a1 1 0 0 1 1-1h4.883a3 3 0 0 1-.762 1.293zM7 6a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -4663,7 +4663,7 @@ func NoteTextLine(children ...g.Node) g.Node {
 func NoteTextMinus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 6H3"/><path fill="currentColor" fill-rule="evenodd" d="M12 6h5a1 1 0 1 1 0 2h-5.341a5.997 5.997 0 0 1-1.187 2H17a1 1 0 1 1 0 2H7a.998.998 0 0 1-.287-.042A5.978 5.978 0 0 1 2 10.472V19a3 3 0 0 0 3 3h9v-5a3 3 0 0 1 3-3h5V5a3 3 0 0 0-3-3h-8.528A5.978 5.978 0 0 1 12 6zm4 15.883a3 3 0 0 0 1.293-.762l3.828-3.828A3 3 0 0 0 21.883 16H17a1 1 0 0 0-1 1v4.883zM6 15a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 6H3"/><path fill="currentColor" fill-rule="evenodd" d="M12 6h5a1 1 0 1 1 0 2h-5.341a6 6 0 0 1-1.187 2H17a1 1 0 1 1 0 2H7a1 1 0 0 1-.287-.042A5.98 5.98 0 0 1 2 10.472V19a3 3 0 0 0 3 3h9v-5a3 3 0 0 1 3-3h5V5a3 3 0 0 0-3-3h-8.528A5.98 5.98 0 0 1 12 6m4 15.883a3 3 0 0 0 1.293-.762l3.828-3.828A3 3 0 0 0 21.883 16H17a1 1 0 0 0-1 1zM6 15a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -4677,7 +4677,7 @@ func NoteTextMinusLine(children ...g.Node) g.Node {
 func NoteTextPlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 3v3m0 3V6m0 0h3M6 6H3"/><path fill="currentColor" fill-rule="evenodd" d="M12 6h5a1 1 0 1 1 0 2h-5.341a5.997 5.997 0 0 1-1.187 2H17a1 1 0 1 1 0 2H7a.998.998 0 0 1-.287-.042A5.978 5.978 0 0 1 2 10.472V19a3 3 0 0 0 3 3h9v-5a3 3 0 0 1 3-3h5V5a3 3 0 0 0-3-3h-8.528A5.978 5.978 0 0 1 12 6zm4 15.883a3 3 0 0 0 1.293-.762l3.828-3.828A3 3 0 0 0 21.883 16H17a1 1 0 0 0-1 1v4.883zM6 15a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 3v3m0 3V6m0 0h3M6 6H3"/><path fill="currentColor" fill-rule="evenodd" d="M12 6h5a1 1 0 1 1 0 2h-5.341a6 6 0 0 1-1.187 2H17a1 1 0 1 1 0 2H7a1 1 0 0 1-.287-.042A5.98 5.98 0 0 1 2 10.472V19a3 3 0 0 0 3 3h9v-5a3 3 0 0 1 3-3h5V5a3 3 0 0 0-3-3h-8.528A5.98 5.98 0 0 1 12 6m4 15.883a3 3 0 0 0 1.293-.762l3.828-3.828A3 3 0 0 0 21.883 16H17a1 1 0 0 0-1 1zM6 15a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -4691,28 +4691,28 @@ func NoteTextPlusLine(children ...g.Node) g.Node {
 func Noteblock(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8 2a1 1 0 0 1 1 1v1H7V3a1 1 0 0 1 1-1zm9 2h1a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h1v3a1 1 0 0 0 2 0V4h2v3a1 1 0 1 0 2 0V4h2v3a1 1 0 1 0 2 0V4zm0 0h-2V3a1 1 0 1 1 2 0v1zm-4 0V3a1 1 0 1 0-2 0v1h2z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8 2a1 1 0 0 1 1 1v1H7V3a1 1 0 0 1 1-1m9 2h1a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h1v3a1 1 0 0 0 2 0V4h2v3a1 1 0 1 0 2 0V4h2v3a1 1 0 1 0 2 0zm0 0h-2V3a1 1 0 1 1 2 0zm-4 0V3a1 1 0 1 0-2 0v1z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func NoteblockLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 3v4m4 0V3m4 0v4M6 21h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 3v4m4 0V3m4 0v4M6 21h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2"/>`), g.Group(children),
 	)
 }
 
 func NoteblockText(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M9 3a1 1 0 0 0-2 0v1H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3h-1V3a1 1 0 1 0-2 0v1h-2V3a1 1 0 1 0-2 0v1H9V3zm2 1v3a1 1 0 1 0 2 0V4h-2zm4 0h2v3a1 1 0 1 1-2 0V4zM9 4v3a1 1 0 0 1-2 0V4h2zm-1 6a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8zm0 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H8z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M9 3a1 1 0 0 0-2 0v1H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3h-1V3a1 1 0 1 0-2 0v1h-2V3a1 1 0 1 0-2 0v1H9zm2 1v3a1 1 0 1 0 2 0V4zm4 0h2v3a1 1 0 1 1-2 0zM9 4v3a1 1 0 0 1-2 0V4zm-1 6a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func NoteblockTextLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 3v4m4 0V3m4 0v4m-8 4h8m-8 4h4m-6 6h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 3v4m4 0V3m4 0v4m-8 4h8m-8 4h4m-6 6h12a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2"/>`), g.Group(children),
 	)
 }
 
@@ -4761,35 +4761,35 @@ func PaperClipLine(children ...g.Node) g.Node {
 func PaperFold(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M6 21h12c-1 0-3-.6-3-3v-2H3v2c0 2.4 2 3 3 3z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13c0 1-.6 3-3 3m0 0H6c-1 0-3-.6-3-3v-2h12v2c0 2.4 2 3 3 3z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M6 21h12c-1 0-3-.6-3-3v-2H3v2c0 2.4 2 3 3 3"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13c0 1-.6 3-3 3m0 0H6c-1 0-3-.6-3-3v-2h12v2c0 2.4 2 3 3 3"/></g>`), g.Group(children),
 	)
 }
 
 func PaperFoldLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13c0 1-.6 3-3 3m0 0H6c-1 0-3-.6-3-3v-2h12v2c0 2.4 2 3 3 3z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13c0 1-.6 3-3 3m0 0H6c-1 0-3-.6-3-3v-2h12v2c0 2.4 2 3 3 3"/>`), g.Group(children),
 	)
 }
 
 func PaperFoldText(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M6 21h12c-1 0-3-.6-3-3v-2H3v2c0 2.4 2 3 3 3z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13c0 1-.6 3-3 3m0 0H6c-1 0-3-.6-3-3v-2h12v2c0 2.4 2 3 3 3zM9 7h8m-8 4h4"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M6 21h12c-1 0-3-.6-3-3v-2H3v2c0 2.4 2 3 3 3"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13c0 1-.6 3-3 3m0 0H6c-1 0-3-.6-3-3v-2h12v2c0 2.4 2 3 3 3M9 7h8m-8 4h4"/></g>`), g.Group(children),
 	)
 }
 
 func PaperFoldTextLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13c0 1-.6 3-3 3m0 0H6c-1 0-3-.6-3-3v-2h12v2c0 2.4 2 3 3 3zM9 7h8m-8 4h4"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13c0 1-.6 3-3 3m0 0H6c-1 0-3-.6-3-3v-2h12v2c0 2.4 2 3 3 3M9 7h8m-8 4h4"/>`), g.Group(children),
 	)
 }
 
 func PaperRollTwo(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5.29 4.188C6.54 3.29 8.008 3 9 3h7a6 6 0 1 1-4 10.472V20a1 1 0 0 1-1.555.832l-1.017-.678l-1.48.74a1 1 0 0 1-.895 0l-1.481-.74l-1.017.678A1 1 0 0 1 3 20V9c0-2.326.992-3.876 2.29-4.812zM11.529 5H9c-.673 0-1.706.21-2.54.812C5.674 6.376 5 7.326 5 9v9.134a1 1 0 0 1 .947-.028l1.553.776l1.553-.776a1 1 0 0 1 .947.028V9c0-1.537.578-2.938 1.528-4zM16 11a2 2 0 1 0 0-4a2 2 0 0 0 0 4z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5.29 4.188C6.54 3.29 8.008 3 9 3h7a6 6 0 1 1-4 10.472V20a1 1 0 0 1-1.555.832l-1.017-.678l-1.48.74a1 1 0 0 1-.895 0l-1.481-.74l-1.017.678A1 1 0 0 1 3 20V9c0-2.326.992-3.876 2.29-4.812M11.529 5H9c-.673 0-1.706.21-2.54.812C5.674 6.376 5 7.326 5 9v9.134a1 1 0 0 1 .947-.028l1.553.776l1.553-.776a1 1 0 0 1 .947.028V9c0-1.537.578-2.938 1.528-4zM16 11a2 2 0 1 0 0-4a2 2 0 0 0 0 4" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -4824,7 +4824,7 @@ func Pause(children ...g.Node) g.Node {
 func PauseCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12S5.925 1 12 1zM6 9a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9zm2 5h1v-4H8v4zm6-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1h-3zm2 6h-1v-4h1v4z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12S5.925 1 12 1M6 9a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm2 5h1v-4H8zm6-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1zm2 6h-1v-4h1z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -4887,56 +4887,56 @@ func PercentLine(children ...g.Node) g.Node {
 func Phone(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M20 16v4c-2.758 0-5.07-.495-7-1.325c-3.841-1.652-6.176-4.63-7.5-7.675C4.4 8.472 4 5.898 4 4h4l1 4l-3.5 3c1.324 3.045 3.659 6.023 7.5 7.675L16 15l4 1z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 18.675c1.93.83 4.242 1.325 7 1.325v-4l-4-1l-3 3.675zm0 0C9.159 17.023 6.824 14.045 5.5 11m0 0C4.4 8.472 4 5.898 4 4h4l1 4l-3.5 3z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M20 16v4c-2.758 0-5.07-.495-7-1.325c-3.841-1.652-6.176-4.63-7.5-7.675C4.4 8.472 4 5.898 4 4h4l1 4l-3.5 3c1.324 3.045 3.659 6.023 7.5 7.675L16 15z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 18.675c1.93.83 4.242 1.325 7 1.325v-4l-4-1zm0 0C9.159 17.023 6.824 14.045 5.5 11m0 0C4.4 8.472 4 5.898 4 4h4l1 4z"/></g>`), g.Group(children),
 	)
 }
 
 func PhoneDial(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M19 17v4c-2.758 0-5.07-.495-7-1.325c-3.841-1.652-6.176-4.63-7.5-7.675C3.4 9.472 3 6.898 3 5h4l1 4l-3.5 3c1.324 3.045 3.659 6.023 7.5 7.675L15 16l4 1z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19.675c1.93.83 4.242 1.325 7 1.325v-4l-4-1l-3 3.675zm0 0C8.159 18.023 5.824 15.045 4.5 12m0 0C3.4 9.472 3 6.898 3 5h4l1 4l-3.5 3zM14 4h.01M17 4h.01M20 4h.01M14 7h.01M17 7h.01M20 7h.01M14 10h.01M17 10h.01M20 10h.01"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M19 17v4c-2.758 0-5.07-.495-7-1.325c-3.841-1.652-6.176-4.63-7.5-7.675C3.4 9.472 3 6.898 3 5h4l1 4l-3.5 3c1.324 3.045 3.659 6.023 7.5 7.675L15 16z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19.675c1.93.83 4.242 1.325 7 1.325v-4l-4-1zm0 0C8.159 18.023 5.824 15.045 4.5 12m0 0C3.4 9.472 3 6.898 3 5h4l1 4zM14 4h.01M17 4h.01M20 4h.01M14 7h.01M17 7h.01M20 7h.01M14 10h.01M17 10h.01M20 10h.01"/></g>`), g.Group(children),
 	)
 }
 
 func PhoneDialLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19.675c1.93.83 4.242 1.325 7 1.325v-4l-4-1l-3 3.675zm0 0C8.159 18.023 5.824 15.045 4.5 12m0 0C3.4 9.472 3 6.898 3 5h4l1 4l-3.5 3zM14 4h.01M17 4h.01M20 4h.01M14 7h.01M17 7h.01M20 7h.01M14 10h.01M17 10h.01M20 10h.01"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19.675c1.93.83 4.242 1.325 7 1.325v-4l-4-1zm0 0C8.159 18.023 5.824 15.045 4.5 12m0 0C3.4 9.472 3 6.898 3 5h4l1 4zM14 4h.01M17 4h.01M20 4h.01M14 7h.01M17 7h.01M20 7h.01M14 10h.01M17 10h.01M20 10h.01"/>`), g.Group(children),
 	)
 }
 
 func PhoneHangup(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M23 12.5L20.5 15l-3-2V8.842C15.976 8.337 14.146 8 12 8c-2.145 0-3.976.337-5.5.842V13l-3 2L1 12.5c.665-.997 2.479-2.657 5.5-3.658C8.024 8.337 9.855 8 12 8c2.146 0 3.976.337 5.5.842c3.021 1 4.835 2.66 5.5 3.658z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 8.842C15.976 8.337 14.146 8 12 8c-2.145 0-3.976.337-5.5.842m11 0c3.021 1 4.835 2.66 5.5 3.658L20.5 15l-3-2V8.842zm-11 0c-3.021 1-4.835 2.66-5.5 3.658L3.5 15l3-2V8.842z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M23 12.5L20.5 15l-3-2V8.842C15.976 8.337 14.146 8 12 8s-3.976.337-5.5.842V13l-3 2L1 12.5c.665-.997 2.479-2.657 5.5-3.658C8.024 8.337 9.855 8 12 8s3.976.337 5.5.842c3.021 1 4.835 2.66 5.5 3.658"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 8.842C15.976 8.337 14.146 8 12 8s-3.976.337-5.5.842m11 0c3.021 1 4.835 2.66 5.5 3.658L20.5 15l-3-2zm-11 0c-3.021 1-4.835 2.66-5.5 3.658L3.5 15l3-2z"/></g>`), g.Group(children),
 	)
 }
 
 func PhoneHangupLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 8.842C15.976 8.337 14.146 8 12 8c-2.145 0-3.976.337-5.5.842m11 0c3.021 1 4.835 2.66 5.5 3.658L20.5 15l-3-2V8.842zm-11 0c-3.021 1-4.835 2.66-5.5 3.658L3.5 15l3-2V8.842z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 8.842C15.976 8.337 14.146 8 12 8s-3.976.337-5.5.842m11 0c3.021 1 4.835 2.66 5.5 3.658L20.5 15l-3-2zm-11 0c-3.021 1-4.835 2.66-5.5 3.658L3.5 15l3-2z"/>`), g.Group(children),
 	)
 }
 
 func PhoneIncoming(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M19 17v4c-2.758 0-5.07-.495-7-1.325c-3.841-1.652-6.176-4.63-7.5-7.675C3.4 9.472 3 6.898 3 5h4l1 4l-3.5 3c1.324 3.045 3.659 6.023 7.5 7.675L15 16l4 1z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19.675c1.93.83 4.242 1.325 7 1.325v-4l-4-1l-3 3.675zm0 0C8.159 18.023 5.824 15.045 4.5 12m0 0C3.4 9.472 3 6.898 3 5h4l1 4l-3.5 3zM20 4l-6 6m0 0V6m0 4h4"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M19 17v4c-2.758 0-5.07-.495-7-1.325c-3.841-1.652-6.176-4.63-7.5-7.675C3.4 9.472 3 6.898 3 5h4l1 4l-3.5 3c1.324 3.045 3.659 6.023 7.5 7.675L15 16z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19.675c1.93.83 4.242 1.325 7 1.325v-4l-4-1zm0 0C8.159 18.023 5.824 15.045 4.5 12m0 0C3.4 9.472 3 6.898 3 5h4l1 4zM20 4l-6 6m0 0V6m0 4h4"/></g>`), g.Group(children),
 	)
 }
 
 func PhoneIncomingLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19.675c1.93.83 4.242 1.325 7 1.325v-4l-4-1l-3 3.675zm0 0C8.159 18.023 5.824 15.045 4.5 12m0 0C3.4 9.472 3 6.898 3 5h4l1 4l-3.5 3zM20 4l-6 6m0 0V6m0 4h4"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19.675c1.93.83 4.242 1.325 7 1.325v-4l-4-1zm0 0C8.159 18.023 5.824 15.045 4.5 12m0 0C3.4 9.472 3 6.898 3 5h4l1 4zM20 4l-6 6m0 0V6m0 4h4"/>`), g.Group(children),
 	)
 }
 
 func PhoneLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 18.675c1.93.83 4.242 1.325 7 1.325v-4l-4-1l-3 3.675zm0 0C9.159 17.023 6.824 14.045 5.5 11m0 0C4.4 8.472 4 5.898 4 4h4l1 4l-3.5 3z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 18.675c1.93.83 4.242 1.325 7 1.325v-4l-4-1zm0 0C9.159 17.023 6.824 14.045 5.5 11m0 0C4.4 8.472 4 5.898 4 4h4l1 4z"/>`), g.Group(children),
 	)
 }
 
@@ -4957,49 +4957,49 @@ func PhoneMissedCallLine(children ...g.Node) g.Node {
 func PhoneOutgoing(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M19 17v4c-2.758 0-5.07-.495-7-1.325c-3.841-1.652-6.176-4.63-7.5-7.675C3.4 9.472 3 6.898 3 5h4l1 4l-3.5 3c1.324 3.045 3.659 6.023 7.5 7.675L15 16l4 1z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19.675c1.93.83 4.242 1.325 7 1.325v-4l-4-1l-3 3.675zm0 0C8.159 18.023 5.824 15.045 4.5 12m0 0C3.4 9.472 3 6.898 3 5h4l1 4l-3.5 3zm9.5-2l6-6m0 0v4m0-4h-4"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M19 17v4c-2.758 0-5.07-.495-7-1.325c-3.841-1.652-6.176-4.63-7.5-7.675C3.4 9.472 3 6.898 3 5h4l1 4l-3.5 3c1.324 3.045 3.659 6.023 7.5 7.675L15 16z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19.675c1.93.83 4.242 1.325 7 1.325v-4l-4-1zm0 0C8.159 18.023 5.824 15.045 4.5 12m0 0C3.4 9.472 3 6.898 3 5h4l1 4zm9.5-2l6-6m0 0v4m0-4h-4"/></g>`), g.Group(children),
 	)
 }
 
 func PhoneOutgoingLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19.675c1.93.83 4.242 1.325 7 1.325v-4l-4-1l-3 3.675zm0 0C8.159 18.023 5.824 15.045 4.5 12m0 0C3.4 9.472 3 6.898 3 5h4l1 4l-3.5 3zm9.5-2l6-6m0 0v4m0-4h-4"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19.675c1.93.83 4.242 1.325 7 1.325v-4l-4-1zm0 0C8.159 18.023 5.824 15.045 4.5 12m0 0C3.4 9.472 3 6.898 3 5h4l1 4zm9.5-2l6-6m0 0v4m0-4h-4"/>`), g.Group(children),
 	)
 }
 
 func PhoneRetro(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 4.842C15.976 4.337 14.146 4 12 4c-2.145 0-3.976.337-5.5.842m11 0c3.021 1 4.835 2.66 5.5 3.658L20.5 11l-3-2V4.842zm-11 0c-3.021 1-4.835 2.66-5.5 3.658L3.5 11l3-2V4.842z"/><path fill="currentColor" fill-rule="evenodd" d="M10 6a1 1 0 0 1 1 1v2h2V7a1 1 0 1 1 2 0v2.586l5.121 5.121A3 3 0 0 1 21 16.828V18a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-1.172a3 3 0 0 1 .879-2.12L9 9.585V7a1 1 0 0 1 1-1zm2 11a2 2 0 1 0 0-4a2 2 0 0 0 0 4z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 4.842C15.976 4.337 14.146 4 12 4s-3.976.337-5.5.842m11 0c3.021 1 4.835 2.66 5.5 3.658L20.5 11l-3-2zm-11 0c-3.021 1-4.835 2.66-5.5 3.658L3.5 11l3-2z"/><path fill="currentColor" fill-rule="evenodd" d="M10 6a1 1 0 0 1 1 1v2h2V7a1 1 0 1 1 2 0v2.586l5.121 5.121A3 3 0 0 1 21 16.828V18a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-1.172a3 3 0 0 1 .879-2.12L9 9.585V7a1 1 0 0 1 1-1m2 11a2 2 0 1 0 0-4a2 2 0 0 0 0 4" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func PhoneRetroLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M17.5 4.842C15.976 4.337 14.146 4 12 4c-2.145 0-3.976.337-5.5.842m11 0c3.021 1 4.835 2.66 5.5 3.658L20.5 11l-3-2V4.842zm-11 0c-3.021 1-4.835 2.66-5.5 3.658L3.5 11l3-2V4.842zM10 7v3m0 0l-5.414 5.414A2 2 0 0 0 4 16.828V18a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1.172a2 2 0 0 0-.586-1.414L14 10m-4 0h4m0 0V7"/><circle cx="12" cy="15" r="2"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M17.5 4.842C15.976 4.337 14.146 4 12 4s-3.976.337-5.5.842m11 0c3.021 1 4.835 2.66 5.5 3.658L20.5 11l-3-2zm-11 0c-3.021 1-4.835 2.66-5.5 3.658L3.5 11l3-2zM10 7v3m0 0l-5.414 5.414A2 2 0 0 0 4 16.828V18a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1.172a2 2 0 0 0-.586-1.414L14 10m-4 0h4m0 0V7"/><circle cx="12" cy="15" r="2"/></g>`), g.Group(children),
 	)
 }
 
 func PhoneRing(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M23 17.5L20.5 20l-3-2v-4.158C15.976 13.337 14.146 13 12 13c-2.145 0-3.976.337-5.5.842V18l-3 2L1 17.5c.665-.997 2.479-2.657 5.5-3.658C8.024 13.337 9.855 13 12 13c2.146 0 3.976.337 5.5.842c3.021 1 4.835 2.66 5.5 3.658z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 13.842C15.976 13.337 14.146 13 12 13c-2.145 0-3.976.337-5.5.842m11 0c3.021 1 4.835 2.66 5.5 3.658L20.5 20l-3-2v-4.158zm-11 0c-3.021 1-4.835 2.66-5.5 3.658L3.5 20l3-2v-4.158zM12 4v4M4.636 6.636l2.828 2.828m11.9-2.828l-2.828 2.828"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M23 17.5L20.5 20l-3-2v-4.158C15.976 13.337 14.146 13 12 13s-3.976.337-5.5.842V18l-3 2L1 17.5c.665-.997 2.479-2.657 5.5-3.658C8.024 13.337 9.855 13 12 13s3.976.337 5.5.842c3.021 1 4.835 2.66 5.5 3.658"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 13.842C15.976 13.337 14.146 13 12 13s-3.976.337-5.5.842m11 0c3.021 1 4.835 2.66 5.5 3.658L20.5 20l-3-2zm-11 0c-3.021 1-4.835 2.66-5.5 3.658L3.5 20l3-2zM12 4v4M4.636 6.636l2.828 2.828m11.9-2.828l-2.828 2.828"/></g>`), g.Group(children),
 	)
 }
 
 func PhoneRingLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 13.842C15.976 13.337 14.146 13 12 13c-2.145 0-3.976.337-5.5.842m11 0c3.021 1 4.835 2.66 5.5 3.658L20.5 20l-3-2v-4.158zm-11 0c-3.021 1-4.835 2.66-5.5 3.658L3.5 20l3-2v-4.158zM12 4v4M4.636 6.636l2.828 2.828m11.9-2.828l-2.828 2.828"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.5 13.842C15.976 13.337 14.146 13 12 13s-3.976.337-5.5.842m11 0c3.021 1 4.835 2.66 5.5 3.658L20.5 20l-3-2zm-11 0c-3.021 1-4.835 2.66-5.5 3.658L3.5 20l3-2zM12 4v4M4.636 6.636l2.828 2.828m11.9-2.828l-2.828 2.828"/>`), g.Group(children),
 	)
 }
 
 func Pill(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4.929 19.071a5 5 0 0 1 0-7.071l2.828-2.828l7.071 7.07L12 19.073a5 5 0 0 1-7.071 0zm11.314-4.243L19.07 12A5 5 0 0 0 12 4.929L9.172 7.757l7.07 7.071z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4.929 19.071a5 5 0 0 1 0-7.071l2.828-2.828l7.071 7.07L12 19.073a5 5 0 0 1-7.071 0zm11.314-4.243L19.07 12A5 5 0 0 0 12 4.929L9.172 7.757z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -5013,49 +5013,49 @@ func PillLine(children ...g.Node) g.Node {
 func Pin(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M12.956 18.956L9 15l-3.956-3.956a1 1 0 0 1 .314-1.626l5.261-2.255a1 1 0 0 0 .535-.548l1.283-3.207a1 1 0 0 1 1.635-.336l6.856 6.856a1 1 0 0 1-.336 1.635l-3.207 1.283a1 1 0 0 0-.548.535l-2.255 5.261a1 1 0 0 1-1.626.314z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 20l5-5m0 0l3.956 3.956a1 1 0 0 0 1.626-.314l2.255-5.261a1 1 0 0 1 .548-.535l3.207-1.283a1 1 0 0 0 .336-1.635l-6.856-6.856a1 1 0 0 0-1.635.336l-1.283 3.207a1 1 0 0 1-.535.548L5.358 9.418a1 1 0 0 0-.314 1.626L9 15z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M12.956 18.956L9 15l-3.956-3.956a1 1 0 0 1 .314-1.626l5.261-2.255a1 1 0 0 0 .535-.548l1.283-3.207a1 1 0 0 1 1.635-.336l6.856 6.856a1 1 0 0 1-.336 1.635l-3.207 1.283a1 1 0 0 0-.548.535l-2.255 5.261a1 1 0 0 1-1.626.314"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 20l5-5m0 0l3.956 3.956a1 1 0 0 0 1.626-.314l2.255-5.261a1 1 0 0 1 .548-.535l3.207-1.283a1 1 0 0 0 .336-1.635l-6.856-6.856a1 1 0 0 0-1.635.336l-1.283 3.207a1 1 0 0 1-.535.548L5.358 9.418a1 1 0 0 0-.314 1.626z"/></g>`), g.Group(children),
 	)
 }
 
 func PinLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 20l5-5m0 0l3.956 3.956a1 1 0 0 0 1.626-.314l2.255-5.261a1 1 0 0 1 .548-.535l3.207-1.283a1 1 0 0 0 .336-1.635l-6.856-6.856a1 1 0 0 0-1.635.336l-1.283 3.207a1 1 0 0 1-.535.548L5.358 9.418a1 1 0 0 0-.314 1.626L9 15z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m4 20l5-5m0 0l3.956 3.956a1 1 0 0 0 1.626-.314l2.255-5.261a1 1 0 0 1 .548-.535l3.207-1.283a1 1 0 0 0 .336-1.635l-6.856-6.856a1 1 0 0 0-1.635.336l-1.283 3.207a1 1 0 0 1-.535.548L5.358 9.418a1 1 0 0 0-.314 1.626z"/>`), g.Group(children),
 	)
 }
 
 func Pinwheel(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 7a5.001 5.001 0 0 0-4.607 3.053C11.963 11.07 12.896 12 14 12h6c1.105 0 2.037-.93 1.607-1.947A5.001 5.001 0 0 0 17 7zm0 10a5.001 5.001 0 0 0-3.053-4.607C12.93 11.963 12 12.896 12 14v6c0 1.105.93 2.037 1.947 1.607A5.001 5.001 0 0 0 17 17zM7 17a5.001 5.001 0 0 0 4.607-3.053C12.037 12.93 11.104 12 10 12H4c-1.105 0-2.037.93-1.607 1.947A5.001 5.001 0 0 0 7 17zM7 7a5.001 5.001 0 0 0 3.053 4.607C11.07 12.037 12 11.104 12 10V4c0-1.105-.93-2.037-1.947-1.607A5.001 5.001 0 0 0 7 7z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 7a5 5 0 0 0-4.607 3.053C11.963 11.07 12.896 12 14 12h6c1.105 0 2.037-.93 1.607-1.947A5 5 0 0 0 17 7m0 10a5 5 0 0 0-3.053-4.607C12.93 11.963 12 12.896 12 14v6c0 1.105.93 2.037 1.947 1.607A5 5 0 0 0 17 17M7 17a5 5 0 0 0 4.607-3.053C12.037 12.93 11.104 12 10 12H4c-1.105 0-2.037.93-1.607 1.947A5 5 0 0 0 7 17M7 7a5 5 0 0 0 3.053 4.607C11.07 12.037 12 11.104 12 10V4c0-1.105-.93-2.037-1.947-1.607A5 5 0 0 0 7 7"/>`), g.Group(children),
 	)
 }
 
 func PinwheelLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 7a5.001 5.001 0 0 0-4.607 3.053C11.963 11.07 12.896 12 14 12h6c1.105 0 2.037-.93 1.607-1.947A5.001 5.001 0 0 0 17 7zm0 10a5.001 5.001 0 0 0-3.053-4.607C12.93 11.963 12 12.896 12 14v6c0 1.105.93 2.037 1.947 1.607A5.001 5.001 0 0 0 17 17zM7 17a5.001 5.001 0 0 0 4.607-3.053C12.037 12.93 11.104 12 10 12H4c-1.105 0-2.037.93-1.607 1.947A5.001 5.001 0 0 0 7 17zM7 7a5.001 5.001 0 0 0 3.053 4.607C11.07 12.037 12 11.104 12 10V4c0-1.105-.93-2.037-1.947-1.607A5.001 5.001 0 0 0 7 7z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 7a5 5 0 0 0-4.607 3.053C11.963 11.07 12.896 12 14 12h6c1.105 0 2.037-.93 1.607-1.947A5 5 0 0 0 17 7m0 10a5 5 0 0 0-3.053-4.607C12.93 11.963 12 12.896 12 14v6c0 1.105.93 2.037 1.947 1.607A5 5 0 0 0 17 17M7 17a5 5 0 0 0 4.607-3.053C12.037 12.93 11.104 12 10 12H4c-1.105 0-2.037.93-1.607 1.947A5 5 0 0 0 7 17M7 7a5 5 0 0 0 3.053 4.607C11.07 12.037 12 11.104 12 10V4c0-1.105-.93-2.037-1.947-1.607A5 5 0 0 0 7 7"/>`), g.Group(children),
 	)
 }
 
 func Planet(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4.859 5A9.973 9.973 0 0 1 12 2c4.479 0 8.267 2.943 9.542 7H15a1 1 0 1 0 0 2h6.95c.033.33.05.663.05 1c0 5.523-4.477 10-10 10a9.972 9.972 0 0 1-7.141-3H11a1 1 0 1 0 0-2H3.338a9.95 9.95 0 0 1-.88-2H13a1 1 0 1 0 0-2H2.05a9.957 9.957 0 0 1 1.289-6H12a1 1 0 1 0 0-2H4.859zM10 9a1 1 0 0 0 0 2h2a1 1 0 1 0 0-2h-2zm-2.292 1.708a1 1 0 0 1-1.414 0h-.001a1 1 0 1 1 1.414-1.415a1 1 0 0 1 0 1.415zm7.586 4a1 1 0 1 0 1.414-1.414v-.001a1 1 0 0 0-1.415 1.414z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4.859 5A9.97 9.97 0 0 1 12 2c4.479 0 8.267 2.943 9.542 7H15a1 1 0 1 0 0 2h6.95q.05.495.05 1c0 5.523-4.477 10-10 10a9.97 9.97 0 0 1-7.141-3H11a1 1 0 1 0 0-2H3.338a10 10 0 0 1-.88-2H13a1 1 0 1 0 0-2H2.05a9.96 9.96 0 0 1 1.289-6H12a1 1 0 1 0 0-2zM10 9a1 1 0 0 0 0 2h2a1 1 0 1 0 0-2zm-2.292 1.708a1 1 0 0 1-1.414 0h-.001a1 1 0 1 1 1.414-1.415a1 1 0 0 1 0 1.415zm7.586 4a1 1 0 1 0 1.414-1.414v-.001a1 1 0 0 0-1.415 1.414z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func PlanetLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.292 6A8.967 8.967 0 0 0 3 12c0 .687.077 1.357.223 2m2.069-8a9.003 9.003 0 0 1 15.485 4M5.292 6H12m8.777 4a9 9 0 0 1-15.485 8m15.485-8H15M3.223 14H13m-9.777 0a8.975 8.975 0 0 0 2.069 4m0 0H11m1-8h-2m-3 0h0m9 4h0"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.292 6A8.97 8.97 0 0 0 3 12c0 .687.077 1.357.223 2m2.069-8a9.003 9.003 0 0 1 15.485 4M5.292 6H12m8.777 4a9 9 0 0 1-15.485 8m15.485-8H15M3.223 14H13m-9.777 0a9 9 0 0 0 2.069 4m0 0H11m1-8h-2m6 4"/>`), g.Group(children),
 	)
 }
 
 func PlanetRingTwo(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 7.96c2.59-.125 4.379.274 4.625 1.193c.429 1.6-3.98 4.172-9.849 5.745c-5.868 1.572-10.972 1.55-11.401-.051c-.254-.948 1.188-2.236 3.625-3.455"/><path fill="currentColor" fill-rule="evenodd" d="M4 12a8 8 0 1 1 15.985.491c-1.653.879-3.904 1.754-6.467 2.44c-2.874.77-5.526 1.14-7.478 1.131a12.275 12.275 0 0 1-.956-.039A7.963 7.963 0 0 1 4 12zm2.766 6.05a8.003 8.003 0 0 0 12.658-3.065c-1.561.697-3.4 1.346-5.389 1.879c-2.668.715-5.208 1.115-7.269 1.186z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 7.96c2.59-.125 4.379.274 4.625 1.193c.429 1.6-3.98 4.172-9.849 5.745c-5.868 1.572-10.972 1.55-11.401-.051c-.254-.948 1.188-2.236 3.625-3.455"/><path fill="currentColor" fill-rule="evenodd" d="M4 12a8 8 0 1 1 15.985.491c-1.653.879-3.904 1.754-6.467 2.44c-2.874.77-5.526 1.14-7.478 1.131a12 12 0 0 1-.956-.039A7.96 7.96 0 0 1 4 12m2.766 6.05a8.003 8.003 0 0 0 12.658-3.065c-1.561.697-3.4 1.346-5.389 1.879c-2.668.715-5.208 1.115-7.269 1.186" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -5069,7 +5069,7 @@ func PlanetRingTwoLine(children ...g.Node) g.Node {
 func PlanetRocket(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><g clip-path="url(#majesticonsPlanetRocket0)"><path fill="currentColor" d="m21.048 8.868l1.402-.318l-.318 1.402a8 8 0 0 1-2.145 3.89L17.5 16.328l-.015.015c1.71 1.709-.702 4.935-1.414 5.628l-1.4-2.814l-2.828-2.829L9 14.9c.722-.703 4.001-3.1 5.686-1.415l2.472-2.472a8 8 0 0 1 3.89-2.145z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.672 19.157l-2.829-2.829m2.829 2.829l1.4 2.814c.711-.693 3.122-3.919 1.413-5.628m-2.813 2.814l2.813-2.814m-5.642-.015l2.829-2.828l.014-.015m-2.843 2.843L9 14.9c.722-.703 4.001-3.1 5.686-1.415m2.814 2.843l-.015.015m0 0l2.502-2.501a8 8 0 0 0 2.145-3.89l.318-1.402l-1.402.318a8 8 0 0 0-3.89 2.145l-2.472 2.472m-11.272-.172c-1.339 2.117-1.85 3.806-1.192 4.465c.586.586 1.987.246 3.778-.778m7.313-13.586c2.117-1.339 3.806-1.85 4.465-1.192c.886.885-.345 3.634-2.854 6.778m-10.67 5A7.002 7.002 0 0 1 14 4.254"/></g><defs><clipPath id="majesticonsPlanetRocket0"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><g clip-path="url(#majesticonsPlanetRocket0)"><path fill="currentColor" d="m21.048 8.868l1.402-.318l-.318 1.402a8 8 0 0 1-2.145 3.89L17.5 16.328l-.015.015c1.71 1.709-.702 4.935-1.414 5.628l-1.4-2.814l-2.828-2.829L9 14.9c.722-.703 4.001-3.1 5.686-1.415l2.472-2.472a8 8 0 0 1 3.89-2.145"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14.672 19.157l-2.829-2.829m2.829 2.829l1.4 2.814c.711-.693 3.122-3.919 1.413-5.628m-2.813 2.814l2.813-2.814m-5.642-.015l2.829-2.828l.014-.015m-2.843 2.843L9 14.9c.722-.703 4.001-3.1 5.686-1.415m2.814 2.843l-.015.015m0 0l2.502-2.501a8 8 0 0 0 2.145-3.89l.318-1.402l-1.402.318a8 8 0 0 0-3.89 2.145l-2.472 2.472m-11.272-.172c-1.339 2.117-1.85 3.806-1.192 4.465c.586.586 1.987.246 3.778-.778m7.313-13.586c2.117-1.339 3.806-1.85 4.465-1.192c.886.885-.345 3.634-2.854 6.778m-10.67 5A7.002 7.002 0 0 1 14 4.254"/></g><defs><clipPath id="majesticonsPlanetRocket0"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></g>`), g.Group(children),
 	)
 }
 
@@ -5083,28 +5083,28 @@ func PlanetRocketLine(children ...g.Node) g.Node {
 func PlayCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12zm8.528-4.882a1 1 0 0 1 1.027.05l6 4a1 1 0 0 1 0 1.664l-6 4A1 1 0 0 1 9 16V8a1 1 0 0 1 .528-.882z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m8.528-4.882a1 1 0 0 1 1.027.05l6 4a1 1 0 0 1 0 1.664l-6 4A1 1 0 0 1 9 16V8a1 1 0 0 1 .528-.882" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func PlayCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M10 16V8l6 4l-6 4z"/><circle cx="12" cy="12" r="10"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M10 16V8l6 4z"/><circle cx="12" cy="12" r="10"/></g>`), g.Group(children),
 	)
 }
 
 func Playlist(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6h-6m6 4h-6m6 4h-8m8 4H4"/><path fill="currentColor" d="M8 12a2 2 0 1 1-4 0a2 2 0 0 1 4 0z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12a2 2 0 1 1-4 0a2 2 0 0 1 4 0zm0 0V7m0 0h2V6H8v1z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6h-6m6 4h-6m6 4h-8m8 4H4"/><path fill="currentColor" d="M8 12a2 2 0 1 1-4 0a2 2 0 0 1 4 0"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12a2 2 0 1 1-4 0a2 2 0 0 1 4 0m0 0V7m0 0h2V6H8z"/></g>`), g.Group(children),
 	)
 }
 
 func PlaylistLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6h-6m6 4h-6m6 4h-8m8 4H4m4-6a2 2 0 1 1-4 0a2 2 0 0 1 4 0zm0 0V7m0 0h2V6H8v1z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6h-6m6 4h-6m6 4h-8m8 4H4m4-6a2 2 0 1 1-4 0a2 2 0 0 1 4 0m0 0V7m0 0h2V6H8z"/>`), g.Group(children),
 	)
 }
 
@@ -5132,7 +5132,7 @@ func PlusCircleLine(children ...g.Node) g.Node {
 func PlusFiveCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M23 12c0-6.075-4.925-11-11-11S1 5.925 1 12s4.925 11 11 11s11-4.925 11-11zm-9-4a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h1.5a.5.5 0 0 1 0 1H14a1 1 0 1 0 0 2h1.5a2.5 2.5 0 0 0 0-5H15v-1h2a1 1 0 1 0 0-2h-3zm-4 2a1 1 0 1 0-2 0v1H7a1 1 0 1 0 0 2h1v1a1 1 0 1 0 2 0v-1h1a1 1 0 1 0 0-2h-1v-1z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M23 12c0-6.075-4.925-11-11-11S1 5.925 1 12s4.925 11 11 11s11-4.925 11-11m-9-4a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h1.5a.5.5 0 0 1 0 1H14a1 1 0 1 0 0 2h1.5a2.5 2.5 0 0 0 0-5H15v-1h2a1 1 0 1 0 0-2zm-4 2a1 1 0 1 0-2 0v1H7a1 1 0 1 0 0 2h1v1a1 1 0 1 0 2 0v-1h1a1 1 0 1 0 0-2h-1z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -5181,42 +5181,42 @@ func PlusMinusTwoLine(children ...g.Node) g.Node {
 func PlusTenCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M23 12c0-6.075-4.925-11-11-11S1 5.925 1 12s4.925 11 11 11s11-4.925 11-11zM10 8a1 1 0 0 0 0 2h1v5a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1h-2zm6.5 0a2.5 2.5 0 0 0-2.5 2.5v3a2.5 2.5 0 0 0 5 0v-3A2.5 2.5 0 0 0 16.5 8zm-.5 2.5a.5.5 0 0 1 1 0v3a.5.5 0 0 1-1 0v-3zM8 10a1 1 0 1 0-2 0v1H5a1 1 0 1 0 0 2h1v1a1 1 0 1 0 2 0v-1h1a1 1 0 1 0 0-2H8v-1z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M23 12c0-6.075-4.925-11-11-11S1 5.925 1 12s4.925 11 11 11s11-4.925 11-11M10 8a1 1 0 0 0 0 2h1v5a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1zm6.5 0a2.5 2.5 0 0 0-2.5 2.5v3a2.5 2.5 0 0 0 5 0v-3A2.5 2.5 0 0 0 16.5 8m-.5 2.5a.5.5 0 0 1 1 0v3a.5.5 0 0 1-1 0zM8 10a1 1 0 1 0-2 0v1H5a1 1 0 1 0 0 2h1v1a1 1 0 1 0 2 0v-1h1a1 1 0 1 0 0-2H8z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func PlusTenCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 12h2m2 0H7m0 0v-2m0 2v2m3-5h2v6m6-1.5v-3A1.5 1.5 0 0 0 16.5 9v0a1.5 1.5 0 0 0-1.5 1.5v3a1.5 1.5 0 0 0 1.5 1.5v0a1.5 1.5 0 0 0 1.5-1.5z"/><circle r="10" transform="matrix(-1 0 0 1 12 12)"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 12h2m2 0H7m0 0v-2m0 2v2m3-5h2v6m6-1.5v-3A1.5 1.5 0 0 0 16.5 9v0a1.5 1.5 0 0 0-1.5 1.5v3a1.5 1.5 0 0 0 1.5 1.5v0a1.5 1.5 0 0 0 1.5-1.5"/><circle r="10" transform="matrix(-1 0 0 1 12 12)"/></g>`), g.Group(children),
 	)
 }
 
 func PoundCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12zm12-6c-.493 0-1.211.14-1.834.588C10.49 7.074 10 7.874 10 9v2H9a1 1 0 1 0 0 2h1v1c0 .173-.06.456-.212.666c-.114.159-.314.334-.788.334a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2h-3.166c.12-.367.166-.72.166-1v-1h1a1 1 0 1 0 0-2h-1V9c0-.474.175-.674.334-.788c.21-.152.493-.212.666-.212c.173 0 .456.06.666.212c.159.114.334.314.334.788a1 1 0 1 0 2 0c0-1.126-.492-1.926-1.166-2.412A3.233 3.233 0 0 0 13 6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m12-6c-.493 0-1.211.14-1.834.588C10.49 7.074 10 7.874 10 9v2H9a1 1 0 1 0 0 2h1v1c0 .173-.06.456-.212.666c-.114.159-.314.334-.788.334a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2h-3.166c.12-.367.166-.72.166-1v-1h1a1 1 0 1 0 0-2h-1V9c0-.474.175-.674.334-.788c.21-.152.493-.212.666-.212s.456.06.666.212c.159.114.334.314.334.788a1 1 0 1 0 2 0c0-1.126-.492-1.926-1.166-2.412A3.23 3.23 0 0 0 13 6" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func PoundCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10z"/><path d="M15 9c0-1.6-1.333-2-2-2s-2 .4-2 2v3m0 0v2c0 .667-.4 2-2 2h6m-4-4h2m-2 0H9"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10"/><path d="M15 9c0-1.6-1.333-2-2-2s-2 .4-2 2v3m0 0v2c0 .667-.4 2-2 2h6m-4-4h2m-2 0H9"/></g>`), g.Group(children),
 	)
 }
 
 func Presentation(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3 2a1 1 0 0 0 0 2v11a1 1 0 0 0 1 1h4.613L7.05 20.684a1 1 0 0 0 1.898.632L10.72 16h2.558l1.772 5.316a1 1 0 0 0 1.898-.632L15.387 16H20a1 1 0 0 0 1-1V4a1 1 0 1 0 0-2H3z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3 2a1 1 0 0 0 0 2v11a1 1 0 0 0 1 1h4.613L7.05 20.684a1 1 0 0 0 1.898.632L10.72 16h2.558l1.772 5.316a1 1 0 0 0 1.898-.632L15.387 16H20a1 1 0 0 0 1-1V4a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func PresentationChart(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 3a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2v11a1 1 0 0 1-1 1h-4.613l1.562 4.684a1 1 0 0 1-1.898.632L13.28 16h-2.558L8.95 21.316a1 1 0 1 1-1.898-.632L8.613 16H4a1 1 0 0 1-1-1V4a1 1 0 0 1-1-1zm15 4a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0V7zm-4 2a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0V9zm-5 1a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H8z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 3a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2v11a1 1 0 0 1-1 1h-4.613l1.562 4.684a1 1 0 0 1-1.898.632L13.28 16h-2.558L8.95 21.316a1 1 0 1 1-1.898-.632L8.613 16H4a1 1 0 0 1-1-1V4a1 1 0 0 1-1-1m15 4a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0zm-4 2a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0zm-5 1a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -5244,14 +5244,14 @@ func PresentationLineLine(children ...g.Node) g.Node {
 func PresentationPlay(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 3a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2v11a1 1 0 0 1-1 1h-4.613l1.562 4.684a1 1 0 0 1-1.898.632L13.28 16h-2.558L8.95 21.316a1 1 0 1 1-1.898-.632L8.613 16H4a1 1 0 0 1-1-1V4a1 1 0 0 1-1-1zm9.555 3.168A1 1 0 0 0 10 7v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664l-3-2zM12.197 9L12 9.131V8.87l.197.131z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 3a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2v11a1 1 0 0 1-1 1h-4.613l1.562 4.684a1 1 0 0 1-1.898.632L13.28 16h-2.558L8.95 21.316a1 1 0 1 1-1.898-.632L8.613 16H4a1 1 0 0 1-1-1V4a1 1 0 0 1-1-1m9.555 3.168A1 1 0 0 0 10 7v4a1 1 0 0 0 1.555.832l3-2a1 1 0 0 0 0-1.664zM12.197 9L12 9.131V8.87z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func PresentationPlayLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h1m17 0h-1m0 0v12h-6m6-12H4m0 0v12h6m0 0l-2 6m2-6h4m0 0l2 6m-5-10V7l3 2l-3 2z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h1m17 0h-1m0 0v12h-6m6-12H4m0 0v12h6m0 0l-2 6m2-6h4m0 0l2 6m-5-10V7l3 2z"/>`), g.Group(children),
 	)
 }
 
@@ -5272,7 +5272,7 @@ func PresentationReportLine(children ...g.Node) g.Node {
 func Printer(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2M7 17v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-2M7 17H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1m0 0V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2M6 7h12m0 0h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2"/><path fill="currentColor" fill-rule="evenodd" d="M2 9a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3h-2a1 1 0 0 1-1-1v-2a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v2a1 1 0 0 1-1 1H5a3 3 0 0 1-3-3V9zm5 0a1 1 0 0 0 0 2h1a1 1 0 1 0 0-2H7z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2M7 17v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-2M7 17H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1m0 0V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2M6 7h12m0 0h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2"/><path fill="currentColor" fill-rule="evenodd" d="M2 9a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3h-2a1 1 0 0 1-1-1v-2a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v2a1 1 0 0 1-1 1H5a3 3 0 0 1-3-3zm5 0a1 1 0 0 0 0 2h1a1 1 0 1 0 0-2z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -5300,28 +5300,28 @@ func PulseLine(children ...g.Node) g.Node {
 func Puzzle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.75 6H20a1 1 0 0 1 1 1v3.25a.75.75 0 0 1-.75.75H20a2 2 0 1 0 0 4h.25a.75.75 0 0 1 .75.75V20a1 1 0 0 1-1 1h-3.25a.75.75 0 0 1-.75-.75V20a2 2 0 1 0-4 0v.25a.75.75 0 0 1-.75.75H7a1 1 0 0 1-1-1v-4.25a.75.75 0 0 0-.75-.75H5a2 2 0 1 1 0-4h.25a.75.75 0 0 0 .75-.75V7a1 1 0 0 1 1-1h4.25a.75.75 0 0 0 .75-.75V5a2 2 0 1 1 4 0v.25c0 .414.336.75.75.75z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.75 6H20a1 1 0 0 1 1 1v3.25a.75.75 0 0 1-.75.75H20a2 2 0 1 0 0 4h.25a.75.75 0 0 1 .75.75V20a1 1 0 0 1-1 1h-3.25a.75.75 0 0 1-.75-.75V20a2 2 0 1 0-4 0v.25a.75.75 0 0 1-.75.75H7a1 1 0 0 1-1-1v-4.25a.75.75 0 0 0-.75-.75H5a2 2 0 1 1 0-4h.25a.75.75 0 0 0 .75-.75V7a1 1 0 0 1 1-1h4.25a.75.75 0 0 0 .75-.75V5a2 2 0 1 1 4 0v.25c0 .414.336.75.75.75"/>`), g.Group(children),
 	)
 }
 
 func PuzzleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.75 6H20a1 1 0 0 1 1 1v3.25a.75.75 0 0 1-.75.75H20a2 2 0 1 0 0 4h.25a.75.75 0 0 1 .75.75V20a1 1 0 0 1-1 1h-3.25a.75.75 0 0 1-.75-.75V20a2 2 0 1 0-4 0v.25a.75.75 0 0 1-.75.75H7a1 1 0 0 1-1-1v-4.25a.75.75 0 0 0-.75-.75H5a2 2 0 1 1 0-4h.25a.75.75 0 0 0 .75-.75V7a1 1 0 0 1 1-1h4.25a.75.75 0 0 0 .75-.75V5a2 2 0 1 1 4 0v.25c0 .414.336.75.75.75z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.75 6H20a1 1 0 0 1 1 1v3.25a.75.75 0 0 1-.75.75H20a2 2 0 1 0 0 4h.25a.75.75 0 0 1 .75.75V20a1 1 0 0 1-1 1h-3.25a.75.75 0 0 1-.75-.75V20a2 2 0 1 0-4 0v.25a.75.75 0 0 1-.75.75H7a1 1 0 0 1-1-1v-4.25a.75.75 0 0 0-.75-.75H5a2 2 0 1 1 0-4h.25a.75.75 0 0 0 .75-.75V7a1 1 0 0 1 1-1h4.25a.75.75 0 0 0 .75-.75V5a2 2 0 1 1 4 0v.25c0 .414.336.75.75.75"/>`), g.Group(children),
 	)
 }
 
 func QrCode(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.001"/><path fill="currentColor" fill-rule="evenodd" d="M4 3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4zm1 6V5h4v4H5zm9-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-6zM4 13a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1H4zm10 0a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1h-1zm5 0a1 1 0 0 0-.707.293l-2 2a1 1 0 0 0 1.414 1.414L19.414 15H20a1 1 0 1 0 0-2h-1zm-5 4a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-1h1a1 1 0 1 0 0-2h-2zm7 1a1 1 0 1 0-2 0v1h-1a1 1 0 1 0 0 2h2a1 1 0 0 0 1-1v-2zM16 7a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H17a1 1 0 0 1-1-1zm-9 9a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2H7z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.001"/><path fill="currentColor" fill-rule="evenodd" d="M4 3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm1 6V5h4v4zm9-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM4 13a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zm10 0a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1zm5 0a1 1 0 0 0-.707.293l-2 2a1 1 0 0 0 1.414 1.414L19.414 15H20a1 1 0 1 0 0-2zm-5 4a1 1 0 0 0-1 1v2a1 1 0 1 0 2 0v-1h1a1 1 0 1 0 0-2zm7 1a1 1 0 1 0-2 0v1h-1a1 1 0 1 0 0 2h2a1 1 0 0 0 1-1zM16 7a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H17a1 1 0 0 1-1-1m-9 9a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func QrCodeLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 18v2h-2m2-6h-1l-2 2m-1 2h-2v2M4 4h6v6H4V4zm10 0h6v6h-6V4zM4 14h6v6H4v-6zm10 0v1h1v-1h-1zm3-7h.001M7 7h.001M7 17h.001"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 18v2h-2m2-6h-1l-2 2m-1 2h-2v2M4 4h6v6H4zm10 0h6v6h-6zM4 14h6v6H4zm10 0v1h1v-1zm3-7h.001M7 7h.001M7 17h.001"/>`), g.Group(children),
 	)
 }
 
@@ -5342,7 +5342,7 @@ func QrcodeLine(children ...g.Node) g.Node {
 func QuestionCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2zm0 7a1 1 0 0 0-1 1a1 1 0 1 1-2 0a3 3 0 1 1 4.44 2.633a1.404 1.404 0 0 0-.383.288a.303.303 0 0 0-.057.085v.494a1 1 0 1 1-2 0V13c0-.58.253-1.047.539-1.38c.281-.33.63-.572.94-.742A1 1 0 0 0 12 9zm.999 4.011v-.004v.005zM12 15a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H12z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10s10-4.477 10-10S17.523 2 12 2m0 7a1 1 0 0 0-1 1a1 1 0 1 1-2 0a3 3 0 1 1 4.44 2.633a1.4 1.4 0 0 0-.383.288a.3.3 0 0 0-.057.085v.494a1 1 0 1 1-2 0V13c0-.58.253-1.047.539-1.38c.281-.33.63-.572.94-.742A1 1 0 0 0 12 9m.999 4.011v-.004v.005zM12 15a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -5412,14 +5412,14 @@ func ReceiptRefundLine(children ...g.Node) g.Node {
 func ReceiptText(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3 5a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v16a1 1 0 0 1-1.625.78l-1.929-1.542l-2.391 1.594a1 1 0 0 1-1.18-.051L12 20.28l-1.875 1.5a1 1 0 0 1-1.18.051l-2.391-1.594l-1.93 1.543A1 1 0 0 1 3 21V5zm5 1a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2H8zm0 4a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8zm0 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H8z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3 5a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v16a1 1 0 0 1-1.625.78l-1.929-1.542l-2.391 1.594a1 1 0 0 1-1.18-.051L12 20.28l-1.875 1.5a1 1 0 0 1-1.18.051l-2.391-1.594l-1.93 1.543A1 1 0 0 1 3 21zm5 1a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ReceiptTextLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h8m-8 4h8m-8 4h4m8 6V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v16l2.5-2l3 2l2.5-2l2.5 2l3-2l2.5 2z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h8m-8 4h8m-8 4h4m8 6V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v16l2.5-2l3 2l2.5-2l2.5 2l3-2z"/>`), g.Group(children),
 	)
 }
 
@@ -5461,7 +5461,7 @@ func Reload(children ...g.Node) g.Node {
 func ReloadCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12zm10.293-3.293a1 1 0 0 1 1.414-1.414l2 2a1 1 0 0 1 0 1.414l-2 2a1 1 0 0 1-1.414-1.414l.293-.293H12c-.34 0-.872.11-1.29.412c-.368.264-.71.714-.71 1.588c0 .874.342 1.324.71 1.588c.418.302.95.412 1.29.412c.368 0 .945-.128 1.37-.473a1 1 0 0 1 1.26 1.554c-.87.705-1.93.919-2.63.919a4.35 4.35 0 0 1-2.46-.788C8.659 15.576 8 14.526 8 13c0-1.526.658-2.576 1.54-3.212A4.35 4.35 0 0 1 12 9h.586l-.293-.293z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12m10.293-3.293a1 1 0 0 1 1.414-1.414l2 2a1 1 0 0 1 0 1.414l-2 2a1 1 0 0 1-1.414-1.414l.293-.293H12c-.34 0-.872.11-1.29.412c-.368.264-.71.714-.71 1.588s.342 1.324.71 1.588c.418.302.95.412 1.29.412c.368 0 .945-.128 1.37-.473a1 1 0 0 1 1.26 1.554c-.87.705-1.93.919-2.63.919a4.35 4.35 0 0 1-2.46-.788C8.659 15.576 8 14.526 8 13s.658-2.576 1.54-3.212A4.35 4.35 0 0 1 12 9h.586z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -5524,7 +5524,7 @@ func RemoveRowLine(children ...g.Node) g.Node {
 func RepeatCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M23 12c0-6.075-4.925-11-11-11S1 5.925 1 12s4.925 11 11 11s11-4.925 11-11zM10.707 6.707a1 1 0 0 0-1.414-1.414l-2 2a1 1 0 0 0 0 1.414l2 2a1 1 0 0 0 1.414-1.414L10.414 9H14a1 1 0 0 1 1 1v1a1 1 0 1 0 2 0v-1a3 3 0 0 0-3-3h-3.586l.293-.293zM9 13a1 1 0 1 0-2 0v1a3 3 0 0 0 3 3h3.586l-.293.293a1 1 0 0 0 1.414 1.414l2-2a1 1 0 0 0 0-1.414l-2-2a1 1 0 0 0-1.414 1.414l.293.293H10a1 1 0 0 1-1-1v-1z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M23 12c0-6.075-4.925-11-11-11S1 5.925 1 12s4.925 11 11 11s11-4.925 11-11M10.707 6.707a1 1 0 0 0-1.414-1.414l-2 2a1 1 0 0 0 0 1.414l2 2a1 1 0 0 0 1.414-1.414L10.414 9H14a1 1 0 0 1 1 1v1a1 1 0 1 0 2 0v-1a3 3 0 0 0-3-3h-3.586zM9 13a1 1 0 1 0-2 0v1a3 3 0 0 0 3 3h3.586l-.293.293a1 1 0 0 0 1.414 1.414l2-2a1 1 0 0 0 0-1.414l-2-2a1 1 0 0 0-1.414 1.414l.293.293H10a1 1 0 0 1-1-1z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -5594,28 +5594,28 @@ func RewindLine(children ...g.Node) g.Node {
 func Robot(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 3a2 2 0 0 0-1 3.732V8H8c-3.2 0-4 2.667-4 4v7c0 .667.4 2 2 2h1v-4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v4h1c1.6 0 2-1.333 2-2v-7c0-3.2-2.667-4-4-4h-3V6.732A2 2 0 0 0 12 3zm3 18v-3h-2v3h2zm-4 0v-3H9v3h2zm10-3v-5c.667 0 2 .4 2 2v1c0 .667-.4 2-2 2zM3 13v5c-1.6 0-2-1.333-2-2v-1c0-1.6 1.333-2 2-2zm6-1a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2H9zm5 1a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H15a1 1 0 0 1-1-1z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12 3a2 2 0 0 0-1 3.732V8H8c-3.2 0-4 2.667-4 4v7c0 .667.4 2 2 2h1v-4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v4h1c1.6 0 2-1.333 2-2v-7c0-3.2-2.667-4-4-4h-3V6.732A2 2 0 0 0 12 3m3 18v-3h-2v3zm-4 0v-3H9v3zm10-3v-5c.667 0 2 .4 2 2v1c0 .667-.4 2-2 2M3 13v5c-1.6 0-2-1.333-2-2v-1c0-1.6 1.333-2 2-2m6-1a1 1 0 1 0 0 2h.001a1 1 0 1 0 0-2zm5 1a1 1 0 0 1 1-1h.001a1 1 0 1 1 0 2H15a1 1 0 0 1-1-1" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func RobotLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 20H5v-2m3 2v-4h4m-4 4h4m4 0h3v-2m-3 2v-4h-4m4 4h-4m0-4v4m0-11H9a4 4 0 0 0-4 4v0m7-4h3a4 4 0 0 1 4 4v0m-7-4V5m7 8h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1m0-5v5M5 14.5v2M5 13H4a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h1m0-5v5m4-5h.001M15 13h.001"/><circle cx="12" cy="5" r="1"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 20H5v-2m3 2v-4h4m-4 4h4m4 0h3v-2m-3 2v-4h-4m4 4h-4m0-4v4m0-11H9a4 4 0 0 0-4 4v0m7-4h3a4 4 0 0 1 4 4v0m-7-4V5m7 8h1a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-1m0-5v5M5 14.5v2M5 13H4a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h1m0-5v5m10-5"/><circle cx="12" cy="5" r="1"/></g>`), g.Group(children),
 	)
 }
 
 func RocketThreeStart(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.95 16.264s-1.703 2.54-.707 3.535c.995.996 3.535-.707 3.535-.707"/><path fill="currentColor" fill-rule="evenodd" d="M20.506 3.536a1 1 0 0 1 .268.928l-.317 1.402a9 9 0 0 1-2.414 4.375l-4.644 4.644c1.027 1.272 1.36 2.48 1.1 3.632c-.271 1.2-1.16 2.086-1.712 2.637l-.06.06a1 1 0 0 1-1.564-.193L9.17 17.696a1 1 0 0 0-.15-.192l-2.57-2.568l-.76-.456l3.459-3.843a.343.343 0 0 0 .007.005L13.8 6a9 9 0 0 1 4.376-2.414l1.402-.318a1 1 0 0 1 .928.269zM8.322 10.062c-.969-.565-1.9-.722-2.797-.52c-1.2.272-2.086 1.16-2.637 1.713l-.06.059a1 1 0 0 0 .193 1.564l1.796 1.078l3.505-3.894z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.95 16.264s-1.703 2.54-.707 3.535c.995.996 3.535-.707 3.535-.707"/><path fill="currentColor" fill-rule="evenodd" d="M20.506 3.536a1 1 0 0 1 .268.928l-.317 1.402a9 9 0 0 1-2.414 4.375l-4.644 4.644c1.027 1.272 1.36 2.48 1.1 3.632c-.271 1.2-1.16 2.086-1.712 2.637l-.06.06a1 1 0 0 1-1.564-.193L9.17 17.696a1 1 0 0 0-.15-.192l-2.57-2.568l-.76-.456l3.459-3.843l.007.005L13.8 6a9 9 0 0 1 4.376-2.414l1.402-.318a1 1 0 0 1 .928.269zM8.322 10.062c-.969-.565-1.9-.722-2.797-.52c-1.2.272-2.086 1.16-2.637 1.713l-.06.059a1 1 0 0 0 .193 1.564l1.796 1.078z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func RocketThreeStartLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><g clip-path="url(#majesticonsRocket3StartLine0)"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9.9 16.97l7.436-7.436a8 8 0 0 0 2.145-3.89l.318-1.401l-1.402.317a8 8 0 0 0-3.89 2.146L9.192 12.02m.707 4.95l2.122 3.535c1.178-1.178 2.828-2.828 0-5.657L9.899 16.97zm0 0l-2.828-2.829m0 0L3.536 12.02c1.178-1.179 2.828-2.829 5.656 0m-2.12 2.121l2.12-2.121M4.95 16.263s-1.703 2.54-.707 3.536c.995.996 3.535-.707 3.535-.707"/></g><defs><clipPath id="majesticonsRocket3StartLine0"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><g clip-path="url(#majesticonsRocket3StartLine0)"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9.9 16.97l7.436-7.436a8 8 0 0 0 2.145-3.89l.318-1.401l-1.402.317a8 8 0 0 0-3.89 2.146L9.192 12.02m.707 4.95l2.122 3.535c1.178-1.178 2.828-2.828 0-5.657zm0 0l-2.828-2.829m0 0L3.536 12.02c1.178-1.179 2.828-2.829 5.656 0m-2.12 2.121l2.12-2.121M4.95 16.263s-1.703 2.54-.707 3.536c.995.996 3.535-.707 3.535-.707"/></g><defs><clipPath id="majesticonsRocket3StartLine0"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></g>`), g.Group(children),
 	)
 }
 
@@ -5636,21 +5636,21 @@ func RssLine(children ...g.Node) g.Node {
 func RubelCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12zm9-6a1 1 0 0 0-1 1v3H8a1 1 0 1 0 0 2h1v1H8a1 1 0 1 0 0 2h1v2a1 1 0 1 0 2 0v-2h2a1 1 0 1 0 0-2h-2v-1h3a3 3 0 1 0 0-6h-4zm4 4h-3V8h3a1 1 0 1 1 0 2z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m9-6a1 1 0 0 0-1 1v3H8a1 1 0 1 0 0 2h1v1H8a1 1 0 1 0 0 2h1v2a1 1 0 1 0 2 0v-2h2a1 1 0 1 0 0-2h-2v-1h3a3 3 0 1 0 0-6zm4 4h-3V8h3a1 1 0 1 1 0 2" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func RubelCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10z"/><path d="M10 11h4a2 2 0 0 0 2-2v0a2 2 0 0 0-2-2h-4v4zm0 0v3m0-3H8m2 6v-3m0 0H8m2 0h3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10"/><path d="M10 11h4a2 2 0 0 0 2-2v0a2 2 0 0 0-2-2h-4zm0 0v3m0-3H8m2 6v-3m0 0H8m2 0h3"/></g>`), g.Group(children),
 	)
 }
 
 func RulerTwo(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12.879 3.707a3 3 0 0 1 4.242 0l3.172 3.172a3 3 0 0 1 0 4.242l-9.172 9.172a3 3 0 0 1-4.242 0L3.707 17.12a3 3 0 0 1 0-4.242L4.586 12l1.707 1.707a1 1 0 0 0 1.414-1.414L6 10.586L7.586 9l2.707 2.707a1 1 0 0 0 1.414-1.414L9 7.586L10.586 6l1.707 1.707a1 1 0 1 0 1.414-1.414L12 4.586l.879-.879z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12.879 3.707a3 3 0 0 1 4.242 0l3.172 3.172a3 3 0 0 1 0 4.242l-9.172 9.172a3 3 0 0 1-4.242 0L3.707 17.12a3 3 0 0 1 0-4.242L4.586 12l1.707 1.707a1 1 0 0 0 1.414-1.414L6 10.586L7.586 9l2.707 2.707a1 1 0 0 0 1.414-1.414L9 7.586L10.586 6l1.707 1.707a1 1 0 1 0 1.414-1.414L12 4.586z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -5664,21 +5664,21 @@ func RulerTwoLine(children ...g.Node) g.Node {
 func RupeeCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12zm7-6a1 1 0 0 0 0 2h3c.34 0 .872.11 1.29.412c.19.136.372.321.505.588H7.997a1 1 0 1 0 0 2h4.798a1.58 1.58 0 0 1-.504.588A2.352 2.352 0 0 1 11 12H7.997a1 1 0 0 0-.625 1.781l5.003 4a1 1 0 1 0 1.25-1.562L10.848 14h.15c.661 0 1.629-.19 2.46-.789A3.621 3.621 0 0 0 14.896 11H16a1 1 0 1 0 0-2h-1.104a3.81 3.81 0 0 0-.367-1H16a1 1 0 1 0 0-2H8z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m7-6a1 1 0 0 0 0 2h3c.34 0 .872.11 1.29.412c.19.136.372.321.505.588H7.997a1 1 0 1 0 0 2h4.798a1.6 1.6 0 0 1-.504.588A2.35 2.35 0 0 1 11 12H7.997a1 1 0 0 0-.625 1.781l5.003 4a1 1 0 1 0 1.25-1.562L10.848 14h.15c.661 0 1.629-.19 2.46-.789A3.62 3.62 0 0 0 14.896 11H16a1 1 0 1 0 0-2h-1.104a3.8 3.8 0 0 0-.367-1H16a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func RupeeCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10z"/><path d="M8 7h3m5 0h-5m5 3h-2m-6.003 0H14m-3-3c1 0 3 .6 3 3m-1 7l-5.003-4H11c1 0 3-.6 3-3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10"/><path d="M8 7h3m5 0h-5m5 3h-2m-6.003 0H14m-3-3c1 0 3 .6 3 3m-1 7l-5.003-4H11c1 0 3-.6 3-3"/></g>`), g.Group(children),
 	)
 }
 
 func Save(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4 3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V8a1 1 0 0 0-.293-.707l-4-4A1 1 0 0 0 16 3H4zm6 11c0-1.6 1.333-2 2-2s2 .4 2 2s-1.333 2-2 2s-2-.4-2-2zm4-9H8v3h6V5z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4 3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V8a1 1 0 0 0-.293-.707l-4-4A1 1 0 0 0 16 3zm6 11c0-1.6 1.333-2 2-2s2 .4 2 2s-1.333 2-2 2s-2-.4-2-2m4-9H8v3h6z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -5713,21 +5713,21 @@ func SaveAsLine(children ...g.Node) g.Node {
 func SaveLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 4H4v16h16V8l-4-4h-2M8 4v4h6V4M8 4h6m-2 8c-.667 0-2 .4-2 2s1.333 2 2 2s2-.4 2-2s-1.333-2-2-2z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 4H4v16h16V8l-4-4h-2M8 4v4h6V4M8 4h6m-2 8c-.667 0-2 .4-2 2s1.333 2 2 2s2-.4 2-2s-1.333-2-2-2"/>`), g.Group(children),
 	)
 }
 
 func ScaleLight(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10 6l2 5m0 0h3a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h3z"/><path fill="currentColor" fill-rule="evenodd" d="M2 7a3 3 0 0 1 3-3h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V5a1 1 0 0 1 1-1h2a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V7zm8 9a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2h-4z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10 6l2 5m0 0h3a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2z"/><path fill="currentColor" fill-rule="evenodd" d="M2 7a3 3 0 0 1 3-3h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V5a1 1 0 0 1 1-1h2a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3zm8 9a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func ScaleLightLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m10 6l2 5m0 0h3a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h3z"/><path d="M17 5h2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m3 12h4"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m10 6l2 5m0 0h3a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2z"/><path d="M17 5h2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2m3 12h4"/></g>`), g.Group(children),
 	)
 }
 
@@ -5748,7 +5748,7 @@ func ScanFingerprintLine(children ...g.Node) g.Node {
 func ScanUser(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 3H5a2 2 0 0 0-2 2v2m0 10v2a2 2 0 0 0 2 2h2m10 0h2a2 2 0 0 0 2-2v-2m0-10V5a2 2 0 0 0-2-2h-2"/><circle cx="12" cy="9" r="3" fill="currentColor"/><path fill="currentColor" d="M12 12c-2.761 0-5 1.79-5 4h10c0-2.21-2.239-4-5-4z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 3H5a2 2 0 0 0-2 2v2m0 10v2a2 2 0 0 0 2 2h2m10 0h2a2 2 0 0 0 2-2v-2m0-10V5a2 2 0 0 0-2-2h-2"/><circle cx="12" cy="9" r="3" fill="currentColor"/><path fill="currentColor" d="M12 12c-2.761 0-5 1.79-5 4h10c0-2.21-2.239-4-5-4"/></g>`), g.Group(children),
 	)
 }
 
@@ -5762,14 +5762,14 @@ func ScanUserLine(children ...g.Node) g.Node {
 func Scanner(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M5 9a1 1 0 0 0-.962.725L2.246 16h19.508l-1.793-6.275A1 1 0 0 0 19 9H5zm16.78 9H2.22l.431 1.728A3 3 0 0 0 5.561 22H18.44a3 3 0 0 0 2.91-2.272L21.78 18zM6.968 11.83A1.5 1.5 0 0 1 8.31 11h7.382a1.5 1.5 0 0 1 0 3H8.309a1.5 1.5 0 0 1-1.342-2.17z" clip-rule="evenodd"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.728 5.55A2 2 0 0 1 5.651 3H18.35a2 2 0 0 1 1.923 2.55L19 10H5L3.728 5.55z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M5 9a1 1 0 0 0-.962.725L2.246 16h19.508l-1.793-6.275A1 1 0 0 0 19 9zm16.78 9H2.22l.431 1.728A3 3 0 0 0 5.561 22H18.44a3 3 0 0 0 2.91-2.272zM6.968 11.83A1.5 1.5 0 0 1 8.31 11h7.382a1.5 1.5 0 0 1 0 3H8.309a1.5 1.5 0 0 1-1.342-2.17z" clip-rule="evenodd"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.728 5.55A2 2 0 0 1 5.651 3H18.35a2 2 0 0 1 1.923 2.55L19 10H5z"/></g>`), g.Group(children),
 	)
 }
 
 func ScannerLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 17l-2-7H5l-2 7m18 0H3m18 0l-.621 2.485A2 2 0 0 1 18.439 21H5.561a2 2 0 0 1-1.94-1.515L3 17m5.309-3h7.382a.5.5 0 0 0 .447-.724v0a.5.5 0 0 0-.447-.276H8.309a.5.5 0 0 0-.447.276v0a.5.5 0 0 0 .447.724zM3.728 5.55A2 2 0 0 1 5.651 3H18.35a2 2 0 0 1 1.923 2.55L19 10H5L3.728 5.55z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m21 17l-2-7H5l-2 7m18 0H3m18 0l-.621 2.485A2 2 0 0 1 18.439 21H5.561a2 2 0 0 1-1.94-1.515L3 17m5.309-3h7.382a.5.5 0 0 0 .447-.724v0a.5.5 0 0 0-.447-.276H8.309a.5.5 0 0 0-.447.276v0a.5.5 0 0 0 .447.724M3.728 5.55A2 2 0 0 1 5.651 3H18.35a2 2 0 0 1 1.923 2.55L19 10H5z"/>`), g.Group(children),
 	)
 }
 
@@ -5790,14 +5790,14 @@ func ScissorsLine(children ...g.Node) g.Node {
 func Scooter(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8.126 4H6a1 1 0 0 0 0 2h2.126a4.007 4.007 0 0 1 0-2zm.32 2.836C5.725 8.314 5 11.355 5 13v5a3 3 0 0 0 3 3h.028A3.477 3.477 0 0 1 8 20.556V15a4 4 0 0 1 8 0v5.556c0 .15-.01.299-.028.444H16a3 3 0 0 0 3-3v-5c0-1.645-.726-4.686-3.445-6.164a4 4 0 0 1-7.11 0zM15.873 6H18a1 1 0 1 0 0-2h-2.126a4.01 4.01 0 0 1 0 2zM12 13a2 2 0 0 0-2 2v5.556c0 .797.647 1.444 1.444 1.444h1.112c.797 0 1.444-.647 1.444-1.444V15a2 2 0 0 0-2-2zm-2-8a2 2 0 1 1 4 0a2 2 0 0 1-4 0z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8.126 4H6a1 1 0 0 0 0 2h2.126a4 4 0 0 1 0-2m.32 2.836C5.725 8.314 5 11.355 5 13v5a3 3 0 0 0 3 3h.028A4 4 0 0 1 8 20.556V15a4 4 0 0 1 8 0v5.556q0 .226-.028.444H16a3 3 0 0 0 3-3v-5c0-1.645-.726-4.686-3.445-6.164a4 4 0 0 1-7.11 0zM15.873 6H18a1 1 0 1 0 0-2h-2.126a4 4 0 0 1 0 2zM12 13a2 2 0 0 0-2 2v5.556c0 .797.647 1.444 1.444 1.444h1.112c.797 0 1.444-.647 1.444-1.444V15a2 2 0 0 0-2-2m-2-8a2 2 0 1 1 4 0a2 2 0 0 1-4 0" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ScooterLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5a3 3 0 1 0-6 0m6 0h3m-3 0c0 .903-.399 1.713-1.03 2.263M9 5H6m3 0c0 .903.399 1.713 1.03 2.263M14 20h2a2 2 0 0 0 2-2v-5c0-1.692-.859-4.816-4.03-5.737M14 20v0a2 2 0 0 1-2 2v0a2 2 0 0 1-2-2v0m4 0v-5a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v5m0 0H8a2 2 0 0 1-2-2v-5c0-1.692.859-4.816 4.03-5.737m3.94 0A2.988 2.988 0 0 1 12 8a2.988 2.988 0 0 1-1.97-.737"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5a3 3 0 1 0-6 0m6 0h3m-3 0c0 .903-.399 1.713-1.03 2.263M9 5H6m3 0c0 .903.399 1.713 1.03 2.263M14 20h2a2 2 0 0 0 2-2v-5c0-1.692-.859-4.816-4.03-5.737M14 20a2 2 0 0 1-2 2v0a2 2 0 0 1-2-2v0m4 0v-5a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v5m0 0H8a2 2 0 0 1-2-2v-5c0-1.692.859-4.816 4.03-5.737m3.94 0A3 3 0 0 1 12 8a3 3 0 0 1-1.97-.737"/>`), g.Group(children),
 	)
 }
 
@@ -5818,35 +5818,35 @@ func ScriptPrescriptionLine(children ...g.Node) g.Node {
 func Scroll(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M3 16h8c0 1.333.8 4 4 4a3 3 0 0 0 3-3V4h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1v7a3 3 0 0 1-3 3H5a2 2 0 0 1-2-2v-2z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 20c-3.2 0-4-2.667-4-4H3v2a2 2 0 0 0 2 2h10zm0 0a3 3 0 0 0 3-3v-7m0-6H7a2 2 0 0 0-2 2v9.5M18 4h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1m0-6v6"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M3 16h8c0 1.333.8 4 4 4a3 3 0 0 0 3-3V4h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1v7a3 3 0 0 1-3 3H5a2 2 0 0 1-2-2z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 20c-3.2 0-4-2.667-4-4H3v2a2 2 0 0 0 2 2zm0 0a3 3 0 0 0 3-3v-7m0-6H7a2 2 0 0 0-2 2v9.5M18 4h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1m0-6v6"/></g>`), g.Group(children),
 	)
 }
 
 func ScrollLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 20c-3.2 0-4-2.667-4-4H3v2a2 2 0 0 0 2 2h10zm0 0a3 3 0 0 0 3-3v-7m0-6H7a2 2 0 0 0-2 2v10M18 4h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1m0-6v6"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 20c-3.2 0-4-2.667-4-4H3v2a2 2 0 0 0 2 2zm0 0a3 3 0 0 0 3-3v-7m0-6H7a2 2 0 0 0-2 2v10M18 4h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1m0-6v6"/>`), g.Group(children),
 	)
 }
 
 func ScrollText(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 8H9m2 4H9"/><path fill="currentColor" d="M3 16h8c0 1.333.8 4 4 4a3 3 0 0 0 3-3V4h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1v7a3 3 0 0 1-3 3H5a2 2 0 0 1-2-2v-2z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 20c-3.2 0-4-2.667-4-4H3v2a2 2 0 0 0 2 2h10zm0 0a3 3 0 0 0 3-3v-7m0-6H7a2 2 0 0 0-2 2v9.5M18 4h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1m0-6v6"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 8H9m2 4H9"/><path fill="currentColor" d="M3 16h8c0 1.333.8 4 4 4a3 3 0 0 0 3-3V4h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1v7a3 3 0 0 1-3 3H5a2 2 0 0 1-2-2z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 20c-3.2 0-4-2.667-4-4H3v2a2 2 0 0 0 2 2zm0 0a3 3 0 0 0 3-3v-7m0-6H7a2 2 0 0 0-2 2v9.5M18 4h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1m0-6v6"/></g>`), g.Group(children),
 	)
 }
 
 func ScrollTextLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 20c-3.2 0-4-2.667-4-4H3v2a2 2 0 0 0 2 2h10zm0 0a3 3 0 0 0 3-3v-7m0-6H7a2 2 0 0 0-2 2v10M18 4h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1m0-6v6m-4-2H9m2 4H9"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 20c-3.2 0-4-2.667-4-4H3v2a2 2 0 0 0 2 2zm0 0a3 3 0 0 0 3-3v-7m0-6H7a2 2 0 0 0-2 2v10M18 4h1a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1m0-6v6m-4-2H9m2 4H9"/>`), g.Group(children),
 	)
 }
 
 func Search(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5 11a6 6 0 1 1 12 0a6 6 0 0 1-12 0zm6-8a8 8 0 1 0 4.906 14.32l3.387 3.387a1 1 0 0 0 1.414-1.414l-3.387-3.387A8 8 0 0 0 11 3zm0 12a4 4 0 1 0 0-8a4 4 0 0 0 0 8z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5 11a6 6 0 1 1 12 0a6 6 0 0 1-12 0m6-8a8 8 0 1 0 4.906 14.32l3.387 3.387a1 1 0 0 0 1.414-1.414l-3.387-3.387A8 8 0 0 0 11 3m0 12a4 4 0 1 0 0-8a4 4 0 0 0 0 8" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -5867,35 +5867,35 @@ func SearchCircleLine(children ...g.Node) g.Node {
 func SearchLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 20l-4.05-4.05m0 0a7 7 0 1 0-9.9-9.9a7 7 0 0 0 9.9 9.9z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 20l-4.05-4.05m0 0a7 7 0 1 0-9.9-9.9a7 7 0 0 0 9.9 9.9"/>`), g.Group(children),
 	)
 }
 
 func SearchMinus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3 11a8 8 0 1 1 14.32 4.906l3.387 3.387a1 1 0 0 1-1.414 1.414l-3.387-3.387A8 8 0 0 1 3 11zm5-1a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2H8z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3 11a8 8 0 1 1 14.32 4.906l3.387 3.387a1 1 0 0 1-1.414 1.414l-3.387-3.387A8 8 0 0 1 3 11m5-1a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func SearchMinusLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 20l-4.05-4.05m0 0a7 7 0 1 0-9.9-9.9a7 7 0 0 0 9.9 9.9zM8 11h6"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 20l-4.05-4.05m0 0a7 7 0 1 0-9.9-9.9a7 7 0 0 0 9.9 9.9M8 11h6"/>`), g.Group(children),
 	)
 }
 
 func SearchPlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3 11a8 8 0 1 1 14.32 4.906l3.387 3.387a1 1 0 0 1-1.414 1.414l-3.387-3.387A8 8 0 0 1 3 11zm9-3a1 1 0 1 0-2 0v2H8a1 1 0 1 0 0 2h2v2a1 1 0 1 0 2 0v-2h2a1 1 0 1 0 0-2h-2V8z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3 11a8 8 0 1 1 14.32 4.906l3.387 3.387a1 1 0 0 1-1.414 1.414l-3.387-3.387A8 8 0 0 1 3 11m9-3a1 1 0 1 0-2 0v2H8a1 1 0 1 0 0 2h2v2a1 1 0 1 0 2 0v-2h2a1 1 0 1 0 0-2h-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func SearchPlusLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 20l-4.05-4.05m0 0a7 7 0 1 0-9.9-9.9a7 7 0 0 0 9.9 9.9zM8 11h3m3 0h-3m0 0V8m0 3v3"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 20l-4.05-4.05m0 0a7 7 0 1 0-9.9-9.9a7 7 0 0 0 9.9 9.9M8 11h3m3 0h-3m0 0V8m0 3v3"/>`), g.Group(children),
 	)
 }
 
@@ -5937,14 +5937,14 @@ func Send(children ...g.Node) g.Node {
 func SendLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 12l-3 9l18-9L3 3l3 9zm0 0h6"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 12l-3 9l18-9L3 3zm0 0h6"/>`), g.Group(children),
 	)
 }
 
 func Server(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 8a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v3H2V8zm0 5v3a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-3H2zm4-6a1 1 0 0 0 0 2h.01a1 1 0 0 0 0-2H6zm-1 9a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1zm4-9a1 1 0 0 0 0 2h.01a1 1 0 0 0 0-2H9zm-1 9a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 8a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v3H2zm0 5v3a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-3zm4-6a1 1 0 0 0 0 2h.01a1 1 0 0 0 0-2zm-1 9a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1m4-9a1 1 0 0 0 0 2h.01a1 1 0 0 0 0-2zm-1 9a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -5958,77 +5958,77 @@ func ServerLine(children ...g.Node) g.Node {
 func SettingsCog(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M9.024 2.783A1 1 0 0 1 10 2h4a1 1 0 0 1 .976.783l.44 1.981c.4.19.781.41 1.14.66l1.938-.61a1 1 0 0 1 1.166.454l2 3.464a1 1 0 0 1-.19 1.237l-1.497 1.373a8.1 8.1 0 0 1 0 1.316l1.497 1.373a1 1 0 0 1 .19 1.237l-2 3.464a1 1 0 0 1-1.166.454l-1.937-.61c-.36.25-.741.47-1.14.66l-.44 1.98A1 1 0 0 1 14 22h-4a1 1 0 0 1-.976-.783l-.44-1.981c-.4-.19-.781-.41-1.14-.66l-1.938.61a1 1 0 0 1-1.166-.454l-2-3.464a1 1 0 0 1 .19-1.237l1.497-1.373a8.097 8.097 0 0 1 0-1.316L2.53 9.97a1 1 0 0 1-.19-1.237l2-3.464a1 1 0 0 1 1.166-.454l1.937.61c.36-.25.741-.47 1.14-.66l.44-1.98zM12 15a3 3 0 1 0 0-6a3 3 0 0 0 0 6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M9.024 2.783A1 1 0 0 1 10 2h4a1 1 0 0 1 .976.783l.44 1.981q.6.285 1.14.66l1.938-.61a1 1 0 0 1 1.166.454l2 3.464a1 1 0 0 1-.19 1.237l-1.497 1.373a8 8 0 0 1 0 1.316l1.497 1.373a1 1 0 0 1 .19 1.237l-2 3.464a1 1 0 0 1-1.166.454l-1.937-.61q-.54.375-1.14.66l-.44 1.98A1 1 0 0 1 14 22h-4a1 1 0 0 1-.976-.783l-.44-1.981q-.6-.285-1.14-.66l-1.938.61a1 1 0 0 1-1.166-.454l-2-3.464a1 1 0 0 1 .19-1.237l1.497-1.373a8 8 0 0 1 0-1.316L2.53 9.97a1 1 0 0 1-.19-1.237l2-3.464a1 1 0 0 1 1.166-.454l1.937.61q.54-.375 1.14-.66l.44-1.98zM12 15a3 3 0 1 0 0-6a3 3 0 0 0 0 6" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func SettingsCogCheck(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M9.024 2.783A1 1 0 0 1 10 2h4a1 1 0 0 1 .976.783l.44 1.981c.4.19.781.41 1.14.66l1.938-.61a1 1 0 0 1 1.166.454l2 3.464a1 1 0 0 1-.19 1.237l-1.497 1.373a8.1 8.1 0 0 1 0 1.316l1.497 1.373a1 1 0 0 1 .19 1.237l-2 3.464a1 1 0 0 1-1.166.454l-1.937-.61c-.36.25-.741.47-1.14.66l-.44 1.98A1 1 0 0 1 14 22h-4a1 1 0 0 1-.976-.783l-.44-1.981c-.4-.19-.781-.41-1.14-.66l-1.938.61a1 1 0 0 1-1.166-.454l-2-3.464a1 1 0 0 1 .19-1.237l1.497-1.373a8.097 8.097 0 0 1 0-1.316L2.53 9.97a1 1 0 0 1-.19-1.237l2-3.464a1 1 0 0 1 1.166-.454l1.937.61c.36-.25.741-.47 1.14-.66l.44-1.98zm6.683 7.924a1 1 0 0 0-1.414-1.414L11 12.586l-1.293-1.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M9.024 2.783A1 1 0 0 1 10 2h4a1 1 0 0 1 .976.783l.44 1.981q.6.285 1.14.66l1.938-.61a1 1 0 0 1 1.166.454l2 3.464a1 1 0 0 1-.19 1.237l-1.497 1.373a8 8 0 0 1 0 1.316l1.497 1.373a1 1 0 0 1 .19 1.237l-2 3.464a1 1 0 0 1-1.166.454l-1.937-.61q-.54.375-1.14.66l-.44 1.98A1 1 0 0 1 14 22h-4a1 1 0 0 1-.976-.783l-.44-1.981q-.6-.285-1.14-.66l-1.938.61a1 1 0 0 1-1.166-.454l-2-3.464a1 1 0 0 1 .19-1.237l1.497-1.373a8 8 0 0 1 0-1.316L2.53 9.97a1 1 0 0 1-.19-1.237l2-3.464a1 1 0 0 1 1.166-.454l1.937.61q.54-.375 1.14-.66l.44-1.98zm6.683 7.924a1 1 0 0 0-1.414-1.414L11 12.586l-1.293-1.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func SettingsCogCheckLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14 21h-4l-.551-2.48a6.991 6.991 0 0 1-1.819-1.05l-2.424.763l-2-3.464l1.872-1.718a7.055 7.055 0 0 1 0-2.1L3.206 9.232l2-3.464l2.424.763A6.992 6.992 0 0 1 9.45 5.48L10 3h4l.551 2.48a6.994 6.994 0 0 1 1.819 1.05l2.424-.763l2 3.464l-1.872 1.718a7.05 7.05 0 0 1 0 2.1l1.872 1.718l-2 3.464l-2.424-.763a6.992 6.992 0 0 1-1.819 1.052L14 21z"/><path d="m9 12l2 2l4-4"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14 21h-4l-.551-2.48a7 7 0 0 1-1.819-1.05l-2.424.763l-2-3.464l1.872-1.718a7 7 0 0 1 0-2.1L3.206 9.232l2-3.464l2.424.763A7 7 0 0 1 9.45 5.48L10 3h4l.551 2.48a7 7 0 0 1 1.819 1.05l2.424-.763l2 3.464l-1.872 1.718a7 7 0 0 1 0 2.1l1.872 1.718l-2 3.464l-2.424-.763a7 7 0 0 1-1.819 1.052z"/><path d="m9 12l2 2l4-4"/></g>`), g.Group(children),
 	)
 }
 
 func SettingsCogLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 21h-4l-.551-2.48a6.991 6.991 0 0 1-1.819-1.05l-2.424.763l-2-3.464l1.872-1.718a7.055 7.055 0 0 1 0-2.1L3.206 9.232l2-3.464l2.424.763A6.992 6.992 0 0 1 9.45 5.48L10 3h4l.551 2.48a6.992 6.992 0 0 1 1.819 1.05l2.424-.763l2 3.464l-1.872 1.718a7.05 7.05 0 0 1 0 2.1l1.872 1.718l-2 3.464l-2.424-.763a6.99 6.99 0 0 1-1.819 1.052L14 21z"/><circle cx="12" cy="12" r="3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14 21h-4l-.551-2.48a7 7 0 0 1-1.819-1.05l-2.424.763l-2-3.464l1.872-1.718a7 7 0 0 1 0-2.1L3.206 9.232l2-3.464l2.424.763A7 7 0 0 1 9.45 5.48L10 3h4l.551 2.48a7 7 0 0 1 1.819 1.05l2.424-.763l2 3.464l-1.872 1.718a7 7 0 0 1 0 2.1l1.872 1.718l-2 3.464l-2.424-.763a7 7 0 0 1-1.819 1.052z"/><circle cx="12" cy="12" r="3"/></g>`), g.Group(children),
 	)
 }
 
 func SettingsCogPlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M9.024 2.783A1 1 0 0 1 10 2h4a1 1 0 0 1 .976.783l.44 1.981c.4.19.781.41 1.14.66l1.938-.61a1 1 0 0 1 1.166.454l2 3.464a1 1 0 0 1-.19 1.237l-1.497 1.373a8.1 8.1 0 0 1 0 1.316l1.497 1.373a1 1 0 0 1 .19 1.237l-2 3.464a1 1 0 0 1-1.166.454l-1.937-.61c-.36.25-.741.47-1.14.66l-.44 1.98A1 1 0 0 1 14 22h-4a1 1 0 0 1-.976-.783l-.44-1.981c-.4-.19-.781-.41-1.14-.66l-1.938.61a1 1 0 0 1-1.166-.454l-2-3.464a1 1 0 0 1 .19-1.237l1.497-1.373a8.097 8.097 0 0 1 0-1.316L2.53 9.97a1 1 0 0 1-.19-1.237l2-3.464a1 1 0 0 1 1.166-.454l1.937.61c.36-.25.741-.47 1.14-.66l.44-1.98zM11 9a1 1 0 1 1 2 0v2h2a1 1 0 1 1 0 2h-2v2a1 1 0 1 1-2 0v-2H9a1 1 0 1 1 0-2h2V9z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M9.024 2.783A1 1 0 0 1 10 2h4a1 1 0 0 1 .976.783l.44 1.981q.6.285 1.14.66l1.938-.61a1 1 0 0 1 1.166.454l2 3.464a1 1 0 0 1-.19 1.237l-1.497 1.373a8 8 0 0 1 0 1.316l1.497 1.373a1 1 0 0 1 .19 1.237l-2 3.464a1 1 0 0 1-1.166.454l-1.937-.61q-.54.375-1.14.66l-.44 1.98A1 1 0 0 1 14 22h-4a1 1 0 0 1-.976-.783l-.44-1.981q-.6-.285-1.14-.66l-1.938.61a1 1 0 0 1-1.166-.454l-2-3.464a1 1 0 0 1 .19-1.237l1.497-1.373a8 8 0 0 1 0-1.316L2.53 9.97a1 1 0 0 1-.19-1.237l2-3.464a1 1 0 0 1 1.166-.454l1.937.61q.54-.375 1.14-.66l.44-1.98zM11 9a1 1 0 1 1 2 0v2h2a1 1 0 1 1 0 2h-2v2a1 1 0 1 1-2 0v-2H9a1 1 0 1 1 0-2h2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func SettingsCogPlusLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 21h-4l-.551-2.48a6.991 6.991 0 0 1-1.819-1.05l-2.424.763l-2-3.464l1.872-1.718a7.055 7.055 0 0 1 0-2.1L3.206 9.232l2-3.464l2.424.763A6.992 6.992 0 0 1 9.45 5.48L10 3h4l.551 2.48a6.994 6.994 0 0 1 1.819 1.05l2.424-.763l2 3.464l-1.872 1.718a7.05 7.05 0 0 1 0 2.1l1.872 1.718l-2 3.464l-2.424-.763a6.992 6.992 0 0 1-1.819 1.052L14 21zM12 9v3m0 3v-3m0 0H9m3 0h3"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 21h-4l-.551-2.48a7 7 0 0 1-1.819-1.05l-2.424.763l-2-3.464l1.872-1.718a7 7 0 0 1 0-2.1L3.206 9.232l2-3.464l2.424.763A7 7 0 0 1 9.45 5.48L10 3h4l.551 2.48a7 7 0 0 1 1.819 1.05l2.424-.763l2 3.464l-1.872 1.718a7 7 0 0 1 0 2.1l1.872 1.718l-2 3.464l-2.424-.763a7 7 0 0 1-1.819 1.052zM12 9v3m0 3v-3m0 0H9m3 0h3"/>`), g.Group(children),
 	)
 }
 
 func Share(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 12l-6.4-7v3.5C10.4 8.5 4 10.6 4 19c0-1.167 1.92-3.5 9.6-3.5V19l6.4-7z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 12l-6.4-7v3.5C10.4 8.5 4 10.6 4 19c0-1.167 1.92-3.5 9.6-3.5V19z"/>`), g.Group(children),
 	)
 }
 
 func ShareCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12zm11-5a1 1 0 0 1 1.707-.707l4 4a1 1 0 0 1 0 1.414l-4 4A1 1 0 0 1 12 15v-.96c-1.631.132-2.625.584-3.205 1.014a2.534 2.534 0 0 0-.675.71a1.02 1.02 0 0 0-.117.255a.03.03 0 0 1-.003.008v-.002A1 1 0 0 1 6 16c0-2.706 1.137-4.715 2.573-6.036C9.635 8.987 10.89 8.361 12 8.117V7zm1 5a1 1 0 0 1 .937.65L15.586 11l-1.65-1.65A1 1 0 0 1 13 10c-.704 0-1.971.422-3.073 1.436a5.91 5.91 0 0 0-1.062 1.296C9.903 12.29 11.257 12 13 12z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m11-5a1 1 0 0 1 1.707-.707l4 4a1 1 0 0 1 0 1.414l-4 4A1 1 0 0 1 12 15v-.96c-1.631.132-2.625.584-3.205 1.014a2.5 2.5 0 0 0-.675.71a1 1 0 0 0-.117.255L8 16.027v-.002A1 1 0 0 1 6 16c0-2.706 1.137-4.715 2.573-6.036C9.635 8.987 10.89 8.361 12 8.117zm1 5a1 1 0 0 1 .937.65L15.586 11l-1.65-1.65A1 1 0 0 1 13 10c-.704 0-1.971.422-3.073 1.436a6 6 0 0 0-1.062 1.296C9.903 12.29 11.257 12 13 12" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ShareCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m17 11l-4-4v2c-2 0-6 2.2-6 7c0-.667 1.2-3 6-3v2l4-4z"/><circle cx="12" cy="12" r="10"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m17 11l-4-4v2c-2 0-6 2.2-6 7c0-.667 1.2-3 6-3v2z"/><circle cx="12" cy="12" r="10"/></g>`), g.Group(children),
 	)
 }
 
 func ShareLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 12l-6.4-7v3.5C10.4 8.5 4 10.6 4 19c0-1.167 1.92-3.5 9.6-3.5V19l6.4-7z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m20 12l-6.4-7v3.5C10.4 8.5 4 10.6 4 19c0-1.167 1.92-3.5 9.6-3.5V19z"/>`), g.Group(children),
 	)
 }
 
 func Shield(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12.707 2.293a1 1 0 0 0-1.414 0c-.81.81-1.973 1.29-3.183 1.54c-1.202.248-2.347.246-3 .173A1 1 0 0 0 4 5v9c0 1.3.568 2.449 1.304 3.395c.738.948 1.697 1.763 2.615 2.419a21.859 21.859 0 0 0 3.66 2.093l.018.008l.006.003h.003a1 1 0 0 0 .788.001L12 21c.394.92.395.919.395.919l.002-.001l.005-.003l.02-.008l.065-.029a21.482 21.482 0 0 0 1.07-.523a21.95 21.95 0 0 0 2.524-1.541c.918-.656 1.877-1.47 2.615-2.419C19.432 16.45 20 15.3 20 14V5a1 1 0 0 0-1.11-.994c-.653.073-1.798.075-3-.173c-1.21-.25-2.373-.73-3.183-1.54zM12 21l-.394.919L12 21z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M12.707 2.293a1 1 0 0 0-1.414 0c-.81.81-1.973 1.29-3.183 1.54c-1.202.248-2.347.246-3 .173A1 1 0 0 0 4 5v9c0 1.3.568 2.449 1.304 3.395c.738.948 1.697 1.763 2.615 2.419a22 22 0 0 0 3.66 2.093l.018.008l.006.003h.003a1 1 0 0 0 .788.001L12 21c.394.92.395.919.395.919l.002-.001l.005-.003l.02-.008l.065-.029a22 22 0 0 0 1.07-.523a22 22 0 0 0 2.524-1.541c.918-.656 1.877-1.47 2.615-2.419C19.432 16.45 20 15.3 20 14V5a1 1 0 0 0-1.11-.994c-.653.073-1.798.075-3-.173c-1.21-.25-2.373-.73-3.183-1.54M12 21l-.394.919z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -6063,14 +6063,14 @@ func ShieldExclamationLine(children ...g.Node) g.Node {
 func ShieldLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14c0 4-7 7-7 7s-7-3-7-7V5c1.5.167 5 0 7-2c2 2 5.5 2.167 7 2v9z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14c0 4-7 7-7 7s-7-3-7-7V5c1.5.167 5 0 7-2c2 2 5.5 2.167 7 2z"/>`), g.Group(children),
 	)
 }
 
 func ShieldOff(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 3l18 18"/><path fill="currentColor" fill-rule="evenodd" d="M4.013 4.841A1 1 0 0 0 4 5v9c0 1.3.568 2.449 1.304 3.395c.738.948 1.697 1.763 2.615 2.419a21.859 21.859 0 0 0 3.66 2.093l.018.008l.006.003h.003a1 1 0 0 0 .788.001L12 21c.394.92.395.919.395.919l.002-.001l.005-.003l.02-.008l.065-.029a21.482 21.482 0 0 0 1.07-.523a21.95 21.95 0 0 0 2.524-1.541c.536-.383 1.086-.82 1.598-1.306L4.013 4.84zm15.864 10.207A4.57 4.57 0 0 0 20 14V5a1 1 0 0 0-1.11-.994c-.653.073-1.798.075-3-.173c-1.21-.25-2.373-.73-3.183-1.54a1 1 0 0 0-1.414 0c-.71.709-1.69 1.166-2.735 1.436l11.319 11.32zm-8.271 6.87L12 21l-.394.919z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 3l18 18"/><path fill="currentColor" fill-rule="evenodd" d="M4.013 4.841A1 1 0 0 0 4 5v9c0 1.3.568 2.449 1.304 3.395c.738.948 1.697 1.763 2.615 2.419a22 22 0 0 0 3.66 2.093l.018.008l.006.003h.003a1 1 0 0 0 .788.001L12 21c.394.92.395.919.395.919l.002-.001l.005-.003l.02-.008l.065-.029a22 22 0 0 0 1.07-.523a22 22 0 0 0 2.524-1.541c.536-.383 1.086-.82 1.598-1.306L4.013 4.84zm15.864 10.207A4.6 4.6 0 0 0 20 14V5a1 1 0 0 0-1.11-.994c-.653.073-1.798.075-3-.173c-1.21-.25-2.373-.73-3.183-1.54a1 1 0 0 0-1.414 0c-.71.709-1.69 1.166-2.735 1.436zm-8.271 6.87L12 21l-.394.919z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -6084,42 +6084,42 @@ func ShieldOffLine(children ...g.Node) g.Node {
 func ShieldPlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11.293 2.293a1 1 0 0 1 1.414 0c.81.81 1.973 1.29 3.183 1.54c1.202.248 2.347.246 3 .173A1 1 0 0 1 20 5v9c0 1.3-.568 2.449-1.304 3.395c-.738.948-1.697 1.763-2.615 2.419a21.853 21.853 0 0 1-3.66 2.093l-.018.008l-.006.003h-.002S12.394 21.92 12 21l-.394.919l-.003-.001l-.005-.003l-.02-.008a21.482 21.482 0 0 1-1.137-.553a21.723 21.723 0 0 1-2.522-1.54c-.918-.656-1.877-1.47-2.615-2.419C4.568 16.45 4 15.3 4 14V5a1 1 0 0 1 1.11-.994c.653.073 1.798.075 3-.173c1.21-.25 2.373-.73 3.183-1.54zm.313 19.626a1 1 0 0 0 .788 0L12 21l-.394.919zM13 11V9a1 1 0 1 0-2 0v2H9a1 1 0 1 0 0 2h2v2a1 1 0 1 0 2 0v-2h2a1 1 0 1 0 0-2h-2z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11.293 2.293a1 1 0 0 1 1.414 0c.81.81 1.973 1.29 3.183 1.54c1.202.248 2.347.246 3 .173A1 1 0 0 1 20 5v9c0 1.3-.568 2.449-1.304 3.395c-.738.948-1.697 1.763-2.615 2.419a22 22 0 0 1-3.66 2.093l-.018.008l-.006.003h-.002S12.394 21.92 12 21l-.394.919l-.003-.001l-.005-.003l-.02-.008a22 22 0 0 1-1.137-.553a22 22 0 0 1-2.522-1.54c-.918-.656-1.877-1.47-2.615-2.419C4.568 16.45 4 15.3 4 14V5a1 1 0 0 1 1.11-.994c.653.073 1.798.075 3-.173c1.21-.25 2.373-.73 3.183-1.54m.313 19.626a1 1 0 0 0 .788 0L12 21zM13 11V9a1 1 0 1 0-2 0v2H9a1 1 0 1 0 0 2h2v2a1 1 0 1 0 2 0v-2h2a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ShieldPlusLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14c0 4-7 7-7 7s-7-3-7-7V5c1.5.167 5 0 7-2c2 2 5.5 2.167 7 2v9zm-7-5v3m0 3v-3m0 0h3m-3 0H9"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14c0 4-7 7-7 7s-7-3-7-7V5c1.5.167 5 0 7-2c2 2 5.5 2.167 7 2zm-7-5v3m0 3v-3m0 0h3m-3 0H9"/>`), g.Group(children),
 	)
 }
 
 func Ship(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M9 3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2h3a1 1 0 0 1 .981 1.192l-.437 2.238l-1.327-.295l-5-1.111a1 1 0 0 0-.434 0l-5 1.11l-1.327.296l-.437-2.238A1 1 0 0 1 6 5h3V3zm-6.092 7.996l-.125.028a1 1 0 0 0-.677 1.423l2 4a1 1 0 0 0 1.035.543L12 16.01l6.859.98a1 1 0 0 0 1.035-.543l2-4a1 1 0 0 0-.677-1.423l-.125-.028a1 1 0 0 1-.309-.02l-4-.889L12 9.024l-4.783 1.063l-4 .89a1 1 0 0 1-.309.019zm6.36 7.609a3.631 3.631 0 0 1 5.465 0l.035.04a1.57 1.57 0 0 0 2.053.273a3.57 3.57 0 0 1 3.305-.344l1.245.497a1 1 0 0 1-.742 1.857l-1.245-.498a1.57 1.57 0 0 0-1.454.152a3.57 3.57 0 0 1-4.667-.62l-.035-.04a1.631 1.631 0 0 0-2.456 0l-.035.04a3.57 3.57 0 0 1-4.667.62a1.57 1.57 0 0 0-1.454-.152l-1.245.498a1 1 0 1 1-.742-1.857l1.245-.497a3.57 3.57 0 0 1 3.305.344a1.57 1.57 0 0 0 2.053-.273l.035-.04z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M9 3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2h3a1 1 0 0 1 .981 1.192l-.437 2.238l-1.327-.295l-5-1.111a1 1 0 0 0-.434 0l-5 1.11l-1.327.296l-.437-2.238A1 1 0 0 1 6 5h3zm-6.092 7.996l-.125.028a1 1 0 0 0-.677 1.423l2 4a1 1 0 0 0 1.035.543L12 16.01l6.859.98a1 1 0 0 0 1.035-.543l2-4a1 1 0 0 0-.677-1.423l-.125-.028a1 1 0 0 1-.309-.02l-4-.889L12 9.024l-4.783 1.063l-4 .89a1 1 0 0 1-.309.019m6.36 7.609a3.63 3.63 0 0 1 5.465 0l.035.04a1.57 1.57 0 0 0 2.053.273a3.57 3.57 0 0 1 3.305-.344l1.245.497a1 1 0 0 1-.742 1.857l-1.245-.498a1.57 1.57 0 0 0-1.454.152a3.57 3.57 0 0 1-4.667-.62l-.035-.04a1.63 1.63 0 0 0-2.456 0l-.035.04a3.57 3.57 0 0 1-4.667.62a1.57 1.57 0 0 0-1.454-.152l-1.245.498a1 1 0 1 1-.742-1.857l1.245-.497a3.57 3.57 0 0 1 3.305.344a1.57 1.57 0 0 0 2.053-.273l.035-.04z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func ShipLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 16l2-4l-4-.889M12 10v5m0-5l-5 1.111M12 10l5 1.111M5 16l-2-4l4-.889m0 0L6 6h4m7 5.111L18 6h-4m0 0V3h-4v3m4 0h-4M3 20l1.245-.498a2.57 2.57 0 0 1 2.38.248v0a2.57 2.57 0 0 0 3.36-.446l.035-.04a2.631 2.631 0 0 1 3.96 0l.036.04a2.57 2.57 0 0 0 3.36.446v0a2.57 2.57 0 0 1 2.38-.248L21 20"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 16l2-4l-4-.889M12 10v5m0-5l-5 1.111M12 10l5 1.111M5 16l-2-4l4-.889m0 0L6 6h4m7 5.111L18 6h-4m0 0V3h-4v3m4 0h-4M3 20l1.245-.498a2.57 2.57 0 0 1 2.38.248v0a2.57 2.57 0 0 0 3.36-.446l.035-.04a2.63 2.63 0 0 1 3.96 0l.036.04a2.57 2.57 0 0 0 3.36.446v0a2.57 2.57 0 0 1 2.38-.248L21 20"/>`), g.Group(children),
 	)
 }
 
 func ShootingStar(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M9 8c-1.667.667-5.4 2.7-7 5.5m9.5-2.5C9.167 12.333 4 16.4 2 22m10.5-7.5c-1.167 1.167-3.8 4.1-5 6.5"/><path fill="currentColor" d="m14.674 6.45l.673-3.285l2.225 2.51l3.027-.294l-1.768 3.062l1.743 2.639l-3.286-.673l-2.51 2.225l.19-3.156l-3.062-1.768l2.768-1.26z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M9 8c-1.667.667-5.4 2.7-7 5.5m9.5-2.5C9.167 12.333 4 16.4 2 22m10.5-7.5c-1.167 1.167-3.8 4.1-5 6.5"/><path fill="currentColor" d="m14.674 6.45l.673-3.285l2.225 2.51l3.027-.294l-1.768 3.062l1.743 2.639l-3.286-.673l-2.51 2.225l.19-3.156l-3.062-1.768z"/></g>`), g.Group(children),
 	)
 }
 
 func ShootingStarLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 8c-1.667.667-5.4 2.7-7 5.5m9.5-2.5C9.167 12.333 4 16.4 2 22m10.5-7.5c-1.167 1.167-3.8 4.1-5 6.5m7.174-14.55l.673-3.285l2.225 2.51l3.027-.294l-1.768 3.062l1.743 2.639l-3.286-.673l-2.51 2.225l.19-3.156l-3.062-1.768l2.768-1.26z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 8c-1.667.667-5.4 2.7-7 5.5m9.5-2.5C9.167 12.333 4 16.4 2 22m10.5-7.5c-1.167 1.167-3.8 4.1-5 6.5m7.174-14.55l.673-3.285l2.225 2.51l3.027-.294l-1.768 3.062l1.743 2.639l-3.286-.673l-2.51 2.225l.19-3.156l-3.062-1.768z"/>`), g.Group(children),
 	)
 }
 
@@ -6140,28 +6140,28 @@ func ShoppingBagLine(children ...g.Node) g.Node {
 func ShoppingCart(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M18 15H7L5.5 6H21l-3 9z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.5 3m0 0L7 15h11l3-9H5.5z"/><circle cx="8" cy="20" r="1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><circle cx="17" cy="20" r="1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M18 15H7L5.5 6H21z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.5 3m0 0L7 15h11l3-9z"/><circle cx="8" cy="20" r="1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><circle cx="17" cy="20" r="1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></g>`), g.Group(children),
 	)
 }
 
 func ShoppingCartLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 3h2l.5 3m0 0L7 15h11l3-9H5.5z"/><circle cx="8" cy="20" r="1"/><circle cx="17" cy="20" r="1"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 3h2l.5 3m0 0L7 15h11l3-9z"/><circle cx="8" cy="20" r="1"/><circle cx="17" cy="20" r="1"/></g>`), g.Group(children),
 	)
 }
 
 func SimCard(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8.707 2.879A3 3 0 0 1 10.828 2H17a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H6.998A2.998 2.998 0 0 1 4 19V8.828a3 3 0 0 1 .879-2.12l3.828-3.83zM14 18a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h4z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8.707 2.879A3 3 0 0 1 10.828 2H17a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H6.998A3 3 0 0 1 4 19V8.828a3 3 0 0 1 .879-2.12l3.828-3.83zM14 18a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func SimCardLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19V5a2 2 0 0 0-2-2h-6.172a2 2 0 0 0-1.414.586L5.586 7.414A2 2 0 0 0 5 8.828V19c0 1.105.893 2 1.997 2h10.004A2 2 0 0 0 19 19z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 19V5a2 2 0 0 0-2-2h-6.172a2 2 0 0 0-1.414.586L5.586 7.414A2 2 0 0 0 5 8.828V19c0 1.105.893 2 1.997 2h10.004A2 2 0 0 0 19 19"/>`), g.Group(children),
 	)
 }
 
@@ -6182,28 +6182,28 @@ func SitemapLine(children ...g.Node) g.Node {
 func Skull(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M22 11a9.96 9.96 0 0 1-2 6v2a3 3 0 0 1-3 3v-1a1 1 0 1 0-2 0v1h-2v-1a1 1 0 1 0-2 0v1H9v-1a1 1 0 1 0-2 0v1a3 3 0 0 1-3-3v-2a9.96 9.96 0 0 1-2-6c0-2.779 1.136-5.058 2.99-6.627C6.828 2.817 9.318 2 12 2c2.682 0 5.172.817 7.01 2.373C20.863 5.942 22 8.22 22 11zM8 9a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm4.894 5.415C12.725 14.16 12.38 14 12 14s-.725.16-.894.415l-1 1.5a.591.591 0 0 0 .043.73c.183.22.504.355.851.355h2c.347 0 .668-.135.85-.356a.591.591 0 0 0 .044-.73l-1-1.5zM14 11a2 2 0 1 1 4 0a2 2 0 0 1-4 0z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M22 11a9.96 9.96 0 0 1-2 6v2a3 3 0 0 1-3 3v-1a1 1 0 1 0-2 0v1h-2v-1a1 1 0 1 0-2 0v1H9v-1a1 1 0 1 0-2 0v1a3 3 0 0 1-3-3v-2a9.96 9.96 0 0 1-2-6c0-2.779 1.136-5.058 2.99-6.627C6.828 2.817 9.318 2 12 2s5.172.817 7.01 2.373C20.863 5.942 22 8.22 22 11M8 9a2 2 0 1 0 0 4a2 2 0 0 0 0-4m4.894 5.415C12.725 14.16 12.38 14 12 14s-.725.16-.894.415l-1 1.5a.59.59 0 0 0 .043.73c.183.22.504.355.851.355h2c.347 0 .668-.135.85-.356a.59.59 0 0 0 .044-.73l-1-1.5zM14 11a2 2 0 1 1 4 0a2 2 0 0 1-4 0" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func SkullLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 16.657A8.962 8.962 0 0 1 3 11c0-4.97 4.03-8 9-8s9 3.03 9 8c0 2.143-.75 4.112-2 5.657m-14 0V19a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2.343m-14 0h1.5m12.5 0h-1.5"/><circle cx="8" cy="12" r="1"/><path d="m11 16l1-2l1 2h-2zm-2 3v2m3-2v2m3-2v2"/><circle cx="16" cy="12" r="1"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 16.657A8.96 8.96 0 0 1 3 11c0-4.97 4.03-8 9-8s9 3.03 9 8c0 2.143-.75 4.112-2 5.657m-14 0V19a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2.343m-14 0h1.5m12.5 0h-1.5"/><circle cx="8" cy="12" r="1"/><path d="m11 16l1-2l1 2zm-2 3v2m3-2v2m3-2v2"/><circle cx="16" cy="12" r="1"/></g>`), g.Group(children),
 	)
 }
 
 func SmartphoneApps(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H8zm1 5.001a1 1 0 0 1-1-1V6a1 1 0 1 1 2 0v.001a1 1 0 0 1-1 1zm-1 2a1 1 0 0 0 2 0V9a1 1 0 1 0-2 0v.001zm4 1a1 1 0 0 1-1-1V9a1 1 0 1 1 2 0v.001a1 1 0 0 1-1 1zm-1-4a1 1 0 1 0 2 0V6a1 1 0 1 0-2 0v.001zm4 1a1 1 0 0 1-1-1V6a1 1 0 1 1 2 0v.001a1 1 0 0 1-1 1zm-1 2a1 1 0 1 0 2 0V9a1 1 0 1 0-2 0v.001zm-5 4a1 1 0 0 1-1-1V12a1 1 0 1 1 2 0v.001a1 1 0 0 1-1 1zm2-1a1 1 0 1 0 2 0V12a1 1 0 1 0-2 0v.001z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3zm1 5.001a1 1 0 0 1-1-1V6a1 1 0 1 1 2 0v.001a1 1 0 0 1-1 1m-1 2a1 1 0 0 0 2 0V9a1 1 0 1 0-2 0zm4 1a1 1 0 0 1-1-1V9a1 1 0 1 1 2 0v.001a1 1 0 0 1-1 1m-1-4a1 1 0 1 0 2 0V6a1 1 0 1 0-2 0zm4 1a1 1 0 0 1-1-1V6a1 1 0 1 1 2 0v.001a1 1 0 0 1-1 1m-1 2a1 1 0 1 0 2 0V9a1 1 0 1 0-2 0zm-5 4a1 1 0 0 1-1-1V12a1 1 0 1 1 2 0v.001a1 1 0 0 1-1 1m2-1a1 1 0 1 0 2 0V12a1 1 0 1 0-2 0z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func SmartphoneAppsLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 19V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9 6.001V6m0 3.001V9m3 .001V9m0-2.999V6m3 .001V6m0 3.001V9m-6 3.001V12m3 .001V12"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 19V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9 6.001V6m3 .003V6m3 .001V6m-3 6.003"/>`), g.Group(children),
 	)
 }
 
@@ -6280,14 +6280,14 @@ func SparklesLine(children ...g.Node) g.Node {
 func Speaker(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M7 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H7zm4 5a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H12a1 1 0 0 1-1-1zm-1 7a2 2 0 1 1 4 0a2 2 0 0 1-4 0zm2-4a4 4 0 1 0 0 8a4 4 0 0 0 0-8z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M7 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3zm4 5a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2H12a1 1 0 0 1-1-1m-1 7a2 2 0 1 1 4 0a2 2 0 0 1-4 0m2-4a4 4 0 1 0 0 8a4 4 0 0 0 0-8" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func SpeakerLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M17 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-5 4h.01"/><circle cx="12" cy="14" r="3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M17 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m-5 4h.01"/><circle cx="12" cy="14" r="3"/></g>`), g.Group(children),
 	)
 }
 
@@ -6350,7 +6350,7 @@ func StatusOnlineLine(children ...g.Node) g.Node {
 func StopCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M23 12c0-6.075-4.925-11-11-11S1 5.925 1 12s4.925 11 11 11s11-4.925 11-11zM9 8a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1H9zm1 6v-4h4v4h-4z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M23 12c0-6.075-4.925-11-11-11S1 5.925 1 12s4.925 11 11 11s11-4.925 11-11M9 8a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1zm1 6v-4h4v4z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -6378,7 +6378,7 @@ func StrikeThroughLine(children ...g.Node) g.Node {
 func Suitcase(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11 3a3 3 0 0 0-3 3v1H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3h-3V6a3 3 0 0 0-3-3h-2zm3 4h-4V6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M11 3a3 3 0 0 0-3 3v1H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3h-3V6a3 3 0 0 0-3-3zm3 4h-4V6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -6392,7 +6392,7 @@ func SuitcaseLine(children ...g.Node) g.Node {
 func SuitcaseThree(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8 5a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3h2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3a1 1 0 1 1-2 0H8a1 1 0 1 1-2 0a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3h2zm2 0h4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1zm0 5a1 1 0 0 0-2 0v6a1 1 0 1 0 2 0v-6zm6 0a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0v-6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8 5a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3h2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3a1 1 0 1 1-2 0H8a1 1 0 1 1-2 0a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3zm2 0h4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1m0 5a1 1 0 0 0-2 0v6a1 1 0 1 0 2 0zm6 0a1 1 0 1 0-2 0v6a1 1 0 1 0 2 0z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -6406,7 +6406,7 @@ func SuitcaseThreeLine(children ...g.Node) g.Node {
 func SuitcaseTwo(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8 6a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3v15H8V6zM6 7H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h1V7zm12 14h1a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3h-1v14zM10 7h4V6a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v1z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8 6a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3v15H8zM6 7H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h1zm12 14h1a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3h-1zM10 7h4V6a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -6448,35 +6448,35 @@ func SupportLine(children ...g.Node) g.Node {
 func TShirt(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10V5a1 1 0 0 1 1-1h4c0 1 .8 3 4 3s4-2 4-3h4a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-1a1 1 0 0 0-1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7a1 1 0 0 0-1-1H4a1 1 0 0 1-1-1z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10V5a1 1 0 0 1 1-1h4c0 1 .8 3 4 3s4-2 4-3h4a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-1a1 1 0 0 0-1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7a1 1 0 0 0-1-1H4a1 1 0 0 1-1-1"/>`), g.Group(children),
 	)
 }
 
 func TShirtLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10V5a1 1 0 0 1 1-1h4c0 1 .8 3 4 3s4-2 4-3h4a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-1a1 1 0 0 0-1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7a1 1 0 0 0-1-1H4a1 1 0 0 1-1-1z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10V5a1 1 0 0 1 1-1h4c0 1 .8 3 4 3s4-2 4-3h4a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-1a1 1 0 0 0-1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7a1 1 0 0 0-1-1H4a1 1 0 0 1-1-1"/>`), g.Group(children),
 	)
 }
 
 func Table(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2M3 8v6m0-6h6m12 0v6m0-6H9m12 6v4a2 2 0 0 1-2 2H9m12-6H9m-6 0v4a2 2 0 0 0 2 2h4m-6-6h6m0-6v6m0 0v6m6-12v12"/><path fill="currentColor" d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2H3V6z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2M3 8v6m0-6h6m12 0v6m0-6H9m12 6v4a2 2 0 0 1-2 2H9m12-6H9m-6 0v4a2 2 0 0 0 2 2h4m-6-6h6m0-6v6m0 0v6m6-12v12"/><path fill="currentColor" d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2H3z"/></g>`), g.Group(children),
 	)
 }
 
 func TableHeart(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20H9M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2M3 8v6m0-6h6m12 0v3m0-3H9m-6 6v4a2 2 0 0 0 2 2h4m-6-6h6m0-6v6m0 0v6m0-6h1m5-6v3"/><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 16c0 1.2-2.667 3.833-4 5c-1.333-1.167-4-3.8-4-5c0-.667.4-2 2-2s2 1.333 2 2c0-.667.4-2 2-2s2 1.333 2 2z"/><path fill="currentColor" d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2H3V6z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20H9M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2M3 8v6m0-6h6m12 0v3m0-3H9m-6 6v4a2 2 0 0 0 2 2h4m-6-6h6m0-6v6m0 0v6m0-6h1m5-6v3"/><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 16c0 1.2-2.667 3.833-4 5c-1.333-1.167-4-3.8-4-5c0-.667.4-2 2-2s2 1.333 2 2c0-.667.4-2 2-2s2 1.333 2 2"/><path fill="currentColor" d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2H3z"/></g>`), g.Group(children),
 	)
 }
 
 func TableHeartLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20H9M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2M3 8v6m0-6h6m12 0v3m0-3H9m-6 6v4a2 2 0 0 0 2 2h4m-6-6h6m0-6v6m0 0v6m0-6h1m5-6v3m6 5c0 1.2-2.667 3.833-4 5c-1.333-1.167-4-3.8-4-5c0-.667.4-2 2-2s2 1.333 2 2c0-.667.4-2 2-2s2 1.333 2 2z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20H9M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2M3 8v6m0-6h6m12 0v3m0-3H9m-6 6v4a2 2 0 0 0 2 2h4m-6-6h6m0-6v6m0 0v6m0-6h1m5-6v3m6 5c0 1.2-2.667 3.833-4 5c-1.333-1.167-4-3.8-4-5c0-.667.4-2 2-2s2 1.333 2 2c0-.667.4-2 2-2s2 1.333 2 2"/>`), g.Group(children),
 	)
 }
 
@@ -6490,7 +6490,7 @@ func TableLine(children ...g.Node) g.Node {
 func TablePlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2M3 8v6m0-6h6m12 0v4m0-4H9m-6 6v4a2 2 0 0 0 2 2h4m-6-6h6m0-6v6m0 0h4a2 2 0 0 0 2-2V8m-6 6v6m0 0h2m7-5v3m0 0v3m0-3h3m-3 0h-3"/><path fill="currentColor" d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2H3V6z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2M3 8v6m0-6h6m12 0v4m0-4H9m-6 6v4a2 2 0 0 0 2 2h4m-6-6h6m0-6v6m0 0h4a2 2 0 0 0 2-2V8m-6 6v6m0 0h2m7-5v3m0 0v3m0-3h3m-3 0h-3"/><path fill="currentColor" d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2H3z"/></g>`), g.Group(children),
 	)
 }
 
@@ -6504,21 +6504,21 @@ func TablePlusLine(children ...g.Node) g.Node {
 func Tag(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 5a3 3 0 0 1 3-3h6.172a3 3 0 0 1 2.12.879l8 8a3 3 0 0 1 0 4.242l-6.17 6.172a3 3 0 0 1-4.243 0l-8-8A3 3 0 0 1 2 11.172V5zm5 1a1 1 0 0 0 0 2h.001a1 1 0 0 0 0-2H7z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 5a3 3 0 0 1 3-3h6.172a3 3 0 0 1 2.12.879l8 8a3 3 0 0 1 0 4.242l-6.17 6.172a3 3 0 0 1-4.243 0l-8-8A3 3 0 0 1 2 11.172zm5 1a1 1 0 0 0 0 2h.001a1 1 0 0 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func TagLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 11.172V5a2 2 0 0 1 2-2h6.172a2 2 0 0 1 1.414.586l8 8a2 2 0 0 1 0 2.828l-6.172 6.172a2 2 0 0 1-2.828 0l-8-8A2 2 0 0 1 3 11.172zM7 7h.001"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 11.172V5a2 2 0 0 1 2-2h6.172a2 2 0 0 1 1.414.586l8 8a2 2 0 0 1 0 2.828l-6.172 6.172a2 2 0 0 1-2.828 0l-8-8A2 2 0 0 1 3 11.172M7 7h.001"/>`), g.Group(children),
 	)
 }
 
 func TagOff(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 3L3 21"/><path fill="currentColor" fill-rule="evenodd" d="m13.293 2.879l1.5 1.5L4.379 14.793l-1.5-1.5A3 3 0 0 1 2 11.172V5a3 3 0 0 1 3-3h6.172a3 3 0 0 1 2.12.879zm4.328 4.328L7.207 17.621l3.672 3.672a3 3 0 0 0 4.242 0l6.172-6.172a3 3 0 0 0 0-4.242L17.62 7.207zM7 6a1 1 0 0 0 0 2h.001a1 1 0 0 0 0-2H7z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 3L3 21"/><path fill="currentColor" fill-rule="evenodd" d="m13.293 2.879l1.5 1.5L4.379 14.793l-1.5-1.5A3 3 0 0 1 2 11.172V5a3 3 0 0 1 3-3h6.172a3 3 0 0 1 2.12.879zm4.328 4.328L7.207 17.621l3.672 3.672a3 3 0 0 0 4.242 0l6.172-6.172a3 3 0 0 0 0-4.242zM7 6a1 1 0 0 0 0 2h.001a1 1 0 0 0 0-2z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -6532,14 +6532,14 @@ func TagOffLine(children ...g.Node) g.Node {
 func Telescope(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><g clip-path="url(#majesticonsTelescope0)"><path fill="currentColor" d="m11.026 7.366l6.063-3.5l3 5.196l-6.063 3.5a1 1 0 0 1-1.366-.366l-3.03 1.75l-2.166 1.25a1 1 0 0 1-1.366-.366l-1.732 1a1 1 0 1 1-1-1.732l1.732-1a1 1 0 0 1 .366-1.366l5.196-3a1 1 0 0 1 .366-1.366z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16.588 3l.5.866m3.5 6.062l-.5-.866m-3-5.196l-6.062 3.5a1 1 0 0 0-.366 1.366v0m6.428-4.866l3 5.196m0 0l-6.062 3.5a1 1 0 0 1-1.366-.366v0m-2-3.464l-5.196 3a1 1 0 0 0-.366 1.366v0m5.562-4.366l2 3.464m0 0l-3.03 1.75m-4.532-.848l-1.732 1A1 1 0 0 0 3 15.464v0a1 1 0 0 0 1.366.366l1.732-1m-1-1.732l1 1.732m0 0v0a1 1 0 0 0 1.366.366l2.165-1.25m0 0L13 20m-3.37-6.054L7.097 20"/></g><defs><clipPath id="majesticonsTelescope0"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><g clip-path="url(#majesticonsTelescope0)"><path fill="currentColor" d="m11.026 7.366l6.063-3.5l3 5.196l-6.063 3.5a1 1 0 0 1-1.366-.366l-3.03 1.75l-2.166 1.25a1 1 0 0 1-1.366-.366l-1.732 1a1 1 0 1 1-1-1.732l1.732-1a1 1 0 0 1 .366-1.366l5.196-3a1 1 0 0 1 .366-1.366"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16.588 3l.5.866m3.5 6.062l-.5-.866m-3-5.196l-6.062 3.5a1 1 0 0 0-.366 1.366v0m6.428-4.866l3 5.196m0 0l-6.062 3.5a1 1 0 0 1-1.366-.366v0m-2-3.464l-5.196 3a1 1 0 0 0-.366 1.366v0m5.562-4.366l2 3.464m0 0l-3.03 1.75m-4.532-.848l-1.732 1A1 1 0 0 0 3 15.464v0a1 1 0 0 0 1.366.366l1.732-1m-1-1.732l1 1.732m0 0a1 1 0 0 0 1.366.366l2.165-1.25m0 0L13 20m-3.37-6.054L7.097 20"/></g><defs><clipPath id="majesticonsTelescope0"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></g>`), g.Group(children),
 	)
 }
 
 func TelescopeLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16.588 3l.5.866m3.5 6.062l-.5-.866m-3-5.196l-6.062 3.5a1 1 0 0 0-.366 1.366v0m6.428-4.866l3 5.196m0 0l-6.062 3.5a1 1 0 0 1-1.366-.366v0m-2-3.464l-5.196 3a1 1 0 0 0-.366 1.366v0m5.562-4.366l2 3.464m0 0l-3.03 1.75m-4.532-.848l-1.732 1A1 1 0 0 0 3 15.464v0a1 1 0 0 0 1.366.366l1.732-1m-1-1.732l1 1.732m0 0v0a1 1 0 0 0 1.366.366l2.165-1.25m0 0L13 20m-3.37-6.054L7.097 20"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16.588 3l.5.866m3.5 6.062l-.5-.866m-3-5.196l-6.062 3.5a1 1 0 0 0-.366 1.366v0m6.428-4.866l3 5.196m0 0l-6.062 3.5a1 1 0 0 1-1.366-.366v0m-2-3.464l-5.196 3a1 1 0 0 0-.366 1.366v0m5.562-4.366l2 3.464m0 0l-3.03 1.75m-4.532-.848l-1.732 1A1 1 0 0 0 3 15.464v0a1 1 0 0 0 1.366.366l1.732-1m-1-1.732l1 1.732m0 0a1 1 0 0 0 1.366.366l2.165-1.25m0 0L13 20m-3.37-6.054L7.097 20"/>`), g.Group(children),
 	)
 }
 
@@ -6560,14 +6560,14 @@ func TerminalLine(children ...g.Node) g.Node {
 func TestTubeFilled(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M6 2a1 1 0 0 0 0 2h1v13a5 5 0 0 0 10 0V4h1a1 1 0 1 0 0-2H6zm3 5V4h6v3H9zm4.708 5.708a1 1 0 0 1-1.414 0h-.001a1 1 0 0 1 1.414-1.415a1 1 0 0 1 0 1.415zm-3.414 4a1 1 0 1 0 1.414-1.414v-.001a1 1 0 0 0-1.415 1.414z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M6 2a1 1 0 0 0 0 2h1v13a5 5 0 0 0 10 0V4h1a1 1 0 1 0 0-2zm3 5V4h6v3zm4.708 5.708a1 1 0 0 1-1.414 0h-.001a1 1 0 0 1 1.414-1.415a1 1 0 0 1 0 1.415zm-3.414 4a1 1 0 1 0 1.414-1.414v-.001a1 1 0 0 0-1.415 1.414z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func TestTubeFilledLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 3h2m10 0h-2m0 0H8m8 0v5M8 3v5m0 0v9a4 4 0 0 0 4 4v0a4 4 0 0 0 4-4V8M8 8h8m-3 4h0m-2 4h0"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 3h2m10 0h-2m0 0H8m8 0v5M8 3v5m0 0v9a4 4 0 0 0 4 4v0a4 4 0 0 0 4-4V8M8 8h8m-5 8"/>`), g.Group(children),
 	)
 }
 
@@ -6658,21 +6658,21 @@ func TextWrapLine(children ...g.Node) g.Node {
 func Textbox(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6zm5 1a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2H8zm0 4a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8zm0 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H8z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3zm5 1a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func TextboxLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 8h8m0 4H8m0 4h4m-6 4h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 8h8m0 4H8m0 4h4m-6 4h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2"/>`), g.Group(children),
 	)
 }
 
 func TextboxMinus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 18h-6"/><path fill="currentColor" fill-rule="evenodd" d="M6 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h6.803A5.972 5.972 0 0 1 12 18c0-.342.029-.677.084-1.003A1.048 1.048 0 0 1 12 17H8a1 1 0 1 1 0-2h4c.255 0 .488.095.665.253A6.029 6.029 0 0 1 14.681 13H8a1 1 0 1 1 0-2h8a1 1 0 0 1 .997 1.084A6.044 6.044 0 0 1 18 12c1.093 0 2.117.292 3 .803V6a3 3 0 0 0-3-3H6zm1 5a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 18h-6"/><path fill="currentColor" fill-rule="evenodd" d="M6 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h6.803A6 6 0 0 1 12 18q0-.514.084-1.003L12 17H8a1 1 0 1 1 0-2h4c.255 0 .488.095.665.253A6 6 0 0 1 14.681 13H8a1 1 0 1 1 0-2h8a1 1 0 0 1 .997 1.084A6 6 0 0 1 18 12c1.093 0 2.117.292 3 .803V6a3 3 0 0 0-3-3zm1 5a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -6686,7 +6686,7 @@ func TextboxMinusLine(children ...g.Node) g.Node {
 func TextboxPlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 15v3m0 3v-3m0 0h3m-3 0h-3"/><path fill="currentColor" fill-rule="evenodd" d="M6 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h6.803A5.972 5.972 0 0 1 12 18c0-.342.029-.677.084-1.003A1.048 1.048 0 0 1 12 17H8a1 1 0 1 1 0-2h4c.255 0 .488.095.665.253A6.029 6.029 0 0 1 14.681 13H8a1 1 0 1 1 0-2h8a1 1 0 0 1 .997 1.084A6.044 6.044 0 0 1 18 12c1.093 0 2.117.292 3 .803V6a3 3 0 0 0-3-3H6zm1 5a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 15v3m0 3v-3m0 0h3m-3 0h-3"/><path fill="currentColor" fill-rule="evenodd" d="M6 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h6.803A6 6 0 0 1 12 18q0-.514.084-1.003L12 17H8a1 1 0 1 1 0-2h4c.255 0 .488.095.665.253A6 6 0 0 1 14.681 13H8a1 1 0 1 1 0-2h8a1 1 0 0 1 .997 1.084A6 6 0 0 1 18 12c1.093 0 2.117.292 3 .803V6a3 3 0 0 0-3-3zm1 5a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
@@ -6728,126 +6728,126 @@ func ThumbUpLine(children ...g.Node) g.Node {
 func Ticket(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4 4h12a1 1 0 1 0 2 0h2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-2a1 1 0 1 0-2 0H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm14 4.001a1 1 0 1 1-2 0V8a1 1 0 1 1 2 0v.001zm-1 5a1 1 0 0 0 1-1V12a1 1 0 1 0-2 0v.001a1 1 0 0 0 1 1zm1 3a1 1 0 1 1-2 0V16a1 1 0 1 1 2 0v.001z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M4 4h12a1 1 0 1 0 2 0h2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-2a1 1 0 1 0-2 0H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m14 4.001a1 1 0 1 1-2 0V8a1 1 0 1 1 2 0zm-1 5a1 1 0 0 0 1-1V12a1 1 0 1 0-2 0v.001a1 1 0 0 0 1 1m1 3a1 1 0 1 1-2 0V16a1 1 0 1 1 2 0z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func TicketCheck(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M16 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a1 1 0 1 1 2 0h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2a1 1 0 1 1-2 0zm1 5.001a1 1 0 0 0 1-1V8a1 1 0 1 0-2 0v.001a1 1 0 0 0 1 1zm1 3a1 1 0 1 1-2 0V12a1 1 0 1 1 2 0v.001zm-1 5a1 1 0 0 0 1-1V16a1 1 0 1 0-2 0v.001a1 1 0 0 0 1 1zm-3.168-7.446a1 1 0 0 0-1.664-1.11L8.845 13.43l-1.138-1.137a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.54-.152l4-6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M16 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a1 1 0 1 1 2 0h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2a1 1 0 1 1-2 0m1 5.001a1 1 0 0 0 1-1V8a1 1 0 1 0-2 0v.001a1 1 0 0 0 1 1m1 3a1 1 0 1 1-2 0V12a1 1 0 1 1 2 0zm-1 5a1 1 0 0 0 1-1V16a1 1 0 1 0-2 0v.001a1 1 0 0 0 1 1m-3.168-7.446a1 1 0 0 0-1.664-1.11L8.845 13.43l-1.138-1.137a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.54-.152l4-6z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func TicketCheckLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M17 19H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h13m0 14h3a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-3m0 14v-1m0-13v1m0 3.001V9m0 3.001V12m0 3.001V15"/><path d="m7 13l2 2l4-6"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M17 19H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h13m0 14h3a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-3m0 14v-1m0-13v1m0 9.003"/><path d="m7 13l2 2l4-6"/></g>`), g.Group(children),
 	)
 }
 
 func TicketLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 19H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h13m0 14h3a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-3m0 14v-1m0-13v1m0 3.001V9m0 3.001V12m0 3.001V15"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 19H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h13m0 14h3a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-3m0 14v-1m0-13v1m0 9.003"/>`), g.Group(children),
 	)
 }
 
 func TicketText(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M16 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a1 1 0 1 1 2 0h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2a1 1 0 1 1-2 0zm1 5.001a1 1 0 0 0 1-1V8a1 1 0 1 0-2 0v.001a1 1 0 0 0 1 1zm1 3a1 1 0 1 1-2 0V12a1 1 0 1 1 2 0v.001zm-1 5a1 1 0 0 0 1-1V16a1 1 0 1 0-2 0v.001a1 1 0 0 0 1 1zM6 11a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2H6zm0 4a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2H6z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M16 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a1 1 0 1 1 2 0h2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2a1 1 0 1 1-2 0m1 5.001a1 1 0 0 0 1-1V8a1 1 0 1 0-2 0v.001a1 1 0 0 0 1 1m1 3a1 1 0 1 1-2 0V12a1 1 0 1 1 2 0zm-1 5a1 1 0 0 0 1-1V16a1 1 0 1 0-2 0v.001a1 1 0 0 0 1 1M6 11a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h3a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func TicketTextLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 19H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h13m0 14h3a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-3m0 14v-1m0-13v1m0 3.001V9m0 3.001V12m0 3.001V15M7 12h6m-6 3h3"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 19H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h13m0 14h3a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-3m0 14v-1m0-13v1M7 12h6m-6 3h3"/>`), g.Group(children),
 	)
 }
 
 func Tickets(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 20H4a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h3m6 11h3a1 1 0 0 0 1-1v-2.5M13 20v-1"/><path fill="currentColor" fill-rule="evenodd" d="M22 6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6zm-4 .001a1 1 0 1 1-2 0V6a1 1 0 1 1 2 0v.001zm-1 5a1 1 0 0 0 1-1V10a1 1 0 1 0-2 0v.001a1 1 0 0 0 1 1zm1 3a1 1 0 1 1-2 0V14a1 1 0 1 1 2 0v.001z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 20H4a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h3m6 11h3a1 1 0 0 0 1-1v-2.5M13 20v-1"/><path fill="currentColor" fill-rule="evenodd" d="M22 6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-4 .001a1 1 0 1 1-2 0V6a1 1 0 1 1 2 0zm-1 5a1 1 0 0 0 1-1V10a1 1 0 1 0-2 0v.001a1 1 0 0 0 1 1m1 3a1 1 0 1 1-2 0V14a1 1 0 1 1 2 0z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func TicketsLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M17 16H8a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h9m0 11h3a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-3m0 11v-1m0-10v1"/><path d="M13 20H4a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h3m6 11h3a1 1 0 0 0 1-1v-2.5M13 20v-1m4-9.999V9m0 3.001V12"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M17 16H8a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h9m0 11h3a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-3m0 11v-1m0-10v1"/><path d="M13 20H4a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h3m6 11h3a1 1 0 0 0 1-1v-2.5M13 20v-1m4-6.998"/></g>`), g.Group(children),
 	)
 }
 
 func Timer(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8 3a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1zM3 14a9 9 0 0 1 14.618-7.032l.675-.675a1 1 0 1 1 1.414 1.414l-.675.675A9 9 0 1 1 3 14zm10-4a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0v-4z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M8 3a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1M3 14a9 9 0 0 1 14.618-7.032l.675-.675a1 1 0 1 1 1.414 1.414l-.675.675A9 9 0 1 1 3 14m10-4a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func TimerLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 7l-1.343 1.343m0 0A8 8 0 1 0 6.343 19.657A8 8 0 0 0 17.657 8.343zM12 10v4M9 3h6"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 7l-1.343 1.343m0 0A8 8 0 1 0 6.343 19.657A8 8 0 0 0 17.657 8.343M12 10v4M9 3h6"/>`), g.Group(children),
 	)
 }
 
 func Tooltip(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 4H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3.172a2 2 0 0 1 1.414.586l1.707 1.707a1 1 0 0 0 1.414 0l1.707-1.707A2 2 0 0 1 15.828 18H19a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 4H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3.172a2 2 0 0 1 1.414.586l1.707 1.707a1 1 0 0 0 1.414 0l1.707-1.707A2 2 0 0 1 15.828 18H19a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/>`), g.Group(children),
 	)
 }
 
 func TooltipLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 4H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3.172a2 2 0 0 1 1.414.586l1.707 1.707a1 1 0 0 0 1.414 0l1.707-1.707A2 2 0 0 1 15.828 18H19a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 4H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3.172a2 2 0 0 1 1.414.586l1.707 1.707a1 1 0 0 0 1.414 0l1.707-1.707A2 2 0 0 1 15.828 18H19a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/>`), g.Group(children),
 	)
 }
 
 func TooltipText(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 6a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-3.172a1 1 0 0 0-.707.293L13.414 21a2 2 0 0 1-2.828 0l-1.707-1.707A1 1 0 0 0 8.172 19H5a3 3 0 0 1-3-3V6zm5 0a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2H7zm0 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2H7zm0 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2H7z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 6a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3h-3.172a1 1 0 0 0-.707.293L13.414 21a2 2 0 0 1-2.828 0l-1.707-1.707A1 1 0 0 0 8.172 19H5a3 3 0 0 1-3-3zm5 0a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h10a1 1 0 1 0 0-2zm0 4a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func TooltipTextLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 11h10M7 14h4m1.707 6.293l1.707-1.707A2 2 0 0 1 15.828 18H19a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3.172a2 2 0 0 1 1.414.586l1.707 1.707a1 1 0 0 0 1.414 0z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 11h10M7 14h4m1.707 6.293l1.707-1.707A2 2 0 0 1 15.828 18H19a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3.172a2 2 0 0 1 1.414.586l1.707 1.707a1 1 0 0 0 1.414 0"/>`), g.Group(children),
 	)
 }
 
 func Tooltips(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" d="M12 2H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h.93a2 2 0 0 1 1.664.89l.574.862a1 1 0 0 0 1.664 0l.574-.861A2 2 0 0 1 11.07 12H12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/><path d="M18 10h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-.93a2 2 0 0 0-1.664.89l-.574.862a1 1 0 0 1-1.664 0l-.574-.861A2 2 0 0 0 12.93 20H12a2 2 0 0 1-2-2v-1"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" d="M12 2H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h.93a2 2 0 0 1 1.664.89l.574.862a1 1 0 0 0 1.664 0l.574-.861A2 2 0 0 1 11.07 12H12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2"/><path d="M18 10h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-.93a2 2 0 0 0-1.664.89l-.574.862a1 1 0 0 1-1.664 0l-.574-.861A2 2 0 0 0 12.93 20H12a2 2 0 0 1-2-2v-1"/></g>`), g.Group(children),
 	)
 }
 
 func TooltipsLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h.93a2 2 0 0 1 1.664.89l.574.862a1 1 0 0 0 1.664 0l.574-.861A2 2 0 0 1 11.07 12H12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm6 8h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-.93a2 2 0 0 0-1.664.89l-.574.862a1 1 0 0 1-1.664 0l-.574-.861A2 2 0 0 0 12.93 20H12a2 2 0 0 1-2-2v-1"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h.93a2 2 0 0 1 1.664.89l.574.862a1 1 0 0 0 1.664 0l.574-.861A2 2 0 0 1 11.07 12H12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2m6 8h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-.93a2 2 0 0 0-1.664.89l-.574.862a1 1 0 0 1-1.664 0l-.574-.861A2 2 0 0 0 12.93 20H12a2 2 0 0 1-2-2v-1"/>`), g.Group(children),
 	)
 }
 
 func TooltipsTwo(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" d="M20 10h-8a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h.93a2 2 0 0 1 1.664.89l.574.862a1 1 0 0 0 1.664 0l.574-.861A2 2 0 0 1 19.07 20H20a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2z"/><path d="M14 7V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h.93a2 2 0 0 1 1.664.89L7 13.5"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path fill="currentColor" d="M20 10h-8a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h.93a2 2 0 0 1 1.664.89l.574.862a1 1 0 0 0 1.664 0l.574-.861A2 2 0 0 1 19.07 20H20a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2"/><path d="M14 7V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h.93a2 2 0 0 1 1.664.89L7 13.5"/></g>`), g.Group(children),
 	)
 }
 
 func TooltipsTwoLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 10h-8a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h.93a2 2 0 0 1 1.664.89l.574.862a1 1 0 0 0 1.664 0l.574-.861A2 2 0 0 1 19.07 20H20a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2zm-6-3V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h.93a2 2 0 0 1 1.664.89L7 13.5"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 10h-8a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h.93a2 2 0 0 1 1.664.89l.574.862a1 1 0 0 0 1.664 0l.574-.861A2 2 0 0 1 19.07 20H20a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2m-6-3V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h.93a2 2 0 0 1 1.664.89L7 13.5"/>`), g.Group(children),
 	)
 }
 
@@ -6924,21 +6924,21 @@ func TruckLine(children ...g.Node) g.Node {
 func TvOld(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M3 17V9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h7zm0 0L8 3m4 4l4-4"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M3 17V9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2zm0 0L8 3m4 4l4-4"/></g>`), g.Group(children),
 	)
 }
 
 func TvOldLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h7zm0 0L8 3m4 4l4-4"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7h7a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2zm0 0L8 3m4 4l4-4"/>`), g.Group(children),
 	)
 }
 
 func Umbrella(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" d="M12 4c-7.2 0-9 6-9 9h18c0-3-1.8-9-9-9z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4c-7.2 0-9 6-9 9h9m0-9c7.2 0 9 6 9 9h-9m0-9V3m0 10v5c0 1 .6 3 3 3s3-2 3-3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" d="M12 4c-7.2 0-9 6-9 9h18c0-3-1.8-9-9-9"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4c-7.2 0-9 6-9 9h9m0-9c7.2 0 9 6 9 9h-9m0-9V3m0 10v5c0 1 .6 3 3 3s3-2 3-3"/></g>`), g.Group(children),
 	)
 }
 
@@ -6994,35 +6994,35 @@ func UndoLine(children ...g.Node) g.Node {
 func UnlockOpen(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.5 4.99C14.958 3.944 13.904 3 12 3C8.8 3 8 5.667 8 7v3"/><path fill="currentColor" fill-rule="evenodd" d="M3 12a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-7zm10 2a1 1 0 1 0-2 0v3a1 1 0 1 0 2 0v-3z" clip-rule="evenodd"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.5 4.99C14.958 3.944 13.904 3 12 3C8.8 3 8 5.667 8 7v3"/><path fill="currentColor" fill-rule="evenodd" d="M3 12a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3zm10 2a1 1 0 1 0-2 0v3a1 1 0 1 0 2 0z" clip-rule="evenodd"/></g>`), g.Group(children),
 	)
 }
 
 func UnlockOpenLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2H8zm0 0V7c0-1.333.8-4 4-4c1.904 0 2.958.944 3.5 1.99M12 14v3"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2zm0 0V7c0-1.333.8-4 4-4c1.904 0 2.958.944 3.5 1.99M12 14v3"/>`), g.Group(children),
 	)
 }
 
 func Usb(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6v1m4-1v1m-6 4h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm2 8H9a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4h-1m-4 0v2m0-2h4m0 0v2"/><path fill="currentColor" d="M5 12a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4v-3z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6v1m4-1v1m-6 4h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1m2 8H9a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4h-1m-4 0v2m0-2h4m0 0v2"/><path fill="currentColor" d="M5 12a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4z"/></g>`), g.Group(children),
 	)
 }
 
 func UsbLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6v1m4-1v1m-6 4h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1zm2 8H9a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4h-1m-4 0v2m0-2h4m0 0v2"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6v1m4-1v1m-6 4h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1m2 8H9a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4h-1m-4 0v2m0-2h4m0 0v2"/>`), g.Group(children),
 	)
 }
 
 func User(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="8" r="5" fill="currentColor"/><path d="M20 21a8 8 0 1 0-16 0"/><path fill="currentColor" d="M12 13a8 8 0 0 0-8 8h16a8 8 0 0 0-8-8z"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="8" r="5" fill="currentColor"/><path d="M20 21a8 8 0 1 0-16 0"/><path fill="currentColor" d="M12 13a8 8 0 0 0-8 8h16a8 8 0 0 0-8-8"/></g>`), g.Group(children),
 	)
 }
 
@@ -7043,7 +7043,7 @@ func UserAddLine(children ...g.Node) g.Node {
 func UserBox(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="10" r="3" fill="currentColor"/><path fill="currentColor" d="M12 13c-2.761 0-5 1.79-5 4h10c0-2.21-2.239-4-5-4z"/><rect width="18" height="18" x="3" y="3" rx="3"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="10" r="3" fill="currentColor"/><path fill="currentColor" d="M12 13c-2.761 0-5 1.79-5 4h10c0-2.21-2.239-4-5-4"/><rect width="18" height="18" x="3" y="3" rx="3"/></g>`), g.Group(children),
 	)
 }
 
@@ -7106,7 +7106,7 @@ func UserRemoveLine(children ...g.Node) g.Node {
 func Users(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="9" cy="9" r="4" fill="currentColor"/><path fill="currentColor" d="M9 13c-3.866 0-7 2.686-7 6h14c0-3.314-3.134-6-7-6z"/><path d="M15 13a4 4 0 1 0-3-6.646m0 5.411c.897.942 2.193 1.235 3 1.235c3.866 0 7 2.686 7 6h-6"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="9" cy="9" r="4" fill="currentColor"/><path fill="currentColor" d="M9 13c-3.866 0-7 2.686-7 6h14c0-3.314-3.134-6-7-6"/><path d="M15 13a4 4 0 1 0-3-6.646m0 5.411c.897.942 2.193 1.235 3 1.235c3.866 0 7 2.686 7 6h-6"/></g>`), g.Group(children),
 	)
 }
 
@@ -7120,7 +7120,7 @@ func UsersLine(children ...g.Node) g.Node {
 func UxCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12zm13.8-2.6a1 1 0 0 0-1.6 1.2l1.05 1.4l-1.05 1.4a1 1 0 0 0 1.6 1.2l.7-.933l.7.933a1 1 0 0 0 1.6-1.2L16.75 12l1.05-1.4a1 1 0 0 0-1.6-1.2l-.7.933l-.7-.933zM8 10a1 1 0 1 0-2 0v2c0 .493.14 1.211.588 1.834C7.074 14.51 7.874 15 9 15s1.926-.492 2.412-1.166c.448-.623.588-1.34.588-1.834v-2a1 1 0 1 0-2 0v2c0 .173-.06.456-.212.666c-.114.159-.314.334-.788.334c-.474 0-.674-.175-.788-.334A1.239 1.239 0 0 1 8 12v-2z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m13.8-2.6a1 1 0 0 0-1.6 1.2l1.05 1.4l-1.05 1.4a1 1 0 0 0 1.6 1.2l.7-.933l.7.933a1 1 0 0 0 1.6-1.2L16.75 12l1.05-1.4a1 1 0 0 0-1.6-1.2l-.7.933zM8 10a1 1 0 1 0-2 0v2c0 .493.14 1.211.588 1.834C7.074 14.51 7.874 15 9 15s1.926-.492 2.412-1.166c.448-.623.588-1.34.588-1.834v-2a1 1 0 1 0-2 0v2c0 .173-.06.456-.212.666c-.114.159-.314.334-.788.334s-.674-.175-.788-.334A1.24 1.24 0 0 1 8 12z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -7134,7 +7134,7 @@ func UxCircleLine(children ...g.Node) g.Node {
 func Video(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1.586l2.293 2.293A1 1 0 0 0 22 16V8a1 1 0 0 0-1.707-.707L18 9.586V8a3 3 0 0 0-3-3H5z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M5 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1.586l2.293 2.293A1 1 0 0 0 22 16V8a1 1 0 0 0-1.707-.707L18 9.586V8a3 3 0 0 0-3-3z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -7155,35 +7155,35 @@ func VideoCameraLine(children ...g.Node) g.Node {
 func VideoLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 12V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4zm0 0l4-4v8l-4-4z"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 12V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2zm0 0l4-4v8z"/>`), g.Group(children),
 	)
 }
 
 func VideoMinus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 8a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v1.586l2.293-2.293A1 1 0 0 1 22 8v8a1 1 0 0 1-1.707.707L18 14.414V16a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V8zm5 3a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2H7z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 8a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v1.586l2.293-2.293A1 1 0 0 1 22 8v8a1 1 0 0 1-1.707.707L18 14.414V16a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3zm5 3a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func VideoMinusLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 12V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4zm0 0l4-4v8l-4-4zm-4 0H7"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 12V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2zm0 0l4-4v8zm-4 0H7"/>`), g.Group(children),
 	)
 }
 
 func VideoPlus(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 8a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v1.586l2.293-2.293A1 1 0 0 1 22 8v8a1 1 0 0 1-1.707.707L18 14.414V16a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V8zm9 1a1 1 0 1 0-2 0v2H7a1 1 0 1 0 0 2h2v2a1 1 0 1 0 2 0v-2h2a1 1 0 1 0 0-2h-2V9z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 8a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v1.586l2.293-2.293A1 1 0 0 1 22 8v8a1 1 0 0 1-1.707.707L18 14.414V16a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3zm9 1a1 1 0 1 0-2 0v2H7a1 1 0 1 0 0 2h2v2a1 1 0 1 0 2 0v-2h2a1 1 0 1 0 0-2h-2z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func VideoPlusLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 12V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4zm0 0l4-4v8l-4-4zm-7-3v3m0 3v-3m0 0h3m-3 0H7"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 12V8a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2zm0 0l4-4v8zm-7-3v3m0 3v-3m0 0h3m-3 0H7"/>`), g.Group(children),
 	)
 }
 
@@ -7204,7 +7204,7 @@ func ViewBoardsLine(children ...g.Node) g.Node {
 func ViewColumns(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M7 5H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h2V5zm2 14h6V5H9v14zm8-14v14h2a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3h-2z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M7 5H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h2zm2 14h6V5H9zm8-14v14h2a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -7246,7 +7246,7 @@ func ViewListLine(children ...g.Node) g.Node {
 func ViewRows(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 8a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3H2zm0 2v4h20v-4H2zm20 6H2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M2 8a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3zm0 2v4h20v-4zm20 6H2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
@@ -7260,14 +7260,14 @@ func ViewRowsLine(children ...g.Node) g.Node {
 func Watch(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M5 12a7 7 0 1 1 14 0a7 7 0 0 1-14 0zm8-3a1 1 0 1 0-2 0v3a1 1 0 0 0 .553.894l2 1a1 1 0 1 0 .894-1.788L13 11.382V9z" clip-rule="evenodd"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 6.5V3a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v3.5m6 11V21a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-3.5"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none"><path fill="currentColor" fill-rule="evenodd" d="M5 12a7 7 0 1 1 14 0a7 7 0 0 1-14 0m8-3a1 1 0 1 0-2 0v3a1 1 0 0 0 .553.894l2 1a1 1 0 1 0 .894-1.788L13 11.382z" clip-rule="evenodd"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 6.5V3a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v3.5m6 11V21a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-3.5"/></g>`), g.Group(children),
 	)
 }
 
 func WatchLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 9v3l2 1m4-1a6 6 0 1 1-12 0a6 6 0 0 1 12 0z"/><path d="M15 6.5V3a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v3.5m6 11V21a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-3.5"/></g>`), g.Group(children),
+		g.Raw(`<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 9v3l2 1m4-1a6 6 0 1 1-12 0a6 6 0 0 1 12 0"/><path d="M15 6.5V3a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v3.5m6 11V21a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-3.5"/></g>`), g.Group(children),
 	)
 }
 
@@ -7288,14 +7288,14 @@ func WifiLine(children ...g.Node) g.Node {
 func YenCircle(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12zm8.32-5.573a1 1 0 1 0-1.64 1.146L10.08 11H9a1 1 0 1 0 0 2h2v1H9a1 1 0 1 0 0 2h2v2a1 1 0 1 0 2 0v-2h2a1 1 0 1 0 0-2h-2v-1h2a1 1 0 1 0 0-2h-1.08l2.4-3.427a1 1 0 0 0-1.64-1.146L12 10.257l-2.68-3.83z" clip-rule="evenodd"/>`), g.Group(children),
+		g.Raw(`<path fill="currentColor" fill-rule="evenodd" d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12m8.32-5.573a1 1 0 1 0-1.64 1.146L10.08 11H9a1 1 0 1 0 0 2h2v1H9a1 1 0 1 0 0 2h2v2a1 1 0 1 0 2 0v-2h2a1 1 0 1 0 0-2h-2v-1h2a1 1 0 1 0 0-2h-1.08l2.4-3.427a1 1 0 0 0-1.64-1.146L12 10.257z" clip-rule="evenodd"/>`), g.Group(children),
 	)
 }
 
 func YenCircleLine(children ...g.Node) g.Node {
 	return s.SVG(
 		viewbox, hAttr,
-		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10zM8.5 7l3.5 5m0 0l3.5-5M12 12H9m3 0v3m0-3h3m-3 6v-3m0 0h3m-3 0H9"/>`), g.Group(children),
+		g.Raw(`<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2S2 6.477 2 12s4.477 10 10 10M8.5 7l3.5 5m0 0l3.5-5M12 12H9m3 0v3m0-3h3m-3 6v-3m0 0h3m-3 0H9"/>`), g.Group(children),
 	)
 }
 
