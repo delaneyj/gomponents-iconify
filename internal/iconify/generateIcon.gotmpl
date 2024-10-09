@@ -1,8 +1,8 @@
 package {{ .Name.Lower }}
 
 import (
-	g "github.com/maragudk/gomponents"
-	s "github.com/maragudk/gomponents/svg"
+	g "maragu.dev/gomponents"
+	h "maragu.dev/gomponents/html"
 )
 
 const IconifyVersion = "{{.Version}}"
@@ -15,7 +15,7 @@ var (
 
 {{range .Icons -}}
 func {{.Name.Pascal}}(children ...g.Node) g.Node {
-	return s.SVG(
+	return h.SVG(
 		viewbox, hAttr,
 		g.Raw(`{{.Icon.SvgBody}}`), g.Group(children),
 	)
